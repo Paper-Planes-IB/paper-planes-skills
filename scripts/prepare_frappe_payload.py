@@ -34,6 +34,10 @@ def page_content(item: dict) -> str:
 def main() -> None:
     catalog = json.loads((ROOT / "registry" / "catalog.json").read_text(encoding="utf-8"))
     template = (ROOT / "registry" / "registry_template.md").read_text(encoding="utf-8")
+    registry_heading = "# Большой реестр скиллов"
+    duplicate_at = template.find(registry_heading, len(registry_heading))
+    if duplicate_at != -1:
+        template = template[:duplicate_at].rstrip() + "\n"
     counts = {}
     for item in catalog:
         counts[item["type"]] = counts.get(item["type"], 0) + 1
