@@ -11,8 +11,6 @@
   </array>
   <key>StartInterval</key>
   <integer>21600</integer>
-  <key>RunAtLoad</key>
-  <true/>
   <key>StandardOutPath</key>
   <string>/Users/natalie/.local/state/paper-planes-skills/launchd.out.log</string>
   <key>StandardErrorPath</key>

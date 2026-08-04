@@ -279,6 +279,11 @@ def main() -> int:
             }
         )
 
+    manifest_path = REGISTRY_DIR / "manifest.json"
+    previous_manifest = None
+    if manifest_path.exists():
+        previous_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
     manifest = {
         "schema_version": 1,
         "source_folder_id": SOURCE_FOLDER_ID,
@@ -290,7 +295,12 @@ def main() -> int:
         "validation_errors": invalid,
         "validation_warnings": warnings,
     }
-    (REGISTRY_DIR / "manifest.json").write_text(
+    if previous_manifest:
+        previous_payload = {key: value for key, value in previous_manifest.items() if key != "generated_at"}
+        current_payload = {key: value for key, value in manifest.items() if key != "generated_at"}
+        if previous_payload == current_payload:
+            manifest["generated_at"] = previous_manifest.get("generated_at", manifest["generated_at"])
+    manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(
