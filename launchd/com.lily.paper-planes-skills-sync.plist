@@ -9,8 +9,13 @@
     <string>/bin/zsh</string>
     <string>/Users/natalie/paper-planes-skills/scripts/run_sync_and_publish.sh</string>
   </array>
-  <key>StartInterval</key>
-  <integer>21600</integer>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
   <key>StandardOutPath</key>
   <string>/Users/natalie/.local/state/paper-planes-skills/launchd.out.log</string>
   <key>StandardErrorPath</key>
