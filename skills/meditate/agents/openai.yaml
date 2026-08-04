@@ -1,0 +1,5 @@
+interface:
+  display_name: "Meditate"
+  short_description: "Рефлексия по сбоям работы агента"
+  default_prompt: "Use $meditate to reflect on process failures, wasted iterations, missing rules, and candidates for rule updates."
+

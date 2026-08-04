@@ -1,0 +1,4 @@
+interface:
+  display_name: "Leverage Builder"
+  short_description: "Сборка стратегических рычагов"
+  default_prompt: "Use $leverage-builder to build or audit a PP strategy lever through hypotheses, A-G financial bundles, initiatives, maturity levels, metrics, gates, activity system, and data gaps."

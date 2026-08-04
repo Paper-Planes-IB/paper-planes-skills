@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sales PST Test Writer"
+  short_description: "Создаёт PST-кейсы с когнитивными ловушками для оценки продавцов."
+  default_prompt: "Собери PST-тест для оценки продажников по отрасли, роли и коммерческим задачам клиента."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interview Brief by Analogs"
+  short_description: "Бриф интервью по аналогам"
+  default_prompt: "Use $interview-brief-by-analogs to prepare interview questions from project context, Vault analogs, and external sector context."

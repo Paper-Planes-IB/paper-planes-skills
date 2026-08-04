@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tunnel"
+  short_description: "Маршрутизация знания и BPM–SI–approved decision–BPV trace"
+  default_prompt: "Use $tunnel to route valuable knowledge through existing Vault contours and preserve BPM/SI/slide/approved-decision/BPV lineage with reverse links."

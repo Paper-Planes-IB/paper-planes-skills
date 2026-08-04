@@ -1,0 +1,4 @@
+interface:
+  display_name: "BPV-12 Digital Profit Model"
+  short_description: "Run Digital Profit Model BPV gates and pilots"
+  default_prompt: "Проведи Digital Profit Model как дериватив BPV-12 Управление синхронизацией"

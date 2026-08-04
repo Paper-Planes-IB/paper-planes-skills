@@ -1,0 +1,4 @@
+interface:
+  display_name: "Whitepaper Proposal Generator"
+  short_description: "Персонализированные whitepaper-КП под Gamma"
+  default_prompt: "Use $whitepaper-proposal-generator to build a personalized Gamma-ready strategic whitepaper proposal from the client context."

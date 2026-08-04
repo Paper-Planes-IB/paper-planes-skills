@@ -1,0 +1,5 @@
+interface:
+  display_name: "Summary"
+  short_description: "Содержательная выжимка чата или сессии"
+  default_prompt: "Use $summary to summarize the current chat, decisions, open questions, and candidates for existing containers."
+

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ClickUp MCP Router"
+  short_description: "Routes ClickUp links through MCP/plugin discovery before browser fallback."
+  default_prompt: "Разбери ClickUp-ссылку через MCP/plugin first: найди активный ClickUp connector, прочитай документ или объясни, какой доступ нужен."

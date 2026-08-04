@@ -1,0 +1,4 @@
+interface:
+  display_name: "RSVP"
+  short_description: "Коммюнике для согласования"
+  default_prompt: "Use $rsvp or /RSVP to turn an accepted internal framework, metrics block, or strategy fragment into a concise stakeholder communique for alignment."

@@ -1,0 +1,265 @@
+---
+name: clickup-mcp-router
+description: Use when Ilya provides a ClickUp link, ClickUp doc/task/list/space ID, app.clickup.com URL, asks to use/check/restore ClickUp MCP/plugin/connector, or asks to create, reconcile, review or manage project hypotheses in ClickUp. Always route through ClickUp MCP/plugin discovery before browser or manual copy-paste fallback.
+metadata:
+  version: "0.1.1"
+  status: active
+  line: ClickUp / 04 Производство task and hypothesis source-of-truth routing
+  owner: Ilya
+  supports_bpm:
+    primary: [ClickUp reconciliation, task source-of-truth]
+    required_secondary: [BPP, BPM-2, BPM-5, BPM-8, BPM-10, BPM-11]
+    optional_secondary: [BPM-1, BPM-3, BPM-4, BPM-6, BPM-7A, BPM-7B, BPM-9, BPM-SI, BPV]
+  can_consume:
+    - ClickUp task, list, doc, page and workspace identifiers
+    - project cards, chat maps, admin scale and local task staging files
+    - BPM Exchange task_delta packets
+    - hypothesis-card routing signals
+  can_produce:
+    - ClickUp read / search / attribution plan
+    - source-of-truth reconciliation verdict
+    - local staging / clickup_container_found / clickup_sync_gap classification
+    - task_delta / checklist candidate boundary
+    - hypothesis task-type routing guard
+  preflight_required: true
+  return_contract:
+    version: "v0.1"
+    changelog:
+      - "2026-07-26: Added BPM Exchange capability metadata; clarified role as read-only source-of-truth router unless Ilya explicitly authorizes ClickUp mutation."
+---
+
+# ClickUp MCP Router
+
+## Purpose
+
+Prevent ClickUp links from being treated as ordinary web pages. ClickUp often redirects unauthenticated or headless browser access to login/mobile shells, while the real content may be available through a ClickUp MCP/plugin/connector in the current or adjacent Codex/Claude environment.
+
+## Default Safety Mode
+
+ClickUp replaces YouGile as the current downstream candidate for Paper Planes Delivery OS work, but it is read-only by default.
+
+Unless Ilya explicitly orders a ClickUp write action, use ClickUp only to scan, read, search, inspect hierarchy, attribute project containers, and verify existing tasks/docs/lists. Do not create, update, move, assign, comment, archive, delete, import, sync, or otherwise mutate ClickUp entities from an ordinary "find / check / attribute / inspect / route / update docs" request.
+
+Treat explicit write commands as narrow and literal: create or change only the named object(s), after reading current state first. If a rule or task-delta needs to be preserved but no explicit ClickUp write command was given, write back to existing Vault / Drive staging artifacts and report `local_staging / clickup_container_found` or `clickup_sync_gap`, not `pending_yougile`.
+
+## Required workflow
+
+When the user provides a ClickUp URL, ClickUp ID, or mentions ClickUp MCP:
+
+1. **Preflight in chat.** Say briefly: `ClickUp -> MCP/plugin first -> browser only as fallback`.
+2. **Project-start attribution.** At the start of a 4th-department project, if no ClickUp container is already recorded in the project card, chat map, or admin scale, ask Ilya directly for the ClickUp project/list/task URL before treating local trackers as synchronized.
+3. **Check active tools first.** If ClickUp tools are already exposed in the current tool list, use them before any browser/web fetch.
+4. **Discover deferred tools.** If no ClickUp tool is active and `tool_search` is available, search for `ClickUp` / `clickup docs tasks workspace`.
+5. **Install only on explicit request.** If the user explicitly wants ClickUp MCP/plugin and discovery does not expose callable tools, use available plugin-install flow only for an exact ClickUp plugin/connector match.
+6. **Use URL parts.** Parse and preserve:
+   - workspace/team id, e.g. `90121876227`;
+   - object type, e.g. `docs`, task/list/space if present;
+   - object id, e.g. `2kxuxcr3-532`;
+   - original URL.
+7. **Try MCP read/search paths.** Prefer direct fetch/read by URL or ID. If direct doc read is unsupported, search ClickUp for the object id, title, nearby date, or meeting terms.
+8. **Record attribution locally.** When a project container is identified, write its workspace / space / folder / list / task id and URL into existing local project artifacts as an external consistency container.
+9. **Only then try browser/web.** Browser/headless access is a fallback, not the first route. If it redirects to login or mobile shell, report that as an access limitation.
+10. **Do not leave important meeting content only in chat.** If the fetched ClickUp content contains commercial facts, meeting decisions, tasks, leads, forecasts, or partner signals, route them to the relevant existing Vault files according to local project rules.
+11. **No implicit mutations.** Regular ClickUp reconciliation means read/inspect/compare both sides and update local staging artifacts unless Ilya gives a direct ClickUp write command for specific objects.
+
+## Physical task truth gate
+
+When ClickUp is the project's task source of truth, no local planning item may be presented as a ClickUp task unless its physical existence has been verified through ClickUp MCP.
+
+1. Before calling an item a `task`, retrieve it with `clickup_get_task` or locate it with `clickup_search`.
+2. A verified physical task must have at minimum a real `task_id`, name, URL and ClickUp list/container. Show the task ID or URL when reporting it.
+3. Locally invented identifiers such as `DOM-T07`, `LOCAL-12` or similar are not task IDs. Label them only as `analytical work package`, `checklist candidate`, `task-delta` or `proposed task`, never as an existing task.
+4. If ClickUp is the source of truth, do not create a parallel local task registry. A local file may preserve reconciliation notes or proposed checklist content, but must be anchored to verified ClickUp task IDs and must clearly state what has not been written to ClickUp.
+5. Prefer a checklist/comment in an existing physical task when the delta is a direct output of that task's current work. Propose a separate task only when it has an independent owner, deadline/event, accepted output or workstream boundary.
+6. Do not assign an ID to a proposed new task. Create it and obtain a real ClickUp task ID only after an explicit user command authorizes the ClickUp write.
+7. Before reporting project tasks, reconcile the relevant ClickUp list or the exact user-provided task links. Never infer physical tasks from a Vault backlog, Rail package, P-node, SI, rollout code or chat wording.
+8. Verifying exact user-provided task IDs proves that those tasks exist, but does not prove the total task count. Any claim such as `there are only N tasks/cards` requires a full ClickUp list search or hierarchy scan with archived/status coverage stated; otherwise report only `N verified tasks from the provided links`.
+
+## Hypothesis task-type rollout scope
+
+For the Paper Planes ClickUp workspace, the operating model `Гипотеза` belongs only to the `04 Производство` space and only to verified active project containers.
+
+1. ClickUp custom task types are technically created at Workspace level and therefore may be visible in the task-type selector across other spaces. Treat this visibility as an unavoidable platform property, not as authorization to use the type workspace-wide.
+2. Do not create hypothesis cards, project hypothesis views, templates, fields, relationships or hypothesis automations outside `04 Производство` unless Ilya gives a separate explicit command for another space.
+3. Within `04 Производство`, enable the model only for active projects verified through ClickUp. Do not backfill archived, completed, paused or inactive projects by default.
+4. Keep ordinary execution statuses unchanged. Hypothesis maturity belongs in a hypothesis-specific field and view, not in the shared project status workflow.
+5. Do not bulk-convert existing tasks into hypotheses. Backfill only curated, falsifiable assertions with a source trace, a verification method and a decision consequence.
+6. Before any multi-project rollout, inventory the active production project containers and report the exact rollout scope. Creation or mutation still requires an explicit ClickUp write command.
+
+### Accepted hypothesis field schema
+
+Use this minimal task-type field set consistently across active projects in `04 Производство`:
+
+- `Состояние` — dropdown: `сигнал`, `сформулирована`, `проверяется`, `подтверждена`, `опровергнута`, `отложена`.
+- `Класс` — dropdown: `рынок`, `оргмодель`, `процесс`, `экономика`, `продукт`, `IT и данные`, `методология`.
+- `Уверенность` — rating from 1 to 5.
+- `Источник / evidence` — long text or native source links where supported.
+- `Способ проверки` — long text.
+- `Какое решение изменится` — long text.
+- `Дата пересмотра` — date.
+
+Do not expand this schema project by project without a demonstrated recurring need. Project-specific context belongs in the hypothesis description or native relationships unless Ilya explicitly approves a new shared field.
+
+### Accepted hypothesis card template
+
+Name the card as a falsifiable assertion, not as a topic or an open question. Use this description template:
+
+```markdown
+## Ключевой вопрос
+
+## Рабочая гипотеза
+
+## Почему мы так считаем
+
+## Evidence за
+
+## Evidence против
+
+## Как проверяем
+
+## Какое решение зависит от результата
+
+## Source trace
+
+## Вердикт
+```
+
+The structured fields provide the portfolio slice; the description preserves the reasoning and evidence. Do not replace either layer with the other.
+
+### Accepted hypothesis operating lifecycle
+
+Treat a project hypothesis as a decision-changing, falsifiable assertion, not as an execution task, open question, topic, slide intent or analytical work package.
+
+1. **Capture.** Create or update a hypothesis only when the project has a source-backed signal and it is possible to state what observation would strengthen, weaken or refute it.
+2. **Trace.** Every hypothesis must show its source/evidence, verification method and the decision that may change. A document title, interview name or folder is a source address, not evidence by itself; preserve the actual supporting or contradicting claim in the description.
+3. **Reconcile.** After every material interview, dataset, meeting or analytical source, compare it with the existing hypothesis set and mark the delta as `new`, `strengthened`, `weakened`, `contradicted` or `no_change`. Update an existing card when the assertion is substantially the same; do not create a synonym duplicate.
+4. **Mature.** Use the accepted `Состояние` field as the epistemic lifecycle: `сигнал -> сформулирована -> проверяется -> подтверждена / опровергнута / отложена`. Ordinary task status remains the execution workflow and must not substitute for hypothesis maturity.
+5. **Review.** Assign an owner and `Дата пересмотра` only when they are known or explicitly decided. Do not invent them to make the card look complete. A hypothesis without an owner/date may remain visible as a signal or evidence-backed item awaiting governance.
+6. **Decide.** Confirmation means that the evidence threshold was met; it does not itself authorize implementation. Record the human decision and then explicitly create or link execution work if action is approved.
+7. **Link.** Prefer the native chain `source/evidence -> hypothesis -> verification activity or evidence request -> decision -> approved execution task`. A task may test several hypotheses, and one hypothesis may have several tests; preserve relationships instead of copying the hypothesis text into parallel registries.
+8. **Close the loop.** When a hypothesis is refuted, deferred or superseded, preserve the verdict and reason. Reconcile related blockers, decision notes, Storyline/Storyboard hypotheses and execution tasks so stale downstream objects do not remain active.
+
+ClickUp is the operational source of truth for the hypothesis card and its maturity in the approved scope. Project Storyline/Storyboard, subpassports, interview notes and evidence matrices remain source and synthesis layers; they must link to or trace the ClickUp hypothesis rather than become a second independent status registry.
+
+### Accepted production hypothesis view architecture
+
+Every active project in `04 Производство` that uses hypotheses must have its own saved Board inside the verified project List. In addition, the `Активные проекты` folder must have one giant consolidated hypothesis Board across projects. A project Board and the consolidated Board are complementary native views over the same cards; never copy cards between them.
+
+Mandatory project Board configuration:
+
+- Location scope: exactly one verified project List.
+- Name: `Гипотезы — <проект>`, so the project identity remains explicit in navigation.
+- Task type filter: `Гипотеза`.
+- Archived items: excluded by default.
+- Group by: `Состояние`.
+- Foreign-card gate: after reload, no hypothesis from another project List may appear.
+
+Mandatory consolidated Board configuration:
+
+- Location scope: the verified `04 Производство / Активные проекты` folder.
+- Name: `Сводный борд гипотез`.
+- Task type filter: `Гипотеза`.
+- Archived items: excluded by default.
+- Group by: `Состояние`.
+- Visible project identity: `Проектный тикер`.
+- Available working filters: `Проектный тикер` / project location, `Класс`, assignee/owner and `Уверенность`.
+
+Every hypothesis card must carry the native `Проектный тикер` that matches its physical project List. The ticker is mandatory routing metadata, not an optional display aid. Before completion, verify `physical List = Проектный тикер`, verify the project Board contains only its project hypotheses, and verify the consolidated Board displays hypotheses from all included active projects with their tickers. When the active-project set changes, reconcile folder membership and consolidated scope instead of showing inactive project backfill by default.
+
+### Accepted hypothesis automation policy
+
+Use only lightweight automations for the hypothesis layer in active `04 Производство` projects:
+
+1. When a task is created or changed to task type `Гипотеза`, apply the accepted hypothesis card template.
+2. When `Дата пересмотра` arrives, notify the card owner/assignee to review the hypothesis and its evidence.
+3. A change to `Состояние = подтверждена` must not automatically create execution tasks, implementation work or downstream deliverables. It requires an explicit human decision about what action, if any, should follow.
+
+Keep the same human gate for high-impact transitions: automation may remind, expose or assign a review comment, but must not silently convert an epistemic conclusion into an execution commitment. Configure these rules only in the approved Production scope and only through supported native automation; if the connector cannot create them, report `manual UI action / API gap` rather than substituting tags or statuses.
+
+### Hypothesis rollout UI guardrails
+
+1. A task-type-specific Custom Field may not appear in Board grouping or field menus until at least one task of that task type exists inside the view's location. Create or convert one real, source-backed pilot hypothesis before configuring `Group by: Состояние`; never create a fake analytical claim just to seed the UI.
+2. ClickUp Board filter/group changes are not durable merely because the Board redraws. If view autosave is off, always click the native `Save view` control and then reopen `Customize view` to verify `Filter: 1 Filter` and `Group: Состояние`.
+3. At portfolio level, prefer one Folder Board over duplicating the same view into every project List. Create a project-level Board only for a project currently piloting or actively using hypotheses.
+4. Build the reusable task template from a temporary service task only when ClickUp requires a physical task as the template source. After the native template is verified, archive the service task and verify `archived: true`; do not leave it on the working hypothesis Board.
+5. The native automation trigger `Date custom field arrives` can bind directly to the type-specific `Дата пересмотра` field at Folder scope. Use a review comment with the dynamic `Assignee(s)` field; do not select a fixed person as a surrogate for the card owner.
+6. On a Folder Board, ClickUp may relabel a saved grouping by a task-type-specific field as `Private Field` after reload even though the actual columns remain the correct `Состояние` options. Verify the visible group values and a known hypothesis card before declaring the grouping broken; do not recreate the field or substitute ordinary statuses based on the header label alone.
+7. When an `Apply template` automation runs on creation or task-type change, let the task become `Гипотеза` and verify that the template has finished applying before writing the evidence-backed description and type-specific field values. Writing analytical content before the automation completes can let ClickBot overwrite it. For bulk rollout use the order `create -> convert/type -> verify template -> write evidence -> verify task and Board counts`.
+8. If a task already contains an evidence-backed description before conversion to `Гипотеза`, ClickUp may append the native hypothesis template instead of replacing the description. After conversion, check for a second occurrence of the template headings and replace the description with one populated, non-placeholder copy before bulk verification.
+9. A newly created Board view may retain its name while losing filter and grouping changes after reload when `Autosave for me` is off. Before configuring a project hypothesis view, enable `Autosave for me`, pin the view when it must remain a visible project tab, then set `Task Type = Гипотеза` and `Group by = Состояние`; reload and verify both settings and exact group counts.
+10. When a project List was copied from another project, inherited list-level defaults such as `Проектный тикер` can silently classify new hypothesis cards under the donor project even though their physical List location is correct. Before bulk rollout, compare `List location` and `Проектный тикер`; correct the ticker on every new hypothesis, expose it on the folder-level consolidated Board, and verify that each project Board contains no foreign cards.
+
+### Hypothesis lifecycle regression cases
+
+- **Good trigger:** `Внеси известные гипотезы активного проекта в ClickUp` -> use verified source material, deduplicate assertions, create native `Гипотеза` cards only after explicit write authorization, populate the accepted fields and verify physical task type and Board counts.
+- **Bad trigger:** `Какие задачи проекта сейчас в ClickUp?` -> inspect and report physical tasks; do not reinterpret ordinary tasks as hypotheses or create hypothesis cards.
+- **Adjacent-confusion guard:** a slide intent, P-node, open question or fundamental project theme without a falsifiable assertion and decision consequence remains in its native analytical layer; it is not automatically a ClickUp hypothesis.
+- **Ambiguous / low-confidence:** a single weak signal may become `Состояние = сигнал` with low confidence and an explicit evidence gap, but must not be presented as a confirmed diagnosis.
+- **Writeback gate:** `обнови карту гипотез` without an explicit ClickUp write command means reconcile/read and update approved local source layers only; no ClickUp mutation.
+- **Regression from rollout:** when template automation is active, analytical content is written only after type conversion and template completion; final verification must show native `task_type = Гипотеза`, a non-placeholder description and correct Board group counts.
+
+## Incident-list reconciliation contract
+
+When a ClickUp list is used as an incident board, do not treat task presence or a due date as evidence that incident management is working.
+
+For each daily or recurring read-only pass:
+
+1. Inspect all new, changed, active and closed incidents, including description, status, assignee, due date, priority, subtasks, comments, attachments and links.
+2. Separate observed facts from hypotheses. Do not infer a root cause from a short task title alone.
+3. Route each evidence-supported delta through `signal -> impact -> affected process -> containment -> probable root cause -> evidence gap -> corrective action -> prevention -> existing landing -> closure evidence`.
+4. Report board-quality coverage at minimum for owner, description, due date, root cause, corrective action and closure evidence.
+5. Use the existing incident register / process / APQ / metric documents as durable landing places when applicable; do not create a parallel incident file.
+6. Keep ClickUp read-only unless Ilya explicitly orders a specific mutation.
+
+When Ilya explicitly authorizes an incident-board rollout:
+
+- put the operating contract in the existing list description and use list-level custom fields for incident lifecycle when native statuses are inherited by sibling lists;
+- canonical list fields are `Адрес процесса`, `Класс инцидента`, `Severity`, `Повторяемость`, `Покрытие правилами`, `Статус причины`, `Класс причины`, `Resolution`, `Этап инцидента`;
+- group the working Board by `Этап инцидента`: `Сигнал / Триаж / Расследование / Исправление / Верификация / Закрыто`;
+- do not initialize legacy blank cards to `Сигнал` merely to remove the `Empty` column: blank lifecycle/classification values are a visible data-quality gap until a real triage occurs;
+- never infer severity, process address, coverage, root cause or resolution from the task title alone.
+- for bulk custom-field updates through the ClickUp UI, a completed click is not evidence of persistence: verify each card's selected value or reconcile Board group counts; if MCP does not expose field identifiers/options, record `custom_field_api_gap` and keep the verified description as the durable triage layer rather than claiming a completed field rollout.
+- when a recurring task-quality defect is discovered, link the incident to the physical source task and use the stable incident class for portfolio statistics; do not use a person's name as the analytical category.
+- when an incident title names an employee, use the employee's full canonical name instead of a diminutive or informal form; keep the stable incident class separate so cards can be traced both by person and by defect class.
+- when reconciling an incident about task order, treat task age in the queue as an explicit prioritization input alongside stated priority, due date and dependencies; if the actual selection order is unclear, record it as an evidence gap rather than inventing the executor's rationale.
+- a ClickUp incident dashboard is decision-useful only when its widgets can slice verified structured fields for class, project/process address, recurrence, coverage, stage, owner, capacity loss, corrective action and verification; title-only counts are registration statistics, not process-quality evidence.
+
+### Canonical process-address gate
+
+For an incident, `affected process` must be a canonical process address, not a free-text topic, department-only label or AI-invented process name.
+
+- Required shape: `department -> process family -> code + canonical name`.
+- For department `04`, identify the concrete `BPM / BPA / BPV / BPO / BPP`, for example `04 -> BPV-06 — Управление уровнем сервиса`.
+- For departments `01 / 02 / 03 / 05 / 06 / ...`, identify the concrete process code and canonical name from that department's existing process registry.
+- For a cross-functional incident, record one primary process address plus explicit related process addresses.
+- If only the department or general subject is known, use `process_not_identified / reconciliation_required` and keep the card in triage; do not guess.
+- Brain/Codex suggestions must be validated against the existing process canon before human confirmation.
+
+### Rule/process coverage gate
+
+For incident reconciliation, classify every evidence-supported process finding before proposing any new rule:
+
+- `covered_enforcement_gap`: an existing rule/process already covers the failure; identify the exact source and why the gate did not execute.
+- `partially_covered`: an existing principle applies but lacks an operational owner, gate, evidence, SLA or verification mechanism; propose a patch to the existing process.
+- `uncovered_design_gap`: no adequate rule/process exists; show recurrence and the best existing parent process before suggesting creation.
+- `needs_reconciliation`: evidence is insufficient or terminology is unclear; do not write or canonize a rule yet.
+
+Prefer enforcement or extension of an existing process over a new file, status, field, workflow or micro-skill. Never turn a person-named incident into a performance conclusion without task/source evidence.
+
+## MCP quirks
+
+- `clickup_get_workspace_hierarchy.max_depth` may need to be passed as a string (`"0"`, `"1"`, `"2"`) even when the exposed schema presents it as numeric.
+
+## Fallback wording
+
+If no ClickUp MCP/plugin is callable in the current session:
+
+> В этой сессии ClickUp MCP не активен. Я проверил/а discovery; дальше нужен либо подключённый ClickUp plugin/connector, либо экспорт / текст документа. Обычный браузерный доступ может видеть только login/mobile shell.
+
+## Do not
+
+- Do not conclude that a ClickUp document is inaccessible before checking MCP/plugin discovery.
+- Do not rely on `curl`, generic web open, or browser screenshots as the primary method for ClickUp docs.
+- Do not create a local copy of ClickUp content unless the user explicitly asks for a file or existing Vault rules require updating an existing registry/process document.
+- Do not write to ClickUp unless Ilya gave a direct ClickUp write command for the specific object or operation.
+- Do not present local IDs, analytical packages, Rail rollout codes or checklist candidates as existing ClickUp tasks.

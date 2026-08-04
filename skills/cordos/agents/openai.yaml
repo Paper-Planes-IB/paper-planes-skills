@@ -1,0 +1,4 @@
+interface:
+  display_name: "CORD OS"
+  short_description: "Кандидаты в задачи для Codex Project Task Inbox"
+  default_prompt: "Use $cordos to find candidate tasks from the current conversation and propose registration in Codex Project Task Inbox. Do not write or transfer tasks without Ilya's explicit approval."

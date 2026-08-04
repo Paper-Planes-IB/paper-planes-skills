@@ -1,0 +1,4 @@
+interface:
+  display_name: "BPV-01 Product Factory — NPD"
+  short_description: "Run BPV-01 Продуктовая фабрика and NPD lifecycle gates"
+  default_prompt: "Проведи BPV-01 Продуктовая фабрика / NPD Lifecycle OS по продуктовой гипотезе"

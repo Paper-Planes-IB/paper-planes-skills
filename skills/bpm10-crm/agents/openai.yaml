@@ -1,0 +1,4 @@
+interface:
+  display_name: "BPM10 CRM"
+  short_description: "Проектирование B2B CRM по методологии BPM10"
+  default_prompt: "Use $bpm10-crm to design and validate a B2B CRM architecture from source evidence."

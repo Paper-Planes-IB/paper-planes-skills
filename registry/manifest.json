@@ -1,0 +1,2369 @@
+{
+  "schema_version": 1,
+  "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
+  "generated_at": "2026-08-04T09:18:49Z",
+  "upstream_skill_count": 78,
+  "repository_skill_count": 78,
+  "legacy_skill_count": 10,
+  "skills": [
+    {
+      "name": "admin",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/admin/SKILL.md",
+          "sha256": "b9f8851e82f762fd176f09da4557183c5845b3e92b658d4bfd24bb949678847d",
+          "size": 46841
+        },
+        {
+          "path": "skills/admin/agents/openai.yaml",
+          "sha256": "8c18f26faa5e425021b3c26f8ead155199f24e2ffe6da71b3ccc0b2fbb588691",
+          "size": 397
+        }
+      ]
+    },
+    {
+      "name": "admin-scale",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/admin-scale/SKILL.md",
+          "sha256": "9972ac930c0cc87e0b6beb862a69445ae2c2d3fa56256eb5b2a90b5257e78f64",
+          "size": 3632
+        },
+        {
+          "path": "skills/admin-scale/agents/openai.yaml",
+          "sha256": "de1590b2a9803c0f4bc1f091805fba78a4a067008f181ce7fd852c2284d4698a",
+          "size": 198
+        }
+      ]
+    },
+    {
+      "name": "autoresearch",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/autoresearch/SKILL.md",
+          "sha256": "3a05f2f6164d3d9c407662d64958cdea038577d01590fd46b1f3d64f4d421581",
+          "size": 466
+        }
+      ]
+    },
+    {
+      "name": "balakhnin-voice",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/balakhnin-voice/SKILL.md",
+          "sha256": "181b80ff63d44b05d75b2999a858e13fcfc0b43a5a5462c4ff1ecec190c0f9fb",
+          "size": 41208
+        }
+      ]
+    },
+    {
+      "name": "basecamp",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/basecamp/.installed-version",
+          "sha256": "fa68a1c9139e7f4cd197843f633f3488babc580c59f9ec627ea1c945881de159",
+          "size": 5
+        },
+        {
+          "path": "skills/basecamp/SKILL.md",
+          "sha256": "2c295c087b0110ca67c3c12ae8a4deda0d2f04390cefeef6719d924526f0e72a",
+          "size": 39858
+        }
+      ]
+    },
+    {
+      "name": "book-editor",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/book-editor/SKILL.md",
+          "sha256": "4d25e96cbcf5089517e3011d2cd39e2d1eaa97573d4d0e38924470cc72a9f9b5",
+          "size": 28809
+        }
+      ]
+    },
+    {
+      "name": "bpm-exchange-reconciliation",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpm-exchange-reconciliation/SKILL.md",
+          "sha256": "ea457feb52cd43f475da305e92113d35b450d658ad083a93019c37a48e802c7f",
+          "size": 49550
+        }
+      ]
+    },
+    {
+      "name": "BPM1",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/BPM1/SKILL.md",
+          "sha256": "1f6d18588a6e7c0c43a7b9a26a76b707cf1e149fe1542e79394cbe6e593ebb48",
+          "size": 11230
+        },
+        {
+          "path": "skills/BPM1/references/ingest-layer.md",
+          "sha256": "4953c5c7a9e1d4098316c7d4e009d69f82fb960961e29a65c611763d4134bbd9",
+          "size": 2662
+        },
+        {
+          "path": "skills/BPM1/references/methodology.md",
+          "sha256": "fc9cf00623910e7fdc423c4705786cb7332a8478223724030e3107a3234c8dfc",
+          "size": 3597
+        },
+        {
+          "path": "skills/BPM1/references/source-map.md",
+          "sha256": "5c1ef3f72621b4a20d14c1b5677eb1aa4729d46de4e9381c3834cacd570c37ad",
+          "size": 2954
+        },
+        {
+          "path": "skills/BPM1/references/survey-lake.md",
+          "sha256": "96de1641cdeaaaeae4f4b56e5755bb6a971ca525807fbe67ff8d64fc871c421b",
+          "size": 5064
+        },
+        {
+          "path": "skills/BPM1/references/survey-types.md",
+          "sha256": "16f25d760e38981581250cad9596397396e39123096ff87950d410a1c21ae28e",
+          "size": 3739
+        },
+        {
+          "path": "skills/BPM1/survey_lake/factors_jtbd.csv",
+          "sha256": "d71fcab32b773ad6902886e602b8d680a01a92029cb89c80973bfdd1768195b4",
+          "size": 61728
+        },
+        {
+          "path": "skills/BPM1/survey_lake/manifest.json",
+          "sha256": "55d39dcb2bb68e63007bb451abff7b4eca9c13f6f939916dc454027ccf371076",
+          "size": 5166
+        },
+        {
+          "path": "skills/BPM1/survey_lake/metrics.csv",
+          "sha256": "3dc6a8dbc8e5294ef578d6e5e3f3e86204870d217cbee92fcac7c8bba982e4e5",
+          "size": 4979518
+        },
+        {
+          "path": "skills/BPM1/survey_lake/questions.csv",
+          "sha256": "ab7351844214d5f17b5745b5a774909a9acbfc6053d074dad398d0d3b681ea6f",
+          "size": 1336033
+        },
+        {
+          "path": "skills/BPM1/survey_lake/raw_files.csv",
+          "sha256": "641cc5293d2668a13e63037fc653997fae70c375daccdd248847b3ab7b8f92e4",
+          "size": 77136
+        },
+        {
+          "path": "skills/BPM1/survey_lake/recovery_issues.csv",
+          "sha256": "94fc68d6103459812031c2665e4d0bfa7e23ded5d322c54dd55a750f5d46e90d",
+          "size": 351691
+        },
+        {
+          "path": "skills/BPM1/survey_lake/slide_patterns.csv",
+          "sha256": "1d8b32d015f77d8e0f65322381a0f4329be809c654cf329562d4688aa120fcba",
+          "size": 547227
+        },
+        {
+          "path": "skills/BPM1/survey_lake/surveys.csv",
+          "sha256": "33650e066d57597b441d57aff157d9f5af272760b92f9928583f3364c843bc48",
+          "size": 99169
+        }
+      ]
+    },
+    {
+      "name": "bpm10-crm",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpm10-crm/SKILL.md",
+          "sha256": "01af8aa10e021843a182065283e3d99f6e7e8938948db3c7cf830560011af530",
+          "size": 13783
+        },
+        {
+          "path": "skills/bpm10-crm/agents/openai.yaml",
+          "sha256": "271e73218026976754d4bebae934b0b94668146e4403d47e6c45493ea81609fc",
+          "size": 236
+        },
+        {
+          "path": "skills/bpm10-crm/references/artifact-templates.md",
+          "sha256": "0cb12ec9df3ce8caba9d8f5d4e1d3cbf241ec09961ffa71441cdc422dbc99f23",
+          "size": 5479
+        },
+        {
+          "path": "skills/bpm10-crm/references/bpm-boundaries.md",
+          "sha256": "76101d52b9a7929c9a476d54339c4918e85af01530e9322d7d573dd6a8b72198",
+          "size": 4337
+        },
+        {
+          "path": "skills/bpm10-crm/references/core-methodology.md",
+          "sha256": "a4adb9acc0134c1059c9afbe9119e6731c0a01bcc0fd607fd85f0455eb24b065",
+          "size": 38213
+        },
+        {
+          "path": "skills/bpm10-crm/references/core-overview.md",
+          "sha256": "0db637bd413eb5ac3c79417f07e78e203366e8540839367c7ff92f6131c39f2c",
+          "size": 9525
+        },
+        {
+          "path": "skills/bpm10-crm/references/lean-crm-prompts.md",
+          "sha256": "1e617709cd62fa98ade2d5069008926956c55c1d230ce85c1668f592e8b53ca2",
+          "size": 7616
+        },
+        {
+          "path": "skills/bpm10-crm/references/methodology-expansion.md",
+          "sha256": "354560471e1e6d8e0201e640f59187923de3e221bbb4951f6246a07ea80a6043",
+          "size": 4741
+        },
+        {
+          "path": "skills/bpm10-crm/references/miro-integration.md",
+          "sha256": "00bc425006fa4aca6bb50b33bcc2e0043c573d09e284217c95b8cfab50cdb896",
+          "size": 14895
+        },
+        {
+          "path": "skills/bpm10-crm/references/qa-and-evals.md",
+          "sha256": "3462c43c3e4d30c4e391a4c0a79cad5d11340824da911572a6b023dfa330bed9",
+          "size": 6210
+        },
+        {
+          "path": "skills/bpm10-crm/references/related-skills.md",
+          "sha256": "8ea7deb9a425c536ccae44dfaf78095c9fe17a9d57d94288a7825e38df5dfd90",
+          "size": 1581
+        }
+      ]
+    },
+    {
+      "name": "bpm4-b2b-dashboard-industrial-distribution",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
+          "sha256": "f462f525546eefb653714fd4f88393ed13117a0dd5594deaf53a2e0328cc9356",
+          "size": 26354
+        }
+      ]
+    },
+    {
+      "name": "bpm4-datalens-dashboard",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpm4-datalens-dashboard/SKILL.md",
+          "sha256": "f0c587b4b8ae6a1ebe31188852905abece0d6ac37d56b114cf7abf32dab8a1e9",
+          "size": 16619
+        }
+      ]
+    },
+    {
+      "name": "bpm4-healthcare-clinic-economics",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpm4-healthcare-clinic-economics/SKILL.md",
+          "sha256": "87d282314820034acd8d043b05f2e1ea7b499d8ff4c9465700825613788c547b",
+          "size": 36127
+        }
+      ]
+    },
+    {
+      "name": "bpm4-it-saas-enterprise-vendor",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpm4-it-saas-enterprise-vendor/SKILL.md",
+          "sha256": "2d46617ce43982fa5a2afa5bc3365386c8373abf95244a7ba39e02bde0920de0",
+          "size": 9544
+        }
+      ]
+    },
+    {
+      "name": "bpv-01-npd-lifecycle-os",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
+          "sha256": "e71abea8abef3b606506d01ae5df353d97b9ae0f431ada5c75348de85fc00e2c",
+          "size": 35724
+        },
+        {
+          "path": "skills/bpv-01-npd-lifecycle-os/agents/openai.yaml",
+          "sha256": "ce385b5fe8ec42d8853f37e83a513316711bcc2a14e2462bc7622957827d0c0e",
+          "size": 300
+        }
+      ]
+    },
+    {
+      "name": "bpv-04-mpp-commercial-proposal",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpv-04-mpp-commercial-proposal/SKILL.md",
+          "sha256": "6702a74bf8a61a58aa5acb582e0a81f4dad246780984e542dc1e1d934089fb86",
+          "size": 13297
+        },
+        {
+          "path": "skills/bpv-04-mpp-commercial-proposal/agents/openai.yaml",
+          "sha256": "6b3536236dff3f0da5a45efa5300061f104d4caef0079bac2c56c0bcfb0af8a5",
+          "size": 273
+        }
+      ]
+    },
+    {
+      "name": "bpv-14-digital-profit-model",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/bpv-14-digital-profit-model/SKILL.md",
+          "sha256": "405e7b0feb51c2470f0d5088f5d8e07f2a3d66b20e740cb0762618421845729f",
+          "size": 14633
+        },
+        {
+          "path": "skills/bpv-14-digital-profit-model/agents/openai.yaml",
+          "sha256": "8f01b54bcc4c432a485a05d0935e477db53c07b4d29404af77caf96f17c5d753",
+          "size": 265
+        }
+      ]
+    },
+    {
+      "name": "case-narrative",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/case-narrative/SKILL.md",
+          "sha256": "0e85a0bae8ecaba8fdb2b03fe232a00edeebd7431c5511f0f8dfafcc8fadfe8d",
+          "size": 14825
+        }
+      ]
+    },
+    {
+      "name": "clickup-mcp-router",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/clickup-mcp-router/SKILL.md",
+          "sha256": "5b47039d91c316fc5c2fbc2416ffe8a8a9f7c1263d6f14cd77c5ae43af14e2ba",
+          "size": 27089
+        },
+        {
+          "path": "skills/clickup-mcp-router/agents/openai.yaml",
+          "sha256": "4f89e280edf186cc775429bea7098e25305341aab3ce822b406cb0b3b33a31ca",
+          "size": 371
+        }
+      ]
+    },
+    {
+      "name": "client-info",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/client-info/SKILL.md",
+          "sha256": "bf500a426bcecf3003c283ac68c65b03bd12e597f4a268a57bcadd06ec9b0f60",
+          "size": 13835
+        }
+      ]
+    },
+    {
+      "name": "client-intel-agent",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/client-intel-agent/SKILL.md",
+          "sha256": "a0350755128173a4ce981d47e53ca5c6175efd5184f5471be18f68f7e924ed5c",
+          "size": 1020
+        }
+      ]
+    },
+    {
+      "name": "client-project-onboarding",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/client-project-onboarding/SKILL.md",
+          "sha256": "efa20f517cf567caf98e33c98a31fc9da09ad735eaec59a31db5e928a4e5117f",
+          "size": 3661
+        }
+      ]
+    },
+    {
+      "name": "cognitive-router",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/cognitive-router/SKILL.md",
+          "sha256": "2764af880793331e0852275e2925838c12b743a04cb746fdcde31d9cccd38519",
+          "size": 19326
+        },
+        {
+          "path": "skills/cognitive-router/agents/openai.yaml",
+          "sha256": "0698e32b3d5bede0e0e46b4c421696671b2089f95909061c707cd6c9db0e6b37",
+          "size": 241
+        }
+      ]
+    },
+    {
+      "name": "commercial-proposal-generator",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/commercial-proposal-generator/SKILL.md",
+          "sha256": "735d484a2f38f170c5ad02c5c8f7ca5840fc050778b50fedd65391dfae14dde5",
+          "size": 201776
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/brief-template.md",
+          "sha256": "747da6d6742477d21fa09f5144f9831cc7a384f80ee594fcb84c241ab6b69d84",
+          "size": 2624
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/client_brief.md",
+          "sha256": "699b7cfdfe63ba03e699292b4104dfb0b3280400945b14fd7ce26efc18171b15",
+          "size": 2381
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/gamma_integration.md",
+          "sha256": "c152ab60b108f711973f8b2aba2eab393258eb053d5590d724e740acefab7f9d",
+          "size": 3943
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/gold-standard-patterns.md",
+          "sha256": "ed65c2c6ecb5e9abbe9f44ffd59505bbb3e16af85383bf2a8847c5c26d1b598a",
+          "size": 15020
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/gold_standard.md",
+          "sha256": "ca535231f81d6bccdb76d2f2171d5f3e5e67670e31f7ad236f218c254661ab45",
+          "size": 4618
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/kp_structure.md",
+          "sha256": "b9d2336292be58413367736b493c92908f3e44ed4ebf9f1f4d6a24145bfb1535",
+          "size": 3204
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/pp-methodology-notion.md",
+          "sha256": "4db3c178f7cb8f0cb8f1b4779c4f04646cf33c897c0c76826436951dba95acca",
+          "size": 15185
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/pptx_integration.md",
+          "sha256": "00cd43d8c2cca59acca93467056f2d06bd0f91d471af2b5023e4195f5209c684",
+          "size": 2945
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/pricing_examples.md",
+          "sha256": "af5ecf7e82c7dfd5fb9459b0a3883bec7cc8acea2ff26fd0f3291ed99b5e91d2",
+          "size": 1490
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/project_types.md",
+          "sha256": "59595e03a52ca388f6a0a7e43d5c839fa51dbcbf13dd83d84a3c44a97c55d81e",
+          "size": 847
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/proposal_templates.md",
+          "sha256": "46e6b47d0d0ed7bdbb466297a1a340bdc9d7f931a3cfcc5388d4a7647c53c726",
+          "size": 6118
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/quality_checklist.md",
+          "sha256": "053e497ea5fb2ce6bb39c829f814b120390322b5b829d422c87877bbe2165911",
+          "size": 2790
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/slides_integration.md",
+          "sha256": "b4e78eacb878af0647c64b9b762e7bb836edd30d5d33781ff5b57d86299ad5b6",
+          "size": 4802
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/tone-and-language.md",
+          "sha256": "8f0a4d03ec652dae698058e68c18c3208ed9499c7787d6ff4f153144a0d3c524",
+          "size": 10918
+        },
+        {
+          "path": "skills/commercial-proposal-generator/references/writing_rules.md",
+          "sha256": "07e6f1d6595657a03c79e6e99e9a379d264b3d4ac1e8cf6ff97b5c19a47af152",
+          "size": 3170
+        },
+        {
+          "path": "skills/commercial-proposal-generator/scripts/commercial_proposal_scaffold.py",
+          "sha256": "e316cf533b54404316c024c2900f1db23beb9611611720bf57ff78ef3a74eb65",
+          "size": 26659
+        }
+      ]
+    },
+    {
+      "name": "competitor-research",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/competitor-research/SKILL.md",
+          "sha256": "fb35fc25cedc937838830802005611e3ecb24aacb9cb9fd8307eee4e056857f4",
+          "size": 142204
+        }
+      ]
+    },
+    {
+      "name": "concept",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/concept/SKILL.md",
+          "sha256": "427fa86a15e23fb7c3ae5488007577222495aeb6413b1a4278b7a4959398648c",
+          "size": 32473
+        }
+      ]
+    },
+    {
+      "name": "concept-deep-dive",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/concept-deep-dive/SKILL.md",
+          "sha256": "e31e056e60854c8cd332bb9bc199fb31684803ccad83fea2b2a28aebb2e47de5",
+          "size": 491
+        }
+      ]
+    },
+    {
+      "name": "consulting-slides-creator",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/consulting-slides-creator/SKILL.md",
+          "sha256": "b3782a194725c12356743b72e4393269893cedbdf8380eb9b7ac09d00d86caf9",
+          "size": 6600
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/consulting_principles.md",
+          "sha256": "238f57e110906acf17496631af660fa5d6c4605408c0a70b825d4e0a93faacfb",
+          "size": 1620
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/content_formatting.md",
+          "sha256": "cff2b50b62384b908dd2263f7b090211730c1f0e6d9c590ea1a4e5e1d0aeb7da",
+          "size": 25683
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/data_extraction.md",
+          "sha256": "d55487f8c30e421b421baa475e92c88fed1bdb11fbb575976282c0a194cd4644",
+          "size": 5682
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/json_examples_analytical.md",
+          "sha256": "d6e17bd5857a305945a42d5bd27306880967e2f3bfe638234a9419f3e88e55b5",
+          "size": 20453
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/json_examples_structural.md",
+          "sha256": "42061f14d660921dba90ea86b9d5f3b561372d9368e0cde3ce556b3fdf599756",
+          "size": 10261
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/powerpoint-addin-prompts.md",
+          "sha256": "9397c590e99f64f6a1037f6d96ba35a93956c2ec4f67fa894f23eb50b2b129b3",
+          "size": 8955
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/quality_checklist.md",
+          "sha256": "885da81001cc1cd0a62b7d2f2bff21e80ace02a0424fb881b9c6adba5d96ea03",
+          "size": 12086
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/self_learning_log.md",
+          "sha256": "7f5dadfa08b3169eaca9f1edd9fdc80f5332ea19f7eda90c8a39d5ffe613c5ba",
+          "size": 1835
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/slide_type_algorithm.md",
+          "sha256": "ae42d78e3ee657a1e001387bc210435e444a20d3577e15e99ed948a05bf58336",
+          "size": 6822
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/structural_layouts.md",
+          "sha256": "b75f2dc370bae4c2a384b78ca24e774629d1835129868193e72499a2a78b290d",
+          "size": 78835
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/visual_diversity.md",
+          "sha256": "01d14fb0f46dc83d2b841b040b06dca23cee79b1893783c8bb8fe9fa8a6bca8e",
+          "size": 4424
+        },
+        {
+          "path": "skills/consulting-slides-creator/references/workflow.md",
+          "sha256": "faf130ea321a14cbf758e9098eb01dbac71b812116d9a8a69f0ea5411378c6d6",
+          "size": 4548
+        }
+      ]
+    },
+    {
+      "name": "cord-pdca",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/cord-pdca/SKILL.md",
+          "sha256": "c0fe09f4731e5b977f373f3ca645d0f4e942e26876cec2e4a20914d3acf711b4",
+          "size": 10070
+        },
+        {
+          "path": "skills/cord-pdca/agents/openai.yaml",
+          "sha256": "d62862250321bb970e5c9bf9d7da5f3c134812e5cac03a55b9e66e8b24f9f052",
+          "size": 640
+        }
+      ]
+    },
+    {
+      "name": "cordos",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/cordos/SKILL.md",
+          "sha256": "61f581a48c607cb725eff0810fc66e85753caf7a53c4086fb7a7ab05c5d638fc",
+          "size": 13749
+        },
+        {
+          "path": "skills/cordos/agents/openai.yaml",
+          "sha256": "ef478f97a8cb9b5cd06edbdff5438812c81437f6c2def79ddb3b07b18292037a",
+          "size": 332
+        }
+      ]
+    },
+    {
+      "name": "daily-notes-processor",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/daily-notes-processor/SKILL.md",
+          "sha256": "ac7ab566090fa63d34f514248abdd34c5ab270cdaccfe4fd8bcee086cd710670",
+          "size": 424
+        }
+      ]
+    },
+    {
+      "name": "deepresearch",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/deepresearch/SKILL.md",
+          "sha256": "54b08e9a21de1e118959d6ef2fecfeafb6e28f8a65127943629e633a962b4831",
+          "size": 103946
+        }
+      ]
+    },
+    {
+      "name": "demand-supply-match-intelligence",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/demand-supply-match-intelligence/SKILL.md",
+          "sha256": "c54b041086511b4054c53754c13e165e34946c1a12d616f6286b61c24cabc3e0",
+          "size": 24639
+        }
+      ]
+    },
+    {
+      "name": "expert-article-writer",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/expert-article-writer/SKILL.md",
+          "sha256": "76177f77f910cd25ad02f1980491632fd2242af41db67f783032d4f4a4740ed2",
+          "size": 4345
+        }
+      ]
+    },
+    {
+      "name": "fix-rules",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/fix-rules/SKILL.md",
+          "sha256": "fc0e5557955c86692e77ed4c531ee0cc261780a09ec0992f06c49c99f1a6aec4",
+          "size": 16376
+        },
+        {
+          "path": "skills/fix-rules/agents/openai.yaml",
+          "sha256": "84a7e0a20ba4757b339786a6fdc77e179b2f3439a3ca881e729fe8a4705af715",
+          "size": 219
+        }
+      ]
+    },
+    {
+      "name": "graph-analysis",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/graph-analysis/SKILL.md",
+          "sha256": "199af18e9f5b479c96be4ac7de9f78ee089ebb29f10862b7cc122c9b89750c62",
+          "size": 11377
+        },
+        {
+          "path": "skills/graph-analysis/agents/openai.yaml",
+          "sha256": "fad1dd0a68e67686782a4ef6702e3dd43d338094c17803be16f4140e5d4234e1",
+          "size": 322
+        },
+        {
+          "path": "skills/graph-analysis/references/architecture.md",
+          "sha256": "2df4b1c61b31a517428e0a8300ee6f411007ba7ade4f8c6f8cd1f39a9b22dc13",
+          "size": 4152
+        },
+        {
+          "path": "skills/graph-analysis/references/smart-questions.md",
+          "sha256": "badedd4a23ab1bc245fb51236762430f87530be57b21f9b08f764983cf043359",
+          "size": 2516
+        },
+        {
+          "path": "skills/graph-analysis/scripts/graph_inspector.py",
+          "sha256": "ad5cd0b6629be7ad28418e9e700b5b52e9a11f52abb6a10fa202c0035b40a575",
+          "size": 34552
+        }
+      ]
+    },
+    {
+      "name": "graphify",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/graphify/.graphify_version",
+          "sha256": "e7bd032db34f2291ae7c611443cbc9e300dc4a3a5d2460074b661ef2da18fd1f",
+          "size": 6
+        },
+        {
+          "path": "skills/graphify/SKILL.md",
+          "sha256": "a26760fa8a40a270b377b828878df49ee399a3f1fd2311c38435ed0acf8c0acf",
+          "size": 32898
+        },
+        {
+          "path": "skills/graphify/references/add-watch.md",
+          "sha256": "ec787daaf6ec535e0f6aaef5d8b58de6aabcd1c491909b98fdc9ee0c88160300",
+          "size": 2457
+        },
+        {
+          "path": "skills/graphify/references/exports.md",
+          "sha256": "f648e8b3e14105b180f6251a7ffbc4dd1e50734ccdb887d80faa6fe58c64b7e2",
+          "size": 3073
+        },
+        {
+          "path": "skills/graphify/references/extraction-spec.md",
+          "sha256": "1b6b6f22b298cd66975975105b8e723631d002595b91ee657c4bff5da2241428",
+          "size": 4099
+        },
+        {
+          "path": "skills/graphify/references/github-and-merge.md",
+          "sha256": "e5ebd90c7686f50363ff7a535556bc2f596d4c47ec1e6c8b95e11e36a0dfea2b",
+          "size": 2177
+        },
+        {
+          "path": "skills/graphify/references/hooks.md",
+          "sha256": "b9a4e9f66813c6fc720589f1071d1a03c95756ab7101447e14e57291fe7844e5",
+          "size": 1267
+        },
+        {
+          "path": "skills/graphify/references/query.md",
+          "sha256": "04c60762b9398e707329073dc0ea78dedd33e12a39fcd5fbd07f0f963a9b677c",
+          "size": 9076
+        },
+        {
+          "path": "skills/graphify/references/transcribe.md",
+          "sha256": "6b81f8dcff4d11aa69859dfda473a03b144a9b1fe63303f927b061e70d167439",
+          "size": 2652
+        },
+        {
+          "path": "skills/graphify/references/update.md",
+          "sha256": "ad5753f179a50ba3c57105024a3f62411abadbd771463835f25bc83adfffdc73",
+          "size": 7518
+        }
+      ]
+    },
+    {
+      "name": "heptabase-cli",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/heptabase-cli/SKILL.md",
+          "sha256": "ea98f14ae02ae427717df5f877259304fa90901217cba848f4d9918b1441d23b",
+          "size": 3657
+        }
+      ]
+    },
+    {
+      "name": "hypothesis-map-builder",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/hypothesis-map-builder/SKILL.md",
+          "sha256": "8d38bfb903af952362d4103958965d9bd20e3c6e54800d8411bfa2b9bbd41ccf",
+          "size": 12090
+        }
+      ]
+    },
+    {
+      "name": "ii-channel-cover",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/ii-channel-cover/SKILL.md",
+          "sha256": "c3c7497f5346f6dc1988fbe3fd0ff162abcdd985294c41ca8c0bf9bb9e18080c",
+          "size": 12609
+        },
+        {
+          "path": "skills/ii-channel-cover/build.py",
+          "sha256": "78bf63913e2076f003ae17892653a8791a144142456341edccc3137dfefe1105",
+          "size": 26461
+        },
+        {
+          "path": "skills/ii-channel-cover/build_carousel.py",
+          "sha256": "6a472d1f792a12fa2c3607bbfb842c93e650b28b1d51b48cc24a9a83b344f153",
+          "size": 22563
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/01_cover.png",
+          "sha256": "6f4991b33b0538748851e4e1398940d0992e8c6d8e20685e742acd9d701424d1",
+          "size": 82456
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/02_formula.png",
+          "sha256": "77f6d388e2119fba13e75055cc8345eff7a17464bc79d51848f9b2b10d2d7ce3",
+          "size": 44172
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/03_flow.png",
+          "sha256": "9e592597562d7ee1d4460e1a680f0682f06af3bc4ff62f086f7c4358c7f6c724",
+          "size": 49709
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/04_listing_objects.png",
+          "sha256": "05666e787f98a1b5ada6412e8131715f7d3345b174243afa15303fdd6cd407e3",
+          "size": 65142
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/05_listing_ops.png",
+          "sha256": "c49382510bd41e5de3a42b7240eb0ca77fb991dad69746f66a214d3d4e83fcc6",
+          "size": 58221
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/06_listing_quality.png",
+          "sha256": "7c46c452c1323340ef0f7efcc1fb8de0aa0ed4eb24f368818c20d1da8f5b80b2",
+          "size": 53674
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/07_quote_system.png",
+          "sha256": "a73600237573de671af41790ecdb509d02d655cef294d370d22d73175d0ef5a2",
+          "size": 48671
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/08_diagram.png",
+          "sha256": "efc959c55e125315cb689a588511c26c64fc5246c6844be49fb588f5916b63a5",
+          "size": 43345
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/carousel/09_finale.png",
+          "sha256": "6ec019588d048c63859de165eed1500091d93f7870411f8433dc7d2370596ed3",
+          "size": 48260
+        },
+        {
+          "path": "skills/ii-channel-cover/examples/test_tg.png",
+          "sha256": "f7b71e3c307b3961d775c9730a73206b464caa4716d83576390c3d767b00c821",
+          "size": 38249
+        },
+        {
+          "path": "skills/ii-channel-cover/fonts/PlayfairDisplay.ttf",
+          "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+          "size": 300724
+        },
+        {
+          "path": "skills/ii-channel-cover/glossary_poster/index.html",
+          "sha256": "1bf778c831cbfd0719ae94efba7c22a82417c06b9acb5d8a1e1dbc772187c9bd",
+          "size": 25891
+        },
+        {
+          "path": "skills/ii-channel-cover/glossary_poster/output/poster.png",
+          "sha256": "53ffab78d4cba8f1b4954f95f829db8bab7a2f096ad23f8fe20d57b1a4a8cde5",
+          "size": 250453
+        },
+        {
+          "path": "skills/ii-channel-cover/glossary_poster/output/poster_2x.png",
+          "sha256": "8e9d8c4e5349567be6bd9395d66cf2fff82983a6a959b686ef02dee9f4c2539d",
+          "size": 606638
+        },
+        {
+          "path": "skills/ii-channel-cover/glossary_poster/output/tunnelirovanie_2x.png",
+          "sha256": "6a75571e8b29b3a7c02924c98da02eb040ebbe5a88cf6750864e0b1d7f4a58bb",
+          "size": 580182
+        },
+        {
+          "path": "skills/ii-channel-cover/glossary_poster/tunnelirovanie.html",
+          "sha256": "d51fae76622bdf8a2c7f345f129301f9fe584a098916104c164b17eff1c516b3",
+          "size": 18389
+        }
+      ]
+    },
+    {
+      "name": "ii-editorial-slide",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/ii-editorial-slide/SKILL.md",
+          "sha256": "933fec911335e2f9cce184736b1fb2da8889df764b03214ed7d00d64aef88565",
+          "size": 12156
+        },
+        {
+          "path": "skills/ii-editorial-slide/assets/tunnel_higgsfield.png",
+          "sha256": "3eaefe06b746c195cbfec22c462e1323fd1c56945da53e101aac655c15997043",
+          "size": 1834166
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/01_grid_blocks.png",
+          "sha256": "fd78ccac1d6005457a23569891083202bea5659c987ff5bacf023d171e412d83",
+          "size": 1585236
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/02_concrete_stairs_red.png",
+          "sha256": "530b66a27cbf46ee3968258d3fd90b03c6a809c9ee306a9aa9632429a4c03050",
+          "size": 3751563
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/03_red_glow.png",
+          "sha256": "cedfda2515a4e6636e1faed910dff9971c39131818abbd37c42ea55dc4e1208a",
+          "size": 2463446
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/04_editorial_marks.png",
+          "sha256": "5d460102028436591bd5d35c7b8412c0bf2faab2d81e479017d94d61d42e9c6d",
+          "size": 1233953
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/05_corner_grids.png",
+          "sha256": "e6104c737c147eee603d4e0cc94b97553ac3e7882df345af990cd18f9421c16e",
+          "size": 1595185
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/06_concrete_steps_sun.png",
+          "sha256": "66982b05f6d90afe281835d74f33097d2a6f2226f0cd7f5fc93de88c41643b88",
+          "size": 2906599
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/07_red_bar_right.png",
+          "sha256": "67d2bae1f65825de94cfb340c49d385715a28fc2004a66f4bca3f675ca6b48a0",
+          "size": 2003017
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/08_thin_lines_right.png",
+          "sha256": "c6a7e8cbb3e76e1c8e6a6ea40374d595ae075949d730b124a9dd8980d2f7aee6",
+          "size": 1597660
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/09_grid_corner_glow.png",
+          "sha256": "2b126a1cc24bcc8f89507a75d50e3ec7cc2eb897a13e4ecf12946822032e8505",
+          "size": 2588279
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/10_radar_red.png",
+          "sha256": "45782b6bcac2e2fc0653cb870566e473a2c5d0b16c907d1674a6d4daf3151856",
+          "size": 2730493
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/README.md",
+          "sha256": "404cfeda1769fe43782996fcecf1fab217187ad113af10ebb6e2fd62381b943f",
+          "size": 2203
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/backgrounds.md",
+          "sha256": "505afed117141aa843fd324b1d299c3c7fdfcafd16f56850129b948bc54c5ae5",
+          "size": 6097
+        },
+        {
+          "path": "skills/ii-editorial-slide/examples/06_tunnelirovanie.png",
+          "sha256": "370fd8cb6c6bd6aa721cdb91dc245bf73cae9418e55990208aeb9781626ab029",
+          "size": 603856
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie.html",
+          "sha256": "ce893dab7128a0bfb5e8f511bf6d16c2338834185b503daa7e68f8aa57071363",
+          "size": 17519
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie.png",
+          "sha256": "370fd8cb6c6bd6aa721cdb91dc245bf73cae9418e55990208aeb9781626ab029",
+          "size": 603856
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v2.html",
+          "sha256": "4e779f117ba0f0edc1277c2a0fd40369c5cac58aa086462c4bff4d37eece504b",
+          "size": 15863
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v2.png",
+          "sha256": "8a45b2010bc5fcb5f5a9ad3cedf2e97b818e4ae64ec7a0e1cef8f187cd74b950",
+          "size": 1934670
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v3.html",
+          "sha256": "abd5cd29bcb466a1239563032a626a3c2b002bd1b249edb60614bac7df411232",
+          "size": 17527
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v3.png",
+          "sha256": "9f84a63cbdda9fdcf2559dca8569164283aeaf1049ba8d779944a67269b1c167",
+          "size": 2730016
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka.html",
+          "sha256": "f437e1050b32ab3bf69f932dc3d52bafb8caa898a27d1928080b368796bb25fc",
+          "size": 14527
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka.png",
+          "sha256": "7dc40613c0477714bc90cab1ff2afae9fe497fa759201f405eb37b26be971cf1",
+          "size": 614333
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka_v3.html",
+          "sha256": "108e14ae7ce647c48d3fc6278d5e879a7e661e112b56382f631954ab47a297c0",
+          "size": 13190
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka_v3.png",
+          "sha256": "2667d2e8951ef0e6302d6132221e73e41dbb41282b6dcc7460d906ba24e4a3eb",
+          "size": 2462474
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/09_skill_kak_kod_v3.html",
+          "sha256": "dec00ebc9a2010afdd25fad0a2638880885580f5be2a4efd2e52b88080af4cec",
+          "size": 15274
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/09_skill_kak_kod_v3.png",
+          "sha256": "5e735a8611bebb310c0d05d1c2de07865b1f81e383fd628d325e7da505d0d9b0",
+          "size": 1184215
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/10_relsa_kontenta_v3.html",
+          "sha256": "5e7b0a11308084d1da6888c13a04635454c23165f5a00657f6ad0cf29cb443ac",
+          "size": 15677
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/10_relsa_kontenta_v3.png",
+          "sha256": "f41b1f7420ab9f9fb4cbe56893dd2df2303ba02865b5449dc4ea12a177a640bc",
+          "size": 3886633
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/12_prohodchiki_v1.html",
+          "sha256": "b53fdf4825c1b439e6f2d60743bf61414d03842165c4254c6e91acb8dca75a39",
+          "size": 10131
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/12_prohodchiki_v1.png",
+          "sha256": "d14b078f088826b67c5b891941744a4f3cf744f9fb5440df9ea06bb6cfd2500e",
+          "size": 1278100
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/13_oshibatsya_pravilno_v3.html",
+          "sha256": "16a1ae1789018fe071cee1844bf2706b73251cc8f180a7e94ced4dc5427c4480",
+          "size": 18349
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/13_oshibatsya_pravilno_v3.png",
+          "sha256": "47da6aaf1e0053174c47e7b11cc0e248320561701f5e7e9ed71bd3fe4b7ba481",
+          "size": 2453410
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/14_starshiy_trud_v3.html",
+          "sha256": "7647c755c33a2beb8604e811f713389e47087b820fb0c8f879edd927a95cea5c",
+          "size": 16484
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/14_starshiy_trud_v3.png",
+          "sha256": "2916d003bc0253652ec3e2d2359d8d9766645bdbcbf4754ac143fbf63e608b67",
+          "size": 1804362
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/15_put_zadachi_v3.html",
+          "sha256": "9edc8854af76c3f195795da17084ddaab0aaa749f0ce8c12316e56ac83903964",
+          "size": 19860
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/15_put_zadachi_v3.png",
+          "sha256": "acff130a9c96e53dbf395fb2b536c0ed81bfd5898710e746a908cc5a8fada7a4",
+          "size": 1398979
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/16_hotim_ii_v3.html",
+          "sha256": "06fd0154077aa042f56e4a62bab43f4a977433da227f05830b65f9fe634cdc3b",
+          "size": 14144
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/16_hotim_ii_v3.png",
+          "sha256": "c6632a6983c4c5b0875037388cf5f457b0845d738987306429cb249e6a90a156",
+          "size": 1525004
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/16_pipeline_ot_ili_v1.html",
+          "sha256": "781dd5d8b345b296ebef5915deac95a7fe23cff6c2a8e2ba1a3648f31b2924fd",
+          "size": 16581
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/16_pipeline_ot_ili_v1.png",
+          "sha256": "dd515105c5369e7a48be29cd1ee75d3718d4ec38ee9da870e6fa5e9f7d8b0f94",
+          "size": 1438066
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/17_processy_pod_ii_v1.html",
+          "sha256": "af62c197991b353cef6594a5ea36e1978eb4f32737f9e5be054fe4735db43fda",
+          "size": 19703
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/17_processy_pod_ii_v1.png",
+          "sha256": "85b0660f3d1a2dfadb36529915450b9be0e3a1c9a08915cec4ee85d1479ce487",
+          "size": 1221989
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/18_skafolding_v1.html",
+          "sha256": "25c2280fb190d3830cb7a77da1e6401b491609c5775eca7016faacb2fe9b16e2",
+          "size": 14714
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/18_skafolding_v1.png",
+          "sha256": "2028536f0cf4d96840b08ebd75a5971117798471be5b51ef0572e87ea7749bfc",
+          "size": 1260040
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/19_koordtrenie_v1.html",
+          "sha256": "964149b09cb756ed03c721bde5e5c60797b22bd1f4c76453483b33b0e54a4fdd",
+          "size": 15384
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/19_koordtrenie_v1.png",
+          "sha256": "8fd111645c17e2de05ed1ef0d6770c41be58f0408dfacfd1168c52c727ef25b7",
+          "size": 1829668
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/20_qa_agent_v1.html",
+          "sha256": "32711bada32bfca6677483a022fec02233e5982ebe65d8233443bd118c623f13",
+          "size": 13237
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/20_qa_agent_v1.png",
+          "sha256": "59bb6ec213c8c46f75fb6245f6f1c6e04624bc9d0500669a27155aeb25f1add6",
+          "size": 1867951
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/21_8_zadach_v1.html",
+          "sha256": "44634c0f1120fc503c4d8edfd43cd94d81185bcfb95b07e96cf33ce8e47b4036",
+          "size": 13959
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/21_8_zadach_v1.png",
+          "sha256": "31286eb6103d7b9b56e50200d5b194ef346a3654db83534b672df59de7a865b7",
+          "size": 427470
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/21_8_zadach_v2.html",
+          "sha256": "97787ef32ce256acf5b2e8142c7bb5ab03c4a8632a730aa44abb79bbc72276f8",
+          "size": 13402
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/21_8_zadach_v2.png",
+          "sha256": "a09fe9c5e117e69b6cfa6dc03b74471f8ff98d9cca77d70d8c5afa765b03d12e",
+          "size": 355121
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/21_posle_intensiva_v1.html",
+          "sha256": "ebff1df7808f0aaa4080012107e43fad4a082c70a5dc924fc920507a13e79364",
+          "size": 10339
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/21_posle_intensiva_v1.png",
+          "sha256": "1ef164b9e74df2a8a53ba5aec5b1334ac234d70324236e6c840182277a0cf85f",
+          "size": 2016838
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/22_iz_chego_mashina_v1.html",
+          "sha256": "82294025ecd76faa9cd84ac49970a90dbb62265e2791a2ab3d7ea7af1f0cf5d3",
+          "size": 12001
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/22_iz_chego_mashina_v1.png",
+          "sha256": "a771ae350fe991ac2d3eabf8815d4863ae1d443ca9a69d6de7d58e1218dfa338",
+          "size": 433561
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/23_obratnaya_svyaz_v1.html",
+          "sha256": "7607410774e3ec3f642e3001742366331757879a763ca2854d01194cee851c56",
+          "size": 12899
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/23_obratnaya_svyaz_v1.png",
+          "sha256": "b9429a18940a0fa1d21dc21b1d165dd4bec9c8b119022538b1f47b00c7bfa727",
+          "size": 1261965
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/24_kuda_stavit_ii_v1.html",
+          "sha256": "6fd5c8078f2e0c21a1e4fb66108582aa41bd94b4d48c57d9d99291fbcbaec428",
+          "size": 13810
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/24_kuda_stavit_ii_v1.png",
+          "sha256": "4c089bfe62cde892d50aa2cd88a89a5711b5e8c7be750b8568ab0863cd0dddab",
+          "size": 1249187
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/25_marshrutizaciya_vnimaniya_v1.html",
+          "sha256": "7182bb3fd862d5affd6f1d1e23a683475285017246d82aa2aac7e4d124b9b839",
+          "size": 14814
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/25_marshrutizaciya_vnimaniya_v1.png",
+          "sha256": "f3182012971e898173c88037a4448677b3fef212148b7753410dd696a671ba1c",
+          "size": 2251150
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/26_prinuditelnoe_zamedlenie_v1.html",
+          "sha256": "4a7c9402c053bc9f90a171d11ac00aad27e7c6ea98736992c11bf8c5dbbd8556",
+          "size": 12895
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/26_prinuditelnoe_zamedlenie_v1.png",
+          "sha256": "376fa9cd9ac29497e30562757247d2faa4273b0ee0c69cd914ddea06c2252f1f",
+          "size": 1290144
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/27_ozero_metafayly_v1.html",
+          "sha256": "445c48feca93046355c1dc06cc6af744dc853d9daa808db6c5202ffac883399e",
+          "size": 11570
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/27_ozero_metafayly_v1.png",
+          "sha256": "14c0898272ae3077c6d6cf37e0f6df843037c73630c30bf9afde30f832dc839e",
+          "size": 1359508
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/28_pdca_v1.html",
+          "sha256": "b7ad508a593b42e3099f364e0851e08b1fc133ba6cc0a2874e1d0349376df6ea",
+          "size": 13190
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/28_pdca_v1.png",
+          "sha256": "5195b6f248d5db0b0645513933374fbbcc8aaafd46e3bd38ad53b85478bcd273",
+          "size": 1334433
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/49_ekspertnye_prodazhi_v1.html",
+          "sha256": "72eca88c1cfbdd688f09e527c00f8049b02e0b85e84f9772e5134e8368e81a4d",
+          "size": 12692
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/49_ekspertnye_prodazhi_v1.png",
+          "sha256": "f14ec07fe7115e94038727a550bb38d5ab7ad2cf52627e5af5bfc0fea4392bc0",
+          "size": 1304040
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/bpm11_00_dve_optiki_v1.html",
+          "sha256": "ba43fd87bfb1f62d916fbc7249e7f45e4863d5f7df01c746fd2f982c97b5bf78",
+          "size": 9523
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/bpm11_00_dve_optiki_v1.png",
+          "sha256": "5b73df0388d458a64657091c354424039cafa98eb21f7cc9fd9aaf5283d0a98a",
+          "size": 1269430
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/cfo_struktura_v1.html",
+          "sha256": "4510aaa6eeddc13a31577a0ae5b8d3e952944665e0429eb9ac533a7ca8bb97ad",
+          "size": 17698
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/cfo_struktura_v1.png",
+          "sha256": "87ce8ab7604f1256fb5fadf67296f72ea38ce7d0ff959ac6fa8a86941a586796",
+          "size": 428434
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/cfo_struktura_v2.html",
+          "sha256": "632229015969aca32c4235e1a9b428c9903f4f1945b6b0930b272790a6e902fb",
+          "size": 17516
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/cfo_struktura_v2.png",
+          "sha256": "c3d76d1fee48779a52e06e3808aadfc61dc78c2f7ae00004735628238bef64e7",
+          "size": 399676
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/collect_vidy_v1.html",
+          "sha256": "0e643db3b53677f7598416f4a21efd8444ae9f58261ff5458b619e81a6748bb3",
+          "size": 8223
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/collect_vidy_v1.png",
+          "sha256": "6fcb26fa11c682757dd8170bbad1f80a03b49b32ca9e6f2ba8c6a879b2c0a976",
+          "size": 2799451
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/hero_komponenty_inzhiniring.html",
+          "sha256": "37b5ed891926aad5564f3bd5915390af9ecf7818c5fafad76d0368ca4940c6d8",
+          "size": 4371
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/hero_komponenty_inzhiniring.png",
+          "sha256": "b38b281e9d39434c1b8cfcd4b71b7bf32474f14fe2e4cb590e45d661bc3cde6c",
+          "size": 268781
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_balahnin_v1.html",
+          "sha256": "aaa163d1fb7632a53698c6c4debb63e98a12d629dba83104c52283bc7cd06715",
+          "size": 7997
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_balahnin_v1.png",
+          "sha256": "26ab8b51c5002c0dfd7fabe8b5da5baf813424095f40813712a8afd183e04950",
+          "size": 371385
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_v1.html",
+          "sha256": "e1504ec0c4881e3ba3dd18cade1c5de11b32cc64eea53422ecd10b0f235b81d6",
+          "size": 8457
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_v1.png",
+          "sha256": "0fb81c4ae2b1c79fa87fbe419fe6dbf38e5870d675f71296f11c5e25583ad61c",
+          "size": 3068538
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v1.html",
+          "sha256": "baa77d45fc3cb204a8e8709e0153694e20256caa4b1eb4973d222870ae6665d4",
+          "size": 10551
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v1.png",
+          "sha256": "3d71fcc120a1deabe0ccaa95b9aead32487958427bfcfe89ccaa3e6eb5bfc166",
+          "size": 1545689
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v2.html",
+          "sha256": "65c4594925ff430ac69d445aaa8f7d60bf45f279b686a7955f20294ca2181861",
+          "size": 11307
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v2.png",
+          "sha256": "5abda883dfac535fb4bdaf916011dc2d0f592e30de010ee22bdfd42505bd1621",
+          "size": 1648054
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v3.html",
+          "sha256": "c1fc96f9e403d965d809f498d16cec0f801fd3c06b64be701aa225f332268451",
+          "size": 9094
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v3.png",
+          "sha256": "d3cf570fb5c68560542e79fac66c415dd75498dde8bbdd1fe99e7c106225ddb9",
+          "size": 2611427
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/plan_sloi_v1.html",
+          "sha256": "6844cec9e14277f522a20b65f6d80fc1e84e8d30da74065236eb787bc8c45ed8",
+          "size": 8888
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/plan_sloi_v1.png",
+          "sha256": "b2beea55ae4a956849f777c206595a101de88e39d68425eb3f3852b90015ed6d",
+          "size": 2691785
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/radar_pozicionirovaniya_v1.html",
+          "sha256": "43a8c1e12f0e2908652bdd289b1ee103fac22cd6bf6049aab90db42773637730",
+          "size": 8681
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/radar_pozicionirovaniya_v1.png",
+          "sha256": "4fddce0a174f9c5793a48e9ed2574589ba7120b106c29711605c61b6b2326526",
+          "size": 472018
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_balahnin.html",
+          "sha256": "bbf58c8d08f6cccb0dbfceb49c8fc68cb6ce4faae345b964c9497f177c4c765a",
+          "size": 8333
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_balahnin.png",
+          "sha256": "2f98a2f132ef58122eb215207af9437cc4e3f1823037cdbaff9f34b4560e98e7",
+          "size": 455225
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_full_balahnin.html",
+          "sha256": "7357eceba9f4824e254a9332976926b9c1d000df401025538cb7b1b4458524c8",
+          "size": 11439
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_full_balahnin.png",
+          "sha256": "fdb605af1d9d4d2005236aae0b5155dc4830bb48b5c7a26102d8610b851eb21c",
+          "size": 540892
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v10_balahnin.html",
+          "sha256": "d6d0c71606c78057e6f1e44915708c7625b43f1daff8ce15a3399f688d3ffab7",
+          "size": 10541
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v10_balahnin.png",
+          "sha256": "883ced4bb986ab3cf61281a163762a9e546797b0f418ad29e4003f769aeb9218",
+          "size": 469300
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v11_balahnin.html",
+          "sha256": "804c4bde9ed92dd0c1efcf5ee87d8ce8031ac707b752051f63a8be75dcec3898",
+          "size": 7628
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v11_balahnin.png",
+          "sha256": "c8426cd7d00fdccdc1ee3f6a64f0d285970bdf1c2bf1bcda266cd560c231ff12",
+          "size": 364994
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v12_balahnin.html",
+          "sha256": "83eadb000b2e43cc752e9b3b12773e870a2bc2b124dc488ed6924a4d67d329e3",
+          "size": 7623
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v12_balahnin.png",
+          "sha256": "82a8728ae817faee283fdadce01fe47ce0ca7394ac30814b4732a4375a45fe8b",
+          "size": 365563
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v3_balahnin.html",
+          "sha256": "cc02bbe187a7ebbe89f817b42c55d5f86fba7b398817aaedc9a52b8dea468515",
+          "size": 12328
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v3_balahnin.png",
+          "sha256": "f0a19a7506f88ac332288c6142d0688a218cc1103a4e3f241b87a2b16fccc923",
+          "size": 531212
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v4_balahnin.html",
+          "sha256": "4737cd252de1d2e48c216bf886f2ff83fbf9df243be271f2e818cf2faa98ba6b",
+          "size": 10433
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v4_balahnin.png",
+          "sha256": "e01098bedfa652143af324b6e42fb430c201172a0e3e80e8815485f335067870",
+          "size": 483035
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v5_balahnin.html",
+          "sha256": "144cd4bcae4e12676d16e52ef9a668fb80f6399289ec48d2579163a06f022433",
+          "size": 10433
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v5_balahnin.png",
+          "sha256": "0b22fa1e40248c22411ae95f0d579ba7db0aa2fd4740efe7f47784ed16de740c",
+          "size": 474150
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v6_balahnin.html",
+          "sha256": "a9da49b6c088541f7795baf575457add47792927f90297ecfb72e56efa81ab62",
+          "size": 10433
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v6_balahnin.png",
+          "sha256": "356792eeadbc04affc1e9a5d08fa22212aa65be6749e4cdfa1d30009d4745095",
+          "size": 426098
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v7_balahnin.html",
+          "sha256": "5b0a9089294c75a7c31ebd4f5193fc96d586faad1be1a95e139bb6db58e046b1",
+          "size": 10433
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v7_balahnin.png",
+          "sha256": "90ce05c3a75316d198a2fd26a84f706a55286f1b063a07e84c03ceced73b4f87",
+          "size": 469084
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v8_balahnin.html",
+          "sha256": "88404be9d19063bbbecc7ad653d4316f0884d07a030b683960a8e6eec1bb1813",
+          "size": 10507
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v8_balahnin.png",
+          "sha256": "90ce05c3a75316d198a2fd26a84f706a55286f1b063a07e84c03ceced73b4f87",
+          "size": 469084
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v9_balahnin.html",
+          "sha256": "f507ea70aa37b6d1731e7f73ec5361ac9abcdff368883fa43bed7f0c087e557a",
+          "size": 10545
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/strat_sessia_v9_balahnin.png",
+          "sha256": "cf47ef7dba551742f523d38fe935993120527cd17c4e7c8a0eca6a5a521fc01e",
+          "size": 471134
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/v2_granica_inzh.html",
+          "sha256": "0ec1b419148a24883a71a349a879c5a4ca63844ee14fc44c1fa694b242b2edf3",
+          "size": 4281
+        },
+        {
+          "path": "skills/ii-editorial-slide/posts/v2_granica_inzh.png",
+          "sha256": "aa54ce8ccb4d617af543b3b958029753fead79763fd1b4156d1ee164441bcebd",
+          "size": 316857
+        },
+        {
+          "path": "skills/ii-editorial-slide/render.py",
+          "sha256": "26640beacae9a61563256c14a83e40e35cbc77347a4790058a1be2f330af7301",
+          "size": 2579
+        },
+        {
+          "path": "skills/ii-editorial-slide/template.html",
+          "sha256": "892e34e53693ea9076eeab54d2bfc5c41c975b8dba6a11c1bc110ea84508aa69",
+          "size": 17588
+        }
+      ]
+    },
+    {
+      "name": "ingest",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/ingest/SKILL.md",
+          "sha256": "5753473ee94743490afa7b8de71b861355e3ecc815bd59036684ca06d76c05d3",
+          "size": 51418
+        }
+      ]
+    },
+    {
+      "name": "interview-brief-by-analogs",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/interview-brief-by-analogs/SKILL.md",
+          "sha256": "8b60bd2f0e24411bd9882d150863051fae4a09188782b0dc289e24b85540a7bb",
+          "size": 14104
+        },
+        {
+          "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
+          "sha256": "2c9ffe8074fc829ad25905e49ad92b71e2164d000a2ec615c9a60921fbec24b7",
+          "size": 276
+        }
+      ]
+    },
+    {
+      "name": "km",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/km/SKILL.md",
+          "sha256": "96b4f04d3b6e1ff6d1b98386f5575b2a84c3ee4972ff26e6b4d01aa2246fc665",
+          "size": 364
+        }
+      ]
+    },
+    {
+      "name": "leverage-builder",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/leverage-builder/SKILL.md",
+          "sha256": "2a2af1c9e41a32f4d5431cf9171f28a951667e244af6018330b21368f61db9d6",
+          "size": 15232
+        },
+        {
+          "path": "skills/leverage-builder/agents/openai.yaml",
+          "sha256": "063e6f8a0df5886d0d48ef1adf88c765c38d95bfa8a4535401faf2a19dbc66c6",
+          "size": 327
+        }
+      ]
+    },
+    {
+      "name": "looper-skill-builder",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/looper-skill-builder/SKILL.md",
+          "sha256": "a6ac35ef3d42d1888f209108bc70a722b0c43cedbf9f7ce7915a7b32ad9765b9",
+          "size": 20100
+        },
+        {
+          "path": "skills/looper-skill-builder/agents/openai.yaml",
+          "sha256": "d1eabb46dfb01eec7ec8012bb217db0cea65488883e761fca50282c3dd0becba",
+          "size": 442
+        },
+        {
+          "path": "skills/looper-skill-builder/references/evals.md",
+          "sha256": "45a37574c08ff925e9c77b4b310efe6f3ffe4adefd2a287ea767b8829bb75a16",
+          "size": 5458
+        },
+        {
+          "path": "skills/looper-skill-builder/references/family-contract.md",
+          "sha256": "5511da50cea2814d6e923567629a50615ae959960b6cc6892ea6b94f48e9e55b",
+          "size": 4430
+        }
+      ]
+    },
+    {
+      "name": "medical-clinic-economics-semantic-layer",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/medical-clinic-economics-semantic-layer/SKILL.md",
+          "sha256": "5cbe920d0f97af75c1f561de8b4ed368db753f798d35ba8bda57fc647d9078eb",
+          "size": 2163
+        },
+        {
+          "path": "skills/medical-clinic-economics-semantic-layer/references/evidence.md",
+          "sha256": "af5c9e4ada95d842bcc8160b506e5b34dc21eabafdf74b954fff5df543774bf2",
+          "size": 4406
+        },
+        {
+          "path": "skills/medical-clinic-economics-semantic-layer/references/semantic-layer.md",
+          "sha256": "90decb0afe279179d4f41a30e49035ca404c10d494932a51b166af84ad04c299",
+          "size": 16021
+        },
+        {
+          "path": "skills/medical-clinic-economics-semantic-layer/references/source-inventory.md",
+          "sha256": "dbe9a7c331e0955596c6d9de61bd357d395fb4aa9ba85af73521bc5ee79cde60",
+          "size": 3987
+        }
+      ]
+    },
+    {
+      "name": "meditate",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/meditate/SKILL.md",
+          "sha256": "fa7b04dd1b66b97ea43d7550ba36a8c56412876e81aa30bb1fc558a85c02dea3",
+          "size": 5958
+        },
+        {
+          "path": "skills/meditate/agents/openai.yaml",
+          "sha256": "bf2925c903188bf0dcad33880c8a0d561b89720f0864cf53f51104a6c5271718",
+          "size": 256
+        }
+      ]
+    },
+    {
+      "name": "meeting-report",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/meeting-report/SKILL.md",
+          "sha256": "1fa97261ae6740658831c58d115e45f517b0ff6057b6be4d6d99a735726e0e55",
+          "size": 364
+        }
+      ]
+    },
+    {
+      "name": "multi-perspective-review",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/multi-perspective-review/SKILL.md",
+          "sha256": "fcf0893a13a8165433aba149667a730e351d59e5bf89748f3edbfc3b57c3b750",
+          "size": 13233
+        }
+      ]
+    },
+    {
+      "name": "notion-vault-sync",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/notion-vault-sync/SKILL.md",
+          "sha256": "34cac00e74e6668d0c5716d4b6c2badbb6cd59e5b3223ac90ab422a43d52864a",
+          "size": 708
+        }
+      ]
+    },
+    {
+      "name": "partners-ingest",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/partners-ingest/SKILL.md",
+          "sha256": "2febdb9423e4c1b9d529f95bc5f2017c2fe4ea30c6a5bfc6eb1941b4a9839fc4",
+          "size": 8431
+        }
+      ]
+    },
+    {
+      "name": "pp-case-writer",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-case-writer/SKILL.md",
+          "sha256": "9a925f30f286e90b1edb22d156b19b7ed0c57d4d61b02d216c204eac9d913cee",
+          "size": 11881
+        }
+      ]
+    },
+    {
+      "name": "pp-interview-slides",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-interview-slides/SKILL.md",
+          "sha256": "61b5bc0e88677ab138eb034c8015580d2c4122b7f7fedb351fb858cc2efbb18a",
+          "size": 26677
+        }
+      ]
+    },
+    {
+      "name": "pp-longread-announce",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-longread-announce/SKILL.md",
+          "sha256": "75a7589f60f100e4d6c21c8a52d6bf46de0f1bd210d9d7d1061033f6be97205e",
+          "size": 3066
+        }
+      ]
+    },
+    {
+      "name": "pp-longread-leverage",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-longread-leverage/SKILL.md",
+          "sha256": "362ecd88e425be10db12371956c62e66ae8092a5a08aa528c37eb2c3763c7e82",
+          "size": 3676
+        }
+      ]
+    },
+    {
+      "name": "pp-marketing-overlay",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-marketing-overlay/SKILL.md",
+          "sha256": "8b5d3fcf2b739d1f5d5cd2ebc650ae20f93086b1cb22dcb428a8b835bd0bb8f0",
+          "size": 16047
+        }
+      ]
+    },
+    {
+      "name": "pp-print-a4",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-print-a4/SKILL.md",
+          "sha256": "29e9b79bd88a554c4ed5a9dd967be31e03c7d2ddf1f74875a9dc1a1de92aaafd",
+          "size": 13614
+        },
+        {
+          "path": "skills/pp-print-a4/assets/caddy-block.txt",
+          "sha256": "cfe286e376726153220e9de99dc249e25468f8a4f3a79649e6f6167ff74eb9d9",
+          "size": 1328
+        },
+        {
+          "path": "skills/pp-print-a4/assets/print-blueprint.css",
+          "sha256": "1339fcf8f0f6c8d105df21fbd4e0686407cefe2c67023cbeb82eaeed61f7eb6d",
+          "size": 5898
+        },
+        {
+          "path": "skills/pp-print-a4/assets/print-generic.css",
+          "sha256": "66ea1029bb9091d95311c98e41ecc92cf93f53d2b7285017957f2b5ad0c6f4f9",
+          "size": 4799
+        },
+        {
+          "path": "skills/pp-print-a4/assets/template-blueprint.html",
+          "sha256": "8f1c82b0f4a2ea3faf0856ca494e8f911e4eb4c9e2fc53c1c8d388504ee68330",
+          "size": 19530
+        },
+        {
+          "path": "skills/pp-print-a4/scripts/make_pdf.sh",
+          "sha256": "28ae3f525a010656a4497ba1521a2b5332dc145de988444b7a9098b038b941ec",
+          "size": 3265
+        }
+      ]
+    },
+    {
+      "name": "pp-slidument",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-slidument/SKILL.md",
+          "sha256": "9894e618a8bd9eaef7f186a572b8b72f67760f3573905de8c42e20f5b654f0a6",
+          "size": 54243
+        },
+        {
+          "path": "skills/pp-slidument/agents/pp-slide-critic.md",
+          "sha256": "e760d1012217a71f3571717090e3e737412c56181ce2760096abf53f5385bc8f",
+          "size": 15407
+        },
+        {
+          "path": "skills/pp-slidument/agents/pp-text-critic.md",
+          "sha256": "074821c7cbe6f0ec983322beaf20aaf258ad74a52c36adcf1452a21e352617e6",
+          "size": 20442
+        },
+        {
+          "path": "skills/pp-slidument/references/CLAUDE_INSTRUCTION.md",
+          "sha256": "0c3bff8737c859d9a65e3a0166b7808e81b1f427b561cd77ed48042beb260346",
+          "size": 7695
+        },
+        {
+          "path": "skills/pp-slidument/references/deck-content-template.md",
+          "sha256": "1b8b5b607acb32ebddcf93e2e22b455967ccb4463783ec2e4c40e7693a0fc834",
+          "size": 4254
+        },
+        {
+          "path": "skills/pp-slidument/references/kit-2026-07-12-README.md",
+          "sha256": "0a572123f4a305e9ed4c28a8981e69caafb2b182b4e24a60f631265414962bc5",
+          "size": 8048
+        },
+        {
+          "path": "skills/pp-slidument/references/kit-2026-07-12-pptx-builder-rule.md",
+          "sha256": "94a65b39ef9f20c8f4ba6b1029bc04881228c5d071a12f53dc28e49f6098c072",
+          "size": 5149
+        },
+        {
+          "path": "skills/pp-slidument/references/kit-CHANGELOG.md",
+          "sha256": "3ecddb6cb729b259911d144734d37bfd30e00891dc8bb0140ca9f4b019544514",
+          "size": 2560
+        },
+        {
+          "path": "skills/pp-slidument/references/pp_pptx_builder_rule.md",
+          "sha256": "0d8dd8ad0e5660432c6b6d3985adb0e75c7b256dffcff3ef95921048a54477d3",
+          "size": 5454
+        },
+        {
+          "path": "skills/pp-slidument/references/reference.md",
+          "sha256": "6ad415b7aff7047a5334ab89a410a92a2a24f90339a07701b9d80338a67741a2",
+          "size": 16161
+        },
+        {
+          "path": "skills/pp-slidument/references/slide_types.md",
+          "sha256": "96a1c699b655333a2d5b0e25fd84a3c33b97c410bfbafdb00494942034c2630c",
+          "size": 29694
+        },
+        {
+          "path": "skills/pp-slidument/references/usage_guide.md",
+          "sha256": "932b7b7d111ce66f41389371aa8a96c583834685d655fe882d5f84f9140c453a",
+          "size": 16371
+        },
+        {
+          "path": "skills/pp-slidument/references/visual-style-guide.md",
+          "sha256": "39c5a8e43d3affe74d870f3195576970adaa8c4d2813c45680dd2f3549abc02f",
+          "size": 4050
+        }
+      ]
+    },
+    {
+      "name": "pp-survey-dashboard",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-survey-dashboard/SKILL.md",
+          "sha256": "9b102633923a087c7680fd9ebb6c5c9466caab4c505644148c723b276e5e21ce",
+          "size": 20315
+        }
+      ]
+    },
+    {
+      "name": "pp-survey-slides",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/pp-survey-slides/SKILL.md",
+          "sha256": "6c77036d66fa2eb348c68cb6610a5d2ddccb7915527ba7942b158dd918f7adef",
+          "size": 48298
+        }
+      ]
+    },
+    {
+      "name": "presentation-qa",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/presentation-qa/SKILL.md",
+          "sha256": "77585671e0fa289278d8d640724372ed67a6129b993db16a5d7dac1049433575",
+          "size": 58075
+        },
+        {
+          "path": "skills/presentation-qa/agents/openai.yaml",
+          "sha256": "8114736d320165597d7fc241ce004076964b48c97f2eb04fee844d946fea6288",
+          "size": 343
+        }
+      ]
+    },
+    {
+      "name": "product-growth-hypothesis-superpro",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/product-growth-hypothesis-superpro/SKILL.md",
+          "sha256": "75fa7cdc8205e35ad6e1671f09fec04cb8a94eeedfe3b740480808af10f00caf",
+          "size": 4193
+        }
+      ]
+    },
+    {
+      "name": "rail",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/rail/SKILL.md",
+          "sha256": "8afc8233fd62258a947b4011246c772766d281d787001576da1cf8fa0a0c0563",
+          "size": 191361
+        }
+      ]
+    },
+    {
+      "name": "research-agent",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/research-agent/SKILL.md",
+          "sha256": "771d24cbe8c4f677be4963fce467dd5a74a4e434de57e3dafa49ca4fd9b24223",
+          "size": 926
+        }
+      ]
+    },
+    {
+      "name": "rsvp",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/rsvp/SKILL.md",
+          "sha256": "52bcc2d40bd0bbadd2dd1626f5a4fb122cd94124ce3c1731a012fc5aa0df066a",
+          "size": 7571
+        },
+        {
+          "path": "skills/rsvp/agents/openai.yaml",
+          "sha256": "21900842649493e0b7df9976ae7bf9a313fd77be289c03f349e6674bc361c3bc",
+          "size": 276
+        }
+      ]
+    },
+    {
+      "name": "sales-pst-test-writer",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/sales-pst-test-writer/SKILL.md",
+          "sha256": "53200a4a0ce3f7e0209cea2747a047674cfe5b0b54aa75dfd2fdf879cce8d839",
+          "size": 10330
+        },
+        {
+          "path": "skills/sales-pst-test-writer/agents/openai.yaml",
+          "sha256": "21e0f23ea81d7cc9caf535a36039c8e1a05d0efad011f4f3021a59716e15c355",
+          "size": 369
+        },
+        {
+          "path": "skills/sales-pst-test-writer/references/intake-questionnaire.md",
+          "sha256": "3e7f56c6e2428ab9220c14e3181c9a569918bfb1eaeeae3b91665945af4e2a8f",
+          "size": 6947
+        },
+        {
+          "path": "skills/sales-pst-test-writer/references/output-template.md",
+          "sha256": "d50549ecfaf4c8e723824fc17c2c5f482536ac1a59d048ea86f8a52b3fa6ba95",
+          "size": 4590
+        },
+        {
+          "path": "skills/sales-pst-test-writer/references/sample-industrial-b2b-pst.md",
+          "sha256": "0096ac566ba1b0cde59640ff8b46580eafea6f4f27844f08b73f0d55049e1c92",
+          "size": 5697
+        },
+        {
+          "path": "skills/sales-pst-test-writer/references/scoring-rubric.md",
+          "sha256": "a6e0c4d8c46a62345d261f3b45a74074c4c3d6e5ba29d6233690c3f2b8af530f",
+          "size": 3513
+        }
+      ]
+    },
+    {
+      "name": "sector-service-matrix-builder",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/sector-service-matrix-builder/SKILL.md",
+          "sha256": "6a98f7694a1db2872d21f6cb9147d1c438ac39e5c45c68312bed8f08bb371abd",
+          "size": 24738
+        },
+        {
+          "path": "skills/sector-service-matrix-builder/references/matrix-template.md",
+          "sha256": "9986f4080676f53e116da24ddf50e30366ae2420932e5a7244beb5302e14bfde",
+          "size": 6203
+        }
+      ]
+    },
+    {
+      "name": "session-handoff",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/session-handoff/SKILL.md",
+          "sha256": "ec46aa6f0000d2fcd7cab1866169a4676dee6d04defad8033ad28335a0b3d9c9",
+          "size": 1418
+        }
+      ]
+    },
+    {
+      "name": "skill-eval-harness",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/skill-eval-harness/SKILL.md",
+          "sha256": "bdeda0b3969c0bdba2448d196542ec9dea97f77714c8c7df2eab69733980ae6c",
+          "size": 11603
+        }
+      ]
+    },
+    {
+      "name": "skill-system-governance",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/skill-system-governance/SKILL.md",
+          "sha256": "697e3d37ccbaf614d06543d3ab66f2f8459e7bd087c74f575dcc3fcbda947b95",
+          "size": 11074
+        }
+      ]
+    },
+    {
+      "name": "summary",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/summary/SKILL.md",
+          "sha256": "c6563ac42d30c168dc7b6fae985e36f83082fc2e0773b7aac7e7f57947ca81e6",
+          "size": 7802
+        },
+        {
+          "path": "skills/summary/agents/openai.yaml",
+          "sha256": "53b896dafaf8abe765bc0f02b099d5866b974cc2ce808fdc69f465e96ee7b0d1",
+          "size": 265
+        }
+      ]
+    },
+    {
+      "name": "text-deai-editor",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/text-deai-editor/SKILL.md",
+          "sha256": "f087dca3acfaf5d47d9ece54a3a2a4f3765c2196b83acda55a5d7bf2f86b5a37",
+          "size": 153252
+        },
+        {
+          "path": "skills/text-deai-editor/references/de-ii-standart.md",
+          "sha256": "b6fbffba144edd45da8fb63b984d207ba0310078e4e7789ef3a98701f62e5c71",
+          "size": 8747
+        },
+        {
+          "path": "skills/text-deai-editor/references/details.md",
+          "sha256": "7eeadcf56277ab52979c1263a5c27d4053e7a3d1512866fbbb49144d540a09e0",
+          "size": 8909
+        },
+        {
+          "path": "skills/text-deai-editor/references/eval-cases.md",
+          "sha256": "66f40a001126911ad46d296fdb2179e3d89304d1c632626d9c5f5b650b60abdb",
+          "size": 163522
+        },
+        {
+          "path": "skills/text-deai-editor/references/format-vyvoda.md",
+          "sha256": "977efb1aff0d9d50588433c386554eb4084a52c423dc177bf128e1f048fa4da6",
+          "size": 7113
+        },
+        {
+          "path": "skills/text-deai-editor/references/ilya-style-canon.md",
+          "sha256": "3c7aaa0ba2c2de7196ae5221d9df75e67587fff954ddce5fa04c4291241fa329",
+          "size": 281128
+        }
+      ]
+    },
+    {
+      "name": "three-perspective-review",
+      "lifecycle": "legacy",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/three-perspective-review/SKILL.md",
+          "sha256": "5ee9f7d657fc32f7c1a6ab3def36638ab3967370cc75371b4faf1293b1b60792",
+          "size": 998
+        }
+      ]
+    },
+    {
+      "name": "trails-generator",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/trails-generator/SKILL.md",
+          "sha256": "b5c750f8138dbcc54af253d0e02d480e38583b8be1da035903de4cab422bfc7d",
+          "size": 1322
+        }
+      ]
+    },
+    {
+      "name": "tunnel",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/tunnel/SKILL.md",
+          "sha256": "e8b86c21cf5686462c4364f90e57f89be969bbccb5d6c9266e7e45526e1b6b3a",
+          "size": 16657
+        },
+        {
+          "path": "skills/tunnel/agents/openai.yaml",
+          "sha256": "76eb1b7e2368b0691cf5a29760e9dc9397ad889f7203a94c55b76130f0e4bded",
+          "size": 311
+        }
+      ]
+    },
+    {
+      "name": "vault-brain-scan",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/vault-brain-scan/SKILL.md",
+          "sha256": "b6bec527031a82297716beb2b9d2149190a6aab282573c11c4f5a2240192da3e",
+          "size": 458
+        }
+      ]
+    },
+    {
+      "name": "vault-note-enricher",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/vault-note-enricher/SKILL.md",
+          "sha256": "6e6a4cce86c3e07e0ec18820e5c3df379f0c9bf7ec1bb4789bda926c9b37312e",
+          "size": 1229
+        }
+      ]
+    },
+    {
+      "name": "whitepaper-proposal-generator",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/whitepaper-proposal-generator/SKILL.md",
+          "sha256": "6e2e2c63e5fd37427900bb2e62ee988b83340e48125c31adba7fee84d3cc6658",
+          "size": 15708
+        },
+        {
+          "path": "skills/whitepaper-proposal-generator/agents/openai.yaml",
+          "sha256": "c9d3fb2f3c8af11494a57d5462506e551903094c911119603cc1153fc7e5c138",
+          "size": 296
+        },
+        {
+          "path": "skills/whitepaper-proposal-generator/references/archive-proof-stories.md",
+          "sha256": "9c42c38327d77b61e7dfb28c6d9c8220540dec40774486a2df4897621950002d",
+          "size": 4612
+        },
+        {
+          "path": "skills/whitepaper-proposal-generator/references/subject-routing.md",
+          "sha256": "7427f522f21a7e811000fd394625f0b9f41b57d6fcdab046d6170d997248779c",
+          "size": 7376
+        },
+        {
+          "path": "skills/whitepaper-proposal-generator/references/whitepaper-gamma-narrative.md",
+          "sha256": "67f8f2ee120c71687dfdeeea258b7d2c7bad528b2e3cd7e7773bcaaecc242ac0",
+          "size": 6065
+        }
+      ]
+    }
+  ],
+  "validation_errors": [],
+  "validation_warnings": [
+    {
+      "skill": "autoresearch",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "client-intel-agent",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "client-project-onboarding",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "concept-deep-dive",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "daily-notes-processor",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "hypothesis-map-builder",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "km",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "meeting-report",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "notion-vault-sync",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "research-agent",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "session-handoff",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "three-perspective-review",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "trails-generator",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "vault-brain-scan",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    },
+    {
+      "skill": "vault-note-enricher",
+      "issues": [
+        "missing YAML frontmatter",
+        "missing frontmatter name",
+        "missing frontmatter description"
+      ]
+    }
+  ]
+}

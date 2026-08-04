@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fix Rules"
+  short_description: "Audit project drift from current rules"
+  default_prompt: "Use $fix-rules to audit this project for drift from the current rules and propose targeted fixes."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Graph Analysis"
+  short_description: "Inspect, validate, and develop Vault Graphify graphs"
+  default_prompt: "Inspect the current Graphify graph, identify project God nodes, cross-project hubs, weak nodes, bridge candidates, duplicate candidates, and answer graph-first before reading files."

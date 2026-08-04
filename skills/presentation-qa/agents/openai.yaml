@@ -1,0 +1,4 @@
+interface:
+  display_name: "QAY of Presentation"
+  short_description: "QA gate for strategic slide decks."
+  default_prompt: "Review this presentation as an iterative QA judge: score source fidelity, storyline integrity, MECE, content sufficiency, claim calibration, client readiness, regressions, risky claims, lost facts, and next actions."

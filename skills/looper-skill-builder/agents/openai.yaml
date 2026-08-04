@@ -1,0 +1,4 @@
+interface:
+  display_name: "Материнский луперизатор"
+  short_description: "Ведёт BPV-бриф с approved-decision lineage и порождает детские луперы"
+  default_prompt: "Use $looper-skill-builder to guide me through the canonical BPV brief, verify BPM/SI/slide/approved-decision lineage and reverse BPV links, and create an experimental child looper only if the crystallization gate passes."

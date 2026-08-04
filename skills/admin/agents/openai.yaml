@@ -1,0 +1,4 @@
+interface:
+  display_name: "Admin"
+  short_description: "Проверяет админ-рельсу проекта 4-ки"
+  default_prompt: "Запусти admin по проекту: проверь админ-шкалу, хранилище, карту чатов, FullKit-админ готовность, ежедневные статусы, блокеры и верни admin_rail_review_card."

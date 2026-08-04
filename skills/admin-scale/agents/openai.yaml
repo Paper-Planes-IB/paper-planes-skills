@@ -1,0 +1,3 @@
+display_name: "Admin Scale"
+short_description: "Structure initiatives through the logic of the administrative scale."
+default_prompt: "Create or update an administrative scale for this initiative."

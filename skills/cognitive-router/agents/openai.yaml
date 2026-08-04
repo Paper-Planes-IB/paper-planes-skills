@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cognitive Router"
+  short_description: "Route mixed requests into the right operation"
+  default_prompt: "Use $cognitive-router to classify this request, choose the next allowed move, and avoid premature writes."

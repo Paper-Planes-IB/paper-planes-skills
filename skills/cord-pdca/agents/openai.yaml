@@ -1,0 +1,4 @@
+interface:
+  display_name: "CORD-PDCA"
+  short_description: "Run a closed double-loop management cycle around a project, track, product, goal, knowledge object, or decision loop: align it to strategy, gather bounded inputs, route them through the right contours, define the real control object, check against plan, review reality, and improve either the plan or the management technology."
+  default_prompt: "Run CORD-PDCA on the current object: resolve the control object, build the plan frame, collect bounded inputs, organize the landings, define the management delta, check against plan, review reality, and say what must change next."

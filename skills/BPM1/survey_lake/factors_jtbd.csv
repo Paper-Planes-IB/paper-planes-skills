@@ -1,0 +1,324 @@
+﻿item_id,survey_id,category,factor_or_cluster,jtbd_hypothesis,evidence,confidence,reuse_scope
+fj_0d1ec2069aa4,tally_w5k75d,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_65298b3ec925,tally_w5k75d,auto/mobility,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_87904454fd36,tally_3Ex5xX,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_7f9605908acb,tally_mZ6Rp0,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_6c7a1b3949d8,tally_mZ6Rp0,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_96b94e170258,tally_mZ6Rp0,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_a23768084df6,tally_mO05EK,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_18b6d4448385,tally_mYWglz,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_cff0870c9289,tally_mYWglz,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_e5484755fb50,tally_wdAOjN,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_468f9f759d3b,tally_wdAOjN,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_419aa44ba6f6,tally_mKLDog,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_f4c12f63b85c,tally_mKLDog,home/electronics,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_36efb3e7580e,tally_mKLDog,home/electronics,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_e60013ab082b,tally_wg9kZl,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c94870e54a2b,tally_wg9kZl,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_2297f074c091,tally_wg9kZl,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_a26a7890cc85,tally_mRPA74,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_468b1b2b5dcb,tally_mRPA74,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_93065fea4c60,tally_mRPA74,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_cc7438ab5271,tally_wvPDzA,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_bc400a41c0c7,tally_wM5zyg,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_8e17b1db89e3,tally_3yy174,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_b595b256561d,tally_wzZb98,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_7fab876a9dc3,tally_wzZb98,home/electronics,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_43a29d61be02,tally_3NXzGp,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_5145c9525fbc,tally_3NXzGp,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_8baba1ecf16c,tally_3NXzGp,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_53feadbbb958,tally_3E0QYq,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_b226f19fa61d,tally_3y2jV8,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_b6b147ae6d3b,tally_3y2jV8,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_a5c6b0139522,tally_3y2jV8,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_3fb163b18705,tally_3XWL74,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_5c193e3ba73e,tally_3XWL74,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_7c4892119ffb,tally_me60Nl,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_a055435baa59,tally_w2Go1L,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_3fd97a308154,tally_w2Go1L,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_530e858d0b3b,tally_31dpWg,loyalty,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_cda9ad0227c8,tally_3xMKXJ,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_6d3809b648b4,tally_3xMKXJ,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_1e088ff782c8,tally_wgoNMD,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_0daa73db8d30,tally_wgoNMD,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_938f89d8ca72,tally_w46pbO,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_bf405ec49572,tally_w46pbO,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_d20990a273e7,tally_w46pbO,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_9813fcc6918d,tally_nrxkLp,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_bbd2061105ca,tally_nrxkLp,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_9291a88728e2,tally_mOXMkY,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_dd58d5694866,tally_mOXMkY,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_accb7bd2caa9,tally_mOXMkY,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_b74675654bdc,tally_nrOG9R,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_10a04199add3,tally_w2Q0b9,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_aa6877b23a96,tally_w2Q0b9,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_557162163e2a,tally_w2Q0b9,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_9c046f7608a2,tally_3EdEXq,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,MEDIUM,B2C Choice
+fj_60a38a5ca19c,tally_3EdEXq,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_5b801ed88282,tally_w4jl05,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_bbf7925faaf3,tally_w4jl05,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_c2ab2ebe8120,tally_meaMNl,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_5c3957c3cb9f,tally_meaMNl,event/conference,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Event Conference
+fj_6c12492241a1,tally_meaMNl,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_4285bd7dc5dd,tally_3j1bra,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_24d6bd13e82e,tally_3j1bra,home/electronics,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_050f0eb56fc6,tally_mYZDvN,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_f8282ba566f4,tally_mYZDvN,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_096b52b4c629,tally_3XDlbe,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_1f897e408db2,tally_3XDlbe,event/conference,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Event Conference
+fj_2bd8c7b2d4dd,tally_3XDlbe,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_90d28cca6f8e,tally_nP6Jkx,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_b90681933d66,tally_nP6Jkx,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_b9e5d4d7d99b,tally_wADybN,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_f36a9466b27c,tally_wkYYpR,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_bd35b98f8cbc,tally_wkYYpR,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_bf56c1f6f93c,tally_31egdp,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_27eb4739174a,tally_31egdp,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_50072d4170c6,tally_31egdp,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_5dd840a171f0,tally_3ENlQo,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_b5988c9940e7,tally_3ENlQo,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_1b4f47d526e5,tally_mBBxqQ,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_70f1f5e5fdf3,tally_mBBxqQ,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_d19ba96a0827,tally_3XVBRO,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_30add554bbc5,tally_3XVBRO,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_a43d1e14c926,tally_3XVBRO,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_343ed5721f28,tally_mJ0A4r,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c6b2d1d441ab,tally_3Ele0q,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_b179b6d2d6fa,tally_3Ele0q,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_1893fb853249,tally_3Ele0q,fitness/wellness,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_c33f5e18843c,tally_w4rGld,unknown,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,MEDIUM,B2C Choice
+fj_6530acc00b93,tally_mY0xx0,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_ed3ac2b16354,tally_mY0xx0,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_1e6c0a624916,tally_3j7rV9,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_3e2362c4c024,tally_3j7rV9,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_96dcfab60ebc,tally_n9o2V4,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_2b3e9b8fdc42,tally_mOP1vk,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_9487346a9e5d,tally_mOP1vk,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_0f58f905b42c,tally_xXdNZJ,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c6ff3ddfed0c,tally_xXdNZJ,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_1ab8a0c13951,tally_xXdNZJ,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_a021671f97ef,tally_w7KMxA,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_adb7ed664359,tally_mV81Wj,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_5866d1256890,tally_mV81Wj,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_adf69471a743,tally_wQYN7k,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_045cb6f128e9,tally_wQYN7k,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_df4156474a30,tally_wQYN7k,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_c6f60874d383,tally_w72OQ0,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_f1475022ef9f,tally_w72OQ0,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_797172662ad4,tally_w72OQ0,fitness/wellness,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_f66158b397bc,tally_nrVLRL,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_687d7cf57db8,tally_nrVLRL,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_0f764c6eb7cb,tally_nrVLRL,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_864491cfa5ae,tally_w2xJ1V,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c491e428f3d7,tally_w2xJ1V,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_80576e026a9a,tally_w2xJ1V,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_cfac52d9d64c,tally_nrorkp,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_390f505023ed,tally_nrorkp,event/conference,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Event Conference
+fj_377011928646,tally_nrorkp,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_b7f628ec40e9,tally_wd7Ojy,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_9001d93ab238,tally_wd7Ojy,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_7057a0129634,tally_wd7Ojy,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_16a0bed70d73,tally_311M4Q,construction/materials,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2B2C
+fj_d299c6cbd583,tally_311M4Q,construction/materials,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2B2C
+fj_5d77048ead7e,tally_311M4Q,construction/materials,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2B2C
+fj_986e29ab50dd,tally_EkPbkr,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_e29508a514d0,tally_EkPbkr,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_de30bfeecfe7,tally_3Xq28g,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_84d682abb5b8,tally_3Xq28g,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_c8b851652c5a,tally_wMajBk,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_4c472680f52f,tally_wMajBk,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_b39d0e827057,tally_wMajBk,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_7ec380c993e1,tally_wQ0kPl,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_3638dc880d54,tally_wQ0kPl,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_30bb36610047,tally_mBdjeR,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_26620babd091,tally_mO0Gxg,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_270d8d2f3acc,tally_mVbAdJ,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_0b56283d999d,tally_mVbAdJ,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_83137879f8e4,tally_mR5L8p,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_9ffbf1704370,tally_mR5L8p,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_ac4ee9e4ddbe,tally_GxKD0e,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_8700c1ca54b3,tally_GxKD0e,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_e10e0a361ed3,tally_GxKD0e,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_0183fc7bd58e,tally_Zj8dZ5,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_75bc8c8c837d,tally_Zj8dZ5,home/electronics,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_5c181c93a93a,tally_w2k0VA,education,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_e10e070b7668,tally_w2k0VA,education,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_62d2220da187,tally_w2k0VA,education,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_2b0cd15bbb18,tally_n9o71Y,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c3f97c43d57c,tally_n9o71Y,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_21ab8ea4a148,tally_3XKa5d,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2B2C
+fj_9cf714e34cd5,tally_3XKa5d,auto/mobility,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2B2C
+fj_2adcf107e8af,tally_wvP1zl,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_f6da157e13cc,tally_wvP1zl,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_b638207899e4,tally_w4rkpO,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_124ebd8cae2f,tally_w4rkpO,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_46d8dec9b8e9,tally_w4PRBA,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_d1e6cceeb729,tally_w4p4er,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_dbd7baeb838b,tally_w4p4er,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_c4a16812c3c5,tally_w2x8WM,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_de61f4d59a10,tally_w2x8WM,event/conference,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Event Conference
+fj_a1036c7f8b51,tally_w2x8WM,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_ddf73296693f,tally_mJ0X24,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_a32d1d19d8c7,tally_mJ0X24,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_66b8a71e90b1,tally_w2MeOg,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_eb64f32e675d,tally_w2MeOg,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_98da1f3641a3,tally_w2MeOg,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_1a7bebbd21c4,tally_wveKg8,loyalty,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_f0b96dad0450,tally_nPzgVe,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_35d9acb73e27,tally_nPzgVe,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_23d78b902b58,tally_lbBK7W,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_fd2ec21dd9c0,tally_lbBK7W,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_43718e02bb9d,tally_lbBK7W,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_63844c70b302,tally_nG9bOz,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_49fc0f207396,tally_nG9bOz,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Internal Employee
+fj_1d12b4fdf6fe,tally_mO0odR,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_5f18bab9d075,tally_mO0odR,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_2f6fd19a7d92,tally_mJzgbo,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_d2834676256b,tally_mDkWEq,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_9850e930dd89,tally_mDkWEq,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_fec586f8b71a,tally_mDkWEq,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_579608418f33,tally_w7DzMR,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_94702cdb0ffe,tally_w7DzMR,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_5a551beef883,tally_wQAZpG,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_1cbe03209a5e,tally_wQAZpG,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_85700e71bad0,tally_w4KYOk,loyalty,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_b467bb657f1f,tally_woREgN,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_b53ac66cf6f4,tally_woREgN,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_525a2b46dd51,tally_woREgN,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_12250dec414c,tally_meaGo0,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_744051efcd7e,tally_meaGo0,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_d991c09a6734,tally_w2a66e,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_784565a97af1,tally_w2a66e,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_f02e92ffc501,tally_w2a66e,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_0dab65f3a4b4,tally_wkExVM,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_e52fe2aed1ef,tally_3NlZZ0,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_caab1644d796,tally_3NlZZ0,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_d512388ba150,tally_3NlZZ0,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_f7314785da14,tally_wQeQQY,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_1533a10b5500,tally_wQeQQY,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_64eb80c02db7,tally_wQeQQY,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_7fd09258293c,tally_31dDqg,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c0eab83ffad7,tally_31dDqg,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_673f1dc22622,tally_31dDqg,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_166602bd4807,tally_nWvWrQ,construction/materials,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2B2C
+fj_1f7cbeeeb6ac,tally_m6d4Qk,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_66bb47698783,tally_m6d4Qk,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_89c03e716e86,tally_mJOVB7,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_8635a3890b71,tally_mJOVB7,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_91630cea43dc,tally_nGNppz,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_6af9154706db,tally_nGNppz,auto/mobility,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_94bd4cb718bc,tally_wkRWzd,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_d9eb01b3c14f,tally_wkRWzd,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_0f68ad06e769,tally_wkRWzd,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_333c969a2f8b,tally_mYGqV5,loyalty,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_e01c8558ad6d,tally_n9lko4,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_56b169cbb934,tally_n9lko4,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_35e783ccde13,tally_3jlB04,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_ec5e9140f358,tally_3jlB04,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_f3f73c06a582,tally_3jlB04,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_e733578c6831,tally_nP2XDV,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_c20af0d0b57d,tally_nP2XDV,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_a5e56cbaa778,tally_nP2XDV,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_b1486869adbe,tally_mV5Kd6,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_e993bd1f96ad,tally_mV5Kd6,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_583dd973a60d,tally_mV5Kd6,fitness/wellness,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_75bc2c49ec99,tally_3ENl5X,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_7428bfa47345,tally_3ENl5X,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_113d811cb57c,tally_0QEjbP,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_7a30e230cf6f,tally_0QEjbP,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_6c4e760d75bf,tally_mVza4g,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_c6213ef3525d,tally_mVza4g,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_690591d79b9f,tally_nW0P8P,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_1a7f2fb91dde,tally_nW0P8P,home/electronics,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_c5539d6df729,tally_3yd4MB,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_1e49ffd62b5f,tally_3yd4MB,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_b855a1c13fbf,tally_wQ0ZOk,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_aad36a2f0586,tally_wQ0ZOk,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_3b8729a924a2,tally_wbWM6L,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_321fdac546bd,tally_wbWM6L,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_110d96ec245c,tally_mKL0gX,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_3b9c9e3aaac3,tally_3y4KB6,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_6901e8e66e3c,tally_3y4KB6,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_814aea6a269c,tally_wQ5W2Y,fitness/wellness,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_95df6d293689,tally_wQ5W2Y,fitness/wellness,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_c7388cacf925,tally_wQ5W2Y,fitness/wellness,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_fe3e16d97658,tally_wgGpyK,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_27380a67eb56,tally_w4N6dB,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_81867a2a1fb8,tally_3yYaQB,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_67b16fcd2629,tally_3yYaQB,event/conference,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Event Conference
+fj_396124013f47,tally_3yYaQB,event/conference,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Event Conference
+fj_dfaedf888a21,tally_kdNXoM,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_722c34d80c08,tally_kdNXoM,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_bfcd0f282c4d,tally_kdNXoM,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_52fead6765da,tally_meagPx,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_b85531e56290,tally_meagPx,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_c728bf3c4331,tally_3xQAzv,education,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_5f500d44dc35,tally_3xQAzv,education,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_bd8413a7955e,tally_3xQAzv,education,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_14e662f9a70a,tally_Y5jV7N,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_7790fac666c2,tally_Y5jV7N,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_9a7ec15c2d93,tally_Y5jV7N,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_751f6a3b4c73,tally_woMYJO,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_e651f34e67ed,tally_n0epJ0,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_5a4074243c2b,tally_n0epJ0,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_6c8b98f622fb,tally_mKaxzA,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_9b5edaeb95ec,tally_mKaxzA,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_9f48a2d104d0,tally_3xaZ9G,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_1f76c2167d86,tally_3xaZ9G,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_b775c8c40680,tally_wvANe4,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_e659b096c7e3,tally_mRZVav,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_69604f56d742,tally_mRZVav,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_a1634be9070a,tally_mRZVav,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_a83342863b5d,tally_w4xjPb,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_410bfd4b1a8b,tally_w4xjPb,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_5fd03b607faf,tally_3XX5yY,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_2e04cbeab142,tally_3XX5yY,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_537d562624d0,tally_nW8rgv,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_ac748a3386b5,tally_nW8rgv,home/electronics,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_d355af4c22ca,tally_3E0NJB,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_cb6c287ef18f,tally_3E0NJB,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_39915f029ba6,tally_w7Z6L0,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_8f70fb4c21d5,tally_mZEBBV,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_f1669b4ef185,tally_mZEBBV,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_14b9c3c4f31b,tally_mZEBBV,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_1fa45b928e63,tally_wMr1qY,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_e595721cafac,tally_wMr1qY,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_5c419e27f21b,tally_wMr1qY,food/FMCG,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_74494930dc51,tally_nP9Zrb,event/conference,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Event Conference
+fj_83798972a5ac,tally_nP9Zrb,event/conference,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Event Conference
+fj_bbe09db0cb97,tally_3xYE7y,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_06c4516cd500,tally_3xYE7y,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,EVP Employer
+fj_2a1ea124c827,tally_3qPrkk,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_a66d366cb8a3,tally_3qPrkk,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_de42b5aa00b8,tally_woRNPx,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_07a2961ded03,tally_wz1Mq8,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_69c02ef3b571,tally_wz1Mq8,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_53989f51a221,tally_wQevPY,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_eded0fd7e4d4,tally_wQevPY,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_c30cec4abf66,tally_wQevPY,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_11f1133fa67c,tally_woK8BO,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_a3dc7dca6efe,tally_woK8BO,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_d1100ef30899,tally_woK8BO,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,Internal Employee
+fj_fce09c31f549,tally_wQz4O8,auto/mobility,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_2bde7529e86e,tally_wbkYL0,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_3fc4b3f543e6,tally_OD1lpY,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_6ce6bddd2e63,tally_OD1lpY,home/electronics,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_c2b6f33b5fdc,tally_meEbOE,home/electronics,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_894e31863fa1,tally_meEbOE,home/electronics,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_3bb76ebf021f,tally_wa5jO2,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_32f43bf4caf3,tally_wa5jO2,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_d0e29531d0b9,tally_wa5jO2,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_368c9e8a594e,tally_mO02bp,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,EVP Employer
+fj_3ddf59220bcf,tally_mO02bp,HR/EVP,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,EVP Employer
+fj_def91a870d4d,tally_Gx6XJo,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_f8ace4e38d81,tally_Gx6XJo,healthcare,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_7d0ac506c748,tally_Gx6XJo,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_0a41bb0e8dc2,tally_np0yq1,healthcare,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_06a7b5b82ae1,tally_np0yq1,healthcare,barrier candidate,"Barrier answers can split non-users, switchers, and low-conversion segments.",barrier question family present,MEDIUM,B2C Choice
+fj_c5cfa11743b5,tally_mJWlq4,finance,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_62588917fe30,tally_mJWlq4,finance,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_6d51695f1893,tally_3xeqkr,food/FMCG,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,B2C Choice
+fj_072fe3403e8a,tally_3xeqkr,food/FMCG,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,B2C Choice
+fj_b11bcd2fca41,tally_mBxlA1,HR/EVP,choice-factor matrix candidate,Can generate factor hierarchy and k-means/JTBD if matrix labels are verified.,factor question family present,LOW,Internal Employee
+fj_a0e1f7544ddb,tally_mBxlA1,HR/EVP,scenario/JTBD candidate,Use scenarios/occasions as JTBD bridge before naming clusters.,scenario question family present,MEDIUM,Internal Employee
+fj_2753ec39eee7,survey_ba7340497413,food/FMCG,direct meat/sausage category benchmark candidate,"Non-client meat-product survey can seed prior for sausage manufacturer: awareness/consideration, category purchase, and purchase channel need field validation.","Мясной Гурман non-client Anketolog survey; includes recent purchase, boiled sausage, and firm-store channel signals.",LOW,B2C Choice / meat products / sausage

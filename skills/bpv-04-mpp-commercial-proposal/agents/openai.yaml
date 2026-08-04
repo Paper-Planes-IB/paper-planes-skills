@@ -1,0 +1,4 @@
+interface:
+  display_name: "BPV-03.7 MPP Sales Support"
+  short_description: "Build BPV-03.7 sales-support materials with BPV-04.4 adjacency"
+  default_prompt: "Собери BPV-03.7 МПП support pack; BPV-04.4 оставь смежным процессом КП/ТКП"
