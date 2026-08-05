@@ -10,6 +10,7 @@ git pull --ff-only origin main
 python3 scripts/sync_from_ilya_drive.py
 python3 scripts/build_registry.py
 python3 scripts/validate_registry.py
+python3 scripts/link_active_skills.py --repo "$REPO"
 
 if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
   echo "$(date '+%F %T') изменений нет" >> "$LOG_DIR/sync.log"
