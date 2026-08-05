@@ -17,6 +17,11 @@ def main() -> int:
     parser.add_argument("--include-legacy", action="store_true")
     parser.add_argument("--strict", action="store_true")
     parser.add_argument("--adopt-identical", action="store_true")
+    parser.add_argument(
+        "--allow-conflicts-file",
+        type=Path,
+        default=Path.home() / ".config" / "paper-planes" / "allowed-skill-overrides.txt",
+    )
     args = parser.parse_args()
 
     repo = args.repo.expanduser().resolve()
@@ -28,6 +33,14 @@ def main() -> int:
     unchanged = []
     conflicts = []
     adopted = []
+    allowed_overrides = []
+    allowed_names = set()
+    if args.allow_conflicts_file.expanduser().exists():
+        allowed_names = {
+            line.strip()
+            for line in args.allow_conflicts_file.expanduser().read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        }
     backup_root = args.codex_home.expanduser() / "skills-backup" / dt.datetime.now().strftime("%Y%m%d_%H%M%S")
 
     def directories_match(left: Path, right: Path) -> bool:
@@ -59,6 +72,9 @@ def main() -> int:
                 target.symlink_to(source, target_is_directory=True)
                 adopted.append(name)
                 continue
+            if name in allowed_names:
+                allowed_overrides.append(name)
+                continue
             conflicts.append({"skill": name, "reason": "папка уже существует", "target": str(target)})
             continue
         target.symlink_to(source, target_is_directory=True)
@@ -76,6 +92,7 @@ def main() -> int:
         "already_linked": len(unchanged),
         "adopted_identical": len(adopted),
         "backup": str(backup_root) if adopted else None,
+        "preserved_overrides": sorted(allowed_overrides, key=str.casefold),
         "conflicts": conflicts,
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))
