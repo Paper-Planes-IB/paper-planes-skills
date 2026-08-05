@@ -15,6 +15,7 @@ gh repo view Paper-Planes-IB/paper-planes-skills >/dev/null
 
 mkdir -p "$CONFIG_DIR" "$STATE_DIR" "${HOME}/Library/LaunchAgents"
 python3 "$REPO/scripts/link_active_skills.py" --repo "$REPO" --adopt-identical || true
+python3 "$REPO/scripts/install_skill_routing_memory.py" --repo "$REPO"
 
 ENV_FILE="$CONFIG_DIR/lms.env"
 if [[ ! -f "$ENV_FILE" ]]; then

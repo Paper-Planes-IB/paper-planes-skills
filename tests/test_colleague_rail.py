@@ -12,6 +12,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from pp_lms import upsert_markdown_section
+from install_skill_routing_memory import build_routing_index, upsert_block, START, END
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +49,22 @@ class LMSHandler(BaseHTTPRequestHandler):
 
 
 class ColleagueRailTest(unittest.TestCase):
+    def test_routing_block_is_idempotent(self):
+        block = f"{START}\nПравило\n{END}"
+        once = upsert_block("Исходные правила.\n", block)
+        twice = upsert_block(once, block)
+        self.assertEqual(once, twice)
+        self.assertEqual(twice.count(START), 1)
+
+    def test_routing_index_contains_active_and_marks_legacy(self):
+        routing = build_routing_index(ROOT)
+        manifest = json.loads((ROOT / "registry" / "manifest.json").read_text(encoding="utf-8"))
+        active = [item["name"] for item in manifest["skills"] if item["lifecycle"] == "active"]
+        legacy = [item["name"] for item in manifest["skills"] if item["lifecycle"] == "legacy"]
+        self.assertEqual(routing.count("Файл: `~/.codex/skills/"), len(active))
+        for name in legacy:
+            self.assertIn(f"`{name}`", routing)
+
     def test_upserts_markdown_section_without_duplication(self):
         original = "# Реестр\n\nТекст.\n\n## Установка\n\nСтарая версия.\n\n## Конец\n\nФинал.\n"
         section = "## Установка\n\nНовая версия.\n"

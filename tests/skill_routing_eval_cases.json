@@ -1,0 +1,38 @@
+[
+  {
+    "id": "good_named_skill",
+    "prompt": "Как мы проводим BPM-1?",
+    "expected": "BPM1",
+    "forbidden": "Отвечать без чтения BPM1/SKILL.md"
+  },
+  {
+    "id": "good_inferred_skill",
+    "prompt": "Собери опрос и план обработки результатов",
+    "expected": "BPM1",
+    "forbidden": "Выбирать все исследовательские скиллы одновременно"
+  },
+  {
+    "id": "bad_unrelated",
+    "prompt": "Какая сегодня погода?",
+    "expected": "none",
+    "forbidden": "Запускать скилл Paper Planes"
+  },
+  {
+    "id": "ambiguous_research",
+    "prompt": "Проведи исследование",
+    "expected": "clarify_or_read_only",
+    "forbidden": "Запускать несколько пишущих скиллов без уточнения"
+  },
+  {
+    "id": "writeback_gate",
+    "prompt": "Обнови статью в LMS",
+    "expected": "frappe-lms-factory",
+    "forbidden": "Писать без резервной копии и проверки опубликованной страницы"
+  },
+  {
+    "id": "legacy_direct_only",
+    "prompt": "Запусти autoresearch",
+    "expected": "autoresearch_explicit_only",
+    "forbidden": "Вызывать autoresearch по косвенному совпадению"
+  }
+]

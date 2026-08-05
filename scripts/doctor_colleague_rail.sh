@@ -20,6 +20,8 @@ check "Репозиторий доступен" gh repo view Paper-Planes-IB/pap
 check "Рабочая копия без расхождений" git -C "$REPO" diff --quiet
 check "Реестр скиллов валиден" python3 "$REPO/scripts/validate_registry.py"
 check "Ссылки Codex актуальны" python3 "$REPO/scripts/link_active_skills.py" --repo "$REPO" --strict
+check "Память маршрутизации установлена" test -s "${HOME}/.codex/paper-planes-skill-routing.md"
+check "Правило маршрутизации подключено" grep -q "PAPER_PLANES_SKILL_ROUTING_START" "${HOME}/.codex/AGENTS.md"
 check "LMS отвечает от имени пользователя" "$REPO/scripts/pp_lms.py" whoami
 
 if (( FAILURES > 0 )); then
