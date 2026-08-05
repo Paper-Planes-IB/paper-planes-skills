@@ -5,6 +5,8 @@ import json
 import pathlib
 import re
 
+from pp_lms import upsert_markdown_section
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
@@ -38,6 +40,12 @@ def main() -> None:
     duplicate_at = template.find(registry_heading, len(registry_heading))
     if duplicate_at != -1:
         template = template[:duplicate_at].rstrip() + "\n"
+    install_section_path = ROOT / "onboarding" / "wiki-install-section.md"
+    if install_section_path.exists():
+        template = upsert_markdown_section(
+            template,
+            install_section_path.read_text(encoding="utf-8"),
+        )
     counts = {}
     for item in catalog:
         counts[item["type"]] = counts.get(item["type"], 0) + 1
