@@ -6,10 +6,10 @@ import datetime as dt
 import json
 import os
 import re
+import subprocess
 import sys
-import urllib.error
 import urllib.parse
-import urllib.request
+import tempfile
 from pathlib import Path
 from typing import Optional
 
@@ -43,26 +43,58 @@ class LMSClient:
         self.authorization = f"token {cfg['PP_LMS_API_KEY']}:{cfg['PP_LMS_API_SECRET']}"
 
     def request(self, method: str, path: str, payload: Optional[dict] = None) -> dict:
-        body = None if payload is None else json.dumps(payload, ensure_ascii=False).encode("utf-8")
-        request = urllib.request.Request(
-            self.base + path,
-            data=body,
-            method=method,
-            headers={
-                "Authorization": self.authorization,
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-                "User-Agent": "Paper-Planes-Codex-Rail/1.0",
-            },
-        )
-        try:
-            with urllib.request.urlopen(request, timeout=30) as response:
-                return json.loads(response.read().decode("utf-8"))
-        except urllib.error.HTTPError as error:
-            details = error.read().decode("utf-8", errors="replace")[:1000]
-            raise RuntimeError(f"LMS вернула HTTP {error.code}: {details}") from None
-        except urllib.error.URLError as error:
-            raise RuntimeError(f"LMS недоступна: {error.reason}") from None
+        with tempfile.TemporaryDirectory(prefix="pp-lms-") as temp_dir:
+            temp = Path(temp_dir)
+            config_path = temp / "curl.conf"
+            config_path.write_text(
+                "".join(
+                    [
+                        f'header = "Authorization: {self.authorization}"\n',
+                        'header = "Accept: application/json"\n',
+                        'header = "Content-Type: application/json"\n',
+                        'user-agent = "Paper-Planes-Codex-Rail/1.0"\n',
+                    ]
+                ),
+                encoding="utf-8",
+            )
+            os.chmod(config_path, 0o600)
+            command = [
+                "curl",
+                "--silent",
+                "--show-error",
+                "--connect-timeout",
+                "10",
+                "--max-time",
+                "30",
+                "--config",
+                str(config_path),
+                "--request",
+                method,
+                "--write-out",
+                "\n%{http_code}",
+            ]
+            if payload is not None:
+                payload_path = temp / "payload.json"
+                payload_path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+                os.chmod(payload_path, 0o600)
+                command.extend(["--data-binary", f"@{payload_path}"])
+            command.append(self.base + path)
+            try:
+                response = subprocess.run(command, capture_output=True, text=True, check=False)
+            except OSError as error:
+                raise RuntimeError(f"Не удалось запустить системный curl: {error}") from None
+            if response.returncode != 0:
+                raise RuntimeError(f"LMS недоступна: {response.stderr.strip()[:500]}")
+            body, separator, status_text = response.stdout.rpartition("\n")
+            if not separator or not status_text.isdigit():
+                raise RuntimeError("LMS вернула ответ без HTTP-статуса")
+            status = int(status_text)
+            if status >= 400:
+                raise RuntimeError(f"LMS вернула HTTP {status}: {body[:1000]}")
+            try:
+                return json.loads(body)
+            except json.JSONDecodeError:
+                raise RuntimeError(f"LMS вернула ответ в неожиданном формате: {body[:500]}") from None
 
     def resource_path(self, doctype: str, name: Optional[str] = None) -> str:
         path = "/api/resource/" + urllib.parse.quote(doctype, safe="")
