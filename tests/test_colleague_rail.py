@@ -8,6 +8,10 @@ import threading
 import unittest
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from pp_lms import upsert_markdown_section
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -44,6 +48,15 @@ class LMSHandler(BaseHTTPRequestHandler):
 
 
 class ColleagueRailTest(unittest.TestCase):
+    def test_upserts_markdown_section_without_duplication(self):
+        original = "# Реестр\n\nТекст.\n\n## Установка\n\nСтарая версия.\n\n## Конец\n\nФинал.\n"
+        section = "## Установка\n\nНовая версия.\n"
+        updated = upsert_markdown_section(original, section)
+        self.assertEqual(updated.count("## Установка"), 1)
+        self.assertIn("Новая версия.", updated)
+        self.assertNotIn("Старая версия.", updated)
+        self.assertIn("## Конец", updated)
+
     def test_links_only_active_skills(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

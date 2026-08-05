@@ -107,6 +107,42 @@ def safe_filename(value: str) -> str:
     return re.sub(r"[^A-Za-zА-Яа-яЁё0-9._-]+", "-", value).strip("-") or "document"
 
 
+def backup_document(doctype: str, name: str, current: dict) -> Path:
+    stamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
+    backup_dir = DEFAULT_BACKUPS / stamp
+    backup_dir.mkdir(parents=True, exist_ok=False)
+    backup_path = backup_dir / f"{safe_filename(doctype)}__{safe_filename(name)}.json"
+    backup_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    os.chmod(backup_path, 0o600)
+    return backup_path
+
+
+def response_summary(response: dict) -> dict:
+    data = response.get("data", {})
+    return {
+        key: data.get(key)
+        for key in ("name", "title", "route", "is_published", "modified", "modified_by")
+        if key in data
+    }
+
+
+def upsert_markdown_section(content: str, section: str) -> str:
+    section = section.strip()
+    first_line = section.splitlines()[0] if section else ""
+    heading = re.fullmatch(r"(#{1,6})\s+(.+)", first_line)
+    if not heading:
+        raise RuntimeError("Файл раздела должен начинаться с Markdown-заголовка")
+    marks, title = heading.groups()
+    level = len(marks)
+    pattern = re.compile(
+        rf"(?ms)^{'#' * level}\s+{re.escape(title)}\s*$.*?(?=^#{{1,{level}}}\s+|\Z)"
+    )
+    replacement = section + "\n\n"
+    if pattern.search(content):
+        return pattern.sub(replacement, content, count=1).rstrip() + "\n"
+    return content.rstrip() + "\n\n" + section + "\n"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Безопасный клиент Paper Planes LMS")
     parser.add_argument("--env-file", type=Path, default=DEFAULT_ENV)
@@ -129,6 +165,11 @@ def main() -> int:
     update_parser.add_argument("--payload", type=Path, required=True)
     update_parser.add_argument("--apply", action="store_true")
 
+    section_parser = commands.add_parser("upsert-wiki-section")
+    section_parser.add_argument("--name", required=True)
+    section_parser.add_argument("--section-file", type=Path, required=True)
+    section_parser.add_argument("--apply", action="store_true")
+
     args = parser.parse_args()
     client = LMSClient(args.env_file.expanduser())
 
@@ -148,14 +189,23 @@ def main() -> int:
             raise RuntimeError("Запись остановлена: добавьте --apply после проверки payload")
         payload = json.loads(args.payload.read_text(encoding="utf-8"))
         current = client.request("GET", client.resource_path(args.doctype, args.name))
-        stamp = dt.datetime.now().strftime("%Y%m%d_%H%M%S")
-        backup_dir = DEFAULT_BACKUPS / stamp
-        backup_dir.mkdir(parents=True, exist_ok=False)
-        backup_path = backup_dir / f"{safe_filename(args.doctype)}__{safe_filename(args.name)}.json"
-        backup_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        os.chmod(backup_path, 0o600)
-        result = client.request("PUT", client.resource_path(args.doctype, args.name), payload)
-        result = {"backup": str(backup_path), "response": result}
+        backup_path = backup_document(args.doctype, args.name, current)
+        response = client.request("PUT", client.resource_path(args.doctype, args.name), payload)
+        result = {"backup": str(backup_path), "document": response_summary(response)}
+    elif args.command == "upsert-wiki-section":
+        if not args.apply:
+            raise RuntimeError("Запись остановлена: добавьте --apply после проверки раздела")
+        section = args.section_file.read_text(encoding="utf-8")
+        current = client.request("GET", client.resource_path("Wiki Document", args.name))
+        document = current["data"]
+        updated_content = upsert_markdown_section(document.get("content") or "", section)
+        backup_path = backup_document("Wiki Document", args.name, current)
+        response = client.request(
+            "PUT",
+            client.resource_path("Wiki Document", args.name),
+            {"content": updated_content},
+        )
+        result = {"backup": str(backup_path), "document": response_summary(response)}
     else:
         raise AssertionError(args.command)
 
