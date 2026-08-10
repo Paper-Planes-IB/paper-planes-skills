@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-04T09:18:49Z",
+  "generated_at": "2026-08-10T20:45:00Z",
   "upstream_skill_count": 78,
-  "repository_skill_count": 78,
+  "repository_skill_count": 79,
   "legacy_skill_count": 10,
   "skills": [
     {
@@ -37,6 +37,38 @@
           "path": "skills/admin-scale/agents/openai.yaml",
           "sha256": "de1590b2a9803c0f4bc1f091805fba78a4a067008f181ce7fd852c2284d4698a",
           "size": 198
+        }
+      ]
+    },
+    {
+      "name": "archive-granola-transcripts",
+      "lifecycle": "active",
+      "source": "retained-local",
+      "files": [
+        {
+          "path": "skills/archive-granola-transcripts/SKILL.md",
+          "sha256": "9c2194acf21aa778d8fb3d478b2708185bd10134a7de99f3adfc8250999c3a82",
+          "size": 4144
+        },
+        {
+          "path": "skills/archive-granola-transcripts/agents/openai.yaml",
+          "sha256": "3e3f0f9e6c616c59c48c23a216699bd1ba212c622a4267a865940b253fb91a98",
+          "size": 337
+        },
+        {
+          "path": "skills/archive-granola-transcripts/references/archive-contract.md",
+          "sha256": "b9521bfd41751efd2873a0fe8c1221c186ea4fa3031ffe2d0800950c9648f619",
+          "size": 3322
+        },
+        {
+          "path": "skills/archive-granola-transcripts/scripts/export-agent-prompt.md",
+          "sha256": "bedb457b0cc14f254d603620004e7b1ad23ae263749fde69c5aa18e02f187c15",
+          "size": 1545
+        },
+        {
+          "path": "skills/archive-granola-transcripts/scripts/export-granola-transcripts.sh",
+          "sha256": "048a07edc4866fae34ba7de76394b5637f02351455348ff10086459141bf38ae",
+          "size": 1563
         }
       ]
     },

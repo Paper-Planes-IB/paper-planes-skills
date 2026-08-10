@@ -44,6 +44,9 @@ KNOWN_LEGACY = {
     "research-agent",
     "three-perspective-review",
 }
+RETAINED_ACTIVE = {
+    "archive-granola-transcripts",
+}
 
 
 def http_json(url: str, *, headers=None, data=None) -> dict:
@@ -272,7 +275,9 @@ def main() -> int:
             {
                 "name": name,
                 "lifecycle": (
-                    "legacy" if name in KNOWN_LEGACY or name not in upstream_names else "active"
+                    "legacy"
+                    if name in KNOWN_LEGACY or (name not in upstream_names and name not in RETAINED_ACTIVE)
+                    else "active"
                 ),
                 "source": "ilya-drive" if name in upstream_names else "retained-local",
                 "files": files,
