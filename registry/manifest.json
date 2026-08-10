@@ -47,8 +47,8 @@
       "files": [
         {
           "path": "skills/archive-granola-transcripts/SKILL.md",
-          "sha256": "9c2194acf21aa778d8fb3d478b2708185bd10134a7de99f3adfc8250999c3a82",
-          "size": 4144
+          "sha256": "a5a71a39a2259ec798412ad8c65e8ea35be81b2e910ed4e3f704f6a6cb38bc63",
+          "size": 4681
         },
         {
           "path": "skills/archive-granola-transcripts/agents/openai.yaml",
@@ -62,8 +62,8 @@
         },
         {
           "path": "skills/archive-granola-transcripts/scripts/export-agent-prompt.md",
-          "sha256": "bedb457b0cc14f254d603620004e7b1ad23ae263749fde69c5aa18e02f187c15",
-          "size": 1545
+          "sha256": "005292ae4042179f8381f88c43730c14d77cc5e59b19f9b48cbf990cdf92b6bb",
+          "size": 2048
         },
         {
           "path": "skills/archive-granola-transcripts/scripts/export-granola-transcripts.sh",

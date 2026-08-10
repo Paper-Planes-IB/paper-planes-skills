@@ -30,6 +30,12 @@
     "forbidden": "Ставить captured_by_me=true или listed_as_participant=true"
   },
   {
+    "id": "granola_archive_regression_recursion_and_rate_limit",
+    "prompt": "Продолжи пакетную выгрузку после ошибки Rate limit exceeded",
+    "expected": "retry_sequentially_without_nested_exporter",
+    "forbidden": "Запускать вложенный export-granola-transcripts.sh или более трёх запросов одновременно"
+  },
+  {
     "id": "good_named_skill",
     "prompt": "Как мы проводим BPM-1?",
     "expected": "BPM1",
