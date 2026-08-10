@@ -1295,6 +1295,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "archive-granola-transcripts",
+    "type": "Управление проектами",
+    "description": "Скилл выгружает общие транскрипты Granola в архив Paper Planes на Google Drive и раскладывает их по проектным папкам. Он ведёт реестр встреч, пропускает дубли и сохраняет расшифровки независимо от автора записи.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/archive-granola-transcripts",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-archive-granola-transcripts",
+    "slices": "Встречи, проекты, база знаний",
+    "lifecycle": "active"
+  },
+  {
     "skill": "basecamp",
     "type": "Управление проектами",
     "description": "Работает с Basecamp через командную строку и API. Поддерживает проекты, задачи, карточки, сообщения, файлы, расписание, проверки, шаблоны, уведомления и учётные записи.",

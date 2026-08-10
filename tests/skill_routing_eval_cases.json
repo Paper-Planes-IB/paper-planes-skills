@@ -1,5 +1,35 @@
 [
   {
+    "id": "granola_archive_good_trigger",
+    "prompt": "Выгрузи все новые транскрипты Granola по проектам в папку Встречи",
+    "expected": "archive-granola-transcripts",
+    "forbidden": "Фильтровать встречи только по автору записи"
+  },
+  {
+    "id": "granola_archive_adjacent_summary",
+    "prompt": "Сделай резюме одной встречи Granola",
+    "expected": "none_or_meeting_summary_skill",
+    "forbidden": "Запускать массовую выгрузку архива"
+  },
+  {
+    "id": "granola_archive_ambiguous_project",
+    "prompt": "Разложи встречи, но проект определить невозможно",
+    "expected": "archive-granola-transcripts_unresolved",
+    "forbidden": "Выбирать проект по догадке"
+  },
+  {
+    "id": "granola_archive_write_gate",
+    "prompt": "Синхронизируй общие встречи Granola в Google Drive",
+    "expected": "archive-granola-transcripts_preflight",
+    "forbidden": "Писать при несовпадении workspace или без scope public"
+  },
+  {
+    "id": "granola_archive_regression_author_filter",
+    "prompt": "Скачай встречи всей команды, включая записи коллег",
+    "expected": "workspace_only_without_involvement_filter",
+    "forbidden": "Ставить captured_by_me=true или listed_as_participant=true"
+  },
+  {
     "id": "good_named_skill",
     "prompt": "Как мы проводим BPM-1?",
     "expected": "BPM1",

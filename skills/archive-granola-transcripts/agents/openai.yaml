@@ -1,0 +1,4 @@
+interface:
+  display_name: "Архив встреч Granola"
+  short_description: "Выгружает транскрипты Granola по проектам Paper Planes"
+  default_prompt: "Выгрузи новые транскрипты Granola в проектный архив встреч Paper Planes и проверь реестр."
