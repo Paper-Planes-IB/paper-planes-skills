@@ -162,6 +162,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "paper-planes-artifact-methodology",
+    "type": "BPM / методология",
+    "description": "Скилл выбирает методологический стек для артефактов Paper Planes и проверяет, какие источники считать каноном. Он фиксирует MECE для структур, таблиц и схем, направляет работу к профильным скиллам и требует live-проверки Frappe-БЗ там, где методология влияет на результат.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/paper-planes-artifact-methodology",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-paper-planes-artifact-methodology",
+    "slices": "Методология, артефакты, Frappe-БЗ, MECE",
+    "lifecycle": "active"
+  },
+  {
     "skill": "pp-review-claims-analysis",
     "slug": "pp-review-claims-analysis",
     "type": "BPM / методология",

@@ -3,7 +3,7 @@
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
   "generated_at": "2026-08-10T20:45:00Z",
   "upstream_skill_count": 78,
-  "repository_skill_count": 79,
+  "repository_skill_count": 80,
   "legacy_skill_count": 10,
   "skills": [
     {
@@ -1755,6 +1755,58 @@
           "path": "skills/notion-vault-sync/SKILL.md",
           "sha256": "34cac00e74e6668d0c5716d4b6c2badbb6cd59e5b3223ac90ab422a43d52864a",
           "size": 708
+        }
+      ]
+    },
+    {
+      "name": "paper-planes-artifact-methodology",
+      "lifecycle": "active",
+      "source": "local-codex",
+      "files": [
+        {
+          "path": "skills/paper-planes-artifact-methodology/SKILL.md",
+          "sha256": "9ab2bc0f912e164a0fec599eefd60f655012d8821a9675c5cb46150921b06671",
+          "size": 9829
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/adjacent-skill-router.md",
+          "sha256": "ed1778519cc4564a14e73b0a1c1cec57826bbb4cddd11c79370c2cae9ac11f86",
+          "size": 2626
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/eval-cases.md",
+          "sha256": "dd1dc95ae8788198f55d27f3495c0e69ba5c1ab159020a5a300eceae06f05fee",
+          "size": 5129
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/fake-task-run.md",
+          "sha256": "73bf8a1acebb4fdf120ae56734164d00583dd3b95479bd6d48544b73b577b302",
+          "size": 5762
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/kb-card.md",
+          "sha256": "42f2eb2a061c7afe80a303d910c0ef2b6f4dacc6dc295ae44e2ba32a7b8d706a",
+          "size": 3069
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/md-instruction-workflow.md",
+          "sha256": "8324b54b7c9e65ae1167cdefedfabb08ebba48fc348d095d64875cba56e01276",
+          "size": 1768
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/methodology-router.md",
+          "sha256": "f0271f58d733a5d23719480621918b02fa9b43b29def86b36ea081509ac62f41",
+          "size": 3581
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/model-catalog.md",
+          "sha256": "41902a4ead1db3f7d956395c59597aaa7273de52e4b64f87e6593d12f899d2eb",
+          "size": 5951
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/references/output-contract.md",
+          "sha256": "86cde7cb52c9077bed3720dad18df553bd0c16c429d6c70a070525910061bb3f",
+          "size": 1699
         }
       ]
     },
