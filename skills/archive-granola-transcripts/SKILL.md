@@ -24,6 +24,8 @@ scripts/export-granola-transcripts.sh [archive_dir] [start_date] [end_date]
 
 Если даты не переданы, выгружать с `2026-01-01` по текущую дату. Повторный запуск должен пропускать встречи, уже записанные в `manifest.json`.
 
+Для почти мгновенной синхронизации готовых заметок использовать `scripts/sync_granola_api.py`. Скрипт читает API-ключ из связки ключей macOS (`granola-archive-api`), проверяет новые заметки через официальный Granola API и сохраняет только отсутствующие Markdown-файлы. Шаблон `scripts/com.paperplanes.granola-archive.plist` запускает его раз в минуту.
+
 ## Правила маршрутизации
 
 Прочитать [references/archive-contract.md](references/archive-contract.md) перед изменением структуры архива или логики выбора проекта.
