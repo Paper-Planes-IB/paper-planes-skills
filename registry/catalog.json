@@ -169,7 +169,7 @@
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/paper-planes-artifact-methodology",
     "page": "https://lms.paper-planes.ru/knowledge/skill-paper-planes-artifact-methodology",
     "slices": "Методология, артефакты, Frappe-БЗ, MECE",
-    "lifecycle": "active"
+    "lifecycle": "legacy"
   },
   {
     "skill": "pp-review-claims-analysis",

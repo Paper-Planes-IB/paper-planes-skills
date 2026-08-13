@@ -7,8 +7,10 @@ import datetime as dt
 import json
 import os
 import re
+import socket
 import subprocess
 import tempfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -21,7 +23,9 @@ ARCHIVE = Path(os.environ.get(
     "/Users/natalie/Library/CloudStorage/GoogleDrive-tokaeva@paper-planes.ru/Shared drives/Paper Planes/4. Производство/Встречи",
 ))
 MANIFEST = ARCHIVE / "manifest.json"
-STATE = ARCHIVE / ".granola-api-state.json"
+LOCAL_STATE_DIR = Path.home() / "Library/Application Support/Paper Planes/Granola Archive"
+LIVE_MANIFEST = LOCAL_STATE_DIR / "live-manifest.json"
+STATE = LOCAL_STATE_DIR / "state.json"
 
 
 def keychain_token() -> str:
@@ -32,12 +36,19 @@ def keychain_token() -> str:
 
 
 def api(path: str) -> dict:
-    req = urllib.request.Request(API + path, headers={
-        "Authorization": f"Bearer {keychain_token()}",
-        "Accept": "application/json",
-    })
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.load(response)
+    for attempt in range(3):
+        try:
+            raw = subprocess.check_output([
+                "/usr/bin/curl", "--fail", "--silent", "--show-error",
+                "--max-time", "20", API + path,
+                "-H", f"Authorization: Bearer {keychain_token()}",
+                "-H", "Accept: application/json",
+            ], text=True, stderr=subprocess.PIPE)
+            return json.loads(raw)
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+            if attempt == 2:
+                raise
+            time.sleep(2 * (attempt + 1))
 
 
 def atomic_json(path: Path, value: dict) -> None:
@@ -154,12 +165,18 @@ def list_recent() -> list[dict]:
 
 
 def main() -> None:
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    LOCAL_STATE_DIR.mkdir(parents=True, exist_ok=True)
+    manifest = json.loads(LIVE_MANIFEST.read_text(encoding="utf-8")) if LIVE_MANIFEST.exists() else {"meetings": [], "summary": {}}
     meetings = manifest.setdefault("meetings", [])
     known = {m.get("meeting_id") for m in meetings if m.get("status") == "exported"}
+    for existing in ARCHIVE.glob("*/*.md"):
+        match = re.search(r"__([0-9a-f]{8}-[0-9a-f-]{27,36}|not_[A-Za-z0-9]{14})\.md$", existing.name, re.I)
+        if match:
+            known.add(match.group(1))
     known_notes = {m.get("granola_note_id") for m in meetings if m.get("granola_note_id")}
     allowed = public_folders()
     added = 0
+    retry_after = []
     latest = None
     for stub in sorted(list_recent(), key=lambda n: n.get("created_at", "")):
         latest = max(latest or "", stub.get("created_at", ""))
@@ -170,7 +187,11 @@ def main() -> None:
         except urllib.error.HTTPError as exc:
             if exc.code in (404, 413):
                 continue
-            raise
+            retry_after.append(stub.get("created_at", ""))
+            continue
+        except (urllib.error.URLError, socket.timeout, TimeoutError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
+            retry_after.append(stub.get("created_at", ""))
+            continue
         meeting_id = canonical_id(note)
         if meeting_id in known:
             continue
@@ -206,18 +227,22 @@ def main() -> None:
     summary["exported"] = sum(m.get("status") == "exported" for m in meetings)
     summary["unassigned"] = sum(m.get("project") == "_Неразобранное" for m in meetings)
     summary["errors"] = sum(m.get("status") == "error" for m in meetings)
-    atomic_json(MANIFEST, manifest)
+    atomic_json(LIVE_MANIFEST, manifest)
     if latest:
         # Five-minute overlap protects against delayed visibility and equal timestamps.
-        cursor = dt.datetime.fromisoformat(latest.replace("Z", "+00:00")) - dt.timedelta(minutes=5)
+        cursor_base = min([value for value in retry_after if value] or [latest])
+        cursor = dt.datetime.fromisoformat(cursor_base.replace("Z", "+00:00")) - dt.timedelta(minutes=5)
         cursor_text = cursor.replace(microsecond=0).isoformat().replace("+00:00", "Z")
         atomic_json(STATE, {"cursor_time": cursor_text, "last_run": manifest["updated_at"], "added": added})
     print(json.dumps({"added": added, "exported": manifest["summary"]["exported"]}))
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    except PermissionError:
-        # macOS background access is retried after Full Disk Access is granted.
-        pass
+    for attempt in range(5):
+        try:
+            main()
+            break
+        except OSError as exc:
+            if exc.errno != 11 or attempt == 4:
+                raise
+            time.sleep(3 * (attempt + 1))

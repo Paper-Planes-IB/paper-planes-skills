@@ -3,8 +3,9 @@
 <plist version="1.0"><dict>
   <key>Label</key><string>com.paperplanes.granola-archive</string>
   <key>ProgramArguments</key><array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/natalie/paper-planes-skills/skills/archive-granola-transcripts/scripts/sync_granola_api.py</string>
+    <string>/bin/bash</string>
+    <string>-lc</string>
+    <string>exec /usr/bin/python3 /Users/natalie/paper-planes-skills/skills/archive-granola-transcripts/scripts/sync_granola_api.py</string>
   </array>
   <key>StartInterval</key><integer>60</integer>
   <key>RunAtLoad</key><true/>

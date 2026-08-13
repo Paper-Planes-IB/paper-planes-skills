@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-10T20:45:00Z",
+  "generated_at": "2026-08-13T04:08:41Z",
   "upstream_skill_count": 78,
   "repository_skill_count": 80,
-  "legacy_skill_count": 10,
+  "legacy_skill_count": 11,
   "skills": [
     {
       "name": "admin",
@@ -47,8 +47,8 @@
       "files": [
         {
           "path": "skills/archive-granola-transcripts/SKILL.md",
-          "sha256": "a5a71a39a2259ec798412ad8c65e8ea35be81b2e910ed4e3f704f6a6cb38bc63",
-          "size": 4681
+          "sha256": "13f1ef8e87292caa317789f48f489e23cd78fb3b40a31b1c674f213a17dead1b",
+          "size": 5220
         },
         {
           "path": "skills/archive-granola-transcripts/agents/openai.yaml",
@@ -61,6 +61,16 @@
           "size": 3322
         },
         {
+          "path": "skills/archive-granola-transcripts/scripts/__pycache__/sync_granola_api.cpython-39.pyc",
+          "sha256": "1d9f6718cd51720652ee847773bb3c9034a9513a2a5d8a8fc2fb11ad1e1d1f59",
+          "size": 9450
+        },
+        {
+          "path": "skills/archive-granola-transcripts/scripts/com.paperplanes.granola-archive.plist",
+          "sha256": "80fc0c49d79d06e10acfefe4654054a24ef5a4f4a79357e9755113701d5eb7a7",
+          "size": 822
+        },
+        {
           "path": "skills/archive-granola-transcripts/scripts/export-agent-prompt.md",
           "sha256": "005292ae4042179f8381f88c43730c14d77cc5e59b19f9b48cbf990cdf92b6bb",
           "size": 2048
@@ -69,6 +79,11 @@
           "path": "skills/archive-granola-transcripts/scripts/export-granola-transcripts.sh",
           "sha256": "048a07edc4866fae34ba7de76394b5637f02351455348ff10086459141bf38ae",
           "size": 1563
+        },
+        {
+          "path": "skills/archive-granola-transcripts/scripts/sync_granola_api.py",
+          "sha256": "d1a20b6860cfc20bcdd5e1841a472c6ea7ad123fdb1165684197d88aba393139",
+          "size": 10288
         }
       ]
     },
@@ -1760,8 +1775,8 @@
     },
     {
       "name": "paper-planes-artifact-methodology",
-      "lifecycle": "active",
-      "source": "local-codex",
+      "lifecycle": "legacy",
+      "source": "retained-local",
       "files": [
         {
           "path": "skills/paper-planes-artifact-methodology/SKILL.md",
