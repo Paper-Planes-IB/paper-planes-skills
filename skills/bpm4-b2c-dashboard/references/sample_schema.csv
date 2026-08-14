@@ -1,0 +1,37 @@
+table,field,required,type,description
+orders,order_id,yes,string,Stable anonymized order id
+orders,order_datetime,yes,datetime,Purchase datetime
+orders,customer_id_hash,yes,string,Hashed customer id
+orders,store_id,yes,string,Store or channel id
+orders,channel,yes,string,Sales channel
+orders,gross_revenue,yes,number,Revenue before discounts and returns
+orders,discount_amount,yes,number,Discount amount
+orders,return_amount,yes,number,Returned amount
+orders,net_revenue,yes,number,Net revenue
+orders,cost_amount,no,number,Cost of goods sold
+orders,gross_profit,no,number,Gross profit
+orders,is_internal,yes,boolean,Internal transaction flag
+orders,is_test,yes,boolean,Test transaction flag
+orders,is_b2b_or_partner,yes,boolean,B2B or partner transaction flag
+order_items,order_id,yes,string,Order id
+order_items,line_id,yes,string,Order line id
+order_items,sku_id,yes,string,SKU id
+order_items,category_l1,yes,string,Top category
+order_items,category_l2,no,string,Second-level category
+order_items,brand_masked,no,string,Masked brand
+order_items,quantity,yes,number,Quantity sold
+order_items,line_net_revenue,yes,number,Line net revenue
+order_items,line_gross_profit,no,number,Line gross profit
+customers,customer_id_hash,yes,string,Hashed customer id
+customers,first_order_date,yes,date,First order date
+customers,city_or_region,no,string,Region
+customers,acquisition_channel,no,string,Acquisition channel
+customers,age_group,no,string,Age interval
+customers,loyalty_status,no,string,Loyalty status
+customers,is_partner,yes,boolean,Partner flag
+customers,is_employee,yes,boolean,Employee flag
+partner_registry,subject_id_hash,yes,string,Hashed subject id
+partner_registry,source,yes,string,Source where partner was found
+partner_registry,role,yes,string,Partner role
+partner_registry,match_confidence,yes,string,high medium low
+partner_registry,exclude_from_b2c_rfm,yes,boolean,Exclude from end-customer RFM

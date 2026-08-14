@@ -50,6 +50,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "bpm4-b2c-dashboard",
+    "type": "BPM / методология",
+    "description": "Скилл помогает собрать и проверить обезличенный B2C-дашборд по BPM-4: контракт данных, формулу прибыли, повторы, RFM, когорты и кластеры. Он фиксирует правила исключения партнёров и B2B из клиентской сегментации, а также даёт чеклист приёмки перед сдачей.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-b2c-dashboard",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpm4-b2c-dashboard",
+    "slices": "BPM-4; B2C; RFM; повторные покупки; клиентская база; когорты",
+    "lifecycle": "active"
+  },
+  {
     "skill": "bpm4-datalens-dashboard",
     "type": "BPM / методология",
     "description": "Собирает и проверяет панель «Формула прибыли» BPM-4 в Yandex DataLens. Работает с SQL-представлениями, наборами данных, графиками, фильтрами, публикацией и передачей выводов в Storyline-Storyboard.",

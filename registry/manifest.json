@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-13T04:08:41Z",
+  "generated_at": "2026-08-14T06:59:27.650031+00:00",
   "upstream_skill_count": 78,
-  "repository_skill_count": 80,
+  "repository_skill_count": 81,
   "legacy_skill_count": 11,
   "skills": [
     {
@@ -12,14 +12,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/admin/SKILL.md",
-          "sha256": "b9f8851e82f762fd176f09da4557183c5845b3e92b658d4bfd24bb949678847d",
-          "size": 46841
-        },
-        {
           "path": "skills/admin/agents/openai.yaml",
           "sha256": "8c18f26faa5e425021b3c26f8ead155199f24e2ffe6da71b3ccc0b2fbb588691",
           "size": 397
+        },
+        {
+          "path": "skills/admin/SKILL.md",
+          "sha256": "b9f8851e82f762fd176f09da4557183c5845b3e92b658d4bfd24bb949678847d",
+          "size": 46841
         }
       ]
     },
@@ -29,14 +29,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/admin-scale/SKILL.md",
-          "sha256": "9972ac930c0cc87e0b6beb862a69445ae2c2d3fa56256eb5b2a90b5257e78f64",
-          "size": 3632
-        },
-        {
           "path": "skills/admin-scale/agents/openai.yaml",
           "sha256": "de1590b2a9803c0f4bc1f091805fba78a4a067008f181ce7fd852c2284d4698a",
           "size": 198
+        },
+        {
+          "path": "skills/admin-scale/SKILL.md",
+          "sha256": "9972ac930c0cc87e0b6beb862a69445ae2c2d3fa56256eb5b2a90b5257e78f64",
+          "size": 3632
         }
       ]
     },
@@ -45,11 +45,6 @@
       "lifecycle": "active",
       "source": "retained-local",
       "files": [
-        {
-          "path": "skills/archive-granola-transcripts/SKILL.md",
-          "sha256": "13f1ef8e87292caa317789f48f489e23cd78fb3b40a31b1c674f213a17dead1b",
-          "size": 5220
-        },
         {
           "path": "skills/archive-granola-transcripts/agents/openai.yaml",
           "sha256": "3e3f0f9e6c616c59c48c23a216699bd1ba212c622a4267a865940b253fb91a98",
@@ -84,6 +79,11 @@
           "path": "skills/archive-granola-transcripts/scripts/sync_granola_api.py",
           "sha256": "d1a20b6860cfc20bcdd5e1841a472c6ea7ad123fdb1165684197d88aba393139",
           "size": 10288
+        },
+        {
+          "path": "skills/archive-granola-transcripts/SKILL.md",
+          "sha256": "13f1ef8e87292caa317789f48f489e23cd78fb3b40a31b1c674f213a17dead1b",
+          "size": 5220
         }
       ]
     },
@@ -158,11 +158,6 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/BPM1/SKILL.md",
-          "sha256": "1f6d18588a6e7c0c43a7b9a26a76b707cf1e149fe1542e79394cbe6e593ebb48",
-          "size": 11230
-        },
-        {
           "path": "skills/BPM1/references/ingest-layer.md",
           "sha256": "4953c5c7a9e1d4098316c7d4e009d69f82fb960961e29a65c611763d4134bbd9",
           "size": 2662
@@ -186,6 +181,11 @@
           "path": "skills/BPM1/references/survey-types.md",
           "sha256": "16f25d760e38981581250cad9596397396e39123096ff87950d410a1c21ae28e",
           "size": 3739
+        },
+        {
+          "path": "skills/BPM1/SKILL.md",
+          "sha256": "1f6d18588a6e7c0c43a7b9a26a76b707cf1e149fe1542e79394cbe6e593ebb48",
+          "size": 11230
         },
         {
           "path": "skills/BPM1/survey_lake/factors_jtbd.csv",
@@ -235,11 +235,6 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/bpm10-crm/SKILL.md",
-          "sha256": "01af8aa10e021843a182065283e3d99f6e7e8938948db3c7cf830560011af530",
-          "size": 13783
-        },
-        {
           "path": "skills/bpm10-crm/agents/openai.yaml",
           "sha256": "271e73218026976754d4bebae934b0b94668146e4403d47e6c45493ea81609fc",
           "size": 236
@@ -288,6 +283,11 @@
           "path": "skills/bpm10-crm/references/related-skills.md",
           "sha256": "8ea7deb9a425c536ccae44dfaf78095c9fe17a9d57d94288a7825e38df5dfd90",
           "size": 1581
+        },
+        {
+          "path": "skills/bpm10-crm/SKILL.md",
+          "sha256": "01af8aa10e021843a182065283e3d99f6e7e8938948db3c7cf830560011af530",
+          "size": 13783
         }
       ]
     },
@@ -300,6 +300,63 @@
           "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
           "sha256": "f462f525546eefb653714fd4f88393ed13117a0dd5594deaf53a2e0328cc9356",
           "size": 26354
+        }
+      ]
+    },
+    {
+      "name": "bpm4-b2c-dashboard",
+      "lifecycle": "active",
+      "source": "retained-local",
+      "files": [
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/acceptance_checklist.md",
+          "sha256": "365bb4a686a35a5e4263bdc8e0d6261dbfaf1928377cd4da20d47c5d7aaf49ce",
+          "size": 3415
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/anonymization_rules.md",
+          "sha256": "3cf71e478ab09d6e6464a921c95940e8284556f94c6e4ae566c308f5f078d015",
+          "size": 2497
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/b2c_dashboard_blueprint.md",
+          "sha256": "a591f58fb5a4f937851d19ed0988d02d9d19c7dc8db2f02eac288ea1621966a4",
+          "size": 4509
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/b2c_data_contract.md",
+          "sha256": "dc672b04df9c51de2619dcdc593a31680a805a5d54639a3340bdc6bf6afd1cfc",
+          "size": 4010
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/metric_dictionary.md",
+          "sha256": "f604af6a6bf6c5bb17a82263dafbab24878120401c15935d415c25caf7a5c5fc",
+          "size": 3758
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/README.md",
+          "sha256": "d35c39282ae966ff1cfa09d5adf7c047855b8185a864a0a358b67c2cea777c82",
+          "size": 3026
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/requirements_audit.md",
+          "sha256": "7d0a3bc7d07aed89306435c0a1f0f2fca41a9c05c047bdbcb721099c93e4261f",
+          "size": 4114
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/sample_schema.csv",
+          "sha256": "6fcf3e43dcf73979f8fef1537c2c69b08320194d84933b874d0da950636eb89f",
+          "size": 1911
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/references/segmentation_and_rfm.md",
+          "sha256": "b4ed97c7de4525e2b55cffb9668ae04d12cca2e734d3c551ff795ac59c9952cd",
+          "size": 4108
+        },
+        {
+          "path": "skills/bpm4-b2c-dashboard/SKILL.md",
+          "sha256": "a4ff94b5cc69805a4573d018decc66efb207fa08b457cb0f2d25350bc1792bf7",
+          "size": 7303
         }
       ]
     },
@@ -345,14 +402,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
-          "sha256": "e71abea8abef3b606506d01ae5df353d97b9ae0f431ada5c75348de85fc00e2c",
-          "size": 35724
-        },
-        {
           "path": "skills/bpv-01-npd-lifecycle-os/agents/openai.yaml",
           "sha256": "ce385b5fe8ec42d8853f37e83a513316711bcc2a14e2462bc7622957827d0c0e",
           "size": 300
+        },
+        {
+          "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
+          "sha256": "e71abea8abef3b606506d01ae5df353d97b9ae0f431ada5c75348de85fc00e2c",
+          "size": 35724
         }
       ]
     },
@@ -362,14 +419,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/bpv-04-mpp-commercial-proposal/SKILL.md",
-          "sha256": "6702a74bf8a61a58aa5acb582e0a81f4dad246780984e542dc1e1d934089fb86",
-          "size": 13297
-        },
-        {
           "path": "skills/bpv-04-mpp-commercial-proposal/agents/openai.yaml",
           "sha256": "6b3536236dff3f0da5a45efa5300061f104d4caef0079bac2c56c0bcfb0af8a5",
           "size": 273
+        },
+        {
+          "path": "skills/bpv-04-mpp-commercial-proposal/SKILL.md",
+          "sha256": "6702a74bf8a61a58aa5acb582e0a81f4dad246780984e542dc1e1d934089fb86",
+          "size": 13297
         }
       ]
     },
@@ -379,14 +436,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/bpv-14-digital-profit-model/SKILL.md",
-          "sha256": "405e7b0feb51c2470f0d5088f5d8e07f2a3d66b20e740cb0762618421845729f",
-          "size": 14633
-        },
-        {
           "path": "skills/bpv-14-digital-profit-model/agents/openai.yaml",
           "sha256": "8f01b54bcc4c432a485a05d0935e477db53c07b4d29404af77caf96f17c5d753",
           "size": 265
+        },
+        {
+          "path": "skills/bpv-14-digital-profit-model/SKILL.md",
+          "sha256": "405e7b0feb51c2470f0d5088f5d8e07f2a3d66b20e740cb0762618421845729f",
+          "size": 14633
         }
       ]
     },
@@ -408,14 +465,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/clickup-mcp-router/SKILL.md",
-          "sha256": "5b47039d91c316fc5c2fbc2416ffe8a8a9f7c1263d6f14cd77c5ae43af14e2ba",
-          "size": 27089
-        },
-        {
           "path": "skills/clickup-mcp-router/agents/openai.yaml",
           "sha256": "4f89e280edf186cc775429bea7098e25305341aab3ce822b406cb0b3b33a31ca",
           "size": 371
+        },
+        {
+          "path": "skills/clickup-mcp-router/SKILL.md",
+          "sha256": "5b47039d91c316fc5c2fbc2416ffe8a8a9f7c1263d6f14cd77c5ae43af14e2ba",
+          "size": 27089
         }
       ]
     },
@@ -461,14 +518,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/cognitive-router/SKILL.md",
-          "sha256": "2764af880793331e0852275e2925838c12b743a04cb746fdcde31d9cccd38519",
-          "size": 19326
-        },
-        {
           "path": "skills/cognitive-router/agents/openai.yaml",
           "sha256": "0698e32b3d5bede0e0e46b4c421696671b2089f95909061c707cd6c9db0e6b37",
           "size": 241
+        },
+        {
+          "path": "skills/cognitive-router/SKILL.md",
+          "sha256": "2764af880793331e0852275e2925838c12b743a04cb746fdcde31d9cccd38519",
+          "size": 19326
         }
       ]
     },
@@ -477,11 +534,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/commercial-proposal-generator/SKILL.md",
-          "sha256": "735d484a2f38f170c5ad02c5c8f7ca5840fc050778b50fedd65391dfae14dde5",
-          "size": 201776
-        },
         {
           "path": "skills/commercial-proposal-generator/references/brief-template.md",
           "sha256": "747da6d6742477d21fa09f5144f9831cc7a384f80ee594fcb84c241ab6b69d84",
@@ -561,6 +613,11 @@
           "path": "skills/commercial-proposal-generator/scripts/commercial_proposal_scaffold.py",
           "sha256": "e316cf533b54404316c024c2900f1db23beb9611611720bf57ff78ef3a74eb65",
           "size": 26659
+        },
+        {
+          "path": "skills/commercial-proposal-generator/SKILL.md",
+          "sha256": "735d484a2f38f170c5ad02c5c8f7ca5840fc050778b50fedd65391dfae14dde5",
+          "size": 201776
         }
       ]
     },
@@ -605,11 +662,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/consulting-slides-creator/SKILL.md",
-          "sha256": "b3782a194725c12356743b72e4393269893cedbdf8380eb9b7ac09d00d86caf9",
-          "size": 6600
-        },
         {
           "path": "skills/consulting-slides-creator/references/consulting_principles.md",
           "sha256": "238f57e110906acf17496631af660fa5d6c4605408c0a70b825d4e0a93faacfb",
@@ -669,6 +721,11 @@
           "path": "skills/consulting-slides-creator/references/workflow.md",
           "sha256": "faf130ea321a14cbf758e9098eb01dbac71b812116d9a8a69f0ea5411378c6d6",
           "size": 4548
+        },
+        {
+          "path": "skills/consulting-slides-creator/SKILL.md",
+          "sha256": "b3782a194725c12356743b72e4393269893cedbdf8380eb9b7ac09d00d86caf9",
+          "size": 6600
         }
       ]
     },
@@ -678,14 +735,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/cord-pdca/SKILL.md",
-          "sha256": "c0fe09f4731e5b977f373f3ca645d0f4e942e26876cec2e4a20914d3acf711b4",
-          "size": 10070
-        },
-        {
           "path": "skills/cord-pdca/agents/openai.yaml",
           "sha256": "d62862250321bb970e5c9bf9d7da5f3c134812e5cac03a55b9e66e8b24f9f052",
           "size": 640
+        },
+        {
+          "path": "skills/cord-pdca/SKILL.md",
+          "sha256": "c0fe09f4731e5b977f373f3ca645d0f4e942e26876cec2e4a20914d3acf711b4",
+          "size": 10070
         }
       ]
     },
@@ -695,14 +752,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/cordos/SKILL.md",
-          "sha256": "61f581a48c607cb725eff0810fc66e85753caf7a53c4086fb7a7ab05c5d638fc",
-          "size": 13749
-        },
-        {
           "path": "skills/cordos/agents/openai.yaml",
           "sha256": "ef478f97a8cb9b5cd06edbdff5438812c81437f6c2def79ddb3b07b18292037a",
           "size": 332
+        },
+        {
+          "path": "skills/cordos/SKILL.md",
+          "sha256": "61f581a48c607cb725eff0810fc66e85753caf7a53c4086fb7a7ab05c5d638fc",
+          "size": 13749
         }
       ]
     },
@@ -760,14 +817,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/fix-rules/SKILL.md",
-          "sha256": "fc0e5557955c86692e77ed4c531ee0cc261780a09ec0992f06c49c99f1a6aec4",
-          "size": 16376
-        },
-        {
           "path": "skills/fix-rules/agents/openai.yaml",
           "sha256": "84a7e0a20ba4757b339786a6fdc77e179b2f3439a3ca881e729fe8a4705af715",
           "size": 219
+        },
+        {
+          "path": "skills/fix-rules/SKILL.md",
+          "sha256": "fc0e5557955c86692e77ed4c531ee0cc261780a09ec0992f06c49c99f1a6aec4",
+          "size": 16376
         }
       ]
     },
@@ -776,11 +833,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/graph-analysis/SKILL.md",
-          "sha256": "199af18e9f5b479c96be4ac7de9f78ee089ebb29f10862b7cc122c9b89750c62",
-          "size": 11377
-        },
         {
           "path": "skills/graph-analysis/agents/openai.yaml",
           "sha256": "fad1dd0a68e67686782a4ef6702e3dd43d338094c17803be16f4140e5d4234e1",
@@ -800,6 +852,11 @@
           "path": "skills/graph-analysis/scripts/graph_inspector.py",
           "sha256": "ad5cd0b6629be7ad28418e9e700b5b52e9a11f52abb6a10fa202c0035b40a575",
           "size": 34552
+        },
+        {
+          "path": "skills/graph-analysis/SKILL.md",
+          "sha256": "199af18e9f5b479c96be4ac7de9f78ee089ebb29f10862b7cc122c9b89750c62",
+          "size": 11377
         }
       ]
     },
@@ -812,11 +869,6 @@
           "path": "skills/graphify/.graphify_version",
           "sha256": "e7bd032db34f2291ae7c611443cbc9e300dc4a3a5d2460074b661ef2da18fd1f",
           "size": 6
-        },
-        {
-          "path": "skills/graphify/SKILL.md",
-          "sha256": "a26760fa8a40a270b377b828878df49ee399a3f1fd2311c38435ed0acf8c0acf",
-          "size": 32898
         },
         {
           "path": "skills/graphify/references/add-watch.md",
@@ -857,6 +909,11 @@
           "path": "skills/graphify/references/update.md",
           "sha256": "ad5753f179a50ba3c57105024a3f62411abadbd771463835f25bc83adfffdc73",
           "size": 7518
+        },
+        {
+          "path": "skills/graphify/SKILL.md",
+          "sha256": "a26760fa8a40a270b377b828878df49ee399a3f1fd2311c38435ed0acf8c0acf",
+          "size": 32898
         }
       ]
     },
@@ -889,11 +946,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/ii-channel-cover/SKILL.md",
-          "sha256": "c3c7497f5346f6dc1988fbe3fd0ff162abcdd985294c41ca8c0bf9bb9e18080c",
-          "size": 12609
-        },
         {
           "path": "skills/ii-channel-cover/build.py",
           "sha256": "78bf63913e2076f003ae17892653a8791a144142456341edccc3137dfefe1105",
@@ -983,6 +1035,11 @@
           "path": "skills/ii-channel-cover/glossary_poster/tunnelirovanie.html",
           "sha256": "d51fae76622bdf8a2c7f345f129301f9fe584a098916104c164b17eff1c516b3",
           "size": 18389
+        },
+        {
+          "path": "skills/ii-channel-cover/SKILL.md",
+          "sha256": "c3c7497f5346f6dc1988fbe3fd0ff162abcdd985294c41ca8c0bf9bb9e18080c",
+          "size": 12609
         }
       ]
     },
@@ -991,11 +1048,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/ii-editorial-slide/SKILL.md",
-          "sha256": "933fec911335e2f9cce184736b1fb2da8889df764b03214ed7d00d64aef88565",
-          "size": 12156
-        },
         {
           "path": "skills/ii-editorial-slide/assets/tunnel_higgsfield.png",
           "sha256": "3eaefe06b746c195cbfec22c462e1323fd1c56945da53e101aac655c15997043",
@@ -1052,14 +1104,14 @@
           "size": 2730493
         },
         {
-          "path": "skills/ii-editorial-slide/backgrounds/README.md",
-          "sha256": "404cfeda1769fe43782996fcecf1fab217187ad113af10ebb6e2fd62381b943f",
-          "size": 2203
-        },
-        {
           "path": "skills/ii-editorial-slide/backgrounds/backgrounds.md",
           "sha256": "505afed117141aa843fd324b1d299c3c7fdfcafd16f56850129b948bc54c5ae5",
           "size": 6097
+        },
+        {
+          "path": "skills/ii-editorial-slide/backgrounds/README.md",
+          "sha256": "404cfeda1769fe43782996fcecf1fab217187ad113af10ebb6e2fd62381b943f",
+          "size": 2203
         },
         {
           "path": "skills/ii-editorial-slide/examples/06_tunnelirovanie.png",
@@ -1602,6 +1654,11 @@
           "size": 2579
         },
         {
+          "path": "skills/ii-editorial-slide/SKILL.md",
+          "sha256": "933fec911335e2f9cce184736b1fb2da8889df764b03214ed7d00d64aef88565",
+          "size": 12156
+        },
+        {
           "path": "skills/ii-editorial-slide/template.html",
           "sha256": "892e34e53693ea9076eeab54d2bfc5c41c975b8dba6a11c1bc110ea84508aa69",
           "size": 17588
@@ -1626,14 +1683,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/interview-brief-by-analogs/SKILL.md",
-          "sha256": "8b60bd2f0e24411bd9882d150863051fae4a09188782b0dc289e24b85540a7bb",
-          "size": 14104
-        },
-        {
           "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
           "sha256": "2c9ffe8074fc829ad25905e49ad92b71e2164d000a2ec615c9a60921fbec24b7",
           "size": 276
+        },
+        {
+          "path": "skills/interview-brief-by-analogs/SKILL.md",
+          "sha256": "8b60bd2f0e24411bd9882d150863051fae4a09188782b0dc289e24b85540a7bb",
+          "size": 14104
         }
       ]
     },
@@ -1655,14 +1712,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/leverage-builder/SKILL.md",
-          "sha256": "2a2af1c9e41a32f4d5431cf9171f28a951667e244af6018330b21368f61db9d6",
-          "size": 15232
-        },
-        {
           "path": "skills/leverage-builder/agents/openai.yaml",
           "sha256": "063e6f8a0df5886d0d48ef1adf88c765c38d95bfa8a4535401faf2a19dbc66c6",
           "size": 327
+        },
+        {
+          "path": "skills/leverage-builder/SKILL.md",
+          "sha256": "2a2af1c9e41a32f4d5431cf9171f28a951667e244af6018330b21368f61db9d6",
+          "size": 15232
         }
       ]
     },
@@ -1671,11 +1728,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/looper-skill-builder/SKILL.md",
-          "sha256": "a6ac35ef3d42d1888f209108bc70a722b0c43cedbf9f7ce7915a7b32ad9765b9",
-          "size": 20100
-        },
         {
           "path": "skills/looper-skill-builder/agents/openai.yaml",
           "sha256": "d1eabb46dfb01eec7ec8012bb217db0cea65488883e761fca50282c3dd0becba",
@@ -1690,6 +1742,11 @@
           "path": "skills/looper-skill-builder/references/family-contract.md",
           "sha256": "5511da50cea2814d6e923567629a50615ae959960b6cc6892ea6b94f48e9e55b",
           "size": 4430
+        },
+        {
+          "path": "skills/looper-skill-builder/SKILL.md",
+          "sha256": "a6ac35ef3d42d1888f209108bc70a722b0c43cedbf9f7ce7915a7b32ad9765b9",
+          "size": 20100
         }
       ]
     },
@@ -1698,11 +1755,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/medical-clinic-economics-semantic-layer/SKILL.md",
-          "sha256": "5cbe920d0f97af75c1f561de8b4ed368db753f798d35ba8bda57fc647d9078eb",
-          "size": 2163
-        },
         {
           "path": "skills/medical-clinic-economics-semantic-layer/references/evidence.md",
           "sha256": "af5c9e4ada95d842bcc8160b506e5b34dc21eabafdf74b954fff5df543774bf2",
@@ -1717,6 +1769,11 @@
           "path": "skills/medical-clinic-economics-semantic-layer/references/source-inventory.md",
           "sha256": "dbe9a7c331e0955596c6d9de61bd357d395fb4aa9ba85af73521bc5ee79cde60",
           "size": 3987
+        },
+        {
+          "path": "skills/medical-clinic-economics-semantic-layer/SKILL.md",
+          "sha256": "5cbe920d0f97af75c1f561de8b4ed368db753f798d35ba8bda57fc647d9078eb",
+          "size": 2163
         }
       ]
     },
@@ -1726,14 +1783,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/meditate/SKILL.md",
-          "sha256": "fa7b04dd1b66b97ea43d7550ba36a8c56412876e81aa30bb1fc558a85c02dea3",
-          "size": 5958
-        },
-        {
           "path": "skills/meditate/agents/openai.yaml",
           "sha256": "bf2925c903188bf0dcad33880c8a0d561b89720f0864cf53f51104a6c5271718",
           "size": 256
+        },
+        {
+          "path": "skills/meditate/SKILL.md",
+          "sha256": "fa7b04dd1b66b97ea43d7550ba36a8c56412876e81aa30bb1fc558a85c02dea3",
+          "size": 5958
         }
       ]
     },
@@ -1779,11 +1836,6 @@
       "source": "retained-local",
       "files": [
         {
-          "path": "skills/paper-planes-artifact-methodology/SKILL.md",
-          "sha256": "9ab2bc0f912e164a0fec599eefd60f655012d8821a9675c5cb46150921b06671",
-          "size": 9829
-        },
-        {
           "path": "skills/paper-planes-artifact-methodology/references/adjacent-skill-router.md",
           "sha256": "ed1778519cc4564a14e73b0a1c1cec57826bbb4cddd11c79370c2cae9ac11f86",
           "size": 2626
@@ -1822,6 +1874,11 @@
           "path": "skills/paper-planes-artifact-methodology/references/output-contract.md",
           "sha256": "86cde7cb52c9077bed3720dad18df553bd0c16c429d6c70a070525910061bb3f",
           "size": 1699
+        },
+        {
+          "path": "skills/paper-planes-artifact-methodology/SKILL.md",
+          "sha256": "9ab2bc0f912e164a0fec599eefd60f655012d8821a9675c5cb46150921b06671",
+          "size": 9829
         }
       ]
     },
@@ -1903,11 +1960,6 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/pp-print-a4/SKILL.md",
-          "sha256": "29e9b79bd88a554c4ed5a9dd967be31e03c7d2ddf1f74875a9dc1a1de92aaafd",
-          "size": 13614
-        },
-        {
           "path": "skills/pp-print-a4/assets/caddy-block.txt",
           "sha256": "cfe286e376726153220e9de99dc249e25468f8a4f3a79649e6f6167ff74eb9d9",
           "size": 1328
@@ -1931,6 +1983,11 @@
           "path": "skills/pp-print-a4/scripts/make_pdf.sh",
           "sha256": "28ae3f525a010656a4497ba1521a2b5332dc145de988444b7a9098b038b941ec",
           "size": 3265
+        },
+        {
+          "path": "skills/pp-print-a4/SKILL.md",
+          "sha256": "29e9b79bd88a554c4ed5a9dd967be31e03c7d2ddf1f74875a9dc1a1de92aaafd",
+          "size": 13614
         }
       ]
     },
@@ -1939,11 +1996,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "9894e618a8bd9eaef7f186a572b8b72f67760f3573905de8c42e20f5b654f0a6",
-          "size": 54243
-        },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
           "sha256": "e760d1012217a71f3571717090e3e737412c56181ce2760096abf53f5385bc8f",
@@ -1965,14 +2017,14 @@
           "size": 4254
         },
         {
-          "path": "skills/pp-slidument/references/kit-2026-07-12-README.md",
-          "sha256": "0a572123f4a305e9ed4c28a8981e69caafb2b182b4e24a60f631265414962bc5",
-          "size": 8048
-        },
-        {
           "path": "skills/pp-slidument/references/kit-2026-07-12-pptx-builder-rule.md",
           "sha256": "94a65b39ef9f20c8f4ba6b1029bc04881228c5d071a12f53dc28e49f6098c072",
           "size": 5149
+        },
+        {
+          "path": "skills/pp-slidument/references/kit-2026-07-12-README.md",
+          "sha256": "0a572123f4a305e9ed4c28a8981e69caafb2b182b4e24a60f631265414962bc5",
+          "size": 8048
         },
         {
           "path": "skills/pp-slidument/references/kit-CHANGELOG.md",
@@ -2003,6 +2055,11 @@
           "path": "skills/pp-slidument/references/visual-style-guide.md",
           "sha256": "39c5a8e43d3affe74d870f3195576970adaa8c4d2813c45680dd2f3549abc02f",
           "size": 4050
+        },
+        {
+          "path": "skills/pp-slidument/SKILL.md",
+          "sha256": "9894e618a8bd9eaef7f186a572b8b72f67760f3573905de8c42e20f5b654f0a6",
+          "size": 54243
         }
       ]
     },
@@ -2036,14 +2093,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "77585671e0fa289278d8d640724372ed67a6129b993db16a5d7dac1049433575",
-          "size": 58075
-        },
-        {
           "path": "skills/presentation-qa/agents/openai.yaml",
           "sha256": "8114736d320165597d7fc241ce004076964b48c97f2eb04fee844d946fea6288",
           "size": 343
+        },
+        {
+          "path": "skills/presentation-qa/SKILL.md",
+          "sha256": "77585671e0fa289278d8d640724372ed67a6129b993db16a5d7dac1049433575",
+          "size": 58075
         }
       ]
     },
@@ -2089,14 +2146,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/rsvp/SKILL.md",
-          "sha256": "52bcc2d40bd0bbadd2dd1626f5a4fb122cd94124ce3c1731a012fc5aa0df066a",
-          "size": 7571
-        },
-        {
           "path": "skills/rsvp/agents/openai.yaml",
           "sha256": "21900842649493e0b7df9976ae7bf9a313fd77be289c03f349e6674bc361c3bc",
           "size": 276
+        },
+        {
+          "path": "skills/rsvp/SKILL.md",
+          "sha256": "52bcc2d40bd0bbadd2dd1626f5a4fb122cd94124ce3c1731a012fc5aa0df066a",
+          "size": 7571
         }
       ]
     },
@@ -2105,11 +2162,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/sales-pst-test-writer/SKILL.md",
-          "sha256": "53200a4a0ce3f7e0209cea2747a047674cfe5b0b54aa75dfd2fdf879cce8d839",
-          "size": 10330
-        },
         {
           "path": "skills/sales-pst-test-writer/agents/openai.yaml",
           "sha256": "21e0f23ea81d7cc9caf535a36039c8e1a05d0efad011f4f3021a59716e15c355",
@@ -2134,6 +2186,11 @@
           "path": "skills/sales-pst-test-writer/references/scoring-rubric.md",
           "sha256": "a6e0c4d8c46a62345d261f3b45a74074c4c3d6e5ba29d6233690c3f2b8af530f",
           "size": 3513
+        },
+        {
+          "path": "skills/sales-pst-test-writer/SKILL.md",
+          "sha256": "53200a4a0ce3f7e0209cea2747a047674cfe5b0b54aa75dfd2fdf879cce8d839",
+          "size": 10330
         }
       ]
     },
@@ -2143,14 +2200,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/sector-service-matrix-builder/SKILL.md",
-          "sha256": "6a98f7694a1db2872d21f6cb9147d1c438ac39e5c45c68312bed8f08bb371abd",
-          "size": 24738
-        },
-        {
           "path": "skills/sector-service-matrix-builder/references/matrix-template.md",
           "sha256": "9986f4080676f53e116da24ddf50e30366ae2420932e5a7244beb5302e14bfde",
           "size": 6203
+        },
+        {
+          "path": "skills/sector-service-matrix-builder/SKILL.md",
+          "sha256": "6a98f7694a1db2872d21f6cb9147d1c438ac39e5c45c68312bed8f08bb371abd",
+          "size": 24738
         }
       ]
     },
@@ -2196,14 +2253,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/summary/SKILL.md",
-          "sha256": "c6563ac42d30c168dc7b6fae985e36f83082fc2e0773b7aac7e7f57947ca81e6",
-          "size": 7802
-        },
-        {
           "path": "skills/summary/agents/openai.yaml",
           "sha256": "53b896dafaf8abe765bc0f02b099d5866b974cc2ce808fdc69f465e96ee7b0d1",
           "size": 265
+        },
+        {
+          "path": "skills/summary/SKILL.md",
+          "sha256": "c6563ac42d30c168dc7b6fae985e36f83082fc2e0773b7aac7e7f57947ca81e6",
+          "size": 7802
         }
       ]
     },
@@ -2212,11 +2269,6 @@
       "lifecycle": "active",
       "source": "ilya-drive",
       "files": [
-        {
-          "path": "skills/text-deai-editor/SKILL.md",
-          "sha256": "f087dca3acfaf5d47d9ece54a3a2a4f3765c2196b83acda55a5d7bf2f86b5a37",
-          "size": 153252
-        },
         {
           "path": "skills/text-deai-editor/references/de-ii-standart.md",
           "sha256": "b6fbffba144edd45da8fb63b984d207ba0310078e4e7789ef3a98701f62e5c71",
@@ -2241,6 +2293,11 @@
           "path": "skills/text-deai-editor/references/ilya-style-canon.md",
           "sha256": "3c7aaa0ba2c2de7196ae5221d9df75e67587fff954ddce5fa04c4291241fa329",
           "size": 281128
+        },
+        {
+          "path": "skills/text-deai-editor/SKILL.md",
+          "sha256": "f087dca3acfaf5d47d9ece54a3a2a4f3765c2196b83acda55a5d7bf2f86b5a37",
+          "size": 153252
         }
       ]
     },
@@ -2274,14 +2331,14 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/tunnel/SKILL.md",
-          "sha256": "e8b86c21cf5686462c4364f90e57f89be969bbccb5d6c9266e7e45526e1b6b3a",
-          "size": 16657
-        },
-        {
           "path": "skills/tunnel/agents/openai.yaml",
           "sha256": "76eb1b7e2368b0691cf5a29760e9dc9397ad889f7203a94c55b76130f0e4bded",
           "size": 311
+        },
+        {
+          "path": "skills/tunnel/SKILL.md",
+          "sha256": "e8b86c21cf5686462c4364f90e57f89be969bbccb5d6c9266e7e45526e1b6b3a",
+          "size": 16657
         }
       ]
     },
@@ -2315,11 +2372,6 @@
       "source": "ilya-drive",
       "files": [
         {
-          "path": "skills/whitepaper-proposal-generator/SKILL.md",
-          "sha256": "6e2e2c63e5fd37427900bb2e62ee988b83340e48125c31adba7fee84d3cc6658",
-          "size": 15708
-        },
-        {
           "path": "skills/whitepaper-proposal-generator/agents/openai.yaml",
           "sha256": "c9d3fb2f3c8af11494a57d5462506e551903094c911119603cc1153fc7e5c138",
           "size": 296
@@ -2338,6 +2390,11 @@
           "path": "skills/whitepaper-proposal-generator/references/whitepaper-gamma-narrative.md",
           "sha256": "67f8f2ee120c71687dfdeeea258b7d2c7bad528b2e3cd7e7773bcaaecc242ac0",
           "size": 6065
+        },
+        {
+          "path": "skills/whitepaper-proposal-generator/SKILL.md",
+          "sha256": "6e2e2c63e5fd37427900bb2e62ee988b83340e48125c31adba7fee84d3cc6658",
+          "size": 15708
         }
       ]
     }
@@ -2347,120 +2404,90 @@
     {
       "skill": "autoresearch",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "client-intel-agent",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "client-project-onboarding",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "concept-deep-dive",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "daily-notes-processor",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "hypothesis-map-builder",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "km",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "meeting-report",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "notion-vault-sync",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "research-agent",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "session-handoff",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "three-perspective-review",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "trails-generator",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "vault-brain-scan",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     },
     {
       "skill": "vault-note-enricher",
       "issues": [
-        "missing YAML frontmatter",
-        "missing frontmatter name",
         "missing frontmatter description"
       ]
     }
