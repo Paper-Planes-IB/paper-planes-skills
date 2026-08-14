@@ -42,51 +42,51 @@
   {
     "skill": "bpm4-b2b-dashboard-industrial-distribution",
     "type": "BPM / методология",
-    "description": "Собирает панели BPM-4 для промышленной дистрибуции: формулу прибыли, сегменты клиентов и дилеров, когорты поставок и связи SKU. Поддерживает перекрёстную фильтрацию в BI и Yandex DataLens.",
+    "description": "Доменный скилл BPM-4 для B2B-дистрибуции и SKU-бизнесов: дилеры, контрагенты, регулярные отгрузки, регионы, менеджеры, категории и SKU. Использовать, когда нужно разложить формулу прибыли, сегментации клиентов/SKU, матрицы регионов и точки роста до передачи в BI или DataLens.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-b2b-dashboard-industrial-distribution",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpm4-b2b-dashboard-industrial-distribution-91212d6a",
-    "slices": "BPM / методология",
+    "slices": "BPM-4 · доменная семантика · B2B · дистрибуция · SKU · дилеры · отгрузки",
     "lifecycle": "active"
   },
   {
     "skill": "bpm4-b2c-dashboard",
     "type": "BPM / методология",
-    "description": "Скилл помогает собрать и проверить обезличенный B2C-дашборд по BPM-4: контракт данных, формулу прибыли, повторы, RFM, когорты и кластеры. Он фиксирует правила исключения партнёров и B2B из клиентской сегментации, а также даёт чеклист приёмки перед сдачей.",
+    "description": "Доменный скилл BPM-4 для B2C-дашбордов: розница, e-commerce, услуги, чеки, конечные покупатели, повторы, RFM, когорты и клиентские кластеры. Использовать до BI-реализации, когда нужно согласовать контракт данных, метрики, обезличивание и правила исключения партнёров/B2B из клиентской базы.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-b2c-dashboard",
     "page": "https://lms.paper-planes.ru/knowledge/skill-bpm4-b2c-dashboard",
-    "slices": "BPM-4; B2C; RFM; повторные покупки; клиентская база; когорты",
+    "slices": "BPM-4 · доменная семантика · B2C · конечные покупатели · RFM · повторы · когорты",
     "lifecycle": "active"
   },
   {
     "skill": "bpm4-datalens-dashboard",
     "type": "BPM / методология",
-    "description": "Собирает и проверяет панель «Формула прибыли» BPM-4 в Yandex DataLens. Работает с SQL-представлениями, наборами данных, графиками, фильтрами, публикацией и передачей выводов в Storyline-Storyboard.",
+    "description": "Технический скилл реализации BPM-4 в Yandex DataLens: SQL views, datasets, charts, controls, click-to-filter, scatter, save/publish и browser QA. Использовать после доменного BPM-4 скилла, когда формула прибыли, grain, метрики и правила источников уже согласованы.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-datalens-dashboard",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpm4-datalens-dashboard-b18067b7",
-    "slices": "BPM / методология · Управление проектами · Внутренние процессы",
+    "slices": "BPM-4 · реализация · DataLens · BI · SQL · dashboard QA · click-to-filter",
     "lifecycle": "active"
   },
   {
     "skill": "bpm4-healthcare-clinic-economics",
     "type": "BPM / методология",
-    "description": "Анализирует экономику клиник по BPM-4 Formula Profit: потоки пациентов, записи, визиты, процедуры, врачей и мощности. Учитывает выгрузки МИС, ОМС, ДМС, коммерческую выручку и LTV.",
+    "description": "Доменный скилл BPM-4 для экономики клиник и медицины: пациенты, записи, визиты, процедуры, врачи, отделения, плательщики, мощности и медицинские маршруты. Использовать вместо обычного B2C/B2B, когда grain задаётся МИС/EMR, patient journey, payer mix и capacity-ограничениями.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-healthcare-clinic-economics",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpm4-healthcare-clinic-economics-7411713c",
-    "slices": "BPM / методология · Управление проектами",
+    "slices": "BPM-4 · доменная семантика · медицина · клиники · пациенты · визиты · мощности",
     "lifecycle": "active"
   },
   {
     "skill": "bpm4-it-saas-enterprise-vendor",
     "type": "BPM / методология",
-    "description": "Применяет BPM-4 Formula Profit к ИТ, SaaS, кибербезопасности и корпоративному ПО. Разбирает CRM-сделки, продления, поддержку, лицензии, подписки, внедрение и переменную основу цены.",
+    "description": "Доменный скилл BPM-4 для IT, SaaS, cybersecurity и enterprise software: лицензии, подписки, renewals, support, внедрение, партнёры, product anchors и переменная база цены. Использовать, когда ARPU недостаточен и нужно нормализовать выручку через revenue streams и protected scope до BI-реализации.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-it-saas-enterprise-vendor",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpm4-it-saas-enterprise-vendor-1f39473b",
-    "slices": "BPM / методология · Управление проектами · Контент и редактура",
+    "slices": "BPM-4 · доменная семантика · IT/SaaS · лицензии · renewal · support · protected scope",
     "lifecycle": "active"
   },
   {
@@ -112,11 +112,11 @@
   {
     "skill": "bpv-14-digital-profit-model",
     "type": "BPM / методология",
-    "description": "Ведёт внедрение цифровой модели прибыли BPV-14. Охватывает приоритизацию SKU, APS, карты ограничений, готовность данных, правила цены и сырья, пилоты и передачу решения командам данных и ИТ.",
+    "description": "Смежный BPV/Digital Profit Model скилл про приоритизацию исполнения, capacity allocation, APS/solver/AI triage, override learning и управляемую валовую прибыль. Это не BPM-4-дашборд; использовать после экономической диагностики, когда нужно превратить аналитику в повторяемую операционную систему решений.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-14-digital-profit-model",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpv-14-digital-profit-model-9f99923c",
-    "slices": "BPM / методология · Управление проектами · Контент и редактура",
+    "slices": "Смежный BPV · Digital Profit Model · capacity · prioritization · solver · decision system",
     "lifecycle": "active"
   },
   {
@@ -132,11 +132,11 @@
   {
     "skill": "demand-supply-match-intelligence",
     "type": "BPM / методология",
-    "description": "Оценивает соответствие спроса и предложения, рыночную возможность и маршрут коммерциализации. Готовит задание для ChatGPT Pro или Perplexity и разбирает ответ для BPM-7A/B, BPM-4 и продуктовой стратегии.",
+    "description": "Смежный research-скилл для проверки market opportunity и demand-supply fit: offer unit, market cell, клиентская работа, маршрут коммерциализации и confidence gates. Это не скилл сборки BPM-4-дашборда; использовать рядом с BPM-4, когда нужно проверить рынок, спрос, предложение или продуктово-рыночное соответствие.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/demand-supply-match-intelligence",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-demand-supply-match-intelligence-53d3f2f1",
-    "slices": "BPM / методология · Внутренние процессы",
+    "slices": "BPM-7A/B · BPM-4 follow-up · research · market fit · demand-supply · opportunity",
     "lifecycle": "active"
   },
   {
@@ -164,11 +164,11 @@
   {
     "skill": "medical-clinic-economics-semantic-layer",
     "type": "BPM / методология",
-    "description": "Отвечает на аналитические вопросы по экономике клиник и стоматологий. Разбирает базу пациентов, RFM, LTV, записи, визиты, врачей, отделения, филиалы, мощности и ограничения исходных данных.",
+    "description": "Смежный слой для ответов на вопросы по экономике клиник: метрики, сущности, grain, caveats и источник-ориентированная интерпретация медицинских данных. Это не полный BPM-4 процесс; использовать для точечных аналитических ответов и проверки медицинской семантики.",
     "source": "Илья / GitHub",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/medical-clinic-economics-semantic-layer",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-medical-clinic-economics-semantic-layer-3e6db82e",
-    "slices": "BPM / методология",
+    "slices": "Смежный слой · медицина · semantic layer · метрики · caveats · source QA",
     "lifecycle": "active"
   },
   {
