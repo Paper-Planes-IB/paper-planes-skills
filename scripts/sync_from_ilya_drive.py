@@ -7,6 +7,7 @@ marked as legacy in registry/manifest.json. Nothing is deleted automatically.
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import mimetypes
@@ -46,6 +47,7 @@ KNOWN_LEGACY = {
 }
 RETAINED_ACTIVE = {
     "archive-granola-transcripts",
+    "paper-planes-presentation-kit",
 }
 
 
@@ -222,28 +224,48 @@ def validate_skill(path: pathlib.Path) -> list[str]:
 
 
 def main() -> int:
-    token = access_token()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--local-only",
+        action="store_true",
+        help="Rebuild the manifest from the local mirror without contacting Google Drive.",
+    )
+    args = parser.parse_args()
     SKILLS_DIR.mkdir(exist_ok=True)
     REGISTRY_DIR.mkdir(exist_ok=True)
-    upstream_names = {
-        safe_name(item["name"])
-        for item in list_children(token, SOURCE_FOLDER_ID)
-        if item["mimeType"] == FOLDER_MIME
-    }
-    with tempfile.TemporaryDirectory(prefix="pp-skills-") as temp_dir:
-        snapshot = pathlib.Path(temp_dir) / "skills"
-        snapshot.mkdir()
-        inventory: list[dict] = []
-        fetch_tree(token, SOURCE_FOLDER_ID, snapshot, inventory)
-        for skill_name in sorted(upstream_names, key=str.casefold):
-            source = snapshot / skill_name
-            if not source.is_dir():
-                continue
-            destination = SKILLS_DIR / skill_name
-            if destination.exists():
-                shutil.copytree(source, destination, dirs_exist_ok=True)
-            else:
-                shutil.copytree(source, destination)
+    manifest_path = REGISTRY_DIR / "manifest.json"
+    previous_manifest = (
+        json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest_path.exists()
+        else None
+    )
+    if args.local_only:
+        upstream_names = {
+            record["name"]
+            for record in (previous_manifest or {}).get("skills", [])
+            if record.get("source") == "ilya-drive"
+        }
+    else:
+        token = access_token()
+        upstream_names = {
+            safe_name(item["name"])
+            for item in list_children(token, SOURCE_FOLDER_ID)
+            if item["mimeType"] == FOLDER_MIME
+        }
+        with tempfile.TemporaryDirectory(prefix="pp-skills-") as temp_dir:
+            snapshot = pathlib.Path(temp_dir) / "skills"
+            snapshot.mkdir()
+            inventory: list[dict] = []
+            fetch_tree(token, SOURCE_FOLDER_ID, snapshot, inventory)
+            for skill_name in sorted(upstream_names, key=str.casefold):
+                source = snapshot / skill_name
+                if not source.is_dir():
+                    continue
+                destination = SKILLS_DIR / skill_name
+                if destination.exists():
+                    shutil.copytree(source, destination, dirs_exist_ok=True)
+                else:
+                    shutil.copytree(source, destination)
 
     all_names = sorted(
         [path.name for path in SKILLS_DIR.iterdir() if path.is_dir()], key=str.casefold
@@ -283,11 +305,6 @@ def main() -> int:
                 "files": files,
             }
         )
-
-    manifest_path = REGISTRY_DIR / "manifest.json"
-    previous_manifest = None
-    if manifest_path.exists():
-        previous_manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
 
     manifest = {
         "schema_version": 1,
