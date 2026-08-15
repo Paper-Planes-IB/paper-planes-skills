@@ -57,7 +57,7 @@
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm4-b2c-dashboard",
     "page": "https://lms.paper-planes.ru/knowledge/skill-bpm4-b2c-dashboard",
     "slices": "BPM-4 · доменная семантика · B2C · конечные покупатели · RFM · повторы · когорты",
-    "lifecycle": "active"
+    "lifecycle": "legacy"
   },
   {
     "skill": "bpm4-datalens-dashboard",
