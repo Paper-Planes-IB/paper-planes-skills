@@ -838,6 +838,16 @@
     "slices": "Контент и редактура"
   },
   {
+    "skill": "paper-planes-presentation-kit",
+    "type": "Контент и редактура",
+    "description": "Задает единый стандарт Paper Planes для презентаций, слайдументов, PP Pages и насыщенных одностраничных материалов. Ведет от содержательного Markdown и источников к выбору визуала, сборке, проверке реального рендера и итоговой приемке.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/paper-planes-presentation-kit",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-paper-planes-presentation-kit",
+    "slices": "Контент и редактура · Управление проектами · Внутренние процессы",
+    "lifecycle": "active"
+  },
+  {
     "skill": "pp-case-writing",
     "slug": "pp-case-writing",
     "type": "Контент и редактура",

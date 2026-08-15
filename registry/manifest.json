@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-15T04:06:50Z",
+  "generated_at": "2026-08-15T22:38:57Z",
   "upstream_skill_count": 78,
-  "repository_skill_count": 81,
+  "repository_skill_count": 82,
   "legacy_skill_count": 12,
   "skills": [
     {
@@ -1883,6 +1883,48 @@
       ]
     },
     {
+      "name": "paper-planes-presentation-kit",
+      "lifecycle": "active",
+      "source": "retained-local",
+      "files": [
+        {
+          "path": "skills/paper-planes-presentation-kit/SKILL.md",
+          "sha256": "22047535f304ff69c57a358a97caa24b26ad4c005d5a69cde20c876d540b7dbb",
+          "size": 8527
+        },
+        {
+          "path": "skills/paper-planes-presentation-kit/agents/openai.yaml",
+          "sha256": "6018a63e7f4ade81934cd54caeb02b2429368167ed607b6bb672d7ecfe8df5fa",
+          "size": 350
+        },
+        {
+          "path": "skills/paper-planes-presentation-kit/references/acceptance-checklist.md",
+          "sha256": "c96d40d345d364515fc41804a8e56b15ab3ea56b7d5290c42b20bc4b48defcc6",
+          "size": 2711
+        },
+        {
+          "path": "skills/paper-planes-presentation-kit/references/carrier-router.md",
+          "sha256": "bd1d934013039db78a0fd775a7943b5c24623cae17e392bcded8b80a4afb5786",
+          "size": 1578
+        },
+        {
+          "path": "skills/paper-planes-presentation-kit/references/eval-cases.md",
+          "sha256": "4db9b8c8d631624d40e4ef00fd1d71673c006078c006a3619e70041ce1ed3611",
+          "size": 2591
+        },
+        {
+          "path": "skills/paper-planes-presentation-kit/references/eval-report.md",
+          "sha256": "6bd6f925be759ac6468fe32c384c4d98c48ebaf623a7f924019526b99d535bbe",
+          "size": 1572
+        },
+        {
+          "path": "skills/paper-planes-presentation-kit/references/source-snapshot.md",
+          "sha256": "cde724f5196f4d9c29676af4db710a665c8aea92f3e6c81ec7e60223062f3c5f",
+          "size": 1161
+        }
+      ]
+    },
+    {
       "name": "partners-ingest",
       "lifecycle": "active",
       "source": "ilya-drive",
@@ -1998,8 +2040,8 @@
       "files": [
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "9894e618a8bd9eaef7f186a572b8b72f67760f3573905de8c42e20f5b654f0a6",
-          "size": 54243
+          "sha256": "027f699cd7fce97663c7aef381cca5e18cb2baee3a7b1a4ee90386344ebc0550",
+          "size": 54391
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",

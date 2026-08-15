@@ -84,7 +84,7 @@ HTML-прототип проверяется в двух слоях:
 
 Стартовый контракт обязателен: использовать `references/deck-content-template.md`, типы из `references/slide_types.md`, палитру из `references/visual-style-guide.md`, процесс из `references/kit-2026-07-12-README.md` и правила экспорта из `references/kit-2026-07-12-pptx-builder-rule.md`. Это единый PP Presentation Kit 2026-07-12; выбор отдельных удобных частей не считается применением кита.
 
-Канонический upstream кита: `https://github.com/ntokaeva/paper-planes-presentation-kit`, ветка `main`. Receipt должен фиксировать upstream commit и drift относительно установленного snapshot; проверенный 12.07.2026 HEAD — `c9aa8b46f1a306f9037d36957bb778ebe990a2cc`.
+Канонический upstream кита: `https://github.com/Paper-Planes-IB/paper-planes-presentation-kit`, ветка `main`. Приемочная квитанция должна фиксировать upstream commit и расхождение с установленным snapshot. Для новой работы сначала сверить актуальный HEAD; сведенный 16.08.2026 пакет зафиксирован в скилле `paper-planes-presentation-kit`.
 
 Для каждого слайда обязательны пять независимых адресов:
 
