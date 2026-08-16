@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-15T22:38:57Z",
+  "generated_at": "2026-08-16T04:09:34Z",
   "upstream_skill_count": 78,
   "repository_skill_count": 82,
   "legacy_skill_count": 12,
@@ -2040,8 +2040,8 @@
       "files": [
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "027f699cd7fce97663c7aef381cca5e18cb2baee3a7b1a4ee90386344ebc0550",
-          "size": 54391
+          "sha256": "9894e618a8bd9eaef7f186a572b8b72f67760f3573905de8c42e20f5b654f0a6",
+          "size": 54243
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
