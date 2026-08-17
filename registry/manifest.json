@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-16T04:09:34Z",
+  "generated_at": "2026-08-17T04:30:00Z",
   "upstream_skill_count": 78,
   "repository_skill_count": 82,
   "legacy_skill_count": 12,
@@ -62,8 +62,8 @@
         },
         {
           "path": "skills/archive-granola-transcripts/scripts/__pycache__/sync_granola_api.cpython-39.pyc",
-          "sha256": "1d9f6718cd51720652ee847773bb3c9034a9513a2a5d8a8fc2fb11ad1e1d1f59",
-          "size": 9450
+          "sha256": "347357020b6ae7fc441b3131ca30370613b75e2e510740065664006de0322f0a",
+          "size": 10472
         },
         {
           "path": "skills/archive-granola-transcripts/scripts/com.paperplanes.granola-archive.plist",
