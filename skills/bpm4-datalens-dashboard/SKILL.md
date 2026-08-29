@@ -379,3 +379,7 @@ If no route is needed, record a no-op reason instead of silently dropping the fi
 - Save happened before publish, and fresh dashboard state was read after publish.
 - Browser render is checked before claiming the dashboard is ready.
 - Final answer names dashboardId, revId, what changed, what was checked, and remaining limitations.
+
+## Structured Analytical Artifact Gate
+
+Before DataLens implementation, metric trees, dimensions, segmentations, filters, evidence tables, and storyline handoffs inherit the global contract in `~/.codex/AGENTS.md`. Require decision, metric definition, numerator/denominator, grain, dimensions, owners, source lineage, filter interaction, residual/unclassified handling, and MECE only where a partition claims coverage. The dashboard is a downstream view, not the methodology or client-evidence source; Frappe/Quartz cannot block calculation work.

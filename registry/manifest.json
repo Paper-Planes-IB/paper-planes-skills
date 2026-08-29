@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-17T04:30:00Z",
-  "upstream_skill_count": 78,
-  "repository_skill_count": 82,
+  "generated_at": "2026-08-29T16:45:06Z",
+  "upstream_skill_count": 79,
+  "repository_skill_count": 83,
   "legacy_skill_count": 12,
   "skills": [
     {
@@ -13,8 +13,8 @@
       "files": [
         {
           "path": "skills/admin/SKILL.md",
-          "sha256": "b9f8851e82f762fd176f09da4557183c5845b3e92b658d4bfd24bb949678847d",
-          "size": 46841
+          "sha256": "4aad436ee0692cbaecde42d54034d0378da9626c36eb7671a43d8f0f622914f3",
+          "size": 51309
         },
         {
           "path": "skills/admin/agents/openai.yaml",
@@ -147,8 +147,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "ea457feb52cd43f475da305e92113d35b450d658ad083a93019c37a48e802c7f",
-          "size": 49550
+          "sha256": "392a331e5739fd9cb7ae3dc3ce945800d9f00567eba9cd5be812c665a35347b3",
+          "size": 52601
         }
       ]
     },
@@ -159,8 +159,8 @@
       "files": [
         {
           "path": "skills/BPM1/SKILL.md",
-          "sha256": "1f6d18588a6e7c0c43a7b9a26a76b707cf1e149fe1542e79394cbe6e593ebb48",
-          "size": 11230
+          "sha256": "a6bd0b815a21a1d639b0fcd8f7159da61593ebb6af75254493b0952162aff727",
+          "size": 15116
         },
         {
           "path": "skills/BPM1/references/ingest-layer.md",
@@ -236,8 +236,8 @@
       "files": [
         {
           "path": "skills/bpm10-crm/SKILL.md",
-          "sha256": "01af8aa10e021843a182065283e3d99f6e7e8938948db3c7cf830560011af530",
-          "size": 13783
+          "sha256": "9f9bb7bbbb1aa0d5facc61c37debf6aba58c09ad9834e79b0153a11b394f93ba",
+          "size": 14644
         },
         {
           "path": "skills/bpm10-crm/agents/openai.yaml",
@@ -298,8 +298,8 @@
       "files": [
         {
           "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
-          "sha256": "f462f525546eefb653714fd4f88393ed13117a0dd5594deaf53a2e0328cc9356",
-          "size": 26354
+          "sha256": "51c19a1ed926ef97abcbfb726031b1bede90df2a8250b407440bd32c1d6b3d10",
+          "size": 34283
         }
       ]
     },
@@ -367,8 +367,8 @@
       "files": [
         {
           "path": "skills/bpm4-datalens-dashboard/SKILL.md",
-          "sha256": "f0c587b4b8ae6a1ebe31188852905abece0d6ac37d56b114cf7abf32dab8a1e9",
-          "size": 16619
+          "sha256": "2da479ac4a0d76e8b2fdddd30a9f1ac082711cd8e6861fc1cd573a95df40b719",
+          "size": 17167
         }
       ]
     },
@@ -379,8 +379,8 @@
       "files": [
         {
           "path": "skills/bpm4-healthcare-clinic-economics/SKILL.md",
-          "sha256": "87d282314820034acd8d043b05f2e1ea7b499d8ff4c9465700825613788c547b",
-          "size": 36127
+          "sha256": "b041b4ee62f358138b8ca165207e34adb22b04ee0159f8235f4fed91da81f70e",
+          "size": 38550
         }
       ]
     },
@@ -391,8 +391,8 @@
       "files": [
         {
           "path": "skills/bpm4-it-saas-enterprise-vendor/SKILL.md",
-          "sha256": "2d46617ce43982fa5a2afa5bc3365386c8373abf95244a7ba39e02bde0920de0",
-          "size": 9544
+          "sha256": "8002bab266036c13fa071b3574c8c4b67c58233eefe1f0fb54561ef6c57c4a8e",
+          "size": 10107
         }
       ]
     },
@@ -420,8 +420,8 @@
       "files": [
         {
           "path": "skills/bpv-04-mpp-commercial-proposal/SKILL.md",
-          "sha256": "6702a74bf8a61a58aa5acb582e0a81f4dad246780984e542dc1e1d934089fb86",
-          "size": 13297
+          "sha256": "fa3079b92fddc507a1da6e982ad8b7c0fbd9148493fdca651635b0fb9419d282",
+          "size": 14972
         },
         {
           "path": "skills/bpv-04-mpp-commercial-proposal/agents/openai.yaml",
@@ -466,8 +466,8 @@
       "files": [
         {
           "path": "skills/clickup-mcp-router/SKILL.md",
-          "sha256": "5b47039d91c316fc5c2fbc2416ffe8a8a9f7c1263d6f14cd77c5ae43af14e2ba",
-          "size": 27089
+          "sha256": "d61e1f2286c78a8566a643060449279c64ac7ce72ba85cc58a5a396b42723ed3",
+          "size": 30307
         },
         {
           "path": "skills/clickup-mcp-router/agents/openai.yaml",
@@ -519,8 +519,8 @@
       "files": [
         {
           "path": "skills/cognitive-router/SKILL.md",
-          "sha256": "2764af880793331e0852275e2925838c12b743a04cb746fdcde31d9cccd38519",
-          "size": 19326
+          "sha256": "ac021366d8eeb12c9c48a1e2f8dfa7c87078ee530b4296b33fa341b0ccd5825d",
+          "size": 20020
         },
         {
           "path": "skills/cognitive-router/agents/openai.yaml",
@@ -536,8 +536,8 @@
       "files": [
         {
           "path": "skills/commercial-proposal-generator/SKILL.md",
-          "sha256": "735d484a2f38f170c5ad02c5c8f7ca5840fc050778b50fedd65391dfae14dde5",
-          "size": 201776
+          "sha256": "42a74bc7eb7d91273b0416c0a662e4eb2fe84cfe9aedde81e58cf2634ce5470d",
+          "size": 225286
         },
         {
           "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -591,8 +591,8 @@
         },
         {
           "path": "skills/commercial-proposal-generator/references/proposal_templates.md",
-          "sha256": "46e6b47d0d0ed7bdbb466297a1a340bdc9d7f931a3cfcc5388d4a7647c53c726",
-          "size": 6118
+          "sha256": "71ed53e140284e5537265e29321e10d04b8d76530220dc50e0713f2bc0de8235",
+          "size": 6598
         },
         {
           "path": "skills/commercial-proposal-generator/references/quality_checklist.md",
@@ -616,8 +616,8 @@
         },
         {
           "path": "skills/commercial-proposal-generator/scripts/commercial_proposal_scaffold.py",
-          "sha256": "e316cf533b54404316c024c2900f1db23beb9611611720bf57ff78ef3a74eb65",
-          "size": 26659
+          "sha256": "c75ada4a1abe7c9a92378950cc54d46e194b8859a16263475da2f7a6a21bcfcd",
+          "size": 27716
         }
       ]
     },
@@ -628,8 +628,8 @@
       "files": [
         {
           "path": "skills/competitor-research/SKILL.md",
-          "sha256": "fb35fc25cedc937838830802005611e3ecb24aacb9cb9fd8307eee4e056857f4",
-          "size": 142204
+          "sha256": "da8e411d64a4761ca82690e42a7942f0a0aaf584f5a9e6a56b21520d6dfafa1f",
+          "size": 142913
         }
       ]
     },
@@ -664,8 +664,8 @@
       "files": [
         {
           "path": "skills/consulting-slides-creator/SKILL.md",
-          "sha256": "b3782a194725c12356743b72e4393269893cedbdf8380eb9b7ac09d00d86caf9",
-          "size": 6600
+          "sha256": "58472067866a9737e53b8ef579aeb6b7903aab577d3db50fca96f790cd94a449",
+          "size": 7205
         },
         {
           "path": "skills/consulting-slides-creator/references/consulting_principles.md",
@@ -782,8 +782,8 @@
       "files": [
         {
           "path": "skills/deepresearch/SKILL.md",
-          "sha256": "54b08e9a21de1e118959d6ef2fecfeafb6e28f8a65127943629e633a962b4831",
-          "size": 103946
+          "sha256": "7de589e91bd0ed0f084e183711628f3eb6714317227cf2602cf5a95ec61e328d",
+          "size": 104624
         }
       ]
     },
@@ -818,8 +818,8 @@
       "files": [
         {
           "path": "skills/fix-rules/SKILL.md",
-          "sha256": "fc0e5557955c86692e77ed4c531ee0cc261780a09ec0992f06c49c99f1a6aec4",
-          "size": 16376
+          "sha256": "6fc7963651ba4e5e565c114aae5e44f829ce40d25375cb53224fbbffda0c608e",
+          "size": 19592
         },
         {
           "path": "skills/fix-rules/agents/openai.yaml",
@@ -1672,8 +1672,8 @@
       "files": [
         {
           "path": "skills/ingest/SKILL.md",
-          "sha256": "5753473ee94743490afa7b8de71b861355e3ecc815bd59036684ca06d76c05d3",
-          "size": 51418
+          "sha256": "067436409e2947f24584c5b03aadf7819841787b20ff90976321dc40193873f4",
+          "size": 53455
         }
       ]
     },
@@ -1684,8 +1684,8 @@
       "files": [
         {
           "path": "skills/interview-brief-by-analogs/SKILL.md",
-          "sha256": "8b60bd2f0e24411bd9882d150863051fae4a09188782b0dc289e24b85540a7bb",
-          "size": 14104
+          "sha256": "e57cba78436635c099cdd9486e3e062468c14ae6bd8b0766c7bd351882e85115",
+          "size": 14637
         },
         {
           "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
@@ -1713,13 +1713,55 @@
       "files": [
         {
           "path": "skills/leverage-builder/SKILL.md",
-          "sha256": "2a2af1c9e41a32f4d5431cf9171f28a951667e244af6018330b21368f61db9d6",
-          "size": 15232
+          "sha256": "e87b893f3ef5f02b58603be8002fbefa8d45303b8a2592961ab217a4952deb52",
+          "size": 15838
         },
         {
           "path": "skills/leverage-builder/agents/openai.yaml",
           "sha256": "063e6f8a0df5886d0d48ef1adf88c765c38d95bfa8a4535401faf2a19dbc66c6",
           "size": 327
+        }
+      ]
+    },
+    {
+      "name": "loop-engineer",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/loop-engineer/SKILL.md",
+          "sha256": "ca5b7f6bb75feac1c1b10065dee87d6924da1308fea46c488ab1dcd90a55513d",
+          "size": 15570
+        },
+        {
+          "path": "skills/loop-engineer/references/cloud-session-observation.md",
+          "sha256": "9f36816e95d3e296f7339c4feca4c3b5db3704b97562cb1d4d43bd9d0487b0b2",
+          "size": 2101
+        },
+        {
+          "path": "skills/loop-engineer/references/human-handoff.md",
+          "sha256": "a42cd43694b9dd7c8a9083fee5b83f58c47725f89f04d0c0a2d3eff57aaa1e66",
+          "size": 1685
+        },
+        {
+          "path": "skills/loop-engineer/references/operating-contract.md",
+          "sha256": "88b691c239aa892a6b2995bae2bea9f78d9a5aa952faef6c2a2eb6a77976ecd4",
+          "size": 6257
+        },
+        {
+          "path": "skills/loop-engineer/references/skill-transfer-gate.md",
+          "sha256": "492a960b813d8454c6beda351fba7dc4aeccb4c52999314317fb60353bb454a0",
+          "size": 1768
+        },
+        {
+          "path": "skills/loop-engineer/references/verified-throughput-control.md",
+          "sha256": "38a5f33379dcb70783a173dfe3c37597858428ab9be2652b1595ee610453ac2b",
+          "size": 1795
+        },
+        {
+          "path": "skills/loop-engineer/references/weekly-session-meditate.md",
+          "sha256": "0d89c1b0372a38db5348d108ddbe63db10bc3ad28782c588af8b6a733465cd5e",
+          "size": 7325
         }
       ]
     },
@@ -1813,8 +1855,8 @@
       "files": [
         {
           "path": "skills/multi-perspective-review/SKILL.md",
-          "sha256": "fcf0893a13a8165433aba149667a730e351d59e5bf89748f3edbfc3b57c3b750",
-          "size": 13233
+          "sha256": "b4504ab18355fac65c234ac7d3a8a9235eb0b2afaca1200be34ae334a489da61",
+          "size": 14466
         }
       ]
     },
@@ -1931,8 +1973,8 @@
       "files": [
         {
           "path": "skills/partners-ingest/SKILL.md",
-          "sha256": "2febdb9423e4c1b9d529f95bc5f2017c2fe4ea30c6a5bfc6eb1941b4a9839fc4",
-          "size": 8431
+          "sha256": "37cc364e90cac8891fbac7f6b309a1b8913eb9270321210565a2435101d63011",
+          "size": 10120
         }
       ]
     },
@@ -1943,8 +1985,8 @@
       "files": [
         {
           "path": "skills/pp-case-writer/SKILL.md",
-          "sha256": "9a925f30f286e90b1edb22d156b19b7ed0c57d4d61b02d216c204eac9d913cee",
-          "size": 11881
+          "sha256": "9a4148ea52c749a93b7a200833d8693f8910206d9c19fa39075592e416413389",
+          "size": 12470
         }
       ]
     },
@@ -1955,8 +1997,8 @@
       "files": [
         {
           "path": "skills/pp-interview-slides/SKILL.md",
-          "sha256": "61b5bc0e88677ab138eb034c8015580d2c4122b7f7fedb351fb858cc2efbb18a",
-          "size": 26677
+          "sha256": "674c57471979c4cd71c3322791ae8984105c512d255ddbd5a5a0e7efa6bfa005",
+          "size": 29449
         }
       ]
     },
@@ -2040,8 +2082,8 @@
       "files": [
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "9894e618a8bd9eaef7f186a572b8b72f67760f3573905de8c42e20f5b654f0a6",
-          "size": 54243
+          "sha256": "8f51f1c8c8cb3613d76c64cf1ef4dd050959e3164c1f237fe98f552459528fac",
+          "size": 61976
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2112,8 +2154,8 @@
       "files": [
         {
           "path": "skills/pp-survey-dashboard/SKILL.md",
-          "sha256": "9b102633923a087c7680fd9ebb6c5c9466caab4c505644148c723b276e5e21ce",
-          "size": 20315
+          "sha256": "b521d9fa1c46e1ab1ad38df9e809ae7f0109090c76c165925a65626d04822d81",
+          "size": 20868
         }
       ]
     },
@@ -2124,8 +2166,8 @@
       "files": [
         {
           "path": "skills/pp-survey-slides/SKILL.md",
-          "sha256": "6c77036d66fa2eb348c68cb6610a5d2ddccb7915527ba7942b158dd918f7adef",
-          "size": 48298
+          "sha256": "400048d15131f7733347d81c18f6bebaee8943b40f22e26b0ac792f62c2c5731",
+          "size": 48886
         }
       ]
     },
@@ -2136,8 +2178,8 @@
       "files": [
         {
           "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "77585671e0fa289278d8d640724372ed67a6129b993db16a5d7dac1049433575",
-          "size": 58075
+          "sha256": "fe9abab6a8dada7c528b54c0d561f070204b0d7b28728f57152b66bb3d414fd2",
+          "size": 58749
         },
         {
           "path": "skills/presentation-qa/agents/openai.yaml",
@@ -2165,8 +2207,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "8afc8233fd62258a947b4011246c772766d281d787001576da1cf8fa0a0c0563",
-          "size": 191361
+          "sha256": "0fe48dcb94ef3233ba7084eadcc52c4c65354fcdd6f0ee6ffa7176c7c83935ab",
+          "size": 227659
         }
       ]
     },
@@ -2243,8 +2285,8 @@
       "files": [
         {
           "path": "skills/sector-service-matrix-builder/SKILL.md",
-          "sha256": "6a98f7694a1db2872d21f6cb9147d1c438ac39e5c45c68312bed8f08bb371abd",
-          "size": 24738
+          "sha256": "a838f4c4a836ebcf1a63eef8a202b4420fdd130a130981dd4ba77386db87864f",
+          "size": 25703
         },
         {
           "path": "skills/sector-service-matrix-builder/references/matrix-template.md",
@@ -2272,8 +2314,8 @@
       "files": [
         {
           "path": "skills/skill-eval-harness/SKILL.md",
-          "sha256": "bdeda0b3969c0bdba2448d196542ec9dea97f77714c8c7df2eab69733980ae6c",
-          "size": 11603
+          "sha256": "db6022cb559c2ad864fca642ed9a5641af001ba053db048e18f2bbfa10a7123e",
+          "size": 12808
         }
       ]
     },
@@ -2284,8 +2326,8 @@
       "files": [
         {
           "path": "skills/skill-system-governance/SKILL.md",
-          "sha256": "697e3d37ccbaf614d06543d3ab66f2f8459e7bd087c74f575dcc3fcbda947b95",
-          "size": 11074
+          "sha256": "d4521391680cef8c497a428b91b5f92fdac600f99b6fd351bb458a0a6e33f741",
+          "size": 13580
         }
       ]
     },
@@ -2296,8 +2338,8 @@
       "files": [
         {
           "path": "skills/summary/SKILL.md",
-          "sha256": "c6563ac42d30c168dc7b6fae985e36f83082fc2e0773b7aac7e7f57947ca81e6",
-          "size": 7802
+          "sha256": "0a7f41d75b0c216ef768cd0da2df99d0d06df810f33e71a2124b26ed446c6eff",
+          "size": 8484
         },
         {
           "path": "skills/summary/agents/openai.yaml",
@@ -2415,8 +2457,8 @@
       "files": [
         {
           "path": "skills/whitepaper-proposal-generator/SKILL.md",
-          "sha256": "6e2e2c63e5fd37427900bb2e62ee988b83340e48125c31adba7fee84d3cc6658",
-          "size": 15708
+          "sha256": "cb0b878a5844bac2cea7354f5dcd141f0c6f60f3b7b36920f97e6fc72b3368db",
+          "size": 16232
         },
         {
           "path": "skills/whitepaper-proposal-generator/agents/openai.yaml",

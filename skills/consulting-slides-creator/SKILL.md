@@ -115,3 +115,7 @@ src/
 ## MANUAL MIGRATION REQUIRED
 
 Review unsupported Claude skill fields manually: `**Paper Planes Consulting Slides Generator**`.
+
+## Structured Analytical Artifact Gate
+
+Every SCQA, issue tree, classification, matrix, analytical Mermaid, storyline, storyboard, metric tree, or dimension architecture used in a slide inherits the global contract in `~/.codex/AGENTS.md`. Layout type does not create methodological validity: `mermaid`, `matrix`, `table`, or `issue_tree` passes only after its semantic model, source trace, MECE or alternative completeness gate, and client-evidence rights pass. Frappe/Quartz are optional mirrors, not production blockers. This skill still owns layout only; `pp-slidument` owns the final PP deck route.

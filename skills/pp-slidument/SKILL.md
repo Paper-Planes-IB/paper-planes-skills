@@ -1,8 +1,8 @@
 ---
 name: "pp-slidument"
-description: "Paper Planes consulting slidument creation. Dense McKinsey/BCG-style analytical presentations with SCQA, evidence-backed action titles, MECE and functional exhibits. Works with python-pptx (Claude) and HTML/React (Manus)."
+description: "Paper Planes consulting slidument creation and client-meeting HTML companions. Dense analytical presentations and evidence-backed interactive meeting materials with SCQA, action titles, MECE and functional exhibits. Works with python-pptx and HTML."
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
   supports_bpm:
     primary: [presentation_assembly, PP_Pages, slide_evidence, claim_qa]
     required_secondary: [BPM-2, BPM-3, BPM-5, BPM-10, BPM-11]
@@ -17,15 +17,32 @@ metadata:
     - approved deck / decision lineage when available
   can_produce:
     - PP slide grammar / PP Pages shell
+    - интерактивный HTML-материал для клиентской встречи
     - slide-level SCA ledger
     - claim-level evidence ledger
     - presentation QA receipt
     - deck/version artifacts for BPM-SI-Slides-BPV lineage
     - hold_before_client verdicts
+  contribution_trace:
+    originator: "Илья Балахнин"
+    increments:
+      - автор: "Елизавета Панасенко"
+        участники: "не заявлены"
+        артефакт: "режим интерактивного HTML-материала для клиентской встречи"
+        исходный_источник: "пакет elizaveta-pp-skills-pack-2026-08-26.zip; паттерн client-meeting-artifact"
+        проект: "внутренний корпус навыков Codex"
+        фабрика: "5-ка / линия PP Presentation"
+        тип_изменения: "методический инкремент"
+        повторное_использование: "допущено; фактическое применение ещё не зафиксировано"
+        проверка_качества: "добавлены оценочные сценарии; практический прогон ожидается"
+        ожидаемый_эффект: "повторяемый клиентский интерактивный материал с доказательной и чистовой проверкой"
+        режим: "внутренний"
+        финансовые_последствия: "не определены; отдельного обязательства не создаёт"
   preflight_required: true
   return_contract:
     version: "v0.2"
     changelog:
+      - "2026-08-26: Добавлен режим доказательного интерактивного HTML-материала для клиентской встречи: Q&A, карты аргументов и протоколы решений. Режим остаётся внутри PP-маршрута и не создаёт параллельный skill."
       - "2026-07-13: Added BPM Exchange capability metadata for presentation assembly, claim QA and deck lineage routes."
 ---
 
@@ -182,6 +199,40 @@ HTML-прототип проверяется в двух слоях:
 - «Вот результаты 12 интервью, сделай слайды» → блок, 2–4 слайда (сводка + ключевые цитаты + выводы)
 - «Вот таблица конкурентов» → блок, 1–3 слайда (матрица + комментарий)
 - «Сделай АТС для Берёзки, вот все данные» → полная презентация, 15–20 слайдов
+
+### Режим: интерактивный материал для клиентской встречи
+
+Этот режим включается по сигналам: `HTML для встречи`, `клиентский экран`, `Q&A`, `карта аргументов`, `decision memo`, `собери, чтобы пройти с клиентом`. Он нужен, когда на живой встрече участники должны не линейно смотреть деку, а быстро переходить между вопросами, доказательствами, вариантами решения и следующим действием.
+
+`Интерактивный материал для клиентской встречи` остаётся режимом `pp-slidument`, а не отдельным скиллом и не параллельным маршрутом. До HTML обязателен существующий production Markdown: для него можно использовать компактную спецификацию встречи вместо полноразмерного deck-spec. Все материальные утверждения по-прежнему получают source + locator + caveat в claim ledger.
+
+Сначала выбрать один из четырёх носителей:
+
+| Носитель | Когда применять | Что должен обеспечить |
+| --- | --- | --- |
+| Q&A | у клиента есть конкретные спорные или повторяющиеся вопросы | вопрос, прямой ответ, подтверждение, граница уверенности |
+| Карта аргументов | нужно защитить рекомендацию или развилку | тезис, основания, возражение, ответ, решение |
+| Companion к дашборду | цифры уже живут в дашборде, но требуют объяснения | метрика, интерпретация, причина, действие, ссылка на источник |
+| Интерактивная записка решения | на встрече нужно выбрать вариант и зафиксировать следующий ход | варианты, критерии, последствия, решение, владелец и следующий шаг |
+
+Базовая структура одного HTML-материала:
+
+1. Тезис и управленческий вопрос встречи.
+2. Навигация по вопросам или развилкам.
+3. Прямые ответы и подтверждения из именованных источников.
+4. Что нужно решить сейчас.
+5. Следующее действие, его владелец и evidence-gate, если решение пока нельзя принять.
+
+Правила языка:
+
+- писать от лица совместной рабочей команды: `мы`, `у нас`, `зафиксировано`; не говорить о клиенте в третьем лице;
+- не подменять фактическое подтверждение словами `уже заложено` или `видно в данных`: рядом должен быть конкретный источник и локатор;
+- не переносить в материал спор из чата, внутренние комментарии, реакции на правки или неподтверждённые обещания;
+- источник, ограничение и статус гипотезы показывать рядом с сильным утверждением, а не прятать в общий методический блок.
+
+Не создавать искусственную 16:9-деку, если задача решается самостоятельным HTML-companion. Для такого companion обязательны брендовый и evidence-контракт PP, `deliverable-clean-room`, проверка навигации, desktop/mobile рендер, отсутствие горизонтального overflow и проверка всех внутренних ссылок. Если HTML содержит полноценные 16:9-слайды или PP Pages shell, к нему применяются все deck-гейты этого скилла, включая slide grammar, SCA ledger, contact sheet и критиков.
+
+Нельзя использовать этот режим для скрытого обхода production Markdown, claim ledger, PP Presentation Kit или клиентского QA.
 
 ### Обязательные визуальные элементы
 
@@ -629,3 +680,9 @@ When this skill changes, `skill-eval-harness` must test at least:
 - `Дизайн` is expanded to `Дизайн структуры` when structure is the actual object, and generic `контур` is expanded into the operating system or process it denotes;
 - a user annotation invalidates prior receipts and triggers production-MD correction, whole-deck terminology sweep, rerender, contact-sheet review and target-PDF-renderer verification;
 - a cover with viewer-dependent tint fails until the final PDF page is verified as viewer-safe DeviceRGB without unexpected ICC/SMask/transparency.
+- a client-meeting HTML companion fails if it has no explicit meeting question, mixes answers with unsupported promises, or cannot navigate from a question to its named confirmation;
+- a client-meeting HTML companion is not incorrectly forced into a 16:9 deck when its interactive reading scenario requires a non-linear page, but a deck-shaped companion still receives the full PP Pages and slide-level gate.
+
+## Structured Analytical Artifact Gate
+
+Production Markdown and every structural exhibit inherit the global contract in `~/.codex/AGENTS.md`. Before render, verify that a Problem Map, issue/hypothesis tree, classification, evidence/claim matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture satisfies its semantic fields and source trace; a polished layout cannot compensate for a false MECE claim, missing evidence rights, methodology used as client fact, or Frappe dependency. Storyline and storyboard remain distinct layers and must be updated in source-of-truth Markdown before downstream render.

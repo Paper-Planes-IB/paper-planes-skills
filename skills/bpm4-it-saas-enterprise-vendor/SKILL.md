@@ -203,3 +203,7 @@ Economic contribution =
 - Missing fields are named explicitly when the source is partial.
 - If DataLens is the target, `bpm4-datalens-dashboard` is applied only after stream and protected-scope normalization, or an explicit no-op reason is recorded.
 - BPM Storyline-Storyboard is updated or a no-op reason is recorded when the source changes project hypotheses.
+
+## Structured Analytical Artifact Gate
+
+Revenue-stream classifications, product-anchor maps, protected-scope metric trees, dashboard dimensions, evidence tables, analytical visuals, and Storyline-Storyboard deltas inherit the global contract in `~/.codex/AGENTS.md`. State scope, grain, recurring/non-recurring rule, multi-label boundary, residual, Formula Profit source, physical CRM/finance evidence, and decision. Do not call overlapping license/service/support streams strictly MECE, and do not use Frappe or methodology pages to repair missing client data.

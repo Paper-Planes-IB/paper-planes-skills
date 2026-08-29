@@ -2,7 +2,7 @@
 name: bpm4-healthcare-clinic-economics
 description: Use when working with BPM-4 Formula Profit for healthcare, clinics, hospitals, medical centers, archived medical projects, MIS/EMR exports, patient flow, appointments, visits, procedures, doctors, departments, beds, cabinets, equipment, payer mix, OMC/DMS/commercial revenue, LTV, capacity, SI / SIF impact, and HTML-first medical dashboards.
 metadata:
-  version: "0.1.5"
+  version: "0.1.6"
   status: active
   line: BPM-4 / healthcare clinic economics
   owner: Ilya
@@ -16,6 +16,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-20: Added external healthcare market signal guard: separate market baseline from client facts, nominal growth from price/volume/mix, and require payer/capacity/cost/geography evidence before project claims."
       - "2026-05-30: Activated medical BPM-4 domain view and added explicit DataLens handoff contract."
       - "2026-05-30: Added reusable dashboard patterns from a Codex-built medical-center prototype."
       - "2026-05-30: Re-anchored healthcare BPM-4 as HTML-first / implementation-neutral, added archived medical project scan and SI impact layer."
@@ -48,6 +49,31 @@ Do not use as-is for:
 - SaaS / healthtech vendor commercial analytics; use the IT / SaaS BPM-4 skill;
 - generic BI implementation after the medical formula is already agreed; use this skill only for medical semantics and use `bpm4-datalens-dashboard` only when DataLens is explicitly requested or already chosen;
 - clinical quality analysis without economic, flow, or capacity implications.
+
+## External Healthcare Market Signal Guard
+
+External healthcare reports can provide market baseline, trend hypotheses, comparator ranges, regulation context, payer structure, consolidation signals, workforce constraints, and candidate BPM-7A/7B questions. They do not confirm a clinic's patient flow, profitability, capacity, payer mix, geography, service portfolio, data quality, or implementation readiness.
+
+Before converting an external market claim into a project claim, require the following bridge:
+
+```text
+external market signal
+-> exact segment / geography / payer / period
+-> nominal growth split: price / volume / mix
+-> client capacity and workforce denominator
+-> client cost-side and contribution
+-> local demand / referral / competition evidence
+-> project decision that would change
+```
+
+Rules:
+
+- Never use market CAGR as a proxy for client growth, physical volume, or profit growth.
+- Separate price, volume, mix, medical inflation, payroll, equipment, consumables, and service complexity.
+- Do not transfer laboratory, dentistry, diagnostics, private-clinic, or state-hospital benchmarks across segments without an explicit analogy caveat.
+- For mixed or public medicine, separate OMC / DMS / commercial / VMP / budget / research streams before applying a commercial-market conclusion.
+- For regional expansion, add local workforce, referral network, licenses, payer context, CAPEX/OPEX, equipment service, and operating-model reproducibility.
+- Route an accepted external signal into the industry reference, BPM-7A/7B hypothesis layer, product-vitrine module, and relevant project Storyline only with visible source rights and a `not client fact` label.
 
 ## Preflight
 
@@ -616,3 +642,7 @@ Downstream:
 - If clickable HTML is requested, the prototype is created, opened, clicked through, and verified for nonblank states.
 - QA flags broken visuals, denominator issues, LFL anomalies, and dictionary-vs-fact confusion.
 - BPM Storyline-Storyboard is updated or a no-op reason is recorded when hypotheses change.
+
+## Structured Analytical Artifact Gate
+
+Patient/payer/service/doctor segmentations, patient-journey maps, claim ledgers, metric trees, dashboard dimensions, analytical visuals, and Storyline-Storyboard deltas inherit the global contract in `~/.codex/AGENTS.md`. Always state clinical/business unit of analysis, event grain, numerator/denominator, dictionary-vs-fact boundary, multi-label membership, data rights, missing events, and management decision. Methodology and Frappe never fill absent MIS/EMR/finance evidence.

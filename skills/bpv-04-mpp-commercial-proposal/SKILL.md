@@ -231,6 +231,18 @@ A BPV-MPP packet must answer:
 
 Without this, the output is content, not sales-support BPV.
 
+### Application-Format Gate
+
+When reviewing or improving an existing MPP artifact, do not propose generic technical attributes unless they are required by the artifact's concrete application format.
+
+Technical recommendations such as saving, export, versioning, author attribution, editable fields, dashboards, integrations, analytics, or delivery mechanics are allowed only when the sales-use case requires them: for example, a reusable internal MPP panel, CRM-embedded material, governed template factory, manager workspace, or measured adoption flow.
+
+For a single client-sendable one-pager, КП page, PDF-like HTML sheet, or lightweight sales memo, exclude technical-attribute recommendations that do not change the buyer decision, manager action, review gate, or usage rhythm. This exclusion includes HTML implementation details, missing local asset folders, self-contained packaging, print-size concerns, responsive engineering, file transfer mechanics, and other execution-layer issues unless the user explicitly asks for technical QA or the artifact's approved application format depends on them.
+
+Print preparation, prepress requirements, page-size standards, PDF production constraints, bleed / margin / crop logic, and handoff-to-print issues are not BPV-MPP work. Ignore and exclude them from BPV-MPP review unless the user explicitly requests print-production QA; if such QA is requested, route it to the presentation / print-production owner instead of treating it as MPP sales-support logic.
+
+In this case, keep QA focused on sales situation, buyer role, objection / hesitation, clarity of offer, claim sensitivity, next step, and client-facing readability.
+
 ## Good Output Shape
 
 For a BPV-MPP request, return:

@@ -2,7 +2,7 @@
 name: bpm-exchange-reconciliation
 description: Use when Ilya asks to run BPM Exchange, взаимное обогащение BPM, BPM-SI, Storyline-Storyboard, approved-presentation-to-BPV lineage, return packs, QA learning, client reality reconciliation, field pressure, or project-level BPM enrichment for 4th-department projects.
 metadata:
-  version: "0.2.9"
+  version: "0.2.10"
   status: draft
   line: 04-production / BPM Exchange / Storyline-Storyboard governance
   owner: Ilya
@@ -51,6 +51,7 @@ metadata:
       - "2026-06-21: Added public competitor map field-pressure table guard before ranking or battlecard priority."
       - "2026-07-11: Canonized BPV-01...14 routes and added approved-deck/decision lineage with reverse BPV links."
       - "2026-08-03: Added accepted guards for management-delta source-class filtering and New Delivery client-result vs methodology-harvest separation."
+      - "2026-08-11: Added commercial trace reality and hold-topic review guards for BPM Exchange writeback."
 ---
 
 # BPM Exchange Reconciliation
@@ -205,6 +206,28 @@ Classify as:
 | repeatable SI/SIF candidate appears | `Matrix proposal / needs_source_check` |
 | confirmed project receiver and primary source exist | inspect target project sources before writeback |
 
+### Commercial Trace Reality Guard
+
+Commercial trace rows, proposal drafts, Gamma / deck work, verbal-yes notes, reengage status, partner lead signals, and procurement-ready language are commercial evidence, not proof of delivery, sent status, client acceptance, win/loss, competitor pressure, or BPV readiness by themselves.
+
+Before using a commercial signal as BPM Exchange evidence, split:
+
+1. `commercial fact`: lead, КП, draft, sent, verbal yes, procurement, lost, won, paused, reengage;
+2. `source right`: email / CRM / call / proposal / invoice / win-loss / partner / owner statement;
+3. `project receiver`: confirmed BPA / New Delivery / support / sales-only / no receiver;
+4. `commercial mechanics`: VAT, legal entity, price/margin, COGS, discount, service/warranty, implementation effort, integration, opportunity cost;
+5. `client reality`: owner / buyer / partner / dealer / expert / CRM / win-loss confirmation.
+
+Classify as:
+
+| Condition | Classification |
+|---|---|
+| commercial trace landed, sent / accepted / win-loss unknown | `commercial_reality_gap / needs_status_check` |
+| proposal or sales-play contains competitor / battlecard claim without field or CRM evidence | `commercially_incomplete / needs_BPM-4/5/9/10/11` |
+| verbal yes or procurement-ready signal exists without invoice / contract / owner confirmation | `commercial_trace_evidence / not_delivery_evidence` |
+| project receiver not confirmed | `donor_signal / Matrix proposal / no Storyline writeback` |
+| CRM / win-loss / owner confirmation lands | route to the relevant BPM receiver and recheck BPV consequence |
+
 ### Accepted SI Refinement Guard
 
 When an already accepted SI route receives a calibration axis such as channel, region, segment, role, product line, customer type, or evidence confidence, do not create a standalone SI by default.
@@ -223,6 +246,12 @@ Use `Matrix refinement / donor_signal / needs_source_check`; create a new SI onl
 Drafts from 2ka books, articles, content-harvest, weekly-doc, or narrative batches may contain useful language, QA frames, or product-definition lenses. They are not primary BPM evidence.
 
 Treat them as `language_refinement / QA-frame donor / needs_routing` unless they are tied to a primary project source, senior deck/storyboard edit, accepted methodology update, or explicit human routing. They must not create project Storyline gaps, task_delta, canonical SI, or client-facing claims by themselves.
+
+### Hold Topic Brief Review Guard
+
+Hold / watch topic briefs, content harvest notes, raw topic lists, and weak external/public signals may reveal useful language or future source-check queues, but they are review-layer artifacts until a primary project source, senior edit, accepted methodology update, explicit Ilya routing, or client / CRM / expert confirmation lands.
+
+Classify them as `review_layer / source_check_queue / no durable route` by default. They may be shown in the daily BPM Exchange brief with preflight summary and no-op reason, but must not create Storyline gaps, canonical SI, BPV routes, task_delta, client-facing claims, or skill changes without a stronger receiver.
 
 ### Mixed-Delivery Storyline Receiver Guard
 
@@ -866,3 +895,7 @@ Use concise decision phrases:
 | Promoting an unapproved slide directly to BPV | Keep candidate until deck/version and approval decision exist |
 | Using pre-canonical BPV numbering | Normalize through the current BPV-01...14 registry before routing |
 | Copying the standard into the skill forever | Reload live standard each run |
+
+## Structured Analytical Artifact Exchange Gate
+
+When an exchange candidate is a Problem Map pattern, issue/hypothesis tree, classification, evidence/claim/source-to-node schema, analytical visual, storyline-storyboard pattern, metric tree, or dimension architecture, inherit the live global contract in `~/.codex/AGENTS.md`. Transfer the method contract separately from donor/project evidence; a donor artifact, methodology page, Frappe, or Quartz never proves the receiver project's facts. Require adaptation/no-transfer gates, explicit MECE applicability, source rights, and delta landing into an existing receiver artifact before canonization.

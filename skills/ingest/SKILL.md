@@ -2,7 +2,7 @@
 name: ingest
 description: "Use when Ilya asks to ingest, add, remember, route, classify, or place new material into the Vault / knowledge system. Handles intake, classification, routing, proposal, no-op, and writeback-after-approval for facts, hypotheses, rules, external research, content candidates, tasks, commercial facts, contradictions, and source packets."
 metadata:
-  version: "0.3.07"
+  version: "0.3.08"
   status: active
   line: Vault ingest / knowledge routing
   owner: Ilya
@@ -17,6 +17,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-28: Added interview-corpus statistics deduplication: count unique respondent/role interview events rather than files and report organizations, primary transcripts, derived duplicates, and excluded non-client sources separately."
       - "2026-08-03: Added post-upload uniqueness check for client source batches: relist the target folder, verify one intended file per name/size, and remove only connector-created exact duplicates before publishing links."
       - "2026-08-03: Added recalculated-report version-coherence guard: compare new and prior text plus rendered tables/charts, assign primary rights claim-by-claim, and never let stale captions or unchanged narrative inherit the recalculated status of nearby visuals."
       - "2026-08-03: Added compound-validity guard: a cross-tab or analytical intersection inherits the weakest evidence rights of its axes, join keys, grain compatibility, and denominator; visual persuasiveness cannot upgrade source rights."
@@ -220,6 +221,8 @@ Additional Old Delivery regression guards:
 Rail/Ingest 0.2.01 is the unified current ingest rail, not a parallel branch. It preserves the 0.1.x Old Delivery guardrails and adds `tabular_source_ingest` as a source-class contract. For tabular sources, classify Excel / XLS / XLSX / CSV / Google Sheet export / BI table export / table dump as `tabular_source_ingest`, not automatically as an interview-like source. `question coverage audit` is `not_applicable` only if replaced by a tabular audit: source manifest, sheet/table/range register, formula/calculation audit when applicable, external-reference audit when applicable, quantitative claim trace, data-quality verdict, and source persistence status. External references are conditional: if no external references are present, write `external references: none_detected`; if external references exist but source files are absent, write `data_lineage_gap / autonomous_recalculation_not_possible`, not a generic failure. In dry-runs, a temp-only source is `source_persist_gap`; it blocks durable canonization/full auditability but does not automatically invalidate the analytical delta. Use `passed_with_tabular_delta`, `passed_with_data_lineage_gap`, `passed_with_source_persist_gap`, `incomplete_tabular_contract`, or `incomplete_quant_audit` as appropriate.
 
 Rail/Ingest 0.2.02 is the unified current ingest rail and adds `batch_interview_ingest` for two or more interview / interview-like sources processed in one pass. Batch processing does not merge sources. Require a per-source rights table: `batch item | source_id | respondent / role | source type | source status | BPM-addressed rights | processed layers | limitations | contribution | batch synthesis rights`. Source rights must distinguish primary transcript, truncated sync, secondary summary, AI summary, structured summary, and raw-missing states. Compact BPM labels such as `BPM-1/2/8/9` must be decomposed. Run question audit per source, then carryover backlog. Batch synthesis is allowed only after per-source deltas are visible and must be marked `batch_synthesis`. If cumulative coverage is not rendered through node-by-node ledger, use `passed_with_batch_delta` or `passed_with_partial_source_limits`, not `coverage complete` / `batch ingest: passed`. Use `incomplete_batch_contract` when per-source rights/source isolation/audits are missing, and `incomplete_batch_coverage` when cumulative coverage is claimed but ledger/views fail.
+
+When reporting interview-corpus statistics, count unique interview events at the respondent/role level, not files. A derived summary, cleaned copy, duplicate card, alternate export, or archive duplicate does not increase the interview count. Always separate at least: physical files, unique interviews, unique organizations, interviews with a primary transcript, secondary/derived-only sources, and explicitly excluded non-client or out-of-scope interviews. If one organization has several genuinely separate interviews with different respondents/roles or dates, count them as separate interviews while keeping one organization in the organization count. Preserve the deduplication basis in the project interview register or nearest existing source registry.
 
 Rail/Ingest 0.2.03 makes the batch contract fail-fast. A batch pass is incomplete when it lacks the per-source rights table, uses compact BPM labels, collapses unaffected problem nodes as `Остальные N узлов`, uses non-exact macro-idea / polymorphic actant / 9-action / question-audit schemas, makes cross-source conclusions without the table `Batch synthesis | Source ingredients | Source-specific limits | Synthesis rights | Linked P-node / SI | Confidence | Next evidence`, reports writeback by file name without paths/links, or writes generic `batch ingest: passed`. Use failure labels: `batch_rights_table_missing`, `batch_bpm_rights_compact_fail`, `batch_problem_history_collapsed_fail`, `batch_macro_map_schema_fail`, `batch_actant_map_schema_fail`, `batch_action_matrix_schema_fail`, `batch_question_audit_schema_fail`, `batch_synthesis_table_missing`, `batch_writeback_paths_missing`, `batch_generic_pass_fail`.
 
@@ -445,6 +448,7 @@ Required checks when a predecessor exists:
 5. Mark surviving old values next to a new figure as `superseded_by_recalculated_table`; do not average, blend, or silently choose between them.
 6. If a report contains conflicting periods, entity counts, regions, owners, or totals, preserve the valid numerical layer and block the conflicting interpretation until the generator or source owner resolves it.
 7. For client-facing reuse, require a version manifest and automated claim test linking `claim_id → value → period → formula → source hash → allowed meaning`. Charts, legends and prose must resolve from the same claim object.
+8. If a meeting transcript contains a financial or quantitative scenario whose spoken coefficients, arithmetic result, or causal bridge do not reconcile, preserve the managerial direction as a hypothesis but do not canonize the number. Reconstruct the formula and inputs, show the arithmetic discrepancy explicitly, and require a source-owner or model check before client-facing reuse.
 
 Use `passed_with_data_lineage_gap` when the recalculated numerical layer is valid but generator code, version manifest, or caption coherence is missing. Use `incomplete_quant_audit` when the changed numerical layer itself cannot be reconciled.
 
@@ -519,3 +523,7 @@ The skill is done when:
 - no-op is used when durable writeback would add noise;
 - writeback, when approved, ends with `post_writeback_delta`;
 - risky conflicts are flagged instead of silently overwritten.
+
+## Structured Analytical Artifact Ingest Gate
+
+If the incoming material creates or changes a Problem Map, issue/hypothesis tree, MECE partition, evidence/claim/source-to-node matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, apply the global contract in `~/.codex/AGENTS.md`. Classify methodology source, physical evidence source, processing rights, model contract, completeness gate, mirror state, and target existing artifact separately. Do not create a parallel methodology skill/file, do not let Frappe block ingestion, and land the source as a visible delta before any full rewrite or canonization.

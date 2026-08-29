@@ -322,3 +322,7 @@ This skill is high-risk because it can route the work toward durable writes, rul
 Before any durable action, stop and confirm with Ilya unless he gave explicit same-turn permission for that exact action. Durable actions include: creating or editing Vault files, changing frontmatter/status fields, updating registries, registering task deltas in Codex Project Task Inbox, changing rules or skills, importing sources into Reader/Readwise, sending or preparing external-facing text as final, and canonizing external-model output.
 
 If the route is ambiguous, output a route card and ask for confirmation. Do not treat route selection as permission to execute the write.
+
+## Structured Analytical Artifact Overlay
+
+When `MAKE`, `VISUAL`, `PRESENTATION`, `CLIENT`, or `SCAN -> MAKE` will create or review a problem map, issue/hypothesis tree, MECE partition, evidence/claim/source-to-node matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, set `structured_artifact_overlay: required` and route through the global contract in `~/.codex/AGENTS.md` inside the actual owner skill. Do not route to a standalone artifact-methodology skill. Do not set the overlay from generic words such as proposal, presentation, report, research, strategy, KPI, table, Mermaid, or dashboard unless the actual output includes an in-scope structure.

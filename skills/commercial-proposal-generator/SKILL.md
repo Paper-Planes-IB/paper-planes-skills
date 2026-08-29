@@ -2,7 +2,7 @@
 name: commercial-proposal-generator
 description: Use when preparing, drafting, routing, archiving, or protecting Paper Planes commercial proposals / КП, including Gamma-ready offers, proposal trace, product showcase, cases, pricing, MEDDPICC, positioning, and implementation logic.
 metadata:
-  version: "0.1.1"
+  version: "0.1.3"
   supports_bpm:
     primary: [commercial_trace, proposal_route, client_facing_claims]
     required_secondary: [BPM-2, BPM-3, BPM-4, BPM-6, BPM-9, BPM-10, BPM-11]
@@ -24,6 +24,9 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-11: Added context-repeatable-strategy gate for broad strategic audit and corporate-strategy proposals: environment regime, differentiation core, reinforcing capabilities/assets, multiplication mechanism, frontline principles/actions, adjacency and complexity budget, team capability strategy, operating model and learning loops."
+      - "2026-08-13: Added Drury economic-decision gate for strategic, NPD, factory and second-business-model proposals: relevant future flows, limiting factor and opportunity cost, cost-to-serve, target/lifecycle cost, causal allocation and controllability."
+      - "2026-08-04: Strengthened proposal question-preemption gate after Fактор улыбки КП defense: outcome/effect, missing data, decision criteria, differentiated tactics, brand/portfolio risk, implementation start, client workload, reference contacts and proof-of-delivery must be preempted in strategic КП."
       - "2026-07-13: Added evidence-precision, notation-ledger, semantic-role, content-placement, exact-payment and annotation-regression gates after AquaRhyme proposal review."
       - "2026-07-08: Added organizational interview operating-filter gate: org interviews in КП must show how the client promise is checked through CEO/shareholder, non-operational back, and operations layers, and how outputs feed implementation, CJM/KPO, service blueprint, and BPV/BPA routes."
       - "2026-07-03: Added managed implementation gate: strategic КП must preempt 'strategy without implementation' objections through data/marketing, top-team, 90-day launch, governance rhythm, parallel process setup, and implementation support boundaries."
@@ -132,6 +135,34 @@ commercial_proposal_packet:
     primary_positioning_message: ""
     supporting_messages: []
     nine_levers_mode: full_client_visible|internal_light_check|not_applicable
+  context_repeatable_strategy_gate:
+    status: не_применимо|нужен|пройден|нужна_доработка
+    use_mode: полный_контур|внутренняя_проверка_границ|не_применимо
+    environment_regime: ""
+    differentiation_core: ""
+    reinforcing_capabilities_and_assets: []
+    multiplication_mechanism: ""
+    mandatory_principles_and_frontline_actions: []
+    adjacency_filter: ""
+    complexity_budget: ""
+    team_capability_strategy: ""
+    operating_model_and_learning_loops: ""
+    client_safe_translation: ""
+  economic_decision_gate:
+    status: не_применимо|нужен|пройден|нужны_данные|нужна_доработка
+    decision_object: ""
+    relevant_future_flows: []
+    excluded_sunk_or_common_costs: []
+    limiting_factor: ""
+    best_displaced_alternative: ""
+    opportunity_cost: ""
+    cost_to_serve_drivers: []
+    target_price_profit_cost: ""
+    projected_lifecycle_cost: ""
+    shared_service_usage_drivers: []
+    controllable_result_owner: ""
+    decision_route: scale|redesign|hold|stop|нужны_данные
+    client_safe_translation: ""
   claim_gate: proposal_claim_gate
   jolt_indecision_gate:
     status: not_applicable|needed|passed|needs_revision
@@ -158,6 +189,19 @@ commercial_proposal_packet:
     operations_layer_visible: true|false
     downstream_use_visible: true|false
     cjm_kpo_or_service_blueprint_link_visible: true|false
+  question_preemption_gate:
+    status: not_applicable|needed|passed|needs_revision
+    likely_defense_questions:
+      - ""
+    outcome_and_effect_visible: true|false
+    missing_data_path_visible: true|false
+    decision_criteria_visible: true|false
+    differentiated_strategy_logic_visible: true|false
+    brand_or_portfolio_risk_visible: true|false
+    implementation_start_visible: true|false
+    client_workload_visible: true|false
+    reference_or_proof_path_visible: true|false
+    next_72h_start_protocol_visible: true|false
   adjacent_opportunity_slide:
     status: not_applicable|research_prompt_needed|research_return_needed|drafted|no_op
     trigger: public_company|typical_priority_industry|strategic_account|none
@@ -649,6 +693,104 @@ Approved update 11/06/2026: для публичных компаний, стра
 
 Если в КП отсутствует хотя бы один релевантный ответ из этого списка, а на созвоне / в источниках есть признаки тревоги клиента по этой теме, КП считается недособранным.
 
+#### Defense-derived objection map: обязательный слой для стратегических КП
+
+Если КП защищается перед собственником, генеральным директором, финансовым / операционным руководителем, руководителем данных / IT, маркетингом, продажами или несколькими ЛПР, генератор обязан заранее смоделировать вопросы защиты и встроить ответы в Gamma-текст. Это не отраслевое правило: оно действует для медицинских сетей, промышленности, SaaS, QSR, девелопмента, дистрибуции и любых сложных стратегических / трансформационных проектов.
+
+Минимальная карта вопросов защиты:
+
+| Класс вопроса клиента | Почему возникает | Что должно быть в КП до защиты |
+|---|---|---|
+| Что мы получим на выходе? | Клиент боится купить абстрактную стратегию, презентацию или толстый отчёт | Список управленческих решений, артефактов, инструментов, ритмов и критериев приёмки |
+| Будет ли финансовый результат? | Клиент хочет ROI, но baseline ещё не проверен | Честная логика: эффект не гарантируется на старте; сначала фиксируются baseline, узкие места, метрики и механизм последующего расчёта эффекта |
+| Что делать, если данных нет или они не сквозные? | У клиента часто нет готовой аналитики, CRM / ERP / MIS связки или чистой истории | План восстановления данных: новые правила трекинга, ретроспектива по косвенным признакам, опросы / интервью / временный эксперимент, ТЗ на выгрузки, data gap ledger |
+| Как понять, какая стратегия правильная? | Клиент видит несколько правдоподобных маршрутов и боится выбрать неверный | Decision criteria: финансовая модель, market sizing, unit economics, клиентский / продуктовый mix, реалистичность по локациям / каналам / мощностям / команде |
+| Можно ли применять разные тактики внутри одной сети / портфеля? | Клиент боится управленческого и брендового хаоса от дифференциации | Логика портфельной / филиальной / продуктовой дифференциации: где допустимы разные модели, где нельзя конфликтовать с общим обещанием бренда |
+| Не повредит ли это бренду / позиционированию? | Клиент смешивает изменение инструментария с риском разрушить бренд | Блок risk-control: не допускаем конфликтующих обещаний внутри одного клиентского опыта; суббренд / разная упаковка рассматриваются только как опция с плюсами, минусами и рисками |
+| Что начнётся в первые недели после акцепта? | Клиенту нужно представить старт не как “подпишем и когда-нибудь начнём” | Стартовый протокол: оргструктура / интервью, данные / ТЗ на выгрузки, клиентские / конкурентные проверки, weekly sync, первая гипотезная сессия |
+| Кто и сколько времени нужен со стороны клиента? | Клиент боится перегрузить команду или не понимает цену участия | Ресурсная рамка клиента: роли, нагрузка, данные, интервью, решения, где нужно время собственника / топ-команды |
+| Кто подтвердит, что PP умеет такое делать? | Перед решением клиенту нужны proof и социальное доказательство | Референсный путь: 2–3 разрешённых референса / кейса, контактные лица или безопасный talk-track; если референсов нет, честный `reference_gap` |
+| Что будет после базового проекта? | Клиент боится остаться один на один с внедрением | Continuity offer: клиент внедряет сам, PP подключается точечно, регулярное сопровождение, success fee / management fee только при отдельном решении |
+
+Готовый клиентский блок для Gamma:
+
+```markdown
+## Что станет понятно по итогам проекта
+
+Проект не обещает финансовый эффект до того, как мы увидим реальные данные, ограничения и baseline. Его задача — создать управленческую основу, на которой эффект можно считать и реализовывать.
+
+По итогам работы у команды будет:
+
+- карта ключевых ограничений и точек роста;
+- критерии выбора между возможными стратегиями;
+- набор приоритетных проектов / инициатив;
+- первые метрики, по которым можно считать эффект;
+- понимание, какие решения можно запускать сразу, а какие требуют дополнительной проверки;
+- план перехода от выводов к внедрению.
+```
+
+Готовый блок про отсутствие данных:
+
+```markdown
+## Если часть данных сейчас не собрана
+
+Отсутствие сквозной аналитики не блокирует проект, но меняет логику работы. В этом случае мы не делаем вид, что данных достаточно, а собираем временный контур проверки:
+
+- описываем, какие данные нужны для решения;
+- формируем ТЗ на выгрузки и правила сопоставления источников;
+- восстанавливаем часть истории по косвенным признакам;
+- дополняем количественные данные интервью / опросами / проверками;
+- запускаем ограниченный период корректного трекинга;
+- отдельно фиксируем, какие выводы можно делать сразу, а какие требуют накопления данных.
+```
+
+Готовый блок про старт после акцепта:
+
+```markdown
+## Как начинается работа
+
+После положительного решения мы запускаем три параллельных трека:
+
+1. Управленческий трек: оргструктура, список интервью, календарь сессий и weekly sync.
+2. Данные: карта источников, ТЗ на выгрузки, правила обезличивания / доступа и первичная проверка качества данных.
+3. Внешняя и клиентская проверка: список клиентов / объектов / конкурентов, программа интервью, опросов, тайных покупателей или иных проверок, релевантных проекту.
+
+К концу первых недель у клиента должна появиться не финальная стратегия, а первая карта гипотез и дерева решений, которую можно обсуждать с управленческой командой.
+```
+
+Готовый блок про разные тактики внутри сети / портфеля:
+
+```markdown
+## Можно ли использовать разные модели внутри одной компании
+
+В сетевой, портфельной или мультипродуктовой модели единая стратегия не всегда означает одинаковую тактику для всех точек, продуктов или клиентских сегментов.
+
+Мы отдельно проверяем:
+
+- где разные модели экономически оправданы;
+- где дифференциация улучшает загрузку, маржинальность или LTV;
+- где она создаёт риск для бренда или клиентского опыта;
+- какие элементы должны оставаться едиными;
+- какие элементы можно адаптировать под локацию, сегмент, продукт или канал.
+
+Разные тактики допустимы только там, где они не создают конфликтующих обещаний для клиента и управляемы операционно.
+```
+
+Внутренний QA перед финальной выдачей:
+
+- выписаны ли 8–12 вероятных вопросов защиты из source-pack, а не из общих фантазий;
+- какие вопросы уже сняты в самой Gamma, а какие остались только для устного talk-track;
+- виден ли честный ответ про финансовый эффект: `baseline first`, затем KPI / effect model;
+- есть ли путь при отсутствии данных: новые правила сбора, ретроспектива, proxy, field checks, временный эксперимент;
+- есть ли decision criteria, если клиент выбирает между качеством / количеством, CAPEX / бережливостью, ростом / маржой, единым брендом / дифференциацией, in-house / PP / подрядчиком;
+- показано ли, почему разные тактики внутри сети / портфеля могут быть нормальны и где граница брендового риска;
+- есть ли стартовый протокол первых 2–4 недель: люди, данные, проверки, weekly sync, первая гипотезная сессия;
+- есть ли ресурсная рамка клиента и Paper Planes;
+- есть ли референсный путь: кого можно дать, что именно этот референс доказывает, что нельзя обещать по чужому кейсу;
+- если вопрос ожидаем, но сознательно не включён в КП, указать `defense_talk_track_only` и причину.
+
+Если после защиты КП клиент задаёт вопрос из этой карты, а в КП не было соответствующего блока, это считается сигналом для улучшения skill / правила, а не просто “нормальным вопросом клиента”.
+
 ### Resource Matrix Gate: нагрузка клиента и Paper Planes
 
 `proposal_resource_matrix_gate`
@@ -1009,6 +1151,45 @@ positioning_message_routing:
 - то же справедливо для каждого рычага: он должен описываться не как локальная “доработка”, а как часть нового способа организации работать;
 - если КП говорит о новой ставке, но не показывает, какой образ организации эта ставка создаёт, оно недособрано.
 - если КП нишевое, эту проверку нужно оставить во внутреннем QA и вынести наружу только те зависимости, которые реально влияют на успех узкого проекта.
+
+### Контекстно-повторяемая стратегия для общего аудита
+
+Триггер полного контура: продуктовый маршрут `Стратегический аудит`, общая диагностика бизнеса, общекорпоративная стратегия или широкое трансформационное КП, где клиенту нужно определить не только проблемы, но и предмет устойчивого роста.
+
+Внутренний маршрут генератора:
+
+```text
+диагностика среды BCG / Kearney
+-> ядро дифференциации Bain
+-> карта усиливающих capabilities и активов
+-> причинный контур их мультипликации
+-> обязательные принципы и фронтовые действия
+-> фильтр смежностей и бюджет сложности
+-> экономика решения, мощности и жизненного цикла
+-> capability strategy команды
+-> операционная модель внедрения
+-> замкнутые петли обучения
+```
+
+Для общего аудита КП должно показать клиенту шесть смысловых результатов:
+
+1. в каких средах и стратегических режимах живут бизнесы / функции / ставки;
+2. за что клиента выбирают и какое ядро дифференциации действительно воспроизводимо;
+3. какие capabilities, активы, принципы и фронтовые действия производят результат;
+4. какие смежности усиливают ядро, какую сложность добавляют и что следует остановить;
+5. выдерживают ли ставки релевантную экономику решения, дефицитную мощность, cost-to-serve и полный жизненный цикл;
+6. какая команда, операционная модель и петля обучения нужны для внедрения.
+
+Не выносить на слайды перечень названий BCG / Kearney / Bain, если клиент его не просил. Клиентский перевод: `понять среду -> определить, что делает компанию отличимой -> показать, как это повторяется -> защитить от сложности роста -> собрать команду и систему внедрения`.
+
+Границы:
+
+- цепочка не доказывает, что историческое ядро нужно сохранять; его жизнеспособность проверяется до проектирования мультипликации;
+- для узкого аудита CRM, BI, процесса, функции или отдельного исследования применяется только внутренняя проверка границ;
+- полный контур нельзя обещать без доступа к стратегии, клиентам, экономике, ролям, процессам и управленческой команде;
+- BCG-результаты по обучаемости режимов не использовать как доказательство их экономического превосходства.
+
+Для стратегических, NPD, фабричных и новых бизнес-модельных КП включать `economic_decision_gate`. Не обещать точный эффект без данных. Клиентский перевод должен показывать, что PP проверит: какие будущие потоки меняет ставка; какой редкий ресурс она потребляет; что вытесняет; какую стоимость фиксирует дизайн; какие support / общие сервисы вызывает; кто контролирует результат. Краткосрочную маржу на свободной мощности нельзя выдавать за доказательство долгосрочной цены или scale.
 
 ### PSF / professional service firm: maturity-рамка обязательна для КП
 
@@ -1727,6 +1908,18 @@ Anti-pattern:
 - есть ли мост от проектирования к сопровождению внедрения;
 - не выглядит ли этап внедрения как навязанная допродажа вместо естественного продолжения решений.
 
+### `Контекстно-повторяемая стратегия / QA общего аудита`
+
+- определён ли стратегический режим на уровне бизнесов / функций / ставок, а не одной наклейкой на всю компанию;
+- подтверждено ли ядро дифференциации клиентской ценностью, труднокопируемостью, воспроизводимостью и организационным носителем;
+- показан ли причинный механизм, связывающий capabilities / активы с результатом;
+- переведены ли обязательные принципы во фронтовые действия, роли и права решения;
+- есть ли фильтр смежностей и видимая цена добавляемой сложности;
+- разводит ли capability strategy обучение, отбор, размещение, ротацию и внешний найм;
+- содержит ли операционная модель владельцев, метрики, ритмы review и право остановить / пересобрать ставку;
+- не вынесены ли внутренние названия методологий наружу без клиентской пользы;
+- не раздувает ли этот gate нишевое КП за пределы реального scope.
+
 ### `Preemptive Q&A QA`
 
 После черновика КП нужно отдельно проверить, не оставляет ли текст вопросы, которые клиент с высокой вероятностью задаст на защите.
@@ -1870,6 +2063,8 @@ Anti-pattern:
 - сместить фокус на ключевую стратегическую развилку клиента;
 - показать, какие рычаги изучаются глубже, а какие проверяются как условия внедрения;
 - не терять мост к дорожной карте и сопровождению.
+
+Для общего стратегического аудита кастомизация не должна удалять сквозную логику `среда -> дифференциация -> механизм повторения -> сложность -> capabilities команды -> операционная модель -> обучение`. Допустимо менять глубину блоков, но клиент должен видеть, что аудит ищет не максимальное число проблем, а жизнеспособное ядро роста, условия его воспроизводства и ограничения масштабирования.
 
 ### 6. После отправки стратегического КП полезна короткая версия для разговора
 
@@ -2216,6 +2411,8 @@ When this skill is improved or audited through `skill-system-governance`, `skill
 - client question "will this be only a strategy / roadmap?" must trigger revision of the КП, not just a chat answer;
 - if marketing/data/team/process implementation is central to the client's question, those blocks must be explicit workstreams with outputs, not buried inside "general audit";
 - proposal must distinguish base-project implementation launch from optional post-project support / retainer / success fee without overpromising operational management.
+- strategic КП defense questions about expected result, financial effect, missing analytics, strategy choice criteria, differentiated tactics, brand risk, first weeks after acceptance, client workload and references must be preempted in the deck or explicitly routed to `defense_talk_track_only` with a reason;
+- if a client asks on defense "how can you calculate this without data?", "will there be financial result?", "can tactics differ by branch/product?", "who can confirm your work?", or "what happens immediately after yes?", the next skill revision must add the missing answer class to the question-preemption gate.
 - MPP downstream must route to `BPV-03.7`, keep `BPV-04.4` as the adjacent proposal process, and accept the old `bpv-04-mpp-commercial-proposal` name only as a legacy alias;
 - an unapproved proposal slide may create only a BPV candidate; accepted BPV downstream requires deck/version, approval decision, and reverse BPV lineage.
 - unsupported `4 -> 6`, savings, losses, capacity or “price of the current setup” in a title, accent number or diagram is removed or rewritten qualitatively, not cosmetically relabelled;
@@ -2224,3 +2421,8 @@ When this skill is improved or audited through `skill-system-governance`, `skill
 - `portfolio` is expanded to `project portfolio` when that is the accepted object, while `expectations`, `promises` and `obligations` are never used as synonyms;
 - vague client-facing labels such as `contour`, `design`, `launch`, `gate`, `architecture` or `system` fail unless they name the object, composition and function;
 - involvement, support and methodological explanations are allowed as insets; fixed page numbering must not force them into empty standalone slides.
+- strategic, NPD, factory or second-business-model proposal fails the economic gate if it shows only accounting margin or payback without relevant future flows, limiting factor / opportunity cost, cost-to-serve, lifecycle cost and causal shared-service usage; missing client data must be shown as a data request, not invented.
+
+## Structured Analytical Subartifact Gate
+
+An ordinary proposal does not trigger this gate. Apply the global contract in `~/.codex/AGENTS.md` only when the proposal explicitly contains a Problem Map, issue/hypothesis tree, MECE classification, evidence/claim matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture. In that subartifact separate proposal methodology, client evidence, and synthesis; use ABCD/RDB/Formula Profit internal sources as method sources only; keep Frappe nonblocking; and update production Markdown before layout/export.

@@ -3,6 +3,31 @@ name: partners-ingest
 description: Use when Ilya asks to ingest partner/project updates from shared production sources, common agent/partner exchange folders, Google Drive 4. Производство, or today's project deltas into the Paper Planes Vault routing system.
 metadata:
   short-description: Ingest partner/project deltas into Vault
+  version: "0.1.0"
+  status: draft
+  line: 04-production / partner and shared-drive project ingest
+  owner: Ilya
+  supports_bpm:
+    primary: [BPP, ingest, partner_source_radar]
+    required_secondary: [BPM-2, BPM-4, BPM-8, BPM-10, BPM-11]
+    optional_secondary: [BPM-1, BPM-3, BPM-5, BPM-6, BPM-7A, BPM-7B, BPM-9]
+  can_consume:
+    - project journals, cards, trackers, BPM registries and Storyline-Storyboard files
+    - shared production Drive updates and bounded radar outputs
+    - MeltPot / partner exchange packets
+    - automation memories and daily reports as observability, not primary facts
+    - BPM Exchange routing guards and disabled writeback target rules
+  can_produce:
+    - source-class classification
+    - project / partner route proposal
+    - no-op, source-check, needs-owner and needs-routing decisions
+    - existing-artifact writeback proposal after approval
+    - BPM Exchange reconciliation candidates
+  preflight_required: true
+  return_contract:
+    version: "v0.1"
+    changelog:
+      - "2026-08-12: Added BPM Exchange capability metadata and explicit consumed/produced route contract."
 ---
 
 # Partners Ingest
@@ -113,3 +138,7 @@ Do not overclaim: if only logs were checked and no source file was updated, say 
 This skill is high-risk because it can ingest partner/project deltas into Vault, production maps, project cards, BPA/New Delivery artifacts, partner-visible updates, and task candidates.
 
 Before any durable update, show Ilya the source signal, affected project/partner contour, target file(s), proposed diff or update summary, and whether the action is `source-check`, `needs-routing`, `donor-signal`, `candidate`, or accepted writeback. Do not silently create/update project files, BPA artifacts, active trackers, partner messages, or tasks unless Ilya explicitly approved that exact action or an active project rule requires that exact artifact and the scope is unambiguous. Airtable and `Codex Project Task Inbox` are not active trackers unless Ilya separately re-enables them.
+
+## Structured Analytical Artifact Ingest Gate
+
+Partner sources that change a Problem Map, analytical tree, classification, evidence/claim matrix, Mermaid, storyline-storyboard, metric tree, or dimension architecture inherit the global contract in `~/.codex/AGENTS.md`. Preserve partner source, physical locator, rights, methodology source, inference, and receiver artifact as separate fields. The source lands as delta/no-op in the existing artifact; partner wording, Frappe/Quartz, or a donor method cannot become client fact or PP canon without the applicable gate.

@@ -536,3 +536,7 @@ CLUSTERS = {
 }
 # Для dual-bar нужны также TOTAL_* массивы (значения «Всего»)
 ```
+
+## Сквозной гейт структурного артефакта
+
+Cluster taxonomies, segment portraits, factor matrices, comparisons, evidence tables, metric structures, and Storyline-Storyboard rows inherit the global contract in `~/.codex/AGENTS.md`. State survey universe, base sizes, factor order, clustering criterion/method, multi-label boundary, residual/unclassified respondents, source lineage, and MECE verdict only where the segmentation claims complete coverage. Never let a polished cluster slide convert a statistical association into an unsupported client claim.

@@ -1251,3 +1251,7 @@ When this skill is improved or audited through `skill-system-governance`, `skill
 - a visually clean slide with a large empty region and one generic phrase fails `semantic_underfill`;
 - an annotation marked “fixed” fails delta QA if the old wording remains elsewhere or production MD was not changed;
 - a previously pink/tinted PDF cover requires target-renderer proof after export, not only a browser screenshot.
+
+## Structured Analytical Artifact QA
+
+Presentation QA must apply the global contract in `~/.codex/AGENTS.md` to every Problem Map, issue/hypothesis tree, classification, evidence/claim matrix, analytical Mermaid, storyline-storyboard, metric tree, and dimension architecture in the deck. Add explicit failures for `ложный-MECE`, `методология-выдана-за-client-evidence`, `нет-source-trace`, `Frappe-блокер`, `generic-storyboard-вместо-PP-storyboard`, `Mermaid-синтаксис-без-семантики`, `параллельный-дубликат-артефакта`, and `полная-перезапись-без-delta-evidence`.

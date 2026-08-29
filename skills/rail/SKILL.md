@@ -14,20 +14,29 @@ description: >-
   fix-rules / rail drift-audit family; use fix-rules instead for local
   chat-rule-drift.
 metadata:
-  version: "0.3.26"
+  version: "0.3.42"
   status: active
   line: project-rail-drift / 4ka delivery governance
   owner: Ilya
   supports_bpm:
     primary: [BPP, Rail]
-    required_secondary: [BPM-1, BPM-2, BPM-4, BPM-8, BPM-9, BPM-10, BPM-11]
-    optional_secondary: [BPM-3, BPM-5, BPM-6, BPM-7A, BPM-7B]
-  can_consume: [project cards, chat maps and subpassports, task trackers, BPM registers, BPM Storyline-Storyboard, problem maps / ЦВЗ-slices, rail/status reports]
-  can_produce: [rail drift packet, repair proposal, task_delta candidates, project-source no-op reason, dynamic rail reference candidates, problem-map / ЦВЗ repair candidates, post-mining source closure, consolidated problem model, Estuarine map and visual, actant-action portfolio, assembly BPA pass]
+    required_secondary: [BPM-1A, BPM-1B, BPM-2, BPM-4, BPM-8, BPM-9, BPM-10, BPM-11]
+    optional_secondary: [BPM-3, BPM-5, BPM-6, BPM-7A, BPM-7B, BPM-12]
+  can_consume: [project cards, chat maps and subpassports, task trackers, BPM registers, BPM Storyline-Storyboard, problem maps / ЦВЗ-slices, BPM-12 Minority Report, rail/status reports]
+  can_produce: [rail drift packet, repair proposal, task_delta candidates, project-source no-op reason, dynamic rail reference candidates, problem-map / ЦВЗ repair candidates, cross-BPM next-check responsibility matrix, post-mining source closure, consolidated problem model, Estuarine map and visual, actant-action portfolio, BPM-12 AI/RAG attribution gate, assembly BPA pass]
   preflight_required: true
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-28: Added K1-to-K3 depth boundary in 0.3.42: BPM/K1 output is sufficient when it gives source-backed linear BPM slides, slide-intents, evidence rights, and BPM-addressed source debt; synthetic re-interpretation, controlled-wave comparison, OSINT refresh before client render, RDB finalization, and client-ready proof orchestration belong to K3 in BPA.04-BPA.05/BPA.08 unless explicitly assigned earlier by owner."
+      - "2026-08-28: Added BPM-addressed technical-debt routing in 0.3.41: checks like CRM win/loss, tenders, КП, SLA, tickets, installed base, contract terms, and controlled mystery are not left as generic storyline/RDB notes; they become technical-debt backlog rows in the responsible BPM with evidence, owner contour, return route, and strengthen/weaken criteria."
+      - "2026-08-28: Added RDB assembly placement in 0.3.40: mining collects RDB ingredients only; synthetic RDB is formed in BPA.04-BPA.05 after BPM-SI / Storyline-Storyboard and an accepted client Answer, then checked as proof / quality gate before deliverable materialization."
+      - "2026-08-28: Added analytical-node subject requirement in 0.3.39: problem nodes, claims, SI, slide-intents, tasks, and other managerial analytical formulations must show the actor / function / system / owner behind an action predicate; if the subject is not evidenced, write `субъект не установлен / requires source check` instead of hiding it in passive wording."
+      - "2026-08-28: Added cross-BPM next-check responsibility matrix in 0.3.38: any material next-check raised by any BPM can create a BPM-addressed required check, optional enrichment, watch item, or no-op for another BPM; this does not auto-include or auto-execute the target BPM, but it creates an explicit evidence responsibility and return route to the originating problem node, SI, storyboard, BPV route, or scope decision."
+      - "2026-08-28: Added the BPM-2/BPM-3 full-transcript recovery default in 0.3.37: unless Ilya explicitly authorizes summary-only ingest, Rail must first try to retrieve and process the full transcript from the available physical recorder or Granola fallback; summaries are temporary fallbacks and require `full_transcript_recovery_required` when colleagues report that full transcripts exist."
+      - "2026-08-28: Added the Natasha cron / Frappe export synchronization rule in 0.3.36: material Rail version changes, new source-class contracts, or downstream-relevant guardrails must update the single partner-safe operating-architecture fragment consumed by `meltpot-natalia-3h-update-pack`, replacing stale excerpts instead of appending parallel summaries."
+      - "2026-08-28: Added BPM-12 / Minority Report AI/RAG attribution gate: every BPM-12 AI/RAG-readiness pass must attribute methodology to CORD-PDCA, skill `cord-pdca`, and domain 6 AI-course standards, separating evidence, inference, source gaps, answerability gaps, management delta, and owner stop/go."
+      - "2026-08-28: Split the BPM-1 survey family into BPM-1A consumer surveys and BPM-1B employee surveys; BPM-1B defaults to Checkup, domain 6, with Dmitry Shipulin as responsible owner."
       - "2026-05-26: Added BPM Exchange capability metadata."
       - "2026-06-06: Added economical reuse / method-derivative check without heartbeat dependency."
       - "2026-06-06: Added mandatory donor family/source/alias expansion after MГ Окское Подворье miss."
@@ -86,6 +95,13 @@ metadata:
       - "2026-08-03: Added explicit Cynefin opt-in in 0.3.24: Rail must not generate Cynefin, Estuarine, actant maps, energy/time visuals, or 9-action matrices unless Ilya explicitly enables Cynefin for that specific project or pass. Without opt-in, use problem/evidence/process/data/SI/BPV routing and mark the disabled layers not_applicable_by_owner."
       - "2026-08-03: Hardened duplicate handling in 0.3.25: physical or byte-level duplication only blocks a new copy and independent-source count. It never permits skipping semantic ingest when the canonical parent content has not yet been read and written into evidence, problem nodes, SI/BPV, project-passport structure, and downstream project documents."
       - "2026-08-03: Added Evidence Separation Ledger / Evidence trace separation contract in 0.3.26: evidence class, verification, cross-source status and use rights must not be collapsed into one status; trace contains only material downstream routes, and absent project passports must remain explicitly unmaterialized."
+      - "2026-08-24: Added mandatory ClickUp project-container attribution in 0.3.27: every 4ka Rail preflight must find or re-verify the native project container, record its exact hierarchy and URL, and remain read-only unless Ilya separately approves an exact ClickUp change set."
+      - "2026-08-28: Added the BPM-3 client-source exclusion gate in 0.3.28: Cynefin, Estuarine, actant maps, energy/time and 9-action operations apply only to BPM-2 internal organizational evidence. BPM-3 client interviews bypass applicability and opt-in checks entirely and use a client-evidence schema without no-op placeholders."
+      - "2026-08-28: Added the interview-registration source contract in 0.3.29: new interviews use the native ClickUp call recorder as primary evidence registration and Granola only as a documented fallback when ClickUp cannot be used; Notion is historical-only and is excluded from current registration and recurring completeness checks."
+      - "2026-08-28: Added the BPM-2/BPM-3 interview deviation monitor in 0.3.30: planned person/role/segment coverage is reconciled with ClickUp recordings, documented Granola fallbacks, BPM source registration and evidence writeback; only new or materially changed deviations are escalated to Ilya in the project штаб and to Natalia Tokaeva through an assigned ClickUp comment without mutating project fields."
+      - "2026-08-28: Standardized BPM-2/BPM-3 heartbeat topology in 0.3.32: one mandatory heartbeat per physical chat aggregating either or both interview BPMs, never per respondent/source/BPM; a single temporary штаб fallback is allowed only when no physical interview chat exists, and duplicate штаб plus subject-chat monitors are forbidden."
+      - "2026-08-28: Added atomic problem-node guardrail in 0.3.33: one problem node represents one independently testable mechanism; macro-tensions may group nodes but cannot replace them with a synthetic multi-mechanism problem."
+      - "2026-08-28: Added administrative transformation trace in 0.3.34: material ПЦВЗ/problem/SI/slide/BPV changes must update the Admin Scale journal between Programs and Tasks and carry verified ClickUp attribution without auto-creating hypotheses or tasks."
 ---
 
 # Rail
@@ -130,9 +146,26 @@ Any project status passer or closeout that sees stale status, missing owner, unc
 
 Any project status passer, closeout, deepresearch return-packet, competitor-research return-packet, storyboard review, content/commercial rail pass, or BPM-candidate-source pass that sees candidate slides, SI/SIEF proof groups, BPM-6/7A/7B visuals, battlecards, КП arguments, content angles, or reusable knowledge patterns should also check whether a dynamic rail reference is needed. This is not a new skill. It is a live-reference maintenance function inside existing rail / BPM-SI / Storyline-Storyboard governance.
 
+## Natasha Cron / Frappe Export Synchronization
+
+When Rail receives a material version update, a new source-class contract, a new guardrail that affects partner-visible delivery quality, or a downstream-relevant operating-architecture change, update the single partner-safe fragment consumed by the Natasha cron `meltpot-natalia-3h-update-pack`.
+
+This is a replace-and-refresh rule, not an append-only bulletin:
+
+- identify the canonical Rail changelog item and the smallest partner-safe operational implication;
+- update the existing cron prompt fragment or its existing source handoff so the current rule supersedes stale snippets;
+- route only delivery-relevant information to the partner exchange / Frappe mirror layer: project launch, delivery quality, economics, speed, risk, reusable assets, BPM/BPA/BPP rail, Storyline-Storyboard, fullkit or QA standards;
+- do not expose closed 5-ka / 8-ka internals, client-confidential evidence, raw PЦВЗ, hypotheses, SI rows, or project facts that lack release rights;
+- do not create a second mirror, duplicate cron, parallel Frappe text, or one-off summary when an existing fragment can be overwritten;
+- if the cron is inactive or Frappe publication is only a mirror, still update the upstream fragment and record `Frappe: зеркало / не источник методологии`;
+- if the Rail change is technical-only or irrelevant to partners, record a concise `без партнёрской дельты` no-op in the relevant rule/update trail instead of pushing noise downstream.
+
 ## Non-Negotiables
 
 - Scope is 4ka projects only by default: `Vault/10-отделы/04-производство/Проекты/<project>`.
+- Every 4ka Rail pass must attribute the local project to its native ClickUp container before broad inspection. Use `clickup-mcp-router` in read-only mode and resolve the exact chain `workspace -> space -> folder -> list -> Project task` plus stable URLs and IDs where those levels exist. Search by the exact project/client name and known aliases; do not infer the container from a nearby sales card, similarly named client, interview task, document, or chat.
+- If a ClickUp container is already recorded in the project card, chat map, administrative scale, or another current project-control artifact, re-read and verify that it still exists and that its physical hierarchy matches the recorded project. If no local attribution exists but the native container is found, update an existing canonical project artifact when the current request permits local writeback; otherwise report `local_staging / clickup_container_found` and show the verified hierarchy and URL. If the container cannot be found after exact-name and alias search, report `clickup_sync_gap` and request the project/list/task link; do not create a surrogate container or treat local Markdown trackers as synchronized ClickUp state.
+- ClickUp attribution is read-only project identification, not mutation authority. Commands such as `найди проект`, `соатрибутируйся`, `сверься с ClickUp`, `обнови карту`, `протащи по рельсе`, or a generic Rail launch do not authorize changing ClickUp statuses, owners, dates, priorities, fields, descriptions, task types, parents, views, lists, folders, documents, or tasks. Before any ClickUp mutation, show the exact change set `object / URL -> field -> current value -> proposed value -> physical evidence` and obtain a separate explicit approval for that change set; afterwards re-read every changed object.
 - Rail may run only in main project chats: `Штаб проекта` or `Внутренний PP / проектная сборка`.
 - Do not run Rail from auxiliary/service chats such as data/MIS/economics, interviews/HR, patient path, market/strategy, or other subject working contours.
 - If Ilya invokes Rail from an auxiliary/service chat, do not inspect there. Identify the current chat role from the chat map and say the request must be moved or escalated to `Штаб проекта` or `Внутренний PP / проектная сборка`.
@@ -142,6 +175,7 @@ Any project status passer, closeout, deepresearch return-packet, competitor-rese
 - If Ilya explicitly authorizes creation, normalization, or writeback of the project passport / charter / administrative scale in the current request, consume that permission in the same pass: update the existing canonical passport first, or create one canonical root passport only when none exists. Do not stop at `artifact-gap`, ask for the same permission again, or create parallel passport/scale files. A short Rail command without this explicit permission still does not authorize a new New Delivery file.
 - Do not edit project artifacts, rules, AGENTS files, BPM/BPP canon, or trackers until after an explicit accept of the repair plan.
 - Do not answer from memory when checking methodology. Read the current 4ka BPM/BPP sources and the project's current artifacts.
+- Before selecting, designing or interpreting any BPM, keep four layers separate: `цель и решение владельца`, `фактическая онтология`, `границы доказательств источников`, `дизайн исследования`. The mandatory trace is `цель владельца -> решение -> дефицит знания -> требуемое доказательство -> BPM -> дизайн -> допустимый вывод -> обновление решения`. A BPM method, questionnaire item, city, segment, future expansion or source mention is never sufficient on its own to define the main field. If the owner goal or decision is absent, allow only exploratory work and do not finalize quotas, field geography, sample or instrument. BPM-2 may provide early organizational ontology, but it never silently becomes the source of the owner's telos.
 - Do not require subpassports for main chats. `Штаб проекта` and `Внутренний PP / проектная сборка` are governed by the chat map and штаб handoff rules; separate subpassport files are required only for track/service working contours.
 - Do not demand C2/C4 accept inside chats. Acceptants, StageGate, task trackers, and other BPP artifacts are standard process requirements to check and report as artifact gaps, but Rail must not treat their absence as a chat-local blocker or try to obtain process accept in a service chat.
 - Treat agent reports, old chat summaries, and compressed handoffs as snapshots. Before final output, reconcile them with current project files.
@@ -177,6 +211,12 @@ source / BPM-candidate source
 
 Only after explicit Cynefin opt-in may Rail insert `Cynefin domain -> Estuarine actants -> problem-actant links -> actant action classes` between the problem and SI layers.
 
+This opt-in can apply only to `BPM-2 — internal employee / organizational interviews` and organizational synthesis grounded in BPM-2. `BPM-3 — client interviews` is excluded by source class regardless of project-level or pass-level opt-in. For BPM-3, Rail must not run an applicability check, assign or recheck a Cynefin domain, build or populate an Estuarine / actant layer, score energy/time, generate a 9-action matrix, or create no-op placeholder rows for any of those layers. The BPM-3 route is `client source rights -> jobs / value / pain / experience / switching / service evidence -> problem / claim delta -> client or operational evidence request -> SI / storyboard / BPV hypothesis when supported`. Its macro-idea table omits the `Cynefin / domain` column. Record the exclusion once in source rights as `excluded_by_source_class: BPM-3_client_interview`; do not materialize it in `Карта актантов.md`.
+
+This 0.3.28 source-class gate overrides every earlier 0.1.x / 0.2.x exact-schema or cumulative-coverage requirement that would otherwise demand Cynefin, polymorphic actant, energy/time, or 9-action sections for a BPM-3 source. Their omission is a correct source-class route, not `not_applicable`, a coverage gap, or a schema failure. Batch, follow-up, recovery, mixed-contract, and post-mining passes must branch on source class before applying those schemas.
+
+In a mixed BPM-2 + BPM-3 corpus, BPM-3 may confirm, weaken, or contradict a client consequence of a BPM-2 organizational problem, but it cannot be an input to Cynefin classification, actant typing or positioning, energy/time scoring, or 9-action design. Those layers require BPM-2-addressed evidence of the internal organizational mechanism.
+
 This auto-trigger is not valid for the analytical/BPM layer of `New Delivery`. Do not inherit the Old Delivery BPM/BPA chain. However, the New Delivery administrative-foundation preflight is mandatory and must run first. Mark `new_delivery_logic_required` only for the missing analytical/delivery logic after checking and, when explicitly authorized, normalizing the passport, charter, and nine-component administrative scale.
 
 If Ilya or the project evidence says `майнинг завершён`, `забор значимых источников завершён`, `закрываем evidence-корпус`, `источников достаточно`, `остановить дальнейший инжест`, or equivalent, do not continue ordinary ingest and do not jump directly to a deck, org structure, target operating model, initiative list, or pilot selection. Automatically switch the same unified Rail to `post_mining_transition` under Rail 0.3.15 and run it continuously to the first real blocker. This transition inherits every source-rights, trace, exact-schema, cumulative-coverage, writeback, and no-overclaim guard from 0.1.x and 0.2.x.
@@ -207,6 +247,38 @@ Every problem, Cynefin domain, actant, action class, SI / slide-intent, initiati
 - `next_evidence_need` when status is not safely confirmed.
 
 Every new ingest of every BPM updates this source register and must be checked against existing nodes. Do not compare only interviews to interviews. A BPM-4 calculation, BPM-10 CRM slice, BPM-6 market return, or BPM-8 process observation can confirm, weaken, contradict, or reclassify a node first raised by BPM-2 interviews.
+
+### Cross-BPM Next-Check Responsibility Matrix 0.3.38
+
+A `next-check` is not just a free-text evidence note. When a problem node, claim, SI, storyboard line, BPV route, or scope gap names or logically implies another BPM as the right verification layer, Rail must materialize a cross-BPM responsibility row.
+
+Minimum schema:
+
+| Origin object | Origin BPM / source trace | Next-check formulation | Target BPM | Responsibility class | Evidence required | Strengthens if | Weakens / contradicts if | Return route | Scope effect | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+
+Rules:
+
+- `Origin object` must be a visible project object: `P-код + название`, claim ID, SI / САИ, storyboard line, BPV route, or BPM scope row.
+- `Target BPM` can be any relevant BPM, not only BPM-SI / lake routes. BPM-2 can raise a BPM-4 or BPM-10 check; BPM-3 can raise a BPM-10 / BPM-11 / BPM-4 check; BPM-4 can raise BPM-6 / BPM-7A / BPM-7B checks; BPM-6 can raise BPM-3 / BPM-5A / BPM-7B / BPM-10 checks, when the evidence dependency is explicit.
+- `Responsibility class` uses `обязательная проверка / опциональное обогащение / наблюдать / no-op / запрещено по классу источника`.
+- A next-check never automatically includes, executes, or canonizes the target BPM. If the target BPM is already included in `BPM scope ledger`, the row becomes execution backlog for that BPM. If the target BPM is deferred, recommended, or absent, the row becomes a scope-decision candidate. If Ilya excluded the BPM, the row may only record `no-op / excluded_by_owner` unless a new strong evidence reason is visible.
+- Checks that name concrete technical evidence such as `CRM win/loss`, tender registry, КП / commercial proposals, SLA, tickets, installed base, contract terms, price lists, service records, data lineage, scoring protocol, or controlled mystery wave must not remain as generic Storyline / RDB / slide caveats. Route each item as `technical debt backlog` in the responsible BPM: usually BPM-10 for CRM/funnel/win-loss exports, BPM-11 for entity keys/integrations/lineage, BPM-4 for account economics, contracts, prices and margin, BPM-8 for SLA/tickets/service/process execution, BPM-5A/5C for controlled mystery/prototype checks, BPM-6 for competitor/public-claim refresh. The originating Storyline/RDB row keeps only the return dependency and status.
+- This routing does not raise the expected depth of K1 BPM work. K1 / factory BPM output is acceptable when it delivers source-backed linear BPM slides, slide-intents, source rights, caveats, and BPM-addressed source debt. Tasks that require synthetic re-interpretation across BPMs, comparison with a future controlled wave, refreshing OSINT specifically before client render, final RDB/CVP assembly, or client-ready proof orchestration belong to K3 in BPA.04/BPA.05/BPA.08 unless the owner explicitly assigns that synthesis to the BPM phase.
+- The row must state what would strengthen, weaken, or contradict the originating object. Do not write generic checks like `проверить рынок` without the decision that will change.
+- `Return route` must say where the result writes back: problem node / ПЦВЗ / SCQA, Evidence trace, BPM Storyline-Storyboard, BPV route map, Admin Scale transformation journal, or BPM scope ledger.
+- For BPM-3, the Cynefin / Estuarine / 9-action prohibition still applies. A client source may raise cross-BPM evidence checks, but cannot create those organizational layers by itself.
+- This matrix generalizes the `interview-brief-by-analogs` carryover logic: old evidence can inject questions into a later interview; likewise any prior BPM can inject checks into a later calculation, market audit, CRM audit, process observation, competitor review, or data lineage audit.
+
+Failure labels:
+
+- `next_check_unrouted` — material next-check exists but has no target BPM and return route;
+- `next_check_auto_bpm_overreach` — next-check was treated as automatic target-BPM execution or canonization;
+- `next_check_missing_strengthen_weaken_logic` — row lacks explicit strengthen / weaken / contradict criteria;
+- `next_check_scope_gate_missing` — target BPM is not included but no scope-decision status is shown;
+- `next_check_forbidden_layer_fail` — BPM-3 next-check wrongly creates Cynefin / Estuarine / 9-action work.
+- `next_check_technical_debt_unrouted` — concrete CRM / SLA / tenders / КП / ticket / contract / mystery / lineage check remains only as a generic note instead of a BPM-addressed technical-debt backlog row.
+- `k1_bpm_depth_overreach` — K1/BPM output is judged incomplete because it lacks K3-level synthetic rethinking, controlled-wave comparison, OSINT refresh before client render, final RDB/CVP, or client-ready proof orchestration, despite having sufficient source-backed linear BPM slides / slide-intents and evidence debt.
 
 ### Evidence Separation Ledger / Evidence Trace Separation Contract 0.3.26
 
@@ -299,6 +371,78 @@ Minimum table:
 
 Allowed respondent statuses: `known / appointed / scheduled / completed / skipped / replaced / needs_owner_decision / unknown`.
 
+For all new interviews, meeting registration and physical source identity follow this source contract:
+
+1. Primary registrar: the native ClickUp call recorder inside the attributed project container.
+2. Fallback registrar: Granola only when ClickUp cannot be used for that meeting. The roster/source row must record the concrete fallback reason.
+3. Notion is historical-only. Existing Notion interview pages may be ingested as legacy evidence, but Notion must not register new interviews, define their current completion state, supply the stable identity key, or participate in recurring completeness reconciliation.
+4. The stable planned-interview key is `ClickUp project/list ID + respondent key + interview intent`. The physical event key is the ClickUp call/recording ID; for an approved fallback it is the Granola meeting UUID linked back to the ClickUp project and planned respondent.
+5. Never register the same physical meeting independently in both systems. If ClickUp and Granola both contain it, choose the primary physical source and record the other as an auxiliary mirror / duplicate trace.
+
+#### BPM-2 / BPM-3 Full Transcript Recovery Default
+
+For BPM-2 and BPM-3 ingest, the default evidence target is the full transcript of the physical meeting, not the shortest available summary. Unless Ilya explicitly says `summary-only`, `только summary`, `не поднимать полный транскрипт`, or gives an equivalent limitation, Rail must first try to retrieve and process the full transcript from the available physical recorder: ClickUp call recorder for new interviews, or a documented Granola fallback / legacy Granola source when that is the accessible recorder.
+
+Granola notes, AI summaries, structured summaries, Notion pages, and short sync notes are temporary fallback evidence, not a completed transcript-level ingest, when a full transcript may exist. If colleagues say that most interviews are in Granola and full transcripts are accessible there, Rail must treat every summary-only BPM-2/BPM-3 row as `full_transcript_recovery_required` until the full transcript is retrieved, access is denied, the transcript is absent, or Ilya explicitly accepts summary-only processing for that source.
+
+Source rows and batch rights tables must distinguish:
+
+| Source status | Meaning | Required next action |
+|---|---|---|
+| `primary transcript` | full transcript read from the physical recorder | proceed with transcript-level ingest |
+| `primary transcript via Granola fallback` | full Granola transcript read because Granola is the available / approved recorder | proceed with transcript-level ingest and keep fallback reason |
+| `summary fallback — transcript not yet checked` | only summary/notes are available in the local corpus, and full transcript access has not been tested | set `full_transcript_recovery_required` |
+| `summary fallback — transcript inaccessible` | full transcript was attempted but access is denied / missing / technically unavailable | preserve limitation and source-check evidence |
+| `summary-only by owner` | Ilya explicitly authorized summary-only use for this source | preserve owner limitation and do not reopen automatically |
+
+Minimum registration fields in the existing interview roster / source register:
+
+| Проектный контейнер ClickUp | Респондент / роль | BPM | Плановый слот / intent | Регистратор | ID физической записи | Причина Granola fallback | Факт встречи | BPM source ID | Время ingest | Статус сверки |
+|---|---|---|---|---|---|---|---|---|---|---|
+
+Recurring interview completeness checks compare `planned ClickUp respondent/intent -> ClickUp recording or documented Granola fallback -> BPM source ID -> evidence writeback`. They do not query Notion for current-state registration. A separate one-time legacy recovery pass may inspect Notion, but its results must be migrated into the current register and must not keep Notion as a runtime dependency.
+
+#### BPM-2 / BPM-3 Interview Deviation Monitor
+
+While the interview gate is open, Rail must reconcile both event completeness and planned coverage by person, role, client, and segment. A total interview count never substitutes for the named/role-based BPM-2 plan or the client/segment BPM-3 plan. During the first seven calendar days after project initiation, the reconciliation runs every working day; afterwards it continues every working day until the interview gate is explicitly closed, paused, or superseded by the owner.
+
+Heartbeat creation is a standard project gate, not an ad hoc follow-up request. When BPM-2 or BPM-3 first becomes `included` in an Old Delivery scope, Rail must inspect the project chat map and create or verify exactly one active interview-deviation heartbeat in every physical chat whose subpassport aggregates BPM-2 and/or BPM-3. One chat that aggregates both BPMs receives one combined heartbeat. If the BPMs live in two physical chats, each chat receives one heartbeat for its own scope. Never create a heartbeat per BPM, respondent, client, slot, recording, or source.
+
+If the interview contour exists only logically and no physical subject chat exists, create one temporary combined heartbeat in the main project штаб. Mark it as `штабной fallback: физический интервью-чат отсутствует`. When a physical interview chat is later created, migrate the monitor by creating it there and pausing or deleting the штаб fallback after verifying the new heartbeat; the same scope must never be monitored concurrently from both штаб and subject chat. If a project has no physical chat ID available, record `runtime-missing: target thread not resolved` and resolve it through the chat registry before claiming the gate is complete.
+
+BPM-2 deviation codes:
+
+| Код отклонения | Условие обнаружения | Порог |
+|---|---|---|
+| `ОТКЛ-БПМ2-01 — Плановый респондент без зарегистрированного слота` | В утверждённом BPM-2 roster есть человек/роль, но в ClickUp нет intent/слота | 3 календарных дня после включения в план, а в первые 7 дней проекта — при каждой дневной сверке |
+| `ОТКЛ-БПМ2-02 — Слот прошёл, физическая запись не найдена` | Плановый слот завершён, но нет ClickUp recording ID и нет документированного Granola fallback | более 6 часов |
+| `ОТКЛ-БПМ2-03 — Запись есть, BPM source ID отсутствует` | Физическая запись найдена, но не зарегистрирована как BPM-2 source | более 24 часов |
+| `ОТКЛ-БПМ2-04 — Evidence writeback отсутствует` | BPM-2 source ID существует, но нет записи результата в evidence-корпусе | более 48 часов |
+| `ОТКЛ-БПМ2-05 — Плановая роль или фамилия не покрыта` | Общий числовой план формально достигнут дополнительными интервью, но плановый человек/роль не опрошены | сразу при сверке |
+| `ОТКЛ-БПМ2-06 — Fallback не обоснован` | Granola использована без причины невозможности ClickUp или без связи с ClickUp-проектом и плановым респондентом | сразу при обнаружении |
+| `ОТКЛ-БПМ2-07 — Один созвон посчитан дважды` | Один physical event независимо учтён как ClickUp- и Granola-источник | сразу при обнаружении |
+
+BPM-3 deviation codes:
+
+| Код отклонения | Условие обнаружения | Порог |
+|---|---|---|
+| `ОТКЛ-БПМ3-01 — Плановый клиент или сегмент без зарегистрированного слота` | В утверждённом BPM-3 плане есть клиент/сегмент, но в ClickUp нет intent/слота | 3 календарных дня после включения в план, а в первые 7 дней проекта — при каждой дневной сверке |
+| `ОТКЛ-БПМ3-02 — Слот прошёл, физическая запись не найдена` | Плановый клиентский слот завершён, но нет ClickUp recording ID и нет документированного Granola fallback | более 6 часов |
+| `ОТКЛ-БПМ3-03 — Запись есть, BPM source ID отсутствует` | Физическая запись найдена, но не зарегистрирована как BPM-3 source | более 24 часов |
+| `ОТКЛ-БПМ3-04 — Evidence writeback отсутствует` | BPM-3 source ID существует, но jobs/value/pain/experience/switching/service evidence не записан | более 48 часов |
+| `ОТКЛ-БПМ3-05 — Заметки подменили число интервью` | Несколько заметок/транскриптов одного physical event посчитаны как несколько клиентских интервью | сразу при сверке |
+| `ОТКЛ-БПМ3-06 — Квота клиента или сегмента не покрыта` | Общий числовой план достигнут, но утверждённая клиентская/сегментная квота не закрыта | сразу при сверке |
+| `ОТКЛ-БПМ3-07 — Fallback или дубль не нормализован` | Granola fallback не обоснован/не связан с ClickUp либо один physical event посчитан дважды | сразу при обнаружении |
+
+Each alert packet uses the exact schema:
+
+| Код отклонения | Проект | BPM | Респондент / роль или клиент / сегмент | Ожидаемое состояние | Фактическое состояние | Возраст отклонения | Физический источник | BPM source ID | Требуемое действие | Ответственный контур | Дедлайн устранения |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+
+Notify only a new deviation or a material change in code, stage, age band, source status, required action, owner contour, or deadline. Use the deduplication fingerprint `СВЕРКА-ИНТЕРВЬЮ:<ClickUp project/list ID>:<BPM>:<respondent/client key>:<deviation code>` and check recent project comments before posting. An unchanged deviation and a clean check produce no external ClickUp comment.
+
+The recurring project monitor reports the packet to Ilya in the project штаб thread. For a real deviation it also creates one assigned ClickUp comment for Natalia Tokaeva in the attributed project root, with `notify_all=false`; this comment-only permission does not authorize changes to status, assignee, deadline, priority, task type, parent, description, custom fields, lists, docs, or any other project entity. Notion is excluded from this runtime monitor.
+
 `Coverage target` names the problem nodes, macro-tensions, BPM scope gaps, actants, SI gaps, or BPV-route uncertainties the respondent can test. If an interview brief is needed but the appointed respondent is not clear, Rail asks Ilya one short question: `к кому готовим следующее интервью?`
 
 When Ilya names an appointed / upcoming respondent, Rail runs or hands off to `interview-brief-by-analogs` before the interview. The brief must draw from:
@@ -362,6 +506,12 @@ For human-facing output after multiple interviews, include a compact trace table
 If a point is based only on the latest interview, mark `single-source: latest`. If it generalizes across interviews, mark `confirmed` or `extended`. If interviews disagree, mark `contradicted` and keep the contradiction visible rather than averaging it. If Rail proposes an action, SI, initiative, or BPV route as its own synthesis, mark `inferred` and show the upstream nodes it came from.
 
 Problem nodes must always be displayed as `code + name`, e.g. `P10 — Транзакционная модель теряет конкурентоспособность`. Bare codes (`P10`) are not sufficient in human-facing tables, including macro-idea maps, polymorphic actant maps, 9-action matrices, SI tables, and BPV route tables.
+
+Problem node names, claims, SI / slide-intents, task names, and managerial analytical formulations must include a visible subject when the predicate describes action, ownership, transfer, decision, management, measurement, or change. Do not write passive / subjectless forms such as `выполняются`, `управляется`, `согласуется`, `считается`, `теряется`, or `не каскадируется` without answering `кем / чем / у кого`. Use the most precise evidenced subject available: person, role, function, team, process owner, customer, supplier, system, source-of-truth, or explicitly `субъект не установлен / requires source check`. A subjectless node cannot pass problem-map or SI/BPV quality gates unless it is a direct source quote marked as such.
+
+Each problem node must be atomic: one independently testable mechanism with its own actor/process/context, evidence trace, next check and downstream fate. A formulation that joins independent gaps in goals, budget, prioritization, roles, measurement or another mechanism through `и` must be split unless the source proves one shared causal mechanism. Keep the broader synthesis in the macro-tension / SCQA / storyline layer, not as a substitute problem node. When an existing composite node is corrected, preserve it only in status history as `split / deprecated`, route each child separately, and remove the composite node from active SI/BPV paths.
+
+Every ingest that materially changes ПЦВЗ, the problem-node structure or causal mechanism, BPM-SI / САИ, slide-intent, BPV route, or a fundamental hypothesis status must also update the project's existing Admin Scale `Журнал сущностных трансформаций` on the transition `5. Программы -> 6. Задачи`. The row must show `source ingest -> before -> after -> affected code+name nodes / SI / slide intents -> evidence trace -> administrative consequence -> program/task route -> verified ClickUp container/target -> sync status and next decision`. Wording-only edits, formatting, counters, or evidence strengthening without structural change are `без структурной дельты` and do not create a new row. A transformation never auto-creates a task or hypothesis; a native ClickUp `Гипотеза` remains dominant only when the transformed claim is genuinely falsifiable and the exact ClickUp writeback has been approved.
 
 After every new BPM ingest, include problem-node status history:
 
@@ -429,6 +579,54 @@ Use the current files in that folder as source of truth. If the folder cannot be
 | `BPA.08` | multi-perspective review | Whether partner / expert / reader / presentation-QA review has been run or explicitly scheduled. |
 | `BPA.09` | защита и фиксация клиентского решения | Whether the defense meeting, decision logic, objections, acceptance criteria, and next client action are prepared. |
 | `BPA.10` | harvest методологической единицы | Whether reusable knowledge, method derivative, slide intent, or project learning is harvested after assembly. |
+
+### RDB assembly placement
+
+RDB / CVP / communication formula is not a required final output of mining and must not be produced directly from one BPM source. In mining, Rail records `RDB-ингредиенты`: client jobs / pains / value language, competitive alternatives, peer groups, proof candidates, win/loss, SLA, unit economics, operating feasibility, data lineage and falsifiers.
+
+Synthetic RDB is formed only during assembly, after the project has BPM-SI / project SI, BPM Storyline-Storyboard and an accepted client Answer:
+
+```text
+BPM evidence
+-> BPM-SI / project SI
+-> BPM Storyline-Storyboard
+-> BPA.04 смысловая сборка клиентского ответа
+-> RDB as proof / quality gate
+-> BPA.05 слайдовый бриф перед сборкой
+-> BPA.06 основной deliverable
+```
+
+Minimum source logic:
+
+| RDB block | Main BPM inputs | Evidence role |
+|---|---|---|
+| Resonance | BPM-3, BPM-2, BPM-7B | client jobs, value language, channel scenarios, management tension |
+| Differentiation | BPM-6, BPM-5A, BPM-7B, BPM-4 | alternatives, peer groups, observed differences, competitive pressure, economic defendability |
+| Belief | BPM-4, BPM-8, BPM-10/11, BPM-3 | numbers, operating feasibility, data lineage, SLA/service proof, client confirmation |
+
+If a mining artifact says `собрать RDB`, Rail rewrites the route as `собрать RDB-ингредиенты и передать в BPA.04-BPA.05`. A fast RDB draft is allowed only after explicit owner instruction and must be marked `draft / not client-ready`.
+
+### K1 / K3 depth boundary for BPM-to-BPA transition
+
+Do not make K1 staff or BPM-factory outputs satisfy K3 assembly expectations. BPM phase output is sufficient for handoff when it contains:
+
+- source-backed observations / calculations / interview signals;
+- linear BPM slides or slide-intents that state what the source can and cannot prove;
+- evidence-rights and caveats;
+- BPM-addressed source debt / next-check rows;
+- clear return routes to P-node, SI, Storyline-Storyboard, BPM scope ledger, or BPA.
+
+K1 does not need to produce synthetic client-ready interpretation, final RDB/CVP, cross-BPM proof orchestration, controlled-wave comparison, OSINT refresh timed to client rendering, or final deck logic. Those are K3 responsibilities in early assembly:
+
+| Operation | Owner level | BPA home |
+|---|---|---|
+| decide whether controlled BPM-5A must be rerun before client render | K3 / C3 with C4-partner gate | BPA.04 / BPA.05 / BPA.08 |
+| compare BPM-6 claims against a later controlled wave | K3 | BPA.04 / BPA.05 |
+| refresh OSINT because the deck is approaching client-ready status | K3 / assembly owner | BPA.05 / BPA.08 |
+| finalize RDB / CVP / positioning proof | K3 | BPA.04 -> BPA.05 |
+| turn linear BPM slides into narrative spine and production deck spec | K3 | BPA.04 -> BPA.05 -> BPA.06 |
+
+K1 may flag these as `BPA synthesis dependency` or `K3 assembly gate candidate`, but Rail must not mark the BPM phase as incomplete merely because those K3 operations have not yet happened.
 
 For each active assembly pass, output a compact status table:
 
@@ -1124,7 +1322,7 @@ Minimum per-source rights table:
 Rules:
 
 - `source status` must distinguish `primary transcript`, `primary_sync_truncated`, `secondary summary`, `AI summary`, `structured summary`, `raw missing`, and other evidence levels.
-- `BPM-addressed rights` must decompose compact labels. Do not write only `BPM-1/2/8/9`; use rows or explicit labels like `BPM-2 / interview evidence from SRC-13`, `BPM-8 / process evidence from SRC-13`.
+- `BPM-addressed rights` must decompose compact labels. Do not write only `BPM-1/2/8/9`; first resolve `BPM-1A` versus `BPM-1B`, then use explicit labels like `BPM-1B / employee survey evidence from SRC-13`, `BPM-2 / interview evidence from SRC-13`, `BPM-8 / process evidence from SRC-13`.
 - `processed layers` must state which layers were actually processed: problem, Cynefin, actants, actions, SI/BPV, question audit.
 - `limitations` must preserve source weaknesses such as truncated transcript or secondary summary.
 - `batch synthesis rights` must say what may be synthesized from this source and what must remain source-limited.
@@ -1172,7 +1370,7 @@ Rail 0.2.03 hardens `batch_interview_ingest`. These checks are blockers, not sty
 | Guard | Required behavior | Failure label |
 |---|---|---|
 | Per-source rights table | Always render the full per-source rights table before synthesis | `batch_rights_table_missing` |
-| BPM rights labels | Decompose compact labels such as `BPM-1/2/4/8/9` into BPM-addressed rights per source | `batch_bpm_rights_compact_fail` |
+| BPM rights labels | Decompose compact labels such as `BPM-1/2/4/8/9`; route surveys to `BPM-1A` or `BPM-1B`, then assign BPM-addressed rights per source | `batch_bpm_rights_compact_fail` |
 | Problem-node history | Do not collapse unaffected nodes into `Остальные N узлов`; either render every active P-node or label the section `problem_history_delta_only` | `batch_problem_history_collapsed_fail` |
 | Macro-idea map | Use exact macro-idea schema even in batch; problem nodes are always `code + name`, with Cynefin, cross-source status, and next check | `batch_macro_map_schema_fail` |
 | Actant map | Use exact polymorphic actant schema; include roles by problem, source trace, growth driver, energy/time barrier, zone/changeability; absent signal gets `no actant signal / source_check` | `batch_actant_map_schema_fail` |
@@ -1773,7 +1971,7 @@ Every 0.3.11 post-mining response must include a compact navigator:
 
 ```text
 Post-mining navigator:
-Rail version: 0.3.21
+Rail version: 0.3.32
 source closure:
 problem model:
 Cynefin recheck:
@@ -1914,7 +2112,7 @@ Run the check only when one of these triggers exists:
 
 - Ilya explicitly asks Rail / donors / reuse / method derivative questions;
 - project enters pre-defense or client-defense preparation;
-- 3-4 significant ingests have accumulated and at least one touches `BPM-1`, `BPM-2`, or `BPM-3`;
+- 3-4 significant ingests have accumulated and at least one touches `BPM-1A`, `BPM-1B`, `BPM-2`, or `BPM-3`;
 - a major BPM source is completed: processed survey, interview block, raw-pack, dashboard, export, data request, or client document with management meaning;
 - a status signal changes the project gate.
 
@@ -2003,6 +2201,9 @@ scope:
 current chat:
 current chat role:
 rail allowed here: yes/no
+ClickUp attribution: verified / candidate / clickup_sync_gap
+ClickUp container: workspace / space / folder / list / Project task / URL
+ClickUp mode: read-only / exact change set separately approved
 expected sources:
 methodology sources:
 allowed actions:
@@ -2046,6 +2247,7 @@ Read only what is needed, but in this order.
 
 Find and inspect:
 
+- native ClickUp project container through `clickup-mcp-router`: exact workspace / space / folder / list / `Project` task, IDs and URLs; compare it with any attribution already stored in the project card, chat map, or administrative scale;
 - `Админ-шкала/Карта-чатов.md`, `Карта-чатов.md`, реестр чатов, карта коммуникаций;
 - project card / `00-Карточка проекта.md`;
 - admin scale files;
@@ -2115,6 +2317,8 @@ When reconstructing, build two rails side by side:
 Classify drift:
 
 - `status-drift`: status in artifacts lags behind actual work.
+- `clickup-attribution-gap`: the active 4ka project has no verified native ClickUp container attribution in the Rail preflight.
+- `clickup-container-drift`: the recorded ClickUp space/folder/list/Project-task route no longer matches the physical native hierarchy or resolves to a different project.
 - `stage-drift`: project phase/subphase is unclear or stale.
 - `scope-drift`: work has entered or left scope without штаб decision.
 - `bpm-drift`: BPM exists in scope but lacks movement, owner, inputs, outputs, or next action.
@@ -2159,6 +2363,29 @@ Check at minimum:
 - штаб vs working contour separation;
 - whether factual project practice suggests the rail itself should be redesigned.
 
+## BPM-12 / AI-RAG Attribution Gate
+
+When a 4ka project activates `BPM-12`, `Minority Report`, AI/RAG-readiness, RAG stop/go, corpus preparation, prototype assessment, or pilot assessment, Rail must check a separate methodology attribution gate before accepting the pass as ready for штаб decision.
+
+Required attribution:
+
+- `CORD-PDCA` as the governing management cycle;
+- local skill `cord-pdca` as the operational contract;
+- domain 6 AI-course standards as the training and knowledge reference;
+- relevant PP precedent when known, such as ИРИДИ, as an analogy source, not as client evidence.
+
+Required BPM-12 output separation:
+
+- `подтверждённое evidence`;
+- `вывод агента`;
+- `source gap`;
+- `answerability gap`;
+- `AI/RAG hallucination or overreach risk`;
+- `management delta`;
+- `owner stop/go required`.
+
+If a BPM-12 pass evaluates AI/RAG feasibility without this attribution and separation, mark `bpm12_methodology_attribution_gap` and do not treat the pass as sufficient for corpus, prototype, pilot, vendor, or project-wide status decisions. Activation of BPM-12 never authorizes an RAG pilot by itself.
+
 ## Output Format
 
 Keep output compact unless Ilya asks for detail.
@@ -2169,6 +2396,9 @@ project:
 mode:
 scope:
 chat map:
+ClickUp attribution:
+ClickUp container:
+ClickUp mode:
 methodology sources checked:
 project sources checked:
 not doing:
@@ -2263,3 +2493,7 @@ ruby -e 'require "date"; require "yaml"; p = ARGV[0]; s = File.read(p); fm = s[/
 Rail is high-risk because it can change project status, owners, next steps, stage gates, trackers, project cards, Daily Notes, and downstream 1/2/5/8 signals.
 
 Default output is drift + repair plan. Do not change a project rail, status, owner, deadline, scope, tracker, project card, or departmental landing without explicit approval from Ilya for the exact change set. If the evidence is partial, mark source gaps and ask instead of repairing silently.
+
+## Global Structural Artifact Contract
+
+Rail inherits the cross-cutting contract in `~/.codex/AGENTS.md` for every Problem Map, issue/hypothesis tree, Evidence Separation Ledger, Evidence trace, source-to-node matrix, Mermaid analytical visual, Storyline-Storyboard, metric tree, and dimension architecture. Existing Rail exact schemas remain stricter and win where they add fields. Frappe/Quartz are nonblocking mirrors; the applicable BPP/BPA file and physical project evidence govern the row. A new ingest must land as a visible delta before any full map/storyline rewrite, and methodology claims must never fill a missing client source.

@@ -268,3 +268,7 @@ interface:
   display_name: "Leverage Builder"
   short_description: "Сборка стратегических рычагов PP"
   default_prompt: "Use $leverage-builder to build or audit a PP strategy lever through hypotheses, A-G financial bundles, initiatives, maturity levels, metrics, gates, activity system, and data gaps."
+
+## Сквозной гейт структурного артефакта
+
+Hypothesis trees, initiative classifications, activity-system Mermaid, metric trees, evidence/data-gap matrices, and storyline candidates inherit the global contract in `~/.codex/AGENTS.md`. Each hypothesis needs mechanism, expected signal, source/test, falsifier, and changed decision. Mermaid is only notation; activity-system edges need explicit meaning. Metric trees require calculation lineage, owner, decision and residual. Do not use MECE for overlapping initiatives or levers unless a real partition criterion is declared.

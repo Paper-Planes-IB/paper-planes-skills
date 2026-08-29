@@ -165,6 +165,16 @@ High-risk skills also need:
 - route-only vs route-and-act.
 - skill-system patch without eval cases.
 
+For any skill that creates or reviews structured analytical artifacts, add the global-contract regression pack:
+
+- `false-broad-trigger`: ordinary proposal, report, research, strategy, KPI task, table, Mermaid request, dashboard build, or file operation must not activate structural methodology unless an in-scope analytical structure is actually created or reviewed;
+- `mece-boundary`: MECE is required for a partition claiming coverage and forbidden as a generic label for timelines, registers, process flows, evidence ledgers, or arbitrary diagrams;
+- `methodology-evidence-separation`: a method page or framework cannot prove a client fact;
+- `frappe-bypass`: unavailable, empty, or generic Frappe cannot block work when the global contract and internal PP source are sufficient;
+- `artifact-contract`: Problem Map, Issue/Hypothesis Tree, Storyline, Storyboard, Evidence Trace, Mermaid, and metric/dimension structures satisfy their required fields;
+- `existing-artifact`: update the existing canonical/project artifact before creating a parallel file;
+- `delta-not-rewrite`: a new source lands as appeared/strengthened/weakened/contradicted/no-change/needs-check before any full structural rewrite.
+
 ## Default High-Risk Candidates
 
 This is a review list, not a final policy:

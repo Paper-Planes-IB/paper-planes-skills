@@ -70,6 +70,30 @@ Run the loop in this order:
 
 Prefer reusable contracts over copy-pasted local variants.
 
+### След авторского вклада
+
+Если принят внешний или совместный методический инкремент в существующий skill, фиксировать его в существующем поле `contribution_trace` самого skill, а в `SKILLS.md` оставлять ссылку на этот след. Минимальный состав по APQ-24: автор, участники, артефакт, проект, фабрика, тип изменения, повторное использование, проверка качества, эффект, внутренний или внешний режим и финансовая оговорка. Не создавать отдельный параллельный реестр или новый класс токенов; не переносить originator всего skill или корпуса на автора одного инкремента. Если организация, роль или финансовые последствия автора не подтверждены источником, указывать это как неопределённость, а не додумывать.
+
+`structured_analytical_artifact_standard` is a global cross-cutting standard stored in `~/.codex/AGENTS.md`, not a standalone skill. Do not recreate or install `paper-planes-artifact-methodology`. When a target skill creates or reviews a problem map, issue/hypothesis tree, MECE partition, evidence/claim/source-to-node matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, patch only the target skill's trigger/workflow/output enforcement while inheriting the global model and source contract. Pure consumers that only read or route these artifacts need no duplicated methodology block.
+
+```yaml
+structured_analytical_artifact_standard:
+  home: "~/.codex/AGENTS.md"
+  standalone_skill: forbidden_without_new_owner_decision
+  applies_when: "skill creates or reviews an in-scope structured analytical artifact"
+  local_patch_required_for: "artifact owner, reviewer, router, or durable writeback controller"
+  consumer_only_behavior: "inherit global rule; do not copy the contract"
+  mandatory_checks:
+    - trigger_boundary
+    - methodology_source_vs_evidence_source
+    - model_contract
+    - mece_or_alternative_gate
+    - source_trace
+    - frappe_nonblocking_mirror
+    - existing_artifact_before_new_file
+    - regression_eval
+```
+
 ```yaml
 preflight:
   action_type: write|externalize|create_file|canonize|rule_change|skill_patch|task_delta

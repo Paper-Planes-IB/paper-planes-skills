@@ -1957,3 +1957,7 @@ Before externalization, classify the packet:
 - `restricted`: material that must not leave the local Codex/Vault contour without a separate explicit approval.
 
 Default: if unsure, treat as `client-sensitive`. Sanitize or abstract client names, economics, commercial terms, internal methodology, private Notion/Vault excerpts, personal data, and project statuses. External prompts should receive the minimum context needed for the question, with internal/external/inference labels preserved.
+
+## Structured Analytical Artifact Handoff
+
+When deep research produces or updates an evidence/claim matrix, issue/hypothesis tree, market partition, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, apply the global contract in `~/.codex/AGENTS.md`. Public research remains evidence about the public environment only; it does not prove the client's lived reality. External methodology is advisory, Frappe is an optional mirror, and the local return packet must show methodology source, physical source, rights, claim status, completeness/MECE verdict when applicable, and delta into the existing project artifact rather than a parallel rewrite.

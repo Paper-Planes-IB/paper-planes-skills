@@ -1477,6 +1477,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "loop-engineer",
+    "type": "Управление проектами",
+    "description": "Скилл помогает выполнить задачу «loop engineer» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/loop-engineer",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-loop-engineer",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "meeting-report",
     "type": "Управление проектами",
     "description": "Собирает отчёт по встрече из заметок и расшифровки. Фиксирует решения, договорённости, задачи, ответственных и открытые вопросы.",

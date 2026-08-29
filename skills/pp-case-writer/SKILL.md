@@ -375,3 +375,7 @@ Drafting is allowed, but before saving, publishing, sending to a client, updatin
 Cases are DLP-sensitive by default. Before any public, sales, media, site, client, or partner use, confirm disclosure status with Ilya.
 
 Protect: client names, industry-identifying details, numbers, commercial terms, internal conflicts, team facts, delivery problems, before/after claims, and anything that could deanonymize the project. If disclosure is not confirmed, use anonymized draft language and mark all impact claims as unapproved.
+
+## Structured Analytical Subartifact Gate
+
+An ordinary narrative case does not trigger this gate. If the case contains a Problem Map, analytical tree, classification, evidence/claim matrix, Mermaid, storyline-storyboard, or metric architecture, inherit the global contract in `~/.codex/AGENTS.md`. The method explains how the case is structured but never proves the client's problem, implementation, or outcome. Each material claim must resolve to a physical project source and disclosure right; missing evidence stays a visible gap rather than being repaired from methodology or Frappe.

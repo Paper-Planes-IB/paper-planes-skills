@@ -419,3 +419,7 @@ const DualBarChart = ({ title, clusterData, totalData }) => (
 | Пустая левая колонка | Выглядит незаконченно | Портрет сегмента (1,5 абзаца) заполняет пробел |
 | Графики вылезают за слайд | Обрезаются при показе | Контролировать figsize и Inches() |
 | Один Write на весь файл | API обрывается на середине | Писать по частям: Write → Edit → Edit |
+
+## Сквозной гейт структурного артефакта
+
+Power BI cluster classifications, factor matrices, comparisons, metric structures, and slide handoffs inherit the global contract in `~/.codex/AGENTS.md`. Preserve dashboard filter state, respondent base, metric definition, factor order, cluster criterion, residual/unclassified group, multi-label boundary, source lineage, and MECE verdict only for a genuine partition. The dashboard is a view; it does not replace the physical survey source or prove interpretation by itself.

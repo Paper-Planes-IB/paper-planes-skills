@@ -172,6 +172,16 @@ Run this add-on whenever the current path or target is inside `Vault/10-отде
 
    Do not check project skeleton, FullKit, whole admin scale, whole project tracker, whole BPM-status block, or all automations unless Ilya explicitly expands the scope.
 
+2a. **Check BPM-2 / BPM-3 interview-monitor drift when in scope**
+   - For an interview/source chat, project штаб, or an explicit interview-control audit, verify that the current Rail monitor reconciles `planned respondent/role/client/segment -> ClickUp Call Recorder or documented Granola fallback -> BPM source ID -> evidence writeback`.
+   - Flag as `runtime-missing` or `runtime-stale` when the recurring monitor is absent, paused without an owner decision, still depends on Notion, counts notes instead of physical meetings, checks only total interview count, omits named/role/segment coverage, or sends repeated unchanged alerts.
+   - Flag as `violates-current-rule` when Granola is treated as primary without a documented ClickUp impossibility, one meeting is double-counted, BPM-3 is routed through Cynefin/Estuarine/9-actions, or the notification automation mutates ClickUp project fields.
+   - The required alert route is: new or materially changed deviations to Ilya in the project штаб heartbeat; real deviations also receive one deduplicated assigned ClickUp comment to Natalia Tokaeva. A green or unchanged check must not create an external comment.
+   - Verify the alert schema contains: `Код отклонения | Проект | BPM | Респондент / роль или клиент / сегмент | Ожидаемое состояние | Фактическое состояние | Возраст отклонения | Физический источник | BPM source ID | Требуемое действие | Ответственный контур | Дедлайн устранения`.
+   - Keep ClickUp notification authority comment-only with `notify_all=false`. Any status, assignee, deadline, priority, type, parent, description, custom-field, list, doc, or other mutation still requires the normal exact-change-set approval gate.
+   - Check topology against the chat map: exactly one heartbeat per physical chat aggregating BPM-2 and/or BPM-3; one combined heartbeat when both BPMs share a chat; never one per respondent, source, slot, or BPM. A temporary штаб fallback is valid only while no physical interview chat exists. Concurrent штаб and subject-chat monitors for the same scope are `runtime-duplicate` and must be consolidated.
+   - A newly included BPM-2/BPM-3 scope without a created or verified heartbeat is `missing-required-runtime`, not a future recommendation. If the target thread cannot be resolved, report `runtime-missing: target thread not resolved` and keep the project gate incomplete.
+
 3. **Report 4ka-specific drift separately**
    - Do not mix chat-local drift with global/project/runtime drift.
    - For each drift item, say whether it affects this chat, parent штаб handoff, or a direct chat artifact.
@@ -209,6 +219,10 @@ Run this add-on whenever the current path or target is inside `Vault/10-отде
    - Separate `fixed now`, `needs accept`, `good to fix`, and `leave as-is`.
    - Execute `fixed now` items immediately when they are in scope and unambiguous.
    - Ask for or rely on explicit accept before editing `needs accept` and `good to fix` items, unless Ilya already said to fix.
+
+### Structured analytical artifact drift
+
+When the current scope owns a problem map, issue/hypothesis tree, MECE partition, evidence/claim/source-to-node matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, check the cross-cutting standard in `~/.codex/AGENTS.md`. Treat missing model fields, false MECE claims, Frappe-as-blocker, methodology used as client evidence, missing source trace, duplicate parallel artifacts, and full rewrites without delta evidence as `violates-current-rule` or `stale-after-rule-update`. Do not expand this into a project-wide audit unless the user explicitly requested that scope.
 
 7. **After Fix Or Accept**
    - Patch only existing files unless Ilya explicitly requested new files.

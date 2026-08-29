@@ -292,3 +292,7 @@ Exception: in an Old Delivery Rail/BPM project, Ilya has granted standing permis
 Interview briefs may contain sensitive analogs, client/project facts, inferred roles, sector assumptions, and private interview context. Before sending externally or using with a client, sanitize the packet and confirm with Ilya.
 
 Do not reveal source clients, raw transcript details, private analogs, personal data, internal doubts, or unapproved hypotheses. Convert sensitive analogs into generalized probes unless explicit disclosure is approved.
+
+## Structured Analytical Artifact Gate
+
+When a brief is organized as an Issue Tree or Hypothesis Tree, or when it updates a Problem Map/evidence trace/storyline gap, apply the global contract in `~/.codex/AGENTS.md`. Every hypothesis probe must name mechanism, expected signal, source/answer sought, falsifier, and decision affected. Analog methodology and Frappe do not count as respondent evidence. Interview questions may test a problem node or claim, but they do not confirm it until the physical interview source is processed.

@@ -1,13 +1,13 @@
 ---
 name: BPM1
-description: Use when Ilya asks to prepare a BPM-1 survey, reuse old surveys, build a questionnaire, process survey results, forecast likely survey results before fieldwork, compare prior vs fact, extract JTBD/clusters from quantitative survey factors, or route survey evidence into BPM-SI, Storyline-Storyboard, slides, reusable question banks, or survey benchmarks.
+description: Use when Ilya asks to prepare a BPM-1A consumer survey or BPM-1B employee survey, reuse old surveys, build a questionnaire, process survey results, forecast likely survey results before fieldwork, compare prior vs fact, extract JTBD/clusters from quantitative survey factors, or route survey evidence into BPM-SI, Storyline-Storyboard, slides, reusable question banks, or survey benchmarks.
 ---
 
 # BPM1
 
 ## Core Principle
 
-`BPM1` is a survey reuse and prior-building skill. It helps design smarter questionnaires, reuse Paper Planes survey archives / Survey Lake, pull external benchmarks, build a probabilistic prior before fieldwork, process field results, compare `prior vs fact`, and return the new evidence into reusable knowledge.
+`BPM1` is the shared survey reuse and prior-building skill for two distinct BPM routes. `BPM-1A` covers consumers, external buyers and users. `BPM-1B` covers employees and normally runs through the internal service `Checkup / Чекап`, an asset of domain 6; the responsible owner is Dmitry Shipulin / Дмитрий Шипулин. The skill helps design smarter questionnaires, reuse Paper Planes survey archives / Survey Lake, pull external benchmarks, build a probabilistic prior before fieldwork, process field results, compare `prior vs fact`, and return the new evidence into reusable knowledge.
 
 Never present prior as field fact. A prior is a structured hypothesis with evidence, confidence, interval, and field-validation need.
 
@@ -18,8 +18,14 @@ Before drafting or analysing a survey, state:
 ```yaml
 preflight:
   project_or_category: ""
+  bpm_variant: "BPM-1A consumer | BPM-1B employee | classification_required"
   survey_type: "B2C Choice | EVP Employer | Internal Employee | Event Conference | B2B2C | unknown"
   delivery_stage: "questionnaire | pre-field prior | post-field analysis | reuse extraction | BPM-SI routing"
+  цель_владельца: ""
+  решение_которое_должно_измениться: ""
+  дефицит_знания: ""
+  допустимый_вывод_опроса: ""
+  недопустимый_вывод_опроса: ""
   survey_lake_mode: "search | ingest | update | not_needed | unknown"
   evidence_available:
     internal_archive: "found | attached | missing | unknown"
@@ -36,9 +42,16 @@ If the user only gives files, inspect them and classify their reusable value. Do
 
 ## BPM Guard
 
-- In B2C, baseline is almost always `BPM-1`: quantitative survey, factor ratings, frequency, open answers, k-means by choice factors, scenarios, barriers, channels, price sensitivity.
+- In B2C, baseline is almost always `BPM-1A`: quantitative survey, factor ratings, frequency, open answers, k-means by choice factors, scenarios, barriers, channels, price sensitivity.
+- Any survey whose respondent universe is current employees is `BPM-1B`, including engagement, culture, leadership, internal service, benefits, tenure and eNPS. Default operating route: `Checkup / Чекап`; responsible owner: Dmitry Shipulin / Дмитрий Шипулин.
+- `BPM-1B` and `BPM-2` are complementary, not interchangeable: `BPM-1B` measures prevalence and distribution; `BPM-2` explains mechanisms, context and organizational contradictions.
+- `BPM-1A` и `BPM-1B` не определяют цель проекта. До проектирования анкеты, квоты, географии или выборки нужна трасса `цель владельца -> решение -> дефицит знания -> требование к доказательству -> дизайн опроса`.
+- Опрос измеряет распространённость, ассоциации, заявленное восприятие и различия сегментов. Он не доказывает сам по себе внутренний причинный механизм, операционную готовность или правильность цели владельца.
+- Упоминание города, сегмента, канала, будущего открытия или вопроса не является достаточным для включения в основное поле. Объект получает статус `основное`, `разведочное`, `описательное` или `исключённое / отложенное` только после проверки связи с решением и применимости.
+- Если цель или решение владельца не определены, допустим только разведочный режим; квоты, география и анкета не утверждаются как трансформационный дизайн.
 - `BPM-3` is almost never a standard B2C block. Use it in B2C only as rare qualitative deepening: high-consideration/high-risk choice, unclear clusters, claims language source-check, or explicit interview scope.
-- In B2B / B2B2C / dealer / partner markets, `BPM-3` can be a functional analogue of `BPM-1`: interviews may provide the primary map of choice factors, barriers, buying roles, service requirements, documents, timing, channel, and commercial policy.
+- In B2B / B2B2C / dealer / partner markets, `BPM-3` can be a functional analogue of `BPM-1A`: interviews may provide the primary map of choice factors, barriers, buying roles, service requirements, documents, timing, channel, and commercial policy.
+- Do not write a generic `BPM-1` address when the respondent universe is known. For survey types outside consumers and current employees, use `classification_required` and obtain an owner classification instead of guessing.
 
 ## Workflow
 
@@ -46,9 +59,9 @@ If the user only gives files, inspect them and classify their reusable value. Do
 
 Choose one primary type before building a prior. If uncertain, say what evidence would disambiguate.
 
-- `B2C Choice`: buying, consumption, category, brand, frequency, price, WTP, NPS, barriers, choice factors.
+- `B2C Choice` -> `BPM-1A`: buying, consumption, category, brand, frequency, price, WTP, NPS, barriers, choice factors.
 - `EVP Employer`: employer choice, offer, employer brand awareness, job search channels, consideration, refusal reasons.
-- `Internal Employee`: leadership, rules, engagement, culture, benefits, tenure, eNPS, internal service.
+- `Internal Employee` -> `BPM-1B`: leadership, rules, engagement, culture, benefits, tenure, eNPS, internal service; use Checkup by default and route ownership to Dmitry Shipulin.
 - `Event Conference`: attendance, non-attendance, speakers, tickets, online/offline, event NPS, return intent.
 - `B2B2C`: channel + end customer, dealer/distributor + consumer, service and product priors must be separated.
 
@@ -110,7 +123,7 @@ Read `references/survey-lake.md` for schemas, search logic, and update packets.
 
 ### 4. Build or Improve the Questionnaire
 
-A BPM-1 questionnaire should usually include:
+A BPM-1A / BPM-1B questionnaire should usually include:
 
 - screening and quota logic;
 - behavior / frequency;
@@ -277,7 +290,10 @@ For post-field analysis:
 
 - Prior is never a fact.
 - Never silently mix survey types.
-- Never treat B2C `BPM-3` as a standard companion to `BPM-1`.
+- Never treat B2C `BPM-3` as a standard companion to `BPM-1A`.
+- Never use generic `BPM-1` in a new project/source address when `BPM-1A` or `BPM-1B` can be determined.
+- Never route current-employee surveys to `BPM-1A`; they are `BPM-1B` even when questions resemble consumer factor research.
+- Never merge `BPM-1B` survey evidence with `BPM-2` interview evidence at source level.
 - Never use external sources without labeling them as direct, adjacent, weak proxy, context, or not useful.
 - Never hide base sizes.
 - Never overinterpret open answers as representative frequencies.
@@ -285,3 +301,7 @@ For post-field analysis:
 - Never treat Tally UUID fields as labels.
 - Never put `unreliable` recovered fields into the benchmark bank without low-confidence marking.
 - Never leave new useful survey evidence only in chat if the user explicitly asks to register/reuse it.
+
+## Structured Analytical Artifact Gate
+
+Survey factor taxonomies, respondent/customer segmentations, issue/hypothesis trees, evidence matrices, metric structures, analytical visuals, and Storyline-Storyboard deltas inherit the global contract in `~/.codex/AGENTS.md`. State respondent universe, base size, unit of analysis, factor/cluster criterion, multi-label boundary, residual, source rights, and whether MECE is truly applicable. Statistical clustering does not automatically prove a client segment or strategic claim; method, calculation, interpretation, and client evidence remain separate.

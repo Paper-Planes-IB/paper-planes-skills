@@ -1,6 +1,40 @@
 ---
 name: admin
 description: Use when Ilya asks to run, design, test, apply, fix, normalize, or check the admin skill / Admin Rail QA / Admin Rail Controller for Paper Planes 4-ка projects, especially before PRE, INIT, PLAN, EXEC, weekly triage, post-meeting, portfolio checker, or next-gate decisions.
+metadata:
+  version: "0.1.1"
+  status: active
+  line: BPP / administrative rail / 4ka project control
+  owner: Ilya
+  supports_bpm:
+    primary: [BPP, Admin]
+    required_secondary: [BPM-1, BPM-2, BPM-4, BPM-8, BPM-9, BPM-10, BPM-11]
+    optional_secondary: [BPM-3, BPM-5, BPM-6, BPM-7A, BPM-7B]
+  can_consume:
+    - project card / canonical context alias
+    - administrative scale
+    - chat map and subpassports
+    - artifact register
+    - project journal / decision log
+    - tracker / backlog
+    - BPM registry and rail status
+    - evidence separation landing status
+  can_produce:
+    - administrative rail QA packet
+    - project-control gap list
+    - next-gate readiness verdict
+    - canonical project-card update proposal
+    - administrative-scale update proposal
+    - substantive-transformation journal update
+    - artifact-home normalization proposal
+    - task_delta candidates
+    - no-op reason
+  preflight_required: true
+  return_contract:
+    version: "v0.1"
+    changelog:
+      - "2026-08-28: Added the mandatory substantive-transformation journal between Programs and Tasks, with ClickUp attribution and hypothesis/task non-duplication guards."
+      - "2026-08-04: Added BPM Exchange capability metadata so admin-scale/project-control routing can be audited without a metadata gap."
 ---
 
 # Admin Rail QA
@@ -466,6 +500,21 @@ Administrative scale has 9 components:
 | `Идеальная картина` | how success looks in observable terms | success scene can be checked, not only imagined |
 | `Статистики` | leading and lagging indicators | at least minimal progress / result indicators exist or are marked missing |
 
+### Substantive Transformation Trace: `5. Программы -> 6. Задачи`
+
+Whenever an ingest materially changes the project problem structure, ПЦВЗ, causal mechanism, BPM-SI / САИ, slide-intent, BPV route, or a fundamental hypothesis status, update the existing administrative scale and its `Журнал сущностных трансформаций`.
+
+A new journal row is required when the ingest creates, splits, merges, contradicts, deprecates, or materially reframes a problem node; changes a ПЦВЗ goal, management question, causal link, or administrative consequence; creates, removes, reroutes, or materially reframes an SI / САИ / slide-intent / BPV route; or changes a fundamental hypothesis in a way that affects a program, task, gate, or client decision.
+
+Do not create a new row for formatting, wording-only edits, counter refreshes, source registration without structural effect, or evidence strengthening that leaves the structure unchanged. Update the existing row or record `без структурной дельты` when an explicit audit trail is useful.
+
+Minimum journal schema:
+
+| Transformation ID | Date | Source ingest | Before | After | Affected P-node / SI / slide-intent | Evidence trace | Administrative consequence | Route through Programs / Tasks | Hypothesis route | ClickUp attribution / target | Sync status / next decision |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+
+The journal sits between `Программы` and `Задачи`: it explains why a workstream or action changed, but is not itself a task tracker. If the transformation is a falsifiable fundamental assertion, the native ClickUp `Гипотеза` card remains the operational source of truth; the journal links to it and does not duplicate its status. A structural transformation that is not a hypothesis must not be auto-converted into a hypothesis or task. For active `04 Производство` projects, attribute the journal to the verified ClickUp project List and prefer a native ClickUp Doc. Until an exact ClickUp change set is approved, use `local_staging / ожидает согласования change set`. If native Doc creation is unavailable, record `manual UI action / API gap`; do not create a surrogate task or copy and call it a native document.
+
 Data-reuse preflight is not a deep analytics task for C1/C2. It is a short set of factual questions that lets Rail / BPM Exchange later evaluate reuse potential without rediscovering the project from scratch:
 
 ```yaml
@@ -497,6 +546,7 @@ Core rules:
 - if neither exists and creation is not allowed, output `admin_scale_missing` and propose creation instead of creating it;
 - unknown facts must be marked as `требует заполнения`, not invented;
 - distinguish `Программы` from `Задачи`: programs are work/change mechanisms; tasks are immediate actions;
+- keep the `Журнал сущностных трансформаций` between `Программы` and `Задачи` when material BPM / ПЦВЗ / SI changes exist;
 - make `ЦКП`, `Идеальная картина`, and `Статистики` observable.
 
 When creating or updating an administrative scale, use this structure:
@@ -513,6 +563,8 @@ When creating or updating an administrative scale, use this structure:
 ### Планы
 
 ### Программы
+
+### Журнал сущностных трансформаций
 
 ### Задачи
 
@@ -835,3 +887,7 @@ This first version is manually run. Future versions may add scripts for determin
 - artifact-register completeness checker;
 - daily-status freshness checker;
 - storage/source-of-truth checker.
+
+## Structured Analytical Artifact Governance
+
+Admin inherits the global structural-artifact contract from `~/.codex/AGENTS.md` whenever it registers or checks a Problem Map, analytical tree, evidence/claim/source-to-node matrix, storyline-storyboard, metric/dimension architecture, or related Mermaid. Admin checks that the existing artifact, owner, methodology source, physical evidence source, processing rights, completeness gate, and downstream route are named. It must not duplicate row-level claims in the project card/admin scale, make Frappe a blocker, or treat a methodology source as client evidence.

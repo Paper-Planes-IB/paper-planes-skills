@@ -1,6 +1,6 @@
 ---
 name: multi-perspective-review
-description: Use when a serious document, case, article, proposal, matrix, client-facing artifact, or BPV result needs a multi-perspective readiness gate. In bpv_qa mode it acts as the universal BPV-QA router: detects the exact BPV/sub-BPV, loads the canonical QA profile and linked knowledge units, and delegates artifact-specific checks.
+description: "Use when a serious document, case, article, proposal, matrix, client-facing artifact, or BPV result needs a multi-perspective readiness gate. In bpv_qa mode it acts as the universal BPV-QA router: detects the exact BPV/sub-BPV, loads the canonical QA profile and linked knowledge units, and delegates artifact-specific checks."
 metadata:
   status: active
   department: "cross-functional"
@@ -241,3 +241,9 @@ When this skill is improved or audited through `skill-system-governance`, `skill
 - weak claims are routed to `needs_source_check` or `do_not_use`;
 - follow-up tasks route to Codex Project Task Inbox as task_delta candidates, not to TaskOS as primary home;
 - insufficient input produces `limited_review_only`, not a fake final verdict.
+- `good-trigger`: серьёзный клиентский документ с известной целью проходит проверку по источникам, читателю, методологии, реализации и DLP;
+- `bad-trigger`: просьба «перепиши один абзац» не запускает многоракурсный review и идёт в предметный редактор;
+- `adjacent-collision`: проверка слайдов не заменяет `presentation-qa`, а проверка точного BPV-маршрута не подменяет специализированный QA артефакта;
+- `route-ambiguous`: при неустановленном `BPV-xx.x` вердикт остаётся `route_ambiguous`, а не наследует критерии верхней семьи BPV;
+- `writeback-risk`: review-only запрос не публикует, не канонизирует, не меняет статус и не создаёт задачи до явного акцепта;
+- `externalization`: клиентский или публичный материал с неоценённым disclosure/DLP-рискoм не получает `ready`.

@@ -28,6 +28,12 @@ can_produce:
   - CRM commercial-trace check
   - Miro writeback proposal
   - no-op reason
+preflight_required: true
+return_contract:
+  version: "v0.1"
+  changelog:
+    - "2026-08-03: Installed from Dior handoff package with BPM routing metadata."
+    - "2026-08-15: Added explicit BPM Exchange preflight_required and return_contract metadata."
 changelog:
   - date: 2026-08-03
     changes:
@@ -286,3 +292,7 @@ When naming deliverables, statuses, and field purposes for the user:
 - Designing dashboards without a decision and action loop.
 - Copying the current sales chaos into a target CRM because it already exists.
 - Using Miro as the source of truth instead of generating it from approved Markdown logic.
+
+## Structured Analytical Artifact Gate
+
+CRM Problem Maps, issue/hypothesis trees, entity classifications, evidence matrices, process Mermaid/Miro views, metric trees, and dimension architecture inherit the global contract in `~/.codex/AGENTS.md`. Build the source-backed problem register before the target entity model; keep client facts, design hypotheses, and methodology separate. Entity or funnel partitions need an explicit scope and MECE verdict when they claim coverage; process diagrams use sequence/ownership/transition completeness instead. Miro and Frappe are mirrors/views, not source of truth.

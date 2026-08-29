@@ -2475,3 +2475,7 @@ Ambiguous:
 - "В категории могут быть локальные дилеры / интеграторы / white-label" -> require hidden / low-visibility competitor candidates and keep them outside confirmed direct competitors until checked.
 - "Публичный research не отвечает, кто реально выигрывает сделки" -> propose BPM-5 candidate next evidence layer: КП, specs, tenders, approved mystery-shopping, win-loss, customer/integrator interviews.
 - "Рынок распадается на разные сегменты" -> produce segment playbooks instead of one generic competitor strategy.
+
+## Structured Analytical Artifact Handoff
+
+Competitor maps, segmentations, claim ledgers, evidence matrices, analytical visuals, and storyline/storyboard candidates inherit the global contract in `~/.codex/AGENTS.md`. Competitor classification must state universe, criterion, residual, and whether it is strictly MECE or intentionally multi-label. Public visibility, external framework pages, Frappe, and generic market methodology cannot prove client deal threat, win/loss, or share. New evidence lands into the existing structure as `появилось / усилилось / ослабло / противоречит / без-изменений / требует-проверки` before any full rewrite.

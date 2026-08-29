@@ -282,3 +282,7 @@ For a substantial request, prepare internally:
 9. commercial trace delta when a new commercial fact appears.
 
 Expose only the client-appropriate layer plus material blockers and approvals. Do not dump internal routing into the presentation.
+
+## Structured Analytical Subartifact Gate
+
+Apply the global contract in `~/.codex/AGENTS.md` only to explicit Problem Maps, issue/hypothesis trees, classifications, evidence/claim matrices, analytical visuals, storyline-storyboard, metric trees, or dimension architecture inside the whitepaper. Preserve the distinction between external research, internal PP methodology, archived donor evidence, client facts, and agent synthesis. Frappe is a mirror; weak mini-case evidence must move to support/appendix or remain a gap.

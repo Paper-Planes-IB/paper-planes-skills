@@ -2,7 +2,7 @@
 name: bpm4-b2b-dashboard-industrial-distribution
 description: "Use when working with BPM-4 B2B industrial distribution or distribution-like SKU dashboards: Formula Profit, client/dealer segmentation, shipment cohorts, SKU affinity, client-type/product associations, OoS, cross-filtered BI/DataLens views, SI/SIF extraction, and Storyline-Storyboard routing."
 metadata:
-  version: "0.2.0"
+  version: "0.2.3"
   status: active
   line: BPM-4 / industrial distribution dashboard
   owner: Ilya
@@ -16,6 +16,9 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-28: Added Natalia reference parity rule: when a reference dashboard is supplied, BPM-4 output must match its dashboard-class interaction and section density, with explicit unavailable blocks instead of silently downgrading to readiness output."
+      - "2026-08-28: Added automatic revenue-vs-gross-profit divergence diagnostics: visible gross-margin ratio, volume × margin bridge, transactional factor decomposition, and causal-language guardrail."
+      - "2026-08-28: Clarified owner decision: SL is not a standalone canon; it is an Ipatovo-specific SPL fallback used only when payment-discipline data was unavailable and requires explicit owner acceptance elsewhere."
       - "2026-08-03: Added Ipatovo extension for flat B2B base analysis: revenue-only guardrail, hierarchical 1C ingestion, DSL/KML/BNT/SPL/PSC segmentation families, standard breaks, region matrices, growth extraction, and executive summary packaging."
       - "2026-05-28: Added handoff to bpm4-datalens-dashboard for Yandex DataLens implementation and QA."
       - "2026-05-26: Added BPM Exchange capability metadata."
@@ -33,6 +36,8 @@ The skill now has **two operating modes**:
 
 1. **Dashboard / BI mode** — semantics, Formula Profit, cross-filters, SI/SIF extraction, DataLens handoff.
 2. **Flat base analysis mode** — one-shot dissection of a B2B transaction base into segmentations, breaks, matrices, growth candidates, and executive summary artifacts.
+
+If Natalia or another project operator supplies a reference dashboard, treat it as a mandatory dashboard-class parity benchmark, not as a loose visual example. The output may adapt business semantics to the current B2B distribution source, but it must not silently downgrade to a source-readiness report, static chart packet, or thin Formula Profit proof-of-concept.
 
 The canonical Vault home is:
 
@@ -80,6 +85,20 @@ For the Ipatovo lineage this means:
    - `dashboard_mode` if the user needs BI semantics, interactive views, filter logic, Formula Profit, or Storyline/BI handoff.
    - `base_analysis_mode` if the user gives a transaction file / 1C export / flat sales base and asks for segmentation, breaks, matrices, growth points, or executive summary artifacts.
    - `hybrid_mode` if both are required: first normalize and segment the base, then route the agreed semantic layer into BI/dashboard views.
+   - If the user or Natalia provides a dashboard reference, choose `dashboard_mode` or `hybrid_mode` unless the user explicitly asks for analysis-only output.
+
+2a. Preserve reference-dashboard parity.
+   When a reference dashboard is supplied, first extract a parity checklist:
+   - global filters and scope tabs;
+   - KPI/control top;
+   - Formula Profit / revenue cascade;
+   - monthly economics and year-over-year or period-over-period trend blocks;
+   - breakdown tables by channel, client/account, region, manager, category, SKU, point/store when available;
+   - RFM / repeat / cohort / cluster / affinity blocks where the source has client-period, document, or basket grain;
+   - forecast, gap plan, or scenario blocks where enough history exists;
+   - data-quality, reconciliation, source-files, and unavailable-data blocks.
+
+   Implement the reference class of interaction and density: sidebar or visible filter panel, reset/preset controls, scoped views, chart + table pairs, and drill-down tables. If the current source cannot support a reference section, keep the section as `не рассчитано / требуется источник` with the missing fields, rather than removing the section. Do not justify the absence of these sections by saying the artifact was only built for readiness unless the user explicitly requested a readiness-only pass.
 
 3. Anchor the dashboard or analysis in Formula Profit / revenue logic.
    The first block must be the tree cascade of Formula Profit. Other views are diagnostic branches, not independent charts.
@@ -116,6 +135,14 @@ For the Ipatovo lineage this means:
    - SKU affinity / nomenclature co-occurrence -> bundle-rule / attach-rate / cross-sell / product-architecture.
    - Regression or model feature importance -> hypothesis, not causality, unless design and data support causal reading.
 
+7a. Diagnose revenue / gross-profit divergence automatically.
+   - On the first monthly economics view, never leave revenue and gross profit as two visually correlated lines without a visible ratio. Show gross margin directly through a third percentage series, gap labels/connectors, or an immediately aligned ratio panel. Exact margin must also be available in the cross-series tooltip.
+   - Trigger a diagnostic drill-down when revenue and gross profit move materially out of proportion, gross margin changes sharply, or a derived metric has an unusual fluctuation. Do not wait for a separate user request.
+   - Minimum drill-down: reconcile source coverage; quantify the focal-period movement; build an exact `volume effect + margin effect = gross-profit delta` bridge; test mix shift versus within-group economics for channel, category, client, and SKU; expose the largest transaction-level entrants, exits, and margin changes tied to the dates.
+   - Prefer an exact symmetric Kitagawa/Oaxaca-style decomposition for two-period rate changes. Treat channel, category, client, SKU, region, and manager as alternative overlapping lenses; never add their contributions across dimensions.
+   - When the source supports it, add a multivariate or regularized explanatory model with stated grain, controls, validation window, fit, and residual. A factor decomposition is sufficient when it reconciles the movement more transparently than regression.
+   - Regression coefficients, feature importance, and timing-linked transaction shifts are explanations or hypotheses, not causal proof. Mark missing price, discount, return, COGS-composition, payment, and inventory events as evidence gaps.
+
 8. Run association and affinity diagnostics when requested or when SKU/client fit is unclear.
    Treat these as Formula Profit support views, not standalone analytics.
 
@@ -142,7 +169,7 @@ For the Ipatovo lineage this means:
    - `KML` — competition / monopolization / LTV family for the question `кому продавать`.
    - `BNT` — average check / systemness / cycle family for the question `кому продавать`.
    - `SPL` — shipment regularity / payment discipline / LTV family for the question `как продавать`, when logistics and payment behavior are critical.
-   - `SL` — simplified top-level `systemness × loyalty` or equivalent reduced matrix for executive geographic maps.
+   - `SL` is not a standalone canonical family. It was first used in the Ipatovo lineage only as a project-specific fallback for `SPL` when payment-discipline data (`P`) was unavailable. Do not calculate or publish pure `SL` in place of `SPL` unless the owner explicitly accepts that fallback for the current project.
 
    **B. Segmenting categories inside an account**
    - `DSL` — category penetration / spread / LTV family for the question `что продавать`.
@@ -179,6 +206,22 @@ For the Ipatovo lineage this means:
    - model region with better segment mix;
    - SKU dependence on one client;
    - mismatch between formal business identity and actual revenue structure.
+
+10a. In reference-parity dashboard mode, produce the standard interactive dashboard packet.
+    Minimum output families:
+   - `filters_and_scope`: period, channel, region, manager, client/account, segment, category, SKU, warehouse/point where fields exist;
+   - `management_top`: KPI cards, reconciliation status, data period, source limitations;
+   - `formula_profit`: revenue, discount, COGS, gross profit, gross margin, coverage caveats;
+   - `monthly_economics`: revenue, gross profit, gross margin, checks/documents/realizations, clients, average document value, quantity, discount;
+   - `breaks`: channel, region, manager, warehouse, client/account, category, SKU, contract;
+   - `client_behavior`: RFM-like account table, repeat shipments, cohorts by first realization, retained / lost / reactivated accounts where source grain supports it;
+   - `segment_families`: BNT, DSL, PSC, KML/SPL only when required source fields exist, with explicit missing-source rows otherwise;
+   - `product_behavior`: SKU/category affinity, client-type/product association, concentration and long-tail diagnostics;
+   - `diagnostics`: revenue-vs-gross-profit divergence, mix/economics decomposition, transaction events, data-quality exceptions;
+   - `planning`: forecast / gap plan / scenario only when history and business target are available; otherwise an explicit no-data placeholder;
+   - `source_and_lineage`: source files, grain, excluded rows, formula coverage, refresh and join gaps.
+
+    The B2B version should mirror the reference's product quality and interaction pattern, not its retail-specific semantics. Retail-only blocks such as phone/Roistat transfers, cashier employees, and store-hour heatmaps become B2B analogues only when the source has matching identifiers and operational meaning.
 
 11. Route to BPM Storyline-Storyboard.
    If a dashboard view creates a hypothesis, storyline move, slide candidate, knowledge deficit, data task, SI/SIF candidate, or BPV action, update the project BPM Storyline-Storyboard or explicitly record a no-op reason.
@@ -264,8 +307,10 @@ Use this contract whenever DSL/KML/BNT/SPL/PSC/SL appear.
 
 ### SL
 
-- Reduced management matrix for top-level region/account prioritization.
-- Use only as a compressed layer after richer segment families are computed.
+- Not a standalone canonical segmentation family.
+- Ipatovo lineage: project-specific `SPL` fallback with the unavailable payment-discipline dimension removed.
+- Default rule outside that accepted exception: do not build pure `SL`; show `SPL — не рассчитано` and the missing payment-discipline source instead.
+- If an owner explicitly authorizes the fallback, label it `project-specific SPL fallback`, preserve `S` and `L` definitions, and never present it as a universal BPM-4 canon.
 
 ## Base Analysis Guardrails
 
@@ -275,6 +320,7 @@ Use this contract whenever DSL/KML/BNT/SPL/PSC/SL appear.
 - Region and manager fields are not trusted blindly; missing or technical values must go to a data-quality block before client-facing conclusions.
 - If thresholds are percentile-based, say so. If thresholds are fixed, justify them.
 - If a segment family is adapted from a specific project lineage, label it `project-specific reusable pattern`, not `universal BPM-4 canon`.
+- Do not substitute `SL` for unavailable `SPL` by default. Missing payment events are a source gap, not permission to canonize a two-dimensional fallback.
 
 ## Output Family Contract (validated on Ipatovo artifact set)
 
@@ -408,7 +454,10 @@ If only part of the bundle is produced, the skill must state which layer is miss
 
 - Scope lock is explicit: B2B distribution / regular shipments.
 - Operating mode is explicit: `dashboard_mode`, `base_analysis_mode`, or `hybrid_mode`.
+- If a reference dashboard from Natalia/project operators exists, parity checklist is explicit and every reference block is either implemented, adapted to B2B semantics, or shown as `не рассчитано / требуется источник` with concrete missing fields.
+- A reference-dashboard request is not completed by a readiness-only artifact unless the user explicitly asked for readiness-only output.
 - Formula Profit cascade is first.
+- The first revenue / gross-profit trend exposes gross margin directly; material divergence triggers a reconciled volume × margin bridge and transaction-backed factor drill-down.
 - `revenue_only_mode` is declared when COGS/margin data is absent.
 - Cross-filtering is specified or implemented.
 - OoS is handled where distribution data supports it.
@@ -417,7 +466,7 @@ If only part of the bundle is produced, the skill must state which layer is miss
 - New flow vs old tail is separated when order and realization dates differ materially.
 - Missing product/client dictionary codes are flagged before client-facing segmentation claims.
 - Segment families are labeled with their source status: `slide-native`, `text-adapted`, or `agent-inferred`.
-- For DSL/KML/BNT/SPL/PSC/SL, each letter is decoded and management use is stated.
+- For DSL/KML/BNT/SPL/PSC, each letter is decoded and management use is stated. If an owner-authorized Ipatovo-style `SL` fallback is present, its exception status and missing `P` source are visible.
 - In `base_analysis_mode`, standard breaks and region/segment matrices are produced or explicitly waived with a no-op reason.
 - Growth candidates / недопроданный ассортимент logic is stated, not implied.
 - Executive-summary structure is explicit when the ask is board-ready.
@@ -458,3 +507,7 @@ client_type x product_group:
 count_orders, amount, margin, share_in_client_type, share_in_product_group,
 lift_vs_total, odds_ratio_or_model_effect, sample_flag, management_action
 ```
+
+## Structured Analytical Artifact Gate
+
+Client/product/region segmentations, association matrices, metric trees, dashboard dimensions, evidence/claim tables, analytical visuals, and Storyline-Storyboard deltas inherit the global contract in `~/.codex/AGENTS.md`. State unit of analysis, universe, grain, dimension dictionary, numerator/denominator, filter semantics, multi-label boundary, residual/unclassified rows, physical source, and management decision. Do not label overlapping commercial cuts as strictly MECE. Frappe is nonblocking; the calculation/data source and Formula Profit canon govern.
