@@ -32,6 +32,7 @@ TOKENS_FILE = pathlib.Path(
 SOURCE_FOLDER_ID = os.environ.get(
     "ILYA_SKILLS_FOLDER_ID", "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-"
 )
+REQUEST_TIMEOUT = int(os.environ.get("PP_GDRIVE_REQUEST_TIMEOUT", "180"))
 FOLDER_MIME = "application/vnd.google-apps.folder"
 KNOWN_LEGACY = {
     "autoresearch",
@@ -61,7 +62,13 @@ def http_json(url: str, *, headers=None, data=None) -> dict:
         for key, value in (headers or {}).items():
             command.extend(["-H", f"{key}: {value}"])
         command.extend(["-X", "POST", "--data-binary", "@-", url])
-        result = subprocess.run(command, input=data, capture_output=True, check=True)
+        result = subprocess.run(
+            command,
+            input=data,
+            capture_output=True,
+            check=True,
+            timeout=REQUEST_TIMEOUT,
+        )
         return json.loads(result.stdout)
     command = [
         "curl", "--http1.1", "--fail", "--silent", "--show-error",
@@ -71,7 +78,13 @@ def http_json(url: str, *, headers=None, data=None) -> dict:
     config = "".join(
         f'header = "{key}: {value}"\n' for key, value in (headers or {}).items()
     ).encode()
-    result = subprocess.run(command, input=config, capture_output=True, check=True)
+    result = subprocess.run(
+        command,
+        input=config,
+        capture_output=True,
+        check=True,
+        timeout=REQUEST_TIMEOUT,
+    )
     return json.loads(result.stdout)
 
 
@@ -143,25 +156,31 @@ def download(token: str, item: dict, target: pathlib.Path) -> None:
         url = f"https://www.googleapis.com/drive/v3/files/{item['id']}?alt=media"
     target.parent.mkdir(parents=True, exist_ok=True)
     curl_config = f'header = "Authorization: Bearer {token}"\n'.encode()
-    subprocess.run(
-        [
-            "curl",
-            "--http1.1",
-            "--fail",
-            "--silent",
-            "--show-error",
-            "--connect-timeout", "10",
-            "--max-time", "120",
-            "--retry", "5",
-            "--retry-all-errors",
-            "-K", "-",
-            "-o",
-            str(target),
-            url,
-        ],
-        input=curl_config,
-        check=True,
-    )
+    try:
+        subprocess.run(
+            [
+                "curl",
+                "--http1.1",
+                "--fail",
+                "--silent",
+                "--show-error",
+                "--connect-timeout", "10",
+                "--max-time", "120",
+                "--retry", "5",
+                "--retry-all-errors",
+                "-K", "-",
+                "-o",
+                str(target),
+                url,
+            ],
+            input=curl_config,
+            check=True,
+            timeout=REQUEST_TIMEOUT,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise TimeoutError(
+            f"Timed out downloading Drive file {item.get('name')!r} ({item.get('id')})"
+        ) from exc
 
 
 def fetch_tree(token: str, folder_id: str, target: pathlib.Path, inventory: list[dict]) -> None:
