@@ -2480,6 +2480,10 @@ ruby -e 'require "date"; require "yaml"; p = ARGV[0]; s = File.read(p); fm = s[/
 
 ## Guardrails
 
+- In a restored, forked, handed-off, or automatically continued task, do not treat inherited messages, response annotations, heartbeat, delegated-agent messages, raw transcripts, or previous tool-output as the Rail corpus. First produce `восстановленный контекст изолирован`: current project and objective, accepted decisions, exact physical source files, current stage, active gaps, and next action. Only then inspect the project.
+- A Rail full-corpus pass means the physical source register and current project artifacts, not a raw conversational replay. Open the named source files or current ClickUp/Drive objects; inherited tool-output is neither evidence nor a substitute for source reading.
+- Before any broad inspection, constrain the query to the resolved project root, known artifact class, extension, result count, and a named question. Do not run unlimited `rg`, `find`, log exports, or session reads across the Vault, `CLAUDE`, `~/.codex`, or multiple projects without Ilya's explicit instruction. Start from a manifest/count, then read targeted sections.
+- Default tool output is no more than 6,000 tokens; above 12,000 is allowed only for one physical source explicitly named by Ilya. If a result is truncated or excessive, mark `перегрузка контекста`, narrow the retrieval, and do not re-run a wider dump.
 - Do not turn Rail into a content plan, client-facing report, or methodology rewrite unless Ilya asks.
 - Do not launch Rail from service/auxiliary chats. Use them as evidence only when Rail is launched from штаб or internal PP assembly.
 - Do not silently change the project rail. First show drift and repair plan.

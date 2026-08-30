@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-29T16:45:06Z",
+  "generated_at": "2026-08-30T06:05:46Z",
   "upstream_skill_count": 79,
   "repository_skill_count": 83,
   "legacy_skill_count": 12,
@@ -2207,8 +2207,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "0fe48dcb94ef3233ba7084eadcc52c4c65354fcdd6f0ee6ffa7176c7c83935ab",
-          "size": 227659
+          "sha256": "e2b0fd96c62b5ddce320abb77ff417340858ca1affea92ed5c249ace7e79899b",
+          "size": 229033
         }
       ]
     },
@@ -2338,8 +2338,8 @@
       "files": [
         {
           "path": "skills/summary/SKILL.md",
-          "sha256": "0a7f41d75b0c216ef768cd0da2df99d0d06df810f33e71a2124b26ed446c6eff",
-          "size": 8484
+          "sha256": "a5d32cab93f76d87d6ac2d50a4f7510b86f8095440ef60e337b7c849e50464ce",
+          "size": 9832
         },
         {
           "path": "skills/summary/agents/openai.yaml",
