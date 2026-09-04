@@ -1,11 +1,33 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-08-30T06:05:46Z",
-  "upstream_skill_count": 79,
-  "repository_skill_count": 83,
+  "generated_at": "2026-09-04T04:09:58Z",
+  "upstream_skill_count": 80,
+  "repository_skill_count": 84,
   "legacy_skill_count": 12,
   "skills": [
+    {
+      "name": "abm-pursuit-loop",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/abm-pursuit-loop/SKILL.md",
+          "sha256": "5a0e0d76887b186f2dd0120f000939e06748a60de91195b52158b45d92ec3e75",
+          "size": 10345
+        },
+        {
+          "path": "skills/abm-pursuit-loop/agents/openai.yaml",
+          "sha256": "46b5d731f2a5c42b5bf736a881ed2bae9e35b2131170397af05af1534cf607ef",
+          "size": 122
+        },
+        {
+          "path": "skills/abm-pursuit-loop/references/eval-pack.md",
+          "sha256": "2032319d49c39e4e6556f850585b0ebe7909d59d091d256ba36cc6243ee90020",
+          "size": 5459
+        }
+      ]
+    },
     {
       "name": "admin",
       "lifecycle": "active",
@@ -2326,8 +2348,8 @@
       "files": [
         {
           "path": "skills/skill-system-governance/SKILL.md",
-          "sha256": "d4521391680cef8c497a428b91b5f92fdac600f99b6fd351bb458a0a6e33f741",
-          "size": 13580
+          "sha256": "930979ba778288f714e6a6a57fb2f32f6d519ca2b1b3c8459d53a5b152576e32",
+          "size": 14534
         }
       ]
     },

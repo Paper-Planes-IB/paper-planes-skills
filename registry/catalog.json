@@ -1315,6 +1315,16 @@
     "slices": "Без среза"
   },
   {
+    "skill": "abm-pursuit-loop",
+    "type": "Управление проектами",
+    "description": "Скилл помогает выполнить задачу «abm pursuit loop» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/abm-pursuit-loop",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-pursuit-loop",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "admin",
     "type": "Управление проектами",
     "description": "Управляет контуром Admin Rail для проектов Paper Planes 4-ки. Проверяет подготовку к PRE, INIT, PLAN и EXEC, недельный разбор, действия после встреч и решение о переходе к следующей контрольной точке.",
