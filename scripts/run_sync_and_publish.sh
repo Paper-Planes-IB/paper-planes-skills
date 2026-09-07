@@ -6,6 +6,8 @@ LOG_DIR="/Users/natalie/.local/state/paper-planes-skills"
 mkdir -p "$LOG_DIR"
 cd "$REPO"
 
+trap 'echo "$(date '"'"'+%F %T'"'"') синхронизация прервана или завершилась ошибкой" >> "$LOG_DIR/sync.log"' ERR
+
 git pull --ff-only origin main
 python3 scripts/sync_from_ilya_drive.py
 python3 scripts/build_registry.py

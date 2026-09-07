@@ -1,10 +1,2448 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-09-04T04:09:58Z",
+  "generated_at": "2026-09-07T11:19:55Z",
   "upstream_skill_count": 80,
   "repository_skill_count": 84,
   "legacy_skill_count": 12,
+  "upstream_inventory": [
+    {
+      "path": "skills/BPM1/SKILL.md",
+      "drive_id": "1viTe0F3e29vj0MMYjqzhzhxAztHQGQeU",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T19:21:31.092Z",
+      "drive_md5": "389ec3862008dca321e8499719532584"
+    },
+    {
+      "path": "skills/BPM1/references/ingest-layer.md",
+      "drive_id": "1vPuKhNJlfEyRJpgK-g6jtpx_rQbsrlR5",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-03T21:01:58.770Z",
+      "drive_md5": "a53908ad9df03843621cc1e32e9daae0"
+    },
+    {
+      "path": "skills/BPM1/references/methodology.md",
+      "drive_id": "1aD8AUMqCEeDV1mHCqb2FWOAVA8HtgJOe",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-03T21:01:58.770Z",
+      "drive_md5": "278909beea025ea5f043b2baeaf7dc4a"
+    },
+    {
+      "path": "skills/BPM1/references/source-map.md",
+      "drive_id": "1qykIhmJHo_kOgA5VD4KDJIVfgeCJwMIu",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-03T21:01:58.769Z",
+      "drive_md5": "b16b4c4958f11e5d5a18c28350559f55"
+    },
+    {
+      "path": "skills/BPM1/references/survey-lake.md",
+      "drive_id": "1S2jtV0pDVLeOOS1Eev1C9RF5GcklufUQ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-03T21:22:00.546Z",
+      "drive_md5": "7ccac874739085e441609f347c0e2a4b"
+    },
+    {
+      "path": "skills/BPM1/references/survey-types.md",
+      "drive_id": "1zTMBKb3mnmuG885sJikC_IRmNmvpH5dJ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-03T21:01:58.770Z",
+      "drive_md5": "e641c00cda202030512509b587250035"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/factors_jtbd.csv",
+      "drive_id": "1sPepepqKj0_NzEtu1nML7BCOqK0xPkZd",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:48:28.767Z",
+      "drive_md5": "ac0b48ad72135577f3368f2794a7c151"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/manifest.json",
+      "drive_id": "1w5sy8_9GHUxH69gtB6_H2N_FXL9fF-oz",
+      "mime_type": "application/json",
+      "modified_time": "2026-06-03T21:48:28.796Z",
+      "drive_md5": "8fa2bed6c60351e3708fcc75afe7d297"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/metrics.csv",
+      "drive_id": "1GGa2RLpooY3Z-M3RX7asjZKI07wTBDlW",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:48:28.766Z",
+      "drive_md5": "48c0002459e8baa3c826680f2ed25b91"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/questions.csv",
+      "drive_id": "1_Pc-XQvuNwEwPsLxf8ypGpMy4pr2d3m5",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:47:49.607Z",
+      "drive_md5": "b6e963db2b5b0ff36edc5f4780353559"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/raw_files.csv",
+      "drive_id": "1yG5CaLJ0K2AiapJ8rm_57Xu8a89FE9lB",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:47:49.579Z",
+      "drive_md5": "c38c287613ada377afcc6b5ce2171390"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/recovery_issues.csv",
+      "drive_id": "1U9BQd8LuT7vcuDDbqZ2LNEPUJk4zpFAa",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:47:49.693Z",
+      "drive_md5": "051b16a3241ae0a7f7af501b79059e6d"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/slide_patterns.csv",
+      "drive_id": "1X5i5NMM0d381oq8gh955wDezvm0fmQdH",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:48:28.774Z",
+      "drive_md5": "702747587e5203790b357425cd0f694f"
+    },
+    {
+      "path": "skills/BPM1/survey_lake/surveys.csv",
+      "drive_id": "1_JZtQhRNzgjGgbZh52dIBZ2JvVIlh3_z",
+      "mime_type": "text/csv",
+      "modified_time": "2026-06-03T21:48:28.688Z",
+      "drive_md5": "c6dfbd143c7e5b642ad8c0635fa8653e"
+    },
+    {
+      "path": "skills/abm-pursuit-loop/SKILL.md",
+      "drive_id": "1pTLPGAhjSRwtEcQEB58wHtD-s9Ei59G1",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-09-03T16:02:57.063Z",
+      "drive_md5": "1cae8e9a9ecc57a478eaeba26a743e15"
+    },
+    {
+      "path": "skills/abm-pursuit-loop/agents/openai.yaml",
+      "drive_id": "1gN5Sfh40av40LO_PFpNEsia6UzkdlRRj",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-09-03T16:02:57.065Z",
+      "drive_md5": "e6aef1aa009621ccb6fb7dd2b4cbb418"
+    },
+    {
+      "path": "skills/abm-pursuit-loop/references/eval-pack.md",
+      "drive_id": "16tpnQ-ZiWzdMEsbOr7F7npzDWti10mrb",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-09-03T16:02:57.067Z",
+      "drive_md5": "eb27ec54bc41654710c59d09f205e214"
+    },
+    {
+      "path": "skills/admin-scale/SKILL.md",
+      "drive_id": "16sI6iyoY8S1o_QcQS_QYZjQUnrOKQT9x",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-30T13:43:39.207Z",
+      "drive_md5": "3cfb0d08a974ee70926284bc15a0a9c0"
+    },
+    {
+      "path": "skills/admin-scale/agents/openai.yaml",
+      "drive_id": "10cISZkLOqKAXL219Yt02xIQDKKAeVDb8",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-04-29T11:26:06.178Z",
+      "drive_md5": "ca15ee32b3930c89b92e1241f652e774"
+    },
+    {
+      "path": "skills/admin/SKILL.md",
+      "drive_id": "1Td4Z7B3n4xWsxTXhBpn-UHj4MMlmXxth",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T18:38:07.565Z",
+      "drive_md5": "e7863967ed48a024585de20dcf4121b2"
+    },
+    {
+      "path": "skills/admin/agents/openai.yaml",
+      "drive_id": "14K8jIjLm-h0g7kSRAnEa0fIRjldHA8Ib",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-19T20:59:14.717Z",
+      "drive_md5": "2da10eea8437b832d3598dec6f6320f3"
+    },
+    {
+      "path": "skills/autoresearch/SKILL.md",
+      "drive_id": "1MBq2vSTiXoN9Ys8bFShPWVkwPfr9XDJO",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:54:09.319Z",
+      "drive_md5": "1ac9a4e2a1059c2b7a1f6368dcc2beb5"
+    },
+    {
+      "path": "skills/balakhnin-voice/SKILL.md",
+      "drive_id": "1pJzrcH82LeZ_zssa3uex1YbCx5DRP_gz",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:35:46.593Z",
+      "drive_md5": "ab0586728202e4072db54bd4b09fb1b5"
+    },
+    {
+      "path": "skills/basecamp/.installed-version",
+      "drive_id": "1A30YZXlTOSDL3-foaNnskbPEgugvRHCM",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-06-06T13:46:11.009Z",
+      "drive_md5": "088466b6546276d0d79a1569de547dc8"
+    },
+    {
+      "path": "skills/basecamp/SKILL.md",
+      "drive_id": "17k9FvlMo6I_VNAKmV4Tx1_zjpHleNLS0",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-06T13:46:11.006Z",
+      "drive_md5": "751e1ea5422c8e8a98557ef25d516fae"
+    },
+    {
+      "path": "skills/book-editor/SKILL.md",
+      "drive_id": "1mlxoL1IquNsnPfJpxn6wuewNA6d0wDr_",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-12T14:39:15.501Z",
+      "drive_md5": "b71bad1f33f00aba4083db6f2a055316"
+    },
+    {
+      "path": "skills/bpm-exchange-reconciliation/SKILL.md",
+      "drive_id": "15-FEq6ntIkojkL6_pRogL01_Mo7LF8qS",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:50:48.700Z",
+      "drive_md5": "c3e6c56df6413d633c9c13ae78a6faed"
+    },
+    {
+      "path": "skills/bpm10-crm/SKILL.md",
+      "drive_id": "1X6OYvA29kCS7wUzqtNbyUCQ42M3SrSqe",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-15T18:49:47.152Z",
+      "drive_md5": "b7a61f08c7b1ad780b0b4e25dc6e075a"
+    },
+    {
+      "path": "skills/bpm10-crm/agents/openai.yaml",
+      "drive_id": "1xrGbxtTyXa3JnPduVIMj8w8OwmVlldye",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-08-03T17:48:15.207Z",
+      "drive_md5": "28ac852d7b0f05bba2c9b6b7959b2bd3"
+    },
+    {
+      "path": "skills/bpm10-crm/references/artifact-templates.md",
+      "drive_id": "1gsxLz6CIfATfPOtc_uMxBgEB2X62b6B9",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.206Z",
+      "drive_md5": "9993240e061c48bb47da533fa66a1aa1"
+    },
+    {
+      "path": "skills/bpm10-crm/references/bpm-boundaries.md",
+      "drive_id": "1xa-VA72lAT-2O1prosiumOfLRme7Wf4c",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.205Z",
+      "drive_md5": "2ff8ecfaa9d9387b3cf89fe6ddde619c"
+    },
+    {
+      "path": "skills/bpm10-crm/references/core-methodology.md",
+      "drive_id": "1wMVF3JkKWQoureOCOrrRq1CyHEsK55AA",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.206Z",
+      "drive_md5": "a0881c35478ed6c146a7a424b7bedff0"
+    },
+    {
+      "path": "skills/bpm10-crm/references/core-overview.md",
+      "drive_id": "1oVwHcngegL5ixfjRCCnQYiXMzk7M44MH",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.205Z",
+      "drive_md5": "8c391a803513d7f1f9e0917c73a0f722"
+    },
+    {
+      "path": "skills/bpm10-crm/references/lean-crm-prompts.md",
+      "drive_id": "10iar4QIGC6HwF0agF9K7-QKiiPccPaST",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.205Z",
+      "drive_md5": "43fe4c9cf813d8d96dc16471a664a136"
+    },
+    {
+      "path": "skills/bpm10-crm/references/methodology-expansion.md",
+      "drive_id": "1lCp6om64OIYcJ1gOsy0vL7bweJYbWI_z",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.206Z",
+      "drive_md5": "a82669ad8411924bb5782fd4508f737a"
+    },
+    {
+      "path": "skills/bpm10-crm/references/miro-integration.md",
+      "drive_id": "1OVQGd20CC5-MsQtGeLQ-QLwxf81p8hCT",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.207Z",
+      "drive_md5": "57e3e9b4b5b3d6c2bc3dd3a9d424f39f"
+    },
+    {
+      "path": "skills/bpm10-crm/references/qa-and-evals.md",
+      "drive_id": "1NJTUabh8yav0dkaZt8WKknUvEGsTwp3e",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:59.185Z",
+      "drive_md5": "5f8df127411042441c50859085f77207"
+    },
+    {
+      "path": "skills/bpm10-crm/references/related-skills.md",
+      "drive_id": "12gyYO4qXFietUaswXC9OhkVogpR-1ldF",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-03T17:48:15.205Z",
+      "drive_md5": "e0f8ab6fcf154397367fe58e0f009564"
+    },
+    {
+      "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
+      "drive_id": "1-4Vbx9OnAjaQ9H2rFRQT9g90g4XSUGj7",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T19:10:12.086Z",
+      "drive_md5": "aa58c4d6bddf6097c23601f9a1ef76a0"
+    },
+    {
+      "path": "skills/bpm4-datalens-dashboard/SKILL.md",
+      "drive_id": "1o5jM5V0XRpKqi75mPO-e-TjuyfylB7Sk",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.784Z",
+      "drive_md5": "4d68db367289ca9d1c6ece4ea7e13660"
+    },
+    {
+      "path": "skills/bpm4-healthcare-clinic-economics/SKILL.md",
+      "drive_id": "1xFjCFYca6Yjuc2PkYsmahFDiq0vzwvis",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-20T09:38:30.422Z",
+      "drive_md5": "3d117d94a3f46a34c86e0132a95a90d9"
+    },
+    {
+      "path": "skills/bpm4-it-saas-enterprise-vendor/SKILL.md",
+      "drive_id": "1fxBqFNgHn3HegOiF4fwUjNg0VeBWsO5n",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.786Z",
+      "drive_md5": "a5410d8e7896a184eb472e5109c7de13"
+    },
+    {
+      "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
+      "drive_id": "1Q_nvxEFTDDpjsPaoH9WuF5cSWuPh_FRg",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-28T20:30:53.705Z",
+      "drive_md5": "1aff55b7753ff8a41fef2327b4745096"
+    },
+    {
+      "path": "skills/bpv-01-npd-lifecycle-os/agents/openai.yaml",
+      "drive_id": "1TxZpqVf-mVJ0vL7YWU7Eeza_57ciIH4L",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-11T14:22:21.143Z",
+      "drive_md5": "9dd4678a56934f4b817c86e8cc1c3d80"
+    },
+    {
+      "path": "skills/bpv-04-mpp-commercial-proposal/SKILL.md",
+      "drive_id": "1nAj3HbHDeSDtioOtp84DMftWAYWTVbFe",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T18:41:04.610Z",
+      "drive_md5": "55d15b508419cf98e9f22d5719373cc3"
+    },
+    {
+      "path": "skills/bpv-04-mpp-commercial-proposal/agents/openai.yaml",
+      "drive_id": "1wBJdJJHneBToh0trZFYMnuJ_mFDh3qpO",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-11T14:20:34.360Z",
+      "drive_md5": "72b4b3c773b1e92d48216372499dd693"
+    },
+    {
+      "path": "skills/bpv-14-digital-profit-model/SKILL.md",
+      "drive_id": "11XbKsYWcLk7wiJrjckt75L9mzs9CwqIl",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-11T14:21:38.163Z",
+      "drive_md5": "ac1267d922e0762713fbbdb241b553d1"
+    },
+    {
+      "path": "skills/bpv-14-digital-profit-model/agents/openai.yaml",
+      "drive_id": "1W1cfTBgzdlnuvb9LtPobF8HuNdlFlRZl",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-11T14:21:30.503Z",
+      "drive_md5": "3468dfdb0bc25510f70a181522a20fe3"
+    },
+    {
+      "path": "skills/case-narrative/SKILL.md",
+      "drive_id": "1NFIU3mB0dm7Zj3I4OfHTEmh5V8IQS6U9",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-26T19:00:05.114Z",
+      "drive_md5": "16b12ba29e0c07552eb5539ab6f3f281"
+    },
+    {
+      "path": "skills/clickup-mcp-router/SKILL.md",
+      "drive_id": "11auYWadEdkVkhNpKpjKmnU_tRg7Isrts",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-17T20:30:00.185Z",
+      "drive_md5": "2d750104eaac14fcffb10cac99150b87"
+    },
+    {
+      "path": "skills/clickup-mcp-router/agents/openai.yaml",
+      "drive_id": "1pkOuhpcUwy70cpk-cI7QO50lrSDeXRI7",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-07T18:28:59.248Z",
+      "drive_md5": "c01353ed9b0036595ea12721692aa145"
+    },
+    {
+      "path": "skills/client-info/SKILL.md",
+      "drive_id": "1W0Ogeq3XRdlfgf96hwBZPS_Zls1ntij5",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-30T16:16:45.656Z",
+      "drive_md5": "e4fe335a063866e425618dc551dcf480"
+    },
+    {
+      "path": "skills/client-intel-agent/SKILL.md",
+      "drive_id": "1vH_-uyVPOWBRmK8F8HKxgerdDll7SgsN",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T16:04:22.561Z",
+      "drive_md5": "a59df59c98dddc8e3dc5f6a7ff11953e"
+    },
+    {
+      "path": "skills/client-project-onboarding/SKILL.md",
+      "drive_id": "12fF8FPxnBJ3uLy1uBZ_Y5ZzLkuMJYvKj",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-08T15:08:56.373Z",
+      "drive_md5": "2221100312881c822433134182c999e6"
+    },
+    {
+      "path": "skills/cognitive-router/SKILL.md",
+      "drive_id": "1FQ_ntJuST2hmE9NGWVSCYqC2yEe7wSd7",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.776Z",
+      "drive_md5": "7fea2a284c847e50c8598a767a54339d"
+    },
+    {
+      "path": "skills/cognitive-router/agents/openai.yaml",
+      "drive_id": "1MusfC6pAHKAy6rELXg9wbjLZAvVEY5a4",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-09T21:17:03.104Z",
+      "drive_md5": "b70232e0101574c9b4a7bf45ebad12db"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/SKILL.md",
+      "drive_id": "1xC7aRqO2YFJOktzqyJjNl2PafO8IjbiK",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-12T22:09:57.516Z",
+      "drive_md5": "53c296772ff96f5e242c558fe9b80033"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/brief-template.md",
+      "drive_id": "12zKsZGYfqkNXBhxFesWcNlzSfluj47Sh",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ce99895cd1e5ada8a297f8f747829251"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/client_brief.md",
+      "drive_id": "10hOPx915KYbXCYIduQWdEk7q6U1Sdh4o",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "845a7e93f48ce98ca78ace8d91ab612a"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/gamma_integration.md",
+      "drive_id": "1m4xCzXeXG_gGenpYcGEOPOFrc5HmOgGH",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "119747405c74384a40feb3e5b1c37d11"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/gold-standard-patterns.md",
+      "drive_id": "10kjypua_IO_y1QEmRm-GokGN6KIWoGKX",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6029c6b18e90f02b9d7975bbdd6a188c"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/gold_standard.md",
+      "drive_id": "1ZLhmsPyXdZD6jN2PCB1Ift_JzKM6-9mV",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4a9e75d4c6f5a155f5f2c88a3020ec2b"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/kp_structure.md",
+      "drive_id": "1uUZRt3RUs7HK5S-Qh3Y6CSE_B-450F8V",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "158075451665428d7d76ae28fa95675f"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/pp-methodology-notion.md",
+      "drive_id": "1gY6iuDTRBobwZn6Jvh7_GPX9wtenFiBS",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ff170869d416c93ff2a571cb43e17767"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/pptx_integration.md",
+      "drive_id": "17S23CkTZShmT4LSe5u_sI53QkBDAfq67",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "d10fb057596fcb1aa6951604c7e24c84"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/pricing_examples.md",
+      "drive_id": "1yzuQU9WyPunG3lU5MwCMhdtbO-EYiGD1",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "02d3c68d623ef431a73905ca5a36deaf"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/project_types.md",
+      "drive_id": "15zCJRF8H3vJzrDK5YaR4GbJNnKFLvobU",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "b7001a0c4e410261b514874a9dfa92da"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/proposal_templates.md",
+      "drive_id": "1zexbp3BX1gstm_qiajTppdaztXKtVmcx",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:52:19.120Z",
+      "drive_md5": "487345bfd0e0d9dc0f40a86d276588c4"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/quality_checklist.md",
+      "drive_id": "1pr2NSZ-Onm-PANhGrVStcMSZ9YDYCV_E",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "620f3449130cbfed99067260da6c68a3"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/slides_integration.md",
+      "drive_id": "1JnOCpBd_InfJbaVcJsxHOPomtOLbW4Vx",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "1fa8d2d75a785e8c1b615d0299a7803f"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/tone-and-language.md",
+      "drive_id": "1JZGB6et8oJxaC_2g_MebjHjh1E7Wmv3u",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f52a302a3207abad14f25d6adcf9a924"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/references/writing_rules.md",
+      "drive_id": "1ZbKRf-2CNomvxb78xVmDfFgp7qr03hbp",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "9aba2477bb06d7a935d6a1af387472d2"
+    },
+    {
+      "path": "skills/commercial-proposal-generator/scripts/commercial_proposal_scaffold.py",
+      "drive_id": "1cBS8002PMA95JoEsthrPVyKusgd583UD",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-08-11T19:52:19.119Z",
+      "drive_md5": "58e33a29fea135384c008871f4ef3ff5"
+    },
+    {
+      "path": "skills/competitor-research/SKILL.md",
+      "drive_id": "1IOBmjK6dIC2xPhBodDo5d3NUqR8RO8p4",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.780Z",
+      "drive_md5": "0e246c487ebb70074531ea56ebe7ca33"
+    },
+    {
+      "path": "skills/concept-deep-dive/SKILL.md",
+      "drive_id": "1p2DyG5TMFbl7iMH_lqfTZ8QHKUJwAe9Q",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:55:40.525Z",
+      "drive_md5": "a4a85ef4b05fd32b6ded210c63f48ec5"
+    },
+    {
+      "path": "skills/concept/SKILL.md",
+      "drive_id": "1YULD2mLbBVdml_5WLQlbQYG3Hxa5_T0W",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-25T15:01:27.276Z",
+      "drive_md5": "6fd4585abe49d59b792e9c63fbd56cb0"
+    },
+    {
+      "path": "skills/consulting-slides-creator/SKILL.md",
+      "drive_id": "1cJyVoUZp1ddfrQw5puhHkXV_1A66m99A",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.781Z",
+      "drive_md5": "0f1fdde9a7b36a31ea5bd4972c514cf0"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/consulting_principles.md",
+      "drive_id": "1P2AoS_-txOxVPfXzQQ3nHuDkA2W6N9np",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7b991c482f898ad7d44fe488a3f451b0"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/content_formatting.md",
+      "drive_id": "1YDUoVlZSVA_qk9TxpZGsDOLQfDhqALUx",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "1244f3b5f5e5f07830a0cc839dd3a4da"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/data_extraction.md",
+      "drive_id": "1fIhcvhxbPHbKTV58NtjEu_SNGKcpWaRk",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "883122fd290638da1ff3b517f9f5aa2f"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/json_examples_analytical.md",
+      "drive_id": "1TTVdeA0FBvkWvtOJcwgRvWu6Zc8fpqfq",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "5b1ade4f8ceb62062f769080173d5427"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/json_examples_structural.md",
+      "drive_id": "1eZaW3iP0Jhy2KgqGgHX94SryxoyLY_QH",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "700f46529be1a8c5335070e37758d90e"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/powerpoint-addin-prompts.md",
+      "drive_id": "1ao859ndvG-zngdhdwqZLtm311dhw4qCN",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6cc4acd65ce2f1830180ed192f0f7482"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/quality_checklist.md",
+      "drive_id": "1CM9hDp_61f-x1M8C2sZDgto3gil0wCxc",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6c4f55b99d1715db99f36c1b3ae9b4c1"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/self_learning_log.md",
+      "drive_id": "11r6P_nVouaArLYW1h5PHxNRg9QYRFi1J",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4439b6efc800e168ddb3ecd904869cb4"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/slide_type_algorithm.md",
+      "drive_id": "1S7HKxY8PxUy2KHj4iBhRgT5jvMQQbQ5v",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e77729d1158c1d93ddf03b8adfe0d305"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/structural_layouts.md",
+      "drive_id": "1GacoQE8Mq_rWD9gaXWYnPaZinkW7u2nC",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e21c658268789705a460123429b877ae"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/visual_diversity.md",
+      "drive_id": "14BkpQZqW4OtAUESMYx_hMHfAZbtawmki",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "b4a7a034ed95845b9418f70eab9a029d"
+    },
+    {
+      "path": "skills/consulting-slides-creator/references/workflow.md",
+      "drive_id": "1P4_q-ghqd1-FMGcBYQj-lGV8YtOWkWDY",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "0a0b3b7dd8243d7f7065607220703048"
+    },
+    {
+      "path": "skills/cord-pdca/SKILL.md",
+      "drive_id": "1ClflP-j5QO9zZBFol2Hric0S0jdlx-18",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-08T17:01:03.546Z",
+      "drive_md5": "bfea2038d78a70b4a4a67945539ea028"
+    },
+    {
+      "path": "skills/cord-pdca/agents/openai.yaml",
+      "drive_id": "1eKHp9IypzW1RaM53FEmV3j_J-JQAwAUr",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-05T20:28:23.734Z",
+      "drive_md5": "de10ef4f8a70828fb77ae9805e8f2eac"
+    },
+    {
+      "path": "skills/cordos/SKILL.md",
+      "drive_id": "1B67-iIdKiC25hamctQnz-UBJbXGZxEA_",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-08T16:53:15.021Z",
+      "drive_md5": "3e301efbd8d8067b2553cde2917d3a73"
+    },
+    {
+      "path": "skills/cordos/agents/openai.yaml",
+      "drive_id": "1TuwulOLMROisOPNfN--sQaocELg9QQzG",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-23T07:59:30.574Z",
+      "drive_md5": "ff52bc9ce3907dc43f7c73dd58273efd"
+    },
+    {
+      "path": "skills/daily-notes-processor/SKILL.md",
+      "drive_id": "1o4SKp_gANCQSg9R7sfMxoCcmSICAMBMk",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:53:50.976Z",
+      "drive_md5": "1f9ef104ffc03c06e658af4f39b2e902"
+    },
+    {
+      "path": "skills/deepresearch/SKILL.md",
+      "drive_id": "1i34mGhQj0k_1vK3GpikZIaX6OKW84kGX",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.779Z",
+      "drive_md5": "8e6c5e185c369c64f3bc92636f04e560"
+    },
+    {
+      "path": "skills/demand-supply-match-intelligence/SKILL.md",
+      "drive_id": "1ajO2mFjFiuRmuVD87TZs-_7GMtIm9AGC",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-19T20:30:32.322Z",
+      "drive_md5": "45d484ce70942f26819eeda4bdc470aa"
+    },
+    {
+      "path": "skills/expert-article-writer/SKILL.md",
+      "drive_id": "1PGWTmbau-P_2BPQhOkl1e4kskajW5KIQ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-17T21:41:11.697Z",
+      "drive_md5": "05878179b71e6783596217d48e21b8cf"
+    },
+    {
+      "path": "skills/fix-rules/SKILL.md",
+      "drive_id": "1nfyWZy8uuBJYZuQ6jWTvq3VV9CXdGRnC",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T18:19:17.768Z",
+      "drive_md5": "8c4eb9be7f69f0ac0c4367a7448ec793"
+    },
+    {
+      "path": "skills/fix-rules/agents/openai.yaml",
+      "drive_id": "1epquIg2lq1PS5Wg9LyXEFV4gdaM6Kpcf",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-12T19:49:26.396Z",
+      "drive_md5": "6890a5dedaef99ddce4fda69552c98e5"
+    },
+    {
+      "path": "skills/graph-analysis/SKILL.md",
+      "drive_id": "1o4q9CJEg85VllOYLJOz0Xd54P0ymWV0o",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T22:07:42.204Z",
+      "drive_md5": "c4ae1113a07ff254cdb50305bbe6b6fa"
+    },
+    {
+      "path": "skills/graph-analysis/agents/openai.yaml",
+      "drive_id": "19M5-30P1F4HCP3R2_jfo01aZSUKZf2ZJ",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-06-16T22:07:51.812Z",
+      "drive_md5": "deeea5e41ae6d15aae60c0e59c91b74f"
+    },
+    {
+      "path": "skills/graph-analysis/references/architecture.md",
+      "drive_id": "1lYxlav9ao7TX1VvmQtpDsj5FA9G-XxUg",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T21:43:35.560Z",
+      "drive_md5": "0e1b2f5f733875fb9e80f4e89e2c1fd2"
+    },
+    {
+      "path": "skills/graph-analysis/references/smart-questions.md",
+      "drive_id": "1SALmW5Cn5L-K2r1_yfh0c8H0ip5FaF7j",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T21:44:20.548Z",
+      "drive_md5": "ba74edc123c1bc2ecd74a9753e65ff86"
+    },
+    {
+      "path": "skills/graph-analysis/scripts/graph_inspector.py",
+      "drive_id": "16Ncw7os_-99BnIrNGh3V40wMrZpsKqZA",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-06-16T22:08:18.780Z",
+      "drive_md5": "98cbb1c7bcbbe4459a1b552611049773"
+    },
+    {
+      "path": "skills/graphify/.graphify_version",
+      "drive_id": "1YrsDsPDxaQvzsqx9CcA17CM0ycc_BTnr",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-06-16T20:37:10.606Z",
+      "drive_md5": "eaf3e74ac5ed84d77c97458440b0afe3"
+    },
+    {
+      "path": "skills/graphify/SKILL.md",
+      "drive_id": "1fhG2MF0s4hCQi5vYk_f6JuWrAjeyAa8g",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:37:10.605Z",
+      "drive_md5": "5c72924d8902cf334936c5827ff65349"
+    },
+    {
+      "path": "skills/graphify/references/add-watch.md",
+      "drive_id": "1f3jwPZ4QfC7aiYe9VXRD5xIDNrcodPQp",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.666Z",
+      "drive_md5": "0df0589623217ca38a12bdcabfb42f4c"
+    },
+    {
+      "path": "skills/graphify/references/exports.md",
+      "drive_id": "1bqnMafmiOYrxMHK2Ok9zmf3m8mWSwc3P",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.738Z",
+      "drive_md5": "c04ddf8f1f5ef5e262ebec491a523c74"
+    },
+    {
+      "path": "skills/graphify/references/extraction-spec.md",
+      "drive_id": "1DVXqpcC-LVCeG9yM0zOdaUmX-t5ylXDI",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.792Z",
+      "drive_md5": "a86a7321597b23cc2b22e011b3dc6e1d"
+    },
+    {
+      "path": "skills/graphify/references/github-and-merge.md",
+      "drive_id": "1rXkbJ7LsCGdo1HRwvJj0QlcpRtx5oBi9",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.856Z",
+      "drive_md5": "cde13df085e4c492aeb7ba298a996d0d"
+    },
+    {
+      "path": "skills/graphify/references/hooks.md",
+      "drive_id": "1wXBFA5YLwSIQy1eisuw-G8fiHqpuYQvn",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.857Z",
+      "drive_md5": "3f545db6ce646650bb9de588f5512a27"
+    },
+    {
+      "path": "skills/graphify/references/query.md",
+      "drive_id": "16R4VPTeyag_NsKttCQRo69WQ2A6eC_nH",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.924Z",
+      "drive_md5": "c2a8e798674a81b02aa9975f43023819"
+    },
+    {
+      "path": "skills/graphify/references/transcribe.md",
+      "drive_id": "1xnch7E6xhOoicq_ODvkS-i9He0wglM1E",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.997Z",
+      "drive_md5": "70f6aa30d6211f3a2c7e9fc45479f50c"
+    },
+    {
+      "path": "skills/graphify/references/update.md",
+      "drive_id": "10CzAWVXDTdtrxmG7r1lN_w6XTabKOa1z",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-16T20:36:40.998Z",
+      "drive_md5": "0dad167a95bdb389f02fecffb60b1bc8"
+    },
+    {
+      "path": "skills/heptabase-cli/SKILL.md",
+      "drive_id": "1WzYj6a-gaG64bFsehQXnp8qxyAXWaaHv",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-11T09:15:08.954Z",
+      "drive_md5": "e7861289f851d266a3df53fab3f42b3a"
+    },
+    {
+      "path": "skills/hypothesis-map-builder/SKILL.md",
+      "drive_id": "1zwmYhP37F0HV246PW7wrgni3fhcnTRZk",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-29T20:03:04.168Z",
+      "drive_md5": "8989f35248f4dac0bc709feb7980ca02"
+    },
+    {
+      "path": "skills/ii-channel-cover/SKILL.md",
+      "drive_id": "13VdHZTVx_UrzCF2SCLsbOdggAYTqJYKL",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4ba26fa3878dfb1786edc4c518d411d3"
+    },
+    {
+      "path": "skills/ii-channel-cover/build.py",
+      "drive_id": "1V2_Xqf9gbUzY-N5w0a43JdCEMzd0b96X",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "d84a40ff5382c5709e2c18dc7474c5de"
+    },
+    {
+      "path": "skills/ii-channel-cover/build_carousel.py",
+      "drive_id": "194ZT4NYaV-rB3CC5hP_DKvNDKNZsNcWf",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f8f6fdf38ba4af839de50a30a430f8c5"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/01_cover.png",
+      "drive_id": "1mZx8I0EkGBF0E_9RpNypASs2--uvaEuI",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8e3f4763657e14de99fd3862a7c0db28"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/02_formula.png",
+      "drive_id": "1eD8H62GjD2sD_Wxc8deQVL8MAk7UJ_K9",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "cd4f7209f56e107b218e9a073efa809c"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/03_flow.png",
+      "drive_id": "1B2nXHEPFZ8vSDUvSQ23aFUV3ZKb9ysTw",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "bae9e2208dd4b8a847fddc3579cdc73c"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/04_listing_objects.png",
+      "drive_id": "1nDFPoTTxyxwqb0v0s7nWgUIpgHy-MRIV",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a28a977c4b251ea3459e4197abfe918e"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/05_listing_ops.png",
+      "drive_id": "1_7SZB_o_wtM5N1SsnHRQGoQqqFRFJ6uO",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "49243b301efd94d1c047dc9748c95dea"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/06_listing_quality.png",
+      "drive_id": "1MrfW95JzU0vgGTDRcwjGKLuC6EpA6b6K",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "3e5a3f57fb0d0a305fc48d3c6b15a06d"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/07_quote_system.png",
+      "drive_id": "1QlFOiFQJEftM6UZY3D2ZEq16Ft3diJ-O",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "882e76b89a40256e1ec54664eb4371fa"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/08_diagram.png",
+      "drive_id": "1cRMI6NLFsAS5kPuhKnLQlrc0nwcJK7-G",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "cdd7a7e75f1af0414e2a71ac57319d49"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/carousel/09_finale.png",
+      "drive_id": "1Au33FokfJ3jtvsmpuvjfzPoNc5YFDeXd",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ce17c7e0acd03bc550952718ac8bca54"
+    },
+    {
+      "path": "skills/ii-channel-cover/examples/test_tg.png",
+      "drive_id": "1lCCMHTbWLJtyiDHATnFe18rfPHXISh3F",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "37d02957fec99f8a84749c0e6c398807"
+    },
+    {
+      "path": "skills/ii-channel-cover/fonts/PlayfairDisplay.ttf",
+      "drive_id": "1npzPfP5zOysrRbb1F03sibGFNez4HJBf",
+      "mime_type": "application/x-font-ttf",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "038aec929d8d05c5de0bb20e040f9973"
+    },
+    {
+      "path": "skills/ii-channel-cover/glossary_poster/index.html",
+      "drive_id": "14OYAfPZsXAUTZxG5PTjsCmGJdNOGSv6a",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f0b84e2f4a05b7ba119c1dd38bc5f2be"
+    },
+    {
+      "path": "skills/ii-channel-cover/glossary_poster/output/poster.png",
+      "drive_id": "1FKlPrJKZgQRAWI_Gq_q6YS2Hla_wNFrP",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "fd63ecf335772882daa23997f44ffa8f"
+    },
+    {
+      "path": "skills/ii-channel-cover/glossary_poster/output/poster_2x.png",
+      "drive_id": "109bjtH5k-aubcK18fDRqryiggn67Up-k",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "70fe861c32ecdc8b88105a13c5ddf3d1"
+    },
+    {
+      "path": "skills/ii-channel-cover/glossary_poster/output/tunnelirovanie_2x.png",
+      "drive_id": "1IAJ4uuwGPpeRW-IT6ILfQMNL33XaZOCi",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8ac3eb0b6086e435d31db554e71bbada"
+    },
+    {
+      "path": "skills/ii-channel-cover/glossary_poster/tunnelirovanie.html",
+      "drive_id": "1M-SXwyy5zjhtuOgDCe8PX5fybBAIUSsP",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "cdcf76e905882bed3e1b08f402bcf4e3"
+    },
+    {
+      "path": "skills/ii-editorial-slide/SKILL.md",
+      "drive_id": "1Vjpf_FFC6BGfDdYvSZeINW8CClVYrtQF",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "bd40075ca8a955928c512d033f3de285"
+    },
+    {
+      "path": "skills/ii-editorial-slide/assets/tunnel_higgsfield.png",
+      "drive_id": "1NC4AEaGFaAsaca4bIgGTcqd1r5nIis5c",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "92ec4dde5f58380df8a3d875b77f6c75"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/01_grid_blocks.png",
+      "drive_id": "1qkCeFm65eIiVGaPRuqGLMUeJEfdnqCiN",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "c19c89e48856151724a2b7ade7e45189"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/02_concrete_stairs_red.png",
+      "drive_id": "18GwKDa1I8I-7DUVenDEmuuX03Uxp5IOd",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8eb8c332c3fc79e6a321a2b541821dc6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/03_red_glow.png",
+      "drive_id": "1pJ5VXXb_0t_lnJwjWbKWwKZAMqO2wTDY",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "0780eb2eb97db93ea32b9a62ac260f47"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/04_editorial_marks.png",
+      "drive_id": "1VlfApQBIKevEx6sFj2bMbfy4G2OwoqkW",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "78ba8c8f6dd21450f8ea193146472beb"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/05_corner_grids.png",
+      "drive_id": "1gAebjcwCT6w8vOoHGsqn8feCc0AlQOhy",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "68678aecc99df6253a348a6b063d6c82"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/06_concrete_steps_sun.png",
+      "drive_id": "1yzD2RCeaxal_trrNMN-Grv75rEKu3Mgv",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6d683cafce1d0198de94fbb921d94d98"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/07_red_bar_right.png",
+      "drive_id": "1paaXZJzSTQvsvFXj_rZpvieWkksR_VmN",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a542d163e9a861d306f52ab82a492e56"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/08_thin_lines_right.png",
+      "drive_id": "1qYWM4xS5M9VCMp5j7jXNC90l_PmDPj3E",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "34658cd416a649a2423bdda40a95cf99"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/09_grid_corner_glow.png",
+      "drive_id": "10mGtO-Ifa4flKWTLZCmvcQU3_DtEN27y",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ac6631125f36e9dc550361d6014809af"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/10_radar_red.png",
+      "drive_id": "1dBp1SBWE4YCL9b6PJ0Jn7qOX_qOIy7s4",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6b5cc880ccff40e7caae80e43dbb975a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/README.md",
+      "drive_id": "1cTBhHp75TkFYYpoEKClwS3kUTb9Uoeii",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "42be7d0d30862d2e9ef9a4739977cda5"
+    },
+    {
+      "path": "skills/ii-editorial-slide/backgrounds/backgrounds.md",
+      "drive_id": "160QlIdztnhaA53ae00_vbuhIYUO2Xh66",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "16ece78d6808687d801557a48fea248e"
+    },
+    {
+      "path": "skills/ii-editorial-slide/examples/06_tunnelirovanie.png",
+      "drive_id": "17MtRbHesYbr52FHauuR1K78XNUR9E-DL",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6fe4f5c0fc1e22e4f9dab460813ad241"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie.html",
+      "drive_id": "1fEnZ93SVSa5t7Pmmm-IXIDFdBKAlD2EF",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "cdf18c1cb1adaf5c1675352229c6c9b0"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie.png",
+      "drive_id": "1OHLloAX6D0n7m5-KcJrNr3M8s-wSIrM5",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6fe4f5c0fc1e22e4f9dab460813ad241"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v2.html",
+      "drive_id": "1MbiNfETRr3ahVm93QX1uCveKvyQFS3-8",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "5020674a394dbbe849b8f4ba98c4035a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v2.png",
+      "drive_id": "1XFQ-var9KfDAJGSpda-vc45f2lDHyOm8",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ae6859d3abc552a34ea3f3197d0a9fea"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v3.html",
+      "drive_id": "1UU7bYQawPr6Ub5rNjE_f_IFlq2HAx_Gb",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "9ea68366cba093f19884194ea3cf99bd"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/06_tunnelirovanie_v3.png",
+      "drive_id": "12qw9Sl918Ir3oqKIVDYL4ITIF5keX25q",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "03dc779e705a80582a15d14b1d89b109"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka.html",
+      "drive_id": "1GGcrQZVsgFmU2eEScFH503v9BbjaJX16",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "faa8737c02e9a6d38fd5f7d8dfb619c3"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka.png",
+      "drive_id": "1Rvz3bbTrwmbxfBRzCl0n-MKWepJHB5Yy",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "853137e5c7b07bb93e7658a98e20fb08"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka_v3.html",
+      "drive_id": "1M272MERl7Wm0T3r_7BLA5bZzumbK1GrL",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "67712b9488d9dcc728bfd073e78dc144"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/08_kontrolnaya_vyshka_v3.png",
+      "drive_id": "1Lz78-X5xfWdR6J8dH0WBAa9QB-V0gu5O",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "73922d2f2b5d4c9652a949fb29b28acd"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/09_skill_kak_kod_v3.html",
+      "drive_id": "1nVJyGRoGR9-qWa6yqboEJf2cmhUFbscj",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e5eadb84b490e588446ef38f0b7daddf"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/09_skill_kak_kod_v3.png",
+      "drive_id": "18p_5kGrI2oKOAkcEcQt4kpCfROMANrdf",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "cd6b1bf1403fecfd9d963faa79e1d8c4"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/10_relsa_kontenta_v3.html",
+      "drive_id": "1EvbBz5LUZpa2cGqUS5hl7HyV_QVU7Ucy",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "c2c046ddaa3cadef96521ab3ccfdc265"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/10_relsa_kontenta_v3.png",
+      "drive_id": "1TJgJUrUxSmEV62F5y9rzJlumK6GrcnoC",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "bab8117c4872010adb749ddad9d8267a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/12_prohodchiki_v1.html",
+      "drive_id": "13yGqV8Y0MOGCQPDFpugoEdaVd9hGMXPb",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "3f77322f34e5a6dbefa7c3be201967ff"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/12_prohodchiki_v1.png",
+      "drive_id": "1TdM2nEaj7-xc2k3eRTcRRFtwOTdsLixd",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7cfa992c6c7aac3d267e039b5f348789"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/13_oshibatsya_pravilno_v3.html",
+      "drive_id": "1Gb91FRVFHh9yBme6ijgjc4wjEWpsV7pJ",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "826c6619b44703c4c3ccc1e83db590c2"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/13_oshibatsya_pravilno_v3.png",
+      "drive_id": "1oaojbpmtiQ8hNMg5EylVg9ehf1SKvZtw",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "db28dd188f30536ca53bb685ad7579f6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/14_starshiy_trud_v3.html",
+      "drive_id": "1JY4HpkahT2WyaOVyBhyQnTUmCdINmMye",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "38d2fc259bbd78be2a741e8328746f86"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/14_starshiy_trud_v3.png",
+      "drive_id": "1TdAEL2N8gkx5FxxfqBmF3bB4ZIonRHI0",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "995c844c5a736134ef7e85466501c0b6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/15_put_zadachi_v3.html",
+      "drive_id": "16JJuzmS0EMAW6sG3yF0eE60GITrcuMtm",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "543cf716e2951c866ac559e630508cc6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/15_put_zadachi_v3.png",
+      "drive_id": "1RiO8OejcbuLrBEfobnXOElpm8W8chG_Q",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e091f344365f724ab132ae0b1cedcfc6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/16_hotim_ii_v3.html",
+      "drive_id": "1TGkEqx0-edjQQa3NtDhtve5OSaQVQuG-",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "0deb98a4d5d2f02e8679824f053b7f87"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/16_hotim_ii_v3.png",
+      "drive_id": "1rs-XaXNbj3wnVXesspdeWXyMzKBmff6a",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7d98655fd5e4f67965a24c64ef15c7b8"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/16_pipeline_ot_ili_v1.html",
+      "drive_id": "1Tg4Uv95k5cD1NjN0EngqSbRVYw2dhLbF",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "b42cee2396d782b98bd91e39c85f4c58"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/16_pipeline_ot_ili_v1.png",
+      "drive_id": "1yC5LHYOkQY5RshIDVouO74uv9VtN1Bf-",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "5fdafb65866a813d8cf85c80b8ab2773"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/17_processy_pod_ii_v1.html",
+      "drive_id": "11lqIXIoHcrif7K3RjKaGUU9uRYySMybY",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "09f56a40c52fe7291852faa7bd4a4043"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/17_processy_pod_ii_v1.png",
+      "drive_id": "10qol19pGOK9ZKHDFv7zFlOtHs5-mg_a1",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "0d59ca5a69a00861d2e81669cb6c6f81"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/18_skafolding_v1.html",
+      "drive_id": "1sd0byla3mbc6td1i4g6Jnm7FsGaNe54E",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "1ad96f48bc16ac7862c2b422af0b9b9f"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/18_skafolding_v1.png",
+      "drive_id": "1uPeYhJH_xrJfkBjlUYLxoWPdd11eMv8z",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "d0d013701a6b836b8a4e501c89624a62"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/19_koordtrenie_v1.html",
+      "drive_id": "1AbaXGC9PKBTQyARoDaTTygUU4Kn0BoHk",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "fe659e6c5a6f0997df379bdb4efe22e8"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/19_koordtrenie_v1.png",
+      "drive_id": "11m5QhC9BzXZAJ-by-oO7tf0evpgtoOGD",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "3c191d48e932d9e48625af59358a38c7"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/20_qa_agent_v1.html",
+      "drive_id": "1jLaw_FkBILPv9B_x_vY9N0iU3bGHuMp_",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "c09b92b5f860e80fe6db63bfc726dbe0"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/20_qa_agent_v1.png",
+      "drive_id": "180eKa5nkzThbUHY6ETr1XGLPYmFyLoGh",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "299097dfbd5568a4dfa1dcbd3ba1fb53"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/21_8_zadach_v1.html",
+      "drive_id": "1yJjOU6xgm4gfMdUiQHUZJwyPLcERUX0o",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "944b3448e52ad3b99a5b48c7a309f7c4"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/21_8_zadach_v1.png",
+      "drive_id": "1WbJ133qW-AaqHlN1g3fYAjvaabLPsNrR",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6759f7b76d192e53f44d9d57663e33ab"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/21_8_zadach_v2.html",
+      "drive_id": "1EsskPh3X232SjRCAzlVZ-OPSh4mhrL4V",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "5ee86c84e46ffcffc59d8b0b5608fb24"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/21_8_zadach_v2.png",
+      "drive_id": "15P_lcULt4JqjRizAsqRaAYjTQpF6nqPn",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "b25f7d6147b2043740d2681610309844"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/21_posle_intensiva_v1.html",
+      "drive_id": "1mxd8y0He3aRsl5bd9JldWMUk1Z1RWD72",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "2270d40f4d422ff2adf35520c6eea658"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/21_posle_intensiva_v1.png",
+      "drive_id": "1p3vxJcrLQRyIllEChEjifGcGZqDtUh-E",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "90924dfbb5a3c3781b48998c4c7236f3"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/22_iz_chego_mashina_v1.html",
+      "drive_id": "1Hfr2889-1UgWmj8nagl51uoCFpzk_GiF",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "3ca5a9e2a5dbc3694e616217246439dd"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/22_iz_chego_mashina_v1.png",
+      "drive_id": "1ZuM7UWu59dCX1FdtNfmFgF7RkutnWKwc",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ddfd86474080f78abb802395fe168cd3"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/23_obratnaya_svyaz_v1.html",
+      "drive_id": "18ev7FPO39LuXbMhkJe-UWzoupTNVxotn",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "27b0dd9240fb233d62e7f1a06cc1b770"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/23_obratnaya_svyaz_v1.png",
+      "drive_id": "1zxatbDfU6PQ1qADqnbxx99vbiM-kzwkq",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6f4806fc8284d5dd708b5dade0aad6a1"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/24_kuda_stavit_ii_v1.html",
+      "drive_id": "1TG7sXRjBTuzcBw59wFsRw2LHPxlx6dca",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a5997d0754ad44682575184c17c3c368"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/24_kuda_stavit_ii_v1.png",
+      "drive_id": "1HEyFQYPlKfIvjwNOQBgVJm-yjHaZK4Dq",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6dbe80c425704194efc537cea0e8de66"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/25_marshrutizaciya_vnimaniya_v1.html",
+      "drive_id": "1lzjE9g0Bn8xhjFYi8p8Z9WTKjGqekWVj",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "109c09e34cf0f7848a5eff32a33cec0a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/25_marshrutizaciya_vnimaniya_v1.png",
+      "drive_id": "1hOJiyEH4J3X-tU12kUxfPDmBQz5sYwwD",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "371c9212baf5296efbff85b35420494b"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/26_prinuditelnoe_zamedlenie_v1.html",
+      "drive_id": "1hAa1Wm_1tnLY_ls203JIWLGWIHlCXO0K",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f6c009b46cb08403c6b6cf502409293c"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/26_prinuditelnoe_zamedlenie_v1.png",
+      "drive_id": "1r_xiTNd6kDaB5thByd5KjASQXxn1EP9T",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "3c2714b8e73322a6e42b72449de25d53"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/27_ozero_metafayly_v1.html",
+      "drive_id": "11gokjsFC8l54U1nZZHREg4mwuP-jBxlX",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8ac9e0704579aeff2c62889a44bc1705"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/27_ozero_metafayly_v1.png",
+      "drive_id": "12aDs8S7_fiYW-6QB-jO8kvOK_zbVcus8",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6517acf08cc6b34e9c1e89f33d372639"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/28_pdca_v1.html",
+      "drive_id": "1s2ZpRbxTXG1QKgtxBwPR6UWZwn1uwIIf",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "48c4ccbdafab36170e964be49a5f28e1"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/28_pdca_v1.png",
+      "drive_id": "1u7iYXmIWpRcFDcn1yDC3S5cU-eVGQ-Ql",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4fa63c2609e094f4bf4f8e8b233aa1ff"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/49_ekspertnye_prodazhi_v1.html",
+      "drive_id": "19pQXfiaRKaNKNqBDX2wHntzt4U_lTtA8",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4071f848377df260ccf2dcf327875343"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/49_ekspertnye_prodazhi_v1.png",
+      "drive_id": "1NW6SI7OrWPWvQAXoYRzEEwAK1lSfi5J_",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "77908286f9e1826f83a99f98efee1b32"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/bpm11_00_dve_optiki_v1.html",
+      "drive_id": "1ZxDX9qBQpTMuXVQUqRfFKtt8PTy3JMfw",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8a98a1cd19c06676cfaefd76ca7481cc"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/bpm11_00_dve_optiki_v1.png",
+      "drive_id": "1Jw2PIo2fOYR5wF2vUCfZ2FYO3PxcA1KB",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7b3452092f407e68b72ecd912a2ffdc0"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/cfo_struktura_v1.html",
+      "drive_id": "1uUeUSLNiqDwsc6B5NLbwQolyi2m6THfQ",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "15ef2135fc28221eb73f980996f0057f"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/cfo_struktura_v1.png",
+      "drive_id": "192VYgtolFlzrrqmKmTjGnf2UJSW0_O4Y",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "95f9b9bcba6cb3fc651ef665fd51d17d"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/cfo_struktura_v2.html",
+      "drive_id": "1katAT7l8AEzMl3-fDjYvzBI9X1Qbb-TM",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "5ac7fbf4df42e4a720e3ba46cad7ccd0"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/cfo_struktura_v2.png",
+      "drive_id": "1MJM-oxr1f9g-F5QbxlAzOurPsI-0Xnt0",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7842cbccf2e650593efd46f5fa6d5be2"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/collect_vidy_v1.html",
+      "drive_id": "1zem37PSLCQZZOCB_7HAS8Fd3-RnhOyDg",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "612f21a634482e6a30626d3517dcea19"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/collect_vidy_v1.png",
+      "drive_id": "1V3dVgOD-kdWikP_1TADLpXrurD6NenAC",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "60dddb06659eca68144fdc488e031659"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/hero_komponenty_inzhiniring.html",
+      "drive_id": "19ZeXDeLX9HBndimobIEdTtTteCTCRYM_",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6242c28cec677d9a022e05ff35982ab2"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/hero_komponenty_inzhiniring.png",
+      "drive_id": "1-HNB3X9fAVDCaR_oQ1N_gS2pnGUPfUkC",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f66c30e42b62fc89eb65006c982c29b5"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_balahnin_v1.html",
+      "drive_id": "1tZX2T8tSJCBAyF6jEi6CWXVehTKl2Sw0",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7d2bb16e16a90601e2310d36631b2005"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_balahnin_v1.png",
+      "drive_id": "1MIL4nWTLRFJa7VTNno4mWGU8ClSMKXNX",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a72ce9d64ece68544a68502e57381d4b"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_v1.html",
+      "drive_id": "1b7Xae_YaOqc-IDSCL1ChPSvHjdBvrcWx",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "79df7441d109e32c661720913f341e9a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_sintez_dorozhaet_v1.png",
+      "drive_id": "1jwOLpLlQcrtL9hYfVC_vu3iJLFME4_Bz",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6172388b1d44348b6217af54ada7585a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v1.html",
+      "drive_id": "1w9jSMCv6z0HY0JqGAbiOkMaxm8Ngf5PT",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "586f7192e96ca21b0498acabf2934a58"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v1.png",
+      "drive_id": "1_ghC5thJoboFiYTjX_gJUnTqtBXumPiN",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "1be3c378f85547b8fe6f6bf8220d85a4"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v2.html",
+      "drive_id": "1k4Fk085p6mt3F9zrmb7DRw-rOyYLnbOD",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8002199492671ffde742c36887b75611"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v2.png",
+      "drive_id": "1v8n5rAe_D3RMYV0hrPMTMZOLI7SS3p_w",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4ab872b36de9754bd2e1060809ab35af"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v3.html",
+      "drive_id": "14FAZbAmZPLfqFbFvhqFMSgVZVN3GvOP0",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "bececb6875697d1540f2a1d74a5d2941"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/ii_skorost_risk_v3.png",
+      "drive_id": "1vi-1S2g6wA3B-EYsPwHT53x1xo9o31g9",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "cf08cfed4ec6fa894898754035bdc09c"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/plan_sloi_v1.html",
+      "drive_id": "1UZ10-pEehGb-m5I6xVsxTr4TbKLBuHln",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f2179da3dc2036bf55db338c0a18122b"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/plan_sloi_v1.png",
+      "drive_id": "15VV46pLTk97mjLnPCKB46mjeLcAsnbR6",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "3371c3c225d35f5abd44946ebe8f037b"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/radar_pozicionirovaniya_v1.html",
+      "drive_id": "1A4jcPKCRsGFatEi7B6hxryo0BICS0ISg",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4207d5a362f05c06fea16295e05dbc50"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/radar_pozicionirovaniya_v1.png",
+      "drive_id": "1XoYdfWhobXBCg3hZI3kOdi4mnPzNIUZh",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a74f530048ffda105cce35f4c5cc69d2"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_balahnin.html",
+      "drive_id": "1BEMDIPPEsWTYa0Flk6SCsO4CWV2pFzMM",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "c5f619afa5e9418c221d58802af65063"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_balahnin.png",
+      "drive_id": "1J6V88zKkf4kdcYEzvp5JgwnnzR9kcbqE",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6a71810addc3f75fc852ac26816487d6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_full_balahnin.html",
+      "drive_id": "148fJqzoEEXL-C4tSYkAYCsncIJSZ2vLf",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "4e198e15eb1ef3918b7481aaae3038f1"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_kogo_zvat_full_balahnin.png",
+      "drive_id": "1vllyZ0KvaZbFmNFTJzJKfSQlwif8GQXF",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "571b4876e673ee521201ae4f04098b0b"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v10_balahnin.html",
+      "drive_id": "18Ct4rGMXqsOix0Kibl3gHEGReQBRtnKk",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "33388b21654864ac5d073f6aaa2eb5ee"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v10_balahnin.png",
+      "drive_id": "1MQBy2jskWqLJTxTzBksdPzYxDAys-8CA",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7224dc692bf867f8b7849b6b8682e9d2"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v11_balahnin.html",
+      "drive_id": "1Qg64DvEGb3JiTM0cCrYPdhS4I5Pj4L7y",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e07bf530f498e6197ba5369016af918b"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v11_balahnin.png",
+      "drive_id": "15ZeBXX7Bu4O5wkOqzPkU4sliN-YQ1ha2",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "aaa07068de6bd89123bf77e725fc076f"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v12_balahnin.html",
+      "drive_id": "1ZNbJSU8iXWg-wfngtNOStZyJv59yijf4",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "2b5f83720a5fee28c698ffe813882072"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v12_balahnin.png",
+      "drive_id": "1SJNzcSIuP5WhpxhOvkYKchk-FrJ7foiz",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7fbd5689d714e34c06f723e0aa534a34"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v3_balahnin.html",
+      "drive_id": "1pxfRCFslLEwXA9y1ahi7MEikt2o9ers2",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6f78c7c94cc3fdab62668cafae3aa3f6"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v3_balahnin.png",
+      "drive_id": "1b6XC_b04msTjQ2QqZXQMy5Q3sf-fdwSk",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ef1efe805f35239656beaa5ebbf9ed2e"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v4_balahnin.html",
+      "drive_id": "1qDweshRcItH8w-FZMqixw4ImLYM1IUrS",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "00caf7e5c6de3692893475c0c3c51aff"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v4_balahnin.png",
+      "drive_id": "1qaP0_2keumjs6HY5jk-FQ109vAEz4aLB",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "9e60cef46e658e88fcb0917db8827c3f"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v5_balahnin.html",
+      "drive_id": "1HuN0OcNMDznJpI8jxl4_5nUcZHRKa3GX",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a9d98b4ec2a5e7a4cc2a1c8ff822511a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v5_balahnin.png",
+      "drive_id": "1rr1yUIse66B0_nnoxnRJVTfYNI2iYQDO",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "ae735a00fef245b98963cf5826a5a45e"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v6_balahnin.html",
+      "drive_id": "1VXkkaLZzT1jramoR8LeZOCbnfcmFNS1q",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "1b957e423f6c44cf8eed26c53c48d7cd"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v6_balahnin.png",
+      "drive_id": "14dkzUCNxUC9pBLQr8hKeE62tM6WVajjZ",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "17b39e81c1090e35b1d9d8e6b0457f6e"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v7_balahnin.html",
+      "drive_id": "1gMMhZYBawCtHVB05ouYd50sUyC1vXejj",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7591cca2217fed3b8e44137e0c7796b3"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v7_balahnin.png",
+      "drive_id": "1ahmwnG7H_z6y6paQdgWYYXYIfSLw12bg",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e353f372b2460103400f5867055bae60"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v8_balahnin.html",
+      "drive_id": "16EsLOBKn3zJxbJJ_ph4HG0ZkKGvpJ2sF",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "f167a6de37e1e2cd8b319d9262ad8ffa"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v8_balahnin.png",
+      "drive_id": "1eGo8_Zvv0LoRBDQGp4UNW9Au33fsdZcX",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e353f372b2460103400f5867055bae60"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v9_balahnin.html",
+      "drive_id": "13wG2GBB9dbfO2jfhjrP5rUIzTPF1FcfG",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "2be945c40e81d8a8c9673c5c3f98f801"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/strat_sessia_v9_balahnin.png",
+      "drive_id": "1ezYeX6nbTkKFvbqTHJy27zW2L1Ubop2X",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "77eb7b4940ce35012c7e363cdf40ced9"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/v2_granica_inzh.html",
+      "drive_id": "1Lc0gFYWvOhNwWuV2pwjP6mNEjojFsA7b",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "edea4ebf05363d1584d34bac7b2a70b9"
+    },
+    {
+      "path": "skills/ii-editorial-slide/posts/v2_granica_inzh.png",
+      "drive_id": "11E1dOaKXABtVnbZm_40WwJbSUg5IzQb9",
+      "mime_type": "image/png",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "e3ac4961bc1a7ec4debda2233444871f"
+    },
+    {
+      "path": "skills/ii-editorial-slide/render.py",
+      "drive_id": "1iR1b8eHW-FOK8qPB2awlureVpzavLuzS",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "8814ac55cf41d3956204e386b3a7570a"
+    },
+    {
+      "path": "skills/ii-editorial-slide/template.html",
+      "drive_id": "18QVFc5r81BoY93eg1O8O9Oo0nmGTYJSj",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "a7141858359a5152bb19ed22dfeb3cdc"
+    },
+    {
+      "path": "skills/ingest/SKILL.md",
+      "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T17:11:21.129Z",
+      "drive_md5": "160d06d0bcf5e33637c84286639b485b"
+    },
+    {
+      "path": "skills/interview-brief-by-analogs/SKILL.md",
+      "drive_id": "1LCsb5AzSgYzo2TaxIMBdXB62IQMV_umY",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.082Z",
+      "drive_md5": "549e08f250b5d7cf28594f714c53c718"
+    },
+    {
+      "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
+      "drive_id": "1dk2Hwkh9OrqE1u_OXL_7Mxrxzgy-pWBZ",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-02T17:56:30.146Z",
+      "drive_md5": "3ad2e393d299b4f3170c889bc3ab31a8"
+    },
+    {
+      "path": "skills/km/SKILL.md",
+      "drive_id": "1DZZFr-vsb-Pq3BT3NddaAJ2vyXjIAV1z",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:53:07.517Z",
+      "drive_md5": "3ab0c4167cafd16df8a4cd2aef18a20d"
+    },
+    {
+      "path": "skills/leverage-builder/SKILL.md",
+      "drive_id": "1KzcD8c5TWBWp9DPC6ABGbcL00VLTa2u8",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.086Z",
+      "drive_md5": "58ad6b7dc26d2e61b7ca3cd00ff17896"
+    },
+    {
+      "path": "skills/leverage-builder/agents/openai.yaml",
+      "drive_id": "1ZbuB9Iz0m4Oy5Qru2MPAmbFchkGL9UxH",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-10T07:26:40.903Z",
+      "drive_md5": "8a66ac5179a32479a7f45856ac743f28"
+    },
+    {
+      "path": "skills/loop-engineer/SKILL.md",
+      "drive_id": "1c-SwxEhu8NKpckqqyxxobXrsyw_zb7fF",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:30:14.802Z",
+      "drive_md5": "53bcaf8c1e7063a06c87fa8b6bc88565"
+    },
+    {
+      "path": "skills/loop-engineer/references/cloud-session-observation.md",
+      "drive_id": "1iJc-FQ9QPtovfnVjlBjfY5OLQdYq5GBY",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:23:51.303Z",
+      "drive_md5": "7055b7881c820a0fffdc69d14d4978c8"
+    },
+    {
+      "path": "skills/loop-engineer/references/human-handoff.md",
+      "drive_id": "1wS191pXCire0H3vRgppN_woVeb8qohLO",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:23:51.303Z",
+      "drive_md5": "142b02e9f5b86cc555357ddf502799c6"
+    },
+    {
+      "path": "skills/loop-engineer/references/operating-contract.md",
+      "drive_id": "16UOALR6kTo7F3jjQEqa-tbKlEEju7oFv",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:23:51.304Z",
+      "drive_md5": "39fb496306c385a2712ef4966eda1fb3"
+    },
+    {
+      "path": "skills/loop-engineer/references/skill-transfer-gate.md",
+      "drive_id": "1UBgh0T0YclaehnGW3SmCB4utZyVTHSC7",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:23:51.304Z",
+      "drive_md5": "b9196ab93d46258a82ec09d4c884cfa5"
+    },
+    {
+      "path": "skills/loop-engineer/references/verified-throughput-control.md",
+      "drive_id": "1VSDWo_BcBMMREDcm3Jyna7Y7NMo4MbUl",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:23:51.304Z",
+      "drive_md5": "1974a36ccf49d576bc206b310919c56a"
+    },
+    {
+      "path": "skills/loop-engineer/references/weekly-session-meditate.md",
+      "drive_id": "181nYQKlNH8sYdpcwZaxd0C-09W5Afb2L",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:23:51.304Z",
+      "drive_md5": "ba7a49ddf92bbf65fb80791dfc919371"
+    },
+    {
+      "path": "skills/looper-skill-builder/SKILL.md",
+      "drive_id": "1_ibFYSZ1IoAU16wwNgayzIfC-7frHyxh",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-11T14:24:42.632Z",
+      "drive_md5": "177d5f86687adc28f4f8a98ad97749d5"
+    },
+    {
+      "path": "skills/looper-skill-builder/agents/openai.yaml",
+      "drive_id": "1dqj3MivBX30jSYA_VEFzjcaLdr5jk2E5",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-11T14:24:42.634Z",
+      "drive_md5": "cf93d4ca2198062846b346dfdb5e6804"
+    },
+    {
+      "path": "skills/looper-skill-builder/references/evals.md",
+      "drive_id": "1uhW1IZbKtj-Qj2ocPE-2LOo-JawmUu10",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-11T14:24:42.633Z",
+      "drive_md5": "3cf9f717929fdda01e1c563bcc717c58"
+    },
+    {
+      "path": "skills/looper-skill-builder/references/family-contract.md",
+      "drive_id": "11-9PXaH-73wKPcS7k6_dr93mZhX9VGv3",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-11T14:24:42.633Z",
+      "drive_md5": "2057af47e65e7d4fcc275f7cb595d173"
+    },
+    {
+      "path": "skills/medical-clinic-economics-semantic-layer/SKILL.md",
+      "drive_id": "12Pj0PgaptNUJoMXSdQfFJyE5TJvibpC_",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-11T20:56:55.287Z",
+      "drive_md5": "3e3cbb0b2ec901e8f07b226b060dd6cb"
+    },
+    {
+      "path": "skills/medical-clinic-economics-semantic-layer/references/evidence.md",
+      "drive_id": "1JUsoQ9OcxXKavBi5p-v57KDgSbSwMh1i",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-11T20:56:55.288Z",
+      "drive_md5": "af40b78a5309990e78e5bd58afc00811"
+    },
+    {
+      "path": "skills/medical-clinic-economics-semantic-layer/references/semantic-layer.md",
+      "drive_id": "1mEmOOh6k9K2-c14rgt-fft65g5Oi_4RQ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-11T20:56:55.287Z",
+      "drive_md5": "d86220294e1be139f70041ff8efca967"
+    },
+    {
+      "path": "skills/medical-clinic-economics-semantic-layer/references/source-inventory.md",
+      "drive_id": "18qIRmHyJI4IzGKiGrYYUGtRql-90SwHD",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-11T20:56:55.287Z",
+      "drive_md5": "124fb62e464505da2803c1e481826be7"
+    },
+    {
+      "path": "skills/meditate/SKILL.md",
+      "drive_id": "16zsFbqkMytBQycv3p6_eqtxWLlcd--eq",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-18T20:53:01.557Z",
+      "drive_md5": "aafeba3ca46947dc4df0448052cc6551"
+    },
+    {
+      "path": "skills/meditate/agents/openai.yaml",
+      "drive_id": "14Mj7q3n9WlYzkLjFEgLBhNOsyDUXwnT7",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-08T11:56:47.700Z",
+      "drive_md5": "cb5a1349d0a2553089f7fc51e3ae739c"
+    },
+    {
+      "path": "skills/meeting-report/SKILL.md",
+      "drive_id": "1OwlLib10Ge787etAqpG7_1Znr90z-Y9H",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:53:31.700Z",
+      "drive_md5": "d80a1a9cd448b8299d606b196ce49f19"
+    },
+    {
+      "path": "skills/multi-perspective-review/SKILL.md",
+      "drive_id": "1sgCfgITIC2uPnyUT-PjQsnmA9sOgb4Pk",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-26T20:11:16.515Z",
+      "drive_md5": "b7d8bb1f5c0ffba58c42b60af1332c8d"
+    },
+    {
+      "path": "skills/notion-vault-sync/SKILL.md",
+      "drive_id": "1sJ9ch-6WwlIOzX6OSlTuQbtcMc6DXo3q",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:54:27.829Z",
+      "drive_md5": "0d640c9951829efb20de0c8e53367096"
+    },
+    {
+      "path": "skills/partners-ingest/SKILL.md",
+      "drive_id": "1dmzCji34IfdvB6FjaGpqPKYJ9hz-qY01",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-12T20:04:40.868Z",
+      "drive_md5": "d98e2cb460557e5a8cb34983e0b3aaee"
+    },
+    {
+      "path": "skills/pp-case-writer/SKILL.md",
+      "drive_id": "1bVLo_WbRPypWlvAGCF-Z1XEt7uLXKuuW",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.085Z",
+      "drive_md5": "6a12bcdb4413338a7d5f40d929110538"
+    },
+    {
+      "path": "skills/pp-interview-slides/SKILL.md",
+      "drive_id": "1gV88uhVbQvX79KsA3D653Z1xVsj6bhtw",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T17:30:35.675Z",
+      "drive_md5": "71ed86b4caa864ea6fce93399935c4a9"
+    },
+    {
+      "path": "skills/pp-longread-announce/SKILL.md",
+      "drive_id": "16L8SsPGTWvY7K7T5IWHxLIJw2qsW94AN",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-17T21:41:11.698Z",
+      "drive_md5": "ec767ef583a6c4181a110857cfe77d14"
+    },
+    {
+      "path": "skills/pp-longread-leverage/SKILL.md",
+      "drive_id": "1Itm264LOrVC54QF6ScmGuO3pQbXma7uq",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-17T21:41:11.697Z",
+      "drive_md5": "55ce3d1731ef993cb7f6edf47adc15ba"
+    },
+    {
+      "path": "skills/pp-marketing-overlay/SKILL.md",
+      "drive_id": "1sAQO18jjstKO7Rc6O2hkRrJU4q1dausQ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "6647f2f12659756a12c9357184a732a0"
+    },
+    {
+      "path": "skills/pp-print-a4/SKILL.md",
+      "drive_id": "1HFRTIC6W-Xm08IlrRSQkUS3td0A8_yfM",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "669130d601f7711733aa23514793a1ae"
+    },
+    {
+      "path": "skills/pp-print-a4/assets/caddy-block.txt",
+      "drive_id": "1c1EOyO5KBcTCdHz_CECn2S-K2f_itCnr",
+      "mime_type": "text/plain",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "26878d1ade219350e77cc63b5b26338d"
+    },
+    {
+      "path": "skills/pp-print-a4/assets/print-blueprint.css",
+      "drive_id": "1YCOd7irOvYV_Fgo9hsOCp0SLY-K_NvnA",
+      "mime_type": "text/css",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "d563aac170cdfd5d67af9da756a317d8"
+    },
+    {
+      "path": "skills/pp-print-a4/assets/print-generic.css",
+      "drive_id": "1HdaGMD9Y_zn37WLayTAh0sTRQXOmZ6eP",
+      "mime_type": "text/css",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "7b8a17b12b0c842c21cbe119b7dd0784"
+    },
+    {
+      "path": "skills/pp-print-a4/assets/template-blueprint.html",
+      "drive_id": "10nnVp1XkWYH7KXn3ISR7xa158o5-LKEC",
+      "mime_type": "text/html",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "c3ff997ee1b9add4f0b8a8ff20696828"
+    },
+    {
+      "path": "skills/pp-print-a4/scripts/make_pdf.sh",
+      "drive_id": "13wy_cZFP6cedwukmA0KwH_flA7oJmEdP",
+      "mime_type": "text/x-sh",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "5af00b0b8f986ccd349a68c23d189a53"
+    },
+    {
+      "path": "skills/pp-slidument/SKILL.md",
+      "drive_id": "1pnJn99MEJrj17L2InsjJlH5yZkcWG2az",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-28T17:14:14.594Z",
+      "drive_md5": "96d903c2e2e50592ed2adae6c316896b"
+    },
+    {
+      "path": "skills/pp-slidument/agents/pp-slide-critic.md",
+      "drive_id": "1wHDPFvDH4YlOyDd0lcVxh4ZubZLdsM4f",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:37:17.866Z",
+      "drive_md5": "d8a659961aff65971097d26d1929a317"
+    },
+    {
+      "path": "skills/pp-slidument/agents/pp-text-critic.md",
+      "drive_id": "1fAMuR8M-KO4jHrelzWoqLRn9qKIW4wK_",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:37:17.866Z",
+      "drive_md5": "352ac635a62966f4b530c98bc0ce029d"
+    },
+    {
+      "path": "skills/pp-slidument/references/CLAUDE_INSTRUCTION.md",
+      "drive_id": "10HRdJdbNKcrr_DKD6F4VOA_6CBcJNW7N",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "495eae7b1f140086d9b35ba141938656"
+    },
+    {
+      "path": "skills/pp-slidument/references/deck-content-template.md",
+      "drive_id": "1Zcu6JoSzPgbIDblyYoiuqE6XwzvuIuAG",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:37:54.372Z",
+      "drive_md5": "b17c93335888456dd2b5ca2e3dde4829"
+    },
+    {
+      "path": "skills/pp-slidument/references/kit-2026-07-12-README.md",
+      "drive_id": "1T-RkiOoJH85wesq6q0V9Gn0IwUtLJRPt",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-12T11:13:27.428Z",
+      "drive_md5": "b2ca1c13d06e22b4585b6af874813b98"
+    },
+    {
+      "path": "skills/pp-slidument/references/kit-2026-07-12-pptx-builder-rule.md",
+      "drive_id": "1g6FVdoq9h9_9lSrUOb6GuGAhbGKJlhME",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-12T11:13:27.431Z",
+      "drive_md5": "8c112801f00564c618ef2805646ec115"
+    },
+    {
+      "path": "skills/pp-slidument/references/kit-CHANGELOG.md",
+      "drive_id": "1xSQaKRXBG_LnTteDV4lBgtHjFbzJwBSt",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:38:12.461Z",
+      "drive_md5": "fd98b5eb8861bb389932332c88ad32cd"
+    },
+    {
+      "path": "skills/pp-slidument/references/pp_pptx_builder_rule.md",
+      "drive_id": "1pa88Aq1NThAq9uN5qfu64Yn7KdiDvMR-",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-05T18:49:54.000Z",
+      "drive_md5": "6b983824f90c6862486d209ce972c1b3"
+    },
+    {
+      "path": "skills/pp-slidument/references/reference.md",
+      "drive_id": "1kkl-Taf4UuZu9lfDY1WlgSP8iZXIE-7h",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "459db23d2864b1ccdc1b4c4cc57628bd"
+    },
+    {
+      "path": "skills/pp-slidument/references/slide_types.md",
+      "drive_id": "1TAG3Rx8nALXMW8OvlJo3rr8-lxruIGom",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:37:54.372Z",
+      "drive_md5": "ff6e26cdd07fa56d8d604fba2a9dc462"
+    },
+    {
+      "path": "skills/pp-slidument/references/usage_guide.md",
+      "drive_id": "1iHN-3rRe6zKc1SMgfRN1C4u0-V0p9piJ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T17:37:54.373Z",
+      "drive_md5": "26ca06fc4388e573b3550163b29b37ed"
+    },
+    {
+      "path": "skills/pp-slidument/references/visual-style-guide.md",
+      "drive_id": "1nNw0s1FBKoIqwo6k7QgJuMfuv7ZwYjod",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-12T11:13:27.425Z",
+      "drive_md5": "1f06d3054c35816835f02d467ddd6bf7"
+    },
+    {
+      "path": "skills/pp-survey-dashboard/SKILL.md",
+      "drive_id": "1N_iiaPN3-QUwj3Eei80zusuUEeoFY0c9",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.086Z",
+      "drive_md5": "1a7009ffd8faa33e4d01565d22868315"
+    },
+    {
+      "path": "skills/pp-survey-slides/SKILL.md",
+      "drive_id": "1nG-lNof4EXlcNcmSitnEljwfZxo-dsJ0",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.086Z",
+      "drive_md5": "6bb9b84197cf2babad7fc33fd053847a"
+    },
+    {
+      "path": "skills/presentation-qa/SKILL.md",
+      "drive_id": "16gHnJ6MbV4Rt1W8etCaPJ7SkFYJiksI2",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:48:43.782Z",
+      "drive_md5": "40d8112ec898e9d9d8d7eeac07e1c1be"
+    },
+    {
+      "path": "skills/presentation-qa/agents/openai.yaml",
+      "drive_id": "1GJE0PxtEL43_zPylHYBogveNo9_mjAJv",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-19T16:48:15.383Z",
+      "drive_md5": "962f924cfceb32cc5a12a25b83f903e2"
+    },
+    {
+      "path": "skills/product-growth-hypothesis-superpro/SKILL.md",
+      "drive_id": "1kUoEApOSRrnJW3bTvLDVVVol8EOycP7O",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-02T18:56:50.449Z",
+      "drive_md5": "fdf5a616b15e51ffbee8edaf3ddff290"
+    },
+    {
+      "path": "skills/rail/SKILL.md",
+      "drive_id": "1q99o0lv7kNkhNCpV8jWUfOcV8X1XSU6P",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-29T19:13:35.365Z",
+      "drive_md5": "71256bbe88af875635f721355ae36f44"
+    },
+    {
+      "path": "skills/research-agent/SKILL.md",
+      "drive_id": "1d-Dev6gVCLUfGxx4H-dCZTUdrmQsQC7t",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T16:04:22.513Z",
+      "drive_md5": "682db3a979b55daad47484139857c92d"
+    },
+    {
+      "path": "skills/rsvp/SKILL.md",
+      "drive_id": "107BAEiZcr0LL_9MoERQYZ-G60ZD2Lv1x",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-17T21:41:11.697Z",
+      "drive_md5": "a2428bfa05685249bc038e40657b4c89"
+    },
+    {
+      "path": "skills/rsvp/agents/openai.yaml",
+      "drive_id": "1csJRKdF54QSkvSge3M9tptlbRoKZ6Trc",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-08T14:05:53.043Z",
+      "drive_md5": "d2335d621c90879d7ae50e654ac0402f"
+    },
+    {
+      "path": "skills/sales-pst-test-writer/SKILL.md",
+      "drive_id": "1V7BIzrWsqQl12FRRjebYAotC1WDahFzv",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-19T07:50:45.008Z",
+      "drive_md5": "5cc8ddf38d74a11fa4664a979c94e5bd"
+    },
+    {
+      "path": "skills/sales-pst-test-writer/agents/openai.yaml",
+      "drive_id": "1jpwqH8kGXfiEYUcNQ8dTirxAy8xOZEF1",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-11T13:55:24.825Z",
+      "drive_md5": "0cf5a93162f0d1ab9effb104a07e26d3"
+    },
+    {
+      "path": "skills/sales-pst-test-writer/references/intake-questionnaire.md",
+      "drive_id": "1srvFaGb7aw90p7OXMBMvLKw_wH4w0WRH",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-11T14:00:17.688Z",
+      "drive_md5": "5030293f82b58208592e6a907f8c1e7d"
+    },
+    {
+      "path": "skills/sales-pst-test-writer/references/output-template.md",
+      "drive_id": "1NNKy6WXt_JJPiFASUa8HM9T0zzFeOIrC",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-11T14:00:45.988Z",
+      "drive_md5": "1606821750a561a22de56a25f2ca5de9"
+    },
+    {
+      "path": "skills/sales-pst-test-writer/references/sample-industrial-b2b-pst.md",
+      "drive_id": "1y2s2H6o7AdMZhzRuCvUpGMMRJPFA38Dd",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-11T14:00:17.688Z",
+      "drive_md5": "df0a29b76880cc66c0ffc4598f843a3e"
+    },
+    {
+      "path": "skills/sales-pst-test-writer/references/scoring-rubric.md",
+      "drive_id": "1fBNrMWDf4s9w0o5nGF2J7dv_2wfK4k7Q",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-11T13:56:49.494Z",
+      "drive_md5": "0f8ebdceda5ea5195d0c0d23f2f62908"
+    },
+    {
+      "path": "skills/sector-service-matrix-builder/SKILL.md",
+      "drive_id": "17_XEW3Y04_67aIBFM7ltnsEuzhbXDHcj",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.083Z",
+      "drive_md5": "df561a78f51dc76da8f11fef8d396d86"
+    },
+    {
+      "path": "skills/sector-service-matrix-builder/references/matrix-template.md",
+      "drive_id": "17KuNtxsS6p4IR6Zj2qJ1E6DelTRWSnfM",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-29T15:43:30.432Z",
+      "drive_md5": "dfe2d817a80738ee9da91e088ec3e3e5"
+    },
+    {
+      "path": "skills/session-handoff/SKILL.md",
+      "drive_id": "1UUmUGw64bKeeNrWg372yViH__FKMtacL",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-08T10:57:27.351Z",
+      "drive_md5": "3d8fec6d4f0cf978ba8fc3fc6e89992c"
+    },
+    {
+      "path": "skills/skill-eval-harness/SKILL.md",
+      "drive_id": "1NfrNX0i0HwFxJBr5luJGfv8J449vYEgI",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:47:32.630Z",
+      "drive_md5": "47d20fa4508649565155878a0402dabc"
+    },
+    {
+      "path": "skills/skill-system-governance/SKILL.md",
+      "drive_id": "12Olx0LczkrOQG7JqkFQDQGFyP2HkIC7m",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-09-03T16:03:57.614Z",
+      "drive_md5": "2cb5496d1f7d6dbe3a89fee465423d0d"
+    },
+    {
+      "path": "skills/summary/SKILL.md",
+      "drive_id": "1l5hBRBNMwX9BQFWa5yv0Ub-0xfY4n4hA",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-29T19:13:35.363Z",
+      "drive_md5": "f35b2a23c70cc41166e0724e057f2315"
+    },
+    {
+      "path": "skills/summary/agents/openai.yaml",
+      "drive_id": "1rCFm2gQbJ5dBp9KdwUNGhpgdLohB9gpd",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-08T11:56:47.700Z",
+      "drive_md5": "a43ad1dfde484ae337c262c0a704fce6"
+    },
+    {
+      "path": "skills/text-deai-editor/SKILL.md",
+      "drive_id": "1xNjxsI8zg7YyyKJRMLrH4qb4GcQh7vOW",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-26T19:18:58.429Z",
+      "drive_md5": "445960b702edc85dc0b59188dca95bbd"
+    },
+    {
+      "path": "skills/text-deai-editor/references/de-ii-standart.md",
+      "drive_id": "1BUrKkrzvkaoVVP11Ce0fYEUS3GpfEpZJ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "af3657772b127cc3999aa58273d19a87"
+    },
+    {
+      "path": "skills/text-deai-editor/references/details.md",
+      "drive_id": "1sQqKYa-T_LLzdCLt95bxOzKxPECPdkU-",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "895a577ea0d68303eb96a9f36adc72c8"
+    },
+    {
+      "path": "skills/text-deai-editor/references/eval-cases.md",
+      "drive_id": "1ZXRVl_bw80b4ZfU0dtk0wB-h0Cj-0NnZ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-04T07:01:30.673Z",
+      "drive_md5": "f83a202c3cf04233ff21bd911721699d"
+    },
+    {
+      "path": "skills/text-deai-editor/references/format-vyvoda.md",
+      "drive_id": "1utmvvyi3EVZHeGfiX4SbJ_jbfqgJg2-g",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-06-26T11:15:32.000Z",
+      "drive_md5": "d16aff960aceac4810e9bfadcd01b11b"
+    },
+    {
+      "path": "skills/text-deai-editor/references/ilya-style-canon.md",
+      "drive_id": "1COhuCEqmNyty64SAtHTIi2z_cEol-ZZU",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-16T06:59:24.397Z",
+      "drive_md5": "4baf95625e4be0447a10a3ac4e72ccbe"
+    },
+    {
+      "path": "skills/three-perspective-review/SKILL.md",
+      "drive_id": "1bfjeZXD2qfCcMaNFRorCqyVBV7Sz-znz",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T16:04:22.661Z",
+      "drive_md5": "8877d8240cde7da406ced2a386b2a602"
+    },
+    {
+      "path": "skills/trails-generator/SKILL.md",
+      "drive_id": "1zx_5y6b0PRXMbDRddg8GfFoIS22Q4QjF",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-17T21:37:09.763Z",
+      "drive_md5": "9a8cce80aea0961b0db42e068cf10451"
+    },
+    {
+      "path": "skills/tunnel/SKILL.md",
+      "drive_id": "1R8ryns2ArphkzHtTS3pPOZZQoI75FVCA",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-11T14:23:25.503Z",
+      "drive_md5": "64fb65962577db1a9249c979e159735b"
+    },
+    {
+      "path": "skills/tunnel/agents/openai.yaml",
+      "drive_id": "1Bg20zhjPc7pEFxjC_55UsZa_y4htdcja",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-11T14:25:08.461Z",
+      "drive_md5": "f96c2bdcf51378805637078279182c85"
+    },
+    {
+      "path": "skills/vault-brain-scan/SKILL.md",
+      "drive_id": "1hcLFxzHKoCsyPGx-4bcZGWrsvU1BWR3b",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-04-28T18:52:38.321Z",
+      "drive_md5": "3dd2ec67c2f155216297bf4efc942a81"
+    },
+    {
+      "path": "skills/vault-note-enricher/SKILL.md",
+      "drive_id": "1jIe_3KH9aySwGvC8SLQyj8tPQ64PVsMm",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-05-17T21:37:09.763Z",
+      "drive_md5": "e35189a72d82c62969d5b5f1422c0c06"
+    },
+    {
+      "path": "skills/whitepaper-proposal-generator/SKILL.md",
+      "drive_id": "1iql0T-bSs2t8ZMC-OSSHi-begSPiAkyX",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-08-11T19:49:09.085Z",
+      "drive_md5": "b6b98c5ff955de2a228a6f01e229237d"
+    },
+    {
+      "path": "skills/whitepaper-proposal-generator/agents/openai.yaml",
+      "drive_id": "1Ezs8vg1ESaa2r2eR9XcaI4Li2-pV21S7",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-07-13T13:00:23.355Z",
+      "drive_md5": "77b53345ca6a678eef7461328faaa6f3"
+    },
+    {
+      "path": "skills/whitepaper-proposal-generator/references/archive-proof-stories.md",
+      "drive_id": "1l833SyocPNSbnQqmC6jIOSqIDoV0SdQk",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T14:09:11.197Z",
+      "drive_md5": "567bcd02aee4d0bf0f2b6b21f8af81b2"
+    },
+    {
+      "path": "skills/whitepaper-proposal-generator/references/subject-routing.md",
+      "drive_id": "1yLLMgIDJfJDQRuJk7s7Fgo5s7XnpTTvc",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T12:59:58.771Z",
+      "drive_md5": "76f0b234d3bacd0775188d2cc80c62a0"
+    },
+    {
+      "path": "skills/whitepaper-proposal-generator/references/whitepaper-gamma-narrative.md",
+      "drive_id": "1D-ONDURvVYXCKIWPCMR1eR6xf5GD_miW",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-07-13T14:09:11.197Z",
+      "drive_md5": "52392bd96c0a4373b117671e83dd1a35"
+    }
+  ],
   "skills": [
     {
       "name": "abm-pursuit-loop",

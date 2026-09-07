@@ -183,22 +183,66 @@ def download(token: str, item: dict, target: pathlib.Path) -> None:
         ) from exc
 
 
-def fetch_tree(token: str, folder_id: str, target: pathlib.Path, inventory: list[dict]) -> None:
+def drive_fingerprint(item: dict) -> dict:
+    return {
+        "drive_id": item.get("id"),
+        "mime_type": item.get("mimeType"),
+        "modified_time": item.get("modifiedTime"),
+        "drive_md5": item.get("md5Checksum"),
+    }
+
+
+def previous_inventory_by_path(previous_manifest: dict | None) -> dict[str, dict]:
+    if not previous_manifest:
+        return {}
+    records = previous_manifest.get("upstream_inventory") or []
+    return {record.get("path", ""): record for record in records if record.get("path")}
+
+
+def is_unchanged_from_drive(
+    item: dict,
+    destination: pathlib.Path,
+    previous: dict | None,
+    previous_generated_at: str = "",
+) -> bool:
+    if not previous or not destination.exists():
+        modified_time = item.get("modifiedTime") or ""
+        return bool(previous_generated_at and destination.exists() and modified_time <= previous_generated_at)
+    current = drive_fingerprint(item)
+    return all(previous.get(key) == value for key, value in current.items())
+
+
+def fetch_tree(
+    token: str,
+    folder_id: str,
+    target: pathlib.Path,
+    inventory: list[dict],
+    previous_by_path: dict[str, dict] | None = None,
+    previous_generated_at: str = "",
+    skip_root_files: bool = False,
+) -> None:
+    previous_by_path = previous_by_path or {}
     for item in list_children(token, folder_id):
         name = safe_name(item["name"])
         destination = target / name
         if item["mimeType"] == FOLDER_MIME:
             destination.mkdir(parents=True, exist_ok=True)
-            fetch_tree(token, item["id"], destination, inventory)
+            fetch_tree(token, item["id"], destination, inventory, previous_by_path, previous_generated_at)
             continue
-        download(token, item, destination)
+        if skip_root_files:
+            continue
+        relative_path = str(destination.relative_to(ROOT))
+        if not is_unchanged_from_drive(
+            item,
+            destination,
+            previous_by_path.get(relative_path),
+            previous_generated_at,
+        ):
+            download(token, item, destination)
         inventory.append(
             {
-                "drive_id": item["id"],
-                "path": str(destination.relative_to(target.parents[0])),
-                "mime_type": item["mimeType"],
-                "modified_time": item.get("modifiedTime"),
-                "drive_md5": item.get("md5Checksum"),
+                "path": relative_path,
+                **drive_fingerprint(item),
             }
         )
 
@@ -271,20 +315,16 @@ def main() -> int:
             for item in list_children(token, SOURCE_FOLDER_ID)
             if item["mimeType"] == FOLDER_MIME
         }
-        with tempfile.TemporaryDirectory(prefix="pp-skills-") as temp_dir:
-            snapshot = pathlib.Path(temp_dir) / "skills"
-            snapshot.mkdir()
-            inventory: list[dict] = []
-            fetch_tree(token, SOURCE_FOLDER_ID, snapshot, inventory)
-            for skill_name in sorted(upstream_names, key=str.casefold):
-                source = snapshot / skill_name
-                if not source.is_dir():
-                    continue
-                destination = SKILLS_DIR / skill_name
-                if destination.exists():
-                    shutil.copytree(source, destination, dirs_exist_ok=True)
-                else:
-                    shutil.copytree(source, destination)
+        inventory: list[dict] = []
+        fetch_tree(
+            token,
+            SOURCE_FOLDER_ID,
+            SKILLS_DIR,
+            inventory,
+            previous_inventory_by_path(previous_manifest),
+            (previous_manifest or {}).get("generated_at", ""),
+            skip_root_files=True,
+        )
 
     all_names = sorted(
         [path.name for path in SKILLS_DIR.iterdir() if path.is_dir()], key=str.casefold
@@ -332,6 +372,11 @@ def main() -> int:
         "upstream_skill_count": len(upstream_names),
         "repository_skill_count": len(records),
         "legacy_skill_count": sum(item["lifecycle"] == "legacy" for item in records),
+        "upstream_inventory": (
+            sorted(inventory, key=lambda item: item["path"])
+            if not args.local_only
+            else (previous_manifest or {}).get("upstream_inventory", [])
+        ),
         "skills": records,
         "validation_errors": invalid,
         "validation_warnings": warnings,
