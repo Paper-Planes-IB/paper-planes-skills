@@ -1,7 +1,7 @@
 ---
 name: bpm10-crm
 description: Analyze, design, document, and validate B2B CRM architecture using the Paper Planes BPM10 methodology. Use when Codex needs to audit an existing CRM, turn interviews and sales processes into a target CRM model, define entities and Bitrix24 mappings, design Reach/React/Refresh/Re-Engage funnels, prepare CRM cards and functional requirements, separate CRM from ERP/BI/service systems, build a CRM governance model, or prepare a client/integrator handoff package and Miro scheme.
-version: 0.1.1
+version: 0.1.2
 line: BPM-10 / CRM analysis / target CRM architecture
 source: Dior handoff package, hardened for Codex/Vault DLP and writeback rules
 supports_bpm:
@@ -28,12 +28,16 @@ can_produce:
   - CRM commercial-trace check
   - Miro writeback proposal
   - no-op reason
+  - CRM implementation package QA
+  - BPV route map for CRM implementation
+  - data-quality and pilot acceptance gates
 preflight_required: true
 return_contract:
   version: "v0.1"
   changelog:
     - "2026-08-03: Installed from Dior handoff package with BPM routing metadata."
     - "2026-08-15: Added explicit BPM Exchange preflight_required and return_contract metadata."
+    - "2026-09-15: Added CRM implementation package QA routing, BPV route map, data-quality gate, and pilot acceptance gate from OrtoLight package."
 changelog:
   - date: 2026-08-03
     changes:
@@ -41,6 +45,10 @@ changelog:
       - Added Codex metadata for BPM routing.
       - Hardened DLP, external-system, and durable-writeback rules.
       - Added Russian output/field naming and CRM commercial-trace minimum.
+  - date: 2026-09-15
+    changes:
+      - Added routing to CRM implementation package QA for multi-file CRM specs.
+      - Added BPV route map, data-quality gate, and pilot acceptance gate as CRM handoff outputs.
 ---
 
 # BPM10 CRM
@@ -208,6 +216,26 @@ Prepare enough logic for a 20–30 minute client review:
 6. decisions and open questions.
 
 Do not detail hundreds of fields before the entities, lifecycles, and system boundaries are confirmed.
+
+
+### CRM Implementation Package QA
+
+When the source set contains several implementation layers such as entity cards, funnels, automations, integrations, normalization / deduplication rules, migration notes, or rollout plans, treat the work as `CRM implementation package QA`, not as a simple CRM summary.
+
+Use or recommend the dedicated `crm-implementation-qa` skill when available. If you stay inside BPM-10, still check:
+
+- entity / role collisions: doctor, clinic, legal counterparty, payer, order contact, dealer, manager, economic buyer, technical buyer, end user;
+- source-of-truth boundaries between CRM, 1C / ERP, BI, service, and channel systems;
+- automations for repeated events, late events, errors, missing references, manual review, retry, and deduplication;
+- integrations for direction, matching key, sync journal, reconciliation, failure handling, and ownership;
+- data-quality gates: normalization, weak duplicate signals, dispute queue, merge journal, original-value preservation;
+- pilot acceptance: pilot users, scenarios, entry criteria, stop / rollback criteria, owner sign-off, and full-launch gate.
+
+For BPV routing, map each material source and requirement as:
+
+`source -> BPM -> САИ / claim -> BPV line -> deliverable / skill delta`.
+
+Do not create parallel Vault task rows when a live project task system such as ClickUp is already the downstream. Return a proposed ClickUp change set unless the user explicitly approves writing to ClickUp.
 
 ### 8. Produce The Integrator Package
 

@@ -130,6 +130,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "crm-implementation-qa",
+    "type": "BPM / методология",
+    "description": "Скилл помогает выполнить задачу «crm implementation qa» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/crm-implementation-qa",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-crm-implementation-qa",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "demand-supply-match-intelligence",
     "type": "BPM / методология",
     "description": "Смежный research-скилл для проверки market opportunity и demand-supply fit: offer unit, market cell, клиентская работа, маршрут коммерциализации и confidence gates. Это не скилл сборки BPM-4-дашборда; использовать рядом с BPM-4, когда нужно проверить рынок, спрос, предложение или продуктово-рыночное соответствие.",

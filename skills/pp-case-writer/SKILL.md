@@ -1,9 +1,10 @@
 ---
 name: pp-case-writer
 description: Use when writing Paper Planes client cases for a site, media, sales materials, or internal drafting and the text must show the management problem, business scale, diagnostic contradiction, implementation logic, and real project evidence without generic consulting language.
-department: "2-ka"
-line: content-case
-review: experiments-planned
+metadata:
+  department: "2-ka"
+  line: content-case
+  review: experiments-planned
 ---
 
 # pp-case-writer
@@ -111,6 +112,10 @@ Each case should surface 2-4 contradictions such as:
 - zones, formats, or brands coexist but do not operate as one commercial system;
 - technology is being discussed before process logic is assembled;
 - the company speaks in one average scenario while different cities, points, or segments behave differently.
+
+### Проверка масштаба полного проекта
+
+Если пользователь просит кейс по всему проекту, сначала сверить основные рабочие направления по физическим проектным источникам. Один яркий продукт, прототип или ИИ-инструмент не должен определять вступление, большую часть текста и иллюстраций, если пользователь явно не сузил тему до него. При редактуре проверять отдельно смысловой и визуальный баланс: добавление общего абзаца не исправляет кейс, в котором частный пример по-прежнему вытесняет экономику, стратегию и организацию работы. Различать разработанное решение, демонстрацию и подтверждённое внедрение.
 
 ### 4. Never fake evidence
 
@@ -276,6 +281,10 @@ In HoReCa and transactional-network cases, implementation often needs to sound l
 ### What Changed
 
 Prefer management shifts over cosmetic “results”.
+
+For consulting cases, do not frame the result as “we only prepared the architecture and the client still has to do the real work” unless the project was explicitly scoped that way. Paper Planes is usually hired to resolve a hard management question inside the consulting mandate: define the model, make the contradiction decidable, assemble the artifacts, and give the client a working decision/implementation contour. The case may honestly avoid claiming operational rollout or measured effect, but it must still show the project as completed by design, not as a preface to the real project.
+
+Do not write caricatured before/after passages where “before” the client supposedly treated website, CRM, sales, product matrix, motivation, and knowledge base as separate topics unless sources explicitly show that belief. Stronger: describe that the project connected these previously separate workstreams into one management model and made the dependency between them discussable, decidable, and operable.
 
 ## HoReCa-Specific Logic
 
