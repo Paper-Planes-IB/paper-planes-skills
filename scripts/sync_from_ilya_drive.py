@@ -13,6 +13,7 @@ import json
 import mimetypes
 import os
 import pathlib
+import re
 import shutil
 import subprocess
 import sys
@@ -34,7 +35,32 @@ SOURCE_FOLDER_ID = os.environ.get(
 )
 REQUEST_TIMEOUT = int(os.environ.get("PP_GDRIVE_REQUEST_TIMEOUT", "180"))
 FOLDER_MIME = "application/vnd.google-apps.folder"
+# Verified older Drive copy (v0.1.0); canonical mece-prezy is v0.1.1.
+ARCHIVED_DUPLICATES = {"mece-prezy 2": "5dad0540d6f20cfca6c4ab72930b7f41ca39a3cd5793dc219b67fa6c2f4735e9"}
+SERVICE_DIRECTORIES = {".system", "_backups", "_derivative-subskills"}
+
+
+def publication_names(names):
+    """Keep service containers and verified duplicate copies out of publication."""
+    result = set(names) - SERVICE_DIRECTORIES
+    for name in sorted(result):
+        match = re.fullmatch(r"(.+) 2", name)
+        if not match or match[1] not in result:
+            continue
+        def files(folder):
+            return {str(f.relative_to(folder)): sha256(f)
+                    for f in folder.rglob("*") if f.is_file() and f.name != ".DS_Store"}
+        original = files(SKILLS_DIR / match[1])
+        duplicate = files(SKILLS_DIR / name)
+        archived = hashlib.sha256(json.dumps(duplicate, sort_keys=True).encode()).hexdigest()
+        if not original or (original != duplicate and ARCHIVED_DUPLICATES.get(name) != archived):
+            raise ValueError(f"Duplicate folder differs from canonical skill: {name}")
+        result.remove(name)
+    return result
+
+
 KNOWN_LEGACY = {
+    "bpv-03-1-site-audit-growth",
     "autoresearch",
     "client-intel-agent",
     "client-project-onboarding",
@@ -224,6 +250,8 @@ def fetch_tree(
     previous_by_path = previous_by_path or {}
     for item in list_children(token, folder_id):
         name = safe_name(item["name"])
+        if skip_root_files and name in SERVICE_DIRECTORIES:
+            continue
         destination = target / name
         if item["mimeType"] == FOLDER_MIME:
             destination.mkdir(parents=True, exist_ok=True)
@@ -326,8 +354,10 @@ def main() -> int:
             skip_root_files=True,
         )
 
+    upstream_names = publication_names(upstream_names)
     all_names = sorted(
-        [path.name for path in SKILLS_DIR.iterdir() if path.is_dir()], key=str.casefold
+        publication_names(path.name for path in SKILLS_DIR.iterdir() if path.is_dir()),
+        key=str.casefold,
     )
     records = []
     invalid = []

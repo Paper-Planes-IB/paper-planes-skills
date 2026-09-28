@@ -37,7 +37,8 @@ Create a useful strategic document that also sells the recommended Paper Planes 
 
 1. Read and apply `../commercial-proposal-generator/SKILL.md` completely unless it is already loaded for the current turn. It owns source, claim, artifact, approval, MEDDPICC, JOLT, commercial trace, pricing, case, implementation and externalization gates. Do not recursively re-trigger either skill once both are active.
 2. When producing slides, HTML, PP Pages or PPTX, use the current PP Presentation Kit and `pp-slidument` required by the parent skill. This skill owns subject routing and narrative, not visual production.
-3. Keep internal codes such as BPM, BPO, BPV, SI, MEDDPICC and RDB out of client-facing pages. Translate them into questions, works, decisions, artifacts, rhythms and business effects.
+3. If a whitepaper proposal must be rebuilt from an existing HTML/PDF/PNG commercial template, the optional derivative subskill `html-proposal-template-editor` may be invoked through the parent production route from `~/.codex/derivative-subskills/html-proposal-template-editor/`. It repairs editable-template mechanics only; it does not own subject routing, narrative, source/claim gates or commercial commitments.
+4. Keep internal codes such as BPM, BPO, BPV, SI, MEDDPICC and RDB out of client-facing pages. Translate them into questions, works, decisions, artifacts, rhythms and business effects.
 
 ## Required references
 
@@ -81,7 +82,9 @@ Collect, in priority order:
 
 Classify every material claim as `client_fact`, `approved_internal`, `public_verified`, `hypothesis`, `inference`, `internal_only`, `needs_source_check` or `do_not_use`.
 
-Never convert a meeting hypothesis into a client fact. Use formulations such as “мы услышали”, “наша рабочая гипотеза”, and “это предстоит проверить” where appropriate.
+Never convert a meeting hypothesis into a client fact. Mark an unverified causal explanation as a proposed mechanism or a question for validation.
+
+Клиентская белая книга читается как самостоятельный управленческий документ, а не протокол продажи. По умолчанию не переносить в неё «Ольга отметила», «на созвоне», «мы услышали», «по результатам встречи» и служебное описание происхождения текста. Атрибуция реплик и точные локаторы остаются во внутреннем реестре оснований. Снятие атрибуции не повышает статус факта: непроверенное объяснение преобразуется в вопрос проверки или проектное предложение. Исключение — прямо запрошенный пользователем цитатный либо протокольный жанр. Перед выдачей проверять весь видимый текст и извлечённый текст PDF на эти следы; при прямом запросе PDF ссылка на HTML не является выполнением задачи.
 
 Apply an evidence-precision gate to every number, share, range, money amount, timeline, comparison and `X -> Y` arrow, including action titles, accent numerals, diagrams and captions. Each needs an exact source object and locator. If the source is absent, remove the precision and write a concrete qualitative mechanism; never invent a plausible metric. A phrase such as “company grew quickly” must not become `4 -> 6 projects` or any other numeric target without evidence.
 
@@ -153,6 +156,10 @@ For every theory block, answer:
 3. What project decision follows from it?
 
 Delete theory that does not change the proposed route, scope, sequence, decision or artifact.
+
+#### Сохранение теоретического чтения при перевёрстке
+
+Если Илья просит белую книгу «на почитать», глубину теории или сообщает, что после перевёрстки теория исчезла, сохранять развёрнутые причинные объяснения в production source. Сквозная схема, тезисный слайд и состав работ не заменяют объяснение: понятие → механизм → граница применимости → значение для собственника → проектное решение. Теоретические главы связывать с соответствующими участками общего рассуждения, а не выносить в отвлечённое предисловие. По прямому жанровому запросу допустимы редакционные страницы со связным текстом; не добавлять формальную диаграмму ради шаблона и не ужимать текст до списка ради прежнего числа страниц. До повторной выдачи сверить сохранность теоретических тезисов и переходов с исходником, проверить чтение колонок и отступы перед примечаниями отдельно от проверки границ страницы. Технический проход PDF не означает жанровую достаточность.
 
 ### 5. Build the commercial narrative
 

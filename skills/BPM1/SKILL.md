@@ -1,6 +1,35 @@
 ---
 name: BPM1
 description: Use when Ilya asks to prepare a BPM-1A consumer survey or BPM-1B employee survey, reuse old surveys, build a questionnaire, process survey results, forecast likely survey results before fieldwork, compare prior vs fact, extract JTBD/clusters from quantitative survey factors, or route survey evidence into BPM-SI, Storyline-Storyboard, slides, reusable question banks, or survey benchmarks.
+metadata:
+  version: "0.1.0"
+  status: active
+  line: BPM-1A/B surveys / Survey Lake / BPM Exchange
+  owner: Ilya
+  supports_bpm:
+    primary: [BPM-1A, BPM-1B]
+    required_secondary: [BPM-2, BPM-3, BPM-SI, Storyline-Storyboard]
+    optional_secondary: [BPM-4, BPM-6, BPM-7A, BPM-7B, BPM-8, BPM-10, BPM-11]
+  can_consume:
+    - survey files and exports
+    - Survey Lake registries
+    - prior project questionnaires and benchmarks
+    - BPM Storyline-Storyboard gaps
+    - Матрица BPM — SI
+    - client / employee / buyer context sources
+  can_produce:
+    - BPM-1A/B classification
+    - survey prior packet
+    - questionnaire / question bank
+    - survey evidence routing packet
+    - prior-vs-fact comparison
+    - BPM-SI / Storyline-Storyboard route proposal
+    - Survey Lake update packet
+  preflight_required: true
+  return_contract:
+    version: "v0.1"
+    changelog:
+      - "2026-08-29: Added BPM Exchange capability metadata after accepted daily learning brief; BPM1 participates when survey priors, Survey Lake, BPM-1A/B evidence, or survey-to-Storyline routing are active."
 ---
 
 # BPM1

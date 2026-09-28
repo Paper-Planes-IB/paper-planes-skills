@@ -2,7 +2,7 @@
 name: bpm-exchange-reconciliation
 description: Use when Ilya asks to run BPM Exchange, взаимное обогащение BPM, BPM-SI, Storyline-Storyboard, approved-presentation-to-BPV lineage, return packs, QA learning, client reality reconciliation, field pressure, or project-level BPM enrichment for 4th-department projects.
 metadata:
-  version: "0.2.10"
+  version: "0.2.12"
   status: draft
   line: 04-production / BPM Exchange / Storyline-Storyboard governance
   owner: Ilya
@@ -52,6 +52,8 @@ metadata:
       - "2026-07-11: Canonized BPV-01...14 routes and added approved-deck/decision lineage with reverse BPV links."
       - "2026-08-03: Added accepted guards for management-delta source-class filtering and New Delivery client-result vs methodology-harvest separation."
       - "2026-08-11: Added commercial trace reality and hold-topic review guards for BPM Exchange writeback."
+      - "2026-09-25: Added a financial-goal evidence guard for Problem Map and causal-bridge exchange candidates."
+      - "2026-09-25: Added a method-to-client-evidence bridge with BPM-8 process and BPM-3 lived-experience checks."
 ---
 
 # BPM Exchange Reconciliation
@@ -190,6 +192,8 @@ If source-class checking downgrades many `moving` rows to no-op, return a prompt
 ### Commercial Reengage Donor Guard
 
 Commercial reengage can be material BPM-SI evidence without being a project Storyline receiver. If a reengage / existing-client / approach-in-progress source creates a repeatable cross-BPM SI or SIF candidate, route it as `donor_signal` through commercial trace, Matrix BPM-SI, and source-check gates unless a BPA / All Delivery project receiver is explicitly confirmed.
+
+When the reengage signal is based on `инфоповод`, `активность`, `прогресс`, `акция`, `повод касания`, `банк прогрессов`, or similar account-development object, do not reduce it to a generic sales note. Classify the reusable method separately as `reason_activity_derivative`: `source signal -> target account/client/point/role -> material/argument -> expected progress -> owner -> evidence of execution -> result metric -> stop/repeat rule`. This pattern can be a donor for BPV-04, BPV-05.1, Re-Engage, ABM and commercial operating-model work even when no delivery project receiver is confirmed.
 
 Required checks:
 
@@ -899,3 +903,19 @@ Use concise decision phrases:
 ## Structured Analytical Artifact Exchange Gate
 
 When an exchange candidate is a Problem Map pattern, issue/hypothesis tree, classification, evidence/claim/source-to-node schema, analytical visual, storyline-storyboard pattern, metric tree, or dimension architecture, inherit the live global contract in `~/.codex/AGENTS.md`. Transfer the method contract separately from donor/project evidence; a donor artifact, methodology page, Frappe, or Quartz never proves the receiver project's facts. Require adaptation/no-transfer gates, explicit MECE applicability, source rights, and delta landing into an existing receiver artifact before canonization.
+
+## Financial Goal Evidence Guard
+
+When a Problem Map or BPM Exchange candidate links problem nodes to a financial goal, represent the goal as a working constraint until its definition and source are confirmed. Keep the bridge explicit:
+
+`financial goal -> P-node (code + name) -> conditional causal mechanism -> next evidence check`
+
+For each link, label the causal mechanism as an inference unless primary project evidence establishes it. Name the evidence that could strengthen or weaken the link and route quantitative checks to the responsible BPM / source owner. Do not present a target, percentage, margin, demand level, loss, or expected economic effect as established fact without a confirmed formula, unit, baseline, period, scope, and source. Missing definitions remain visible as a source/evidence gap; they do not block recording a useful hypothesis, but they do block financial canonization.
+
+## Method-to-Client Evidence Bridge
+
+When transferring a method, training source, or external framework into a client-project hypothesis, make the proposed bridge explicit:
+
+`method principle -> management goal -> client journey stage -> observable evidence test`
+
+Keep the method source as methodological support, not evidence that the client has the problem or that the intervention works. State the expected observation and a result that would weaken the hypothesis. Route process application and operational traces to BPM-8; route customer experience, value, pain, or behavior claims to BPM-3. Record a BPM-addressed next-check only where that BPM is in scope or has been explicitly routed; return the result to the originating claim / Storyline and classify it as strengthened, weakened, contradicted, or no material change.

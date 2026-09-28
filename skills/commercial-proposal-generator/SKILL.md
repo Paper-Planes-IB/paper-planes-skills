@@ -47,6 +47,22 @@ When the request is for a semi-whitepaper, semi-commercial proposal; a personali
 
 The derivative owns subject classification, nine-lever depth, whitepaper narrative and archive proof stories. This parent skill continues to own source/claim/artifact/approval gates, MEDDPICC, JOLT, commercial trace, pricing, case permissions, implementation commitments and externalization. Do not solve the derivative request by adding a generic theory chapter to the standard proposal.
 
+## Optional derivative subskill: editable HTML/PDF proposal template
+
+When the commercial proposal already has, or must become, an editable HTML / PDF / PNG-based proposal template, an optional derivative production subskill may be invoked from `~/.codex/derivative-subskills/html-proposal-template-editor/`.
+
+Use it only for the technical layer:
+
+- inspect an HTML proposal package, PDF proposal, raster slide export or exported proposal folder;
+- reconstruct baked text into editable HTML fields;
+- build or validate `data-block` / `data-field` maps;
+- preserve local visual system, assets, print behavior and proposal geometry;
+- validate HTML assets, renderability, page breaks, overflow-sensitive edits and block-level annotations.
+
+Do not treat this subskill as part of the skill corpus or as a content author. This skill still owns proposal logic, source gates, client-facing claims, pricing/scope, MEDDPICC/JOLT, archive and approval boundaries. `pp-slidument` still owns PP presentation production when the output is a deck or PP Pages. `pp-print-a4` still owns final A4 print/PDF rendering when the HTML is already printable and editable.
+
+Bad trigger: content-only КП drafting, ordinary Markdown/Gamma text, pricing/scope logic, or a deck that already has a stable PP production route and needs no editable-template repair.
+
 Назначение: генерация не пустого skeleton, а рабочего каркаса коммерческого предложения в Vault на основе контекста клиента, продуктовой витрины и проектной фактуры.
 
 ## Текущий контракт
@@ -129,6 +145,11 @@ commercial_proposal_packet:
     requested_format: chat|md_file|docx|pptx|gamma_text|archive|calendar_event|task_delta
     file_creation_explicitly_requested: true|false
     target_existing_contour: ""
+  optional_production_subskill:
+    html_proposal_template_editor_needed: true|false
+    reason: ""
+    source_kit: "~/.codex/derivative-subskills/html-proposal-template-editor/"
+    status: not_needed|candidate|used|blocked
   proposal_route:
     proposal_type: diagnostic|strategic|implementation|niche|defense|other
     product_vitrine_route: ""
@@ -301,6 +322,7 @@ JOLT-проверка:
 4. **Take risk off the table / снять риск решения.**
    - Для `outcome_uncertainty` не давить FUD-логикой и страхом упущенной выгоды.
    - Давать confidence givers: диагностический gate, phased scope, stop/go развилка, фиксированные deliverables, критерии приёмки, resource frame, pilot / first 90 days, safety net, реалистичные ожидания, “что не обещаем”.
+   - Эти способы снижения неопределённости не разрешают самовольно сужать проект до пилота или выбранной группы. Если владелец задаёт полный объём, сохранять его в этапах, инструментах, внедрении и приёмке. Последняя прямая оценка владельцем срока имеет приоритет над прежней оценкой агента. Для внедренческого КП сначала показывать понятную клиенту цепочку «аудит — разработка инструментов — внедрение» с работой и результатом каждого этапа; внутренние источники, проверки и служебные оговорки хранить в производственном исходнике, не перегружая ими клиентские слайды.
    - Лучше честно предложить меньший первый шаг с ранним доказательством ценности, чем продавать максимальный пакет, который усиливает страх ошибки.
 
 5. **Buyer’s agent stance / позиция агента покупателя.**
@@ -812,6 +834,10 @@ Approved update 11/06/2026: для публичных компаний, стра
 ### Timeline Calibration Gate: не занижать сроки сложных КП
 
 `proposal_timeline_calibration_gate`
+
+**Правило владельца от 23.09.2026 — комплексные КП «аудит → инструменты → внедрение».** Аудит занимает **7 недель**: это наиболее сложный и комплексный этап. Не сокращать его до 4 недель и не делить общий срок механически на 4+4+8. Разработку инструментов и внедрение допускается частично совмещать: внедрение начинается по готовности согласованных инструментов, пока разработка остальных продолжается. Общий календарь считать по объединению недель этапов, а не по сумме их длительностей. Для проекта на 16 недель рабочий пример: аудит 1–7, инструменты 8–12, внедрение 11–16; перекрытие — недели 11–12. Точные границы последних двух этапов зависят от проекта, аудит 7 недель сохраняется, если Илья прямо не задал иное. Это правило приоритетнее общих ориентиров ниже для данного класса КП; самостоятельный стратегический аудит другого объёма не приравнивать автоматически к этапу комплексного проекта.
+
+Перед выдачей КП обязательна сверка исходника, таблицы сроков, схемы, описаний этапов и коммерческих условий: везде аудит 7 недель, одинаковые интервалы, явно показанное перекрытие инструментов и внедрения, общий срок сходится. При расхождении исправлять до вёрстки и повторять проверку после неё.
 
 Триггер: стратегическое / трансформационное КП, несколько бизнес-контуров, 3+ функции, GR / ассоциация / партнёрская сеть / IT-архитектура / внедренческий мост, цена 1,5 млн ₽+, участие собственника и топ-команды, интервью с внешними сторонами или необходимость согласования артефактов.
 
@@ -1977,6 +2003,22 @@ Anti-pattern:
 - хватает ли доказательных кейсов и референсов;
 - есть ли логика перехода от боли к маршруту, от маршрута к работам, от работ к решениям и стоимости;
 - не торчит ли наружу MEDDPICC или внутренняя методологическая арматура.
+
+### `Gamma export QA / source-to-deck reconciliation`
+
+После генерации Gamma-презентации нельзя считать deck готовым только по факту `completed` / наличия URL. Перед внешней отправкой или утверждением агент обязан прочитать экспорт / PDF / PPTX результата и сопоставить его с production source или промптом. Если Илья прислал отредактированный deck / PDF после ручных правок, этот артефакт является целевым состоянием `как должно быть`; различия с исходным промптом нельзя автоматически считать ошибками генерации.
+
+Минимальная сверка:
+
+- фактическое число карточек совпадает с заказанным или есть объяснённое объединение ролей; если Илья вручную удалил / объединил карточку, считать это accepted target, а не loss; если без человеческой правки исчезли обязательные коммерческие условия, risk-removal или route recommendation, deck неполон;
+- все owner-fixed terms сохранены дословно: `New Delivery`, название этапа, цена, срок, success fee, payment terms, имена клиента / ролей / продукта; Gamma-смягчения вроде `поддержка внедрения` не заменяют `New Delivery`, если владелец зафиксировал именно этот класс delivery;
+- commercial terms не нормализованы шаблоном и не переформулированы так, что меняют обязательство: сумма, диапазон, срок, единица оплаты, success-fee trigger и decision gate должны пережить генерацию;
+- Gamma не добавила неподтверждённые claims, лишние frameworks, дополнительные метрики, generic ABM / nurturing / ROI-обещания или публичные reference claims без source class;
+- слайды с доказательным опытом не раскрывают клиентов / логотипы / sensitive детали шире, чем разрешено claim gate;
+- визуальный стиль, иллюстрации и подписи не превращают черновой internal routing в клиентское обещание и не создают ложную точность;
+- финальный deck содержит явный статус `draft / requires QA`, если human QA ещё не пройден.
+
+Если экспорт отличается от production source, финальный ответ должен содержать `generation_delta`: `потеряно / искажено / добавлено / требует ручной правки`. Если сравнение идёт после ручных правок Ильи, отдельно разделять `user_accepted_delta` и `generation_error`: пользовательские удаления, сжатия, переименования и перестановки не являются ошибками, пока они не ломают commercial terms, claim gate или явное owner-fixed решение. Не писать пользователю просто `готово`, если deck требует правок перед отправкой клиенту.
 
 ### `Ось оффера`
 

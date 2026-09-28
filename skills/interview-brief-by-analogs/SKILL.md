@@ -1,6 +1,36 @@
 ---
 name: interview-brief-by-analogs
 description: Use when preparing questions, agendas, hypotheses, or briefing notes for project interviews, client interviews, expert interviews, content interviews, case interviews, respondent calls, role-specific interviews, sector-specific interviews, or requests like "какие вопросы задать", "подготовь к интервью", "бриф интервью", "вопросы респонденту".
+metadata:
+  version: "0.1.0"
+  status: active
+  line: interview preparation / archive analogs / BPM Exchange
+  owner: Ilya
+  supports_bpm:
+    primary: [BPM-2, BPM-3]
+    required_secondary: [BPM-SI, Storyline-Storyboard, BPM-4, BPM-10, BPM-11]
+    optional_secondary: [BPM-1A, BPM-1B, BPM-5, BPM-6, BPM-7A, BPM-7B, BPM-8, BPM-9]
+  can_consume:
+    - project cards and administrative scales
+    - BPM Storyline-Storyboard gaps
+    - Матрица BPM — SI
+    - prior interviews and transcripts
+    - archive analogs
+    - external research return packets
+    - client reality and field pressure questions
+    - BPM-4 dashboards / CRM / win-loss evidence needs
+  can_produce:
+    - interview preflight summary
+    - respondent-specific question brief
+    - archive analog scoring packet
+    - client reality correction questions
+    - naming normalization prompts
+    - BPM Exchange return routes for answered / unanswered questions
+  preflight_required: true
+  return_contract:
+    version: "v0.1"
+    changelog:
+      - "2026-08-29: Added BPM Exchange capability metadata after accepted learning brief; the skill participates when an interview brief must test Storyline, BPM-SI, client reality, field pressure, CRM/win-loss, or archive analog signals."
 ---
 
 # Interview Brief By Analogs
@@ -45,6 +75,10 @@ Before drafting questions:
    - target deliverable.
 
 If a coordinate is missing, infer it from nearby files and mark the inference.
+
+### Paper Planes interviewer availability gate
+
+Before recommending or assigning a Paper Planes interviewer, re-read the current active-composition table in `10-отделы/01-персонал/учебные-материалы/Рабочий реестр сотрудников PP.md`. A historical profile, project mention, interview transcript, feedback record, prior grade, practice-lead label, calendar address, or old staffing table does not prove that the person still works at Paper Planes or is available for a new project. Anyone absent from the current active composition must not be proposed as an interviewer, reviewer, shadow participant, project capacity, or owner. If the registry and another source conflict, the current registry controls availability; report the conflict and request a fresh owner decision rather than reviving the historical role.
 
 ## BPM Exchange / Client Reality Preflight
 
@@ -234,6 +268,35 @@ Project question blocks usually include:
 - conflicts between functions;
 - implementation constraints;
 - success criteria.
+
+### Scope-Boundary Question For Setup Interviews
+
+When a project source mentions CRM, ERP / 1C, analytics, reporting, integrations, data fields, dashboards, models, or another technical layer but does not establish Paper Planes' implementation responsibility, treat the boundary as a required setup-interview check rather than silently reclassifying the whole project.
+
+Add one explicit agenda task:
+
+```text
+Установить границу ответственности Paper Planes по техническому контуру:
+только требования; архитектура и спецификация; настройка / внедрение;
+смешанная ответственность; граница пока не определена.
+```
+
+The question block must establish:
+
+- what Paper Planes must deliver physically;
+- who designs, configures, integrates, tests, accepts, and operates the solution;
+- which systems, data objects, reports, interfaces, and acceptance criteria are in scope;
+- whether the answer changes the task class, contract scope, deliverables, timing, price, or client decision;
+- where the confirmed answer returns: project card / charter, task-class decision, Rail, scope ledger, Storyline-Storyboard, or implementation requirements.
+
+Until the answer is confirmed, preserve the current evidence-based task class and mark only the implementation boundary as `требует прояснения`. Do not infer technical implementation from a requirement to prepare fields, reports, metrics, or recommendations.
+
+Регрессионные примеры:
+
+- Корректный триггер: договор требует полей и отчётов CRM, но не устанавливает исполнителя внедрения -> добавить задачу об определении границы в повестку установочного интервью.
+- Ложный триггер: подписанный объём прямо говорит, что Paper Planes только готовит требования -> не открывать вопрос заново без противоречащего источника.
+- Неоднозначный триггер: источник говорит `внедрение CRM`, но не называет владельца, результат, приёмку или границу системы -> задать вопрос о границе и оставить ответственность за внедрение неподтверждённой.
+- Ограничение записи: вопрос повестки остаётся внутренним кандидатом до подтверждения проектного брифа / маршрута задач; не создавать и не изменять задачу ClickUp без отдельного разрешения.
 
 ## Output: Content Interview
 

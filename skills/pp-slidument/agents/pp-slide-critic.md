@@ -162,6 +162,10 @@ Title → Situation → Complication → Question → Answer (executive summary)
 
 # Формат отчёта
 
+При вызове из `pp-slidument` добавляй перед отчётом квитанцию, привязанную к точному рендеру: `parent_run_id | child_skill_version | input_artifact/version | rendered_version | slide_ids | status | report_locator`. Находки должны указывать слайд и проверяемый объект. Устаревший рендер или самоотчёт без локаторов не закрывают визуальный гейт.
+
+При вызове из `pp-slidument` добавляй перед отчётом квитанцию, привязанную к точному рендеру: `parent_run_id | input_artifact/version | rendered_version | slide_ids | status | report_locator`. Находки должны указывать слайд и проверяемый объект. Устаревший рендер или самоотчёт без локаторов не закрывают визуальный гейт.
+
 ```
 ## PPTX: /path/to/file.pptx (24 слайда)
 

@@ -5,3 +5,10 @@ __pycache__/
 tmp/
 tmp-sync.log
 registry/frappe_payload.json
+
+# Service containers and verified duplicate source copies are retained locally.
+/skills/.system/
+/skills/_backups/
+/skills/_derivative-subskills/
+/skills/crm-implementation-qa 2/
+/skills/mece-prezy 2/

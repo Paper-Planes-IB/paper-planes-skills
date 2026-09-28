@@ -1,0 +1,114 @@
+---
+name: bpm6-website-positioning-audit
+description: "Use when a company website audit is primarily a BPM-6/BPM-7B evidence and positioning diagnostic: digital entry, public claims, proof, product routes, search architecture, landing pages, conversion signals, and downstream BPV handoff gates."
+metadata:
+  status: "experimental"
+  owner: Ilya
+  line: "BPM-6 / BPM-7B / website positioning audit"
+  primary_bpm: "BPM-6 — отраслевой, конкурентный и публичный контекст"
+  adjacent_bpm:
+    - "BPM-7B — продуктовая матрица и продуктовая упаковка"
+    - "BPM-8 — процессный / сервисный контур"
+    - "BPM-10 — CRM и коммерческая аналитика"
+    - "BPM-11 — данные, трекинг и цифровой контур"
+  downstream_bpv:
+    - "BPV-03.1 — GTM и архитектура выхода на рынок"
+    - "BPV-03.2 — Позиционирование и claims/evidence system"
+    - "BPV-03.7 — Материалы поддержки продаж"
+    - "BPV-10.1 — аналитико-управленческий контур"
+  source_archives:
+    - "company-site-audit-doc.zip"
+  replaces:
+    - "bpv-03-1-site-audit-growth"
+  contribution_trace:
+    - "13/09/2026: создано после поправки Ильи, что site-audit по специфике относится к семейству BPM, а не BPV; архив company-site-audit-doc сохранён как BPM evidence / diagnostic pattern."
+  created: 2026-09-13
+---
+
+# BPM-6 Website Positioning Audit
+
+## Назначение
+
+Этот skill рассматривает аудит сайта как BPM-источник: сайт фиксирует публичное позиционирование, продуктовые обещания, доказательства экспертности, маршрутизацию клиентских ситуаций, поисковую архитектуру и доступный цифровой evidence.
+
+Он не является самостоятельным BPV. BPV-маршрут появляется только после того, как из аудита рождается внедренческий объект: изменение структуры сайта, landing architecture, proof-pack, материалы продаж, CRM/tracking fields или управляемый контур digital-входа.
+
+## Core Rules
+
+- Сначала классифицировать работу как `BPM-аудит`, `BPM-аудит + BPV-handoff` или `только BPV-внедрение`.
+- Не создавать Google Doc, screenshots pack, клиентский документ или задачу на изменение сайта без явной команды.
+- Сайт читать как evidence carrier: URL, страница, блок, claim, proof, CTA, форма, публичный источник и дата просмотра.
+- Отделять факты сайта от агентских выводов и рекомендаций.
+- Не считать SEO-выгрузку достаточным аудитом позиционирования без связи с клиентской ситуацией, продуктовой матрицей и доказательством результата.
+- Если появляется downstream-внедрение, передавать его в BPV как handoff, а не переименовывать весь аудит в BPV.
+
+## Workflow
+
+1. Установи официальный сайт / домены и область аудита: НЭП, ПГС, РЕКРО, группа, отдельный продукт или конкурент.
+2. Зафиксируй source register: страницы, дата просмотра, статус публичности, права на использование скриншотов и ограничения DLP.
+3. Инвентаризируй сайт: главная, услуги, кейсы, эксперты, лицензии, статьи, формы, контакты, footer, посадочные страницы.
+4. Для каждой страницы отдели:
+   - публичный claim;
+   - доказательство / отсутствие доказательства;
+   - клиентскую ситуацию;
+   - продукт / бренд / маршрут;
+   - следующий шаг;
+   - BPM-узел или гипотезу, которую страница усиливает / ослабляет.
+5. Сопоставь выводы с BPM-6 / BPM-7B / BPM-8 / BPM-10 / BPM-11 и существующим Storyline-Storyboard.
+6. Если нужны изменения сайта, сформируй downstream BPV-handoff: что менять, почему, какой evidence, кто должен принять решение и какой DLP gate нужен.
+7. Перед клиентским выводом провести anti-slop / de-AI pass через `text-deai-editor`, если доступен.
+
+## Output Packet
+
+```yaml
+website_positioning_audit_packet:
+  режим: "bpm_audit|bpm_plus_bpv_handoff|route_only|qa_only"
+  сайт: ""
+  scope:
+    бренды: []
+    страницы: []
+    дата_просмотра: ""
+  source_rights:
+    публичность: "public|client_sensitive|restricted"
+    screenshots_allowed: "да|нет|требует_проверки"
+    ограничения_DLP: []
+  bpm_route:
+    primary: "BPM-6 — отраслевой, конкурентный и публичный контекст"
+    adjacent: []
+  evidence_map:
+    - страница: ""
+      claim: ""
+      proof: ""
+      клиентская_ситуация: ""
+      продуктовый_маршрут: ""
+      bpm_узел: ""
+      статус: "подтверждает|усиливает|ослабляет|противоречит|требует_проверки"
+  audit:
+    что_работает: []
+    что_слабо: []
+    что_не_доказано: []
+    что_проверить_источником: []
+  search_architecture:
+    demand_clusters: []
+    current_pages: []
+    landing_candidates: []
+  tracking:
+    required_fields: []
+    crm_or_analytics_dependency: []
+  downstream_bpv_handoff:
+    required: "да|нет"
+    route: []
+    объект_внедрения: []
+    decision_gate: []
+  dlp:
+    чувствительность: "public|internal|client_sensitive|restricted"
+    redaction_needed: []
+```
+
+## Eval / DLP
+
+- хороший триггер: "аудит сайта", "посмотри структуру сайта", "сверь сайт с позиционированием", "проверь, как сайт поддерживает продуктовую матрицу";
+- плохой триггер: "сверстай сайт", "измени лендинг", "создай рекламную кампанию" без evidence-аудита — route to BPV / implementation skill;
+- ambiguous trigger: "сделай документ по сайту" — сначала уточнить, нужен BPM-аудит, клиентский документ или BPV-handoff;
+- writeback-risk: Google Doc, screenshots, publication, client delivery, task creation;
+- DLP: internal recommendations, competitor comparisons, скриншоты, SEO-данные, CRM/tracking assumptions.

@@ -1,0 +1,3 @@
+interface:
+  display_name: "QA КП конкурентов"
+  short_description: "Проверяет КП конкурентов по ТЗ, scope, delivered cost, продажам и battlecards"

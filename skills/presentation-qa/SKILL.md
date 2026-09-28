@@ -2,7 +2,7 @@
 name: presentation-qa
 description: Use when reviewing strategic presentations, slide decks, section-slide drafts, storyboards, or client-facing deck iterations for source fidelity, storyline integrity, MECE structure, claim calibration, client readiness, regression across versions, and slide-level QA. Especially useful for Paper Planes strategy decks, BPM/4th department projects, consulting presentations, and cases where facts must not be lost while simplifying the narrative.
 metadata:
-  version: "0.1.3"
+  version: "0.1.4"
   status: draft
   line: strategic-presentation-quality
   owner: Ilya
@@ -14,13 +14,14 @@ metadata:
   can_produce: [QA packet, claim-risk ledger, weak-evidence / trace-gap events, actant-action coverage counter, sub-BPV action score map, bridge-slide candidates, reusable QA learning]
   preflight_required: true
   return_contract:
-    version: "v0.1"
-    changelog:
-      - "2026-07-13: Added annotation regression ledger, semantic underfill, semantic-role substitution, terminology precision and target-PDF-renderer receipts."
-      - "2026-07-11: Added SI/slide-intent bridge between actant-action and BPV-route checks."
-      - "2026-07-11: Added Estuarine-first order and code+name readability requirement for BPV-route checks."
-      - "2026-07-11: Added sub-BPV x actant-action score checks and fixed output section numbering."
-      - "2026-05-26: Added BPM Exchange capability metadata."
+    version: "v0.2"
+  changelog:
+    - "2026-09-28: Added version-bound nested-skill execution trace and explicit annotation-scope resolution for client deck revisions."
+    - "2026-07-13: Added annotation regression ledger, semantic underfill, semantic-role substitution, terminology precision and target-PDF-renderer receipts."
+    - "2026-07-11: Added SI/slide-intent bridge between actant-action and BPV-route checks."
+    - "2026-07-11: Added Estuarine-first order and code+name readability requirement for BPV-route checks."
+    - "2026-07-11: Added sub-BPV x actant-action score checks and fixed output section numbering."
+    - "2026-05-26: Added BPM Exchange capability metadata."
 ---
 
 # Presentation QA
@@ -52,6 +53,8 @@ For Paper Planes decks assembled through Rail/BPA, `client-ready` additionally r
 - no use of `consulting-slides-creator` as the final production generator.
 
 If any item is missing, return `PP_production_QA_incomplete`; do not substitute this skill's general verdict for the missing specialist critic or visual-likeness gate.
+
+When QA concerns an editable HTML proposal, PDF proposal deck, raster slide rebuild, or reviewer annotations against a reconstructed commercial template, optionally invoke the derivative subskill `html-proposal-template-editor` from `~/.codex/derivative-subskills/html-proposal-template-editor/` as a technical QA aid. Use it only to inspect block maps, live text, assets, print behavior, render regression, crop/focal rules and template reconstruction. This QA skill still owns source fidelity, storyline, claim calibration, client readiness and DLP verdicts.
 
 The canonical palette is white `#FFFFFF`, ink `#181D27`, coral `#FF5850`, with governed soft status colors from the installed visual-style guide. Treat legacy Elevel/PAPER `#EFEBE7` without an explicit approved project override as `pp_palette_legacy_drift`.
 
@@ -154,6 +157,16 @@ Before doing substantive QA, identify what is actually present.
 - If internal-only terms list is missing, use the default client-language red flags and mark the list as `нет в пакете`.
 
 ## Operating Mode
+
+### Сквозная область правок Ильи по умолчанию
+
+Прямое решение Ильи 27.09.2026: каждую правку к слайду или фрагменту трактовать как сквозную для всей текущей презентации, если Илья явно не ограничил её область. Найти все аналогичные случаи в заголовках, проблемах, причинных связках, инструментах, сводных и подробных слайдах, выводах и исходнике. Применять смысл правки с учётом контекста и доказательности, а не только менять выбранный пример. В режиме QA выдавать сквозные замечания; при разрешённой редактуре исправлять все затронутые места и проверять согласованность. Сквозная область не расширяет полномочия QA на редактирование без запроса. В отчёте различать обновлённый содержательный исходник и фактическую пересборку PDF/PPTX.
+
+Разрешение области трактуй буквально: явное `на всех последующих слайдах такого рода` означает именно последующие слайды того же типа; `сквозь всю презентацию` означает весь deck; комментарий к одному объекту без расширения запускает sweep по умолчанию, но исправляются только реальные аналоги, а не все похожие слова. Явное исключение пользователя имеет приоритет над дефолтным sweep. В regression ledger фиксируй `declared_scope`, `searched_scope`, `changed_locators`, `excluded_similar_items` и причину исключения.
+
+### Трассировка вложенных скиллов
+
+Если QA вызван как дочерний скилл, используй и возвращай `parent_run_id`, `child_skill=presentation-qa`, `child_skill_version`, входную версию деки, полученные квитанции дочерних критиков/редактора, собственный вердикт и следующего потребителя. Внутренние стадии записывай в уже существующем QA receipt: `child_skill | trigger/scope | input version | output/report locator | verdict/status | consumed_by`. Статус `пройден` требует физического отчёта, привязанного к той же версии, что проверяется; незапущенные или устаревшие дочерние проверки получают `пропущен-вне-триггера` / `нужен-повтор`, а не отметку о прохождении.
 
 Work as a QA judge.
 
@@ -726,8 +739,10 @@ Return:
 
 For annotated revisions, also maintain a regression ledger:
 
-| Annotation | Exact accepted replacement | Production-MD changed | Rejected form swept globally | Same error class checked | Affected pages rerendered | Final artifact reopened |
-|---|---|---|---|---|---|---|
+| Annotation | Declared scope | Exact accepted replacement | Production-MD changed | Sweep locators / exclusions | Same error class checked | Affected pages rerendered | Final artifact reopened |
+|---|---|---|---|---|---|---|---|
+
+Alongside this ledger, require the `subskill_run_trace` from the parent. Do not treat proposed child calls as executed; every invoked editor, critic, exporter or PDF verifier must return a version-bound receipt.
 
 A local patch to HTML/PDF without the production-MD change does not qualify as `fixed`. Any user annotation invalidates prior text, render and export receipts for the affected artifact until this ledger is complete.
 
@@ -747,6 +762,8 @@ Do not evaluate later versions in isolation when prior QA exists.
 ### 11. Regression Checklist
 
 Check whether previously found errors returned.
+
+For nested presentation runs, verify that each claimed child-skill run has a version-bound input, output/report locator, status and next consumer. A proposal to call `text-deai-editor` / a PP critic / `pdf` is not evidence that it ran. Verify the declared comment scope against searched and changed locators, and block release if a visually corrected PDF still yields superseded text on extraction.
 
 Default checklist:
 

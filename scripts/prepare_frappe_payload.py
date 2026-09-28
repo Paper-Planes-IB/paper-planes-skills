@@ -15,6 +15,10 @@ def page_content(item: dict) -> str:
     skill_md = ROOT / "skills" / item["skill"] / "SKILL.md"
     raw = skill_md.read_text(encoding="utf-8", errors="replace")
     raw = re.sub(r"\A---\s*\n.*?\n---\s*\n", "", raw, flags=re.S)
+    replacements = ROOT / "registry" / "wiki_link_replacements.json"
+    if replacements.exists():
+        for source, target in json.loads(replacements.read_text(encoding="utf-8")).items():
+            raw = raw.replace(source, target)
     status = "Архивный" if item.get("lifecycle") == "legacy" else "Актуальный"
     return f"""# {item['skill']}
 

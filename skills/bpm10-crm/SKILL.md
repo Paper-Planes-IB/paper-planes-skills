@@ -1,7 +1,7 @@
 ---
 name: bpm10-crm
 description: Analyze, design, document, and validate B2B CRM architecture using the Paper Planes BPM10 methodology. Use when Codex needs to audit an existing CRM, turn interviews and sales processes into a target CRM model, define entities and Bitrix24 mappings, design Reach/React/Refresh/Re-Engage funnels, prepare CRM cards and functional requirements, separate CRM from ERP/BI/service systems, build a CRM governance model, or prepare a client/integrator handoff package and Miro scheme.
-version: 0.1.2
+version: 0.1.5
 line: BPM-10 / CRM analysis / target CRM architecture
 source: Dior handoff package, hardened for Codex/Vault DLP and writeback rules
 supports_bpm:
@@ -38,6 +38,9 @@ return_contract:
     - "2026-08-03: Installed from Dior handoff package with BPM routing metadata."
     - "2026-08-15: Added explicit BPM Exchange preflight_required and return_contract metadata."
     - "2026-09-15: Added CRM implementation package QA routing, BPV route map, data-quality gate, and pilot acceptance gate from OrtoLight package."
+    - "2026-09-16: Added funnel multiplication guard: keep adjacent topics as fields/flags unless a separate lifecycle, owner, control point, or analytics loop is source-backed."
+    - "2026-09-16: Added visual architecture scheme guard: numbered arrows and dotted proposals require a relation ledger before they count as integration specification."
+    - "2026-09-16: Added повод / активность развития as a first-class CRM object for Refresh, Re-Engage, account management, and sales-support banks."
 changelog:
   - date: 2026-08-03
     changes:
@@ -49,6 +52,11 @@ changelog:
     changes:
       - Added routing to CRM implementation package QA for multi-file CRM specs.
       - Added BPV route map, data-quality gate, and pilot acceptance gate as CRM handoff outputs.
+  - date: 2026-09-16
+    changes:
+      - Added rule from Mясной Гурман CRM defense: do not create a separate CRM funnel for every adjacent topic; first prove a distinct managed lifecycle, owner, control point, or analytics loop. Otherwise route the topic as a Russian-labeled field, flag, checklist section, or dashboard dimension inside the primary process.
+      - Added rule from Mясной Гурман sales-system architecture v2: a visual scheme with numbered links, arrows and dotted proposals is a discussion / alignment artifact until it has a relation ledger and owner decisions for each material connection.
+      - Added cross-project derivative from Ракада Мед / Мясной Гурман / Indit: инфоповоды, активности и банк прогрессов are one methodological family. CRM design must decide whether they are fields, dictionaries, smart-process cards, or linked materials; they cannot remain free-text manager tasks.
 ---
 
 # BPM10 CRM
@@ -92,6 +100,9 @@ Default mode is `review / design / handoff preview`, not `durable writeback`.
 5. Keep CRM lean. Create a field only when it supports filtering, routing, stage control, automation, reporting, responsibility, or management review.
 6. Keep long narratives, process maps, PowerMaps, technical inventories, and qualitative interview notes in linked files, boards, or attachments.
 7. Treat a funnel as justified only when the lifecycle, owner, result, control points, or analytics differ.
+7a. When a meeting proposes adjacent funnels such as tenders, training, visits, claims, promo, or partner support, first decide which process is the evidence-bearing primary lifecycle. Keep adjacent topics as fields, flags, checklist sections, dictionaries, or dashboard dimensions when they do not have a separate owner, stage logic, management review, or decision loop. Mark a separate funnel as `резерв / требуется проверка владельца и жизненного цикла` until the source proves the distinct lifecycle.
+7b. Treat visual CRM / sales-system schemes as alignment artifacts until their material arrows are converted into a relation ledger: `номер связи -> источник -> приемник -> объект -> ключ сопоставления -> система-владелец -> частота -> ошибка / повтор -> владелец качества -> критерий приемки`. Dotted lines, proposals, screenshots, and role journeys do not prove integration readiness by themselves.
+7c. Model `повод / активность развития` explicitly in Refresh, Re-Engage and account-management CRM. Historical aliases include `инфоповод` in Ракада Мед and `активность / банк прогрессов и акций` in Мясной Гурман. This object is not just a reminder or a free-text task: it must carry source, target client/account/point, reason to act, material or argument, expected client progress, owner, deadline, evidence of execution, result metric, and stop / repeat rule. Decide whether it is a dictionary row, checklist item, smart-process card, linked material, or dashboard dimension.
 8. Require rejected/lost states with reasons and an explicit return, pause, or closure rule.
 9. Treat Bitrix24 as the target implementation only when the task or sources confirm it. Keep the conceptual model platform-neutral first.
 10. Do not write to production CRM, Miro, or other external systems without explicit confirmation of target, operation, and check/rollback plan.
@@ -198,6 +209,7 @@ For each lifecycle define:
 - entity;
 - owner;
 - entry signal;
+- reason / activity object: `повод`, `активность`, `инфоповод`, `прогресс`, `акция`, `материал`, or `next best action`;
 - stages and stage outcomes;
 - mandatory evidence and fields by stage;
 - success, rejection, pause, and return routes;
@@ -313,6 +325,9 @@ When naming deliverables, statuses, and field purposes for the user:
 
 - Starting with Bitrix24 fields before defining the managed object.
 - Creating a funnel for every product, department, or technical substep.
+- Creating a separate funnel for an adjacent topic when the source only proves a flag, checklist section, dictionary, or analytics dimension inside the primary managed process.
+- Treating a visual architecture map as an integration specification before the numbered links, data owners, keys, failure handling, permissions, and pilot acceptance criteria are written down.
+- Leaving `инфоповоды`, promotions, product arguments, client-development actions, or account-management reasons as free text without owner, target account, material, expected progress, execution evidence, and result metric.
 - Mixing client status with deal stage.
 - Duplicating ERP transactions or project delivery in CRM.
 - Treating every meeting note or checklist as a CRM field.

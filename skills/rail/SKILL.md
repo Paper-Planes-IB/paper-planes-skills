@@ -14,7 +14,7 @@ description: >-
   fix-rules / rail drift-audit family; use fix-rules instead for local
   chat-rule-drift.
 metadata:
-  version: "0.3.42"
+  version: "0.3.51"
   status: active
   line: project-rail-drift / 4ka delivery governance
   owner: Ilya
@@ -28,6 +28,15 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-29: Added fork/recovery context quarantine and bounded retrieval discipline: Rail may use only a compact recovery manifest plus physical project sources, must not inherit raw chat/tool-output as evidence, and must narrow broad searches before reading the corpus."
+      - "2026-08-29: Added the first BPM-scope hypothesis step after contract / primary owner entry: after the договор / application / initial owner-source is studied, Rail must create a preliminary BPM scope hypothesis before taking more sources, then refine it through key BPM-2 organizational owner/interview evidence; an owner meeting may be registered as BPM-2 when it exposes organizational mechanism, decision gaps, roles, processes, and internal constraints."
+      - "2026-08-29: Split PRE administrative bootstrap from INIT verification in 0.3.49: nano-step 4 always creates the PRE card, minimal admin README, factual chat map, artifact register and external-container attribution; BPP.01/BPP.05.INIT enrich and accept the same files without duplicate creation."
+      - "2026-08-29: Made nano-step 4 an independent chronological-materialization authorization in 0.3.48: regardless of step-3 contract status, reconstruct reached BPP operations and create/update the full due canonical artifact set with manifest and readback, while excluding future operations and false readiness."
+      - "2026-08-29: Added canonical SI attribution and three-day registration SLA in 0.3.47: real and simulated project SI must first reconcile against the current slide-intent catalog; unmatched ideas are registered as project-SI candidates with nearest canonical analogs and peer-review gaps, while the existing daily BPM-SI automation performs a full candidate-registry reconciliation at least every three calendar days without auto-canonization."
+      - "2026-08-29: Replaced hardcoded Rail/Admin version expectations in 0.3.46 with latest-available-in-Harness resolution: compare catalog and local installed copies, choose the newest active physical copy, and treat the number as audit trace rather than an execution gate."
+      - "2026-08-29: Added the first post-contract materialization checkpoint in 0.3.45: nano-step 4 must create reached BPP.01.PRE evidence, while the root project card is created in that pass only when a physical start event proves BPP.01.INIT entry."
+      - "2026-08-29: Added canonical BPV-registry attribution gate in 0.3.44: every real, training, dry-run, or simulated BPV route must resolve an exact current code + name from the canonical BPV/sub-BPV registry; fabricated BPV-SIM/free-form codes are forbidden, and unresolved mappings stop at initiative with route_ambiguous / registry attribution required."
+      - "2026-08-29: Added the stage-bound PRE/INIT materialization contract: the approved nano-step 3 activates creation authority after delivery classification; later nano-steps consume it and create PRE/INIT artifacts only when the corresponding BPP operation is reached, preventing both no-file loops and premature INIT scaffolding."
       - "2026-08-28: Added K1-to-K3 depth boundary in 0.3.42: BPM/K1 output is sufficient when it gives source-backed linear BPM slides, slide-intents, evidence rights, and BPM-addressed source debt; synthetic re-interpretation, controlled-wave comparison, OSINT refresh before client render, RDB finalization, and client-ready proof orchestration belong to K3 in BPA.04-BPA.05/BPA.08 unless explicitly assigned earlier by owner."
       - "2026-08-28: Added BPM-addressed technical-debt routing in 0.3.41: checks like CRM win/loss, tenders, КП, SLA, tickets, installed base, contract terms, and controlled mystery are not left as generic storyline/RDB notes; they become technical-debt backlog rows in the responsible BPM with evidence, owner contour, return route, and strengthen/weaken criteria."
       - "2026-08-28: Added RDB assembly placement in 0.3.40: mining collects RDB ingredients only; synthetic RDB is formed in BPA.04-BPA.05 after BPM-SI / Storyline-Storyboard and an accepted client Answer, then checked as proof / quality gate before deliverable materialization."
@@ -171,11 +180,17 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 - If Ilya invokes Rail from an auxiliary/service chat, do not inspect there. Identify the current chat role from the chat map and say the request must be moved or escalated to `Штаб проекта` or `Внутренний PP / проектная сборка`.
 - Do not inspect the whole Vault, all departments, or all runtime automations unless Ilya explicitly expands scope.
 - Do not create new files unless Ilya explicitly asks for file output or a new artifact. Exception: Ilya has officially granted standing permission for Old Delivery Rail/BPM evidence document-set creation in an existing project folder; this includes `Реестр BPM-источников.md`, `BPM scope ledger`, `Карта проблем.md` / `Карта проблем и Cynefin.md` only when Cynefin is explicitly enabled, `Карта актантов.md` only when Cynefin is explicitly enabled, `Evidence trace — source-to-node matrix.md`, `BPM Storyline-Storyboard — гипотезы, слайды и дефициты знания.md`, `BPV route map.md`, `Interview roster / interview prep tracker.md`, and `Interview briefs.md` / equivalent.
+- In the approved beginner training route, the direct creation permission is established at the end of nano-step 3, after the project root and delivery class are confirmed and before PRE begins. The step-3 output must record `контракт материализации PRE/INIT: активирован`, the resolved project root, common BPP set, delivery-specific set and limits. Nano-steps 4–10 consume that contract; they must not ask for the same permission again or independently broaden it.
+- Do not hardcode an expected Rail/Admin version in beginner prompts. Inspect the current Harness catalog and local installed skill paths, select the newest active physical copy already available in that Harness, and record version/source only as audit trace. Do not browse for a newer release, and do not let a previously loaded conversational copy override a newer installed copy. If the selected latest-available skill lacks a required rule, report `дефицит правила в последней доступной версии скилла`; do not call it a mismatch against a fixed version.
+- PRE bootstrap and INIT verification are different maturity states of the same administrative files. Nano-step 4 always creates, in the resolved project root, `00-Карточка проекта.md` with stage `PRE`, minimal `Админ-шкала/README.md`, factual `Админ-шкала/Карта-чатов.md`, `Админ-шкала/Реестр-артефактов.md`, and Drive/ClickUp/current-headquarters-chat attribution. This does not claim INIT entry. BPP.01.INIT verifies/enriches the same card; BPP.05.INIT verifies/expands/accepts the same admin contour. Never defer first chat-map creation to BPP.05.INIT and never create a parallel INIT copy. `Реестр-BPM.md` develops at BPP.02.INIT; StageGate at BPP.03.INIT; storage normalization at BPP.10.INIT.
+- Nano-step 4 is an independent direct authorization for chronological materialization in the resolved project root; its execution does not depend on the step-3 contract status. Reconstruct the actual BPP chronology from dated physical evidence, produce the full manifest `operation -> artifact -> path -> create/update -> evidence`, and create/update every canonical PRE/INIT artifact whose operation is already reached, including applicable Old Delivery evidence artifacts at their reached operations. Read back every write. Do not create future-operation artifacts, a duplicate scope file, an internal task tracker, or false substantive content/readiness. Only unresolved project root, unavailable write access, or technical write failure may stop the writeback.
+- A later explicit `только в чате / без файлов / симуляция без записи / не создавать документы` revokes the step-3 materialization contract. Other valid blockers are an unresolved/ambiguous project root, unavailable write access or technical write failure. In those cases return the exact blocked manifest `BPP operation -> path -> intended create/update -> evidence` and one unblock request; do not loop on a generic artifact-gap report.
 - For every New Delivery project, check the administrative foundation before declaring `new_delivery_logic_required`: one common project passport/project card, an explicit project charter, and all nine administrative-scale components `Цель / Замысел / Политика / Планы / Программы / Задачи / ЦКП / Идеальная картина / Статистики`. The canonical method owner is the `admin` skill; use its `gate-check + conditional normalize` logic rather than treating the administrative scale as a passive source.
 - If Ilya explicitly authorizes creation, normalization, or writeback of the project passport / charter / administrative scale in the current request, consume that permission in the same pass: update the existing canonical passport first, or create one canonical root passport only when none exists. Do not stop at `artifact-gap`, ask for the same permission again, or create parallel passport/scale files. A short Rail command without this explicit permission still does not authorize a new New Delivery file.
-- Do not edit project artifacts, rules, AGENTS files, BPM/BPP canon, or trackers until after an explicit accept of the repair plan.
+- Do not edit project artifacts, rules, AGENTS files, BPM/BPP canon, or trackers until after an explicit accept of the repair plan. For the canonical PRE/INIT set covered by an active step-3 materialization contract, that contract is the prior explicit acceptance: the later manifest is a safety control, not a new approval gate. This exception does not cover rules, AGENTS, BPM/BPP canon, ClickUp, external systems, or artifacts outside the named contract.
 - Do not answer from memory when checking methodology. Read the current 4ka BPM/BPP sources and the project's current artifacts.
 - Before selecting, designing or interpreting any BPM, keep four layers separate: `цель и решение владельца`, `фактическая онтология`, `границы доказательств источников`, `дизайн исследования`. The mandatory trace is `цель владельца -> решение -> дефицит знания -> требуемое доказательство -> BPM -> дизайн -> допустимый вывод -> обновление решения`. A BPM method, questionnaire item, city, segment, future expansion or source mention is never sufficient on its own to define the main field. If the owner goal or decision is absent, allow only exploratory work and do not finalize quotas, field geography, sample or instrument. BPM-2 may provide early organizational ontology, but it never silently becomes the source of the owner's telos.
+- After the contract / application / primary owner entry has been studied, do not immediately keep ingesting every available source. First create a preliminary `BPM scope hypothesis`: which BPMs are likely needed, what owner decision or knowledge deficit each BPM serves, what evidence would include / defer / exclude it, and which first key BPM-2 sources must refine it. This step belongs before broad source intake, data request expansion, interview queue expansion, and SCQA hardening. Treat a founder / CEO / owner meeting as a possible key `BPM-2` source when it reveals organizational mechanism, roles, process ownership, constraints, decision gates, internal contradictions, or management model questions; label it `BPM-2 / owner interview` or equivalent rather than a generic meeting. It still remains source-limited: it can refine the BPM hypothesis, but it cannot finalize the BPM scope or problem map without the required evidence and owner decisions.
 - Do not require subpassports for main chats. `Штаб проекта` and `Внутренний PP / проектная сборка` are governed by the chat map and штаб handoff rules; separate subpassport files are required only for track/service working contours.
 - Do not demand C2/C4 accept inside chats. Acceptants, StageGate, task trackers, and other BPP artifacts are standard process requirements to check and report as artifact gaps, but Rail must not treat their absence as a chat-local blocker or try to obtain process accept in a service chat.
 - Treat agent reports, old chat summaries, and compressed handoffs as snapshots. Before final output, reconcile them with current project files.
@@ -351,7 +366,7 @@ For every created or updated document, include the project contour and path / li
 
 Do not write `writeback not performed` merely because the pass is called a dry-run. If writeback did not happen, the status must name the explicit reason.
 
-Before the first substantive Old Delivery Rail/BPM pass, and whenever scope is absent or stale, create or update a BPM scope ledger. Rail must not silently decide which BPM will or will not happen.
+Before the first substantive Old Delivery Rail/BPM pass, and whenever scope is absent or stale, create or update a BPM scope ledger. Rail must not silently decide which BPM will or will not happen. In the beginner / project-start route, this ledger starts as a `BPM scope hypothesis` immediately after the договор / application / primary owner-source has been studied, then is refined through key BPM-2 evidence before Rail expands into broad source intake.
 
 Minimum BPM scope ledger:
 
@@ -2083,6 +2098,69 @@ overall decision:
 ```
 
 Rail must block or downgrade assembly readiness when any mandatory subagent returns a critical issue that affects evidence rights, method validity, client decision clarity, or execution feasibility.
+
+### Canonical SI Attribution and Registration Gate 0.3.47
+
+Before Rail emits, stores, demonstrates, or reuses an SI, it must reconcile the proposed thought with the current canonical catalog:
+
+`Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPA — Ассемблинг/_Мастер-каталог-slide-intents.md`
+
+This applies to real projects, internal exercises, training examples, dry-runs, synthetic evidence and simulations.
+
+Mandatory behavior:
+
+- when there is an exact canonical match, use its exact `SI code + name` and record catalog version, thematic block, archetype applicability and canon status;
+- never invent a code or title and present it as canonical SI;
+- a local or simulated ID such as `SI-SIM-*` is allowed only as an explicit `project SI / simulation-only`, never as canonical identity;
+- when the project thought combines several canonical SI, retain one project-SI formulation and show each nearest canonical SI with its separate role; never fabricate a compound canonical code;
+- when no exact match exists, emit `потенциальный SI просится / в каноническом реестре не зарегистрирован`, with source trace, closest canonical analogs, difference, evidence gap, repeatability signal and required peer reviewers;
+- registration means landing the candidate in the existing `Матрица BPM — SI` proposal / Peer Review Queue or recording an explicit dated no-op; it does not mean canonization;
+- canonization requires peer review and an explicit human decision.
+
+The existing automation `cord-bpm-si-storyboard-candidates-daily` must scan daily and perform a full pending-candidate-to-catalog reconciliation at least once every three calendar days. The registration SLA applies only to candidates backed by real evidence or explicitly routed by the owner. A simulation-only signal is classified and reported as `потенциальный SI просится / не зарегистрирован / simulation-only`, but it must not enter the durable real candidate queue until real evidence or an explicit owner promotion decision appears. The automation must deduplicate eligible candidates, update the existing queue or dated no-op, and record the last full SI-registration check. It must not create a parallel registry or auto-assign canonical SI codes.
+
+Minimum SI attribution receipt:
+
+| Project SI / claim | Catalog version | Exact canonical SI or candidate status | Thematic block | Archetype | Nearest analogs and difference | Source trace | Peer-review status | Registration status / date |
+|---|---|---|---|---|---|---|---|---|
+
+Failure labels:
+
+- `si_catalog_not_checked` — SI was produced without current catalog reconciliation;
+- `si_canonical_code_fabricated` — a project or simulated idea was presented as a made-up canonical SI;
+- `si_candidate_not_registered_within_sla` — a material unmatched candidate remained outside the existing queue for more than three calendar days;
+- `si_candidate_auto_canonized` — automation promoted a candidate without peer review and human decision;
+- `si_combination_hidden` — several canonical SI were collapsed into an unregistered compound identity.
+
+### Canonical BPV Registry Attribution Gate 0.3.44
+
+Before Rail displays, stores, scores, recommends, or reviews any BPV / sub-BPV route, it must read the current canonical registry:
+
+`Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPV — Внедрение/00-Канонический реестр BPV и суб-BPV.md`
+
+This gate applies equally to real projects, internal exercises, training examples, dry-runs, demonstrations, synthetic evidence and explicit simulations. Simulation rights may cover invented source, problem, SI, slide, decision and initiative IDs; they never authorize invented BPV codes, names, parents or ЦКП.
+
+Mandatory behavior:
+
+- resolve every route to an exact current `code + name` from the registry;
+- record registry version, BPV level, parent for a sub-BPV, and whether the route is primary or supporting;
+- if several registry routes fit, show one primary route and separate supporting routes with distinct mechanisms; do not fabricate a composite code;
+- if the exact route cannot be resolved, stop the chain at the initiative and write `BPV-route не атрибутирован / route_ambiguous / требуется сверка канонического реестра`;
+- never emit `BPV-SIM-*`, `условный BPV`, free-form BPV numbering, a plausible unregistered title, or a legacy code as a current route;
+- a route that is correctly attributed to the registry remains only `BPV-route proposal` until the required upstream decision and acceptance gates pass.
+
+Minimum attribution receipt:
+
+| Initiative / route | Registry version | Canonical code + name | Level / parent | Primary or supporting | Match basis | Attribution status | Remaining gate |
+|---|---|---|---|---|---|---|---|
+
+Failure labels:
+
+- `bpv_registry_not_checked` — BPV output was produced without reading the current registry;
+- `bpv_simulated_code_fabricated` — a demonstration or simulation invented a BPV code or name;
+- `bpv_registry_route_ambiguous` — several routes fit but the ambiguity was hidden;
+- `bpv_composite_code_fabricated` — several real mechanisms were collapsed into an unregistered compound code;
+- `bpv_legacy_code_promoted` — a legacy alias was emitted as the current canonical route.
 
 ### Universal BPV-QA routing
 

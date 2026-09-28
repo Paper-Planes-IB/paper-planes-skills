@@ -2,7 +2,7 @@
 name: admin
 description: Use when Ilya asks to run, design, test, apply, fix, normalize, or check the admin skill / Admin Rail QA / Admin Rail Controller for Paper Planes 4-ка projects, especially before PRE, INIT, PLAN, EXEC, weekly triage, post-meeting, portfolio checker, or next-gate decisions.
 metadata:
-  version: "0.1.1"
+  version: "0.1.8"
   status: active
   line: BPP / administrative rail / 4ka project control
   owner: Ilya
@@ -33,6 +33,12 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-29: Added the mandatory client-facing interview-slot coordination sheet standard for BPP.03.PRE–BPP.05.PRE: one row per physical interview, explicit PP offer/client response/final slot, Moscow timezone, separate agreement and completion states, and no internal BPM/problem/maturity fields in the client view."
+      - "2026-08-29: Split PRE administrative bootstrap from INIT verification: nano-step 4 always creates the PRE project card, minimal admin README, factual chat map, artifact register and external source-of-truth attribution; BPP.01/BPP.05.INIT enrich and accept those same files rather than creating them first."
+      - "2026-08-29: Made nano-step 4 an independent direct authorization for chronological materialization: create/update every canonical BPP artifact whose operation is physically reached, regardless of the step-3 contract status; do not create future-operation artifacts or fabricate readiness."
+      - "2026-08-29: Replaced hardcoded skill-version gates with latest-available-in-Harness resolution: inspect catalog and local installed copies, select the newest active physical copy, and use its version only as audit trace."
+      - "2026-08-29: Made nano-step 4 the first mandatory post-contract materialization checkpoint: create reached BPP.01.PRE evidence immediately, and create the root project card in the same pass only when physical evidence proves entry into BPP.01.INIT."
+      - "2026-08-29: Added the PRE/INIT materialization contract at the end of nano-step 3: after delivery classification and before PRE, the owner may activate stage-bound creation once; later steps consume it and create artifacts only when their BPP operation is reached."
       - "2026-08-28: Added the mandatory substantive-transformation journal between Programs and Tasks, with ClickUp attribution and hypothesis/task non-duplication guards."
       - "2026-08-04: Added BPM Exchange capability metadata so admin-scale/project-control routing can be audited without a metadata gap."
 ---
@@ -184,6 +190,32 @@ Default to `review` unless Ilya explicitly asks for `fix`, `writeback`, `normali
 
 If the user asks to "fix what can be created and corrected", interpret it as `gate-check + conditional normalize`: first assess next-gate readiness; then create or edit only the administrative artifacts that can be filled from existing evidence. Do not fill unknown facts with guesses.
 
+#### PRE/INIT stage-bound materialization contract
+
+For beginner-route skill loading, never require a hardcoded `admin` or `rail` version number. Inspect both the skills available in the current Harness catalog and the local installed paths, select the newest active physical copy already available in that Harness, and report its version/source only as audit trace. Do not browse for a newer release. When multiple copies exist, do not silently prefer the copy loaded earlier in conversation context. An absent required rule is `дефицит правила в последней доступной версии скилла`, not a mismatch against an expected version number.
+
+The approved Paper Planes training route establishes file-creation authority at the end of nano-step 3, after the project root, task class and delivery rail are resolved and before PRE operations begin. If the step-3 prompt explicitly activates `контракт материализации PRE/INIT`, treat it as direct stage-bound authorization in the resolved project folder. Nano-steps 4–10 consume this contract; they do not issue a new permission independently.
+
+Nano-step 4 is an independent direct authorization for chronological materialization inside the resolved project root. Do not use the step-3 contract status as a gate. Reconstruct the actual BPP chronology from dated physical events, resolve existing equivalents, show a full manifest, and create or update every canonical artifact whose PRE/INIT operation is already reached. This includes all applicable reached PRE controls and, as chronology proves them, the project card, BPM registry/scope ledger, StageGate, opening-session evidence, administrative scale/registers, Storyline, Storyboard, problem map, FullKit, storage normalization, industry/reuse trace, starting-corpus register, and applicable Old Delivery evidence set. Do not create artifacts of future operations or fabricate content/readiness; unknown fields remain `требует заполнения`. Read back every write. Real blockers are limited to unresolved project root, unavailable write access, or technical write failure.
+
+Read-only instructions in nano-steps 1–2 and in the pre-classification part of step 3 do not revoke the contract after it is activated. A later explicit `только в чате / без файлов / не создавать документы` does revoke it. Do not return `creation requires separate permission`, `nothing fixed because files are absent`, or an equivalent loop when the relevant BPP operation has been reached under an active contract.
+
+The contract does not authorize immediate bulk creation. Materialize the canonical administrative set in process order:
+
+- nano-step 4 always creates the minimal PRE administrative bootstrap once the project root is resolved: root `00-Карточка проекта.md` with stage `PRE`, `Админ-шкала/README.md` with status `PRE-bootstrap`, factual `Админ-шкала/Карта-чатов.md`, `Админ-шкала/Реестр-артефактов.md`, and attribution of Drive, ClickUp and the current headquarters Codex chat; this bootstrap is navigation, not a claim that BPP.01/BPP.05.INIT passed;
+- PRE creates its own control evidence when the operation is reached: respondent register, interview table, data request and setup-session evidence when applicable;
+- BPP.01.INIT verifies and enriches the existing PRE project card with the substantive INIT intent, governing question, hypotheses and gate; it must not create a second card;
+- BPP.02.INIT creates or updates `Админ-шкала/Реестр-BPM.md`;
+- BPP.03.INIT creates or updates the INIT StageGate artifact;
+- BPP.05.INIT verifies, expands and accepts the existing PRE `README`, chat map and artifact register as a working administrative system, adds the nine-component content and applicable registers, and must not create a parallel set;
+- BPP.10.INIT normalizes the project storage and source-of-truth links.
+
+Before creation, resolve the exact project root and existing equivalents, then show one manifest `path -> create/update -> evidence`. Continue immediately without asking for the same permission again. Populate confirmed facts; mark unknown fields `требует заполнения`; never fabricate owners, acceptance, dates, scope decisions or readiness. Re-read every created/updated file and report before/after gate status plus physical paths.
+
+A failed PRE gate or absent contractual start event blocks the transition into INIT, so INIT artifacts must not be created early. It does not block execution and materialization of the PRE operations that are already applicable. After INIT entry, unresolved owners, provisional BPM scope or incomplete FullKit block readiness claims but not the reached BPP operation's honest scaffold. Actual creation blockers are limited to an unresolved/ambiguous project root, inactive step-3 contract, unavailable write access, technical write failure, or a later explicit instruction `только в чате / без файлов / не создавать документы`. In that case return the exact blocked creation manifest and one unblock request; do not repeat a generic gap report.
+
+This permission never authorizes ClickUp mutation, physical chat creation, meeting scheduling, task creation, external messaging, or a local duplicate task tracker. A local chat map may describe proposed contours but must not claim that physical chats already exist.
+
 If the user asks for a "checker", "чекер", "портфельный проход", "пройти все проекты", or similar, use `checker` mode, not cron. A checker is manually invoked and produces a report; it does not schedule itself.
 
 ### 1. Identify Scope
@@ -218,13 +250,21 @@ For every gate-oriented request, produce a clear readiness decision before any w
 | Gate | Admin readiness checks |
 |---|---|
 | `PRE->INIT` | Base documents, first owner, starting storage, respondent/interview setup, data request, start session. |
-| `INIT->PLAN` | Project card, admin scale, BPM scope/registry, storage, chat map, tracker, starting corpus, key blockers and owner routes. |
+| `INIT->PLAN` | `FullKit INIT`: project card, admin scale, BPM scope/registry, storage, chat map, ClickUp-контейнер и структура задач, starting corpus, key blockers and owner routes. |
 | `PLAN->EXEC` | Accepted scope, delivery rhythm, interview/data schedules, artifact register, owner map, blocker log, next observable steps. |
 | `weekly triage` | Project is eligible for the weekly схватка; buffer color/urgency, FullKit/admin readiness, blockers, enablers for 7 days, owner capacity, segment quota, and next weekly deliverable are visible. |
 | `weekly review` | Current statuses, plan/fact, overdue items, blockers, decisions needed, updated artifacts and logs. |
 | `daily execution` | The daily task is inside an already selected weekly triage / схватка, has owner, output, blocker/enabler, and does not silently introduce a new project priority. |
 | `post-meeting` | Decisions, tasks, owners, deadlines, changed artifacts, client/PP follow-up routes. |
 | `BPV/BND monthly gate` | Monthly result, client owner/candidate, PP role, rhythm, evidence of change, transfer/de-escalation signal. |
+
+FullKit terminology:
+
+- Never use bare `FullKit` in a readiness verdict when the object is not evident. Name either `FullKit INIT` or `FullKit конкретной задачи`.
+- `FullKit INIT` is the eight-component initiation package sufficient for the `INIT->PLAN` transition.
+- `FullKit конкретной задачи` is the complete task-specific package: required result; owner and acceptor; inputs and source rights; instructions, method and constraints; resources and dependencies; operations; acceptance criteria; output, storage and handoff.
+- Do not force the eight initiation components onto a task-level FullKit. Its exact composition follows the task contract, relevant skill or business process.
+- If the object cannot be inferred safely from project context, ask one short clarification before issuing the FullKit verdict.
 
 BPM/action-plan scope rule:
 
@@ -265,7 +305,7 @@ Core rules:
 - weekly triage must respect segment/quota logic when the source system provides segments;
 - buffer status is an urgency signal: red projects require immediate attention, yellow require cause/action, green continue controlled monitoring;
 - daily task selection must be traceable to a weekly selected project or an explicit emergency/override;
-- FullKit/admin readiness affects whether a project is ready for productive work or only for admin normalization;
+- FullKit readiness for the named object (`FullKit INIT` or `FullKit конкретной задачи`) affects whether a project is ready for productive work or only for admin normalization;
 - enabler for 7 days and blocker #1 must be visible for every selected project;
 - do not recommend adding a project to the week if the next observable output is unclear.
 
@@ -426,6 +466,40 @@ For PRE or Day 1 INIT, check only the operational evidence:
 - calendar events are ready or pending with owner;
 - data request is prepared/sent;
 - setup session/start call is either planned or explicitly not needed.
+
+### 3B. Client Interview-Slot Coordination Sheet
+
+When `BPP.03.PRE` creates the interview table or `BPP.04.PRE` starts slot coordination, use one client-facing shared spreadsheet as the operational handoff. Do not substitute a prose message, internal roster, calendar screenshot, local temporary copy, or analytical evidence table for this sheet.
+
+Minimum client-facing schema:
+
+| Field | Rule |
+|---|---|
+| `ФИО сотрудника клиента` | one physical respondent or one explicitly defined group per row; if unknown, use `заполняет клиент` rather than inventing a person |
+| `Должность / роль` | role from the confirmed org structure or `требует подтверждения клиента` |
+| `Филиал / функция` | required when the project uses a branch, regional, segment or functional sample |
+| `Формат` | individual, joint, small group, data demonstration or technical session |
+| `Длительность` | normally 45–60 minutes; a longer format requires an explicit reason |
+| `Интервьюер Paper Planes` | active employee verified against the current employee roster; internal maturity, reviewer logic and backup rationale stay outside the client sheet |
+| `Варианты слотов от Paper Planes, время Москва` | one or more actual available windows; proposals do not reserve time |
+| `Удобное время клиента, время Москва` | client may choose a proposed window or enter an alternative |
+| `Итоговый слот, время Москва` | filled only after explicit agreement |
+| `Ссылка на звонок` | added after slot agreement and calendar creation |
+| `Статус согласования` | Russian finite status such as `требуется ФИО`, `ожидает слоты Paper Planes`, `предложено клиенту`, `клиент предложил время`, `согласовано`, `перенос`, `отменено` |
+| `Проведено` | separate boolean/status from agreement; never infer completion from an agreed slot |
+| `Почта` / `Телефон` | client contact fields when needed for invitations and coordination |
+| `Комментарий клиента` | bounded field for constraints or alternatives, not for internal analytical notes |
+
+Operating rules:
+
+- one physical interview or group session is one row; do not duplicate the same event by source, recording system or attendee;
+- distinguish `PP proposed time -> client convenient time -> final agreed slot`; do not collapse these into one ambiguous date field;
+- state the timezone in each slot-column header and use Moscow time unless the project explicitly adopts another timezone;
+- keep `Статус согласования` and `Проведено` separate;
+- do not expose BPM codes, problem nodes, hypotheses, respondent diagnostic purpose, employee grade/maturity, reviewer/backup logic, internal evidence gaps or other Paper Planes control fields in the client-facing view;
+- the internal respondent/interview register may retain diagnostic purpose, BPM/source trace and coverage, but it must link to the client sheet instead of becoming a competing schedule;
+- only agreed rows may proceed to `BPP.05.PRE` calendar events; a proposed slot is not a reservation;
+- after the sheet is created or materially updated, register its physical Google Sheets URL in the project artifact register and interview register, then read back the destination.
 
 ### 3A. Check The Canonical Project Card
 

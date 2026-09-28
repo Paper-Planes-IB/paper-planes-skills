@@ -2,9 +2,9 @@
 name: bpv-01-npd-lifecycle-os
 description: "Use when running BPV-01 Продуктовая фабрика and NPD implementation work: product Tunnel, NPD Lifecycle OS, SEVA / SKU portfolio review, product committee preparation, hypothesis cards, gate evidence, PLM / digital thread checks, RAG evidence memory, post-launch review, or product-governance BPV handoff."
 metadata:
-  version: "0.1.6"
+  version: "0.1.12"
   status: experimental
-  updated: 2026-07-28
+  updated: 2026-08-30
   owner: Ilya
   line: BPV-01 Продуктовая фабрика / NPD / product tunnel
   created: 2026-06-11
@@ -28,6 +28,13 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-09-03: Для ВАСТЭКО закреплён пакет ранней целостности G1: рынок и рост, связь B2C-B2B, конкуренты, примеры, предварительные регулирование, производство и экономика, внутренние данные и концепция продаж должны быть видимы до выбора конфигурации; G3-G5 подтверждают эти оценки, а не впервые открывают вопросы."
+      - "2026-09-01: Уточнен basket-first NPD gate: продуктовая гипотеза сначала обогащается уже собранными BPM-данными, а новые меж-BPM evidence requests создаются только на реальные дефициты; результат возвращается обратно в BPM-4, BPM-1A, BPM-3 и BPM-10/11."
+      - "2026-09-01: Добавлен basket-first NPD gate: новинка должна доказывать, какую покупательскую корзину / повод / повторность / чек / маржу она усиливает; дегустационная симпатия не заменяет BPM-4/BPM-1A/BPM-3/BPM-10 evidence."
+      - "2026-08-31: Добавлена post-launch модель успешности новинки: четыре разные контрольные точки, паспорт метрики, зоны green / amber / red, абсолютные стоп-условия и многовариантный decision algorithm."
+      - "2026-08-31: Канонизирована процедура вывода SKU: текущая карточка и код -> роль / SEVA -> альтернативы -> остатки и горизонт -> план формализации -> решение -> контроль; критические риски не ждут ежемесячного комитета."
+      - "2026-08-30: Зафиксирован производственный маршрут NPD: четыре класса входного сигнала, целевой маршрут, допуск к уточнению технологии и рецептуры, разделение предварительной и подтверждённой экономики, manufacturability и SEVA; тройной скоринг ограничен специальным режимом машины нулевых гипотез."
+      - "2026-08-30: Канонизирована терминология целевого маршрута продуктовой гипотезы; термин `продуктовая ячейка` запрещён как название этапа или самостоятельной сущности."
       - "2026-07-28: Методика разделения обязана завершаться картой потенциальных ветвлений по каждому кандидату действующего реестра с проверкой полного покрытия; общих критериев и отдельных примеров недостаточно."
       - "2026-07-28: Разделение компонентных гипотез больше не является бинарным; допустимы самостоятельный маршрут, технологический профиль, вариант внутри профиля и недостаточность данных. Вывод NotebookLM требует проверки по физическому источнику."
       - "2026-07-28: Визуализация квадранта должна сохранять полную прослеживаемость кандидатов: каждый маршрут подписывается напрямую или через однозначную нумерованную расшифровку; совпадающие точки разводятся визуально без изменения расчетной координаты."
@@ -97,22 +104,33 @@ Adjacent sources:
 - canonical `BPV-12 Управление синхронизацией` entry when NPD affects production mix, gross profit, capacity, pricing, or raw materials;
 - canonical `BPV-14 Корпоративное обучение и развитие способностей` entry when the product loop creates a training product.
 
+## Canonical Terminology
+
+- Use `Определение целевого маршрута продуктовой гипотезы` for the stage that narrows a hypothesis to a concrete product-market route.
+- A target route states the product/category, buyer or segment, buyer job or consumption scenario, format, geography, channel, and price corridor. Link a preliminary production route when relevant, but keep capacity, raw material, changeover, and displacement checks inside the manufacturability gate.
+- Use `рыночная ячейка` only for the bounded market description: segment, application, format, channel, geography, and client type. It is a component of the target route, not a synonym for the full route.
+- Do not introduce `продуктовая ячейка` as an NPD stage, management entity, status, or canonical term. If it occurs in a physical source, preserve it as a source quote and normalize derived materials to the canonical terminology.
+- Prefer established process terms over source-specific neologisms. A new management term becomes canonical only after an explicit owner decision or an update to the governing methodology.
+
 ## Workflow
 
 1. **Preflight.** Identify whether the work is product Tunnel, NPD gate, SEVA portfolio review, product committee prep, PLM/data pass, RAG evidence pass, post-launch review, or BPV handoff.
-2. **Signal map.** Name the product signal: customer, market, R&D, supplier, production, free capacity, defect, sales, margin, SKU creep, technology, ingredient, owner push, or strategic option. For FMCG / retail / production cases, explicitly distinguish market pull from production-capacity push.
-3. **Automated pre-gate 0.** If the project has an automated signal intake, treat it as a source-ingestion, memory, scoring, and queue layer. Its output is a machine proposal, not a canonical hypothesis or committee decision. Require human source-check, route confirmation, applicability map, two separate economics views, restrictions, and next test before the card becomes ready for G0. Never collapse evidence maturity, commercial-investment attractiveness, and route readiness into one score. Score them separately, choose the target geography, and split import / distribution, contract production, and own production into separate routes. An unknown financial corridor is a readiness gap, not zero commercial value.
+2. **Signal map.** For production/FMCG cases, begin with four canonical input classes: `рыночный запрос`, `клиентский запрос / СТМ`, `свободная производственная мощность`, `стратегическая инициатива собственника`. Other source details may be recorded inside these classes or as project-calibrated extensions. Every class is a legitimate signal, but none bypasses demand, route, manufacturability, economics, or committee decision.
+3. **Automated pre-gate 0 — optional Vasteko-specific mode.** Apply this paragraph only when the project explicitly uses the automated machine of zero hypotheses. Its output is a machine proposal, not a canonical hypothesis or committee decision. Require human source-check, route confirmation, applicability map, two separate economics views, restrictions, and next test before the card becomes ready for G0. Inside this special mode, do not collapse evidence maturity, commercial-investment attractiveness, and route readiness into one score. This three-layer scoring is not a universal NPD requirement and must not be imposed on ordinary product tunnels. Choose the target geography and split import / distribution, contract production, and own production into separate routes. An unknown financial corridor is a readiness gap, not zero commercial value.
    When a portfolio view is useful, plot evidence maturity on the horizontal axis and commercial-investment attractiveness on the vertical axis. Use project-approved thresholds to form four analytical queues. Do not encode route readiness into this quadrant: readiness remains a separate gate condition.
    В квадранте должна сохраняться полная прослеживаемость кандидатов. Каждый маршрут подписывается напрямую или через однозначную нумерованную расшифровку. Если несколько маршрутов имеют одинаковые баллы, их метки разводятся вокруг общего центра с явным указанием, что расчетная координата не меняется.
    Разделение компонентной гипотезы не сводится к ответу «разделить / не разделять». Допустимы четыре результата: самостоятельный маршрут, технологический профиль применения внутри материнской гипотезы, вариант внутри профиля и недостаточность данных. Различие поставщика, страны, марки или сырьевого источника не создает отдельный маршрут без изменения испытания, критерия успешности, покупателя, нормативного контура, экономики или решения. Вывод NotebookLM является аналитическим предложением до проверки по физическому источнику.
    Методика разделения считается примененной только после наложения на действующий реестр кандидатов. Для каждого кандидата должна быть видимая строка с потенциальными ветвями, текущим выводом и следующим доказательством; затем выполняется проверка полного покрытия реестра. Общие критерии и несколько показательных примеров не заменяют такую карту.
-4. **Hypothesis card.** Create or update the product hypothesis card with portfolio role, owner, current gate, evidence, economics, digital thread, and next decision.
+4. **Hypothesis card.** Create or update the product hypothesis card with assortment role, expected category growth, cannibalization risk, next-gate owner, evidence level, stop/review date, economics, digital thread, and next decision.
+   For retail / HoReCa / consumer packaged product contexts, apply the basket-first NPD gate. A new SKU is not ready for a product-committee decision only because it tastes good in degustation or receives positive qualitative feedback. The card must answer in Russian: `какую покупательскую корзину усиливает новинка`, `какой повод покупки она обслуживает`, `роль SKU в корзине`, `какой показатель меняется: частота / средний чек / глубина / маржа / повторность / переход в другой кластер`, `какой CRM / программа лояльности trigger может закрепить повтор`, `какой stop-rule снимет гипотезу`. The gate works as two-way BPM trace, not as a wishlist. First reuse and enrich from already collected BPM evidence: BPM-4 for basket, SKU co-occurrence, cheque, depth, frequency, RFM, point and format; BPM-1A for consumer occasion and language; BPM-3 / controlled mystery / observation for shelf, seller and choice experience; BPM-10/BPM-11 for trigger, client ID, measurement and BI/CRM constraints. Create a new inter-BPM evidence request only when the existing layer is absent or cannot answer the specific product decision. Return the NPD result back to the source BPMs as enrichment: tested product role, basket hypothesis, success metric, failed assumption, new consumer question, CRM trigger, data gap, or stop-rule. If those layers are absent, record them as explicit evidence gaps instead of treating degustation as proof of demand.
 5. **Platform hypothesis check.** If the signal is broader than one SKU or product, model it as a parent hypothesis with child checks / routes, not as one flat card.
-6. **Gate routing.** Choose the current gate and required evidence. A market trend is not enough for a launch decision until it is crossed with accessible channel, regional / segment fit, promo budget, production capacity, and opportunity cost.
+6. **Gate routing.** Choose the current gate and required evidence. Demand is tested as `segment × region × accessible channel × price × activation resource`; abstract interest or a trend is insufficient. The first committee decision is `допуск к уточнению технологии и рецептуры`, not admission to an undifferentiated “development” stage. The normal sequence is `hypothesis -> technology and recipe detail -> production test -> commercial launch`.
+   Для ВАСТЭКО на выходе G1 действует проектная настройка `пакет ранней целостности гипотезы`. До выбора конфигурации G2 комитет должен увидеть предварительные диапазоны и источники по рынку и росту, связи B2C-B2B, конкурентам, сравнительным примерам, регулированию, производству, капитальным и операционным затратам, внутренней аналитике и концепции продаж. По каждому блоку фиксируются допущение, уверенность, пробел, владелец и следующий тест. G3-G5 подтверждают или опровергают эти оценки; отсутствие точного значения на G1 является пробелом, а не нулём.
+   Separate preliminary economics before technology/recipe detail from confirmed economics after recipe, package, and production test. The manufacturability gate answers whether the company can make the product; SEVA answers whether constrained capacity should be allocated to it, including contribution per bottleneck unit and displacement cost of active SKU.
 7. **External research prompt.** If a gate lacks market, supplier, competitor, regulatory, technology, pricing, or channel evidence, prepare a paste-ready prompt for an external researcher before forcing a decision.
 8. **Adjacent BPV check.** Decide whether the signal needs BPV-05, BPV-10, BPV-11, BPV-12, or a BPV-14 training mirror.
 9. **Roadmap bridge.** If a roadmap or technology plan is in scope, verify that each commitment has an atomic item, source/evidence lineage, gate decision, owner, portfolio role, dependencies, required teams, capacity status, and review/kill date. Preserve roadmap versions as vintages.
-10. **Decision output.** Produce a go / hold / stop / redesign / scale / watch / MTO / exit / strategic-exception recommendation with confidence and source gaps. For commercial launch gates, include the sales argument bank: why the product exists, USP / RTB, target segment, whom not to offer, price / earning logic, supporting script or presentation, and BI proof needed after launch.
+10. **Decision output.** Produce a go / hold / stop / redesign / scale / watch / MTO / exit / strategic-exception recommendation with confidence and source gaps. For commercial launch gates, include the sales argument bank inside the go-to-market strategy: why the product exists, USP / RTB, target segment, whom not to offer, channel price / earning logic, supporting script or presentation, activation plan, and BI proof needed after launch. Do not turn it into an extra universal standalone gate.
 11. **Governance handoff.** If the decision needs a product committee, prepare pre-read, agenda, decision log fields, owner, due date, and next review. Return the structured decision, reason, scope, restrictions, assigned checks, and results to the pre-gate memory. If the committee diverges from the machine proposal, record the reason; use it to improve rules, never to rewrite the canon automatically.
 12. **Downstream.** Route reusable learning to the BPV registry, Storyline/BPM-SI, 8-ка knowledge, 1-ка training, 2-ка product showcase / MPP / content, and mirror any training product to BPV-14.7/14.8/14.9 plus BPV-14.R, or record an explicit no-op.
 
@@ -231,6 +249,8 @@ bpv_01_npd_packet:
 | Transfer / scale | Who owns the routine? | owner, process, training, data, cadence | transfer / extend pilot |
 | Post-launch | What does the market fact require? | sales, margin, defects, payback, feedback | scale / hold / stop / redesign |
 
+For post-launch success assessment, do not use one composite score or one universal `go / no-go`. Separate launch execution, commercial validation, assortment decision, and portfolio learning. Every metric needs formula, unit, object/segment/channel, period/cohort, physical source, baseline, target, green/amber/red corridor, data owner, decision owner, exceptions, and calibration date. Safety, critical quality, regulatory breach, inability to fulfil obligations, negative contribution without approved strategic exception, or decision-grade data failure are absolute stop/redesign conditions. Scale only when critical demand, economics, and execution criteria are green; strong demand with weak economics or manufacturability routes to redesign/limit rather than automatic stop.
+
 ## Platform Hypothesis Mode
 
 Use this when the input is broader than a single SKU, supplier, technology, or product format: ingredient platform, technology family, B2B+B2C option space, component bet, or broad RAG-generated signal.
@@ -345,6 +365,16 @@ Minimum factors:
 - confidence: source, freshness, completeness, disputed assumptions, next test.
 
 If a product is a `strategic_exception`, name the reason, owner, review horizon, success metric, and cost of exception.
+
+For SKU exit, keep the process inside the same portfolio-governance loop:
+
+```text
+problem signal -> existing SKU card -> role / SEVA
+-> alternatives to exit -> residual stock and exit horizon
+-> formalization plan -> decision -> effect review
+```
+
+Use the existing SKU code and monthly assortment cadence. Do not create a second identifier, automatic threshold system, or extra committee by default. Before `exit`, test price / promotion / packaging / recipe repair, channel restriction, replacement, partner supply, MTO, and controlled harvest. Include finished goods, raw materials, packaging, MOQ, contracts, shelf life, disposal cost, customer communication, and updates to assortment, price, CRM, site, sales materials, contracts, and service. Quality, safety, contractual breach, or critical write-off triggers immediate operational action; governance records the decision but must not delay it.
 
 ## External Research Prompt Mode
 

@@ -17,11 +17,11 @@ python3 scripts/install_skill_routing_memory.py --repo "$REPO"
 
 if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
   echo "$(date '+%F %T') изменений нет" >> "$LOG_DIR/sync.log"
-  exit 0
+else
+  git add skills registry
+  git commit -m "Синхронизировать скиллы Ильи $(date '+%F %H:%M')"
 fi
-
-git add skills registry
-git commit -m "Синхронизировать скиллы Ильи $(date '+%F %H:%M')"
+# Retry a previous failed push/publication even when the source is unchanged.
 git push origin main
 
 if [ -x scripts/publish_to_frappe.sh ]; then

@@ -90,6 +90,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "bpm6-website-positioning-audit",
+    "type": "BPM / методология",
+    "description": "Проверяет позиционирование компании на сайте: заявления, доказательства, продуктовые разделы и пути к обращению. Формирует диагностику по BPM-6 и BPM-7B для последующих работ с сайтом и продажами.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm6-website-positioning-audit",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpm6-website-positioning-audit",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "bpv-01-npd-lifecycle-os",
     "type": "BPM / методология",
     "description": "Ведёт продуктовую стратегию BPV-01 и внедрение NPD Lifecycle OS. Охватывает продуктовый туннель, портфель SEVA и SKU, карточки гипотез, контрольные точки, PLM и разбор результатов запуска.",
@@ -97,6 +107,66 @@
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-01-npd-lifecycle-os",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpv-01-npd-lifecycle-os-7233ae00",
     "slices": "BPM / методология · Управление проектами · Внутренние процессы · Контент и редактура",
+    "lifecycle": "active"
+  },
+  {
+    "skill": "bpv-03-1-site-audit-growth",
+    "type": "BPM / методология",
+    "description": "Архивная инструкция по использованию результатов аудита сайта в задачах BPV. Для нового аудита используется bpm6-website-positioning-audit.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-03-1-site-audit-growth",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpv-03-1-site-audit-growth",
+    "slices": "Без среза",
+    "lifecycle": "legacy"
+  },
+  {
+    "skill": "bpv-03-6-regional-partner-growth",
+    "type": "BPM / методология",
+    "description": "Сравнивает регионы и подбирает кандидатов для развития партнёрской сети. Проверяет данные по официальным источникам, дубли в Bitrix и основания для первого контакта.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-03-6-regional-partner-growth",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpv-03-6-regional-partner-growth",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
+    "skill": "bpv-03-7-expert-deck-builder",
+    "type": "BPM / методология",
+    "description": "Готовит презентации компании, направления или продукта для поддержки продаж. Связывает утверждения с источниками и определяет требования к проверке готовой презентации.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-03-7-expert-deck-builder",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpv-03-7-expert-deck-builder",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
+    "skill": "bpv-04-2-tender-commercial-loop",
+    "type": "BPM / методология",
+    "description": "Помогает отбирать тендеры и готовить документы для участия. Собирает требования и подтверждающие материалы; подача заявки и назначение цены требуют отдельного решения.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-04-2-tender-commercial-loop",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpv-04-2-tender-commercial-loop",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
+    "skill": "bpv-04-4-commercial-proposal-tkp",
+    "type": "BPM / методология",
+    "description": "Организует подготовку и передачу коммерческих и технико-коммерческих предложений. Проверяет основания цены, состав работ и связь предложения с CRM; текст готовится вместе с commercial-proposal-generator.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-04-4-commercial-proposal-tkp",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpv-04-4-commercial-proposal-tkp",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
+    "skill": "bpv-04-5-sales-agent-kb-loop",
+    "type": "BPM / методология",
+    "description": "Разбирает звонки, подбирает услуги и планирует следующие действия в продажах. Использует опыт проектов и готовит обновления базы знаний, которые вносятся после согласования.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-04-5-sales-agent-kb-loop",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpv-04-5-sales-agent-kb-loop",
+    "slices": "Без среза",
     "lifecycle": "active"
   },
   {
@@ -117,6 +187,16 @@
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpv-14-digital-profit-model",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-bpv-14-digital-profit-model-9f99923c",
     "slices": "Смежный BPV · Digital Profit Model · capacity · prioritization · solver · decision system",
+    "lifecycle": "active"
+  },
+  {
+    "skill": "competitor-proposal-qa",
+    "type": "BPM / методология",
+    "description": "Сравнивает предложения конкурентов с техническим заданием и условиями собственного предложения. Проверяет состав работ, соответствие требованиям и полную стоимость.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/competitor-proposal-qa",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-competitor-proposal-qa",
+    "slices": "Без среза",
     "lifecycle": "active"
   },
   {
@@ -1206,6 +1286,16 @@
     "github": "",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-lily-memory-068c390b",
     "slices": "Без среза"
+  },
+  {
+    "skill": "mece-prezy",
+    "type": "Общее / без среза",
+    "description": "Собирает логику консалтинговой презентации: основной тезис, структуру аргументов и доказательства. Проверяет полноту и отсутствие пересечений между аргументами; готовую структуру передаёт в pp-slidument для вёрстки презентации.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/mece-prezy",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-mece-prezy",
+    "slices": "Без среза",
+    "lifecycle": "active"
   },
   {
     "skill": "oca-analysis",

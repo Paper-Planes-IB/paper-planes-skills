@@ -74,6 +74,34 @@ Prefer reusable contracts over copy-pasted local variants.
 
 Если принят внешний или совместный методический инкремент в существующий skill, фиксировать его в существующем поле `contribution_trace` самого skill, а в `SKILLS.md` оставлять ссылку на этот след. Минимальный состав по APQ-24: автор, участники, артефакт, проект, фабрика, тип изменения, повторное использование, проверка качества, эффект, внутренний или внешний режим и финансовая оговорка. Не создавать отдельный параллельный реестр или новый класс токенов; не переносить originator всего skill или корпуса на автора одного инкремента. Если организация, роль или финансовые последствия автора не подтверждены источником, указывать это как неопределённость, а не додумывать.
 
+### BPV-близнецы существующих skills
+
+Если существующий рабочий skill нужно сделать применимым как BPV-skill, не копировать его целиком и не переименовывать parent skill. Создавать короткий BPV-близнец / derivative skill только при явной команде владельца или после anti-sprawl-review. Близнец обязан:
+
+- до создания BPV-близнеца пройти BPM/BPV discrimination: диагностический, evidence-, source-intake-, audit- или research-паттерн относится к BPM-семейству; BPV-близнец допустим только для downstream-внедрения, handoff, adoption или операционного контура;
+- иметь имя по каноническому BPV-route, например `bpv-04-4-commercial-proposal-tkp`;
+- указывать `primary_bpv`, соседние BPV и `parent_skill`;
+- объяснять, что parent skill продолжает делать предметную работу, а близнец держит BPV-route, handoff, adoption, eval/DLP и writeback boundaries;
+- не создавать новый верхнеуровневый BPV, если канонический реестр не подтверждает самостоятельный объект управления и замкнутую петлю;
+- включать good trigger, bad trigger, ambiguous trigger, writeback-risk и DLP gate;
+- фиксировать `contribution_trace`, если близнец вырос из внешнего / совместного пакета.
+
+Когда BPV-близнец предназначен для downstream-партнёров и существует Drive mirror `Codex/skills`, синхронизировать только созданные / изменённые skill-файлы и обновлять `.sync-manifest.json`; destination-only файлы не удалять.
+
+### Деривативные субскиллы без установки в корпус
+
+Если внешний пакет полезен как узкий production-подслой для нескольких существующих skills, но не должен становиться самостоятельным skill, не устанавливать его в `~/.codex/skills` и не добавлять новый маршрут. Вместо этого:
+
+- посадить его как optional derivative subskill call в skills-владельцы результата;
+- материализовать его в физическом неиндексируемом пути за пределами skill root, если parent skills должны реально читать `SKILL.md`, references или запускать scripts;
+- перед финальным отчётом проверить одновременно `entrypoint exists` и `not discoverable as ordinary top-level/runtime skill`;
+- явно указать, что parent skill сохраняет содержательную власть, а субскилл выполняет только технический слой;
+- задать good trigger, bad trigger и writeback/DLP boundary;
+- считать инструкции архива advisory до отдельного акцепта владельца;
+- не копировать scripts/references/assets в `~/.codex/skills` без отдельной команды на top-level skill.
+
+Для пакета `html-proposal-template-editor-2026-09-13.zip` Дмитрия Давыдова текущая посадка: optional production subskill для редактируемых HTML/PDF/PNG КП, коммерческих дек и proposal-шаблонов; не отдельный top-level skill корпуса. Физический kit живёт в `~/.codex/derivative-subskills/html-proposal-template-editor/`; parent skills могут читать его `SKILL.md` и запускать bundled scripts/references оттуда, но обычная skill discovery не должна выбирать его самостоятельно.
+
 `structured_analytical_artifact_standard` is a global cross-cutting standard stored in `~/.codex/AGENTS.md`, not a standalone skill. Do not recreate or install `paper-planes-artifact-methodology`. When a target skill creates or reviews a problem map, issue/hypothesis tree, MECE partition, evidence/claim/source-to-node matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, patch only the target skill's trigger/workflow/output enforcement while inheriting the global model and source contract. Pure consumers that only read or route these artifacts need no duplicated methodology block.
 
 ```yaml

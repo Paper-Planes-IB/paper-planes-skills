@@ -166,6 +166,12 @@
       "tally_mBxlA1"
     ]
   },
+  "last_bpm_exchange_check": {
+    "checked_at": "2026-08-29T19:36:23+0300",
+    "status": "no_new_survey_evidence",
+    "reason": "Daily BPM Exchange found BPM-1A/B adjacent source-read candidates, but no new survey export, field result, questionnaire, reusable metric, or validated Survey Lake row to ingest.",
+    "next_expected_delta": "Update Survey Lake only after a bounded BPM-1A/B survey source, field result, prior-vs-fact packet, or explicit owner routing lands."
+  },
   "manual_fixes": [
     {
       "at": "2026-06-04T02:48:28",

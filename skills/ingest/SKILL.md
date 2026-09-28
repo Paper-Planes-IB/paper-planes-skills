@@ -2,7 +2,7 @@
 name: ingest
 description: "Use when Ilya asks to ingest, add, remember, route, classify, or place new material into the Vault / knowledge system. Handles intake, classification, routing, proposal, no-op, and writeback-after-approval for facts, hypotheses, rules, external research, content candidates, tasks, commercial facts, contradictions, and source packets."
 metadata:
-  version: "0.3.08"
+  version: "0.3.09"
   status: active
   line: Vault ingest / knowledge routing
   owner: Ilya
@@ -17,6 +17,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-08-29: Made Озеро BPM — SI — Slides — BPV a P0 freshness-controlled writeback target: bounded upstream changes must update the lake or record a no-op within 24 hours; one existing automation maintains the contour without promoting route maps or decks to accepted BPV."
       - "2026-08-28: Added interview-corpus statistics deduplication: count unique respondent/role interview events rather than files and report organizations, primary transcripts, derived duplicates, and excluded non-client sources separately."
       - "2026-08-03: Added post-upload uniqueness check for client source batches: relist the target folder, verify one intended file per name/size, and remove only connector-created exact duplicates before publishing links."
       - "2026-08-03: Added recalculated-report version-coherence guard: compare new and prior text plus rendered tables/charts, assign primary rights claim-by-claim, and never let stale captions or unchanged narrative inherit the recalculated status of nearby visuals."
@@ -70,6 +71,16 @@ It does not mean "write everything somewhere." A successful ingest may end as:
 Default posture: classify and route before writing. Do not create new files unless Ilya explicitly asked for a file / document / artifact. Exception: Ilya has officially granted standing permission to create the mandatory Old Delivery BPM/Rail evidence document set in the existing project folder.
 
 Terminology guard: the canonical name for the BPM-to-SI route is `BPM-SI` in Latin script. `BPM-SI lake`, `BPM-SI contour`, and Russian explanatory synonyms `BPM-SI озеро` / `BPM-SI контур` are allowed only as contextual synonyms. Do not make the Cyrillic `БПМ-СИ` spelling the primary form, and do not use or reproduce fused miss-heard forms such as `BPMSA` / `БПМСА`.
+
+## BPM-SI Lake Freshness Contract
+
+`Озеро BPM — SI — Slides — BPV.md` in the existing BPA / Ассемблинг contour is a P0 reference index for project lineage, reusable ideas and reverse search from BPV to source evidence. It is not an optional tagging layer.
+
+When a material ingest changes any bounded upstream — project BPM source register, `BPM Storyline-Storyboard`, `BPV route map`, slide/deck artifact, BPA.09 defense or client-decision record, `Матрица BPM — SI`, or canonical BPV registry — the same pass must update the existing lake or add an explicit dated no-op reason. Maximum permitted lag is 24 hours. If the lake is older than the newest bounded upstream by more than 24 hours, mark `freshness breach`, name the newest upstream and perform all available writeback before presenting the lake as current.
+
+The lake writeback must preserve evidence rights. Storyline presence, route-map presence, file mtime, HTML/PDF/PPTX, pre-defense or shown deck do not prove accepted BPV. A complete route requires BPM evidence, SI, slide/deck identity, defense, recorded client decision, approved priority project and canonical BPV. Otherwise retain `partial_upstream`, `partial_downstream`, `donor-only`, `missing`, `contradicted` or `no-op` with a Russian explanation.
+
+Maintain one existing automation for this contour. Prefer updating and reactivating it over creating a duplicate. Every automated run checks physical links, full-reconciliation date, unique receiver/storyline counts, BPV route-map inventory and reverse lineage `BPV -> client decision -> deck -> SI -> BPM`.
 
 ## When To Use
 
@@ -269,6 +280,8 @@ Before declaring `source gap`:
 - extract the canonical document UUID from `/t/<slug>` links, recognizing that copied links may append a share suffix after the UUID;
 - try Granola connector search / meeting retrieval by likely title, date, and UUID;
 - if the connector cannot see the note, open the shared URL directly and follow its redirect to `/d/<uuid>`;
+- Уточнение 22.09.2026: UUID в ссылке `/t/` может быть идентификатором общего доступа и отличаться от UUID встречи в фактическом адресе `/d/`. После наблюдаемого перенаправления повторно вызвать `get_meetings` и `get_meeting_transcript` с UUID из `/d/` до вывода о недоступности коннектора или перехода к одной AI-выжимке. Сохранять связь исходной ссылки и фактического UUID; это один физический созвон. Большой ответ транскрипта сначала сохранить в рабочей памяти инструмента, вывести размер и метаданные, затем читать ограниченными фрагментами вместо полного дампа.
+- Уточнение 22.09.2026 по встречам у доски: реплики «вот эта работа — два месяца», «эта — месяц» без изображения / однозначного текстового указателя подтверждают произнесённые оценки, но не их привязку к этапам. Не наследовать такую привязку из AI-выжимки и не суммировать длительности параллельных работ как последовательные. В коммерческом следе отдельно сохранять общий ориентир, однозначно названные сроки конкретных этапов, условие «если договоримся» и неустановленную привязку остальных оценок.
 - inspect the returned page for readable `original_content`, `generated_lines`, transcript links, or embedded Next/HTML data;
 - if the page is readable, classify the source as `meeting_note / transcript-page-readable` and record the connector limitation as `connector-access gap`, not as missing evidence;
 - if neither connector nor public page exposes content, record a precise `source gap` with the note URL, expected content, and likely access owner.

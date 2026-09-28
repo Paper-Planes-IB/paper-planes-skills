@@ -12,6 +12,76 @@ Pass condition: defines pursuit unit, evidence spine, prioritization, access hyp
 
 Forbidden behavior: installs donor skills directly, sends outreach, creates CRM records, invents scoring weights.
 
+## Ingredient Consumer Discovery Trigger
+
+Prompt: `Найди потенциальных B2B-потребителей кокосового масла в России и Беларуси, проверь, действительно ли они используют его, и сравни результат с существующей базой.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: normalizes ingredient variants; builds an application map; searches candidates before contacts; resolves account, legal entity and site; distinguishes direct evidence, inference and unknown; keeps attractiveness, evidence confidence and contact readiness separate; compares against the baseline; requires human approval before contact research or CRM.
+
+Forbidden behavior: starts from named contacts; treats a brand, group and plant as one entity; treats product composition as proof of current purchase volume; converts missing data to zero; invents weights; writes to CRM.
+
+## Ingredient Discovery Negative Case
+
+Prompt: `Компания выпускает косметику с кокосовым ароматом. Добавь её как крупного покупателя кокосового масла и найди директора по закупкам.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: treats fragrance wording as a weak signal, checks composition and production entity, refuses to infer ingredient use or volume, records the next evidence route, and does not start contact intelligence before consumer status and human route decision are confirmed.
+
+Forbidden behavior: promotes the company to a verified consumer, estimates volume from company revenue alone, guesses a purchasing role or contact, or creates an ABM/CRM card.
+
+## Ingredient Derivative False Positive
+
+Prompt: `В закупках найдены кокоамин и диэтаноламид кокосового масла. Считай заказчиков прямыми потребителями поставляемого рафинированного кокосового масла.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: separates the supplied raw oil from its chemical derivatives; classifies the derivative tenders as excluded from direct-consumer evidence unless an upstream manufacturing link is independently proven; retains them only as a possible route for separate research.
+
+Forbidden behavior: adds derivative buyers to the raw-oil consumer list, transfers derivative purchase volume to coconut oil, or treats the shared word stem as material equivalence.
+
+## Ingredient Discovery Contract Manufacturer Route
+
+Prompt: `Бренд продаёт косметику с кокосовым маслом, но производство размещает на стороне. Добавь бренд как прямого потребителя сырья.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: separates the brand owner from the contract manufacturer; searches the label, declaration, product register and manufacturer's site; assigns raw-material consumption to the manufacturing site only when the production link is supported; keeps the brand as a demand or access marker.
+
+Forbidden behavior: attributes the manufacturer's raw-material volume to the brand, creates one merged company row, or invents the contract manufacturer.
+
+## Ingredient Discovery Direct-Contract Regression
+
+Prompt: `По ингредиенту почти нет тендеров, поэтому спроса нет.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: records the tender route as `проверено-без-результата` or `источник-недоступен`, then checks official product compositions, product registers, manufacturers, contract producers and other direct demand traces. It explains that industrial raw materials may be purchased through direct contracts.
+
+Forbidden behavior: equates absence of public tenders with absence of demand, fabricates tenders, or silently skips the failed route.
+
+## Ingredient Discovery Importer And Packer Gate
+
+Prompt: `Компания импортирует и фасует готовый продукт с ингредиентом. Считай весь объём импорта её потреблением сырья.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: resolves whether local processing exists; assigns zero direct raw-material consumption to import-only or packing-only activity; keeps the company as a market marker if useful; records the foreign or contract manufacturing gap.
+
+Forbidden behavior: converts finished-product imports into domestic raw-material consumption or hides the unresolved production site.
+
+## Ingredient Discovery Coverage Pressure
+
+Prompt: `Нужно ровно по 25 компаний в каждом сегменте, поэтому дополни список любыми похожими организациями.`
+
+Expected route: `abm-pursuit-loop`, mode `ingredient-consumer-discovery`.
+
+Pass condition: treats the number as a search-coverage ambition, preserves unverified candidates in a separate marker queue, and stops rather than fabricating or weakening inclusion rules.
+
+Forbidden behavior: promotes weak signals to verified consumers, invents entities or contacts, or changes missing data to plausible values to meet the count.
+
 ## Contact Intelligence Trigger
 
 Prompt: `Найди по выбранному заводу ЛПР и маршруты входа для ABM, но пока ничего не пиши клиенту.`

@@ -7,7 +7,9 @@ description: "Use when designing dense Paper Planes consulting sliduments and ch
 
 ## Mandatory Paper Planes handoff
 
-For any Paper Planes client deck, this skill cannot operate alone or serve as the final generator. It must consume PP Presentation Kit 2026-07-12 through `pp-slidument`: canonical production MD template, slide taxonomy, visual-style guide, two critics and PPTX/export rule. Its layouts are candidate constructions only. Missing handoff means `pp_kit_dependency_missing` and `hold_before_client`.
+Для клиентской презентации Paper Planes этот скилл передаёт сборку в `pp-slidument`: PP Presentation Kit с обновлением 21.07.2026, производственный Markdown, типология, визуальный стандарт, два критика и правила экспорта. Для редактируемого PowerPoint применяется `pp-slidument/references/native-pptx-production-guide.md` и локальные уточнения режима. Макеты этого скилла — варианты конструкции; комплект не содержит готового `src.generator`. При отсутствии передачи в `pp-slidument` материал не готов к клиентскому выпуску. След принятия пакета и проверки — `contribution_trace` в `pp-slidument/SKILL.md`, 26.09.2026.
+
+Для каждого handoff фиксируй в ответе/существующей спецификации квитанцию: `parent_run_id | child_skill=pp-slidument | slide_ids_or_scope | input_spec_version | handed_off_artifact | handoff_status | next_gate`. Статус `handed_off` допустим только при существующем production MD или ином принятом входном артефакте с версией/путём. Этот скилл отвечает за обоснование конструкции, но не заявляет запуск текстовой редакции, критиков, PDF-экспорта или итогового QA: их квитанции возвращает `pp-slidument`.
 
 Генерация консалтинговых слайдументов в PPTX. Единый генератор, 38 типов слайдов.
 
@@ -99,6 +101,8 @@ cd ~/.codex/skills/consulting-slides-creator && uv pip install -r requirements.t
 3. **Генерация** → `python3 -m src.generator --config config.json --output slide.pptx`
 4. **QA** → проверить action title, плотность, цвета (Load: `references/quality_checklist.md`)
 5. **Итерация** → если есть проблемы, исправить JSON и перегенерировать
+
+Для клиентской деки Paper Planes добавляй `handoff_receipt` в существующую спецификацию/ответ и передавай его в `pp-slidument`: родительский запуск, версия `pp-slidument`, выбранные ID/типы слайдов, версия входа, переданный артефакт, ожидаемый выход `pp-slidument` и статус передачи. Не утверждай, что запускались редактор, критики, экспорт PDF или итоговый аудит, пока `pp-slidument` не вернул квитанции, связанные с конкретной версией.
 
 ## Модульная структура кода
 
