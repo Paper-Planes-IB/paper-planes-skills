@@ -37,26 +37,36 @@ def main(payload_path="/tmp/skills_publish_payload.json"):
     backup.write_text(snapshot, encoding="utf-8")
     assert backup.read_text(encoding="utf-8") == snapshot
     created, updated, unchanged = [], [], []
-    for item, match in plan:
-        fields = {"title": item["name"], "content": item["content"], "meta_title": item["name"], "meta_description": item["description"], "is_published": 1, "source_path": f"github:Paper-Planes-IB/paper-planes-skills/skills/{item['name']}/SKILL.md"}
-        if match:
-            doc = frappe.get_doc("Wiki Document", match["name"])
-            if all(doc.get(k) == v for k, v in fields.items()):
-                unchanged.append(doc.name)
-                continue
-            updated.append(doc.name)
-        else:
-            doc = frappe.new_doc("Wiki Document")
-            doc.update({"parent_wiki_document": REGISTRY_NAME, "wiki_space": WIKI_SPACE, "route": item["route"], "slug": item["route"].split("/")[-1], "doc_key": f"github:paper-planes-skills:{item['name']}", "is_group": 0, "is_external_link": 0})
-            created.append(item["name"])
-        doc.update(fields)
-        doc.save(ignore_permissions=True)
-        live = frappe.get_doc("Wiki Document", doc.name)
-        assert all(live.get(k) == v for k, v in fields.items()), item["name"]
-    if registry.content != payload["registry_content"] or registry.is_published != 1:
-        registry.content = payload["registry_content"]
-        registry.is_published = 1
-        registry.save(ignore_permissions=True)
+    # Wiki supports suppressing per-document revision rebuilds during bulk changes.
+    from wiki.api.wiki_space import _sync_main_revision_for_space
+    registry_changed = registry.content != payload["registry_content"] or registry.is_published != 1
+    previous_guard = frappe.flags.in_reorder_wiki_documents
+    frappe.flags.in_reorder_wiki_documents = True
+    try:
+        for item, match in plan:
+            fields = {"title": item["name"], "content": item["content"], "meta_title": item["name"], "meta_description": item["description"], "is_published": 1, "source_path": f"github:Paper-Planes-IB/paper-planes-skills/skills/{item['name']}/SKILL.md"}
+            if match:
+                doc = frappe.get_doc("Wiki Document", match["name"])
+                if all(doc.get(k) == v for k, v in fields.items()):
+                    unchanged.append(doc.name)
+                    continue
+                updated.append(doc.name)
+            else:
+                doc = frappe.new_doc("Wiki Document")
+                doc.update({"parent_wiki_document": REGISTRY_NAME, "wiki_space": WIKI_SPACE, "route": item["route"], "slug": item["route"].split("/")[-1], "doc_key": f"github:paper-planes-skills:{item['name']}", "is_group": 0, "is_external_link": 0})
+                created.append(item["name"])
+            doc.update(fields)
+            doc.save(ignore_permissions=True)
+            live = frappe.get_doc("Wiki Document", doc.name)
+            assert all(live.get(k) == v for k, v in fields.items()), item["name"]
+        if registry_changed:
+            registry.content = payload["registry_content"]
+            registry.is_published = 1
+            registry.save(ignore_permissions=True)
+    finally:
+        frappe.flags.in_reorder_wiki_documents = previous_guard
+    if created or updated or registry_changed:
+        _sync_main_revision_for_space(WIKI_SPACE)
     frappe.db.commit()
     frappe.clear_cache()
     result = {"registry": REGISTRY_NAME, "created": created, "updated": updated, "unchanged": unchanged, "backup": str(backup)}
