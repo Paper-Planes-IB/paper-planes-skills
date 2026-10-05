@@ -112,6 +112,10 @@ Before classification, check the relevant existing roots / registries when avail
 
 If a registry cannot be found, say that explicitly and continue as `partial_context`, not as certainty.
 
+When assigning a new project source ID, do not rely only on the primary source register. First run a bounded project-local check for the candidate ID and nearby IDs across the existing project card, source register, evidence trace, Storyline-Storyboard, BPV route map, BPM scope ledger, task tracker, and other known source-bearing ledgers. If any downstream artifact already uses the candidate ID for a different physical source, preserve that existing ID and assign the next free source ID to the new source. Record the correction briefly in the working update if a conflict was found.
+
+Уточнение 03.10.2026: ту же проверку выполнять для идентификаторов утверждений и замыслов слайдов, повторно непосредственно перед записью и после неё. Первоначальный свободный номер не гарантирует уникальность при параллельной правке проектного корпуса. При обнаружении пересечения перенумеровывать только строки своего текущего прохода и все их ссылки; соседние изменения сохранять. Проверять уникальность по точным строкам определений, а не по числу упоминаний идентификатора в тексте.
+
 ## BPM Ingest Triage
 
 When new material is an official BPM input, BPM-candidate source, or can feed any BPM, every ingest must run the BPM downstream triage chain before finalizing. Material includes links, databases, exports, conclusions, voice notes, transcripts, meetings, external research returns, CRM signals, dashboard insights, reuse packets, files, or any explicit BPM-candidate source:
