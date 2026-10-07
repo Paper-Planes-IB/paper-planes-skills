@@ -263,6 +263,13 @@ Before finalizing the ingest, do one of the following:
 
 Final responses after file-based ingest should include one of: `source saved`, `duplicate skipped`, `source persist no-op`, or `sync gap`.
 
+### Технические наблюдения Google Drive / Sheets — 04.10.2026
+
+- Ярлык Drive (`application/vnd.google-apps.shortcut`) не является исходным содержимым. Если metadata-wrapper не возвращает `shortcutDetails.targetId`, фиксировать ограничение и разрешать цель через интерфейс или точное название с независимой ссылкой из физического источника. Единственное совпадение названия без прямого target ID остаётся ограниченной атрибуцией; ошибку скачивания ярлыка нельзя выдавать за отсутствие доступа к исходному документу.
+- При проверке XLSX-экспорта Google Sheets отдельно проверять живую формулу, формулу снимка и кэш значения. `__xludf.DUMMYFUNCTION` в снимке означает необходимость проверки переносимости, а не доказанную поломку облачного оригинала. Наличие кэша не доказывает автономный пересчёт; тест новых вводных нужен для уже действующего гейта автоматизации. Не исправлять оригинал без поручения владельца.
+
+Это техническая реализация действующих правил атрибуции, сохранения и табличного аудита; порядок Rail и партнёрский стандарт delivery не меняются.
+
 ## Notion External Object Recovery
 
 When ingesting a Notion meeting/source page, if `fetch` shows an embedded table, file, or attachment only as `external_object_instance` / `unknown` and opening the block anchor returns the parent page again, do not treat the source as empty or fully processed.
