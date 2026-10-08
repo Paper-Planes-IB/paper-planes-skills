@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-07T04:02:16Z",
+  "generated_at": "2026-10-08T04:02:15Z",
   "upstream_skill_count": 90,
   "repository_skill_count": 94,
   "legacy_skill_count": 13,
@@ -316,10 +316,10 @@
     },
     {
       "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
-      "drive_id": "1O-H1_59ZiRx0GJxq6ZThQCK2GMN8MjX2",
+      "drive_id": "1nXG0BcPxmokD-qN2ksEcUKv5Dxh9S2S9",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-04T17:30:31.846Z",
-      "drive_md5": "b2432205ac48569f84c4c7bebafbc22c"
+      "modified_time": "2026-10-06T16:40:38.094Z",
+      "drive_md5": "f1e5a537d16ce5a816240e85821b7b01"
     },
     {
       "path": "skills/bpv-01-npd-lifecycle-os/agents/openai.yaml",
@@ -458,8 +458,8 @@
       "path": "skills/commercial-proposal-generator/SKILL.md",
       "drive_id": "1xC7aRqO2YFJOktzqyJjNl2PafO8IjbiK",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-05T10:16:49.091Z",
-      "drive_md5": "92b5ac4379a87818dd6c6f8c484cbf3a"
+      "modified_time": "2026-10-06T16:40:38.094Z",
+      "drive_md5": "fbcf3fa50c02071bfa7d47d8c3286243"
     },
     {
       "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -2381,10 +2381,10 @@
     },
     {
       "path": "skills/pp-slidument/references/native-pptx-production-guide.md",
-      "drive_id": "1_ywCZ1pGDycTqat4-6sF4DD_iiolF39u",
+      "drive_id": "1fvsnB3mvAly0Vy9akFGCTe5J9buQLEq8",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-25T21:17:35.472Z",
-      "drive_md5": "0f8e3dabb4a38e6cefd9dd90ae81125b"
+      "modified_time": "2026-10-06T16:15:05.201Z",
+      "drive_md5": "71bdf0aad744ce783edd751150b2f788"
     },
     {
       "path": "skills/pp-slidument/references/pp_pptx_builder_rule.md",
@@ -2437,10 +2437,10 @@
     },
     {
       "path": "skills/presentation-qa/SKILL.md",
-      "drive_id": "1P5SqTVIavZHhtqwMFY7Hzm_wGFvcFOfo",
+      "drive_id": "1cXV0l-G2mu8KvGB5DxG8ZNxYiHGERTF_",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-28T17:46:07.538Z",
-      "drive_md5": "bdf4d4d0b48cb523030275448f41281e"
+      "modified_time": "2026-10-06T17:43:43.533Z",
+      "drive_md5": "3adc69d4db2fe0f2858f71571a99eda8"
     },
     {
       "path": "skills/presentation-qa/agents/openai.yaml",
@@ -3132,8 +3132,8 @@
       "files": [
         {
           "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
-          "sha256": "39a9f1fb5e8d287b2f43ca6d938bb73d200b8978c815fcda61058465ee42a065",
-          "size": 49209
+          "sha256": "8b4a647c8e99e0935e2f1493d53b2b7f18cd729d34aedcb1fcf67a4c77ee5eba",
+          "size": 51366
         },
         {
           "path": "skills/bpv-01-npd-lifecycle-os/agents/openai.yaml",
@@ -3337,8 +3337,8 @@
       "files": [
         {
           "path": "skills/commercial-proposal-generator/SKILL.md",
-          "sha256": "734de4446f2b9ef81320f794742c3be387a958cdc0dbcf0ec1b5f14845619b39",
-          "size": 235999
+          "sha256": "08799bcf399becc841e6a930b855809194482af2567aab067b833f68f96ef3c1",
+          "size": 241132
         },
         {
           "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -5034,8 +5034,8 @@
         },
         {
           "path": "skills/pp-slidument/references/native-pptx-production-guide.md",
-          "sha256": "b76087c4f51976e377be9def8ec490ae7d730efc5f1e15716be7ccba5c2bae7f",
-          "size": 6788
+          "sha256": "265ef1b2afa4ec32012523263279013543e788e109600d7bf91f01c73c4db4dd",
+          "size": 8225
         },
         {
           "path": "skills/pp-slidument/references/pp_pptx_builder_rule.md",
@@ -5095,8 +5095,8 @@
       "files": [
         {
           "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "ef2daa20b5b2ad3f02e7c4e46f03ce137e9cf61b311729835313f2d3db6e4f7e",
-          "size": 63311
+          "sha256": "e1942b3686eb047945ca4bf565fe3041a01bf13d6976612b6fba03042f0622c5",
+          "size": 66137
         },
         {
           "path": "skills/presentation-qa/agents/openai.yaml",
