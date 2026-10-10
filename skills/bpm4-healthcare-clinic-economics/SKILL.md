@@ -2,7 +2,7 @@
 name: bpm4-healthcare-clinic-economics
 description: Use when working with BPM-4 Formula Profit for healthcare, clinics, hospitals, medical centers, archived medical projects, MIS/EMR exports, patient flow, appointments, visits, procedures, doctors, departments, beds, cabinets, equipment, payer mix, OMC/DMS/commercial revenue, LTV, capacity, SI / SIF impact, and HTML-first medical dashboards.
 metadata:
-  version: "0.1.6"
+  version: "0.1.7"
   status: active
   line: BPM-4 / healthcare clinic economics
   owner: Ilya
@@ -16,6 +16,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-10-08: Accepted financial contradiction bridge and regression cases; conflicting clinic profit figures remain unresolved until source reconciliation."
       - "2026-08-20: Added external healthcare market signal guard: separate market baseline from client facts, nominal growth from price/volume/mix, and require payer/capacity/cost/geography evidence before project claims."
       - "2026-05-30: Activated medical BPM-4 domain view and added explicit DataLens handoff contract."
       - "2026-05-30: Added reusable dashboard patterns from a Codex-built medical-center prototype."
@@ -443,6 +444,18 @@ data_gap:
   required_source_or_owner: ""
   route_to_bpm: [BPM-4, BPM-11]
 ```
+
+## Сверка противоречащих финансовых источников
+
+Применяй при расхождении клинического P&L, БДР, ДДС или инвестиционной модели до сборки финансовых KPI.
+
+Сохраняй отдельную строку каждой версии: показатель и определение; сеть/клиника/юрлицо; период; начисление или движение денег; валюта/единицы; источник, версия, лист/ячейка; значение, формула и точность округления. Совпадение выручки не означает совпадения периметра прибыли.
+
+Финансовый владелец с BPM-4 строит мост между версиями: расходы, налоги, общесетевые аллокации и ABC-драйверы, внутригрупповые операции, дивиденды, инвестиции, лизинг, депозиты и возвраты проверяются по фактическим статьям, а не назначаются причиной заранее. При денежном решении отдельно сверяй Cash Flow. BPM-11 проверяет ключи, формулы, внешние ссылки и версии только в принятом scope. Сохраняй необъяснённый остаток и адресованный запрос.
+
+До согласования определения и сверки источников не выбирай цифру по свежести, не усредняй версии, не используй спорную прибыль как базу принятого KPI, NPV/IRR или эффекта внедрения. Разрешён промежуточный сценарный расчёт с явными пробелами и ограничениями; неизвестное не равно нулю. Автоматический пересчёт подтверждается двумя порциями вводных, а не текстом требования.
+
+Проверочные примеры: (1) одинаковая выручка и разные значения прибыли требуют моста; (2) заявленная разница не совпадает с разностью округлённых значений — нужны неокруглённые ячейки и правила округления; (3) после новой версии закрываются только подтверждённые статьи, остаток сохраняется. Методический источник — принятый BPM Exchange 08/10/2026 и проектный аудит Фактора Улыбки, раздел «Критическое расхождение P&L 2025»; его числа не становятся проверенной экономикой другого проекта.
 
 ## Dashboard View Spec
 

@@ -14,6 +14,7 @@ Use this skill to answer medical clinic, dentistry, and patient-base economics q
 3. Treat this layer as source-selection and interpretation guidance, not as a substitute for live source reads.
 4. Check freshness before answering time-sensitive questions.
 5. When sources disagree or coverage is weak, say so and verify against the cited source.
+6. Для расхождений P&L, БДР, ДДС и инвестиционной модели применяй раздел «Сверка финансовых источников» в `references/semantic-layer.md`; спорный показатель не становится принятым KPI до сверки.
 
 ## References
 

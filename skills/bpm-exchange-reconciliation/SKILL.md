@@ -2,7 +2,7 @@
 name: bpm-exchange-reconciliation
 description: Use when Ilya asks to run BPM Exchange, взаимное обогащение BPM, BPM-SI, Storyline-Storyboard, approved-presentation-to-BPV lineage, return packs, QA learning, client reality reconciliation, field pressure, or project-level BPM enrichment for 4th-department projects.
 metadata:
-  version: "0.2.12"
+  version: "0.2.13"
   status: draft
   line: 04-production / BPM Exchange / Storyline-Storyboard governance
   owner: Ilya
@@ -38,6 +38,7 @@ metadata:
   return_contract:
     version: "v0.2"
     changelog:
+      - "2026-10-08: Accepted method reconciliation for technological Rail, financial contradictions and separate learning outcomes; added regression cases."
       - "2026-05-27: Initial orchestrator skill for BPM Exchange reconciliation."
       - "2026-05-28: Added execution modes, short path, trigger routing, preflight checklist, upstream contracts, and decision footer."
       - "2026-05-31: Added BPM-4 donor hypothesis pattern and graph-class routing for cross-BPM exchange."
@@ -91,6 +92,16 @@ If live sources conflict with this skill, live sources win unless the conflict i
 ## Accepted Over-Routing Guards
 
 These guards are accepted operating rules for BPM Exchange. Apply them before creating any Storyline gap, BPM-SI candidate, SIF cluster, or `task_delta`.
+
+### Сверка метода с действующей рельсой — акцепт 08/10/2026
+
+Перед переносом методического сигнала сравни его с текущим физическим Rail, профильным BPM README и существующей проектной посадкой. Уже действующее правило получает уточнение или проверочный пример; повторный сигнал не создаёт новый SI, дефицит Storyline или задачу.
+
+- Для явно технологической задачи принимай технологическую ветку Rail и проектный scope владельца. Организационные слои с `not_applicable_by_owner: technological_task` означают «не применимо по решению владельца», а не пробел. Проверяй технический приёмник: процессы, данные, спецификацию, тест-дизайн и приёмку. Отсутствие организационного Storyline само по себе не открывает BPA и не отменяет этот маршрут. Код BPV-12 требует сверки канонического реестра; модель, прототип и журнал решений остаются кандидатами до принятого объёма, испытания и приёмки.
+- Если финансовые источники расходятся, сохраняй каждый показатель с определением, периметром, периодом, единицами, версией и локатором. BPM-4 и финансовый владелец возвращают сверку P&L, денежного потока, расходов и ABC; BPM-11 проверяет формулы, ключи и версии при принятом scope. Не выбирай более свежую или удобную цифру. Расхождение округлённых итогов отдельно требует исходных неокруглённых значений. До сверки финансовый вывод остаётся «требует проверки».
+- Для обучения разделяй утверждения: профиль роли, результат теста, завершение курса, действие в работе и денежный эффект. BPM-9 подтверждает наблюдаемое поведение и ограничения; BPV-09.4 получает профиль и развитие; BPV-14 получает практику и повторное наблюдение. BPM-4 проверяет экономический эффект только при явной зависимости. Индивидуальное кадровое решение не следует из среднего отдела или учебного результата.
+
+Эти правила приняты Ильёй после Learning Brief 07/10/2026. Они уточняют использование действующих контрактов, а не подтверждают клиентские факты или внедрение. Для Альтернативы BPV-08.1 остаётся проектным кандидатом до постоянной посадки источников и клиентской проверки; уже зарегистрированный маршрут не получает отдельный SI.
 
 ### BPV Downstream Guard
 
@@ -885,6 +896,10 @@ Use concise decision phrases:
 | training | subject BPV + BPV-14.x + BPV-14.R or no-op | only 1-ка landing |
 | unapproved slide | BPV candidate / trace gap | accepted BPV |
 | approved deck | exact deck/version/decision and reverse BPV link | one-way BPV note |
+| Технологическая задача с исключённой оргдиагностикой | Проверить технологический приёмник и сохранить решение владельца | Организационный gap, автоматический BPM-9 или BPA |
+| Одинаковая выручка, разная прибыль в двух источниках | Обе версии, финансовый мост и проверка формул/округления | Выбор числа по свежести или использование в NPV/IRR до сверки |
+| Курс завершён, рабочее поведение не наблюдалось | Учебный результат подтверждён в своей границе; запрос рабочей проверки | Перенос навыка, кадровый вывод или денежный эффект как факт |
+| BPV-08.1 уже записан локально; источники временные, клиент не принял дерево | Уточнить существующий кандидат и сохранить гейты | Новый SI или принятый BPV по HTML-прототипу |
 
 ## Common Failure Modes
 

@@ -1256,6 +1256,16 @@
     "slices": "Без среза"
   },
   {
+    "skill": "lawyer-pp",
+    "type": "Общее / без среза",
+    "description": "Скилл помогает выполнить задачу «lawyer pp» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/lawyer-pp",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-lawyer-pp",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "leverage-builder",
     "type": "Общее / без среза",
     "description": "Создаёт, расширяет и проверяет стратегические и финансовые рычаги, включая блок «9 рычагов». Связывает инициативы со стратегией, показателями, финансовой логикой, активами и пробелами в данных.",

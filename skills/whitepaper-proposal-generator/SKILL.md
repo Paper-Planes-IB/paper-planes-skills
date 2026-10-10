@@ -2,7 +2,7 @@
 name: whitepaper-proposal-generator
 description: Generate personalized Paper Planes semi-whitepaper, semi-commercial proposals for Gamma when the offer concerns corporate, commercial, operational, organizational, HR/culture, automation/data, or hybrid strategy and transformation. Use when Ilya asks for a whitepaper-like КП, a strategic memorandum with commercial terms, a subject-adaptive proposal based on the 9 levers, or proof-rich Gamma pages using archived Paper Planes projects and mini-cases.
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   supports_bpm:
     primary: [commercial_trace, proposal_route, whitepaper_proposal, client_facing_claims]
     required_secondary: [BPM-2, BPM-5, BPM-10, BPM-11]
@@ -30,6 +30,11 @@ metadata:
 ---
 
 # Whitepaper Proposal Generator
+
+## Коммерческая рамка — решение Ильи 07.10.2026
+
+Для КП действует раздел «Комплексное внедрение; пилоты не предлагаем» в [commercial-proposal-generator](../commercial-proposal-generator/SKILL.md). Предлагать комплексное внедрение в согласованном объёме; проверки и прототипы — внутренние этапы проекта. При сборке и QA исключать пилотный вход из текста, схем, пакетов, стоимости и следующего шага; сохранять прямо заданные границы услуг.
+
 
 Create a useful strategic document that also sells the recommended Paper Planes route. Standardize the reasoning architecture, not the client-facing text.
 

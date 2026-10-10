@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-08T04:02:15Z",
-  "upstream_skill_count": 90,
-  "repository_skill_count": 94,
+  "generated_at": "2026-10-10T04:02:19Z",
+  "upstream_skill_count": 91,
+  "repository_skill_count": 95,
   "legacy_skill_count": 13,
   "upstream_inventory": [
     {
@@ -199,8 +199,8 @@
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
       "drive_id": "15-FEq6ntIkojkL6_pRogL01_Mo7LF8qS",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-25T16:45:31.000Z",
-      "drive_md5": "ecfee570b6d8a7ba8b166091f84e283c"
+      "modified_time": "2026-10-07T19:19:09.000Z",
+      "drive_md5": "0f849149e44038bd1010fbb8201c9be0"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
@@ -297,8 +297,8 @@
       "path": "skills/bpm4-healthcare-clinic-economics/SKILL.md",
       "drive_id": "1xFjCFYca6Yjuc2PkYsmahFDiq0vzwvis",
       "mime_type": "text/markdown",
-      "modified_time": "2026-08-20T09:38:30.422Z",
-      "drive_md5": "3d117d94a3f46a34c86e0132a95a90d9"
+      "modified_time": "2026-10-07T19:22:47.000Z",
+      "drive_md5": "95f6668a46ef614078a4c39c6a60cde5"
     },
     {
       "path": "skills/bpm4-it-saas-enterprise-vendor/SKILL.md",
@@ -458,8 +458,8 @@
       "path": "skills/commercial-proposal-generator/SKILL.md",
       "drive_id": "1xC7aRqO2YFJOktzqyJjNl2PafO8IjbiK",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-06T16:40:38.094Z",
-      "drive_md5": "fbcf3fa50c02071bfa7d47d8c3286243"
+      "modified_time": "2026-10-09T10:26:25.000Z",
+      "drive_md5": "4ee90609b0eeb19e5496b5d35ef77172"
     },
     {
       "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -1935,8 +1935,8 @@
       "path": "skills/ingest/SKILL.md",
       "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-04T20:20:19.631Z",
-      "drive_md5": "b8c3d81bf875273555a3ca6f992b1229"
+      "modified_time": "2026-10-07T07:53:51.000Z",
+      "drive_md5": "e47ec63ac2eb0210d8784c9e316d7985"
     },
     {
       "path": "skills/interview-brief-by-analogs/SKILL.md",
@@ -1958,6 +1958,13 @@
       "mime_type": "text/markdown",
       "modified_time": "2026-04-28T18:53:07.517Z",
       "drive_md5": "3ab0c4167cafd16df8a4cd2aef18a20d"
+    },
+    {
+      "path": "skills/lawyer-pp/SKILL.md",
+      "drive_id": "1XRDe5UEMDvapRJQrqbIZIID5LNdMdzt5",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-07T20:46:20.000Z",
+      "drive_md5": "0d470685e27762df9db4a73ae17ed14b"
     },
     {
       "path": "skills/leverage-builder/SKILL.md",
@@ -2138,8 +2145,8 @@
       "path": "skills/medical-clinic-economics-semantic-layer/SKILL.md",
       "drive_id": "12Pj0PgaptNUJoMXSdQfFJyE5TJvibpC_",
       "mime_type": "text/markdown",
-      "modified_time": "2026-06-11T20:56:55.287Z",
-      "drive_md5": "3e3cbb0b2ec901e8f07b226b060dd6cb"
+      "modified_time": "2026-10-07T19:19:09.000Z",
+      "drive_md5": "90b2f531ce985c3920857c7d7c1805a4"
     },
     {
       "path": "skills/medical-clinic-economics-semantic-layer/references/evidence.md",
@@ -2152,8 +2159,8 @@
       "path": "skills/medical-clinic-economics-semantic-layer/references/semantic-layer.md",
       "drive_id": "1mEmOOh6k9K2-c14rgt-fft65g5Oi_4RQ",
       "mime_type": "text/markdown",
-      "modified_time": "2026-06-11T20:56:55.287Z",
-      "drive_md5": "d86220294e1be139f70041ff8efca967"
+      "modified_time": "2026-10-07T19:19:09.000Z",
+      "drive_md5": "373860c0140af21711b9a261fb5f7da0"
     },
     {
       "path": "skills/medical-clinic-economics-semantic-layer/references/source-inventory.md",
@@ -2257,8 +2264,8 @@
       "path": "skills/pp-print-a4/SKILL.md",
       "drive_id": "1A0ubbQWcTR1uBuXItEKqVkNVT-RlDZN0",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-13T11:34:31.091Z",
-      "drive_md5": "a9e56840d71e068e9d92086f5506923b"
+      "modified_time": "2026-10-07T20:53:29.000Z",
+      "drive_md5": "5a660739cde5b2772cf0e43f7ee0158f"
     },
     {
       "path": "skills/pp-print-a4/assets/caddy-block.txt",
@@ -2306,8 +2313,8 @@
       "path": "skills/pp-slidument/SKILL.md",
       "drive_id": "1wQ7KxwLspQsIlJAqqW49xaZ1pIj2aalC",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-28T17:46:43.973Z",
-      "drive_md5": "0aa8b3edcfa5d4c337dbc06c83d3b801"
+      "modified_time": "2026-10-09T10:30:48.000Z",
+      "drive_md5": "30efc05ec7036f16e5c20ea339b7fd15"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2383,8 +2390,8 @@
       "path": "skills/pp-slidument/references/native-pptx-production-guide.md",
       "drive_id": "1fvsnB3mvAly0Vy9akFGCTe5J9buQLEq8",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-06T16:15:05.201Z",
-      "drive_md5": "71bdf0aad744ce783edd751150b2f788"
+      "modified_time": "2026-10-07T17:47:12.000Z",
+      "drive_md5": "22316db216b439f617af43d9e4ef5c3b"
     },
     {
       "path": "skills/pp-slidument/references/pp_pptx_builder_rule.md",
@@ -2397,8 +2404,8 @@
       "path": "skills/pp-slidument/references/reference.md",
       "drive_id": "1kkl-Taf4UuZu9lfDY1WlgSP8iZXIE-7h",
       "mime_type": "text/markdown",
-      "modified_time": "2026-06-26T11:15:32.000Z",
-      "drive_md5": "459db23d2864b1ccdc1b4c4cc57628bd"
+      "modified_time": "2026-10-07T18:35:57.000Z",
+      "drive_md5": "517cfe7c529c3413bac6184aa0c5a8ba"
     },
     {
       "path": "skills/pp-slidument/references/slide_types.md",
@@ -2418,8 +2425,8 @@
       "path": "skills/pp-slidument/references/visual-style-guide.md",
       "drive_id": "1nNw0s1FBKoIqwo6k7QgJuMfuv7ZwYjod",
       "mime_type": "text/markdown",
-      "modified_time": "2026-07-12T11:13:27.425Z",
-      "drive_md5": "1f06d3054c35816835f02d467ddd6bf7"
+      "modified_time": "2026-10-07T20:43:38.000Z",
+      "drive_md5": "0ccb0185db9dad2a00b0e18b179bad66"
     },
     {
       "path": "skills/pp-survey-dashboard/SKILL.md",
@@ -2439,8 +2446,8 @@
       "path": "skills/presentation-qa/SKILL.md",
       "drive_id": "1cXV0l-G2mu8KvGB5DxG8ZNxYiHGERTF_",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-06T17:43:43.533Z",
-      "drive_md5": "3adc69d4db2fe0f2858f71571a99eda8"
+      "modified_time": "2026-10-07T20:34:50.000Z",
+      "drive_md5": "2c4b9059ebe9a1b0cd42dd3aff4fa9a7"
     },
     {
       "path": "skills/presentation-qa/agents/openai.yaml",
@@ -2614,8 +2621,8 @@
       "path": "skills/text-deai-editor/references/ilya-style-canon.md",
       "drive_id": "1e0Z7kARpWgLopf1IP-Zz7ZikFMpq9Hys",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-06T18:28:16.603Z",
-      "drive_md5": "9e3aae9b312f064af371a33aac55d7de"
+      "modified_time": "2026-10-08T18:00:07.000Z",
+      "drive_md5": "ba5ed227c764e2ddc39b7311e9b8945d"
     },
     {
       "path": "skills/three-perspective-review/SKILL.md",
@@ -2663,8 +2670,8 @@
       "path": "skills/whitepaper-proposal-generator/SKILL.md",
       "drive_id": "1reTTssQSJ4wQXgi0biMqu2tlabsR6mFE",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-13T11:34:31.091Z",
-      "drive_md5": "e5dafaeda68dedf2426cfe15541a039e"
+      "modified_time": "2026-10-07T18:35:57.000Z",
+      "drive_md5": "41fd5be0af89c40c16ecc04b4a65f24e"
     },
     {
       "path": "skills/whitepaper-proposal-generator/agents/openai.yaml",
@@ -2864,8 +2871,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "3fb7d3669ab4fea44c9c8756375b1661087bf8fac0ae44816957b4b97745e183",
-          "size": 55224
+          "sha256": "4151b0844b1eadcc4f4350c28dbaccffc23ce02a8576a1cb06bc79f0569a227a",
+          "size": 60348
         }
       ]
     },
@@ -3096,8 +3103,8 @@
       "files": [
         {
           "path": "skills/bpm4-healthcare-clinic-economics/SKILL.md",
-          "sha256": "b041b4ee62f358138b8ca165207e34adb22b04ee0159f8235f4fed91da81f70e",
-          "size": 38550
+          "sha256": "81948cc2201e23aeecdffe19e17be509c8f6a313c2ce88b5a84106967d8e3c2b",
+          "size": 41838
         }
       ]
     },
@@ -3337,8 +3344,8 @@
       "files": [
         {
           "path": "skills/commercial-proposal-generator/SKILL.md",
-          "sha256": "08799bcf399becc841e6a930b855809194482af2567aab067b833f68f96ef3c1",
-          "size": 241132
+          "sha256": "a6631aa035a4ebb1abf49fd7cb662c8d157d283bd4a5a6acd34361b22cda50cb",
+          "size": 255599
         },
         {
           "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -4517,8 +4524,8 @@
       "files": [
         {
           "path": "skills/ingest/SKILL.md",
-          "sha256": "e440d71b3242593953fe61c385d1ffdbf301c6c3af99063815b856b86049e407",
-          "size": 60534
+          "sha256": "e7e8711a2948217f7e6e9f57fd7bba11717fc8fd847407c1f172b0cca90da17e",
+          "size": 62534
         }
       ]
     },
@@ -4548,6 +4555,18 @@
           "path": "skills/km/SKILL.md",
           "sha256": "96b4f04d3b6e1ff6d1b98386f5575b2a84c3ee4972ff26e6b4d01aa2246fc665",
           "size": 364
+        }
+      ]
+    },
+    {
+      "name": "lawyer-pp",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/lawyer-pp/SKILL.md",
+          "sha256": "a83477660f0c13d9cc4003d3f7926688749fd4e7ae8c6fa0f0f9afef50173f74",
+          "size": 29228
         }
       ]
     },
@@ -4681,8 +4700,8 @@
       "files": [
         {
           "path": "skills/medical-clinic-economics-semantic-layer/SKILL.md",
-          "sha256": "5cbe920d0f97af75c1f561de8b4ed368db753f798d35ba8bda57fc647d9078eb",
-          "size": 2163
+          "sha256": "aae25b5b073e1d759e2d501cce1393dfec9fccd47399a58de8756c71e699a828",
+          "size": 2487
         },
         {
           "path": "skills/medical-clinic-economics-semantic-layer/references/evidence.md",
@@ -4691,8 +4710,8 @@
         },
         {
           "path": "skills/medical-clinic-economics-semantic-layer/references/semantic-layer.md",
-          "sha256": "90decb0afe279179d4f41a30e49035ca404c10d494932a51b166af84ad04c299",
-          "size": 16021
+          "sha256": "f6cb8e8dad5fc53bd201871ad14ae7b55df031a1ceec44d117b4c08fa25b76b1",
+          "size": 18266
         },
         {
           "path": "skills/medical-clinic-economics-semantic-layer/references/source-inventory.md",
@@ -4937,8 +4956,8 @@
       "files": [
         {
           "path": "skills/pp-print-a4/SKILL.md",
-          "sha256": "d07b0b8965011f4fa1dc4e3791a831e5633d98590a3fbfb339da829ba9dc68c5",
-          "size": 14987
+          "sha256": "739a2cee15d6f35971660b727cd76fbc9b3c2658b471b8d1f23f27d9994390e3",
+          "size": 15862
         },
         {
           "path": "skills/pp-print-a4/assets/caddy-block.txt",
@@ -4979,8 +4998,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "c77d3cb11af76348d6123ec9b08c831a8a8b936ad92f9422fc2946056ab41697",
-          "size": 87266
+          "sha256": "c5b7de0da31a92bec552a786be1146905f79830cc0630b1ca505721707e72c5a",
+          "size": 97593
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5034,8 +5053,8 @@
         },
         {
           "path": "skills/pp-slidument/references/native-pptx-production-guide.md",
-          "sha256": "265ef1b2afa4ec32012523263279013543e788e109600d7bf91f01c73c4db4dd",
-          "size": 8225
+          "sha256": "10470bd447e51d9c193506a613d417b9635cf6b61f2dd11d17c89d966d0e158b",
+          "size": 9372
         },
         {
           "path": "skills/pp-slidument/references/pp_pptx_builder_rule.md",
@@ -5044,8 +5063,8 @@
         },
         {
           "path": "skills/pp-slidument/references/reference.md",
-          "sha256": "6ad415b7aff7047a5334ab89a410a92a2a24f90339a07701b9d80338a67741a2",
-          "size": 16161
+          "sha256": "88450b8b814c515e1c8975062c5cc2766ccf20e06bd3728e131702498abd5ff4",
+          "size": 16212
         },
         {
           "path": "skills/pp-slidument/references/slide_types.md",
@@ -5059,8 +5078,8 @@
         },
         {
           "path": "skills/pp-slidument/references/visual-style-guide.md",
-          "sha256": "39c5a8e43d3affe74d870f3195576970adaa8c4d2813c45680dd2f3549abc02f",
-          "size": 4050
+          "sha256": "e49997751a58e72284e354656336160b51948e6dc964c0ebf03ca714a62ae421",
+          "size": 5035
         }
       ]
     },
@@ -5095,8 +5114,8 @@
       "files": [
         {
           "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "e1942b3686eb047945ca4bf565fe3041a01bf13d6976612b6fba03042f0622c5",
-          "size": 66137
+          "sha256": "71246c647afe7cacecc3357f8b1b0ba5fa1495cf944b81b146f57a1d2d70fc5b",
+          "size": 68896
         },
         {
           "path": "skills/presentation-qa/agents/openai.yaml",
@@ -5297,8 +5316,8 @@
         },
         {
           "path": "skills/text-deai-editor/references/ilya-style-canon.md",
-          "sha256": "ea4877391c42916aa4b7e1f652259eb619564e520ff4ec0142de38c8f9c5233e",
-          "size": 282913
+          "sha256": "fb8823c8c5f995c5e8970c77d3c5614fc25e5fc9ce3dff15b58ab6a8a9fba2d0",
+          "size": 286038
         }
       ]
     },
@@ -5374,8 +5393,8 @@
       "files": [
         {
           "path": "skills/whitepaper-proposal-generator/SKILL.md",
-          "sha256": "4149e882f06dd6ca2aa1499da052975c8a98c217664185b2835b911b50e3dc52",
-          "size": 19532
+          "sha256": "90ffbbc935ee4cecbae43b07072046f18e239dd1d38a68448127063b00469e85",
+          "size": 20263
         },
         {
           "path": "skills/whitepaper-proposal-generator/agents/openai.yaml",
