@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-10T04:02:19Z",
-  "upstream_skill_count": 91,
-  "repository_skill_count": 95,
+  "generated_at": "2026-10-13T04:02:51Z",
+  "upstream_skill_count": 92,
+  "repository_skill_count": 96,
   "legacy_skill_count": 13,
   "upstream_inventory": [
     {
@@ -197,17 +197,17 @@
     },
     {
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-      "drive_id": "15-FEq6ntIkojkL6_pRogL01_Mo7LF8qS",
+      "drive_id": "1lOOQGvqgWtCsmh005bJIHlcyJOcu9e-x",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-07T19:19:09.000Z",
-      "drive_md5": "0f849149e44038bd1010fbb8201c9be0"
+      "modified_time": "2026-10-10T20:23:29.812Z",
+      "drive_md5": "f7346853f65067802bd08aef23b1d379"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
-      "drive_id": "1X6OYvA29kCS7wUzqtNbyUCQ42M3SrSqe",
+      "drive_id": "1dAbE4zb6ysbDqfjYsZmJzHV92vXsXdoB",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-16T18:18:05.000Z",
-      "drive_md5": "0fb183f3358f389e02c8735e1e9f8ac0"
+      "modified_time": "2026-10-10T09:42:12.396Z",
+      "drive_md5": "a7eafee7ca771cbe45f9860849c09c69"
     },
     {
       "path": "skills/bpm10-crm/agents/openai.yaml",
@@ -458,8 +458,8 @@
       "path": "skills/commercial-proposal-generator/SKILL.md",
       "drive_id": "1xC7aRqO2YFJOktzqyJjNl2PafO8IjbiK",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-09T10:26:25.000Z",
-      "drive_md5": "4ee90609b0eeb19e5496b5d35ef77172"
+      "modified_time": "2026-10-10T20:49:11.613Z",
+      "drive_md5": "c532ec7a81ea4e16bc74d490ff400935"
     },
     {
       "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -1967,6 +1967,41 @@
       "drive_md5": "0d470685e27762df9db4a73ae17ed14b"
     },
     {
+      "path": "skills/lawyer-pp/agents/openai.yaml",
+      "drive_id": "1e6NqMy9fe2-eZnq1pO_rm5Mi4Y4jkfh7",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-07T18:19:30.000Z",
+      "drive_md5": "968bf9274fbed23297c4c348ea3f214a"
+    },
+    {
+      "path": "skills/lawyer-pp/references/обучение.md",
+      "drive_id": "1N5Afok8z_Z_TCt13AwSUE0rwYgud2RD_",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-07T20:45:15.000Z",
+      "drive_md5": "9d76b5f8c0c162f6dd05fc5a3015ba3f"
+    },
+    {
+      "path": "skills/lawyer-pp/references/проверка-рисков.md",
+      "drive_id": "1IDOy8hw1PAwExJtm1Cwd6-5_cQjhm7TJ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-07T22:00:34.000Z",
+      "drive_md5": "0043fa29a5fef36fc93fd4f9488d85b5"
+    },
+    {
+      "path": "skills/lawyer-pp/references/решения.json",
+      "drive_id": "1UH31heGjb2YlMpDGDCAs5FMzmSUJRQkA",
+      "mime_type": "application/json",
+      "modified_time": "2026-10-07T21:05:18.000Z",
+      "drive_md5": "86750643682442148c8a0c71efcef468"
+    },
+    {
+      "path": "skills/lawyer-pp/scripts/decisions.py",
+      "drive_id": "1Adh2puMvzlR9Vh-JAEsvQ2TlwJlSh_9j",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-10-07T18:38:23.000Z",
+      "drive_md5": "f67a96b9ce82d5df37089da1b3285b35"
+    },
+    {
       "path": "skills/leverage-builder/SKILL.md",
       "drive_id": "1KzcD8c5TWBWp9DPC6ABGbcL00VLTa2u8",
       "mime_type": "text/markdown",
@@ -1979,6 +2014,97 @@
       "mime_type": "application/octet-stream",
       "modified_time": "2026-05-10T07:26:40.903Z",
       "drive_md5": "8a66ac5179a32479a7f45856ac743f28"
+    },
+    {
+      "path": "skills/linkly-ai/.clawhubignore",
+      "drive_id": "1qbIVb0Bs4mFhFy59YckqIdm5OqfPsn-O",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-10T14:14:10.098Z",
+      "drive_md5": "d9b174f856a6a9d642acb8e02f904e93"
+    },
+    {
+      "path": "skills/linkly-ai/.github/ISSUE_TEMPLATE/config.yml",
+      "drive_id": "1GWSkt-Hk5xLg219FNd17OQ5Ee4ifo548",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-10T14:14:10.098Z",
+      "drive_md5": "ebdde453a730a97d3732775b9cb00623"
+    },
+    {
+      "path": "skills/linkly-ai/.github/workflows/release.yml",
+      "drive_id": "1lxZ0FH2fRX6M78M2ELIHEBz7nyDNfPlb",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-10T14:14:10.098Z",
+      "drive_md5": "16fe85519d95e7a405615ecb2cf7f1cb"
+    },
+    {
+      "path": "skills/linkly-ai/.gitignore",
+      "drive_id": "1g0-CJq_uxh7xGCX_C0v1JCGFChl5W_UE",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-10T14:14:10.099Z",
+      "drive_md5": "610e4a2ad93b387a9377c76cba5ffcbc"
+    },
+    {
+      "path": "skills/linkly-ai/LICENSE",
+      "drive_id": "1_ZssJ_sXS26SiM-8zAqTRdLOfXQjub7U",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-10T14:14:10.099Z",
+      "drive_md5": "34024ec89e15306cd35baf5e0298930c"
+    },
+    {
+      "path": "skills/linkly-ai/README.md",
+      "drive_id": "1GsmZMl4vttvaVLOgS-wANpGg89bslpF2",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-10T14:14:10.099Z",
+      "drive_md5": "08b2991315244a66c6a0219da405de3f"
+    },
+    {
+      "path": "skills/linkly-ai/SKILL.md",
+      "drive_id": "1oxKbdIX4fagfTssXe9xcpfBQO8RrbuU4",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-10T21:28:05.969Z",
+      "drive_md5": "c40b0bfdd30fa4bc60e1e6334543b8b6"
+    },
+    {
+      "path": "skills/linkly-ai/references/cli-reference.md",
+      "drive_id": "1Pu3A7vb3y2SUE5I9_cn0HffmEZPmvH_-",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-10T14:14:10.100Z",
+      "drive_md5": "078cff3be6498825df1dee00c0df6ad0"
+    },
+    {
+      "path": "skills/linkly-ai/references/mcp-tools-reference.md",
+      "drive_id": "13zXoZJTAE5ec6iwBOzRTPbEZtdKHgxix",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-10T14:14:10.100Z",
+      "drive_md5": "c11315396adbfa7ab5099b0a31862a20"
+    },
+    {
+      "path": "skills/linkly-ai/references/search-strategies.md",
+      "drive_id": "1wHPQQI4vAZP8qyyhn5-gvV8_jOEY6Yyh",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-10T14:14:10.100Z",
+      "drive_md5": "28d7bf4bf6a8fd12664a101ae690cf8a"
+    },
+    {
+      "path": "skills/linkly-ai/references/troubleshooting.md",
+      "drive_id": "1CTagxOPgMYzcPReiKTGHRR7maMASn1qx",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-10T14:14:10.100Z",
+      "drive_md5": "182002c345f5fbb7cb221dea20b2447a"
+    },
+    {
+      "path": "skills/linkly-ai/scripts/package.sh",
+      "drive_id": "1gBlL1jNeit4HZW26dygzGm0sPez6FT8z",
+      "mime_type": "text/x-sh",
+      "modified_time": "2026-10-10T14:14:10.101Z",
+      "drive_md5": "a7a1fe75c43ee3560a534cc29d61d1dd"
+    },
+    {
+      "path": "skills/linkly-ai/scripts/release-milestone.sh",
+      "drive_id": "1iNWsV3zhIHL45faWZ3qm1hP8BssBbXQB",
+      "mime_type": "text/x-sh",
+      "modified_time": "2026-10-10T14:14:10.101Z",
+      "drive_md5": "e1adc880b8f5580f3a3d8b13cde18ee0"
     },
     {
       "path": "skills/loop-engineer/SKILL.md",
@@ -2871,8 +2997,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "4151b0844b1eadcc4f4350c28dbaccffc23ce02a8576a1cb06bc79f0569a227a",
-          "size": 60348
+          "sha256": "cd637a59bb9d43ee2488db8d7ecc7f508cbd72b6b461257b3d405918e8a858fe",
+          "size": 63001
         }
       ]
     },
@@ -2960,8 +3086,8 @@
       "files": [
         {
           "path": "skills/bpm10-crm/SKILL.md",
-          "sha256": "c4c60eeefbb1d919d759645769ece1c54e1665a25dcc64a4cc1cbd2c097d8a26",
-          "size": 20613
+          "sha256": "429babf31bf6f9fbc5cb48b5060ba7ce1b04f1041021b23f993fcc399d7549d5",
+          "size": 27528
         },
         {
           "path": "skills/bpm10-crm/agents/openai.yaml",
@@ -3344,8 +3470,8 @@
       "files": [
         {
           "path": "skills/commercial-proposal-generator/SKILL.md",
-          "sha256": "a6631aa035a4ebb1abf49fd7cb662c8d157d283bd4a5a6acd34361b22cda50cb",
-          "size": 255599
+          "sha256": "e0cd2a91c80e556028fefafca18e2fe63ec95b90103ea0b16e7a089b7182a16d",
+          "size": 257029
         },
         {
           "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -4567,6 +4693,31 @@
           "path": "skills/lawyer-pp/SKILL.md",
           "sha256": "a83477660f0c13d9cc4003d3f7926688749fd4e7ae8c6fa0f0f9afef50173f74",
           "size": 29228
+        },
+        {
+          "path": "skills/lawyer-pp/agents/openai.yaml",
+          "sha256": "80d94718636b7096c003428ac35e4731620a7c99a3727f3ec89226d5de7f11e4",
+          "size": 393
+        },
+        {
+          "path": "skills/lawyer-pp/references/обучение.md",
+          "sha256": "19ff0e2eba77060f784e88773356cb5f9ad0ebdb37c5c12d0a0d34ad09f47c3e",
+          "size": 7362
+        },
+        {
+          "path": "skills/lawyer-pp/references/проверка-рисков.md",
+          "sha256": "54a001ccdfc3d87dc18fa6b99e732e5a2ce46c461cdabf34f6df659a22f45a51",
+          "size": 71247
+        },
+        {
+          "path": "skills/lawyer-pp/references/решения.json",
+          "sha256": "992f078288f8247faf4aa14cfd93f662c3131da434e67d7d6ddafd69b79b17e6",
+          "size": 232182
+        },
+        {
+          "path": "skills/lawyer-pp/scripts/decisions.py",
+          "sha256": "7f0692d289c2d74f8bc9e0cf4afad95fc1505a9267cfa38f7dde41195059c112",
+          "size": 10404
         }
       ]
     },
@@ -4584,6 +4735,78 @@
           "path": "skills/leverage-builder/agents/openai.yaml",
           "sha256": "063e6f8a0df5886d0d48ef1adf88c765c38d95bfa8a4535401faf2a19dbc66c6",
           "size": 327
+        }
+      ]
+    },
+    {
+      "name": "linkly-ai",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/linkly-ai/.clawhubignore",
+          "sha256": "172d90ff25380274c25c51584dcdd332711367be54462b1ea5e669c7ef30036d",
+          "size": 75
+        },
+        {
+          "path": "skills/linkly-ai/.github/ISSUE_TEMPLATE/config.yml",
+          "sha256": "f063ad7963cf4a1e4a661dce8d11ef29f9e0dd0466ae26a20f14b26c8fbb1702",
+          "size": 312
+        },
+        {
+          "path": "skills/linkly-ai/.github/workflows/release.yml",
+          "sha256": "3b8267e62c8c93d44f70b98ff73d4fad34e514b0361cf247067e299e429cdf10",
+          "size": 5401
+        },
+        {
+          "path": "skills/linkly-ai/.gitignore",
+          "sha256": "9d0c3c029ca79daeb7e73675e9c26c8c7f0417cd44dfd2aefd64a45842527277",
+          "size": 47
+        },
+        {
+          "path": "skills/linkly-ai/LICENSE",
+          "sha256": "4b6affb51ecb2137f0b6093363dd7f29739b17ab928dbcc9c7717d8f9025632f",
+          "size": 10760
+        },
+        {
+          "path": "skills/linkly-ai/README.md",
+          "sha256": "4b5d0b9ee0347a384412203ecc588231122eeee93a0c1645ca8f7f73ca69a9f1",
+          "size": 8738
+        },
+        {
+          "path": "skills/linkly-ai/SKILL.md",
+          "sha256": "71676320c0e35e636fce9c3f42dda2eb99a296162c4f1fd31f11a1c8a5367e20",
+          "size": 147130
+        },
+        {
+          "path": "skills/linkly-ai/references/cli-reference.md",
+          "sha256": "0b248a9211fbb81c90e551062edb2c843cba1c06c197d578234a8281069b0ed4",
+          "size": 42279
+        },
+        {
+          "path": "skills/linkly-ai/references/mcp-tools-reference.md",
+          "sha256": "7605c91b0f51825b56107896bbc1c4a517a3fd3ed5e8f464babba359f54efcd2",
+          "size": 89240
+        },
+        {
+          "path": "skills/linkly-ai/references/search-strategies.md",
+          "sha256": "66389aaa8eff39f906f788d8eeef0966a9ad6397a57be552478640c9bf16c38f",
+          "size": 21086
+        },
+        {
+          "path": "skills/linkly-ai/references/troubleshooting.md",
+          "sha256": "60b3de092e83e6269095c83c18213aa1f4867cf1ba6f80f6d05e97030e422b09",
+          "size": 25998
+        },
+        {
+          "path": "skills/linkly-ai/scripts/package.sh",
+          "sha256": "c2d8463438f1a870a395e661331c5d8d59a1ec4ce15323966d18e33e760524f5",
+          "size": 5498
+        },
+        {
+          "path": "skills/linkly-ai/scripts/release-milestone.sh",
+          "sha256": "599a9c38361d57868a9386876779141c39744c15fac7cfa045544b33d661c3c7",
+          "size": 3598
         }
       ]
     },

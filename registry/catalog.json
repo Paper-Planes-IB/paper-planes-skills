@@ -873,6 +873,16 @@
     "slices": "Контент и редактура"
   },
   {
+    "skill": "linkly-ai",
+    "type": "Контент и редактура",
+    "description": "Скилл помогает выполнить задачу «linkly ai» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/linkly-ai",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-linkly-ai",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "marketing-ideas",
     "slug": "marketing-ideas",
     "type": "Контент и редактура",

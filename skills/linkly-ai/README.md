@@ -1,0 +1,183 @@
+# Linkly AI Skills
+
+![Version](https://img.shields.io/badge/version-0.8.2-blue)
+![License](https://img.shields.io/badge/license-Apache--2.0-green)
+![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey)
+
+[Agent Skills](https://agentskills.io) for [Linkly AI](https://linkly.ai) — search, browse, and read your local documents (and linked cloud libraries) from any AI coding agent.
+
+This skill teaches AI agents how to use Linkly AI's document search capabilities, enabling them to find and read your locally indexed documents (PDF, Markdown, Excel, CSV, DOCX, TXT, PPTX, DOC, RTF, EPUB, HTML, images, audio, video) as well as cloud libraries you've linked via Linkly Web — and to capture short Markdown notes back into your library.
+
+## What is Linkly AI?
+
+[Linkly AI](https://linkly.ai) is a desktop application that indexes documents on your computer and provides full-text search, structural outlines, content reading, and local note capture through a local MCP server. Through the `mcp.linkly.ai` cloud gateway it can also reach cloud libraries you've linked via Linkly Web. Think of it as a knowledge base — local and cloud — that AI agents can query.
+
+## What Does This Skill Do?
+
+When installed, this skill enables AI agents to:
+
+- **Search** your local documents (and linked cloud libraries) by keywords with relevance ranking, time windows, and path filters
+- **Find paths** for fuzzy or cross-language container names ("in my WeChat", "在 Notion 笔记里") by matching against the indexed file paths
+- **List** a known container — a disk folder, a library, or your notes — as a complete paged enumeration, with no search query to invent
+- **Explore** the knowledge base for an overview of themes, document types, and recent activity
+- **List libraries** to discover and search within specific knowledge bases
+- **Browse** document outlines to understand structure before diving in
+- **Grep** for specific text patterns with regex matching
+- **Read** document content with line-based pagination, including OCR text from referenced images
+- **List and write notes** — browse your local Markdown notes by tag, and save new ones
+- **Diagnose issues** with `linkly doctor` when things aren't working
+- **Auto-detect** whether to use CLI commands or MCP tools based on the environment
+- **Guide setup** if Linkly AI is not yet installed
+
+The skill supports two access modes:
+
+| Mode | When Used                      | How It Works                                                                                                                                                                                                                       |
+| ---- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CLI  | Agent has Bash/terminal access | Runs `linkly` CLI commands (preferred when both are available)                                                                                                                                                                     |
+| MCP  | Agent has MCP tool access      | Calls `search` / `find_paths` / `outline` / `grep` / `read` / `list` / `list_libraries` / `explore` / `note_save` MCP tools — via the local server or the `mcp.linkly.ai` cloud gateway (which also serves linked cloud libraries) |
+
+## Prerequisites
+
+1. **Linkly AI desktop app** — [download from linkly.ai](https://linkly.ai)
+2. **Linkly AI CLI** (for CLI mode) — see [installation](#cli-installation)
+
+### CLI Installation
+
+macOS / Linux:
+
+```bash
+curl -sSL https://updater.linkly.ai/cli/install.sh | sh
+```
+
+Or via Homebrew:
+
+```bash
+brew tap LinklyAI/tap
+brew install linkly
+```
+
+Windows (PowerShell):
+
+```powershell
+irm https://updater.linkly.ai/cli/install.ps1 | iex
+```
+
+Cross-platform (requires Rust):
+
+```bash
+cargo install linkly-ai-cli
+```
+
+## Installing This Skill
+
+### skills.sh (Recommended)
+
+Install to all supported agents with a single command:
+
+```bash
+npx skills add LinklyAI/linkly-ai-skills
+```
+
+Or install to a specific agent:
+
+```bash
+# Claude Code only
+npx skills add LinklyAI/linkly-ai-skills -a claude-code
+
+# Codex CLI only
+npx skills add LinklyAI/linkly-ai-skills -a codex
+
+# Global install (available across all projects)
+npx skills add LinklyAI/linkly-ai-skills -g
+```
+
+### Claude Code (manual)
+
+Copy the skill to your personal skills directory:
+
+```bash
+git clone https://github.com/LinklyAI/linkly-ai-skills.git ~/.claude/skills/linkly-ai
+```
+
+Or for a specific project:
+
+```bash
+git clone https://github.com/LinklyAI/linkly-ai-skills.git .claude/skills/linkly-ai
+```
+
+### Codex CLI (OpenAI)
+
+```bash
+git clone https://github.com/LinklyAI/linkly-ai-skills.git ~/.agents/skills/linkly-ai
+```
+
+### Claude.ai (web)
+
+Download the latest release's `.zip` asset from the [Releases](https://github.com/LinklyAI/linkly-ai-skills/releases) page, then upload it in Claude.ai → Settings → Capabilities → Skills.
+
+### ClawHub (OpenClaw)
+
+```bash
+clawhub install linkly-ai
+```
+
+### Other AI Agents
+
+Any AI agent that supports the [Agent Skills](https://agentskills.io) open standard can use this skill. Copy the `SKILL.md` file and the `references/` directory to the appropriate skills location for your agent.
+
+## Versioning
+
+The version appears in three places, and the release workflow refuses to publish unless all three match the git tag:
+
+| Where                                                  | Purpose                                                                                                            |
+| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `linkly-ai-skill-version:` at the bottom of `SKILL.md` | Authoritative. Some platforms strip frontmatter keys they don't recognise; body text always travels with the file. |
+| `version:` in the `SKILL.md` frontmatter               | Convenience for tools that already parse frontmatter.                                                              |
+| The badge at the top of this README                    | Human-facing.                                                                                                      |
+
+`linkly skills status` reports the installed version against the latest published one; `linkly skills update` upgrades it.
+
+## Skill Contents
+
+```
+├── SKILL.md                           # Core skill instructions
+├── references/
+│   ├── cli-reference.md               # CLI commands and options
+│   ├── mcp-tools-reference.md         # MCP tool schemas and responses
+│   ├── search-strategies.md           # Advanced query crafting patterns
+│   └── troubleshooting.md             # Diagnosing and resolving issues
+└── scripts/
+    └── package.sh                     # Build the release .zip for upload
+```
+
+| File                                | Purpose                                                            |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `SKILL.md`                          | Main instructions: environment detection, workflow, best practices |
+| `references/cli-reference.md`       | CLI commands, options, JSON output format                          |
+| `references/mcp-tools-reference.md` | MCP tool parameters, response schemas, supported document types    |
+| `references/search-strategies.md`   | Advanced query crafting, multi-round search, library scoping       |
+| `references/troubleshooting.md`     | Connection issues, version mismatches, and diagnostic steps        |
+
+## Compatibility
+
+This skill follows the [Agent Skills](https://agentskills.io) open standard and works with:
+
+- [Claude Code](https://claude.ai/code) (Anthropic)
+- [OpenClaw](https://openclaw.ai)
+- [Codex CLI](https://github.com/openai/codex) (OpenAI)
+- Any agent supporting the Agent Skills specification
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/LinklyAI/linkly-ai-skills).
+
+## Community
+
+- [Documentation](https://linkly.ai/docs) — guides, integrations, and troubleshooting
+- [Community](https://linkly.ai/docs/en/community) — every official channel in one place
+- [GitHub Issues](https://github.com/LinklyAI/linkly-ai-skills/issues) — bugs and feature requests
+- [YouTube](https://www.youtube.com/@LinklyAI) · [X](https://x.com/linkly_ai)
+
+## License
+
+[Apache-2.0](LICENSE)

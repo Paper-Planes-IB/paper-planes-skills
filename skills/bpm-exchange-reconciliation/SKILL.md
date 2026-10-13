@@ -2,7 +2,7 @@
 name: bpm-exchange-reconciliation
 description: Use when Ilya asks to run BPM Exchange, взаимное обогащение BPM, BPM-SI, Storyline-Storyboard, approved-presentation-to-BPV lineage, return packs, QA learning, client reality reconciliation, field pressure, or project-level BPM enrichment for 4th-department projects.
 metadata:
-  version: "0.2.13"
+  version: "0.2.14"
   status: draft
   line: 04-production / BPM Exchange / Storyline-Storyboard governance
   owner: Ilya
@@ -38,6 +38,7 @@ metadata:
   return_contract:
     version: "v0.2"
     changelog:
+      - "2026-10-10: Added accepted guards for implementation-source-check task gates, commercial event-to-lead economics, and AI education vs implementation boundary."
       - "2026-10-08: Accepted method reconciliation for technological Rail, financial contradictions and separate learning outcomes; added regression cases."
       - "2026-05-27: Initial orchestrator skill for BPM Exchange reconciliation."
       - "2026-05-28: Added execution modes, short path, trigger routing, preflight checklist, upstream contracts, and decision footer."
@@ -102,6 +103,14 @@ These guards are accepted operating rules for BPM Exchange. Apply them before cr
 - Для обучения разделяй утверждения: профиль роли, результат теста, завершение курса, действие в работе и денежный эффект. BPM-9 подтверждает наблюдаемое поведение и ограничения; BPV-09.4 получает профиль и развитие; BPV-14 получает практику и повторное наблюдение. BPM-4 проверяет экономический эффект только при явной зависимости. Индивидуальное кадровое решение не следует из среднего отдела или учебного результата.
 
 Эти правила приняты Ильёй после Learning Brief 07/10/2026. Они уточняют использование действующих контрактов, а не подтверждают клиентские факты или внедрение. Для Альтернативы BPV-08.1 остаётся проектным кандидатом до постоянной посадки источников и клиентской проверки; уже зарегистрированный маршрут не получает отдельный SI.
+
+### Implementation-source, commercial event-to-lead и AI-education boundary — акцепт 10/10/2026
+
+Если source-read / implementation-source-check усиливает внедренческий слой, но не содержит утверждённого owner/action/date-or-event/output, не создавай `task_delta` и не открывай внешнюю задачу. Сначала нужен `node-to-track ledger`: problem node / recommendation -> existing track or BPM -> owner gate -> required evidence -> no-op/task candidate -> result check. Приход PDF/SVG/deck/render является кандидатом на source-arrival / render-check, а не доказательством внедрения, клиентского решения или выполненной задачи.
+
+Commercial event-to-lead с полным транскриптом может быть сильным коммерческим источником и донором для Matrix, но не становится delivery evidence или project Storyline receiver, пока не принят контур проекта / поставки. Если подход зависит от экономики, требуй P&L или Cash Flow под денежное ограничение, расходную часть, ABC-драйверы, CRM/funnel/source data, сервисную / гарантийную / внедренческую трудоёмкость, юридические / НДС / payment terms и opportunity cost. Устные margin, volume, run-rate или target growth остаются `client-stated / audited=false` до owner bridge и физического финансового источника.
+
+AI / low-code course и учебные outputs разделяй на три слоя: learning artifact, consulting implementation и economic proof. Завершение курса или первый проверенный учебный артефакт маршрутизируется в BPV-14 / training mirror и продуктовую витрину только как learning proof; это не доказывает process repair, adoption, ROI или production readiness. Повышение в BPV-05 / BPV-10 / BPV-11 или внедренческий маршрут требует owner, source/data access, human review, operating rule, usage/effect metric и наблюдаемого результата работы.
 
 ### BPV Downstream Guard
 

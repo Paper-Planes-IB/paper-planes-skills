@@ -1,0 +1,4 @@
+interface:
+  display_name: "lawyerPP"
+  short_description: "Риски договоров и память принятых правок Paper Planes"
+  default_prompt: "Используй $lawyer-pp: проверь договорные риски для Paper Planes, покажи применимые сохранённые правки и запомни мои прямые решения."
