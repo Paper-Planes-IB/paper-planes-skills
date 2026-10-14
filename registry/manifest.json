@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-13T04:02:51Z",
+  "generated_at": "2026-10-14T04:02:41Z",
   "upstream_skill_count": 92,
   "repository_skill_count": 96,
   "legacy_skill_count": 13,
@@ -171,8 +171,8 @@
       "path": "skills/balakhnin-voice/SKILL.md",
       "drive_id": "1VOm-D0PexrS6_C3TnDt_GVhqOlLJprHv",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-13T11:40:34.498Z",
-      "drive_md5": "6f0532f9c07d14e6c326c848e63a9ab8"
+      "modified_time": "2026-10-11T13:38:41.000Z",
+      "drive_md5": "dc993fcf0648dc122e17af5418cfe32e"
     },
     {
       "path": "skills/basecamp/.installed-version",
@@ -311,8 +311,43 @@
       "path": "skills/bpm6-website-positioning-audit/SKILL.md",
       "drive_id": "18yqywuFiXljIN8rCnuUORvrMtEvyZqLo",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-02T13:14:36.375Z",
-      "drive_md5": "f9667394fd6d7ad0a330009fe47e431c"
+      "modified_time": "2026-10-11T15:34:24.000Z",
+      "drive_md5": "2f37e88083ef6c8a822376fbe4e824f0"
+    },
+    {
+      "path": "skills/bpm6-website-positioning-audit/evals/technical-audit-cases.md",
+      "drive_id": "1CUEH6o7cQ9Rh2uFkzMLBBAwc4nG0wX5F",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-11T15:39:07.000Z",
+      "drive_md5": "ce76a62c4657ee59e58218779302283b"
+    },
+    {
+      "path": "skills/bpm6-website-positioning-audit/references/technical-audit.md",
+      "drive_id": "1qvn42QelPhT7Syk4rw1eVIGnZsNaE-KV",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-11T15:37:49.000Z",
+      "drive_md5": "4d332de961f8e9db735e3f54aa4f92b7"
+    },
+    {
+      "path": "skills/bpm6-website-positioning-audit/scripts/audit_site.py",
+      "drive_id": "1iRnh_6HVNAUtfXfmqtWOu5vnW_8NHEHa",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-10-11T15:38:23.000Z",
+      "drive_md5": "cbb3ae3b867ddb743b84174e3ba72d81"
+    },
+    {
+      "path": "skills/bpm6-website-positioning-audit/scripts/browser_probe.cjs",
+      "drive_id": "1sojTGMynFnVx63UHMtqYtjNG5WGQ4I6C",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-11T15:38:23.000Z",
+      "drive_md5": "9e01dbb65b98abc2963e8aae6306e391"
+    },
+    {
+      "path": "skills/bpm6-website-positioning-audit/scripts/test_audit.py",
+      "drive_id": "14n_xaPaKugWfQZ8_jwf7V1uIu69mXqmx",
+      "mime_type": "text/x-python",
+      "modified_time": "2026-10-11T15:38:23.000Z",
+      "drive_md5": "eca1906c6fd702e632b7dbf972ce5d51"
     },
     {
       "path": "skills/bpv-01-npd-lifecycle-os/SKILL.md",
@@ -458,8 +493,8 @@
       "path": "skills/commercial-proposal-generator/SKILL.md",
       "drive_id": "1xC7aRqO2YFJOktzqyJjNl2PafO8IjbiK",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-10T20:49:11.613Z",
-      "drive_md5": "c532ec7a81ea4e16bc74d490ff400935"
+      "modified_time": "2026-10-11T13:38:41.000Z",
+      "drive_md5": "c6cc525e5be540058297c3a5036fba50"
     },
     {
       "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -801,8 +836,8 @@
       "path": "skills/expert-article-writer/SKILL.md",
       "drive_id": "1PGWTmbau-P_2BPQhOkl1e4kskajW5KIQ",
       "mime_type": "text/markdown",
-      "modified_time": "2026-05-17T21:41:11.697Z",
-      "drive_md5": "05878179b71e6783596217d48e21b8cf"
+      "modified_time": "2026-10-11T13:38:41.000Z",
+      "drive_md5": "f5ff02612217725c64fd1f6cd5a365be"
     },
     {
       "path": "skills/fix-rules/SKILL.md",
@@ -2956,8 +2991,8 @@
       "files": [
         {
           "path": "skills/balakhnin-voice/SKILL.md",
-          "sha256": "5f2ae9321e9d36f805c0282c0426b93db16e5639e42998c3eb151110b888ef7d",
-          "size": 44462
+          "sha256": "efece4ddd7ba257e68b5aa4c84b46ae17566aa62f9ae4f09e4ebab621f3c14c3",
+          "size": 48152
         }
       ]
     },
@@ -3253,8 +3288,33 @@
       "files": [
         {
           "path": "skills/bpm6-website-positioning-audit/SKILL.md",
-          "sha256": "b1547faec1590f0327c23ea9c8bee6629a108185ea3d7e4325eb7f38d26b4c97",
-          "size": 9911
+          "sha256": "03cb84014f6132b8670ecdb500b6d55b716f6897dd00e26ca4a1d9c1022c7b4a",
+          "size": 14707
+        },
+        {
+          "path": "skills/bpm6-website-positioning-audit/evals/technical-audit-cases.md",
+          "sha256": "22675bbf5dace2ab5323b71bb86334e99a871c92d0089864b280dd30b26534f3",
+          "size": 8944
+        },
+        {
+          "path": "skills/bpm6-website-positioning-audit/references/technical-audit.md",
+          "sha256": "e3de1e16373e11e16c309acca77b2157015abbd1df3f41d6649e24a913667f3f",
+          "size": 20085
+        },
+        {
+          "path": "skills/bpm6-website-positioning-audit/scripts/audit_site.py",
+          "sha256": "5e7f960681c92d839c358614b6d900ac25888876007adec0655741b2ab9f4109",
+          "size": 54190
+        },
+        {
+          "path": "skills/bpm6-website-positioning-audit/scripts/browser_probe.cjs",
+          "sha256": "e3573fd2bee92997d9c0d8815fe9d39d0ec743ae3912468a0040573d6e46655d",
+          "size": 12780
+        },
+        {
+          "path": "skills/bpm6-website-positioning-audit/scripts/test_audit.py",
+          "sha256": "324c1e409b11aadf952203ceabdfc7ec69ad910ae7adc79034fbb62b938c9719",
+          "size": 12496
         }
       ]
     },
@@ -3470,8 +3530,8 @@
       "files": [
         {
           "path": "skills/commercial-proposal-generator/SKILL.md",
-          "sha256": "e0cd2a91c80e556028fefafca18e2fe63ec95b90103ea0b16e7a089b7182a16d",
-          "size": 257029
+          "sha256": "491511501cee597d40febc56f2488263693b6645458fc7b757058fb972d3f21d",
+          "size": 260719
         },
         {
           "path": "skills/commercial-proposal-generator/references/brief-template.md",
@@ -3784,8 +3844,8 @@
       "files": [
         {
           "path": "skills/expert-article-writer/SKILL.md",
-          "sha256": "76177f77f910cd25ad02f1980491632fd2242af41db67f783032d4f4a4740ed2",
-          "size": 4345
+          "sha256": "ffff890fbe753fa9255ee3b7edb1e29028be53042cfd48c7845684e79717a141",
+          "size": 8035
         }
       ]
     },
