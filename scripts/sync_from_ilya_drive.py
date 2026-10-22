@@ -236,11 +236,16 @@ def is_unchanged_from_drive(
     previous: dict | None,
     previous_generated_at: str = "",
 ) -> bool:
-    if not previous or not destination.exists():
-        modified_time = item.get("modifiedTime") or ""
-        return bool(previous_generated_at and destination.exists() and modified_time <= previous_generated_at)
-    current = drive_fingerprint(item)
-    return all(previous.get(key) == value for key, value in current.items())
+    # Metadata alone cannot prove a local file is complete or unchanged.
+    # Drive MD5 validates the actual bytes, including files left by failed runs.
+    expected = item.get("md5Checksum")
+    if not expected or not destination.is_file():
+        return False
+    digest = hashlib.md5()
+    with destination.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest() == expected
 
 
 def fetch_tree(

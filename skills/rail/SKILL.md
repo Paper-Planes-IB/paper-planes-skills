@@ -115,6 +115,10 @@ metadata:
 
 # Rail
 
+## Подключение вынесенных норм AGENTS
+
+До предметного прохода подтвердить Old / New Delivery, технологический / организационный класс, класс источника и права. Подробные исходные нормы бывшего AGENTS сохранены в существующем `BPM — Майнинг/OPM/README.md`; адресный указатель из корня PP: `python3 scripts/model_router.py --instruction-contract "Old Delivery"`. Открыть применимые фрагменты по `--instruction-id`, дочитывая все окна. Указатель или версия skill не доказывают чтение. Этот слой уточняет обязательные гейты и исключения, но не требует запускать все режимы Rail. New Delivery не наследует Old Delivery; BPM-3 не получает Cynefin / Estuarine даже при общем opt-in; технологическая задача не получает организационные слои. Полный сквозной аналитический стандарт остаётся в `~/.codex/AGENTS.md`. Перенос адресов не меняет метод, права создания evidence-набора, меж-BPM ответственность и границу К1 / К3. Повторный учёт одного физического источника запрещён. Отсутствующий контракт не подменять догадкой.
+
 ## Purpose
 
 Rail inspects a 4th-department production project as an operating system: chats, штаб, working contours, scope, BPM/BPP movement, tasks, deadlines, owners, next actions, and methodology fit.
@@ -168,6 +172,8 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 - do not create a second mirror, duplicate cron, parallel Frappe text, or one-off summary when an existing fragment can be overwritten;
 - if the cron is inactive or Frappe publication is only a mirror, still update the upstream fragment and record `Frappe: зеркало / не источник методологии`;
 - if the Rail change is technical-only or irrelevant to partners, record a concise `без партнёрской дельты` no-op in the relevant rule/update trail instead of pushing noise downstream.
+
+Партнёрски безопасное уточнение существующего правила SI от 14.10.2026 для читающего этот upstream-раздел `meltpot-natalia-3h-update-pack`: до сборки/передачи слайдов подтвердить по действующему каталогу код, точное каноническое название, смысл и допустимость входов; проектный заголовок/ID хранить отдельно, при коллизии не выбирать шаблон по ошибочному номеру. Перед передачей повторить проверку идентичности и визуального референса. Это профилактика ошибки атрибуции уже действующего контракта, не новый порядок delivery. Ни клиентские факты, ни закрытый канон/содержимое SI-строк в downstream не передаются; Frappe остаётся зеркалом. Расписание/статус cron и внешние отправки этой правкой не меняются.
 
 ## Non-Negotiables
 
@@ -2110,6 +2116,7 @@ This applies to real projects, internal exercises, training examples, dry-runs, 
 Mandatory behavior:
 
 - when there is an exact canonical match, use its exact `SI code + name` and record catalog version, thematic block, archetype applicability and canon status;
+- Уточнение 14.10.2026 по прямому решению Ильи: до первого упоминания/записи/выбора визуализации проверять не только код, но единую пару `код + точное каноническое название`, вопрос/модель и применимость входов по каталогу и карточке. `SI-<число>` — канонический адрес, не локальный проектный счётчик; свободные номера и max+1 запрещены. Проектный ID и клиентский заголовок хранить отдельно от канонического SI. При коллизии явно показать расхождение, остановить каноническую атрибуцию и продолжить только как проектный кандидат, не наследуя ошибочную идентичность из старой строки. Гейт из `~/.codex/AGENTS.md` повторить перед writeback/рендером; визуальный референс проверять отдельно, пустая секция не доказательство. Исторические ссылки сохраняются до адресной разрешённой миграции, без массовой замены или изменения каталога.
 - never invent a code or title and present it as canonical SI;
 - a local or simulated ID such as `SI-SIM-*` is allowed only as an explicit `project SI / simulation-only`, never as canonical identity;
 - when the project thought combines several canonical SI, retain one project-SI formulation and show each nearest canonical SI with its separate role; never fabricate a compound canonical code;

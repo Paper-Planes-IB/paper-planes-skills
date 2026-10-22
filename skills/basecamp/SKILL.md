@@ -904,3 +904,20 @@ basecamp people list --jq '[.data[] | {name: .name, email: .email_address}]'
 - API concepts: https://github.com/basecamp/bc3-api#key-concepts
 - CLI repo: https://github.com/basecamp/basecamp-cli
 - API coverage: See API-COVERAGE.md in the CLI repo
+
+
+## Подключаемые нормы из AGENTS — 14.10.2026
+
+Темы: `Basecamp`. Полные исходные формулировки перенесены без пересказа; номера и исходные разделы нужны для проверки. Это не новое разрешение на запись. Последняя прямая команда и действующее ядро имеют приоритет перед старыми примерами. РГ1/РГ2, Task Inbox и снятые маршруты не восстанавливаются по историческому тексту; ClickUp по умолчанию только для чтения. Подключать применимые нормы с условиями и исключениями, не весь файл и не все режимы подряд. Дословный исторический текст хранится для трассировки, а не отменяет более позднее решение. Указатель / проверка: `scripts/model_router.py --instruction-contract "<тема>"` / `--check-instructions` из корня PP.
+
+### Г-097. Slash-команды и локальные скиллы
+
+<!-- agents-norm:Г-097:start -->
+- Basecamp / 37signals не искать только как connector/plugin. Если Basecamp connector через `tool_search` не подгружается или не доступен к установке, но в чате доступен shell, использовать локальный CLI `/Users/iliabalahnin/.local/bin/basecamp` и локальный skill `~/.codex/skills/basecamp/SKILL.md`. Отсутствие Basecamp connector не является blocker само по себе; blocker только если одновременно недоступны plugin/connector, shell или локальный CLI / авторизация CLI. Для задач пилота Codex/Vault ↔ Basecamp прямые команды `в Basecamp`, `поставь в Basecamp`, `добавь в Basecamp` маршрутизировать через CLI, не через Airtable.
+<!-- agents-norm:Г-097:end -->
+
+### С-102. Slash-команды CORD
+
+<!-- agents-norm:С-102:start -->
+Basecamp / 37signals не искать только как connector/plugin. Если Basecamp connector через `tool_search` не подгружается или не доступен к установке, но в чате доступен shell, использовать локальный CLI `/Users/iliabalahnin/.local/bin/basecamp` и локальный skill `~/.codex/skills/basecamp/SKILL.md`. Отсутствие Basecamp connector не является blocker само по себе; blocker только если одновременно недоступны plugin/connector, shell или локальный CLI / авторизация CLI. Для задач пилота Codex/Vault ↔ Basecamp прямые команды `в Basecamp`, `поставь в Basecamp`, `добавь в Basecamp` маршрутизировать через CLI, не через Airtable.
+<!-- agents-norm:С-102:end -->

@@ -2,7 +2,7 @@
 name: whitepaper-proposal-generator
 description: Generate personalized Paper Planes semi-whitepaper, semi-commercial proposals for Gamma when the offer concerns corporate, commercial, operational, organizational, HR/culture, automation/data, or hybrid strategy and transformation. Use when Ilya asks for a whitepaper-like КП, a strategic memorandum with commercial terms, a subject-adaptive proposal based on the 9 levers, or proof-rich Gamma pages using archived Paper Planes projects and mini-cases.
 metadata:
-  version: "0.1.2"
+  version: "0.1.3"
   supports_bpm:
     primary: [commercial_trace, proposal_route, whitepaper_proposal, client_facing_claims]
     required_secondary: [BPM-2, BPM-5, BPM-10, BPM-11]
@@ -44,6 +44,15 @@ Create a useful strategic document that also sells the recommended Paper Planes 
 2. When producing slides, HTML, PP Pages or PPTX, use the current PP Presentation Kit and `pp-slidument` required by the parent skill. This skill owns subject routing and narrative, not visual production.
 3. If a whitepaper proposal must be rebuilt from an existing HTML/PDF/PNG commercial template, the optional derivative subskill `html-proposal-template-editor` may be invoked through the parent production route from `~/.codex/derivative-subskills/html-proposal-template-editor/`. It repairs editable-template mechanics only; it does not own subject routing, narrative, source/claim gates or commercial commitments.
 4. Keep internal codes such as BPM, BPO, BPV, SI, MEDDPICC and RDB out of client-facing pages. Translate them into questions, works, decisions, artifacts, rhythms and business effects.
+
+## Проверка внедрения и условий до первого PDF — 14.10.2026
+
+До передачи в pp-slidument применить раздел «Проверки внедрения и коммерческих решений до первого PDF» в [commercial-proposal-generator](../commercial-proposal-generator/SKILL.md). Эта проверка действует и при единой цене полной программы: аналитика не может быть подробно раскрыта при внедрении, сведённом к заголовкам.
+
+В существующем исходнике показать для включённых направлений рабочий результат, пользователя и операцию, участие сторон, данные и зависимости, испытания, корректировки, самостоятельную практику и передачу. Квитанция полноты относится к конкретным блокам, а не к числу слайдов. Не добавлять услуги при принятом аналитическом объёме.
+
+Цена, момент её фиксации, события и база оплаты, внешние расходы и НДС сверяются с решениями Ильи. Пробел не заполняется типовой схемой. Полученный результат двух проверок передать производству вместе с исходником; отсутствующая квитанция не позволяет назвать первый клиентский PDF готовым.
+
 
 ## Required references
 
@@ -268,6 +277,8 @@ whitepaper_proposal_qa:
 Do not call the result final while any required row is `needs_revision` or `blocked`.
 
 ## Eval hooks
+- Для КП проверить Е1–Е8 из раздела «Регрессии глубины внедрения и коммерческих решений» commercial-proposal-generator: общий список шагов не проходит первый PDF; неподтверждённый момент цены или схема оплаты не добавляются; аналитический объём не расширяется; последняя простая схема сохраняется.
+
 
 When this skill changes, `skill-eval-harness` must test at least:
 

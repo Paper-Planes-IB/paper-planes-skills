@@ -100,6 +100,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "bpm8-process-evidence-map",
+    "type": "BPM / методология",
+    "description": "Скилл помогает выполнить задачу «bpm8 process evidence map» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/bpm8-process-evidence-map",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-bpm8-process-evidence-map",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "bpv-01-npd-lifecycle-os",
     "type": "BPM / методология",
     "description": "Ведёт продуктовую стратегию BPV-01 и внедрение NPD Lifecycle OS. Охватывает продуктовый туннель, портфель SEVA и SKU, карточки гипотез, контрольные точки, PLM и разбор результатов запуска.",
@@ -202,11 +212,11 @@
   {
     "skill": "competitor-research",
     "type": "BPM / методология",
-    "description": "Готовит задание для ChatGPT Pro или Perplexity на глубокое исследование конкурентов по BPM-6 и разбирает полученный пакет. Охватывает рынок, продукты, позиционирование, продажи, новости и поисковую видимость.",
-    "source": "Илья / GitHub",
+    "description": "Готовит исследование конкурентов по BPM-6, карту конкуренции и материалы для сравнения предложений. Разделяет публичные сведения и факты, подтверждённые в сделках. Пакет из гайда: 0.1.2.",
+    "source": "Илья / GitHub / гайд экспертных продаж",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/competitor-research",
-    "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-competitor-research-392592ad",
-    "slices": "BPM / методология · Контент и редактура",
+    "page": "https://lms.paper-planes.ru/knowledge/competitor-research",
+    "slices": "BPM / методология · Контент и редактура · Экспертные продажи",
     "lifecycle": "active"
   },
   {
@@ -563,6 +573,16 @@
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-skill-eval-harness-f243c966",
     "slices": "Внутренние процессы",
     "lifecycle": "active"
+  },
+  {
+    "skill": "storage-system-builder",
+    "type": "Внутренние процессы",
+    "description": "Проектирует и поддерживает структуру хранения материалов компании, подразделения, роли или проекта. Согласует место хранения, папки и навигацию перед изменениями. Версия 1.0.1.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-storage-system-builder",
+    "slices": "Экспертные продажи · Организация хранения рабочих материалов",
+    "lifecycle": "review"
   },
   {
     "skill": "three-perspective-review",
@@ -1237,11 +1257,11 @@
   {
     "skill": "deepresearch",
     "type": "Общее / без среза",
-    "description": "Проводит углублённое исследование по заданной теме. Собирает источники, проверяет факты, сопоставляет позиции и формирует выводы с уровнем уверенности.",
-    "source": "Илья / GitHub",
+    "description": "Организует глубокое исследование: готовит задание, план источников и проверку фактов, сопоставляет найденные сведения и оформляет выводы с ограничениями. Пакет из гайда: 0.1.2.",
+    "source": "Илья / GitHub / гайд экспертных продаж",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/deepresearch",
-    "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-deepresearch-bf866465",
-    "slices": "Без среза",
+    "page": "https://lms.paper-planes.ru/knowledge/deepresearch",
+    "slices": "Без среза · Экспертные продажи",
     "lifecycle": "active"
   },
   {
@@ -1437,11 +1457,11 @@
   {
     "skill": "abm-pursuit-loop",
     "type": "Управление проектами",
-    "description": "Скилл помогает выполнить задачу «abm pursuit loop» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
-    "source": "Илья / GitHub",
+    "description": "Выстраивает процесс работы с целевыми компаниями: от отбора и исследования до подготовки встречи, передачи результатов в CRM и разбора полученного опыта. Пакет из гайда: 1.6.0.",
+    "source": "Илья / GitHub / гайд экспертных продаж",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/abm-pursuit-loop",
     "page": "https://lms.paper-planes.ru/knowledge/skill-abm-pursuit-loop",
-    "slices": "Без среза",
+    "slices": "Без среза · Экспертные продажи",
     "lifecycle": "active"
   },
   {
@@ -1528,11 +1548,11 @@
   {
     "skill": "commercial-proposal-generator",
     "type": "Управление проектами",
-    "description": "Готовит и сопровождает коммерческие предложения Paper Planes. Собирает логику внедрения, продуктовую витрину, кейсы, цену, позиционирование и след предложения для последующей передачи и архива.",
-    "source": "Илья / GitHub",
+    "description": "Готовит персональное коммерческое предложение по ABCD на основе встречи, ролей покупателя и полной стоимости владения. Включает текст и техническое приложение. Пакет из гайда: 0.1.8.",
+    "source": "Илья / GitHub / гайд экспертных продаж",
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/commercial-proposal-generator",
-    "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-agents-commercial-proposal-generator-b6ca0d9a",
-    "slices": "Управление проектами · Контент и редактура",
+    "page": "https://lms.paper-planes.ru/knowledge/commercial-proposal-generator",
+    "slices": "Управление проектами · Контент и редактура · Экспертные продажи",
     "lifecycle": "active"
   },
   {
@@ -1739,5 +1759,135 @@
     "github": "",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-codex-yougile-clickup-commercial-migration-ea0be238",
     "slices": "Управление проектами"
+  },
+  {
+    "skill": "abm-contact-intelligence",
+    "type": "Экспертные продажи",
+    "description": "Находит участников покупки и проверяет их рабочие контакты, профессиональный контекст и возможные пути знакомства. Фиксирует источники и неизвестные данные. Версия 2.8.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-contact-intelligence",
+    "slices": "Экспертные продажи · Контактная разведка",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "abm-entry-strategy",
+    "type": "Экспертные продажи",
+    "description": "Готовит подход к выбранной компании и человеку: основания для обращения, первое письмо и сценарий звонка. Отправка сообщений требует отдельной команды. Версия 1.6.0.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-entry-strategy",
+    "slices": "Экспертные продажи · Первое касание и стратегия захода",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "abm-knowledge-audit",
+    "type": "Экспертные продажи",
+    "description": "Проверяет базу знаний ABM: связность контекста, источники, критерии, дубли и расхождения версий. Предлагает исправления с сохранением данных. Версия 1.6.0.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-knowledge-audit",
+    "slices": "Экспертные продажи · Проверка базы знаний ABM",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "abm-meeting-to-crm",
+    "type": "Экспертные продажи",
+    "description": "Преобразует запись встречи в рабочий протокол с решениями, следующими шагами и рисками. Готовит обновление конкретной активности CRM для отдельного подтверждения. Версия 1.6.0.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-meeting-to-crm",
+    "slices": "Экспертные продажи · Итоги встречи и передача в CRM",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "abm-operating-system",
+    "type": "Экспертные продажи",
+    "description": "Проектирует систему ABM: единицу исследования, источники, критерии отбора, оценку компаний, общую базу и порядок принятия решений менеджером. Версия 1.6.0.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-operating-system",
+    "slices": "Экспертные продажи · Отбор и приоритет клиентов",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "abm-role-touch-matrix",
+    "type": "Экспертные продажи",
+    "description": "Строит матрицу типов клиентов, ролей покупателей, факторов выбора и полной стоимости владения. Связывает их с темами обращений и подходящими материалами. Версия 1.0.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-role-touch-matrix",
+    "slices": "Экспертные продажи · Матрица должностей и TCO",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "abm-sales-materials",
+    "type": "Экспертные продажи",
+    "description": "Готовит короткие материалы для конкретной роли покупателя: презентации, памятки, одностраничные документы и материалы перед встречей. Версия 1.6.0.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-abm-sales-materials",
+    "slices": "Экспертные продажи · Материалы для касания",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "b2b-client-progress",
+    "type": "Экспертные продажи",
+    "description": "Строит систему развития клиентов: направления работы, банк задач, критерии результата, баллы и квартальный план. Готовит радар прогресса и связь с CRM. Версия 1.1.3.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-b2b-client-progress",
+    "slices": "Экспертные продажи · План развития клиентов",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "company-business-context",
+    "type": "Экспертные продажи",
+    "description": "Собирает и подтверждает контекст компании: продукты, клиенты, география, каналы продаж и конкуренты. Подготавливает общую фактуру для следующих задач продаж. Версия 1.0.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-company-business-context",
+    "slices": "Экспертные продажи · Бизнес-контекст",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "crm-contact-enrichment",
+    "type": "Экспертные продажи",
+    "description": "Дополняет существующие карточки компаний и контактов проверенными сведениями. Сначала изучает поля CRM и показывает предлагаемые изменения для согласования. Версия 2.0.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-crm-contact-enrichment",
+    "slices": "Экспертные продажи · Обогащение CRM",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "crm-powermap-builder",
+    "type": "Экспертные продажи",
+    "description": "Создаёт карту связей компаний, людей и сделок по данным CRM. Перед построением согласует смысл связей, типы клиентов и источники. Версия 1.1.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-crm-powermap-builder",
+    "slices": "Экспертные продажи · PowerMap",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "post-sale-scoring",
+    "type": "Экспертные продажи",
+    "description": "Проектирует оценку действующих клиентов: критерии отношений и финансовой привлекательности, шкалы, сегменты и правила распределения ресурса менеджеров. Версия 1.0.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-post-sale-scoring",
+    "slices": "Экспертные продажи · Постпродажный скоринг",
+    "lifecycle": "review"
+  },
+  {
+    "skill": "sales-meeting-intelligence",
+    "type": "Экспертные продажи",
+    "description": "Готовит команду к переговорам: изучает историю взаимодействия, компанию и участников покупки. Собирает карту участников, вопросы SPIN и повестку с проверкой MEDDPICC. Версия 2.2.2.",
+    "source": "Гайд экспертных продаж / ZIP",
+    "github": "",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-sales-meeting-intelligence",
+    "slices": "Экспертные продажи · Подготовка ко встрече",
+    "lifecycle": "review"
   }
 ]

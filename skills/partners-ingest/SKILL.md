@@ -141,4 +141,6 @@ Before any durable update, show Ilya the source signal, affected project/partner
 
 ## Structured Analytical Artifact Ingest Gate
 
+After Ilya authorizes routing a radar delta (for example, «разноси где валидно»), distinguish administrative source-arrival writeback from executable task registration. Missing owner/action/date/output blocks task creation, but does not block recording a verified source arrival and its limits in an existing project journal, artifact register, or administrative scale. If the mining documents already contain the delta, link them and record the administrative trace rather than ingesting again. Preserve explicit no-raw boundaries as rights restrictions; do not turn an intentional prohibition into a request to copy raw. Limit the writeback to the verified packet when live files also contain later concurrent ingests.
+
 Partner sources that change a Problem Map, analytical tree, classification, evidence/claim matrix, Mermaid, storyline-storyboard, metric tree, or dimension architecture inherit the global contract in `~/.codex/AGENTS.md`. Preserve partner source, physical locator, rights, methodology source, inference, and receiver artifact as separate fields. The source lands as delta/no-op in the existing artifact; partner wording, Frappe/Quartz, or a donor method cannot become client fact or PP canon without the applicable gate.

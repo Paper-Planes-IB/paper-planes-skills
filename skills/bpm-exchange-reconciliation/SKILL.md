@@ -2,7 +2,7 @@
 name: bpm-exchange-reconciliation
 description: Use when Ilya asks to run BPM Exchange, взаимное обогащение BPM, BPM-SI, Storyline-Storyboard, approved-presentation-to-BPV lineage, return packs, QA learning, client reality reconciliation, field pressure, or project-level BPM enrichment for 4th-department projects.
 metadata:
-  version: "0.2.14"
+  version: "0.2.17"
   status: draft
   line: 04-production / BPM Exchange / Storyline-Storyboard governance
   owner: Ilya
@@ -32,12 +32,14 @@ metadata:
     - client reality and field pressure reconciliation
     - commercial mechanics evidence needs
     - naming normalization table
-    - task_delta packet for Codex Project Task Inbox
+    - пакет предложений task_delta с актуальным проектным маршрутом
     - skill / rule / automation patch candidates
   preflight_required: true
   return_contract:
     version: "v0.2"
     changelog:
+      - "2026-10-19: По акцепту Ильи добавлены два обезличенных проверочных сценария: доказательность причинной связи и проверка согласованных исправлений в конечном рендере."
+      - "2026-10-14: По акцепту Ильи заменён устаревший task-overlay; проектные блокеры отделены от общих квитанций."
       - "2026-10-10: Added accepted guards for implementation-source-check task gates, commercial event-to-lead economics, and AI education vs implementation boundary."
       - "2026-10-08: Accepted method reconciliation for technological Rail, financial contradictions and separate learning outcomes; added regression cases."
       - "2026-05-27: Initial orchestrator skill for BPM Exchange reconciliation."
@@ -140,7 +142,7 @@ Required checks:
 
 ### Already-Synced Hot Project Ingest
 
-Fresh project-folder activity can be a material signal without being a missing landing gap. When a hot project ingest is already synchronized across the relevant project layer, classify it as `bpm_program_already_synced` and do not create duplicate SI/SIF, Storyline gap, or Task Inbox packet.
+Fresh project-folder activity can be a material signal without being a missing landing gap. When a hot project ingest is already synchronized across the relevant project layer, classify it as `bpm_program_already_synced` and do not create duplicate SI/SIF, Storyline gap, or a duplicate task proposal.
 
 Minimum synchronization check:
 
@@ -150,7 +152,7 @@ Minimum synchronization check:
 | `Problem-Map` / equivalent project analysis | source problems or increments are represented |
 | `Реестр-BPM` / BPM registry | source is logged or affected BPMs are updated |
 | `StageGate` / Rail state | current stage, repair pack, or PLAN gate reflects the signal when relevant |
-| tracker / `Codex Project Task Inbox` | accepted executable follow-ups already exist or explicit no-op is recorded |
+| актуальный проектный трекер / явное отсутствие задач | accepted executable follow-ups already exist or explicit no-op is recorded |
 
 Output required:
 
@@ -287,7 +289,7 @@ Classify as:
 
 | Condition | Classification |
 |---|---|
-| fresh primary project source is already landed in existing Storyline receiver and Task Inbox | `bpm_program_already_synced / existing_storyline_receiver` |
+| fresh primary project source is already landed in existing Storyline receiver and current project tracker | `bpm_program_already_synced / existing_storyline_receiver` |
 | fresh primary source produces a reusable BPM-SI route but project mode remains mixed delivery | `Matrix proposal / project_only / needs_source_check` |
 | downstream report complains about missing exact filename while accepted receiver exists | `naming_boundary_no_op / no_duplicate_storyline` |
 
@@ -404,7 +406,7 @@ Use this checklist:
 |---|---|---|
 | What project / contour is active? | project name, 4D folder, штаб, auxiliary chat, automation | read project registry / chat map before output |
 | What is delivery mode? | BPA / All Delivery, New Delivery, legacy, commercial intake, report-layer | mark `receiver_unconfirmed` |
-| What is the receiver? | Storyline, BPM-SI, tracker, Task Inbox, commercial trace, no-op | default no durable writeback |
+| What is the receiver? | Storyline, BPM-SI, current project tracker, commercial trace, no-op | default no durable writeback |
 | What live sources were checked? | AGENTS/rules, memory, Storyline, BPM-SI, registry, tracker, return pack, QA | say `partial_context` if missing |
 | What writeback is allowed? | chat-only, proposal, accepted writeback | require explicit accept unless already accepted |
 | What writeback is forbidden? | Storyline/BPM-SI/rules/tasks/Airtable without accept | list in preflight |
@@ -441,7 +443,7 @@ For each strong signal capture:
 | secondary_BPM_increments | BPMs that must check or receive consequences |
 | evidence_strength | high / medium / weak |
 | route_class | required_check / optional_enrichment / watch / no_op |
-| receiver | Storyline / BPM-SI / tracker / Task Inbox / commercial trace / no-op |
+| receiver | Storyline / BPM-SI / current project tracker / commercial trace / no-op |
 | human_gate | yes/no and why |
 | si_ids | exact SI / SIF identifiers |
 | storyline_slide_ids | project slide hypothesis identifiers |
@@ -473,6 +475,14 @@ Do not limit checks to BPM-4/5/6/7. Consider BPM-1, BPM-2, BPM-3, BPM-4, BPM-5, 
 
 ## Cross-BPM Exchange
 
+### Составное утверждение для сборки презентации
+
+При вызове из `pp-slidument` выполняй ограниченный проход по ключевому утверждению. Родитель сохраняет владение сборкой; этот режим не запускает полный обход проектов, внешнюю синхронизацию и запись задач. Возьми вопрос, текущие посылки и манифест относящихся к нему БПМ из действующего мастера. Восстанови физические источники по их проектному реестру; полный методический и evidence-контракт источника остаётся обязательным.
+
+Для каждой нужной стороны утверждения верни: `БПМ → физический источник/локатор → посылка и её охват → связь с другими посылками → общий допустимый вывод → противоречие/альтернативное объяснение → следующая проверка`. Уточнения состава и независимости доказательств — в разделе «Синтез данных разных БПМ» `mece-prezy`. Результат дополняет существующий реестр утверждений / production MD, не создаёт второй реестр или отдельный слайд на каждый БПМ.
+
+Различай «необходимые основания подтверждены», «возможен ограниченный синтез», «есть противоречие» и «нужны данные» обычными русскими пояснениями, не новой системой управленческих статусов. Отсутствие второго релевантного потока не блокирует точный описательный факт и не разрешает домысливать причину. Методический инкремент согласован Ильёй 16.10.2026; след вклада — `pp-slidument.metadata.contribution_trace`, регрессии — [E26–E34](../mece-prezy/evals/scenarios.json).
+
 For each material signal, return the exchange route:
 
 ```text
@@ -503,7 +513,7 @@ bpm4_donor_hypothesis:
       expected_return: ""
       route_class: required_check|optional_enrichment|watch|no_op
   claim_guard: confirmed_by_data|partial|inference|do_not_claim
-  receiver: Storyline|BPM-SI|field_questions|tracker|Task_Inbox|no_op
+  receiver: Storyline|BPM-SI|field_questions|tracker|no_op
 ```
 
 Common BPM-4 graph classes and exchange routes:
@@ -781,22 +791,18 @@ approved_bpv_lineage:
   status: accepted|candidate|trace_gap|no_op
 ```
 
-## Task Delta Overlay
+## Пакет предложений по задачам — актуальный маршрут
 
-If an executable task, owner, next action, blocker, project gap, or accepted follow-up appears, produce a Task Inbox packet instead of writing directly to Task OS / tracker / Airtable:
+Акцепт Ильи 14.10.2026. `task_delta` — пакет предложения в ответе, не автоматическая запись. Перед формированием проверить существующую задачу и актуальный проектный маршрут: папку/карточку/карту чатов/ClickUp-контейнер. Basecamp — только по прямой команде. РГ1/РГ2, Airtable и Task Inbox не являются маршрутом по умолчанию; исторический объект допустим только по свежей прямой команде именно на него.
 
-| task_delta | project | delivery_type / RG | owner | due_or_event | expected_output | why | source | target_airtable | matched_existing_task | decision_state | sync_status |
-|---|---|---|---|---|---|---|---|---|---|---|
+| Проект | Old / New Delivery | Действие | Владелец / контур | Срок / событие | Выход | Зачем | Физический источник / локатор | Актуальный маршрут | Совпавшая задача | Состояние решения | Состояние записи |
+|---|---|---|---|---|---|---|---|---|---|---|---|
 
-Use:
+Без установленного владельца, действия, срока/события и выхода показать дефицит проверки, а не исполняемую задачу. Без принятого маршрута — «локальное предложение; требуется актуальный маршрут задач». Акцепт гипотезы или методического уточнения не создаёт задачу. Показывать содержание, не только ID.
 
-- `decision_state=accepted` only when Ilya already accepted the action;
-- `sync_status=pending_airtable` only when the correct Task Inbox / bridge route exists;
-- `decision_state=needs_human` or `proposed` when action is not accepted.
-- Default when accept is not explicit: `decision_state=needs_human`, `sync_status=not_sent`.
-- Do not use `pending_airtable` unless a correct Task Inbox / bridge target exists.
+ClickUp остаётся только для чтения до отдельного акцепта точного набора «карточка/URL → поле → было → предлагается → физическое основание». Общее «разноси» его не заменяет. После разрешённой записи перечитать каждую карточку. Другие внешние системы также требуют применимого прямого разрешения.
 
-Show task content, not only IDs.
+Общий checkpoint, квитанция ingest или упоминание проекта в техническом реестре не являются проектным блокером. Для блокера нужен конкретный недостающий вход/решение, физический локатор и объяснение, какое действие проекта он задерживает. Если их нет, оставить техническую квитанцию и не повышать статус проекта.
 
 ## Upstream Skill Inputs
 
@@ -864,7 +870,7 @@ This skill may read and propose. It must not durably edit:
 - `Матрица BPM — SI`;
 - rules / AGENTS / `.Codex/rules`;
 - skill files;
-- project trackers / Task Inbox;
+- project trackers / external task systems;
 - Airtable / external task systems;
 - commercial trace;
 
@@ -892,7 +898,7 @@ Use concise decision phrases:
 - `акцепт на Storyline writeback`;
 - `акцепт на BPM-SI donor/candidate update`;
 - `акцепт на approved decision -> BPV writeback`;
-- `акцепт на Task Inbox packet`;
+- `акцепт на пакет предложений по задачам`;
 - `акцепт на rule/skill/automation patch`;
 - `no-op confirmed`.
 
@@ -909,6 +915,8 @@ Use concise decision phrases:
 | Одинаковая выручка, разная прибыль в двух источниках | Обе версии, финансовый мост и проверка формул/округления | Выбор числа по свежести или использование в NPV/IRR до сверки |
 | Курс завершён, рабочее поведение не наблюдалось | Учебный результат подтверждён в своей границе; запрос рабочей проверки | Перенос навыка, кадровый вывод или денежный эффект как факт |
 | BPV-08.1 уже записан локально; источники временные, клиент не принял дерево | Уточнить существующий кандидат и сохранить гейты | Новый SI или принятый BPV по HTML-прототипу |
+| Интервью содержит гипотезу, что сотрудники закрывают свой этап вместо готовности общего результата; оба явления описаны, но причинная связь не проверена | Проверять связь отдельно от узлов: сохранить гипотезу, найти конкретную передачу и последовательность событий, проверить альтернативы — информацию, полномочия и ресурс; частоту оставить «не измерена», если данных нет. Вернуть вопрос в BPM-8; BPM-9 подключать только при установленном вопросе роли или поведения | Объявить поведение установленной причиной по соседству узлов; вывести личную вину, частоту или ущерб из интервью; создать SI или задачу без соответствующих гейтов |
+| После согласования смысловых замен получен новый экспорт карты; эксперт сообщает, что прежние формулировки сохранились | В принимающем QA сопоставить согласованные замены, текущий исходник и фактический текст конечного рендера. Если прочитан только экспертный пакет, подтвердить содержание замечания и оставить проверку PDF открытой; исправление считать проверенным только после чтения результата | Объявить карту исправленной по новой дате, имени файла, факту экспорта или пересказу эксперта; повышать исправленный рендер до клиентского акцепта или внедрения |
 
 ## Common Failure Modes
 
@@ -918,7 +926,7 @@ Use concise decision phrases:
 | Treating journal/raw-pack as primary BPM source | Inspect referenced primary file; default report-layer to no-op |
 | Creating Storyline gap for New Delivery | Classify receiver mode first; donor-only unless accepted otherwise |
 | Ranking competitors by SEO/web presence | Split public visibility from field pressure |
-| Writing tasks directly to tracker/Airtable | Produce Task Inbox packet and decision_state |
+| Writing tasks directly to tracker/Airtable | Показать локальное предложение, проверить актуальный маршрут и отдельный акцепт записи |
 | Promoting donor pattern to SI canon too early | Require repeatability / reviewer gate / accept |
 | Promoting an unapproved slide directly to BPV | Keep candidate until deck/version and approval decision exist |
 | Using pre-canonical BPV numbering | Normalize through the current BPV-01...14 registry before routing |

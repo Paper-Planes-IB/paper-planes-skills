@@ -612,3 +612,14 @@ When the user asks to install the post-commit auto-rebuild hook or wire graphify
 - Always show token cost in the report.
 - Never hide cohesion scores behind symbols - show the raw number.
 - Never run HTML viz on a graph with more than 5,000 nodes without warning the user.
+
+
+## Подключаемые нормы из AGENTS — 14.10.2026
+
+Темы: `граф`. Полные исходные формулировки перенесены без пересказа; номера и исходные разделы нужны для проверки. Это не новое разрешение на запись. Последняя прямая команда и действующее ядро имеют приоритет перед старыми примерами. РГ1/РГ2, Task Inbox и снятые маршруты не восстанавливаются по историческому тексту; ClickUp по умолчанию только для чтения. Подключать применимые нормы с условиями и исключениями, не весь файл и не все режимы подряд. Дословный исторический текст хранится для трассировки, а не отменяет более позднее решение. Указатель / проверка: `scripts/model_router.py --instruction-contract "<тема>"` / `--check-instructions` из корня PP.
+
+### Г-021. Постоянные правила работы
+
+<!-- agents-norm:Г-021:start -->
+- Если Graphify semantic extraction не запускается из-за отсутствия LLM-ключа, не считать это финальным тупиком. Сначала выполнить доступный `graphify update <path> --no-cluster` для code-слоя, затем при необходимости вручную внести минимальную doc-дельту в существующий `graphify-out/graph.json` и добавить audit trail в существующий `graphify-out/GRAPH_REPORT.md`. При ручной дельте явно помечать `_origin: manual_doc_delta` и не говорить, что была выполнена полноценная semantic-пересборка.
+<!-- agents-norm:Г-021:end -->

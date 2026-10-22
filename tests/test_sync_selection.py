@@ -32,4 +32,18 @@ class ArchivedDuplicateTests(unittest.TestCase):
     (Path(d)/'skill 2'/'unique.md').write_text('new unique content')
     with self.assertRaises(ValueError): sync.publication_names(['skill','skill 2'])
 
+class LocalChecksumTests(unittest.TestCase):
+ def test_metadata_does_not_hide_changed_local_bytes(self):
+  import hashlib
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d)/'SKILL.md';p.write_text('correct')
+   item={'id':'source','md5Checksum':hashlib.md5(b'correct').hexdigest()}
+   self.assertTrue(sync.is_unchanged_from_drive(item,p,None))
+   p.write_text('truncated')
+   self.assertFalse(sync.is_unchanged_from_drive(item,p,sync.drive_fingerprint(item)))
+ def test_missing_checksum_forces_fetch(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d)/'SKILL.md';p.write_text('old')
+   self.assertFalse(sync.is_unchanged_from_drive({'modifiedTime':'2000'},p,None,'2026'))
+
 if __name__=='__main__': unittest.main()

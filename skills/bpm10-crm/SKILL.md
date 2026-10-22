@@ -1,7 +1,7 @@
 ---
 name: bpm10-crm
 description: Analyze, design, document, and validate B2B CRM architecture using the Paper Planes BPM10 methodology. Use when Codex needs to audit an existing CRM, turn interviews and sales processes into a target CRM model, define entities and Bitrix24 mappings, design Reach/React/Refresh/Re-Engage funnels, prepare CRM cards and functional requirements, separate CRM from ERP/BI/service systems, build a CRM governance model, or prepare a client/integrator handoff package and Miro scheme.
-version: 0.1.5
+version: 0.1.6
 line: BPM-10 / CRM analysis / target CRM architecture
 source: Dior handoff package, hardened for Codex/Vault DLP and writeback rules
 supports_bpm:
@@ -41,6 +41,7 @@ return_contract:
     - "2026-09-16: Added funnel multiplication guard: keep adjacent topics as fields/flags unless a separate lifecycle, owner, control point, or analytics loop is source-backed."
     - "2026-09-16: Added visual architecture scheme guard: numbered arrows and dotted proposals require a relation ledger before they count as integration specification."
     - "2026-09-16: Added повод / активность развития as a first-class CRM object for Refresh, Re-Engage, account management, and sales-support banks."
+    - "2026-10-13: Added CRM/BI live prototype routing from Mясной Гурман mg-plan: planning, visits, analytics, leads, point development, tasks, Bitrix boundary, BPM-4 margin layer, and P&L/ABC caveat must stay tied to BPM-10 implementation QA."
 changelog:
   - date: 2026-08-03
     changes:
@@ -57,6 +58,10 @@ changelog:
       - Added rule from Mясной Гурман CRM defense: do not create a separate CRM funnel for every adjacent topic; first prove a distinct managed lifecycle, owner, control point, or analytics loop. Otherwise route the topic as a Russian-labeled field, flag, checklist section, or dashboard dimension inside the primary process.
       - Added rule from Mясной Гурман sales-system architecture v2: a visual scheme with numbered links, arrows and dotted proposals is a discussion / alignment artifact until it has a relation ledger and owner decisions for each material connection.
       - Added cross-project derivative from Ракада Мед / Мясной Гурман / Indit: инфоповоды, активности и банк прогрессов are one methodological family. CRM design must decide whether they are fields, dictionaries, smart-process cards, or linked materials; they cannot remain free-text manager tasks.
+  - date: 2026-10-13
+    changes:
+      - Added Мясной Гурман `mg-plan` as a reference pattern for live CRM/BI implementation artifacts: when one interface contains sales planning, visits, analytics, leads, point development, task bank and Bitrix connection, it belongs to BPM-10 even if it also contains BPM-4 margin and plan/fact analytics.
+      - Added explicit routing: BPM-4 / Digital Profit Model can own the economic formulas, but BPM-10 remains responsible for managed objects, lifecycles, owners, CRM actions, role rights, Bitrix / 1C / BI boundaries, pilot acceptance and implementation QA.
 ---
 
 # BPM10 CRM
@@ -103,6 +108,9 @@ Default mode is `review / design / handoff preview`, not `durable writeback`.
 7a. When a meeting proposes adjacent funnels such as tenders, training, visits, claims, promo, or partner support, first decide which process is the evidence-bearing primary lifecycle. Keep adjacent topics as fields, flags, checklist sections, dictionaries, or dashboard dimensions when they do not have a separate owner, stage logic, management review, or decision loop. Mark a separate funnel as `резерв / требуется проверка владельца и жизненного цикла` until the source proves the distinct lifecycle.
 7b. Treat visual CRM / sales-system schemes as alignment artifacts until their material arrows are converted into a relation ledger: `номер связи -> источник -> приемник -> объект -> ключ сопоставления -> система-владелец -> частота -> ошибка / повтор -> владелец качества -> критерий приемки`. Dotted lines, proposals, screenshots, and role journeys do not prove integration readiness by themselves.
 7c. Model `повод / активность развития` explicitly in Refresh, Re-Engage and account-management CRM. Historical aliases include `инфоповод` in Ракада Мед and `активность / банк прогрессов и акций` in Мясной Гурман. This object is not just a reminder or a free-text task: it must carry source, target client/account/point, reason to act, material or argument, expected client progress, owner, deadline, evidence of execution, result metric, and stop / repeat rule. Decide whether it is a dictionary row, checklist item, smart-process card, linked material, or dashboard dimension.
+7d. Treat live CRM / BI prototypes and demo URLs as implementation artifacts, not as proof of implementation. Check role access, module navigation, real vs demo data, integration status, source-of-truth boundaries, write actions, relation ledger, pilot users, owner sign-off, and acceptance criteria. If a module is visible in HTML but not confirmed in UI, mark it as `присутствует в прототипе / требует QA`, not as launched functionality.
+7e. When a CRM / BI prototype contains a profit or margin dashboard, classify the exact economic layer. `Сырьевая маржа` is a valuable BPM-4 / Digital Profit Model layer, but it is not full profit until P&L / ABC drivers, operating costs, discounts/bonuses, logistics, payroll, rent/site costs, write-offs, and reconciliation are visible or explicitly excluded.
+7f. If a live CRM / BI artifact combines sales planning, visits / secondary sales, analytics, leads / primary deals, point development, a task bank, and Bitrix or another CRM connection, route it through this `bpm10-crm` skill as a CRM implementation artifact. BPM-4 may own the margin, plan/fact and point-economics formulas, but BPM-10 must own the managed objects, lifecycles, owners, CRM actions, role rights, system boundaries, pilot users, acceptance criteria, and implementation QA. Reference case: Мясной Гурман `mg-plan` S-53.
 8. Require rejected/lost states with reasons and an explicit return, pause, or closure rule.
 9. Treat Bitrix24 as the target implementation only when the task or sources confirm it. Keep the conceptual model platform-neutral first.
 10. Do not write to production CRM, Miro, or other external systems without explicit confirmation of target, operation, and check/rollback plan.

@@ -1961,3 +1961,60 @@ Default: if unsure, treat as `client-sensitive`. Sanitize or abstract client nam
 ## Structured Analytical Artifact Handoff
 
 When deep research produces or updates an evidence/claim matrix, issue/hypothesis tree, market partition, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, apply the global contract in `~/.codex/AGENTS.md`. Public research remains evidence about the public environment only; it does not prove the client's lived reality. External methodology is advisory, Frappe is an optional mirror, and the local return packet must show methodology source, physical source, rights, claim status, completeness/MECE verdict when applicable, and delta into the existing project artifact rather than a parallel rewrite.
+
+
+## Подключаемые нормы из AGENTS — 14.10.2026
+
+Темы: `внешние предложения`, `NotebookLM`. Полные исходные формулировки перенесены без пересказа; номера и исходные разделы нужны для проверки. Это не новое разрешение на запись. Последняя прямая команда и действующее ядро имеют приоритет перед старыми примерами. РГ1/РГ2, Task Inbox и снятые маршруты не восстанавливаются по историческому тексту; ClickUp по умолчанию только для чтения. Подключать применимые нормы с условиями и исключениями, не весь файл и не все режимы подряд. Дословный исторический текст хранится для трассировки, а не отменяет более позднее решение. Указатель / проверка: `scripts/model_router.py --instruction-contract "<тема>"` / `--check-instructions` из корня PP.
+
+### Г-117. NotebookLM / НоутбукЛМ proposal-review
+
+<!-- agents-norm:Г-117:start -->
+- Если пользователь приносит сигнал, ссылку, документ или вывод от `NotebookLM`, `НоутбукЛМ`, `Ноутбук ЛМ` или близко называет этот источник, сначала включать режим `proposal-review`, а не режим canonical write.
+<!-- agents-norm:Г-117:end -->
+
+### Г-118. NotebookLM / НоутбукЛМ proposal-review
+
+<!-- agents-norm:Г-118:start -->
+- В режиме `proposal-review` разрешено: прочитать источник, кратко разобрать предложения, сопоставить с существующими документами, выделить `уже принято / новое / спорно / требует source-check / можно принять после акцепта`, предложить посадочные места.
+<!-- agents-norm:Г-118:end -->
+
+### Г-119. NotebookLM / НоутбукЛМ proposal-review
+
+<!-- agents-norm:Г-119:start -->
+- В режиме `proposal-review` запрещено: напрямую править `13_Журнал_signal_review_7ки`, SWOT, стратегические рычаги, клиентские политики, пирамиду метрик, продуктовую витрину, БП, departmental canon или другие канонические документы.
+<!-- agents-norm:Г-119:end -->
+
+### Г-120. NotebookLM / НоутбукЛМ proposal-review
+
+<!-- agents-norm:Г-120:start -->
+- Фразы пользователя `поступил сигнал`, `посмотри`, `разбери`, `что думаешь`, `сопоставь`, `добавляет ли`, `меняет ли` по NotebookLM-output не являются разрешением на разнос в канон.
+<!-- agents-norm:Г-120:end -->
+
+### Г-121. NotebookLM / НоутбукЛМ proposal-review
+
+<!-- agents-norm:Г-121:start -->
+- Разнос NotebookLM-output в канонические документы разрешён только после отдельного явного акцепта Ильи после обсуждения: `разноси`, `переноси в документы`, `канонизируй`, `добавляй в стратегию`, `вноси правки` или близкая формулировка. Даже после акцепта сначала использовать существующие посадочные места, не создавать новые файлы без отдельной команды, и маркировать источник как NotebookLM-output, прошедший review.
+<!-- agents-norm:Г-121:end -->
+
+### С-137. Жёсткие принципы (из устава, дублирую для агента)
+
+<!-- agents-norm:С-137:start -->
+12. **NotebookLM как semantic workspace.** NotebookLM использовать как исследовательско-синтетический слой: briefing, onboarding, FAQ, study guide, contradiction finder, knowledge compression, client intelligence и methodology distillation по curated source-pack. NotebookLM не является master-хранилищем, местом редактирования канона, заменой Obsidian/Vault, Codex, GitHub или системы исполнения. Каждый notebook должен иметь задачу, owner, список источников и понятный return path: важные выводы возвращаются в Vault / Codex / GitHub только через нормальную маршрутизацию и акцепт.
+<!-- agents-norm:С-137:end -->
+
+### С-138. Жёсткие принципы (из устава, дублирую для агента)
+
+<!-- agents-norm:С-138:start -->
+13. **NotebookLM prompt taxonomy.** Запросы к NotebookLM формулировать от типа сущности и операции, а не как свободный пересказ: `strategy/governance`, `client project`, `internal project/CODE`, `product/commercial`, `department/operating system`, `business-process/standard`, `knowledge/methodology`, `person/role/learning`, `metrics/dashboard/finance`. В каждом запросе задавать режим (`briefing`, `contradiction finder`, `source-check`, `issue register`, `decision prep`, `onboarding`, `compression`), статус вывода (`accepted`, `candidate`, `needs-source-check`, `contradiction`, `obsolete`, `out-of-scope`) и return path. Каждый промпт к NotebookLM без исключений должен содержать явное требование начать ответ с `NotebookLM output metadata`, чтобы любой созданный им файл, заметка или ответ были распознаны как `generated_by: NotebookLM`, `status: proposal`, `canonical_status: non_canonical_until_review`. Для review / Round 2 / decision-prep промптов обязательно добавлять защитные слои: `status taxonomy`, `forbidden inferences`, `preferred / forbidden terminology`, `semantic drift check`, `confidence`, `what is decided / not decided / must not be inferred`. Запрещать NotebookLM повышать статус `proposal -> decision`, `watch -> accepted`, `reconciliation -> task`, `parked -> roadmap`, `concept accepted -> implementation approved`.
+<!-- agents-norm:С-138:end -->
+
+### С-139. Жёсткие принципы (из устава, дублирую для агента)
+
+<!-- agents-norm:С-139:start -->
+14. **NotebookLM source freshness.** При существенном обновлении существующих файлов Vault или появлении новых файлов, относящихся к действующему NotebookLM notebook/source-pack, агент должен явно подсказать, что источник нужно перезагрузить / пересинхронизировать / добавить в NotebookLM. Считать значимыми изменения стратегии, политики, проекта, продукта, метрики, бизнес-процесса, proposal-register, source-pack, README/индекса и любого файла, который меняет выводы, источники, статус, owner, формулу, decision или return path.
+   Дополнение: если NotebookLM сделал compare-pass / heuristic increment по чужим файлам, partner-pack или supplemental-пакету, а затем пользователь даёт архив / папку / ссылку с этими файлами, агент должен сам забрать только значимые source-файлы из отчёта NotebookLM, разнести их по существующим домам Vault / проектного контура / reusable-assets, обновить посадочные индексы и явно отделить `source-check`, `candidate-for-canonical-update`, `candidate-for-asset`, `reference-only` и `do-not-use`. Не импортировать весь чужой архив механически и не ждать от пользователя ручной раскладки, если нужные файлы уже перечислены в NotebookLM-output. Если внешний владелец пакета предлагает свой manifest-first протокол, манифест можно использовать как навигацию, но он не обязателен и не заменяет нашу логику отбора: агент сам определяет нужные файлы по текущей задаче, NotebookLM-приросту и source-check, затем цепляет их напрямую из доступной папки / витрины.
+   Дополнение по heuristic increment маршруту: если NotebookLM показывает прирост поверх baseline, агент обязан строить добор файлов от citation ledger / delta table NotebookLM-output: сначала выписать claim-и, по каждому claim-у найти underlying source-файл в supplemental-пакете, добавить в source-pack именно исходник и только затем фиксировать вывод как `candidate-for-canonical-update`, `candidate-for-asset`, `hold/source-check` или `ignore/duplicate`. Сам NotebookLM-note хранится как навигационный review-index, но не заменяет исходники и не является основанием для канонической правки без сверки. Запрещено добавлять весь supplemental-архив / всю папку "на всякий случай": перед финальным ответом агент обязан сверить ZIP с выбранным manifest из citation list и удалить лишние файлы, если они попали в пакет. Для финансовых расхождений всегда разводить `production / cash-layer` таблицы РГ и `contract / sales-layer` supplemental-пакета.
+   Дополнение по `HudiVault-to-Ilya`: эту Drive-папку считать контролируемой витриной донорных пакетов Сергея для source-check, NotebookLM-проверок, project-asset intake и отбора кандидатов. Она не заменяет MeltPot return и не является каноном. При работе с проектами из этой витрины агент не скачивает и не импортирует весь ZIP / весь пакет по факту наличия; он сам выбирает нужные файлы под текущую задачу, кандидатов и маршруты 2/5/8/4-ки, затем забирает только выбранное. ZIP внутри витрины считать удобным контейнером, а не командой на полный импорт.
+   Дополнение по проектному поиску source-pack: если пользователь просит найти / собрать архив, ZIP, source-pack или пакет для NotebookLM по конкретному проекту, агент сначала нормализует проект через `Vault/__Проекты.md`, алиасы и проектную папку, затем определяет тип туннеля (`NotebookLM source-pack`, `HudiVault-to-Ilya`, `MeltPot return`, проектная папка, Drive export, Notion deliverable). Поисковые запросы и критерии включения должны строиться от пары `проект + целевой туннель`, а не от ближайшего найденного человека, даты или похожего пакета. Для DEAFON это означает искать `DEAFON / Деафон / DAFON / Диафон` в активной проектной папке 4-ки, архивном майнинг-слое, кейсе 2-ки, ссылках проекта и HudiVault/Drive-витрине, а не подменять задачу return-файлом Сергея или source-pack другого проекта. Если найден пакет по другому проекту, агент обязан остановиться, назвать mismatch и не собирать архив, пока не подтверждён целевой проект.
+<!-- agents-norm:С-139:end -->

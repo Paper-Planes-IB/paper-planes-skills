@@ -19,8 +19,14 @@ def page_content(item: dict) -> str:
     if replacements.exists():
         for source, target in json.loads(replacements.read_text(encoding="utf-8")).items():
             raw = raw.replace(source, target)
+    supplements_path = ROOT / "registry" / "guide_supplements.json"
+    supplement = ""
+    if supplements_path.exists():
+        supplement = json.loads(supplements_path.read_text(encoding="utf-8")).get(item["skill"], "")
     status = "Архивный" if item.get("lifecycle") == "legacy" else "Актуальный"
     return f"""# {item['skill']}
+
+{supplement}
 
 Расположение: [3. Я — консультант](/knowledge/3-я-консультант) / [Большой реестр скиллов](/knowledge/bolshoy-reestr-skillov) / {item['skill']}
 

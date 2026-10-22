@@ -27,6 +27,8 @@ Use this skill to turn a live, layered request into the next correct cognitive o
 7. If the user says "запиши", "зафиксируй", "обнови", "внедри", or equivalent, classify the artifact first, then write to the right contour.
 8. After routing, choose a post-route action mode: `route-only`, `route+ask`, or `route+delegate`.
 
+Уточнение Ильи от 14.10.2026: до предложения оптимизировать длинный чат различить служебно-вспомогательный чат и чат-проект. Компактное продолжение без всей старой истории разрешено как режим только для служебно-вспомогательных чатов. Для чата-проекта сохранять накопленный контекст, принятые решения и значимые уточнения; манифест использовать только для навигации. При неясном типе чата не включать сокращённое продолжение; новый чат / перенос требуют прямой команды Ильи. Проверки источников и прав остаются обязательными. Адресные правки исходника, проверка всех затронутых мест и производных результатов применяются в обоих типах чатов.
+
 ## Operation Classes
 
 | Class | Meaning | Triggers | Allowed | Forbidden | Output |
@@ -39,7 +41,7 @@ Use this skill to turn a live, layered request into the next correct cognitive o
 | WRITE | Institutionalize | "запомни", "в rules", "зафиксируй", "как скилл" | route and write to the proper contour | writing everywhere at once | path and changes |
 | RUN | Execute | "внедри", "погнали", "всё выполняется" | execute accepted plan and verify | re-architecting | changes plus verification |
 | MEMORY | Operational memory | "не потерять", "в Daily", "статус проекта" | capture in Daily/project/INBOX | leaving only in chat | short routed note |
-| TASK | Executable task routing | "задачи", "заведи задачу", "что в трекер", "ускорь проект", "owner next action" | produce candidate/task_delta and route to the active project tracker; for РГ1 use bundled Google Spreadsheet РГ1 ingest with `PP/Codex ingest` reconciliation mark | using TaskOS as the primary task home; routing РГ1 tasks through Airtable bridge | task_delta candidates and sync route |
+| TASK | Маршрутизация задач | "задачи", "заведи задачу", "что в трекер", "ускорь проект", "owner next action" | установить текущий проектный маршрут и подготовить компактные предложения с владельцем, сроком/событием, выходом и основанием; внешняя запись только по разрешённому действию | автоматически писать в ClickUp, РГ1, Task Inbox, TaskOS или Airtable; придумывать владельца/срок | предложения и подтверждённый маршрут |
 | MEDITATE | Extract rules | "/meditate", "проведи meditate" | process reflection and rule candidates | content summary as a substitute | active/staged/rejected |
 | REPLICATE | Reproduce system | "на другой машине", "перенести", "воспроизвести" | bootstrap, dependencies, instructions | undocumented local hacks | reproduction package |
 | PROCESS | Process engineering | "автоматизации", "хуки", "процесс", "операции" | split rule/hook/automation/skill | making everything a rule | decision table |
@@ -72,7 +74,7 @@ If the metaoperation is unclear, first make a sense pass: are we framing, collec
 - SCAN -> MAKE only after enough sources are found or a source limit is explicit.
 - SCAN/CANON -> EXTERNAL-CONTEXT when internal facts are insufficient or the answer depends on current market, competitors, public cases, or external methodology.
 - EXTERNAL-CONTEXT -> CANON/MAKE only after saying what the outside context confirms, changes, weakens, or adds to the internal map.
-- TASK -> WRITE/RUN through the active project tracker. For РГ1 projects: bundle related task_delta into compact management packages and write / prepare them for Google Spreadsheet РГ1 with `PP/Codex ingest / needs RG1 reconciliation`; do not route РГ1 tasks through Airtable bridge. For non-РГ1 projects, use the project-specific task route if defined. Do not route new executable tasks to TaskOS as the primary home.
+- TASK -> WRITE/RUN: сначала установить действующий маршрут в карточке / карте чатов / субпаспорте проекта. РГ1 / РГ2, их таблицы, Task Inbox, TaskOS и Airtable не являются маршрутом по умолчанию. В 4-м отделе ClickUp — контур сверки только для чтения; общая просьба разнести / синхронизировать не разрешает мутации. Изменение существующих карточек требует чтения текущего состояния, точного перечня полей «было -> предлагается -> физическое основание» и отдельного акцепта этого перечня. Нет маршрута или разрешения — локальная подготовка в существующем документе с явным ограничением, без внешней записи. Basecamp — только по прямой команде пользователя через штатный CLI. Не создавать задачи автоматически из подтверждения гипотезы.
 
 ## Post-route Action Modes
 
@@ -92,7 +94,7 @@ Router may recommend skill chains, for example:
 - `client-info -> commercial-proposal-generator -> multi-perspective-review` for a serious КП path;
 - `deepresearch -> local return packet -> skill-eval-harness` for external review of the skill system;
 - `rail -> cordos` when project drift reveals task candidates;
-- `admin -> cordos` when project acceleration tasks should become Task Inbox candidates;
+- `admin -> cordos` для подготовки проектных задач и сверки действующего маршрута, без автоматической внешней записи;
 - `skill-system-governance -> skill-eval-harness` when skill patches need regression coverage;
 - `trails-generator -> expert-article-writer -> multi-perspective-review -> text-deai-editor` for content rail work.
 
@@ -135,7 +137,7 @@ route_delegate:
 | MAKE -> REVIEW -> MAKE | iterative artifact revision | change only affected nodes |
 | MAKE -> CLIENT | internal draft becomes client text | client-language gate |
 | MEMORY -> RUN | "не потерять" becomes action | capture before execution |
-| TASK -> CORDOS/ADMIN | executable work, owner-next-action, tracker delta, acceleration task | active tracker first; for РГ1, bundled Google Spreadsheet ingest with reconciliation mark |
+| TASK -> CORDOS/ADMIN | executable work, owner-next-action, tracker delta, acceleration task | текущий проектный маршрут; ClickUp только для чтения до отдельного разрешения; старые РГ / Task Inbox не использовать по умолчанию |
 | PROCESS -> WRITE -> RUN | rules/hooks/automation design | split rule/hook/automation/skill |
 | MEDITATE -> WRITE | process reflection creates rules | fact -> damage -> cause -> countermeasure |
 
@@ -319,10 +321,45 @@ The main rule: classify the expensive request by route between operations, then 
 
 This skill is high-risk because it can route the work toward durable writes, rule changes, task creation, external context, or canonical decisions.
 
-Before any durable action, stop and confirm with Ilya unless he gave explicit same-turn permission for that exact action. Durable actions include: creating or editing Vault files, changing frontmatter/status fields, updating registries, registering task deltas in Codex Project Task Inbox, changing rules or skills, importing sources into Reader/Readwise, sending or preparing external-facing text as final, and canonizing external-model output.
+Перед постоянной записью проверить разрешение на конкретное действие. Действующая прямая команда Ильи разрешает соответствующую правку существующего файла; не запрашивать то же разрешение повторно. Новый файл, внешний объект, отправка, изменение ClickUp или канонизация внешнего предложения требуют применимого отдельного разрешения. Общая команда на проектный разнос не разрешает выбирать поля внешних карточек. Подготовка черновика ответа сама по себе не является отправкой или внешней записью.
 
 If the route is ambiguous, output a route card and ask for confirmation. Do not treat route selection as permission to execute the write.
 
 ## Structured Analytical Artifact Overlay
 
 When `MAKE`, `VISUAL`, `PRESENTATION`, `CLIENT`, or `SCAN -> MAKE` will create or review a problem map, issue/hypothesis tree, MECE partition, evidence/claim/source-to-node matrix, analytical Mermaid, storyline-storyboard, metric tree, or dimension architecture, set `structured_artifact_overlay: required` and route through the global contract in `~/.codex/AGENTS.md` inside the actual owner skill. Do not route to a standalone artifact-methodology skill. Do not set the overlay from generic words such as proposal, presentation, report, research, strategy, KPI, table, Mermaid, or dashboard unless the actual output includes an in-scope structure.
+
+
+## Подключаемые нормы из AGENTS — 14.10.2026
+
+Темы: `навигация`, `команды`. Полные исходные формулировки перенесены без пересказа; номера и исходные разделы нужны для проверки. Это не новое разрешение на запись. Последняя прямая команда и действующее ядро имеют приоритет перед старыми примерами. РГ1/РГ2, Task Inbox и снятые маршруты не восстанавливаются по историческому тексту; ClickUp по умолчанию только для чтения. Подключать применимые нормы с условиями и исключениями, не весь файл и не все режимы подряд. Дословный исторический текст хранится для трассировки, а не отменяет более позднее решение. Указатель / проверка: `scripts/model_router.py --instruction-contract "<тема>"` / `--check-instructions` из корня PP.
+
+### Г-092. Preflight проектных чатов и контуров
+
+<!-- agents-norm:Г-092:start -->
+- Для каждого созданного проектного чата нужен отдельный файл-субпаспорт чата, даже если краткий субпаспорт уже есть внутри `Карта-чатов.md` или реестра. Карта чатов остаётся реестром и навигацией; субпаспорт чата — рабочим файлом контура с назначением, scope, входами, выходами, границами, штабным маршрутом, открытыми вопросами и первым рабочим проходом.
+<!-- agents-norm:Г-092:end -->
+
+### С-100. Slash-команды CORD
+
+<!-- agents-norm:С-100:start -->
+Перед ответом на любую slash-команду агент обязан сделать preflight-классификацию: `команда → режим → разрешённые действия → запрещённые действия`. Если команда совпадает с одним из режимов ниже, нельзя отвечать по инерции из текущего содержательного контекста.
+<!-- agents-norm:С-100:end -->
+
+### С-101. Slash-команды CORD
+
+<!-- agents-norm:С-101:start -->
+Runtime-список скиллов в системном контексте не является исчерпывающим. Если slash-команды нет в runtime-списке, перед отказом или импровизацией агент обязан проверить локальный скилл `~/.codex/skills/<command>/SKILL.md`, затем этот `AGENTS.md` и `ПКМ/_справка/гид-скиллов.md`. Если локальный скилл найден, запускать его вручную по `SKILL.md`.
+<!-- agents-norm:С-101:end -->
+
+### С-103. Slash-команды CORD
+
+<!-- agents-norm:С-103:start -->
+| Команда | Режим | Что делать | Что запрещено |
+|---|---|---|---|
+| `/meditate` | рефлексия работы агента | искать ошибки, anti-patterns, удачные паттерны, кандидаты в правила, хуки, автоматизации, скиллы и инженерную экономию | подменять содержательной сводкой чата, проекта или решения |
+| `/summary` | содержательная выжимка | дать итоги чата / проекта / сессии, решения, открытые вопросы и кандидаты на добавление в существующие контейнеры | создавать правила работы агента без отдельного `/meditate` |
+| `/tunnel` | маршрутизация знания | разложить ценные данные по существующим контурам Vault и предложить, какие артефакты обновить | подменять разбором поведения агента |
+| `/RSVP` | коммюнике для согласования | превратить промежуточно принятую Ильёй рамку, метрики, стратегический фрагмент или артефакт в короткое сообщение для партнёров / стейкхолдеров: что это, зачем, что внутри, что согласовать | подменять `/summary`, создавать задачи, маршрутизировать знание по Vault или править исходные артефакты без отдельной команды |
+| `/leverage-builder` | сборка стратегического рычага | собрать или проверить рычаг через гипотезу, ставки победы, бандлы A-G, инициативы, activity system, метрики, gates, data gaps и трассировки | писать плоский список инициатив без финансового переводчика, смешивать revenue type / channel / source / delivery model, править файлы без запроса пользователя |
+<!-- agents-norm:С-103:end -->

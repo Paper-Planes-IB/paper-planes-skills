@@ -1,0 +1,4673 @@
+{
+  "summary": {
+    "drive_logical_skills": 93,
+    "repository_skills": 97,
+    "drive_files_all": 474,
+    "drive_folders": 201,
+    "git_files_before": 432,
+    "lms_space_documents": 1478,
+    "lms_registry_articles": 280,
+    "lms_matched_before": 96,
+    "lms_only_articles": 184,
+    "catalog_only_lms_entries": 85,
+    "source_only_before": [
+      "bpm8-process-evidence-map"
+    ],
+    "git_only_source": [
+      "archive-granola-transcripts",
+      "bpm4-b2c-dashboard",
+      "paper-planes-artifact-methodology",
+      "paper-planes-presentation-kit"
+    ],
+    "changed_pages": 32,
+    "source_conflicts_publication": 0
+  },
+  "source_files": [
+    {
+      "path": "admin/SKILL.md",
+      "id": "1rocY2vQsqfneBygJy2EC6NCU-FSN0VrP",
+      "sha256": "49ad41f0058cc54f710ec796a73db41800e4b82be09741db2aeeb859945339c5",
+      "md5": "a175ebe26d342c083e8cc4591d424829",
+      "size": 71782,
+      "reused_verified_local": true
+    },
+    {
+      "path": "abm-pursuit-loop/SKILL 2.md",
+      "id": "1pTLPGAhjSRwtEcQEB58wHtD-s9Ei59G1",
+      "sha256": "e1e4d1be67b3c1008361d205a7875796f60f43e052ec1959522ac227d7a1b713",
+      "md5": "b710a8a6f1d4a076043d2bcbd023e42b",
+      "size": 23148,
+      "reused_verified_local": true
+    },
+    {
+      "path": "abm-pursuit-loop/SKILL.md",
+      "id": "1xdUIK-NQtWY3_lFiBGHnx3ImA-sTjhcz",
+      "sha256": "e1e4d1be67b3c1008361d205a7875796f60f43e052ec1959522ac227d7a1b713",
+      "md5": "b710a8a6f1d4a076043d2bcbd023e42b",
+      "size": 23148,
+      "reused_verified_local": true
+    },
+    {
+      "path": "balakhnin-voice/SKILL.md",
+      "id": "1VOm-D0PexrS6_C3TnDt_GVhqOlLJprHv",
+      "sha256": "efece4ddd7ba257e68b5aa4c84b46ae17566aa62f9ae4f09e4ebab621f3c14c3",
+      "md5": "dc993fcf0648dc122e17af5418cfe32e",
+      "size": 48152,
+      "reused_verified_local": true
+    },
+    {
+      "path": "autoresearch/SKILL.md",
+      "id": "1MBq2vSTiXoN9Ys8bFShPWVkwPfr9XDJO",
+      "sha256": "3a05f2f6164d3d9c407662d64958cdea038577d01590fd46b1f3d64f4d421581",
+      "md5": "1ac9a4e2a1059c2b7a1f6368dcc2beb5",
+      "size": 466,
+      "reused_verified_local": true
+    },
+    {
+      "path": "basecamp/.installed-version",
+      "id": "1A30YZXlTOSDL3-foaNnskbPEgugvRHCM",
+      "sha256": "fa68a1c9139e7f4cd197843f633f3488babc580c59f9ec627ea1c945881de159",
+      "md5": "088466b6546276d0d79a1569de547dc8",
+      "size": 5,
+      "reused_verified_local": true
+    },
+    {
+      "path": "basecamp/SKILL.md",
+      "id": "17k9FvlMo6I_VNAKmV4Tx1_zjpHleNLS0",
+      "sha256": "8139414bb2776b4857447c3a88105c675f48574c4bbbf6df3284b3b221c1b05b",
+      "md5": "b16fd8195de0ea8d999d4cacd4b828c6",
+      "size": 43081,
+      "reused_verified_local": true
+    },
+    {
+      "path": "admin-scale/SKILL.md",
+      "id": "16sI6iyoY8S1o_QcQS_QYZjQUnrOKQT9x",
+      "sha256": "9972ac930c0cc87e0b6beb862a69445ae2c2d3fa56256eb5b2a90b5257e78f64",
+      "md5": "3cfb0d08a974ee70926284bc15a0a9c0",
+      "size": 3632,
+      "reused_verified_local": true
+    },
+    {
+      "path": "book-editor/SKILL.md",
+      "id": "1mlxoL1IquNsnPfJpxn6wuewNA6d0wDr_",
+      "sha256": "a68c11abea65c66f664f0f18a3662cfc245f3b87538a64af6e3c5f291fc2babd",
+      "md5": "d6cdb9e9980334abbb1e462425aa9946",
+      "size": 35955,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/SKILL.md",
+      "id": "1iDf-t30TZE_y6MQMuG69obfP7KyaT-lP",
+      "sha256": "5d6d7948fe1140ad4dec5db2f449791a7fcb24a09258f801ec1991b59cf5f554",
+      "md5": "819ad5fc697a7457f8c578c803fb580a",
+      "size": 21131,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/SKILL.md",
+      "id": "1dAbE4zb6ysbDqfjYsZmJzHV92vXsXdoB",
+      "sha256": "9be144928791a2132734bea611b068bdf971f6df6e61090f88c09459094fb665",
+      "md5": "4310cde52ae46b7439a62aa65aaef0e6",
+      "size": 29791,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm-exchange-reconciliation/SKILL.md",
+      "id": "1EGUNQ4g8-ykLmiH05zZA-UgrY7i0f69I",
+      "sha256": "1f49be6d4f3b25f2e2c5877bb8317ebceda0ef5cb05c3272d797bd5134755b60",
+      "md5": "055890a6a3a4670c8be6ef7c7f73cfb6",
+      "size": 70418,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm4-datalens-dashboard/SKILL.md",
+      "id": "1o5jM5V0XRpKqi75mPO-e-TjuyfylB7Sk",
+      "sha256": "2da479ac4a0d76e8b2fdddd30a9f1ac082711cd8e6861fc1cd573a95df40b719",
+      "md5": "4d68db367289ca9d1c6ece4ea7e13660",
+      "size": 17167,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
+      "id": "11hVxjoy_oCyNTnHo3eDZZADKKphtUeAM",
+      "sha256": "e9b6f6a7a0b00b79ecf28f82dcec0a7e8b970d710295a97f3d208a2bf13f746f",
+      "md5": "b3f4606d30288c65c948b1db6abc298b",
+      "size": 133699,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm4-it-saas-enterprise-vendor/SKILL.md",
+      "id": "1fxBqFNgHn3HegOiF4fwUjNg0VeBWsO5n",
+      "sha256": "8002bab266036c13fa071b3574c8c4b67c58233eefe1f0fb54561ef6c57c4a8e",
+      "md5": "a5410d8e7896a184eb472e5109c7de13",
+      "size": 10107,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm4-healthcare-clinic-economics/SKILL.md",
+      "id": "12o5LU9T3vQdjDbobI5UPjSyf5O0Qc2z8",
+      "sha256": "003594508c392559575d03e9ffa5a5580f5a1bd65dbb116cf37c251ea6379f40",
+      "md5": "f5539f48f6f6b6ec149f68c5c8d1fd3b",
+      "size": 44080,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm8-process-evidence-map/SKILL.md",
+      "id": "1hd52pmNYyukWXJwiwg5xYW5qhcriF9MR",
+      "sha256": "0fc6b01bd10cb4e2ea6687a49c5b64cacb45355ee1918794de2ebbfc5a2b9c79",
+      "md5": "8f8d39c33594f42bdf7bca823e056032",
+      "size": 19030,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-01-npd-lifecycle-os/SKILL.md",
+      "id": "1nXG0BcPxmokD-qN2ksEcUKv5Dxh9S2S9",
+      "sha256": "8b4a647c8e99e0935e2f1493d53b2b7f18cd729d34aedcb1fcf67a4c77ee5eba",
+      "md5": "f1e5a537d16ce5a816240e85821b7b01",
+      "size": 51366,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm6-website-positioning-audit/SKILL.md",
+      "id": "18yqywuFiXljIN8rCnuUORvrMtEvyZqLo",
+      "sha256": "5dd99398af2f6e1ffc91d5a272fd408ccded7b257d4af0f7e14373e6f440a388",
+      "md5": "edb3949ff5064dce0afe026d0e5b61b5",
+      "size": 16090,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-03-6-regional-partner-growth/SKILL.md",
+      "id": "1vHb-yqDPojiZwkXlbHjb9iJbeSu4Xlyo",
+      "sha256": "ed677d9a7068f38d3f4144938981c28eac6058659a4e77653b44ce4588e5d824",
+      "md5": "0467ef050951389c7240eb61f0bda6ce",
+      "size": 5517,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-03-1-site-audit-growth/SKILL.md",
+      "id": "1r0lTvSK0czCT4GjUXcwnAjlJwaB-PDSQ",
+      "sha256": "f94193038f24677257c4cd0272066e9cb46576baf5f5b326506f67c4e21b0968",
+      "md5": "5d2be36d14082f156754ddee077aefb3",
+      "size": 5723,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-03-7-expert-deck-builder/SKILL.md",
+      "id": "1XIi1Bv8SmQ6V1G7vSTDF2d9Me-_i9NZM",
+      "sha256": "2e0bc566b8d0187e9ba58252adb12f93270281d84fa81e7262ff9afa8bfa6227",
+      "md5": "8d9a52f30a5defc255829f30808141b0",
+      "size": 5434,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-04-2-tender-commercial-loop/SKILL.md",
+      "id": "1BA_svN5liGU1TFOHz3bvAaPLAhnE7Cgc",
+      "sha256": "11c47bb414491c8398edd10e00fa0ae948971c3e05896f9b40d5259e09503637",
+      "md5": "0cf5790c758146024ab83b57789b469d",
+      "size": 5733,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-04-4-commercial-proposal-tkp/SKILL.md",
+      "id": "1XnOmO8jyFFER9-wQe6UhO5MoyoxEzmRR",
+      "sha256": "0c9cfe1fc48313b7d703a82a2c9fb9cd7f2285b649d361a9c0320fadd725d9e6",
+      "md5": "4eb93bfe65840705ac5205a861ffa0d5",
+      "size": 7451,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-04-5-sales-agent-kb-loop/SKILL.md",
+      "id": "1N47XAD5BZOV57uSpVrbpFZLEctzYNxK-",
+      "sha256": "c5c501cac317cfe9dfdf2315111313f41b5c9e75af5a463355487812a891d633",
+      "md5": "bc2ab1e54fc97c5ad49d424f3594a0c5",
+      "size": 6343,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-04-mpp-commercial-proposal/SKILL.md",
+      "id": "1nAj3HbHDeSDtioOtp84DMftWAYWTVbFe",
+      "sha256": "fa3079b92fddc507a1da6e982ad8b7c0fbd9148493fdca651635b0fb9419d282",
+      "md5": "55d15b508419cf98e9f22d5719373cc3",
+      "size": 14972,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-14-digital-profit-model/SKILL.md",
+      "id": "11XbKsYWcLk7wiJrjckt75L9mzs9CwqIl",
+      "sha256": "405e7b0feb51c2470f0d5088f5d8e07f2a3d66b20e740cb0762618421845729f",
+      "md5": "ac1267d922e0762713fbbdb241b553d1",
+      "size": 14633,
+      "reused_verified_local": true
+    },
+    {
+      "path": "case-narrative/SKILL.md",
+      "id": "1NFIU3mB0dm7Zj3I4OfHTEmh5V8IQS6U9",
+      "sha256": "0e85a0bae8ecaba8fdb2b03fe232a00edeebd7431c5511f0f8dfafcc8fadfe8d",
+      "md5": "16b12ba29e0c07552eb5539ab6f3f281",
+      "size": 14825,
+      "reused_verified_local": true
+    },
+    {
+      "path": "clickup-mcp-router/SKILL.md",
+      "id": "1TVbqc7TwG4PsN9Vqwc1MXJkmQvEJ8aAA",
+      "sha256": "467c0d23f3972ffbcf3ada9d8dd664b5ef1b5c1fe06f4ef99e1ab957451f0145",
+      "md5": "76a7d4d27850ccc04e4c615102249b1e",
+      "size": 55886,
+      "reused_verified_local": true
+    },
+    {
+      "path": "client-info/SKILL.md",
+      "id": "1W0Ogeq3XRdlfgf96hwBZPS_Zls1ntij5",
+      "sha256": "bf500a426bcecf3003c283ac68c65b03bd12e597f4a268a57bcadd06ec9b0f60",
+      "md5": "e4fe335a063866e425618dc551dcf480",
+      "size": 13835,
+      "reused_verified_local": true
+    },
+    {
+      "path": "client-intel-agent/SKILL.md",
+      "id": "1vH_-uyVPOWBRmK8F8HKxgerdDll7SgsN",
+      "sha256": "a0350755128173a4ce981d47e53ca5c6175efd5184f5471be18f68f7e924ed5c",
+      "md5": "a59df59c98dddc8e3dc5f6a7ff11953e",
+      "size": 1020,
+      "reused_verified_local": true
+    },
+    {
+      "path": "client-project-onboarding/SKILL.md",
+      "id": "12fF8FPxnBJ3uLy1uBZ_Y5ZzLkuMJYvKj",
+      "sha256": "efa20f517cf567caf98e33c98a31fc9da09ad735eaec59a31db5e928a4e5117f",
+      "md5": "2221100312881c822433134182c999e6",
+      "size": 3661,
+      "reused_verified_local": true
+    },
+    {
+      "path": "cognitive-router/SKILL.md",
+      "id": "1BWuMqb9rdUj4-QJqmJzIvO8PLmSwSTAs",
+      "sha256": "1b443d3660d67e97944e4b0a6065f34a763971c3d1586c7dec2ea565408a770b",
+      "md5": "05505e8b5f8fb9f9128abb3e0a9745a5",
+      "size": 28751,
+      "reused_verified_local": true
+    },
+    {
+      "path": "competitor-proposal-qa/SKILL.md",
+      "id": "1zPMRq746aQa-d0SIEIfnE8luLlNCiGFB",
+      "sha256": "be4b610ca5fbce6b8eaaa919a9e804c5550749f4a1bdb0ae306f0c37427e6b30",
+      "md5": "a8b20bdbb4ac3bb82dc3251c446ca3e0",
+      "size": 6919,
+      "reused_verified_local": true
+    },
+    {
+      "path": "competitor-research/SKILL.md",
+      "id": "1IOBmjK6dIC2xPhBodDo5d3NUqR8RO8p4",
+      "sha256": "da8e411d64a4761ca82690e42a7942f0a0aaf584f5a9e6a56b21520d6dfafa1f",
+      "md5": "0e246c487ebb70074531ea56ebe7ca33",
+      "size": 142913,
+      "reused_verified_local": true
+    },
+    {
+      "path": "concept/SKILL.md",
+      "id": "1YULD2mLbBVdml_5WLQlbQYG3Hxa5_T0W",
+      "sha256": "427fa86a15e23fb7c3ae5488007577222495aeb6413b1a4278b7a4959398648c",
+      "md5": "6fd4585abe49d59b792e9c63fbd56cb0",
+      "size": 32473,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/SKILL.md",
+      "id": "1xC7aRqO2YFJOktzqyJjNl2PafO8IjbiK",
+      "sha256": "a72aaa75cb5cd6651949ef37126bb5574e8e0b3bd26268d88ad0c74bce45e886",
+      "md5": "0d1f410665b2e995ca35b2f47c9b7fff",
+      "size": 313517,
+      "reused_verified_local": true
+    },
+    {
+      "path": "concept-deep-dive/SKILL.md",
+      "id": "1p2DyG5TMFbl7iMH_lqfTZ8QHKUJwAe9Q",
+      "sha256": "e31e056e60854c8cd332bb9bc199fb31684803ccad83fea2b2a28aebb2e47de5",
+      "md5": "a4a85ef4b05fd32b6ded210c63f48ec5",
+      "size": 491,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/SKILL.md",
+      "id": "1cJyVoUZp1ddfrQw5puhHkXV_1A66m99A",
+      "sha256": "f08f9b5280c078a40988278c74a6ba1b8927820ff27a06cd33509ad4f59421ae",
+      "md5": "fd0179cbe4d4ce0ec6fa70e41171f8c5",
+      "size": 9247,
+      "reused_verified_local": true
+    },
+    {
+      "path": "cordos/SKILL.md",
+      "id": "1B67-iIdKiC25hamctQnz-UBJbXGZxEA_",
+      "sha256": "d3d27c0a9635085cbbf57ad19efd4df27b047b7aa2c841724c5bf8e3240cd9da",
+      "md5": "1eaa5f754798e6f1b38dfad7d40c266a",
+      "size": 14787,
+      "reused_verified_local": true
+    },
+    {
+      "path": "cord-pdca/SKILL.md",
+      "id": "1ClflP-j5QO9zZBFol2Hric0S0jdlx-18",
+      "sha256": "c0fe09f4731e5b977f373f3ca645d0f4e942e26876cec2e4a20914d3acf711b4",
+      "md5": "bfea2038d78a70b4a4a67945539ea028",
+      "size": 10070,
+      "reused_verified_local": true
+    },
+    {
+      "path": "crm-implementation-qa/SKILL.md",
+      "id": "1urqFhXbYfEZLguVNPq3AuXeXWskgzKF_",
+      "sha256": "1dd0f500325654d1a202f51f192ef6f4a8d14318eebf341a23346e2c8764166d",
+      "md5": "0e7ac56818f281b1951363c010e9b931",
+      "size": 9532,
+      "reused_verified_local": true
+    },
+    {
+      "path": "crm-implementation-qa 2/SKILL.md",
+      "id": "1mDIAfgww9OHL0HkNKvFd7brVBquXmLFS",
+      "sha256": "c0f27a489adcd0481af119f70c21149d0eb18e5fe532bac055e9a653e58df711",
+      "md5": "86ec092d56d9e492db8ae378de90fe6c",
+      "size": 8405,
+      "reused_verified_local": true
+    },
+    {
+      "path": "daily-notes-processor/SKILL.md",
+      "id": "1o4SKp_gANCQSg9R7sfMxoCcmSICAMBMk",
+      "sha256": "ac7ab566090fa63d34f514248abdd34c5ab270cdaccfe4fd8bcee086cd710670",
+      "md5": "1f9ef104ffc03c06e658af4f39b2e902",
+      "size": 424,
+      "reused_verified_local": true
+    },
+    {
+      "path": "deepresearch/SKILL.md",
+      "id": "1i34mGhQj0k_1vK3GpikZIaX6OKW84kGX",
+      "sha256": "94b8b8706380bd7c1bb8bc8535c1375a1b633958a47b7bcaaf9eb1735b71370a",
+      "md5": "ffd6cdf34eccc5b7d29d02d70231850a",
+      "size": 117900,
+      "reused_verified_local": true
+    },
+    {
+      "path": "demand-supply-match-intelligence/SKILL.md",
+      "id": "1ajO2mFjFiuRmuVD87TZs-_7GMtIm9AGC",
+      "sha256": "c54b041086511b4054c53754c13e165e34946c1a12d616f6286b61c24cabc3e0",
+      "md5": "45d484ce70942f26819eeda4bdc470aa",
+      "size": 24639,
+      "reused_verified_local": true
+    },
+    {
+      "path": "fix-rules/SKILL.md",
+      "id": "1nfyWZy8uuBJYZuQ6jWTvq3VV9CXdGRnC",
+      "sha256": "6fc7963651ba4e5e565c114aae5e44f829ce40d25375cb53224fbbffda0c608e",
+      "md5": "8c4eb9be7f69f0ac0c4367a7448ec793",
+      "size": 19592,
+      "reused_verified_local": true
+    },
+    {
+      "path": "expert-article-writer/SKILL.md",
+      "id": "1PGWTmbau-P_2BPQhOkl1e4kskajW5KIQ",
+      "sha256": "328cb8abcaf28fed278f8a03df8e887175a57ab245d499914fe1a6202f66c4eb",
+      "md5": "a72bc2fa2d107773d6dd70ab92a9e66e",
+      "size": 41778,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/.graphify_version",
+      "id": "1YrsDsPDxaQvzsqx9CcA17CM0ycc_BTnr",
+      "sha256": "e7bd032db34f2291ae7c611443cbc9e300dc4a3a5d2460074b661ef2da18fd1f",
+      "md5": "eaf3e74ac5ed84d77c97458440b0afe3",
+      "size": 6,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/SKILL.md",
+      "id": "1fhG2MF0s4hCQi5vYk_f6JuWrAjeyAa8g",
+      "sha256": "896e5d1482fd0c8b75c8ca0db5e1a1651351b97d99bd6320fe86cccdcc87a55d",
+      "md5": "51d3551733ff4abdffd0b1a9a95af5bb",
+      "size": 34971,
+      "reused_verified_local": true
+    },
+    {
+      "path": "heptabase-cli/SKILL.md",
+      "id": "1WzYj6a-gaG64bFsehQXnp8qxyAXWaaHv",
+      "sha256": "867c317a267ba456815135a63efc5afe14918e6ccef2d06263bcf0ed7f85051c",
+      "md5": "641572714c04e42091b1a5206913a165",
+      "size": 12858,
+      "reused_verified_local": true
+    },
+    {
+      "path": "hypothesis-map-builder/SKILL.md",
+      "id": "1zwmYhP37F0HV246PW7wrgni3fhcnTRZk",
+      "sha256": "8d38bfb903af952362d4103958965d9bd20e3c6e54800d8411bfa2b9bbd41ccf",
+      "md5": "8989f35248f4dac0bc709feb7980ca02",
+      "size": 12090,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/build.py",
+      "id": "1V2_Xqf9gbUzY-N5w0a43JdCEMzd0b96X",
+      "sha256": "78bf63913e2076f003ae17892653a8791a144142456341edccc3137dfefe1105",
+      "md5": "d84a40ff5382c5709e2c18dc7474c5de",
+      "size": 26461,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/build_carousel.py",
+      "id": "194ZT4NYaV-rB3CC5hP_DKvNDKNZsNcWf",
+      "sha256": "6a472d1f792a12fa2c3607bbfb842c93e650b28b1d51b48cc24a9a83b344f153",
+      "md5": "f8f6fdf38ba4af839de50a30a430f8c5",
+      "size": 22563,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/SKILL.md",
+      "id": "13VdHZTVx_UrzCF2SCLsbOdggAYTqJYKL",
+      "sha256": "c3c7497f5346f6dc1988fbe3fd0ff162abcdd985294c41ca8c0bf9bb9e18080c",
+      "md5": "4ba26fa3878dfb1786edc4c518d411d3",
+      "size": 12609,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graph-analysis/SKILL.md",
+      "id": "1o4q9CJEg85VllOYLJOz0Xd54P0ymWV0o",
+      "sha256": "199af18e9f5b479c96be4ac7de9f78ee089ebb29f10862b7cc122c9b89750c62",
+      "md5": "c4ae1113a07ff254cdb50305bbe6b6fa",
+      "size": 11377,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/render.py",
+      "id": "1iR1b8eHW-FOK8qPB2awlureVpzavLuzS",
+      "sha256": "26640beacae9a61563256c14a83e40e35cbc77347a4790058a1be2f330af7301",
+      "md5": "8814ac55cf41d3956204e386b3a7570a",
+      "size": 2579,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/SKILL.md",
+      "id": "1Vjpf_FFC6BGfDdYvSZeINW8CClVYrtQF",
+      "sha256": "933fec911335e2f9cce184736b1fb2da8889df764b03214ed7d00d64aef88565",
+      "md5": "bd40075ca8a955928c512d033f3de285",
+      "size": 12156,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/template.html",
+      "id": "18QVFc5r81BoY93eg1O8O9Oo0nmGTYJSj",
+      "sha256": "892e34e53693ea9076eeab54d2bfc5c41c975b8dba6a11c1bc110ea84508aa69",
+      "md5": "a7141858359a5152bb19ed22dfeb3cdc",
+      "size": 17588,
+      "reused_verified_local": true
+    },
+    {
+      "path": "km/SKILL.md",
+      "id": "1DZZFr-vsb-Pq3BT3NddaAJ2vyXjIAV1z",
+      "sha256": "96b4f04d3b6e1ff6d1b98386f5575b2a84c3ee4972ff26e6b4d01aa2246fc665",
+      "md5": "3ab0c4167cafd16df8a4cd2aef18a20d",
+      "size": 364,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ingest/SKILL.md",
+      "id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
+      "sha256": "d1f86de6b6950b2a0c1e784e28cdf1553af28e7e3046a43a391af230c00e31b2",
+      "md5": "c065ce17a35a472bea9c5333e8b383db",
+      "size": 99528,
+      "reused_verified_local": true
+    },
+    {
+      "path": "interview-brief-by-analogs/SKILL.md",
+      "id": "1qD-xIRn_ta-Tl90UzrL_XSyYSd-St9Tp",
+      "sha256": "a6b05a130767b8693c1b2ea66e795119f246fddab4acbd8b3a40cdf4eca68b13",
+      "md5": "ce452f55425fad0d472901b9ff96a9d4",
+      "size": 19692,
+      "reused_verified_local": true
+    },
+    {
+      "path": "lawyer-pp/SKILL.md",
+      "id": "1XRDe5UEMDvapRJQrqbIZIID5LNdMdzt5",
+      "sha256": "a83477660f0c13d9cc4003d3f7926688749fd4e7ae8c6fa0f0f9afef50173f74",
+      "md5": "0d470685e27762df9db4a73ae17ed14b",
+      "size": 29228,
+      "reused_verified_local": true
+    },
+    {
+      "path": "leverage-builder/SKILL.md",
+      "id": "1KzcD8c5TWBWp9DPC6ABGbcL00VLTa2u8",
+      "sha256": "e87b893f3ef5f02b58603be8002fbefa8d45303b8a2592961ab217a4952deb52",
+      "md5": "58ad6b7dc26d2e61b7ca3cd00ff17896",
+      "size": 15838,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/.clawhubignore",
+      "id": "1qbIVb0Bs4mFhFy59YckqIdm5OqfPsn-O",
+      "sha256": "172d90ff25380274c25c51584dcdd332711367be54462b1ea5e669c7ef30036d",
+      "md5": "d9b174f856a6a9d642acb8e02f904e93",
+      "size": 75,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/.gitignore",
+      "id": "1g0-CJq_uxh7xGCX_C0v1JCGFChl5W_UE",
+      "sha256": "9d0c3c029ca79daeb7e73675e9c26c8c7f0417cd44dfd2aefd64a45842527277",
+      "md5": "610e4a2ad93b387a9377c76cba5ffcbc",
+      "size": 47,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/LICENSE",
+      "id": "1_ZssJ_sXS26SiM-8zAqTRdLOfXQjub7U",
+      "sha256": "4b6affb51ecb2137f0b6093363dd7f29739b17ab928dbcc9c7717d8f9025632f",
+      "md5": "34024ec89e15306cd35baf5e0298930c",
+      "size": 10760,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/README.md",
+      "id": "1GsmZMl4vttvaVLOgS-wANpGg89bslpF2",
+      "sha256": "4b5d0b9ee0347a384412203ecc588231122eeee93a0c1645ca8f7f73ca69a9f1",
+      "md5": "08b2991315244a66c6a0219da405de3f",
+      "size": 8738,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/SKILL.md",
+      "id": "1c-SwxEhu8NKpckqqyxxobXrsyw_zb7fF",
+      "sha256": "ca5b7f6bb75feac1c1b10065dee87d6924da1308fea46c488ab1dcd90a55513d",
+      "md5": "53bcaf8c1e7063a06c87fa8b6bc88565",
+      "size": 15570,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/SKILL.md",
+      "id": "1oxKbdIX4fagfTssXe9xcpfBQO8RrbuU4",
+      "sha256": "717f529312aa432b8f48959f6284d181b9cd0c5fd30a32ff23493015f7c1273f",
+      "md5": "5acefc4ac7273e84dc27f2b35fefdba3",
+      "size": 148176,
+      "reused_verified_local": true
+    },
+    {
+      "path": "looper-skill-builder/SKILL.md",
+      "id": "1_ibFYSZ1IoAU16wwNgayzIfC-7frHyxh",
+      "sha256": "a6ac35ef3d42d1888f209108bc70a722b0c43cedbf9f7ce7915a7b32ad9765b9",
+      "md5": "177d5f86687adc28f4f8a98ad97749d5",
+      "size": 20100,
+      "reused_verified_local": true
+    },
+    {
+      "path": "medical-clinic-economics-semantic-layer/SKILL.md",
+      "id": "12Pj0PgaptNUJoMXSdQfFJyE5TJvibpC_",
+      "sha256": "aae25b5b073e1d759e2d501cce1393dfec9fccd47399a58de8756c71e699a828",
+      "md5": "90b2f531ce985c3920857c7d7c1805a4",
+      "size": 2487,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy/SKILL.md",
+      "id": "1AGdsD8ygKH2tGdxBO4BOlv2LmI3o8jKZ",
+      "sha256": "86e5e605867319c52fa55df453ccb865afb6fe2387fc81a203bb1cd456617451",
+      "md5": "d05af5a346c3df003c7cd38c080f890f",
+      "size": 41332,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy 2/SKILL.md",
+      "id": "1FhhG5I1NzzaoKBnXabXYaUw2kG6BQoFG",
+      "sha256": "a7261abd7ffaf2ad8458bd7d1d0b82c511ebcca0d9575f0435002dac2d8206df",
+      "md5": "0b300548c1f3ad93b94fa99695c312b9",
+      "size": 24550,
+      "reused_verified_local": true
+    },
+    {
+      "path": "meditate/SKILL.md",
+      "id": "16zsFbqkMytBQycv3p6_eqtxWLlcd--eq",
+      "sha256": "4de679b475a2fd1da8237a46d1c4d95d339650dcf24f74087f5b41fe5158e14a",
+      "md5": "2985e9cc53251d6234c41efa80de2861",
+      "size": 11293,
+      "reused_verified_local": true
+    },
+    {
+      "path": "meeting-report/SKILL.md",
+      "id": "1OwlLib10Ge787etAqpG7_1Znr90z-Y9H",
+      "sha256": "1fa97261ae6740658831c58d115e45f517b0ff6057b6be4d6d99a735726e0e55",
+      "md5": "d80a1a9cd448b8299d606b196ce49f19",
+      "size": 364,
+      "reused_verified_local": true
+    },
+    {
+      "path": "multi-perspective-review/SKILL.md",
+      "id": "1sgCfgITIC2uPnyUT-PjQsnmA9sOgb4Pk",
+      "sha256": "b4504ab18355fac65c234ac7d3a8a9235eb0b2afaca1200be34ae334a489da61",
+      "md5": "b7d8bb1f5c0ffba58c42b60af1332c8d",
+      "size": 14466,
+      "reused_verified_local": true
+    },
+    {
+      "path": "notion-vault-sync/SKILL.md",
+      "id": "1sJ9ch-6WwlIOzX6OSlTuQbtcMc6DXo3q",
+      "sha256": "34cac00e74e6668d0c5716d4b6c2badbb6cd59e5b3223ac90ab422a43d52864a",
+      "md5": "0d640c9951829efb20de0c8e53367096",
+      "size": 708,
+      "reused_verified_local": true
+    },
+    {
+      "path": "partners-ingest/SKILL.md",
+      "id": "1dmzCji34IfdvB6FjaGpqPKYJ9hz-qY01",
+      "sha256": "2838857462e549fd533a5a4a75d19a4938ab664b2bbfa14052d4acbcfd6a2391",
+      "md5": "8ce7b687af966a0c1abc8678d2d6316e",
+      "size": 10861,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-case-writer/SKILL 2.md",
+      "id": "1bVLo_WbRPypWlvAGCF-Z1XEt7uLXKuuW",
+      "sha256": "f21d01d42473b13be6e681c30172d0e130edb3b6e5c4bc3a369cce75f2ec2f4f",
+      "md5": "3baaec3e478ea4b4018624c1e2baf0c2",
+      "size": 14610,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-case-writer/SKILL.md",
+      "id": "17WGdkHJJBaSDvuIoRXWJUbVOa8vlwGCn",
+      "sha256": "cb1d280fc3056ab14ddceb6c807377453eabe834ffed30c42fcf16d2352232e9",
+      "md5": "d3537e6c33fcc35a16b8e533ed212a77",
+      "size": 20775,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-longread-announce/SKILL.md",
+      "id": "16L8SsPGTWvY7K7T5IWHxLIJw2qsW94AN",
+      "sha256": "75a7589f60f100e4d6c21c8a52d6bf46de0f1bd210d9d7d1061033f6be97205e",
+      "md5": "ec767ef583a6c4181a110857cfe77d14",
+      "size": 3066,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-interview-slides/SKILL.md",
+      "id": "1gV88uhVbQvX79KsA3D653Z1xVsj6bhtw",
+      "sha256": "674c57471979c4cd71c3322791ae8984105c512d255ddbd5a5a0e7efa6bfa005",
+      "md5": "71ed86b4caa864ea6fce93399935c4a9",
+      "size": 29449,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-longread-leverage/SKILL.md",
+      "id": "1Itm264LOrVC54QF6ScmGuO3pQbXma7uq",
+      "sha256": "dc366eb39f67a757fbdc947d8cbe31be259fd2bbb0d5bae79f93d689ad625b4a",
+      "md5": "5b42076b5fee2159033483cb5d11fa9b",
+      "size": 4821,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-marketing-overlay/SKILL.md",
+      "id": "1XjRYPFdAUzx2y2z8FAok_zr0Ima3OPFo",
+      "sha256": "2d0127160316613ae09f989d02305f9bda6e631a449bec17ae1dfdbde5959d8e",
+      "md5": "052d62e66b3c5af8de4f342cdeee8436",
+      "size": 17712,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-marketing-overlay/SKILL 2.md",
+      "id": "1sAQO18jjstKO7Rc6O2hkRrJU4q1dausQ",
+      "sha256": "2d0127160316613ae09f989d02305f9bda6e631a449bec17ae1dfdbde5959d8e",
+      "md5": "052d62e66b3c5af8de4f342cdeee8436",
+      "size": 17712,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-print-a4/SKILL.md",
+      "id": "1yVWJlMoU6DIHIZgX1yJA5AM3xrHjuUde",
+      "sha256": "170e14c8c79edc326cecb503ce18cc205eeb8fb056d46becb9c9502f7cadb8e3",
+      "md5": "749f8928e3885dc9bd94bd7f70960c8b",
+      "size": 34839,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/SKILL 2.md",
+      "id": "1pnJn99MEJrj17L2InsjJlH5yZkcWG2az",
+      "sha256": "b2c26af35a767e032c139b269e46f78d9c5ce04749fbccd30e72e2eafee37679",
+      "md5": "8919bd0c1a26c66b927ddcdab17e37b3",
+      "size": 66390,
+      "reused_verified_local": true
+    },
+    {
+      "path": "presentation-qa/SKILL.md",
+      "id": "1cMjNOS8WBSmdlPDS-RGYbbAnMJSRQLqj",
+      "sha256": "49dcd94a47a36b2db20ddb2ff775d77c6dbaac967f64f1bd0a30f4f5c9de1c6d",
+      "md5": "4150ca6e633f5bac86f7e27ca440bc57",
+      "size": 87908,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/SKILL.md",
+      "id": "1Gi2s0gUlsIFRsTCmoharc5ouSryv2u5t",
+      "sha256": "fa9130ddbae071337589dbf78a2be4264fabcbfe37318bce1a46d8b42a68458c",
+      "md5": "926de8452a163c78c226ad3e041e26be",
+      "size": 144365,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-survey-slides/SKILL.md",
+      "id": "1nG-lNof4EXlcNcmSitnEljwfZxo-dsJ0",
+      "sha256": "400048d15131f7733347d81c18f6bebaee8943b40f22e26b0ac792f62c2c5731",
+      "md5": "6bb9b84197cf2babad7fc33fd053847a",
+      "size": 48886,
+      "reused_verified_local": true
+    },
+    {
+      "path": "product-growth-hypothesis-superpro/SKILL.md",
+      "id": "1kUoEApOSRrnJW3bTvLDVVVol8EOycP7O",
+      "sha256": "75fa7cdc8205e35ad6e1671f09fec04cb8a94eeedfe3b740480808af10f00caf",
+      "md5": "fdf5a616b15e51ffbee8edaf3ddff290",
+      "size": 4193,
+      "reused_verified_local": true
+    },
+    {
+      "path": "rail/SKILL.md",
+      "id": "1z4cPPIyFQuYGqpAa3jmavGYSCSzmEn2A",
+      "sha256": "eab3568402f47cc63e7d8fc175bbf12be05f96a88b2c4dc5ce90275185f79128",
+      "md5": "bf85eea405b080eda6839c78ca681f89",
+      "size": 246717,
+      "reused_verified_local": true
+    },
+    {
+      "path": "research-agent/SKILL.md",
+      "id": "1d-Dev6gVCLUfGxx4H-dCZTUdrmQsQC7t",
+      "sha256": "771d24cbe8c4f677be4963fce467dd5a74a4e434de57e3dafa49ca4fd9b24223",
+      "md5": "682db3a979b55daad47484139857c92d",
+      "size": 926,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-survey-dashboard/SKILL.md",
+      "id": "1N_iiaPN3-QUwj3Eei80zusuUEeoFY0c9",
+      "sha256": "b521d9fa1c46e1ab1ad38df9e809ae7f0109090c76c165925a65626d04822d81",
+      "md5": "1a7009ffd8faa33e4d01565d22868315",
+      "size": 20868,
+      "reused_verified_local": true
+    },
+    {
+      "path": "rsvp/SKILL.md",
+      "id": "107BAEiZcr0LL_9MoERQYZ-G60ZD2Lv1x",
+      "sha256": "52bcc2d40bd0bbadd2dd1626f5a4fb122cd94124ce3c1731a012fc5aa0df066a",
+      "md5": "a2428bfa05685249bc038e40657b4c89",
+      "size": 7571,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sales-pst-test-writer/SKILL.md",
+      "id": "1V7BIzrWsqQl12FRRjebYAotC1WDahFzv",
+      "sha256": "53200a4a0ce3f7e0209cea2747a047674cfe5b0b54aa75dfd2fdf879cce8d839",
+      "md5": "5cc8ddf38d74a11fa4664a979c94e5bd",
+      "size": 10330,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sector-service-matrix-builder/SKILL.md",
+      "id": "17_XEW3Y04_67aIBFM7ltnsEuzhbXDHcj",
+      "sha256": "a838f4c4a836ebcf1a63eef8a202b4420fdd130a130981dd4ba77386db87864f",
+      "md5": "df561a78f51dc76da8f11fef8d396d86",
+      "size": 25703,
+      "reused_verified_local": true
+    },
+    {
+      "path": "session-handoff/SKILL.md",
+      "id": "1UUmUGw64bKeeNrWg372yViH__FKMtacL",
+      "sha256": "ec46aa6f0000d2fcd7cab1866169a4676dee6d04defad8033ad28335a0b3d9c9",
+      "md5": "3d8fec6d4f0cf978ba8fc3fc6e89992c",
+      "size": 1418,
+      "reused_verified_local": true
+    },
+    {
+      "path": "skill-eval-harness/SKILL.md",
+      "id": "1NfrNX0i0HwFxJBr5luJGfv8J449vYEgI",
+      "sha256": "6c57678a489f60832d6f90d3a148a9bf6473f8d66c6915c84afa37636d81bc45",
+      "md5": "aa8ec80512ec1fc87aedf9d01a0cdfad",
+      "size": 18775,
+      "reused_verified_local": true
+    },
+    {
+      "path": "skill-system-governance/SKILL.md",
+      "id": "1VKw4sc8L01Q4SZaeZoveFU0JYWSDP4YR",
+      "sha256": "05adfddb1623dcfb0475b3a3d01fdf539af251d557f44675469d256044fdf556",
+      "md5": "bcf5a3231ee99c31eceadf89e9f0b47b",
+      "size": 24450,
+      "reused_verified_local": true
+    },
+    {
+      "path": "summary/SKILL.md",
+      "id": "149j0i-JZJ7p-7Ic6pcCyrpl5_XcAP9Uk",
+      "sha256": "06239db37d781e2766dbe828d1b967087bf015601e45607cbe194b3dc7e5e4ae",
+      "md5": "514f54fb2e2340fe9a783590b952211b",
+      "size": 18823,
+      "reused_verified_local": true
+    },
+    {
+      "path": "trails-generator/SKILL.md",
+      "id": "1zx_5y6b0PRXMbDRddg8GfFoIS22Q4QjF",
+      "sha256": "b5c750f8138dbcc54af253d0e02d480e38583b8be1da035903de4cab422bfc7d",
+      "md5": "9a8cce80aea0961b0db42e068cf10451",
+      "size": 1322,
+      "reused_verified_local": true
+    },
+    {
+      "path": "text-deai-editor/SKILL.md",
+      "id": "1xNjxsI8zg7YyyKJRMLrH4qb4GcQh7vOW",
+      "sha256": "d287536679ac6e679bc30da8a2801aeac93b8aa362406ec22ccb40333c1dd0de",
+      "md5": "effc123ab2f23d95fd41e56fc88c6e2c",
+      "size": 163039,
+      "reused_verified_local": true
+    },
+    {
+      "path": "three-perspective-review/SKILL.md",
+      "id": "1bfjeZXD2qfCcMaNFRorCqyVBV7Sz-znz",
+      "sha256": "5ee9f7d657fc32f7c1a6ab3def36638ab3967370cc75371b4faf1293b1b60792",
+      "md5": "8877d8240cde7da406ced2a386b2a602",
+      "size": 998,
+      "reused_verified_local": true
+    },
+    {
+      "path": "vault-brain-scan/SKILL.md",
+      "id": "1hcLFxzHKoCsyPGx-4bcZGWrsvU1BWR3b",
+      "sha256": "b6bec527031a82297716beb2b9d2149190a6aab282573c11c4f5a2240192da3e",
+      "md5": "3dd2ec67c2f155216297bf4efc942a81",
+      "size": 458,
+      "reused_verified_local": true
+    },
+    {
+      "path": "tunnel/SKILL.md",
+      "id": "1TJ1t4tXHVrhjCzZVdjBsbg75fx0jxyGu",
+      "sha256": "701166958e117cdfa0016796c90b696c50db9dbe7509e391b3164d0f2a5ab5f8",
+      "md5": "578b060e41876c658911fbb4e258a819",
+      "size": 39645,
+      "reused_verified_local": true
+    },
+    {
+      "path": "vault-note-enricher/SKILL.md",
+      "id": "1jIe_3KH9aySwGvC8SLQyj8tPQ64PVsMm",
+      "sha256": "6e6a4cce86c3e07e0ec18820e5c3df379f0c9bf7ec1bb4789bda926c9b37312e",
+      "md5": "e35189a72d82c62969d5b5f1422c0c06",
+      "size": 1229,
+      "reused_verified_local": true
+    },
+    {
+      "path": "whitepaper-proposal-generator/SKILL.md",
+      "id": "1reTTssQSJ4wQXgi0biMqu2tlabsR6mFE",
+      "sha256": "195e5e47bf280a76ebe6024f908500a0fd724de54ffd762b0080cc7f1460e9a7",
+      "md5": "a0a8c63fa0807de6b9245dbeba6859cb",
+      "size": 22544,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/LICENSE.txt",
+      "id": "1054XUXM4oA5W3UnFsWoSRQE1UGCifkHS",
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "md5": "0bfdc0ac8ba46ed583d8fccc1e347dff",
+      "size": 10776,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/SKILL.md",
+      "id": "18b-TZ9V9hG_RhgFQIzIFNbUUMFHVEH52",
+      "sha256": "681ddb4ad6d06a2acc78a3535b583f8d0c1ea800ecda3d56370d3310fd2cd4ba",
+      "md5": "72a6b879b12458963b654f9eda614ec7",
+      "size": 19201,
+      "reused_verified_local": true
+    },
+    {
+      "path": "abm-pursuit-loop/agents/openai.yaml",
+      "id": "1gN5Sfh40av40LO_PFpNEsia6UzkdlRRj",
+      "sha256": "46b5d731f2a5c42b5bf736a881ed2bae9e35b2131170397af05af1534cf607ef",
+      "md5": "e6aef1aa009621ccb6fb7dd2b4cbb418",
+      "size": 122,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/LICENSE.txt",
+      "id": "1qAAoprxgcnLY71CfRTRW3UvT4PBzvqIa",
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "md5": "0bfdc0ac8ba46ed583d8fccc1e347dff",
+      "size": 10776,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/SKILL.md",
+      "id": "1dFLoztgffml4en4xWViOdpPjNd7vFKnf",
+      "sha256": "aa6829e21df2223167c85d2e49b6337a7345c84c1033f1ec10182c7882b36d45",
+      "md5": "58f3fbc129e04df2ce523abb4e4bbcf0",
+      "size": 5437,
+      "reused_verified_local": true
+    },
+    {
+      "path": "admin/agents/openai.yaml",
+      "id": "14K8jIjLm-h0g7kSRAnEa0fIRjldHA8Ib",
+      "sha256": "8c18f26faa5e425021b3c26f8ead155199f24e2ffe6da71b3ccc0b2fbb588691",
+      "md5": "2da10eea8437b832d3598dec6f6320f3",
+      "size": 397,
+      "reused_verified_local": true
+    },
+    {
+      "path": "abm-pursuit-loop/references/eval-pack.md",
+      "id": "1f80tszFVer_P4922OTkx9dsF9g85EL1Y",
+      "sha256": "3a0d87e2b8779186faeb5e33b0016ed50df0c32a8417fcde181a00b1957b7b02",
+      "md5": "986308bd5d894ccd783dad31b0e1caf6",
+      "size": 11101,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/review-agent/SKILL.md",
+      "id": "1BB_UJQEZjVFpBBHsLBio0LuMN1gn3l_F",
+      "sha256": "07079efd0dc76f05fade424e5dfb048dce1de2df7626e1a4f56292a4f3f92228",
+      "md5": "ef5c5bf2fb5ad611682d498b24e89428",
+      "size": 2661,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/license.txt",
+      "id": "1txa3iIcP9loOMifnGEUmz0UkeWz08CKS",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "md5": "3b83ef96387f14655fc854ddc3c6bd57",
+      "size": 11358,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/SKILL.md",
+      "id": "1e62EV1HvbSoiPAKsDv1Z0v9AgASLGWmZ",
+      "sha256": "71b95b8219644f95d633721e7f7cd3c469edfc8fe50f8415d400dfb2d74bc7b9",
+      "md5": "08195b595be9f8ec5a5f5a8981e65571",
+      "size": 11467,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/SKILL.md",
+      "id": "1GjIIAELxv-4Mysff-XytYPR6Fz3Hcp6h",
+      "sha256": "6656e54755638e8efcf275a472b9672eaa8a9a1b9e59dc210e275b03b59e1e66",
+      "md5": "d1b7ac007e86bbfa9bf2dbd8ba8c1bf7",
+      "size": 15311,
+      "reused_verified_local": true
+    },
+    {
+      "path": "admin-scale/agents/openai.yaml",
+      "id": "10cISZkLOqKAXL219Yt02xIQDKKAeVDb8",
+      "sha256": "de1590b2a9803c0f4bc1f091805fba78a4a067008f181ce7fd852c2284d4698a",
+      "md5": "ca15ee32b3930c89b92e1241f652e774",
+      "size": 198,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/LICENSE.txt",
+      "id": "17KDA6Fw6WYhJh_-vochfHBduxHmSlE3M",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "md5": "3b83ef96387f14655fc854ddc3c6bd57",
+      "size": 11358,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/SKILL.md",
+      "id": "1ThiUQEeByCYkgvuVEfnfV4Hf5C9pe18G",
+      "sha256": "d68b77e5bbb34dedab89d134da52855f140fc4b4299b80104f534e3b9e98f8ee",
+      "md5": "0e2c9e2f26e1f4c2627d0ca96fbb7928",
+      "size": 3367,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/manifest.json",
+      "id": "1UlDLgN_HxaAmgkWQ6n8CrrcGpt37qyGF",
+      "sha256": "17549d93e98f5f9d2887feb0b83a6695c31f5757426810153413f9d14834b328",
+      "md5": "e68fad76ab3ec4ff54f7ca99c7fa22ee",
+      "size": 5647,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/factors_jtbd.csv",
+      "id": "1sPepepqKj0_NzEtu1nML7BCOqK0xPkZd",
+      "sha256": "d71fcab32b773ad6902886e602b8d680a01a92029cb89c80973bfdd1768195b4",
+      "md5": "ac0b48ad72135577f3368f2794a7c151",
+      "size": 61728,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/questions.csv",
+      "id": "1_Pc-XQvuNwEwPsLxf8ypGpMy4pr2d3m5",
+      "sha256": "ab7351844214d5f17b5745b5a774909a9acbfc6053d074dad398d0d3b681ea6f",
+      "md5": "b6e963db2b5b0ff36edc5f4780353559",
+      "size": 1336033,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/raw_files.csv",
+      "id": "1yG5CaLJ0K2AiapJ8rm_57Xu8a89FE9lB",
+      "sha256": "641cc5293d2668a13e63037fc653997fae70c375daccdd248847b3ab7b8f92e4",
+      "md5": "c38c287613ada377afcc6b5ce2171390",
+      "size": 77136,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/recovery_issues.csv",
+      "id": "1U9BQd8LuT7vcuDDbqZ2LNEPUJk4zpFAa",
+      "sha256": "94fc68d6103459812031c2665e4d0bfa7e23ded5d322c54dd55a750f5d46e90d",
+      "md5": "051b16a3241ae0a7f7af501b79059e6d",
+      "size": 351691,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/slide_patterns.csv",
+      "id": "1X5i5NMM0d381oq8gh955wDezvm0fmQdH",
+      "sha256": "1d8b32d015f77d8e0f65322381a0f4329be809c654cf329562d4688aa120fcba",
+      "md5": "702747587e5203790b357425cd0f694f",
+      "size": 547227,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/surveys.csv",
+      "id": "1_JZtQhRNzgjGgbZh52dIBZ2JvVIlh3_z",
+      "sha256": "33650e066d57597b441d57aff157d9f5af272760b92f9928583f3364c843bc48",
+      "md5": "c6dfbd143c7e5b642ad8c0635fa8653e",
+      "size": 99169,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/references/ingest-layer.md",
+      "id": "1vPuKhNJlfEyRJpgK-g6jtpx_rQbsrlR5",
+      "sha256": "4953c5c7a9e1d4098316c7d4e009d69f82fb960961e29a65c611763d4134bbd9",
+      "md5": "a53908ad9df03843621cc1e32e9daae0",
+      "size": 2662,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/references/methodology.md",
+      "id": "1aD8AUMqCEeDV1mHCqb2FWOAVA8HtgJOe",
+      "sha256": "fc9cf00623910e7fdc423c4705786cb7332a8478223724030e3107a3234c8dfc",
+      "md5": "278909beea025ea5f043b2baeaf7dc4a",
+      "size": 3597,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/references/source-map.md",
+      "id": "1qykIhmJHo_kOgA5VD4KDJIVfgeCJwMIu",
+      "sha256": "5c1ef3f72621b4a20d14c1b5677eb1aa4729d46de4e9381c3834cacd570c37ad",
+      "md5": "b16b4c4958f11e5d5a18c28350559f55",
+      "size": 2954,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/references/survey-lake.md",
+      "id": "1S2jtV0pDVLeOOS1Eev1C9RF5GcklufUQ",
+      "sha256": "96de1641cdeaaaeae4f4b56e5755bb6a971ca525807fbe67ff8d64fc871c421b",
+      "md5": "7ccac874739085e441609f347c0e2a4b",
+      "size": 5064,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/references/survey-types.md",
+      "id": "1zTMBKb3mnmuG885sJikC_IRmNmvpH5dJ",
+      "sha256": "16f25d760e38981581250cad9596397396e39123096ff87950d410a1c21ae28e",
+      "md5": "e641c00cda202030512509b587250035",
+      "size": 3739,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm8-process-evidence-map/references/evals.md",
+      "id": "1GCZopJNTuNAlBWZbMsHREvSti8jAzCRZ",
+      "sha256": "5f40dfff5803c59219802e8f313dc962a12f40f38d1c4ea5928a5830c7521630",
+      "md5": "e8af9ba3bc36e525cbbd2bcd4e033a5d",
+      "size": 8648,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/artifact-templates.md",
+      "id": "1gsxLz6CIfATfPOtc_uMxBgEB2X62b6B9",
+      "sha256": "0cb12ec9df3ce8caba9d8f5d4e1d3cbf241ec09961ffa71441cdc422dbc99f23",
+      "md5": "9993240e061c48bb47da533fa66a1aa1",
+      "size": 5479,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/bpm-boundaries.md",
+      "id": "1xa-VA72lAT-2O1prosiumOfLRme7Wf4c",
+      "sha256": "76101d52b9a7929c9a476d54339c4918e85af01530e9322d7d573dd6a8b72198",
+      "md5": "2ff8ecfaa9d9387b3cf89fe6ddde619c",
+      "size": 4337,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/core-methodology.md",
+      "id": "1wMVF3JkKWQoureOCOrrRq1CyHEsK55AA",
+      "sha256": "d8cdf9ff23df7af0d85a5f9c7f0329c71cefd6c6ca5f69a40ec05d6a0ffc85e6",
+      "md5": "1c54bd979c74d28179ea07d7ec744a1d",
+      "size": 40657,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/core-overview.md",
+      "id": "1oVwHcngegL5ixfjRCCnQYiXMzk7M44MH",
+      "sha256": "0db637bd413eb5ac3c79417f07e78e203366e8540839367c7ff92f6131c39f2c",
+      "md5": "8c391a803513d7f1f9e0917c73a0f722",
+      "size": 9525,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/lean-crm-prompts.md",
+      "id": "10iar4QIGC6HwF0agF9K7-QKiiPccPaST",
+      "sha256": "5637f1189fcc2ef04f10092e6a91619ad142c528162c39dfe14edd283a3a3ede",
+      "md5": "92d90428d137fd663c2d28f77ae647e6",
+      "size": 8278,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/methodology-expansion.md",
+      "id": "1lCp6om64OIYcJ1gOsy0vL7bweJYbWI_z",
+      "sha256": "354560471e1e6d8e0201e640f59187923de3e221bbb4951f6246a07ea80a6043",
+      "md5": "a82669ad8411924bb5782fd4508f737a",
+      "size": 4741,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/miro-integration.md",
+      "id": "1OVQGd20CC5-MsQtGeLQ-QLwxf81p8hCT",
+      "sha256": "00bc425006fa4aca6bb50b33bcc2e0043c573d09e284217c95b8cfab50cdb896",
+      "md5": "57e3e9b4b5b3d6c2bc3dd3a9d424f39f",
+      "size": 14895,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/qa-and-evals.md",
+      "id": "1NJTUabh8yav0dkaZt8WKknUvEGsTwp3e",
+      "sha256": "3462c43c3e4d30c4e391a4c0a79cad5d11340824da911572a6b023dfa330bed9",
+      "md5": "5f8df127411042441c50859085f77207",
+      "size": 6210,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/references/related-skills.md",
+      "id": "12gyYO4qXFietUaswXC9OhkVogpR-1ldF",
+      "sha256": "8ea7deb9a425c536ccae44dfaf78095c9fe17a9d57d94288a7825e38df5dfd90",
+      "md5": "e0f8ab6fcf154397367fe58e0f009564",
+      "size": 1581,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm10-crm/agents/openai.yaml",
+      "id": "1xrGbxtTyXa3JnPduVIMj8w8OwmVlldye",
+      "sha256": "271e73218026976754d4bebae934b0b94668146e4403d47e6c45493ea81609fc",
+      "md5": "28ac852d7b0f05bba2c9b6b7959b2bd3",
+      "size": 236,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-01-npd-lifecycle-os/agents/openai.yaml",
+      "id": "1TxZpqVf-mVJ0vL7YWU7Eeza_57ciIH4L",
+      "sha256": "ce385b5fe8ec42d8853f37e83a513316711bcc2a14e2462bc7622957827d0c0e",
+      "md5": "9dd4678a56934f4b817c86e8cc1c3d80",
+      "size": 300,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm6-website-positioning-audit/references/technical-audit.md",
+      "id": "1qvn42QelPhT7Syk4rw1eVIGnZsNaE-KV",
+      "sha256": "977317718f0cb967531e7a8f04678039bfc6f7f40fe4bbb538502379c25eaa83",
+      "md5": "64364b5fb2f4bad6d67d2097f8822ec5",
+      "size": 34295,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm6-website-positioning-audit/scripts/audit_site.py",
+      "id": "1iRnh_6HVNAUtfXfmqtWOu5vnW_8NHEHa",
+      "sha256": "0309d4c06257559358214d8bb121709fd52f689b52a1c7c12ebecbdaa5142020",
+      "md5": "81063053c9c4d97194a072ce72b3fd84",
+      "size": 137271,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm6-website-positioning-audit/scripts/browser_probe.cjs",
+      "id": "1sojTGMynFnVx63UHMtqYtjNG5WGQ4I6C",
+      "sha256": "71c826acf5f00c5ae281ce79834dc309b40a38b374edf8cb467e15924cde2e7b",
+      "md5": "edeae2f5c92b2cefb730675153a5b607",
+      "size": 32629,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm6-website-positioning-audit/scripts/test_audit.py",
+      "id": "14n_xaPaKugWfQZ8_jwf7V1uIu69mXqmx",
+      "sha256": "7aa558ca649fc4e588f75fac29a17d709d59273d70f19f5f4f2f651dbb43c6a4",
+      "md5": "bb73654fe36c83eddd059378198f24c1",
+      "size": 54046,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-04-mpp-commercial-proposal/agents/openai.yaml",
+      "id": "1wBJdJJHneBToh0trZFYMnuJ_mFDh3qpO",
+      "sha256": "6b3536236dff3f0da5a45efa5300061f104d4caef0079bac2c56c0bcfb0af8a5",
+      "md5": "72b4b3c773b1e92d48216372499dd693",
+      "size": 273,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpv-14-digital-profit-model/agents/openai.yaml",
+      "id": "1W1cfTBgzdlnuvb9LtPobF8HuNdlFlRZl",
+      "sha256": "8f01b54bcc4c432a485a05d0935e477db53c07b4d29404af77caf96f17c5d753",
+      "md5": "3468dfdb0bc25510f70a181522a20fe3",
+      "size": 265,
+      "reused_verified_local": true
+    },
+    {
+      "path": "bpm6-website-positioning-audit/evals/technical-audit-cases.md",
+      "id": "1CUEH6o7cQ9Rh2uFkzMLBBAwc4nG0wX5F",
+      "sha256": "c40e898b58205b4067f23aece26583462c37a07a6d3d1ecf43129a58be1afa9a",
+      "md5": "c9bc605473ce32531053d972d889e3c0",
+      "size": 27804,
+      "reused_verified_local": true
+    },
+    {
+      "path": "clickup-mcp-router/agents/openai.yaml",
+      "id": "1pkOuhpcUwy70cpk-cI7QO50lrSDeXRI7",
+      "sha256": "4f89e280edf186cc775429bea7098e25305341aab3ce822b406cb0b3b33a31ca",
+      "md5": "c01353ed9b0036595ea12721692aa145",
+      "size": 371,
+      "reused_verified_local": true
+    },
+    {
+      "path": "competitor-proposal-qa/agents/openai.yaml",
+      "id": "1ROuo_DQf3T9o-vGL_lYvP5z2SxQ5J7dW",
+      "sha256": "a4203f1a4235dc9f0962e73a98768588571096886f1185737d7e05120ed66d4b",
+      "md5": "77e49412a464846b67cf6b5d65b35505",
+      "size": 196,
+      "reused_verified_local": true
+    },
+    {
+      "path": "BPM1/survey_lake/metrics.csv",
+      "id": "1GGa2RLpooY3Z-M3RX7asjZKI07wTBDlW",
+      "sha256": "3dc6a8dbc8e5294ef578d6e5e3f3e86204870d217cbee92fcac7c8bba982e4e5",
+      "md5": "48c0002459e8baa3c826680f2ed25b91",
+      "size": 4979518,
+      "reused_verified_local": true
+    },
+    {
+      "path": "cognitive-router/agents/openai.yaml",
+      "id": "1MusfC6pAHKAy6rELXg9wbjLZAvVEY5a4",
+      "sha256": "0698e32b3d5bede0e0e46b4c421696671b2089f95909061c707cd6c9db0e6b37",
+      "md5": "b70232e0101574c9b4a7bf45ebad12db",
+      "size": 241,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/scripts/commercial_proposal_scaffold.py",
+      "id": "1cBS8002PMA95JoEsthrPVyKusgd583UD",
+      "sha256": "c75ada4a1abe7c9a92378950cc54d46e194b8859a16263475da2f7a6a21bcfcd",
+      "md5": "58e33a29fea135384c008871f4ef3ff5",
+      "size": 27716,
+      "reused_verified_local": true
+    },
+    {
+      "path": "competitor-proposal-qa/references/matrix.md",
+      "id": "1IpVvt9THle1WCv55BJJsyrG5A4CQ5ImK",
+      "sha256": "e7ae77d7ef5000b9439d06dd4329ec8c0d09008cf3f80fe0e41cb8ed0b1765c0",
+      "md5": "499bca7280913738ac7c2db67b3fcaa9",
+      "size": 7216,
+      "reused_verified_local": true
+    },
+    {
+      "path": "cordos/agents/openai.yaml",
+      "id": "1TuwulOLMROisOPNfN--sQaocELg9QQzG",
+      "sha256": "ef478f97a8cb9b5cd06edbdff5438812c81437f6c2def79ddb3b07b18292037a",
+      "md5": "ff52bc9ce3907dc43f7c73dd58273efd",
+      "size": 332,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/consulting_principles.md",
+      "id": "1P2AoS_-txOxVPfXzQQ3nHuDkA2W6N9np",
+      "sha256": "238f57e110906acf17496631af660fa5d6c4605408c0a70b825d4e0a93faacfb",
+      "md5": "7b991c482f898ad7d44fe488a3f451b0",
+      "size": 1620,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/data_extraction.md",
+      "id": "1fIhcvhxbPHbKTV58NtjEu_SNGKcpWaRk",
+      "sha256": "d55487f8c30e421b421baa475e92c88fed1bdb11fbb575976282c0a194cd4644",
+      "md5": "883122fd290638da1ff3b517f9f5aa2f",
+      "size": 5682,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/content_formatting.md",
+      "id": "1YDUoVlZSVA_qk9TxpZGsDOLQfDhqALUx",
+      "sha256": "cff2b50b62384b908dd2263f7b090211730c1f0e6d9c590ea1a4e5e1d0aeb7da",
+      "md5": "1244f3b5f5e5f07830a0cc839dd3a4da",
+      "size": 25683,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/json_examples_structural.md",
+      "id": "1eZaW3iP0Jhy2KgqGgHX94SryxoyLY_QH",
+      "sha256": "42061f14d660921dba90ea86b9d5f3b561372d9368e0cde3ce556b3fdf599756",
+      "md5": "700f46529be1a8c5335070e37758d90e",
+      "size": 10261,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/json_examples_analytical.md",
+      "id": "1TTVdeA0FBvkWvtOJcwgRvWu6Zc8fpqfq",
+      "sha256": "d6e17bd5857a305945a42d5bd27306880967e2f3bfe638234a9419f3e88e55b5",
+      "md5": "5b1ade4f8ceb62062f769080173d5427",
+      "size": 20453,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/powerpoint-addin-prompts.md",
+      "id": "1ao859ndvG-zngdhdwqZLtm311dhw4qCN",
+      "sha256": "9397c590e99f64f6a1037f6d96ba35a93956c2ec4f67fa894f23eb50b2b129b3",
+      "md5": "6cc4acd65ce2f1830180ed192f0f7482",
+      "size": 8955,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/quality_checklist.md",
+      "id": "1CM9hDp_61f-x1M8C2sZDgto3gil0wCxc",
+      "sha256": "885da81001cc1cd0a62b7d2f2bff21e80ace02a0424fb881b9c6adba5d96ea03",
+      "md5": "6c4f55b99d1715db99f36c1b3ae9b4c1",
+      "size": 12086,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/self_learning_log.md",
+      "id": "11r6P_nVouaArLYW1h5PHxNRg9QYRFi1J",
+      "sha256": "7f5dadfa08b3169eaca9f1edd9fdc80f5332ea19f7eda90c8a39d5ffe613c5ba",
+      "md5": "4439b6efc800e168ddb3ecd904869cb4",
+      "size": 1835,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/slide_type_algorithm.md",
+      "id": "1S7HKxY8PxUy2KHj4iBhRgT5jvMQQbQ5v",
+      "sha256": "ae42d78e3ee657a1e001387bc210435e444a20d3577e15e99ed948a05bf58336",
+      "md5": "e77729d1158c1d93ddf03b8adfe0d305",
+      "size": 6822,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/visual_diversity.md",
+      "id": "14BkpQZqW4OtAUESMYx_hMHfAZbtawmki",
+      "sha256": "01d14fb0f46dc83d2b841b040b06dca23cee79b1893783c8bb8fe9fa8a6bca8e",
+      "md5": "b4a7a034ed95845b9418f70eab9a029d",
+      "size": 4424,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/structural_layouts.md",
+      "id": "1GacoQE8Mq_rWD9gaXWYnPaZinkW7u2nC",
+      "sha256": "b75f2dc370bae4c2a384b78ca24e774629d1835129868193e72499a2a78b290d",
+      "md5": "e21c658268789705a460123429b877ae",
+      "size": 78835,
+      "reused_verified_local": true
+    },
+    {
+      "path": "consulting-slides-creator/references/workflow.md",
+      "id": "1P4_q-ghqd1-FMGcBYQj-lGV8YtOWkWDY",
+      "sha256": "faf130ea321a14cbf758e9098eb01dbac71b812116d9a8a69f0ea5411378c6d6",
+      "md5": "0a0b3b7dd8243d7f7065607220703048",
+      "size": 4548,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/brief-template.md",
+      "id": "12zKsZGYfqkNXBhxFesWcNlzSfluj47Sh",
+      "sha256": "747da6d6742477d21fa09f5144f9831cc7a384f80ee594fcb84c241ab6b69d84",
+      "md5": "ce99895cd1e5ada8a297f8f747829251",
+      "size": 2624,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/client_brief.md",
+      "id": "10hOPx915KYbXCYIduQWdEk7q6U1Sdh4o",
+      "sha256": "699b7cfdfe63ba03e699292b4104dfb0b3280400945b14fd7ce26efc18171b15",
+      "md5": "845a7e93f48ce98ca78ace8d91ab612a",
+      "size": 2381,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/gamma_integration.md",
+      "id": "1m4xCzXeXG_gGenpYcGEOPOFrc5HmOgGH",
+      "sha256": "c152ab60b108f711973f8b2aba2eab393258eb053d5590d724e740acefab7f9d",
+      "md5": "119747405c74384a40feb3e5b1c37d11",
+      "size": 3943,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/gold_standard.md",
+      "id": "1ZLhmsPyXdZD6jN2PCB1Ift_JzKM6-9mV",
+      "sha256": "ca535231f81d6bccdb76d2f2171d5f3e5e67670e31f7ad236f218c254661ab45",
+      "md5": "4a9e75d4c6f5a155f5f2c88a3020ec2b",
+      "size": 4618,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/gold-standard-patterns.md",
+      "id": "10kjypua_IO_y1QEmRm-GokGN6KIWoGKX",
+      "sha256": "ed65c2c6ecb5e9abbe9f44ffd59505bbb3e16af85383bf2a8847c5c26d1b598a",
+      "md5": "6029c6b18e90f02b9d7975bbdd6a188c",
+      "size": 15020,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/kp_structure.md",
+      "id": "1uUZRt3RUs7HK5S-Qh3Y6CSE_B-450F8V",
+      "sha256": "b9d2336292be58413367736b493c92908f3e44ed4ebf9f1f4d6a24145bfb1535",
+      "md5": "158075451665428d7d76ae28fa95675f",
+      "size": 3204,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/pp-methodology-notion.md",
+      "id": "1gY6iuDTRBobwZn6Jvh7_GPX9wtenFiBS",
+      "sha256": "4db3c178f7cb8f0cb8f1b4779c4f04646cf33c897c0c76826436951dba95acca",
+      "md5": "ff170869d416c93ff2a571cb43e17767",
+      "size": 15185,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/pricing_examples.md",
+      "id": "1yzuQU9WyPunG3lU5MwCMhdtbO-EYiGD1",
+      "sha256": "af5ecf7e82c7dfd5fb9459b0a3883bec7cc8acea2ff26fd0f3291ed99b5e91d2",
+      "md5": "02d3c68d623ef431a73905ca5a36deaf",
+      "size": 1490,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/pptx_integration.md",
+      "id": "17S23CkTZShmT4LSe5u_sI53QkBDAfq67",
+      "sha256": "00cd43d8c2cca59acca93467056f2d06bd0f91d471af2b5023e4195f5209c684",
+      "md5": "d10fb057596fcb1aa6951604c7e24c84",
+      "size": 2945,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/project_types.md",
+      "id": "15zCJRF8H3vJzrDK5YaR4GbJNnKFLvobU",
+      "sha256": "59595e03a52ca388f6a0a7e43d5c839fa51dbcbf13dd83d84a3c44a97c55d81e",
+      "md5": "b7001a0c4e410261b514874a9dfa92da",
+      "size": 847,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/proposal_templates.md",
+      "id": "1zexbp3BX1gstm_qiajTppdaztXKtVmcx",
+      "sha256": "71ed53e140284e5537265e29321e10d04b8d76530220dc50e0713f2bc0de8235",
+      "md5": "487345bfd0e0d9dc0f40a86d276588c4",
+      "size": 6598,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/quality_checklist.md",
+      "id": "1weaRJQk5l5OOkqgDPcvrh81D1Cn4sbpJ",
+      "sha256": "5683a1bf4e5a40839b4c5d91dbeacf36b6048fd1e100843e031bd8da6c56eb52",
+      "md5": "06b8474612eba8746ff72ded3592fda6",
+      "size": 6333,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/slides_integration.md",
+      "id": "1JnOCpBd_InfJbaVcJsxHOPomtOLbW4Vx",
+      "sha256": "b4e78eacb878af0647c64b9b762e7bb836edd30d5d33781ff5b57d86299ad5b6",
+      "md5": "1fa8d2d75a785e8c1b615d0299a7803f",
+      "size": 4802,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/tone-and-language.md",
+      "id": "1JZGB6et8oJxaC_2g_MebjHjh1E7Wmv3u",
+      "sha256": "8f0a4d03ec652dae698058e68c18c3208ed9499c7787d6ff4f153144a0d3c524",
+      "md5": "f52a302a3207abad14f25d6adcf9a924",
+      "size": 10918,
+      "reused_verified_local": true
+    },
+    {
+      "path": "commercial-proposal-generator/references/writing_rules.md",
+      "id": "1ZbKRf-2CNomvxb78xVmDfFgp7qr03hbp",
+      "sha256": "07e6f1d6595657a03c79e6e99e9a379d264b3d4ac1e8cf6ff97b5c19a47af152",
+      "md5": "9aba2477bb06d7a935d6a1af387472d2",
+      "size": 3170,
+      "reused_verified_local": true
+    },
+    {
+      "path": "crm-implementation-qa/agents/openai.yaml",
+      "id": "1osfw708iukjR1eLvW9Os_4QqBTQFs_xI",
+      "sha256": "7182ba4dbd43e5b3413511de5ae182d4006b35e854be6cf21cdd639b7a16349f",
+      "md5": "3e837587d3f937cebf50e69e24b873df",
+      "size": 146,
+      "reused_verified_local": true
+    },
+    {
+      "path": "cord-pdca/agents/openai.yaml",
+      "id": "1eKHp9IypzW1RaM53FEmV3j_J-JQAwAUr",
+      "sha256": "d62862250321bb970e5c9bf9d7da5f3c134812e5cac03a55b9e66e8b24f9f052",
+      "md5": "de10ef4f8a70828fb77ae9805e8f2eac",
+      "size": 640,
+      "reused_verified_local": true
+    },
+    {
+      "path": "crm-implementation-qa/references/ortolight-crm-bpv-standard.md",
+      "id": "1T-cEzvSh4VGl225-iL9RI01PfIGXwLLA",
+      "sha256": "7fa242cd0a22f64193f8f33e420b7dc31de655bfe9eabd52ee49032778416cc0",
+      "md5": "3562ccb89a8f70b68a311126ddb7ec30",
+      "size": 2224,
+      "reused_verified_local": true
+    },
+    {
+      "path": "crm-implementation-qa 2/agents/openai.yaml",
+      "id": "1xhBQ_RBb6ds2QNw8F4d3FOSBqKNfocNZ",
+      "sha256": "7182ba4dbd43e5b3413511de5ae182d4006b35e854be6cf21cdd639b7a16349f",
+      "md5": "3e837587d3f937cebf50e69e24b873df",
+      "size": 146,
+      "reused_verified_local": true
+    },
+    {
+      "path": "crm-implementation-qa 2/references/ortolight-crm-bpv-standard.md",
+      "id": "16aO5qGtOBlF8CmBdCeGvxCOPLZRlAzpm",
+      "sha256": "7fa242cd0a22f64193f8f33e420b7dc31de655bfe9eabd52ee49032778416cc0",
+      "md5": "3562ccb89a8f70b68a311126ddb7ec30",
+      "size": 2224,
+      "reused_verified_local": true
+    },
+    {
+      "path": "fix-rules/agents/openai.yaml",
+      "id": "1epquIg2lq1PS5Wg9LyXEFV4gdaM6Kpcf",
+      "sha256": "84a7e0a20ba4757b339786a6fdc77e179b2f3439a3ca881e729fe8a4705af715",
+      "md5": "6890a5dedaef99ddce4fda69552c98e5",
+      "size": 219,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/add-watch.md",
+      "id": "1f3jwPZ4QfC7aiYe9VXRD5xIDNrcodPQp",
+      "sha256": "ec787daaf6ec535e0f6aaef5d8b58de6aabcd1c491909b98fdc9ee0c88160300",
+      "md5": "0df0589623217ca38a12bdcabfb42f4c",
+      "size": 2457,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/test_tg.png",
+      "id": "1lCCMHTbWLJtyiDHATnFe18rfPHXISh3F",
+      "sha256": "f7b71e3c307b3961d775c9730a73206b464caa4716d83576390c3d767b00c821",
+      "md5": "37d02957fec99f8a84749c0e6c398807",
+      "size": 38249,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/exports.md",
+      "id": "1bqnMafmiOYrxMHK2Ok9zmf3m8mWSwc3P",
+      "sha256": "f648e8b3e14105b180f6251a7ffbc4dd1e50734ccdb887d80faa6fe58c64b7e2",
+      "md5": "c04ddf8f1f5ef5e262ebec491a523c74",
+      "size": 3073,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/extraction-spec.md",
+      "id": "1DVXqpcC-LVCeG9yM0zOdaUmX-t5ylXDI",
+      "sha256": "1b6b6f22b298cd66975975105b8e723631d002595b91ee657c4bff5da2241428",
+      "md5": "a86a7321597b23cc2b22e011b3dc6e1d",
+      "size": 4099,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/github-and-merge.md",
+      "id": "1rXkbJ7LsCGdo1HRwvJj0QlcpRtx5oBi9",
+      "sha256": "e5ebd90c7686f50363ff7a535556bc2f596d4c47ec1e6c8b95e11e36a0dfea2b",
+      "md5": "cde13df085e4c492aeb7ba298a996d0d",
+      "size": 2177,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/hooks.md",
+      "id": "1wXBFA5YLwSIQy1eisuw-G8fiHqpuYQvn",
+      "sha256": "b9a4e9f66813c6fc720589f1071d1a03c95756ab7101447e14e57291fe7844e5",
+      "md5": "3f545db6ce646650bb9de588f5512a27",
+      "size": 1267,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/transcribe.md",
+      "id": "1xnch7E6xhOoicq_ODvkS-i9He0wglM1E",
+      "sha256": "6b81f8dcff4d11aa69859dfda473a03b144a9b1fe63303f927b061e70d167439",
+      "md5": "70f6aa30d6211f3a2c7e9fc45479f50c",
+      "size": 2652,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/query.md",
+      "id": "16R4VPTeyag_NsKttCQRo69WQ2A6eC_nH",
+      "sha256": "04c60762b9398e707329073dc0ea78dedd33e12a39fcd5fbd07f0f963a9b677c",
+      "md5": "c2a8e798674a81b02aa9975f43023819",
+      "size": 9076,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graphify/references/update.md",
+      "id": "10CzAWVXDTdtrxmG7r1lN_w6XTabKOa1z",
+      "sha256": "ad5753f179a50ba3c57105024a3f62411abadbd771463835f25bc83adfffdc73",
+      "md5": "0dad167a95bdb389f02fecffb60b1bc8",
+      "size": 7518,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/glossary_poster/index.html",
+      "id": "14OYAfPZsXAUTZxG5PTjsCmGJdNOGSv6a",
+      "sha256": "1bf778c831cbfd0719ae94efba7c22a82417c06b9acb5d8a1e1dbc772187c9bd",
+      "md5": "f0b84e2f4a05b7ba119c1dd38bc5f2be",
+      "size": 25891,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/glossary_poster/tunnelirovanie.html",
+      "id": "1M-SXwyy5zjhtuOgDCe8PX5fybBAIUSsP",
+      "sha256": "d51fae76622bdf8a2c7f345f129301f9fe584a098916104c164b17eff1c516b3",
+      "md5": "cdcf76e905882bed3e1b08f402bcf4e3",
+      "size": 18389,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graph-analysis/agents/openai.yaml",
+      "id": "19M5-30P1F4HCP3R2_jfo01aZSUKZf2ZJ",
+      "sha256": "fad1dd0a68e67686782a4ef6702e3dd43d338094c17803be16f4140e5d4234e1",
+      "md5": "deeea5e41ae6d15aae60c0e59c91b74f",
+      "size": 322,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/fonts/PlayfairDisplay.ttf",
+      "id": "1npzPfP5zOysrRbb1F03sibGFNez4HJBf",
+      "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6",
+      "md5": "038aec929d8d05c5de0bb20e040f9973",
+      "size": 300724,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graph-analysis/references/architecture.md",
+      "id": "1lYxlav9ao7TX1VvmQtpDsj5FA9G-XxUg",
+      "sha256": "2df4b1c61b31a517428e0a8300ee6f411007ba7ade4f8c6f8cd1f39a9b22dc13",
+      "md5": "0e1b2f5f733875fb9e80f4e89e2c1fd2",
+      "size": 4152,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graph-analysis/scripts/graph_inspector.py",
+      "id": "16Ncw7os_-99BnIrNGh3V40wMrZpsKqZA",
+      "sha256": "ad5cd0b6629be7ad28418e9e700b5b52e9a11f52abb6a10fa202c0035b40a575",
+      "md5": "98cbb1c7bcbbe4459a1b552611049773",
+      "size": 34552,
+      "reused_verified_local": true
+    },
+    {
+      "path": "graph-analysis/references/smart-questions.md",
+      "id": "1SALmW5Cn5L-K2r1_yfh0c8H0ip5FaF7j",
+      "sha256": "badedd4a23ab1bc245fb51236762430f87530be57b21f9b08f764983cf043359",
+      "md5": "ba74edc123c1bc2ecd74a9753e65ff86",
+      "size": 2516,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/01_grid_blocks.png",
+      "id": "1qkCeFm65eIiVGaPRuqGLMUeJEfdnqCiN",
+      "sha256": "fd78ccac1d6005457a23569891083202bea5659c987ff5bacf023d171e412d83",
+      "md5": "c19c89e48856151724a2b7ade7e45189",
+      "size": 1585236,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/assets/tunnel_higgsfield.png",
+      "id": "1NC4AEaGFaAsaca4bIgGTcqd1r5nIis5c",
+      "sha256": "3eaefe06b746c195cbfec22c462e1323fd1c56945da53e101aac655c15997043",
+      "md5": "92ec4dde5f58380df8a3d875b77f6c75",
+      "size": 1834166,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/03_red_glow.png",
+      "id": "1pJ5VXXb_0t_lnJwjWbKWwKZAMqO2wTDY",
+      "sha256": "cedfda2515a4e6636e1faed910dff9971c39131818abbd37c42ea55dc4e1208a",
+      "md5": "0780eb2eb97db93ea32b9a62ac260f47",
+      "size": 2463446,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/02_concrete_stairs_red.png",
+      "id": "18GwKDa1I8I-7DUVenDEmuuX03Uxp5IOd",
+      "sha256": "530b66a27cbf46ee3968258d3fd90b03c6a809c9ee306a9aa9632429a4c03050",
+      "md5": "8eb8c332c3fc79e6a321a2b541821dc6",
+      "size": 3751563,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/04_editorial_marks.png",
+      "id": "1VlfApQBIKevEx6sFj2bMbfy4G2OwoqkW",
+      "sha256": "5d460102028436591bd5d35c7b8412c0bf2faab2d81e479017d94d61d42e9c6d",
+      "md5": "78ba8c8f6dd21450f8ea193146472beb",
+      "size": 1233953,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/05_corner_grids.png",
+      "id": "1gAebjcwCT6w8vOoHGsqn8feCc0AlQOhy",
+      "sha256": "e6104c737c147eee603d4e0cc94b97553ac3e7882df345af990cd18f9421c16e",
+      "md5": "68678aecc99df6253a348a6b063d6c82",
+      "size": 1595185,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/06_concrete_steps_sun.png",
+      "id": "1yzD2RCeaxal_trrNMN-Grv75rEKu3Mgv",
+      "sha256": "66982b05f6d90afe281835d74f33097d2a6f2226f0cd7f5fc93de88c41643b88",
+      "md5": "6d683cafce1d0198de94fbb921d94d98",
+      "size": 2906599,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/07_red_bar_right.png",
+      "id": "1paaXZJzSTQvsvFXj_rZpvieWkksR_VmN",
+      "sha256": "67d2bae1f65825de94cfb340c49d385715a28fc2004a66f4bca3f675ca6b48a0",
+      "md5": "a542d163e9a861d306f52ab82a492e56",
+      "size": 2003017,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/08_thin_lines_right.png",
+      "id": "1qYWM4xS5M9VCMp5j7jXNC90l_PmDPj3E",
+      "sha256": "c6a7e8cbb3e76e1c8e6a6ea40374d595ae075949d730b124a9dd8980d2f7aee6",
+      "md5": "34658cd416a649a2423bdda40a95cf99",
+      "size": 1597660,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/09_grid_corner_glow.png",
+      "id": "10mGtO-Ifa4flKWTLZCmvcQU3_DtEN27y",
+      "sha256": "2b126a1cc24bcc8f89507a75d50e3ec7cc2eb897a13e4ecf12946822032e8505",
+      "md5": "ac6631125f36e9dc550361d6014809af",
+      "size": 2588279,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/backgrounds.md",
+      "id": "160QlIdztnhaA53ae00_vbuhIYUO2Xh66",
+      "sha256": "505afed117141aa843fd324b1d299c3c7fdfcafd16f56850129b948bc54c5ae5",
+      "md5": "16ece78d6808687d801557a48fea248e",
+      "size": 6097,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/README.md",
+      "id": "1cTBhHp75TkFYYpoEKClwS3kUTb9Uoeii",
+      "sha256": "404cfeda1769fe43782996fcecf1fab217187ad113af10ebb6e2fd62381b943f",
+      "md5": "42be7d0d30862d2e9ef9a4739977cda5",
+      "size": 2203,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/examples/06_tunnelirovanie.png",
+      "id": "17MtRbHesYbr52FHauuR1K78XNUR9E-DL",
+      "sha256": "370fd8cb6c6bd6aa721cdb91dc245bf73cae9418e55990208aeb9781626ab029",
+      "md5": "6fe4f5c0fc1e22e4f9dab460813ad241",
+      "size": 603856,
+      "reused_verified_local": true
+    },
+    {
+      "path": "interview-brief-by-analogs/agents/openai.yaml",
+      "id": "1dk2Hwkh9OrqE1u_OXL_7Mxrxzgy-pWBZ",
+      "sha256": "2c9ffe8074fc829ad25905e49ad92b71e2164d000a2ec615c9a60921fbec24b7",
+      "md5": "3ad2e393d299b4f3170c889bc3ab31a8",
+      "size": 276,
+      "reused_verified_local": true
+    },
+    {
+      "path": "lawyer-pp/agents/openai.yaml",
+      "id": "1e6NqMy9fe2-eZnq1pO_rm5Mi4Y4jkfh7",
+      "sha256": "80d94718636b7096c003428ac35e4731620a7c99a3727f3ec89226d5de7f11e4",
+      "md5": "968bf9274fbed23297c4c348ea3f214a",
+      "size": 393,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/06_tunnelirovanie.html",
+      "id": "1fEnZ93SVSa5t7Pmmm-IXIDFdBKAlD2EF",
+      "sha256": "ce893dab7128a0bfb5e8f511bf6d16c2338834185b503daa7e68f8aa57071363",
+      "md5": "cdf18c1cb1adaf5c1675352229c6c9b0",
+      "size": 17519,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/backgrounds/10_radar_red.png",
+      "id": "1dBp1SBWE4YCL9b6PJ0Jn7qOX_qOIy7s4",
+      "sha256": "45782b6bcac2e2fc0653cb870566e473a2c5d0b16c907d1674a6d4daf3151856",
+      "md5": "6b5cc880ccff40e7caae80e43dbb975a",
+      "size": 2730493,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/06_tunnelirovanie_v2.html",
+      "id": "1MbiNfETRr3ahVm93QX1uCveKvyQFS3-8",
+      "sha256": "4e779f117ba0f0edc1277c2a0fd40369c5cac58aa086462c4bff4d37eece504b",
+      "md5": "5020674a394dbbe849b8f4ba98c4035a",
+      "size": 15863,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/06_tunnelirovanie.png",
+      "id": "1OHLloAX6D0n7m5-KcJrNr3M8s-wSIrM5",
+      "sha256": "370fd8cb6c6bd6aa721cdb91dc245bf73cae9418e55990208aeb9781626ab029",
+      "md5": "6fe4f5c0fc1e22e4f9dab460813ad241",
+      "size": 603856,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/06_tunnelirovanie_v3.html",
+      "id": "1UU7bYQawPr6Ub5rNjE_f_IFlq2HAx_Gb",
+      "sha256": "abd5cd29bcb466a1239563032a626a3c2b002bd1b249edb60614bac7df411232",
+      "md5": "9ea68366cba093f19884194ea3cf99bd",
+      "size": 17527,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/06_tunnelirovanie_v2.png",
+      "id": "1XFQ-var9KfDAJGSpda-vc45f2lDHyOm8",
+      "sha256": "8a45b2010bc5fcb5f5a9ad3cedf2e97b818e4ae64ec7a0e1cef8f187cd74b950",
+      "md5": "ae6859d3abc552a34ea3f3197d0a9fea",
+      "size": 1934670,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/08_kontrolnaya_vyshka.html",
+      "id": "1GGcrQZVsgFmU2eEScFH503v9BbjaJX16",
+      "sha256": "f437e1050b32ab3bf69f932dc3d52bafb8caa898a27d1928080b368796bb25fc",
+      "md5": "faa8737c02e9a6d38fd5f7d8dfb619c3",
+      "size": 14527,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/08_kontrolnaya_vyshka.png",
+      "id": "1Rvz3bbTrwmbxfBRzCl0n-MKWepJHB5Yy",
+      "sha256": "7dc40613c0477714bc90cab1ff2afae9fe497fa759201f405eb37b26be971cf1",
+      "md5": "853137e5c7b07bb93e7658a98e20fb08",
+      "size": 614333,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/08_kontrolnaya_vyshka_v3.html",
+      "id": "1M272MERl7Wm0T3r_7BLA5bZzumbK1GrL",
+      "sha256": "108e14ae7ce647c48d3fc6278d5e879a7e661e112b56382f631954ab47a297c0",
+      "md5": "67712b9488d9dcc728bfd073e78dc144",
+      "size": 13190,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/06_tunnelirovanie_v3.png",
+      "id": "12qw9Sl918Ir3oqKIVDYL4ITIF5keX25q",
+      "sha256": "9f84a63cbdda9fdcf2559dca8569164283aeaf1049ba8d779944a67269b1c167",
+      "md5": "03dc779e705a80582a15d14b1d89b109",
+      "size": 2730016,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/09_skill_kak_kod_v3.html",
+      "id": "1nVJyGRoGR9-qWa6yqboEJf2cmhUFbscj",
+      "sha256": "dec00ebc9a2010afdd25fad0a2638880885580f5be2a4efd2e52b88080af4cec",
+      "md5": "e5eadb84b490e588446ef38f0b7daddf",
+      "size": 15274,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/09_skill_kak_kod_v3.png",
+      "id": "18p_5kGrI2oKOAkcEcQt4kpCfROMANrdf",
+      "sha256": "5e735a8611bebb310c0d05d1c2de07865b1f81e383fd628d325e7da505d0d9b0",
+      "md5": "cd6b1bf1403fecfd9d963faa79e1d8c4",
+      "size": 1184215,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/10_relsa_kontenta_v3.html",
+      "id": "1EvbBz5LUZpa2cGqUS5hl7HyV_QVU7Ucy",
+      "sha256": "5e7b0a11308084d1da6888c13a04635454c23165f5a00657f6ad0cf29cb443ac",
+      "md5": "c2c046ddaa3cadef96521ab3ccfdc265",
+      "size": 15677,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/08_kontrolnaya_vyshka_v3.png",
+      "id": "1Lz78-X5xfWdR6J8dH0WBAa9QB-V0gu5O",
+      "sha256": "2667d2e8951ef0e6302d6132221e73e41dbb41282b6dcc7460d906ba24e4a3eb",
+      "md5": "73922d2f2b5d4c9652a949fb29b28acd",
+      "size": 2462474,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/12_prohodchiki_v1.html",
+      "id": "13yGqV8Y0MOGCQPDFpugoEdaVd9hGMXPb",
+      "sha256": "b53fdf4825c1b439e6f2d60743bf61414d03842165c4254c6e91acb8dca75a39",
+      "md5": "3f77322f34e5a6dbefa7c3be201967ff",
+      "size": 10131,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/12_prohodchiki_v1.png",
+      "id": "1TdM2nEaj7-xc2k3eRTcRRFtwOTdsLixd",
+      "sha256": "d14b078f088826b67c5b891941744a4f3cf744f9fb5440df9ea06bb6cfd2500e",
+      "md5": "7cfa992c6c7aac3d267e039b5f348789",
+      "size": 1278100,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/13_oshibatsya_pravilno_v3.html",
+      "id": "1Gb91FRVFHh9yBme6ijgjc4wjEWpsV7pJ",
+      "sha256": "16a1ae1789018fe071cee1844bf2706b73251cc8f180a7e94ced4dc5427c4480",
+      "md5": "826c6619b44703c4c3ccc1e83db590c2",
+      "size": 18349,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/10_relsa_kontenta_v3.png",
+      "id": "1TJgJUrUxSmEV62F5y9rzJlumK6GrcnoC",
+      "sha256": "f41b1f7420ab9f9fb4cbe56893dd2df2303ba02865b5449dc4ea12a177a640bc",
+      "md5": "bab8117c4872010adb749ddad9d8267a",
+      "size": 3886633,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/14_starshiy_trud_v3.html",
+      "id": "1JY4HpkahT2WyaOVyBhyQnTUmCdINmMye",
+      "sha256": "7647c755c33a2beb8604e811f713389e47087b820fb0c8f879edd927a95cea5c",
+      "md5": "38d2fc259bbd78be2a741e8328746f86",
+      "size": 16484,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/13_oshibatsya_pravilno_v3.png",
+      "id": "1oaojbpmtiQ8hNMg5EylVg9ehf1SKvZtw",
+      "sha256": "47da6aaf1e0053174c47e7b11cc0e248320561701f5e7e9ed71bd3fe4b7ba481",
+      "md5": "db28dd188f30536ca53bb685ad7579f6",
+      "size": 2453410,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/15_put_zadachi_v3.html",
+      "id": "16JJuzmS0EMAW6sG3yF0eE60GITrcuMtm",
+      "sha256": "9edc8854af76c3f195795da17084ddaab0aaa749f0ce8c12316e56ac83903964",
+      "md5": "543cf716e2951c866ac559e630508cc6",
+      "size": 19860,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/15_put_zadachi_v3.png",
+      "id": "1RiO8OejcbuLrBEfobnXOElpm8W8chG_Q",
+      "sha256": "acff130a9c96e53dbf395fb2b536c0ed81bfd5898710e746a908cc5a8fada7a4",
+      "md5": "e091f344365f724ab132ae0b1cedcfc6",
+      "size": 1398979,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/16_hotim_ii_v3.html",
+      "id": "1TGkEqx0-edjQQa3NtDhtve5OSaQVQuG-",
+      "sha256": "06fd0154077aa042f56e4a62bab43f4a977433da227f05830b65f9fe634cdc3b",
+      "md5": "0deb98a4d5d2f02e8679824f053b7f87",
+      "size": 14144,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/14_starshiy_trud_v3.png",
+      "id": "1TdAEL2N8gkx5FxxfqBmF3bB4ZIonRHI0",
+      "sha256": "2916d003bc0253652ec3e2d2359d8d9766645bdbcbf4754ac143fbf63e608b67",
+      "md5": "995c844c5a736134ef7e85466501c0b6",
+      "size": 1804362,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/16_pipeline_ot_ili_v1.html",
+      "id": "1Tg4Uv95k5cD1NjN0EngqSbRVYw2dhLbF",
+      "sha256": "781dd5d8b345b296ebef5915deac95a7fe23cff6c2a8e2ba1a3648f31b2924fd",
+      "md5": "b42cee2396d782b98bd91e39c85f4c58",
+      "size": 16581,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/16_hotim_ii_v3.png",
+      "id": "1rs-XaXNbj3wnVXesspdeWXyMzKBmff6a",
+      "sha256": "c6632a6983c4c5b0875037388cf5f457b0845d738987306429cb249e6a90a156",
+      "md5": "7d98655fd5e4f67965a24c64ef15c7b8",
+      "size": 1525004,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/17_processy_pod_ii_v1.html",
+      "id": "11lqIXIoHcrif7K3RjKaGUU9uRYySMybY",
+      "sha256": "af62c197991b353cef6594a5ea36e1978eb4f32737f9e5be054fe4735db43fda",
+      "md5": "09f56a40c52fe7291852faa7bd4a4043",
+      "size": 19703,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/16_pipeline_ot_ili_v1.png",
+      "id": "1yC5LHYOkQY5RshIDVouO74uv9VtN1Bf-",
+      "sha256": "dd515105c5369e7a48be29cd1ee75d3718d4ec38ee9da870e6fa5e9f7d8b0f94",
+      "md5": "5fdafb65866a813d8cf85c80b8ab2773",
+      "size": 1438066,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/18_skafolding_v1.html",
+      "id": "1sd0byla3mbc6td1i4g6Jnm7FsGaNe54E",
+      "sha256": "25c2280fb190d3830cb7a77da1e6401b491609c5775eca7016faacb2fe9b16e2",
+      "md5": "1ad96f48bc16ac7862c2b422af0b9b9f",
+      "size": 14714,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/17_processy_pod_ii_v1.png",
+      "id": "10qol19pGOK9ZKHDFv7zFlOtHs5-mg_a1",
+      "sha256": "85b0660f3d1a2dfadb36529915450b9be0e3a1c9a08915cec4ee85d1479ce487",
+      "md5": "0d59ca5a69a00861d2e81669cb6c6f81",
+      "size": 1221989,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/18_skafolding_v1.png",
+      "id": "1uPeYhJH_xrJfkBjlUYLxoWPdd11eMv8z",
+      "sha256": "2028536f0cf4d96840b08ebd75a5971117798471be5b51ef0572e87ea7749bfc",
+      "md5": "d0d013701a6b836b8a4e501c89624a62",
+      "size": 1260040,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/19_koordtrenie_v1.html",
+      "id": "1AbaXGC9PKBTQyARoDaTTygUU4Kn0BoHk",
+      "sha256": "964149b09cb756ed03c721bde5e5c60797b22bd1f4c76453483b33b0e54a4fdd",
+      "md5": "fe659e6c5a6f0997df379bdb4efe22e8",
+      "size": 15384,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/20_qa_agent_v1.html",
+      "id": "1jLaw_FkBILPv9B_x_vY9N0iU3bGHuMp_",
+      "sha256": "32711bada32bfca6677483a022fec02233e5982ebe65d8233443bd118c623f13",
+      "md5": "c09b92b5f860e80fe6db63bfc726dbe0",
+      "size": 13237,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/19_koordtrenie_v1.png",
+      "id": "11m5QhC9BzXZAJ-by-oO7tf0evpgtoOGD",
+      "sha256": "8fd111645c17e2de05ed1ef0d6770c41be58f0408dfacfd1168c52c727ef25b7",
+      "md5": "3c191d48e932d9e48625af59358a38c7",
+      "size": 1829668,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/21_8_zadach_v1.html",
+      "id": "1yJjOU6xgm4gfMdUiQHUZJwyPLcERUX0o",
+      "sha256": "44634c0f1120fc503c4d8edfd43cd94d81185bcfb95b07e96cf33ce8e47b4036",
+      "md5": "944b3448e52ad3b99a5b48c7a309f7c4",
+      "size": 13959,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/20_qa_agent_v1.png",
+      "id": "180eKa5nkzThbUHY6ETr1XGLPYmFyLoGh",
+      "sha256": "59bb6ec213c8c46f75fb6245f6f1c6e04624bc9d0500669a27155aeb25f1add6",
+      "md5": "299097dfbd5568a4dfa1dcbd3ba1fb53",
+      "size": 1867951,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/21_8_zadach_v2.html",
+      "id": "1EsskPh3X232SjRCAzlVZ-OPSh4mhrL4V",
+      "sha256": "97787ef32ce256acf5b2e8142c7bb5ab03c4a8632a730aa44abb79bbc72276f8",
+      "md5": "5ee86c84e46ffcffc59d8b0b5608fb24",
+      "size": 13402,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/21_8_zadach_v1.png",
+      "id": "1WbJ133qW-AaqHlN1g3fYAjvaabLPsNrR",
+      "sha256": "31286eb6103d7b9b56e50200d5b194ef346a3654db83534b672df59de7a865b7",
+      "md5": "6759f7b76d192e53f44d9d57663e33ab",
+      "size": 427470,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/21_8_zadach_v2.png",
+      "id": "15P_lcULt4JqjRizAsqRaAYjTQpF6nqPn",
+      "sha256": "a09fe9c5e117e69b6cfa6dc03b74471f8ff98d9cca77d70d8c5afa765b03d12e",
+      "md5": "b25f7d6147b2043740d2681610309844",
+      "size": 355121,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/21_posle_intensiva_v1.html",
+      "id": "1mxd8y0He3aRsl5bd9JldWMUk1Z1RWD72",
+      "sha256": "ebff1df7808f0aaa4080012107e43fad4a082c70a5dc924fc920507a13e79364",
+      "md5": "2270d40f4d422ff2adf35520c6eea658",
+      "size": 10339,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/22_iz_chego_mashina_v1.html",
+      "id": "1Hfr2889-1UgWmj8nagl51uoCFpzk_GiF",
+      "sha256": "82294025ecd76faa9cd84ac49970a90dbb62265e2791a2ab3d7ea7af1f0cf5d3",
+      "md5": "3ca5a9e2a5dbc3694e616217246439dd",
+      "size": 12001,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/22_iz_chego_mashina_v1.png",
+      "id": "1ZuM7UWu59dCX1FdtNfmFgF7RkutnWKwc",
+      "sha256": "a771ae350fe991ac2d3eabf8815d4863ae1d443ca9a69d6de7d58e1218dfa338",
+      "md5": "ddfd86474080f78abb802395fe168cd3",
+      "size": 433561,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/23_obratnaya_svyaz_v1.html",
+      "id": "18ev7FPO39LuXbMhkJe-UWzoupTNVxotn",
+      "sha256": "7607410774e3ec3f642e3001742366331757879a763ca2854d01194cee851c56",
+      "md5": "27b0dd9240fb233d62e7f1a06cc1b770",
+      "size": 12899,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/21_posle_intensiva_v1.png",
+      "id": "1p3vxJcrLQRyIllEChEjifGcGZqDtUh-E",
+      "sha256": "1ef164b9e74df2a8a53ba5aec5b1334ac234d70324236e6c840182277a0cf85f",
+      "md5": "90924dfbb5a3c3781b48998c4c7236f3",
+      "size": 2016838,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/24_kuda_stavit_ii_v1.html",
+      "id": "1TG7sXRjBTuzcBw59wFsRw2LHPxlx6dca",
+      "sha256": "6fd5c8078f2e0c21a1e4fb66108582aa41bd94b4d48c57d9d99291fbcbaec428",
+      "md5": "a5997d0754ad44682575184c17c3c368",
+      "size": 13810,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/23_obratnaya_svyaz_v1.png",
+      "id": "1zxatbDfU6PQ1qADqnbxx99vbiM-kzwkq",
+      "sha256": "b9429a18940a0fa1d21dc21b1d165dd4bec9c8b119022538b1f47b00c7bfa727",
+      "md5": "6f4806fc8284d5dd708b5dade0aad6a1",
+      "size": 1261965,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/25_marshrutizaciya_vnimaniya_v1.html",
+      "id": "1lzjE9g0Bn8xhjFYi8p8Z9WTKjGqekWVj",
+      "sha256": "7182bb3fd862d5affd6f1d1e23a683475285017246d82aa2aac7e4d124b9b839",
+      "md5": "109c09e34cf0f7848a5eff32a33cec0a",
+      "size": 14814,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/24_kuda_stavit_ii_v1.png",
+      "id": "1HEyFQYPlKfIvjwNOQBgVJm-yjHaZK4Dq",
+      "sha256": "4c089bfe62cde892d50aa2cd88a89a5711b5e8c7be750b8568ab0863cd0dddab",
+      "md5": "6dbe80c425704194efc537cea0e8de66",
+      "size": 1249187,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/26_prinuditelnoe_zamedlenie_v1.html",
+      "id": "1hAa1Wm_1tnLY_ls203JIWLGWIHlCXO0K",
+      "sha256": "4a7c9402c053bc9f90a171d11ac00aad27e7c6ea98736992c11bf8c5dbbd8556",
+      "md5": "f6c009b46cb08403c6b6cf502409293c",
+      "size": 12895,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/25_marshrutizaciya_vnimaniya_v1.png",
+      "id": "1hOJiyEH4J3X-tU12kUxfPDmBQz5sYwwD",
+      "sha256": "f3182012971e898173c88037a4448677b3fef212148b7753410dd696a671ba1c",
+      "md5": "371c9212baf5296efbff85b35420494b",
+      "size": 2251150,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/27_ozero_metafayly_v1.html",
+      "id": "11gokjsFC8l54U1nZZHREg4mwuP-jBxlX",
+      "sha256": "445c48feca93046355c1dc06cc6af744dc853d9daa808db6c5202ffac883399e",
+      "md5": "8ac9e0704579aeff2c62889a44bc1705",
+      "size": 11570,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/26_prinuditelnoe_zamedlenie_v1.png",
+      "id": "1r_xiTNd6kDaB5thByd5KjASQXxn1EP9T",
+      "sha256": "376fa9cd9ac29497e30562757247d2faa4273b0ee0c69cd914ddea06c2252f1f",
+      "md5": "3c2714b8e73322a6e42b72449de25d53",
+      "size": 1290144,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/28_pdca_v1.html",
+      "id": "1s2ZpRbxTXG1QKgtxBwPR6UWZwn1uwIIf",
+      "sha256": "b7ad508a593b42e3099f364e0851e08b1fc133ba6cc0a2874e1d0349376df6ea",
+      "md5": "48c4ccbdafab36170e964be49a5f28e1",
+      "size": 13190,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/27_ozero_metafayly_v1.png",
+      "id": "12aDs8S7_fiYW-6QB-jO8kvOK_zbVcus8",
+      "sha256": "14c0898272ae3077c6d6cf37e0f6df843037c73630c30bf9afde30f832dc839e",
+      "md5": "6517acf08cc6b34e9c1e89f33d372639",
+      "size": 1359508,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/49_ekspertnye_prodazhi_v1.html",
+      "id": "19pQXfiaRKaNKNqBDX2wHntzt4U_lTtA8",
+      "sha256": "72eca88c1cfbdd688f09e527c00f8049b02e0b85e84f9772e5134e8368e81a4d",
+      "md5": "4071f848377df260ccf2dcf327875343",
+      "size": 12692,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/28_pdca_v1.png",
+      "id": "1u7iYXmIWpRcFDcn1yDC3S5cU-eVGQ-Ql",
+      "sha256": "5195b6f248d5db0b0645513933374fbbcc8aaafd46e3bd38ad53b85478bcd273",
+      "md5": "4fa63c2609e094f4bf4f8e8b233aa1ff",
+      "size": 1334433,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/bpm11_00_dve_optiki_v1.html",
+      "id": "1ZxDX9qBQpTMuXVQUqRfFKtt8PTy3JMfw",
+      "sha256": "ba43fd87bfb1f62d916fbc7249e7f45e4863d5f7df01c746fd2f982c97b5bf78",
+      "md5": "8a98a1cd19c06676cfaefd76ca7481cc",
+      "size": 9523,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/49_ekspertnye_prodazhi_v1.png",
+      "id": "1NW6SI7OrWPWvQAXoYRzEEwAK1lSfi5J_",
+      "sha256": "f14ec07fe7115e94038727a550bb38d5ab7ad2cf52627e5af5bfc0fea4392bc0",
+      "md5": "77908286f9e1826f83a99f98efee1b32",
+      "size": 1304040,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/cfo_struktura_v1.html",
+      "id": "1uUeUSLNiqDwsc6B5NLbwQolyi2m6THfQ",
+      "sha256": "4510aaa6eeddc13a31577a0ae5b8d3e952944665e0429eb9ac533a7ca8bb97ad",
+      "md5": "15ef2135fc28221eb73f980996f0057f",
+      "size": 17698,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/bpm11_00_dve_optiki_v1.png",
+      "id": "1Jw2PIo2fOYR5wF2vUCfZ2FYO3PxcA1KB",
+      "sha256": "5b73df0388d458a64657091c354424039cafa98eb21f7cc9fd9aaf5283d0a98a",
+      "md5": "7b3452092f407e68b72ecd912a2ffdc0",
+      "size": 1269430,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/cfo_struktura_v2.html",
+      "id": "1katAT7l8AEzMl3-fDjYvzBI9X1Qbb-TM",
+      "sha256": "632229015969aca32c4235e1a9b428c9903f4f1945b6b0930b272790a6e902fb",
+      "md5": "5ac7fbf4df42e4a720e3ba46cad7ccd0",
+      "size": 17516,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/cfo_struktura_v1.png",
+      "id": "192VYgtolFlzrrqmKmTjGnf2UJSW0_O4Y",
+      "sha256": "87ce8ab7604f1256fb5fadf67296f72ea38ce7d0ff959ac6fa8a86941a586796",
+      "md5": "95f9b9bcba6cb3fc651ef665fd51d17d",
+      "size": 428434,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/cfo_struktura_v2.png",
+      "id": "1MJM-oxr1f9g-F5QbxlAzOurPsI-0Xnt0",
+      "sha256": "c3d76d1fee48779a52e06e3808aadfc61dc78c2f7ae00004735628238bef64e7",
+      "md5": "7842cbccf2e650593efd46f5fa6d5be2",
+      "size": 399676,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/collect_vidy_v1.html",
+      "id": "1zem37PSLCQZZOCB_7HAS8Fd3-RnhOyDg",
+      "sha256": "0e643db3b53677f7598416f4a21efd8444ae9f58261ff5458b619e81a6748bb3",
+      "md5": "612f21a634482e6a30626d3517dcea19",
+      "size": 8223,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/hero_komponenty_inzhiniring.html",
+      "id": "19ZeXDeLX9HBndimobIEdTtTteCTCRYM_",
+      "sha256": "37b5ed891926aad5564f3bd5915390af9ecf7818c5fafad76d0368ca4940c6d8",
+      "md5": "6242c28cec677d9a022e05ff35982ab2",
+      "size": 4371,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/hero_komponenty_inzhiniring.png",
+      "id": "1-HNB3X9fAVDCaR_oQ1N_gS2pnGUPfUkC",
+      "sha256": "b38b281e9d39434c1b8cfcd4b71b7bf32474f14fe2e4cb590e45d661bc3cde6c",
+      "md5": "f66c30e42b62fc89eb65006c982c29b5",
+      "size": 268781,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_sintez_dorozhaet_balahnin_v1.html",
+      "id": "1tZX2T8tSJCBAyF6jEi6CWXVehTKl2Sw0",
+      "sha256": "aaa163d1fb7632a53698c6c4debb63e98a12d629dba83104c52283bc7cd06715",
+      "md5": "7d2bb16e16a90601e2310d36631b2005",
+      "size": 7997,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_sintez_dorozhaet_balahnin_v1.png",
+      "id": "1MIL4nWTLRFJa7VTNno4mWGU8ClSMKXNX",
+      "sha256": "26ab8b51c5002c0dfd7fabe8b5da5baf813424095f40813712a8afd183e04950",
+      "md5": "a72ce9d64ece68544a68502e57381d4b",
+      "size": 371385,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_sintez_dorozhaet_v1.html",
+      "id": "1b7Xae_YaOqc-IDSCL1ChPSvHjdBvrcWx",
+      "sha256": "e1504ec0c4881e3ba3dd18cade1c5de11b32cc64eea53422ecd10b0f235b81d6",
+      "md5": "79df7441d109e32c661720913f341e9a",
+      "size": 8457,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/collect_vidy_v1.png",
+      "id": "1V3dVgOD-kdWikP_1TADLpXrurD6NenAC",
+      "sha256": "6fcb26fa11c682757dd8170bbad1f80a03b49b32ca9e6f2ba8c6a879b2c0a976",
+      "md5": "60dddb06659eca68144fdc488e031659",
+      "size": 2799451,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_skorost_risk_v1.html",
+      "id": "1w9jSMCv6z0HY0JqGAbiOkMaxm8Ngf5PT",
+      "sha256": "baa77d45fc3cb204a8e8709e0153694e20256caa4b1eb4973d222870ae6665d4",
+      "md5": "586f7192e96ca21b0498acabf2934a58",
+      "size": 10551,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_sintez_dorozhaet_v1.png",
+      "id": "1jwOLpLlQcrtL9hYfVC_vu3iJLFME4_Bz",
+      "sha256": "0fb81c4ae2b1c79fa87fbe419fe6dbf38e5870d675f71296f11c5e25583ad61c",
+      "md5": "6172388b1d44348b6217af54ada7585a",
+      "size": 3068538,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_skorost_risk_v2.html",
+      "id": "1k4Fk085p6mt3F9zrmb7DRw-rOyYLnbOD",
+      "sha256": "65c4594925ff430ac69d445aaa8f7d60bf45f279b686a7955f20294ca2181861",
+      "md5": "8002199492671ffde742c36887b75611",
+      "size": 11307,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_skorost_risk_v1.png",
+      "id": "1_ghC5thJoboFiYTjX_gJUnTqtBXumPiN",
+      "sha256": "3d71fcc120a1deabe0ccaa95b9aead32487958427bfcfe89ccaa3e6eb5bfc166",
+      "md5": "1be3c378f85547b8fe6f6bf8220d85a4",
+      "size": 1545689,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_skorost_risk_v3.html",
+      "id": "14FAZbAmZPLfqFbFvhqFMSgVZVN3GvOP0",
+      "sha256": "c1fc96f9e403d965d809f498d16cec0f801fd3c06b64be701aa225f332268451",
+      "md5": "bececb6875697d1540f2a1d74a5d2941",
+      "size": 9094,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_skorost_risk_v2.png",
+      "id": "1v8n5rAe_D3RMYV0hrPMTMZOLI7SS3p_w",
+      "sha256": "5abda883dfac535fb4bdaf916011dc2d0f592e30de010ee22bdfd42505bd1621",
+      "md5": "4ab872b36de9754bd2e1060809ab35af",
+      "size": 1648054,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/plan_sloi_v1.html",
+      "id": "1UZ10-pEehGb-m5I6xVsxTr4TbKLBuHln",
+      "sha256": "6844cec9e14277f522a20b65f6d80fc1e84e8d30da74065236eb787bc8c45ed8",
+      "md5": "f2179da3dc2036bf55db338c0a18122b",
+      "size": 8888,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/ii_skorost_risk_v3.png",
+      "id": "1vi-1S2g6wA3B-EYsPwHT53x1xo9o31g9",
+      "sha256": "d3cf570fb5c68560542e79fac66c415dd75498dde8bbdd1fe99e7c106225ddb9",
+      "md5": "cf08cfed4ec6fa894898754035bdc09c",
+      "size": 2611427,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/radar_pozicionirovaniya_v1.html",
+      "id": "1A4jcPKCRsGFatEi7B6hxryo0BICS0ISg",
+      "sha256": "43a8c1e12f0e2908652bdd289b1ee103fac22cd6bf6049aab90db42773637730",
+      "md5": "4207d5a362f05c06fea16295e05dbc50",
+      "size": 8681,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/radar_pozicionirovaniya_v1.png",
+      "id": "1XoYdfWhobXBCg3hZI3kOdi4mnPzNIUZh",
+      "sha256": "4fddce0a174f9c5793a48e9ed2574589ba7120b106c29711605c61b6b2326526",
+      "md5": "a74f530048ffda105cce35f4c5cc69d2",
+      "size": 472018,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_kogo_zvat_balahnin.html",
+      "id": "1BEMDIPPEsWTYa0Flk6SCsO4CWV2pFzMM",
+      "sha256": "bbf58c8d08f6cccb0dbfceb49c8fc68cb6ce4faae345b964c9497f177c4c765a",
+      "md5": "c5f619afa5e9418c221d58802af65063",
+      "size": 8333,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/plan_sloi_v1.png",
+      "id": "15VV46pLTk97mjLnPCKB46mjeLcAsnbR6",
+      "sha256": "b2beea55ae4a956849f777c206595a101de88e39d68425eb3f3852b90015ed6d",
+      "md5": "3371c3c225d35f5abd44946ebe8f037b",
+      "size": 2691785,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_kogo_zvat_full_balahnin.html",
+      "id": "148fJqzoEEXL-C4tSYkAYCsncIJSZ2vLf",
+      "sha256": "7357eceba9f4824e254a9332976926b9c1d000df401025538cb7b1b4458524c8",
+      "md5": "4e198e15eb1ef3918b7481aaae3038f1",
+      "size": 11439,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_kogo_zvat_balahnin.png",
+      "id": "1J6V88zKkf4kdcYEzvp5JgwnnzR9kcbqE",
+      "sha256": "2f98a2f132ef58122eb215207af9437cc4e3f1823037cdbaff9f34b4560e98e7",
+      "md5": "6a71810addc3f75fc852ac26816487d6",
+      "size": 455225,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v10_balahnin.html",
+      "id": "18Ct4rGMXqsOix0Kibl3gHEGReQBRtnKk",
+      "sha256": "d6d0c71606c78057e6f1e44915708c7625b43f1daff8ce15a3399f688d3ffab7",
+      "md5": "33388b21654864ac5d073f6aaa2eb5ee",
+      "size": 10541,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_kogo_zvat_full_balahnin.png",
+      "id": "1vllyZ0KvaZbFmNFTJzJKfSQlwif8GQXF",
+      "sha256": "fdb605af1d9d4d2005236aae0b5155dc4830bb48b5c7a26102d8610b851eb21c",
+      "md5": "571b4876e673ee521201ae4f04098b0b",
+      "size": 540892,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v11_balahnin.html",
+      "id": "1Qg64DvEGb3JiTM0cCrYPdhS4I5Pj4L7y",
+      "sha256": "804c4bde9ed92dd0c1efcf5ee87d8ce8031ac707b752051f63a8be75dcec3898",
+      "md5": "e07bf530f498e6197ba5369016af918b",
+      "size": 7628,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v10_balahnin.png",
+      "id": "1MQBy2jskWqLJTxTzBksdPzYxDAys-8CA",
+      "sha256": "883ced4bb986ab3cf61281a163762a9e546797b0f418ad29e4003f769aeb9218",
+      "md5": "7224dc692bf867f8b7849b6b8682e9d2",
+      "size": 469300,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v12_balahnin.html",
+      "id": "1ZNbJSU8iXWg-wfngtNOStZyJv59yijf4",
+      "sha256": "83eadb000b2e43cc752e9b3b12773e870a2bc2b124dc488ed6924a4d67d329e3",
+      "md5": "2b5f83720a5fee28c698ffe813882072",
+      "size": 7623,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v11_balahnin.png",
+      "id": "15ZeBXX7Bu4O5wkOqzPkU4sliN-YQ1ha2",
+      "sha256": "c8426cd7d00fdccdc1ee3f6a64f0d285970bdf1c2bf1bcda266cd560c231ff12",
+      "md5": "aaa07068de6bd89123bf77e725fc076f",
+      "size": 364994,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v3_balahnin.html",
+      "id": "1pxfRCFslLEwXA9y1ahi7MEikt2o9ers2",
+      "sha256": "cc02bbe187a7ebbe89f817b42c55d5f86fba7b398817aaedc9a52b8dea468515",
+      "md5": "6f78c7c94cc3fdab62668cafae3aa3f6",
+      "size": 12328,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v12_balahnin.png",
+      "id": "1SJNzcSIuP5WhpxhOvkYKchk-FrJ7foiz",
+      "sha256": "82a8728ae817faee283fdadce01fe47ce0ca7394ac30814b4732a4375a45fe8b",
+      "md5": "7fbd5689d714e34c06f723e0aa534a34",
+      "size": 365563,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v4_balahnin.html",
+      "id": "1qDweshRcItH8w-FZMqixw4ImLYM1IUrS",
+      "sha256": "4737cd252de1d2e48c216bf886f2ff83fbf9df243be271f2e818cf2faa98ba6b",
+      "md5": "00caf7e5c6de3692893475c0c3c51aff",
+      "size": 10433,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v3_balahnin.png",
+      "id": "1b6XC_b04msTjQ2QqZXQMy5Q3sf-fdwSk",
+      "sha256": "f0a19a7506f88ac332288c6142d0688a218cc1103a4e3f241b87a2b16fccc923",
+      "md5": "ef1efe805f35239656beaa5ebbf9ed2e",
+      "size": 531212,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v4_balahnin.png",
+      "id": "1qaP0_2keumjs6HY5jk-FQ109vAEz4aLB",
+      "sha256": "e01098bedfa652143af324b6e42fb430c201172a0e3e80e8815485f335067870",
+      "md5": "9e60cef46e658e88fcb0917db8827c3f",
+      "size": 483035,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v5_balahnin.html",
+      "id": "1HuN0OcNMDznJpI8jxl4_5nUcZHRKa3GX",
+      "sha256": "144cd4bcae4e12676d16e52ef9a668fb80f6399289ec48d2579163a06f022433",
+      "md5": "a9d98b4ec2a5e7a4cc2a1c8ff822511a",
+      "size": 10433,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v6_balahnin.html",
+      "id": "1VXkkaLZzT1jramoR8LeZOCbnfcmFNS1q",
+      "sha256": "a9da49b6c088541f7795baf575457add47792927f90297ecfb72e56efa81ab62",
+      "md5": "1b957e423f6c44cf8eed26c53c48d7cd",
+      "size": 10433,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v5_balahnin.png",
+      "id": "1rr1yUIse66B0_nnoxnRJVTfYNI2iYQDO",
+      "sha256": "0b22fa1e40248c22411ae95f0d579ba7db0aa2fd4740efe7f47784ed16de740c",
+      "md5": "ae735a00fef245b98963cf5826a5a45e",
+      "size": 474150,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v7_balahnin.html",
+      "id": "1gMMhZYBawCtHVB05ouYd50sUyC1vXejj",
+      "sha256": "5b0a9089294c75a7c31ebd4f5193fc96d586faad1be1a95e139bb6db58e046b1",
+      "md5": "7591cca2217fed3b8e44137e0c7796b3",
+      "size": 10433,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v6_balahnin.png",
+      "id": "14dkzUCNxUC9pBLQr8hKeE62tM6WVajjZ",
+      "sha256": "356792eeadbc04affc1e9a5d08fa22212aa65be6749e4cdfa1d30009d4745095",
+      "md5": "17b39e81c1090e35b1d9d8e6b0457f6e",
+      "size": 426098,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v8_balahnin.html",
+      "id": "16EsLOBKn3zJxbJJ_ph4HG0ZkKGvpJ2sF",
+      "sha256": "88404be9d19063bbbecc7ad653d4316f0884d07a030b683960a8e6eec1bb1813",
+      "md5": "f167a6de37e1e2cd8b319d9262ad8ffa",
+      "size": 10507,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v7_balahnin.png",
+      "id": "1ahmwnG7H_z6y6paQdgWYYXYIfSLw12bg",
+      "sha256": "90ce05c3a75316d198a2fd26a84f706a55286f1b063a07e84c03ceced73b4f87",
+      "md5": "e353f372b2460103400f5867055bae60",
+      "size": 469084,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v9_balahnin.html",
+      "id": "13wG2GBB9dbfO2jfhjrP5rUIzTPF1FcfG",
+      "sha256": "f507ea70aa37b6d1731e7f73ec5361ac9abcdff368883fa43bed7f0c087e557a",
+      "md5": "2be945c40e81d8a8c9673c5c3f98f801",
+      "size": 10545,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v8_balahnin.png",
+      "id": "1eGo8_Zvv0LoRBDQGp4UNW9Au33fsdZcX",
+      "sha256": "90ce05c3a75316d198a2fd26a84f706a55286f1b063a07e84c03ceced73b4f87",
+      "md5": "e353f372b2460103400f5867055bae60",
+      "size": 469084,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/v2_granica_inzh.html",
+      "id": "1Lc0gFYWvOhNwWuV2pwjP6mNEjojFsA7b",
+      "sha256": "0ec1b419148a24883a71a349a879c5a4ca63844ee14fc44c1fa694b242b2edf3",
+      "md5": "edea4ebf05363d1584d34bac7b2a70b9",
+      "size": 4281,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/strat_sessia_v9_balahnin.png",
+      "id": "1ezYeX6nbTkKFvbqTHJy27zW2L1Ubop2X",
+      "sha256": "cf47ef7dba551742f523d38fe935993120527cd17c4e7c8a0eca6a5a521fc01e",
+      "md5": "77eb7b4940ce35012c7e363cdf40ced9",
+      "size": 471134,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-editorial-slide/posts/v2_granica_inzh.png",
+      "id": "11E1dOaKXABtVnbZm_40WwJbSUg5IzQb9",
+      "sha256": "aa54ce8ccb4d617af543b3b958029753fead79763fd1b4156d1ee164441bcebd",
+      "md5": "e3ac4961bc1a7ec4debda2233444871f",
+      "size": 316857,
+      "reused_verified_local": true
+    },
+    {
+      "path": "lawyer-pp/references/обучение.md",
+      "id": "1N5Afok8z_Z_TCt13AwSUE0rwYgud2RD_",
+      "sha256": "19ff0e2eba77060f784e88773356cb5f9ad0ebdb37c5c12d0a0d34ad09f47c3e",
+      "md5": "9d76b5f8c0c162f6dd05fc5a3015ba3f",
+      "size": 7362,
+      "reused_verified_local": true
+    },
+    {
+      "path": "lawyer-pp/references/проверка-рисков.md",
+      "id": "1IDOy8hw1PAwExJtm1Cwd6-5_cQjhm7TJ",
+      "sha256": "54a001ccdfc3d87dc18fa6b99e732e5a2ce46c461cdabf34f6df659a22f45a51",
+      "md5": "0043fa29a5fef36fc93fd4f9488d85b5",
+      "size": 71247,
+      "reused_verified_local": true
+    },
+    {
+      "path": "leverage-builder/agents/openai.yaml",
+      "id": "1ZbuB9Iz0m4Oy5Qru2MPAmbFchkGL9UxH",
+      "sha256": "063e6f8a0df5886d0d48ef1adf88c765c38d95bfa8a4535401faf2a19dbc66c6",
+      "md5": "8a66ac5179a32479a7f45856ac743f28",
+      "size": 327,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/references/cli-reference.md",
+      "id": "1Pu3A7vb3y2SUE5I9_cn0HffmEZPmvH_-",
+      "sha256": "0b248a9211fbb81c90e551062edb2c843cba1c06c197d578234a8281069b0ed4",
+      "md5": "078cff3be6498825df1dee00c0df6ad0",
+      "size": 42279,
+      "reused_verified_local": true
+    },
+    {
+      "path": "lawyer-pp/references/решения.json",
+      "id": "1UH31heGjb2YlMpDGDCAs5FMzmSUJRQkA",
+      "sha256": "992f078288f8247faf4aa14cfd93f662c3131da434e67d7d6ddafd69b79b17e6",
+      "md5": "86750643682442148c8a0c71efcef468",
+      "size": 232182,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/references/search-strategies.md",
+      "id": "1wHPQQI4vAZP8qyyhn5-gvV8_jOEY6Yyh",
+      "sha256": "66389aaa8eff39f906f788d8eeef0966a9ad6397a57be552478640c9bf16c38f",
+      "md5": "28d7bf4bf6a8fd12664a101ae690cf8a",
+      "size": 21086,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/references/mcp-tools-reference.md",
+      "id": "13zXoZJTAE5ec6iwBOzRTPbEZtdKHgxix",
+      "sha256": "7605c91b0f51825b56107896bbc1c4a517a3fd3ed5e8f464babba359f54efcd2",
+      "md5": "c11315396adbfa7ab5099b0a31862a20",
+      "size": 89240,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/references/troubleshooting.md",
+      "id": "1CTagxOPgMYzcPReiKTGHRR7maMASn1qx",
+      "sha256": "60b3de092e83e6269095c83c18213aa1f4867cf1ba6f80f6d05e97030e422b09",
+      "md5": "182002c345f5fbb7cb221dea20b2447a",
+      "size": 25998,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/scripts/package.sh",
+      "id": "1gBlL1jNeit4HZW26dygzGm0sPez6FT8z",
+      "sha256": "c2d8463438f1a870a395e661331c5d8d59a1ec4ce15323966d18e33e760524f5",
+      "md5": "a7a1fe75c43ee3560a534cc29d61d1dd",
+      "size": 5498,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/scripts/release-milestone.sh",
+      "id": "1iNWsV3zhIHL45faWZ3qm1hP8BssBbXQB",
+      "sha256": "599a9c38361d57868a9386876779141c39744c15fac7cfa045544b33d661c3c7",
+      "md5": "e1adc880b8f5580f3a3d8b13cde18ee0",
+      "size": 3598,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/references/cloud-session-observation.md",
+      "id": "1iJc-FQ9QPtovfnVjlBjfY5OLQdYq5GBY",
+      "sha256": "9f36816e95d3e296f7339c4feca4c3b5db3704b97562cb1d4d43bd9d0487b0b2",
+      "md5": "7055b7881c820a0fffdc69d14d4978c8",
+      "size": 2101,
+      "reused_verified_local": true
+    },
+    {
+      "path": "lawyer-pp/scripts/decisions.py",
+      "id": "1Adh2puMvzlR9Vh-JAEsvQ2TlwJlSh_9j",
+      "sha256": "7f0692d289c2d74f8bc9e0cf4afad95fc1505a9267cfa38f7dde41195059c112",
+      "md5": "f67a96b9ce82d5df37089da1b3285b35",
+      "size": 10404,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/references/human-handoff.md",
+      "id": "1wS191pXCire0H3vRgppN_woVeb8qohLO",
+      "sha256": "a42cd43694b9dd7c8a9083fee5b83f58c47725f89f04d0c0a2d3eff57aaa1e66",
+      "md5": "142b02e9f5b86cc555357ddf502799c6",
+      "size": 1685,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/references/operating-contract.md",
+      "id": "16UOALR6kTo7F3jjQEqa-tbKlEEju7oFv",
+      "sha256": "88b691c239aa892a6b2995bae2bea9f78d9a5aa952faef6c2a2eb6a77976ecd4",
+      "md5": "39fb496306c385a2712ef4966eda1fb3",
+      "size": 6257,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/references/skill-transfer-gate.md",
+      "id": "1UBgh0T0YclaehnGW3SmCB4utZyVTHSC7",
+      "sha256": "492a960b813d8454c6beda351fba7dc4aeccb4c52999314317fb60353bb454a0",
+      "md5": "b9196ab93d46258a82ec09d4c884cfa5",
+      "size": 1768,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/references/verified-throughput-control.md",
+      "id": "1VSDWo_BcBMMREDcm3Jyna7Y7NMo4MbUl",
+      "sha256": "38a5f33379dcb70783a173dfe3c37597858428ab9be2652b1595ee610453ac2b",
+      "md5": "1974a36ccf49d576bc206b310919c56a",
+      "size": 1795,
+      "reused_verified_local": true
+    },
+    {
+      "path": "loop-engineer/references/weekly-session-meditate.md",
+      "id": "181nYQKlNH8sYdpcwZaxd0C-09W5Afb2L",
+      "sha256": "0d89c1b0372a38db5348d108ddbe63db10bc3ad28782c588af8b6a733465cd5e",
+      "md5": "ba7a49ddf92bbf65fb80791dfc919371",
+      "size": 7325,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy/agents/openai.yaml",
+      "id": "1eUOWbSYR1kymRcC5mZdEFWufNhu4z-Mp",
+      "sha256": "ec482b3ade04ca2feb11944e0a152d4f15371eed67be48a2e9eeaf18640d0ba4",
+      "md5": "24ae6ea4300caca7ed44cbd1e4c80597",
+      "size": 424,
+      "reused_verified_local": true
+    },
+    {
+      "path": "looper-skill-builder/references/evals.md",
+      "id": "1uhW1IZbKtj-Qj2ocPE-2LOo-JawmUu10",
+      "sha256": "45a37574c08ff925e9c77b4b310efe6f3ffe4adefd2a287ea767b8829bb75a16",
+      "md5": "3cf9f717929fdda01e1c563bcc717c58",
+      "size": 5458,
+      "reused_verified_local": true
+    },
+    {
+      "path": "looper-skill-builder/references/family-contract.md",
+      "id": "11-9PXaH-73wKPcS7k6_dr93mZhX9VGv3",
+      "sha256": "5511da50cea2814d6e923567629a50615ae959960b6cc6892ea6b94f48e9e55b",
+      "md5": "2057af47e65e7d4fcc275f7cb595d173",
+      "size": 4430,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy/evals/проверка.md",
+      "id": "1ztEUGaIiFxyom6YdL9j5MPqnbVF8vt2E",
+      "sha256": "3e78e168009be94092c31ba2bc981e29f77ee756b7fc1d8588aa4c1b72ca5e97",
+      "md5": "c27dea76e65f4cf88a594c667911be30",
+      "size": 42746,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy/evals/scenarios.json",
+      "id": "1msBHI7V3XVkklYYkUGCrFB_OBkNrR33F",
+      "sha256": "f13c70e1d5e9df8a2683b09d23ee5ff48eaf1e60d9f34831f4faf4bd1cd14dda",
+      "md5": "47f889ffd1a1425f51e41fdc82e936f5",
+      "size": 70846,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy/references/конструкции.md",
+      "id": "19z4Vc0LjenEHQ8ZOliu3xFZE24mu0Hnt",
+      "sha256": "4f5a6b2acbe3d4c4b149e53e2b841fcf93bc57a50b3d611d85da58755311fa40",
+      "md5": "376168b93af0249172355eb370920506",
+      "size": 12132,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy/references/основания.md",
+      "id": "1WHaDnNTWqbCS8yV7jS8Q4Qn0PZD6m43C",
+      "sha256": "6cfbf15c802115d8b567d2fc701d64a37fbc42b244780e09128bf812354e7b91",
+      "md5": "b1d0ba9b9dad3e50056fe7d3d0aa66f4",
+      "size": 18512,
+      "reused_verified_local": true
+    },
+    {
+      "path": "looper-skill-builder/agents/openai.yaml",
+      "id": "1dqj3MivBX30jSYA_VEFzjcaLdr5jk2E5",
+      "sha256": "d1eabb46dfb01eec7ec8012bb217db0cea65488883e761fca50282c3dd0becba",
+      "md5": "cf93d4ca2198062846b346dfdb5e6804",
+      "size": 442,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy 2/evals/scenarios.json",
+      "id": "1v1LF4eSrPoxZZ5fjldb0AuagnAqOvHrw",
+      "sha256": "2741f1b582984ce80b87f61378ca676fd85ba413a6a1356a42076c58294f31d6",
+      "md5": "b36b50988b8c6f9f7cf835663a541f2c",
+      "size": 12280,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy 2/evals/проверка.md",
+      "id": "1hj4CkCKEyA3U7_xGoCVLaeNq5JA6A1cI",
+      "sha256": "629f38b4c611c3f2de6b44b0b968794798feebed447ca4ac314de44e80de581f",
+      "md5": "75f339a35b8899f06f0bcea135b8b2c8",
+      "size": 9876,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy 2/agents/openai.yaml",
+      "id": "1iG8SIjU2klot52IJIDbbTsMqYoKDDe2s",
+      "sha256": "ec482b3ade04ca2feb11944e0a152d4f15371eed67be48a2e9eeaf18640d0ba4",
+      "md5": "24ae6ea4300caca7ed44cbd1e4c80597",
+      "size": 424,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy 2/references/конструкции.md",
+      "id": "1-wee-3SjY5cqnGwb_jEkwrrXNWsgVQqU",
+      "sha256": "4f5a6b2acbe3d4c4b149e53e2b841fcf93bc57a50b3d611d85da58755311fa40",
+      "md5": "376168b93af0249172355eb370920506",
+      "size": 12132,
+      "reused_verified_local": true
+    },
+    {
+      "path": "mece-prezy 2/references/основания.md",
+      "id": "1mhAxWuPRf0vQCg0pz9j8zNYI3JGOYU7P",
+      "sha256": "d75d31310603aeacc9e34ab5046e524d0fe72a5be021e32dc078d295116b0181",
+      "md5": "9c68565dcac00d468dfec090f0c6dbe7",
+      "size": 9156,
+      "reused_verified_local": true
+    },
+    {
+      "path": "meditate/agents/openai.yaml",
+      "id": "14Mj7q3n9WlYzkLjFEgLBhNOsyDUXwnT7",
+      "sha256": "bf2925c903188bf0dcad33880c8a0d561b89720f0864cf53f51104a6c5271718",
+      "md5": "cb5a1349d0a2553089f7fc51e3ae739c",
+      "size": 256,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-print-a4/assets/caddy-block.txt",
+      "id": "1c1EOyO5KBcTCdHz_CECn2S-K2f_itCnr",
+      "sha256": "cfe286e376726153220e9de99dc249e25468f8a4f3a79649e6f6167ff74eb9d9",
+      "md5": "26878d1ade219350e77cc63b5b26338d",
+      "size": 1328,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-print-a4/assets/print-blueprint.css",
+      "id": "1YCOd7irOvYV_Fgo9hsOCp0SLY-K_NvnA",
+      "sha256": "1339fcf8f0f6c8d105df21fbd4e0686407cefe2c67023cbeb82eaeed61f7eb6d",
+      "md5": "d563aac170cdfd5d67af9da756a317d8",
+      "size": 5898,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-print-a4/assets/print-generic.css",
+      "id": "1HdaGMD9Y_zn37WLayTAh0sTRQXOmZ6eP",
+      "sha256": "66ea1029bb9091d95311c98e41ecc92cf93f53d2b7285017957f2b5ad0c6f4f9",
+      "md5": "7b8a17b12b0c842c21cbe119b7dd0784",
+      "size": 4799,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-print-a4/assets/template-blueprint.html",
+      "id": "10nnVp1XkWYH7KXn3ISR7xa158o5-LKEC",
+      "sha256": "8f1c82b0f4a2ea3faf0856ca494e8f911e4eb4c9e2fc53c1c8d388504ee68330",
+      "md5": "c3ff997ee1b9add4f0b8a8ff20696828",
+      "size": 19530,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-print-a4/scripts/make_pdf.sh",
+      "id": "13wy_cZFP6cedwukmA0KwH_flA7oJmEdP",
+      "sha256": "28ae3f525a010656a4497ba1521a2b5332dc145de988444b7a9098b038b941ec",
+      "md5": "5af00b0b8f986ccd349a68c23d189a53",
+      "size": 3265,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/agents/pp-slide-critic.md",
+      "id": "1yWp--nYIWLi4voWmoknldWqyXWM4IEXH",
+      "sha256": "96c9c378c3be40e482eb9bfa8eebb7d6f2c1361f21388a6a42a2ab4f5ffe3136",
+      "md5": "3986978faf36f85e61ad15794a985e0f",
+      "size": 16427,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/agents/pp-text-critic.md",
+      "id": "1HzhZfGxcyC1UZ4R-2DiZvl2tLcFpx4Kn",
+      "sha256": "c083efc0701ea021da44d42bd63f2a5f149ef201dd62684810f681a3905acc9f",
+      "md5": "3c9b211ade75092436390afb0c701d7f",
+      "size": 20919,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/CLAUDE_INSTRUCTION.md",
+      "id": "10HRdJdbNKcrr_DKD6F4VOA_6CBcJNW7N",
+      "sha256": "0c3bff8737c859d9a65e3a0166b7808e81b1f427b561cd77ed48042beb260346",
+      "md5": "495eae7b1f140086d9b35ba141938656",
+      "size": 7695,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/kit-2026-07-12-pptx-builder-rule.md",
+      "id": "1g6FVdoq9h9_9lSrUOb6GuGAhbGKJlhME",
+      "sha256": "94a65b39ef9f20c8f4ba6b1029bc04881228c5d071a12f53dc28e49f6098c072",
+      "md5": "8c112801f00564c618ef2805646ec115",
+      "size": 5149,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/deck-content-template.md",
+      "id": "1Easg1ETmg1F3B9_JEpNOLptsFz5sTILv",
+      "sha256": "7a074826261595c8930172598b1be14d1421a6cbfdc36eb5ddcc583a98d96133",
+      "md5": "5eaeac68e6d9d67a014ed052286eff7d",
+      "size": 28674,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/kit-2026-07-21-CHANGELOG.md",
+      "id": "1KuWc8i2ekI9O5xlabHtzFYpD8hmDpkXK",
+      "sha256": "dd490da7c81016c9378a0ca6410170c84c7d96e7e1b0f68ac52e0ddd2b5d4894",
+      "md5": "9bd9e027c5955e4a17d9f9e86c0b7e79",
+      "size": 2639,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/kit-2026-07-12-README.md",
+      "id": "1T-RkiOoJH85wesq6q0V9Gn0IwUtLJRPt",
+      "sha256": "0a572123f4a305e9ed4c28a8981e69caafb2b182b4e24a60f631265414962bc5",
+      "md5": "b2ca1c13d06e22b4585b6af874813b98",
+      "size": 8048,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/kit-2026-07-21-README.md",
+      "id": "1qv5Vtzk1HPRaAIDlGuz9NcOVX1xV_nRg",
+      "sha256": "67d60eab5efffa45ed23fc04af711554d2cfb10a9b2b6835318df0ec4f9b8af8",
+      "md5": "d0082c2982171d14f8933d40b33b0424",
+      "size": 8968,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/kit-2026-07-21-quick-start-html.md",
+      "id": "1QUVn426-nehrbFpyt28Ic5q_yAhvLCAI",
+      "sha256": "1469549580d2d3daa7a44d27751ce4fd33970df47bcf93b59f12d5841f8919cb",
+      "md5": "7bcfb23ca0140a41619368f92017c3f7",
+      "size": 9622,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/kit-CHANGELOG.md",
+      "id": "1xSQaKRXBG_LnTteDV4lBgtHjFbzJwBSt",
+      "sha256": "3ecddb6cb729b259911d144734d37bfd30e00891dc8bb0140ca9f4b019544514",
+      "md5": "fd98b5eb8861bb389932332c88ad32cd",
+      "size": 2560,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/native-pptx-production-guide.md",
+      "id": "1fvsnB3mvAly0Vy9akFGCTe5J9buQLEq8",
+      "sha256": "10470bd447e51d9c193506a613d417b9635cf6b61f2dd11d17c89d966d0e158b",
+      "md5": "22316db216b439f617af43d9e4ef5c3b",
+      "size": 9372,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/pp_pptx_builder_rule.md",
+      "id": "1pa88Aq1NThAq9uN5qfu64Yn7KdiDvMR-",
+      "sha256": "0d8dd8ad0e5660432c6b6d3985adb0e75c7b256dffcff3ef95921048a54477d3",
+      "md5": "6b983824f90c6862486d209ce972c1b3",
+      "size": 5454,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/reference.md",
+      "id": "1kkl-Taf4UuZu9lfDY1WlgSP8iZXIE-7h",
+      "sha256": "88450b8b814c515e1c8975062c5cc2766ccf20e06bd3728e131702498abd5ff4",
+      "md5": "517cfe7c529c3413bac6184aa0c5a8ba",
+      "size": 16212,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/slide_types.md",
+      "id": "1TAG3Rx8nALXMW8OvlJo3rr8-lxruIGom",
+      "sha256": "96a1c699b655333a2d5b0e25fd84a3c33b97c410bfbafdb00494942034c2630c",
+      "md5": "ff6e26cdd07fa56d8d604fba2a9dc462",
+      "size": 29694,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/usage_guide.md",
+      "id": "1iHN-3rRe6zKc1SMgfRN1C4u0-V0p9piJ",
+      "sha256": "932b7b7d111ce66f41389371aa8a96c583834685d655fe882d5f84f9140c453a",
+      "md5": "26ca06fc4388e573b3550163b29b37ed",
+      "size": 16371,
+      "reused_verified_local": true
+    },
+    {
+      "path": "pp-slidument/references/visual-style-guide.md",
+      "id": "1nNw0s1FBKoIqwo6k7QgJuMfuv7ZwYjod",
+      "sha256": "e49997751a58e72284e354656336160b51948e6dc964c0ebf03ca714a62ae421",
+      "md5": "0ccb0185db9dad2a00b0e18b179bad66",
+      "size": 5035,
+      "reused_verified_local": true
+    },
+    {
+      "path": "presentation-qa/agents/openai.yaml",
+      "id": "1GJE0PxtEL43_zPylHYBogveNo9_mjAJv",
+      "sha256": "8114736d320165597d7fc241ce004076964b48c97f2eb04fee844d946fea6288",
+      "md5": "962f924cfceb32cc5a12a25b83f903e2",
+      "size": 343,
+      "reused_verified_local": true
+    },
+    {
+      "path": "rsvp/agents/openai.yaml",
+      "id": "1csJRKdF54QSkvSge3M9tptlbRoKZ6Trc",
+      "sha256": "21900842649493e0b7df9976ae7bf9a313fd77be289c03f349e6674bc361c3bc",
+      "md5": "d2335d621c90879d7ae50e654ac0402f",
+      "size": 276,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sales-pst-test-writer/agents/openai.yaml",
+      "id": "1jpwqH8kGXfiEYUcNQ8dTirxAy8xOZEF1",
+      "sha256": "21e0f23ea81d7cc9caf535a36039c8e1a05d0efad011f4f3021a59716e15c355",
+      "md5": "0cf5a93162f0d1ab9effb104a07e26d3",
+      "size": 369,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sales-pst-test-writer/references/intake-questionnaire.md",
+      "id": "1srvFaGb7aw90p7OXMBMvLKw_wH4w0WRH",
+      "sha256": "3e7f56c6e2428ab9220c14e3181c9a569918bfb1eaeeae3b91665945af4e2a8f",
+      "md5": "5030293f82b58208592e6a907f8c1e7d",
+      "size": 6947,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sales-pst-test-writer/references/output-template.md",
+      "id": "1NNKy6WXt_JJPiFASUa8HM9T0zzFeOIrC",
+      "sha256": "d50549ecfaf4c8e723824fc17c2c5f482536ac1a59d048ea86f8a52b3fa6ba95",
+      "md5": "1606821750a561a22de56a25f2ca5de9",
+      "size": 4590,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sales-pst-test-writer/references/sample-industrial-b2b-pst.md",
+      "id": "1y2s2H6o7AdMZhzRuCvUpGMMRJPFA38Dd",
+      "sha256": "0096ac566ba1b0cde59640ff8b46580eafea6f4f27844f08b73f0d55049e1c92",
+      "md5": "df0a29b76880cc66c0ffc4598f843a3e",
+      "size": 5697,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sales-pst-test-writer/references/scoring-rubric.md",
+      "id": "1fBNrMWDf4s9w0o5nGF2J7dv_2wfK4k7Q",
+      "sha256": "a6e0c4d8c46a62345d261f3b45a74074c4c3d6e5ba29d6233690c3f2b8af530f",
+      "md5": "0f8ebdceda5ea5195d0c0d23f2f62908",
+      "size": 3513,
+      "reused_verified_local": true
+    },
+    {
+      "path": "summary/agents/openai.yaml",
+      "id": "1rCFm2gQbJ5dBp9KdwUNGhpgdLohB9gpd",
+      "sha256": "53b896dafaf8abe765bc0f02b099d5866b974cc2ce808fdc69f465e96ee7b0d1",
+      "md5": "a43ad1dfde484ae337c262c0a704fce6",
+      "size": 265,
+      "reused_verified_local": true
+    },
+    {
+      "path": "sector-service-matrix-builder/references/matrix-template.md",
+      "id": "17KuNtxsS6p4IR6Zj2qJ1E6DelTRWSnfM",
+      "sha256": "9986f4080676f53e116da24ddf50e30366ae2420932e5a7244beb5302e14bfde",
+      "md5": "dfe2d817a80738ee9da91e088ec3e3e5",
+      "size": 6203,
+      "reused_verified_local": true
+    },
+    {
+      "path": "tunnel/agents/openai.yaml",
+      "id": "1Bg20zhjPc7pEFxjC_55UsZa_y4htdcja",
+      "sha256": "76eb1b7e2368b0691cf5a29760e9dc9397ad889f7203a94c55b76130f0e4bded",
+      "md5": "f96c2bdcf51378805637078279182c85",
+      "size": 311,
+      "reused_verified_local": true
+    },
+    {
+      "path": "text-deai-editor/references/de-ii-standart.md",
+      "id": "1BUrKkrzvkaoVVP11Ce0fYEUS3GpfEpZJ",
+      "sha256": "b6fbffba144edd45da8fb63b984d207ba0310078e4e7789ef3a98701f62e5c71",
+      "md5": "af3657772b127cc3999aa58273d19a87",
+      "size": 8747,
+      "reused_verified_local": true
+    },
+    {
+      "path": "text-deai-editor/references/details.md",
+      "id": "1sQqKYa-T_LLzdCLt95bxOzKxPECPdkU-",
+      "sha256": "7eeadcf56277ab52979c1263a5c27d4053e7a3d1512866fbbb49144d540a09e0",
+      "md5": "895a577ea0d68303eb96a9f36adc72c8",
+      "size": 8909,
+      "reused_verified_local": true
+    },
+    {
+      "path": "text-deai-editor/references/format-vyvoda.md",
+      "id": "1utmvvyi3EVZHeGfiX4SbJ_jbfqgJg2-g",
+      "sha256": "977efb1aff0d9d50588433c386554eb4084a52c423dc177bf128e1f048fa4da6",
+      "md5": "d16aff960aceac4810e9bfadcd01b11b",
+      "size": 7113,
+      "reused_verified_local": true
+    },
+    {
+      "path": "text-deai-editor/references/eval-cases.md",
+      "id": "1p6qMAzu37nit-Xm3kzzh-XTr69xoLhqf",
+      "sha256": "adf9341eb1df300e92edc02a7e17a4a70a4306f9f3373183c7c25a085cef6c86",
+      "md5": "5969b289a3d24b5db657a83d40470db5",
+      "size": 164985,
+      "reused_verified_local": true
+    },
+    {
+      "path": "whitepaper-proposal-generator/agents/openai.yaml",
+      "id": "1Ezs8vg1ESaa2r2eR9XcaI4Li2-pV21S7",
+      "sha256": "c9d3fb2f3c8af11494a57d5462506e551903094c911119603cc1153fc7e5c138",
+      "md5": "77b53345ca6a678eef7461328faaa6f3",
+      "size": 296,
+      "reused_verified_local": true
+    },
+    {
+      "path": "whitepaper-proposal-generator/references/archive-proof-stories.md",
+      "id": "1l833SyocPNSbnQqmC6jIOSqIDoV0SdQk",
+      "sha256": "9c42c38327d77b61e7dfb28c6d9c8220540dec40774486a2df4897621950002d",
+      "md5": "567bcd02aee4d0bf0f2b6b21f8af81b2",
+      "size": 4612,
+      "reused_verified_local": true
+    },
+    {
+      "path": "text-deai-editor/references/ilya-style-canon.md",
+      "id": "1e0Z7kARpWgLopf1IP-Zz7ZikFMpq9Hys",
+      "sha256": "fb8823c8c5f995c5e8970c77d3c5614fc25e5fc9ce3dff15b58ab6a8a9fba2d0",
+      "md5": "ba5ed227c764e2ddc39b7311e9b8945d",
+      "size": 286038,
+      "reused_verified_local": true
+    },
+    {
+      "path": "whitepaper-proposal-generator/references/subject-routing.md",
+      "id": "1yLLMgIDJfJDQRuJk7s7Fgo5s7XnpTTvc",
+      "sha256": "7427f522f21a7e811000fd394625f0b9f41b57d6fcdab046d6170d997248779c",
+      "md5": "76f0b234d3bacd0775188d2cc80c62a0",
+      "size": 7376,
+      "reused_verified_local": true
+    },
+    {
+      "path": "whitepaper-proposal-generator/references/whitepaper-gamma-narrative.md",
+      "id": "1D-ONDURvVYXCKIWPCMR1eR6xf5GD_miW",
+      "sha256": "67f8f2ee120c71687dfdeeea258b7d2c7bad528b2e3cd7e7773bcaaecc242ac0",
+      "md5": "52392bd96c0a4373b117671e83dd1a35",
+      "size": 6065,
+      "reused_verified_local": true
+    },
+    {
+      "path": "medical-clinic-economics-semantic-layer/references/evidence.md",
+      "id": "1JUsoQ9OcxXKavBi5p-v57KDgSbSwMh1i",
+      "sha256": "af5c9e4ada95d842bcc8160b506e5b34dc21eabafdf74b954fff5df543774bf2",
+      "md5": "af40b78a5309990e78e5bd58afc00811",
+      "size": 4406,
+      "reused_verified_local": true
+    },
+    {
+      "path": "medical-clinic-economics-semantic-layer/references/semantic-layer.md",
+      "id": "1mEmOOh6k9K2-c14rgt-fft65g5Oi_4RQ",
+      "sha256": "f6cb8e8dad5fc53bd201871ad14ae7b55df031a1ceec44d117b4c08fa25b76b1",
+      "md5": "373860c0140af21711b9a261fb5f7da0",
+      "size": 18266,
+      "reused_verified_local": true
+    },
+    {
+      "path": "medical-clinic-economics-semantic-layer/references/source-inventory.md",
+      "id": "18qIRmHyJI4IzGKiGrYYUGtRql-90SwHD",
+      "sha256": "dbe9a7c331e0955596c6d9de61bd357d395fb4aa9ba85af73521bc5ee79cde60",
+      "md5": "124fb62e464505da2803c1e481826be7",
+      "size": 3987,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/agents/openai.yaml",
+      "id": "1TSgrTS50PQwg35nVl7Q2640ZMNudSg5P",
+      "sha256": "44b9efac6be1bae32d869aa2942fecbe4dcae82682ee03e4120f2f9b7d4658ec",
+      "md5": "1fd69b36155b98464b76fbf0c907ff0f",
+      "size": 370,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/agents/openai.yaml",
+      "id": "1wwXh1PxcQNN7DCmyG7650FODfAbvTrLW",
+      "sha256": "9ca574af14580dc7a2a3dc37a1796d17f93cb8850be66501f0799ef8603e9dc0",
+      "md5": "bb2f02cf49333ab0485197ca55b0e9ba",
+      "size": 275,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/references/cli.md",
+      "id": "1wIJ5VslwGfDKB0SvZBOSu6AYtC6G54YY",
+      "sha256": "ecfc2e09261a0feb3482517a5fa0ff410cb7d1958e3cbd2ac6b61586f5b81405",
+      "md5": "2424b62ddde31850c1798f29c8060421",
+      "size": 9655,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/references/codex-network.md",
+      "id": "1sZRWQ7mV_4go71IZNivFg6aQCyQZ7HXV",
+      "sha256": "c88298ca4481f6116a16fa7987434fc977f8b311c1bbc0c3d862ffd0c5981148",
+      "md5": "a319462bfb18b20aa5d02bcd589dcc5e",
+      "size": 1779,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/references/image-api.md",
+      "id": "1OXFrfErB9L-32nV4MOLhazlVypoYVlUV",
+      "sha256": "dc975d7af8a4888967251a0276014b4a71ea30455294944b762256373ce3e569",
+      "md5": "3eb242aea495fed8576e48ddc857ef4b",
+      "size": 6072,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/references/prompting.md",
+      "id": "12UPhznZMF5MV9TJEjSphkwYKRnlciLRo",
+      "sha256": "b210b051c775860267080941eba968212bf0ac7fce581d75c5dcc217d8293f8b",
+      "md5": "4b9203e4c6ccccf45d43ed104c31639a",
+      "size": 8282,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/references/sample-prompts.md",
+      "id": "1mqODsv5J24BnYnJGu_4ppwa8NLlUECxR",
+      "sha256": "70474177d151855b175c6133de2aae1d90b7f146b0dab50ec830972c47d72183",
+      "md5": "a06f0576d5eee6f72ae04d315f6e57d5",
+      "size": 17617,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/scripts/remove_chroma_key.py",
+      "id": "11CB4QYkeaw_T9EnebDc1RrtYWtd3qY0k",
+      "sha256": "a5893c4bd04b21abced33731ea89d2ac428e81d92a0368eb18ffbe4fda5253e2",
+      "md5": "e50a047f652833238d2887f7ca69eb01",
+      "size": 13905,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/scripts/image_gen.py",
+      "id": "19OblmbB8eUDFVakS7VitvdV7xkvA9YB-",
+      "sha256": "b4345cf835e5b593b97df6bb2b70bda493b8a97eee4cabbc99b2fa57dba9b448",
+      "md5": "b478d9064214a2420583c15f577db5b4",
+      "size": 34667,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/assets/imagegen.png",
+      "id": "1DoBGLvikJPYU3O-lZ3_QRxU3GwxXhvh6",
+      "sha256": "95952f644064eb9e890f98d8db07216347186526e4c41ad66d3420629eb86e20",
+      "md5": "0f62861f3503e1de5dd98f0b2cc757c0",
+      "size": 1711,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/imagegen/assets/imagegen-small.svg",
+      "id": "15SG-fKm5BZtaq_eIgYk01gutRUqz6uCs",
+      "sha256": "cff5f34f57ff60b3ee92eaedd17b15e96dd4b9e776df3e78936c9e00d42be294",
+      "md5": "27cabeaff264937195f3d6a0246811a0",
+      "size": 2889,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/assets/openai.png",
+      "id": "1E8Gb_GDCIjG5lMPdITwfQNvktaV8Plm9",
+      "sha256": "156cc84d7332bfe95b310350bd470b690d22aa33d65340cc6c2e06022946194c",
+      "md5": "0028554ca5c3a6a2ecb8da193f2fd7f5",
+      "size": 1429,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/assets/openai-small.svg",
+      "id": "10tVv8Gzuu8Njo9dCVmq3cJmzj5ULLvz4",
+      "sha256": "45be1f0757eb18889eefb1e7db79668ef46a275dc4e0e78e8df5ebd7f6cdeadc",
+      "md5": "3083ef632a69ce786e4cb0cbd7a5d112",
+      "size": 1091,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/references/codex-self-knowledge.md",
+      "id": "1tgSjMybAiuhT3UQv9fEKYpBTVqtxZmy0",
+      "sha256": "8c8fb00e6e5cb1977924f5164684a6095427fa828bbc765225f17d9aeb79a912",
+      "md5": "852b6ed1e96eeaadb6f10701935500ef",
+      "size": 7417,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/references/mcp-diagnostics.md",
+      "id": "1zbGUcAyc8Zaj_xO3rRTpGw7GRG8tfHq-",
+      "sha256": "49bbd2f73df7bbd7f86c80425dea4da2d301c22046080399a36bfc0ca49509e9",
+      "md5": "c6c80727ea82fec43fce7175fe8770a6",
+      "size": 2318,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/.codex-system-skills.marker",
+      "id": "1j1o9Ooe5n4l8Wfu2XiaxV2x2Hn4vUCLj",
+      "sha256": "be0cccca692ca0eb88c7284ba9b65b70f89e1a9041bb92aefc7c8fddd75fa63b",
+      "md5": "9bcb03bbba9c6c228ab61aeee1fdb319",
+      "size": 17,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/openai-docs/references/model-selection.md",
+      "id": "1fReDYv54I7Bqh3x_DIoPx2MOapIZx4Ea",
+      "sha256": "ba2d164abbca30435a460a0bc3a7d82398dce2bdf092705c98ba55b3f3af38a8",
+      "md5": "9f3b1dead18e3015ab2c397f7580217c",
+      "size": 1344,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/references/official-docs.md",
+      "id": "1JRkZ1DtNKoSHU3lr_zfG8NuwlRYedqJT",
+      "sha256": "7962f2dce55089b93bde4115bb89fd42f20993c1597a2b13edd4956f463875b9",
+      "md5": "df587875c10ae084530c11dadf9256fb",
+      "size": 3337,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/references/latest-model.md",
+      "id": "1ZFXs6ZMUuEXPL7J_0I6BtrTDAwXyFuzj",
+      "sha256": "7e5b9437c6ad98a73da46ba3f7f5c86f88aea2a15242318f32c487eb28a90852",
+      "md5": "dd13cc63d7617b43b83f43aa373af6fb",
+      "size": 1339,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/openai-docs/references/model-migration.md",
+      "id": "1ub5k6Guvv6oAWaupGo1603XOFSK7nhEY",
+      "sha256": "138c05dd06047b069a7aab09e657b6a6a0d25b6959cbe2473baae95f47e72883",
+      "md5": "e3f70417776ab5062760a5babd3f02e9",
+      "size": 5631,
+      "reused_verified_local": false
+    },
+    {
+      "path": "README.md",
+      "id": "1KdujQ5fZM-1y1X6ijFtYGQPpJgwYZ0FD",
+      "sha256": "dd88bf31e52d232ffb2d9fcf8fbb48ecf1d8c21876b7e88b116633702b2f1910",
+      "md5": "372ed327632f4cb928e2ce1a043edb4b",
+      "size": 6271,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/skill-creator/agents/openai.yaml",
+      "id": "1F95lGa0QxU9PVFS1WMqZ9UzsmT-RkVuH",
+      "sha256": "d07d21b93fcf3d4dc8d9a3399c05fc226a49a333a96d3e1c68b451b8dd9eade6",
+      "md5": "7de7114d5ad9681ada2351f16eeeb192",
+      "size": 183,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/review-agent/agents/openai.yaml",
+      "id": "1iA9MPU2gN-okJOROfigEkiCET9kalmRE",
+      "sha256": "4d867a46d15e36ac880176484aae160f59855340c6059b2ea6ab9fbc9af084de",
+      "md5": "778fd1aed495cbf98038a719e5ef16d5",
+      "size": 252,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/references/prompting-guide.md",
+      "id": "11dykB648wvDWAzs9_WbFlo5Ts_QqZaKw",
+      "sha256": "5c791edd5bfc9363cb4251ac3ccd3b1dbac3bb2a6654f78606a9d2357c97c172",
+      "md5": "e9d29e835f8249eea06ae03ddf8cd853",
+      "size": 10128,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/openai-docs/scripts/resolve-latest-model-info",
+      "id": "12nTgpF8Lx3pNi9bwGIg938LK3gqhQR9s",
+      "sha256": "7354dbb030ca0736dd633a7ca1b930cf640abd40370725dea3a458cb51d49523",
+      "md5": "46985628db89d6764e2e6a511960b8b5",
+      "size": 1038,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".sync-manifest.json",
+      "id": "1JQXE_xTSWDznFidPpF0JEnV0JU6p1F4a",
+      "sha256": "8921bf3486b16f0af9e21f05187b9654cdd4ffd145369e925131f2f5fd93e69d",
+      "md5": "a0a3a4a86dcd131353eee936d1ac82dc",
+      "size": 255947,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/skill-creator/scripts/generate_openai_yaml.py",
+      "id": "1viEZSBbTNKF6Evt1iZXDsk9gBFp5gVa6",
+      "sha256": "816df12072d74faf924d802a6599a139997e1441e90bfe4869ec304f2e5e2851",
+      "md5": "22f26ea894cfe41ab4eaf2d839c645bc",
+      "size": 6669,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/scripts/init_skill.py",
+      "id": "1RjW0advdMQetpISXUg4uGPfpc9_JlQ9E",
+      "sha256": "bf0656a5f9d8d8cdecf0245eaf27e1df8e0e9b6d40ccdda814eb8e3d5f6992c8",
+      "md5": "bac5530929625fd81ec876b3f303ebe3",
+      "size": 10314,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/scripts/quick_validate.py",
+      "id": "1bn8XL8CtT0basYqnlx_5Jls-WKxNQynj",
+      "sha256": "ee6dba90f44d37171c5a6edb8095979c54919ff6822c1a907afca2e78c48738c",
+      "md5": "a9865de568e16488ad11f8e73b5024c4",
+      "size": 4249,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/agents/openai.yaml",
+      "id": "1tQwIIgfPPgRhi7_c31ReE7EfLf45gZVs",
+      "sha256": "fecaf35d692bd3d33d1a065648258d12e393afa9055d78adf6e57b42f4142f6d",
+      "md5": "0bebf42a0c6c564a972b4f0a8261a62a",
+      "size": 339,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/references/openai_yaml.md",
+      "id": "1aWebqID0eoR2zyhUwaX71L25_HGo88qk",
+      "sha256": "ffac39318e408108141d40f820968e59f70434a891694f9bf1d25be8237b150c",
+      "md5": "a10587ae397b0ee56a190f2f61f8bc36",
+      "size": 2356,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/assets/skill-creator-small.svg",
+      "id": "1uyzNQzjWlp-97kUc1xlpRVvXsTzuuyrg",
+      "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb",
+      "md5": "1ea53550594bce9bbb123887c6572bcb",
+      "size": 1319,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-creator/assets/skill-creator.png",
+      "id": "1nQ6QgMTjF5RcruqaeyVjxOUt7h4t-pih",
+      "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+      "md5": "f7f87f329f14d53b76f03a669d03b607",
+      "size": 1563,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/assets/plugin-creator-small.svg",
+      "id": "1nSfhq7njSQl_SkC-zDFJBOndyCXwKF4Y",
+      "sha256": "6591bf8ea9bb9435890dbdea299e0d2bd05f3aa893a335d26e4c535e93c8e7fb",
+      "md5": "1ea53550594bce9bbb123887c6572bcb",
+      "size": 1319,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/assets/plugin-creator.png",
+      "id": "1YGsLthm7nDyCtJudWbghaCLUuPgpgMzl",
+      "sha256": "a4024b0306ddb05847e1012879d37aaf1e658205199da596f5145ed7a88d9162",
+      "md5": "f7f87f329f14d53b76f03a669d03b607",
+      "size": 1563,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/scripts/create_basic_plugin.py",
+      "id": "18cBVePwXT15iSmr0Sr_7uJFSS9f5g_H6",
+      "sha256": "272cb14e02ad7c76ac40777443c49cfecfa333ee28ab7f6214210b72c8fd02ae",
+      "md5": "15aefaa830ef4cf74bcd4768f7f194ca",
+      "size": 11731,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/scripts/identifier_validation.py",
+      "id": "1oUzLYZMtcOx14dbAMNAXBgxQoZbfGinz",
+      "sha256": "a6d51ce4a9a7e8f85626ff5808a467a67574e7f8cdf1167ffb467c5f67e57223",
+      "md5": "55f9056438cab0fa7685366064780b30",
+      "size": 784,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/scripts/read_marketplace_name.py",
+      "id": "1aofnx3PLPVfM-bXSh9RTYwrKNFALeCi3",
+      "sha256": "ba24e6d91eed6f778bde022a967be335c6253983b5ecd1c5e30c8483385887fd",
+      "md5": "01b25f28ebe281928da76304d24e11fa",
+      "size": 1644,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/scripts/update_plugin_cachebuster.py",
+      "id": "1f9hDXpQK982qQyJBzlyhhHGHxSJ1f8-Z",
+      "sha256": "6a630dfbdc2bca6952580da9c2c7ece08030926819ccd81d9deb518c24c1b0ed",
+      "md5": "21dcf9527bda0cd00f1eace1161fbcd6",
+      "size": 3045,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/scripts/validate_plugin.py",
+      "id": "1f-_E8deLlUxTmAFNcf6CZgMxrMYS_78z",
+      "sha256": "f4eeadb733b28b0c3e714de263a76d6542866a672f3e99bdffcf4dbcdf85e944",
+      "md5": "57d8f21fd3416e97c624f46aa090868f",
+      "size": 21739,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/references/installing-and-updating.md",
+      "id": "14SvPQ0AQQPGqNONIf_A_ZDwMO99XTlQb",
+      "sha256": "91c4781d48568fcc708b45566b08fb610ad1c88672720ae512f9525a1cf9cb20",
+      "md5": "76db0b113ba9bae9e6d6bf1b1d0d77f3",
+      "size": 6000,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/plugin-creator/references/plugin-json-spec.md",
+      "id": "1Zm8VteGyYljKuMkLGicmtNExbNuBlLAE",
+      "sha256": "eeb640130f69636affaa299d4170d5a7ae6a0ff978296ddf75c409ce6dd87b91",
+      "md5": "67fbf3626b9d76dd5cfcf38905c24a44",
+      "size": 9179,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/agents/openai.yaml",
+      "id": "1K0R16tLvRvEKjBMEy2ZP-PFJt3fib-sT",
+      "sha256": "5ce223d8b1070b82c42298538f1b8d376f788eb9e7a42a987e8c094070d73f0e",
+      "md5": "efe9926ba4e2e445619995ca67ac0357",
+      "size": 221,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/assets/skill-installer-small.svg",
+      "id": "1_497Oe5GrV0SuYn309B8KTKVt4X7ZKnt",
+      "sha256": "3928703ff00dc1a681e7a22401843b7edcbd4b2051651ce4c43b75f7e140504e",
+      "md5": "839296409311cb29b713b8fe000fb89f",
+      "size": 923,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/assets/skill-installer.png",
+      "id": "1ZNWDTAXHab4BK2vo40dno26XWPIaIuGC",
+      "sha256": "d0a230b1a79b71b858b7c215a0fbb0768d6459c14ea4ef80c61592629bf0e605",
+      "md5": "904eab6dbc4445d2f74935b5657e406c",
+      "size": 1086,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/scripts/github_utils.py",
+      "id": "1NGW9dweHsfttYya2IUORv_xaQ_B_32VS",
+      "sha256": "61c1bbe2ae217433b4b6f9f09f21aca4df52c12598068343ade719f706e4859b",
+      "md5": "19f351387f5305d035d085c7ae2f107b",
+      "size": 659,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/scripts/install-skill-from-github.py",
+      "id": "1R5ZQObtjjDEn2PJ8nKGlR4iTFAo2z-g7",
+      "sha256": "38f311b75664bb063808f982c600271ebc4b560830f491705190f88a94e3e781",
+      "md5": "56c4ebb17bb3dfaaf6ac6857e9e76f28",
+      "size": 11917,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/skill-installer/scripts/list-skills.py",
+      "id": "1c2ObpTk2C5Za5s95lXCd45zD4uvSkSCM",
+      "sha256": "9d6dfb2abf3afeee7f027a89fb1626b918a973da18f4eb6c25681286301beb41",
+      "md5": "10ce9c43ef1bfb10d6542e1b6644a0df",
+      "size": 2948,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/01_cover.png",
+      "id": "1mZx8I0EkGBF0E_9RpNypASs2--uvaEuI",
+      "sha256": "6f4991b33b0538748851e4e1398940d0992e8c6d8e20685e742acd9d701424d1",
+      "md5": "8e3f4763657e14de99fd3862a7c0db28",
+      "size": 82456,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/02_formula.png",
+      "id": "1eD8H62GjD2sD_Wxc8deQVL8MAk7UJ_K9",
+      "sha256": "77f6d388e2119fba13e75055cc8345eff7a17464bc79d51848f9b2b10d2d7ce3",
+      "md5": "cd4f7209f56e107b218e9a073efa809c",
+      "size": 44172,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/03_flow.png",
+      "id": "1B2nXHEPFZ8vSDUvSQ23aFUV3ZKb9ysTw",
+      "sha256": "9e592597562d7ee1d4460e1a680f0682f06af3bc4ff62f086f7c4358c7f6c724",
+      "md5": "bae9e2208dd4b8a847fddc3579cdc73c",
+      "size": 49709,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/04_listing_objects.png",
+      "id": "1nDFPoTTxyxwqb0v0s7nWgUIpgHy-MRIV",
+      "sha256": "05666e787f98a1b5ada6412e8131715f7d3345b174243afa15303fdd6cd407e3",
+      "md5": "a28a977c4b251ea3459e4197abfe918e",
+      "size": 65142,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/05_listing_ops.png",
+      "id": "1_7SZB_o_wtM5N1SsnHRQGoQqqFRFJ6uO",
+      "sha256": "c49382510bd41e5de3a42b7240eb0ca77fb991dad69746f66a214d3d4e83fcc6",
+      "md5": "49243b301efd94d1c047dc9748c95dea",
+      "size": 58221,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/06_listing_quality.png",
+      "id": "1MrfW95JzU0vgGTDRcwjGKLuC6EpA6b6K",
+      "sha256": "7c46c452c1323340ef0f7efcc1fb8de0aa0ed4eb24f368818c20d1da8f5b80b2",
+      "md5": "3e5a3f57fb0d0a305fc48d3c6b15a06d",
+      "size": 53674,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/07_quote_system.png",
+      "id": "1QlFOiFQJEftM6UZY3D2ZEq16Ft3diJ-O",
+      "sha256": "a73600237573de671af41790ecdb509d02d655cef294d370d22d73175d0ef5a2",
+      "md5": "882e76b89a40256e1ec54664eb4371fa",
+      "size": 48671,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/08_diagram.png",
+      "id": "1cRMI6NLFsAS5kPuhKnLQlrc0nwcJK7-G",
+      "sha256": "efc959c55e125315cb689a588511c26c64fc5246c6844be49fb588f5916b63a5",
+      "md5": "cdd7a7e75f1af0414e2a71ac57319d49",
+      "size": 43345,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/examples/carousel/09_finale.png",
+      "id": "1Au33FokfJ3jtvsmpuvjfzPoNc5YFDeXd",
+      "sha256": "6ec019588d048c63859de165eed1500091d93f7870411f8433dc7d2370596ed3",
+      "md5": "ce17c7e0acd03bc550952718ac8bca54",
+      "size": 48260,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/.github/workflows/release.yml",
+      "id": "1lxZ0FH2fRX6M78M2ELIHEBz7nyDNfPlb",
+      "sha256": "3b8267e62c8c93d44f70b98ff73d4fad34e514b0361cf247067e299e429cdf10",
+      "md5": "16fe85519d95e7a405615ecb2cf7f1cb",
+      "size": 5401,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/glossary_poster/output/poster.png",
+      "id": "1FKlPrJKZgQRAWI_Gq_q6YS2Hla_wNFrP",
+      "sha256": "53ffab78d4cba8f1b4954f95f829db8bab7a2f096ad23f8fe20d57b1a4a8cde5",
+      "md5": "fd63ecf335772882daa23997f44ffa8f",
+      "size": 250453,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/glossary_poster/output/poster_2x.png",
+      "id": "109bjtH5k-aubcK18fDRqryiggn67Up-k",
+      "sha256": "8e9d8c4e5349567be6bd9395d66cf2fff82983a6a959b686ef02dee9f4c2539d",
+      "md5": "70fe861c32ecdc8b88105a13c5ddf3d1",
+      "size": 606638,
+      "reused_verified_local": true
+    },
+    {
+      "path": "ii-channel-cover/glossary_poster/output/tunnelirovanie_2x.png",
+      "id": "1IAJ4uuwGPpeRW-IT6ILfQMNL33XaZOCi",
+      "sha256": "6a75571e8b29b3a7c02924c98da02eb040ebbe5a88cf6750864e0b1d7f4a58bb",
+      "md5": "8ac3eb0b6086e435d31db554e71bbada",
+      "size": 580182,
+      "reused_verified_local": true
+    },
+    {
+      "path": "linkly-ai/.github/ISSUE_TEMPLATE/config.yml",
+      "id": "1GWSkt-Hk5xLg219FNd17OQ5Ee4ifo548",
+      "sha256": "f063ad7963cf4a1e4a661dce8d11ef29f9e0dd0466ae26a20f14b26c8fbb1702",
+      "md5": "ebdde453a730a97d3732775b9cb00623",
+      "size": 312,
+      "reused_verified_local": true
+    },
+    {
+      "path": ".system/openai-docs/references/upgrading-to-gpt-6-astra.md",
+      "id": "1DRsp8LKXld-qOmJYZX_Q25i6tXVr0bII",
+      "sha256": "cacacdfe0b516f7420af51df10dfa0829bf67c4a670544d58992f6ce4ac22583",
+      "md5": "3a1d704a07a86e73046d2f050899f631",
+      "size": 19676,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/openai-docs/references/upgrade-guide.md",
+      "id": "1Cju0-3iSWqkVb86jcRYsQRuvGtRtIjwh",
+      "sha256": "63352ece4bd1ee82b225bb4cb4fa2ea4f0dbf57a308845fa30f2c8d7f1d291d1",
+      "md5": "a92e9b42cb85cdcbc500f2429f9a418d",
+      "size": 1503,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/openai-docs/scripts/fetch-codex-manual.mjs",
+      "id": "1RD4RZrQS7Ri1WMM7i8dIjA1WSwMsr0lU",
+      "sha256": "d814bf23c14e02adf3559a58ff53dd0fcb1b76726db8f426eade664ec978d893",
+      "md5": "ca2daa26aba940432401cd55bbd2dc28",
+      "size": 15951,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/openai-docs/scripts/resolve-latest-model-info.cjs",
+      "id": "1zKBge1fsTb-LvCKUjIG0j00hDtWNr-GN",
+      "sha256": "5f45690750fc937faf2273992a70758545d5b23af358bd966783c0b5382a7bf6",
+      "md5": "d630b4b690d6ce08036a1a12b0271d45",
+      "size": 3837,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/skill-creator/scripts/__pycache__/quick_validate.cpython-312.pyc",
+      "id": "1ISeR6Y4YIMGJZwVh340SSHnY12KYBAHl",
+      "sha256": "5d48b879846061b84e2d7eee355c53d326ee2c2b65365e88e76310f4bd6fdf44",
+      "md5": "7c4c25084b107da5ce1bc57d30a6ed91",
+      "size": 5036,
+      "reused_verified_local": false
+    },
+    {
+      "path": ".system/skill-creator/scripts/__pycache__/generate_openai_yaml.cpython-312.pyc",
+      "id": "1CSKtVomSMzAdul7mPUOBt0D7-oYY8FJi",
+      "sha256": "4e831e63923502720f46e4753c058398f46adee4579672c4654c6fdb083ec78f",
+      "md5": "06a47c7d1fdc765dccb8b4ee5edeb2a4",
+      "size": 8749,
+      "reused_verified_local": false
+    }
+  ],
+  "skill_versions": [
+    {
+      "skill": "abm-pursuit-loop",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "admin",
+      "source": "Drive",
+      "git_before": "0.1.8",
+      "source_current": "0.1.8",
+      "lms_plan": "update",
+      "changed_files": [
+        "admin/SKILL.md"
+      ]
+    },
+    {
+      "skill": "admin-scale",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "archive-granola-transcripts",
+      "source": "наш дополнительный",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "autoresearch",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "balakhnin-voice",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "basecamp",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "basecamp/SKILL.md"
+      ]
+    },
+    {
+      "skill": "book-editor",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "book-editor/SKILL.md"
+      ]
+    },
+    {
+      "skill": "bpm-exchange-reconciliation",
+      "source": "Drive",
+      "git_before": "0.2.14",
+      "source_current": "0.2.17",
+      "lms_plan": "update",
+      "changed_files": [
+        "bpm-exchange-reconciliation/SKILL.md"
+      ]
+    },
+    {
+      "skill": "BPM1",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "update",
+      "changed_files": [
+        "BPM1/SKILL.md"
+      ]
+    },
+    {
+      "skill": "bpm10-crm",
+      "source": "Drive",
+      "git_before": "0.1.5",
+      "source_current": "0.1.6",
+      "lms_plan": "update",
+      "changed_files": [
+        "bpm10-crm/SKILL.md"
+      ]
+    },
+    {
+      "skill": "bpm4-b2b-dashboard-industrial-distribution",
+      "source": "Drive",
+      "git_before": "0.3.53",
+      "source_current": "0.3.53",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpm4-b2c-dashboard",
+      "source": "наш дополнительный",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpm4-datalens-dashboard",
+      "source": "Drive",
+      "git_before": "0.1.2",
+      "source_current": "0.1.2",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpm4-healthcare-clinic-economics",
+      "source": "Drive",
+      "git_before": "0.1.7",
+      "source_current": "0.1.8",
+      "lms_plan": "update",
+      "changed_files": [
+        "bpm4-healthcare-clinic-economics/SKILL.md"
+      ]
+    },
+    {
+      "skill": "bpm4-it-saas-enterprise-vendor",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpm6-website-positioning-audit",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": [
+        "bpm6-website-positioning-audit/SKILL.md",
+        "bpm6-website-positioning-audit/references/technical-audit.md",
+        "bpm6-website-positioning-audit/scripts/audit_site.py",
+        "bpm6-website-positioning-audit/scripts/browser_probe.cjs",
+        "bpm6-website-positioning-audit/scripts/test_audit.py",
+        "bpm6-website-positioning-audit/evals/technical-audit-cases.md"
+      ]
+    },
+    {
+      "skill": "bpm8-process-evidence-map",
+      "source": "Drive",
+      "git_before": "отсутствовал",
+      "source_current": "0.1.0",
+      "lms_plan": "new",
+      "changed_files": [
+        "bpm8-process-evidence-map/SKILL.md",
+        "bpm8-process-evidence-map/references/evals.md"
+      ]
+    },
+    {
+      "skill": "bpv-01-npd-lifecycle-os",
+      "source": "Drive",
+      "git_before": "0.1.14",
+      "source_current": "0.1.14",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-03-1-site-audit-growth",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-03-6-regional-partner-growth",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-03-7-expert-deck-builder",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-04-2-tender-commercial-loop",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-04-4-commercial-proposal-tkp",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-04-5-sales-agent-kb-loop",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-04-mpp-commercial-proposal",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "bpv-14-digital-profit-model",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "case-narrative",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "clickup-mcp-router",
+      "source": "Drive",
+      "git_before": "0.1.4",
+      "source_current": "0.1.5",
+      "lms_plan": "update",
+      "changed_files": [
+        "clickup-mcp-router/SKILL.md"
+      ]
+    },
+    {
+      "skill": "client-info",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "client-intel-agent",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "client-project-onboarding",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "cognitive-router",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "cognitive-router/SKILL.md"
+      ]
+    },
+    {
+      "skill": "commercial-proposal-generator",
+      "source": "Drive",
+      "git_before": "0.1.13",
+      "source_current": "0.1.13",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "competitor-proposal-qa",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "competitor-research",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "concept",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "concept-deep-dive",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "consulting-slides-creator",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "cord-pdca",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "cordos",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "cordos/SKILL.md"
+      ]
+    },
+    {
+      "skill": "crm-implementation-qa",
+      "source": "Drive",
+      "git_before": "0.1.3",
+      "source_current": "0.1.3",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "daily-notes-processor",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "deepresearch",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "update",
+      "changed_files": [
+        "deepresearch/SKILL.md"
+      ]
+    },
+    {
+      "skill": "demand-supply-match-intelligence",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "expert-article-writer",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "expert-article-writer/SKILL.md"
+      ]
+    },
+    {
+      "skill": "fix-rules",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "graph-analysis",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "graphify",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "graphify/SKILL.md"
+      ]
+    },
+    {
+      "skill": "heptabase-cli",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "heptabase-cli/SKILL.md"
+      ]
+    },
+    {
+      "skill": "hypothesis-map-builder",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "ii-channel-cover",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "ii-editorial-slide",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "ingest",
+      "source": "Drive",
+      "git_before": "0.3.09",
+      "source_current": "0.3.09",
+      "lms_plan": "update",
+      "changed_files": [
+        "ingest/SKILL.md"
+      ]
+    },
+    {
+      "skill": "interview-brief-by-analogs",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "km",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "lawyer-pp",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "leverage-builder",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "linkly-ai",
+      "source": "Drive",
+      "git_before": "0.8.2",
+      "source_current": "0.8.2",
+      "lms_plan": "update",
+      "changed_files": [
+        "linkly-ai/SKILL.md"
+      ]
+    },
+    {
+      "skill": "loop-engineer",
+      "source": "Drive",
+      "git_before": "0.5.1",
+      "source_current": "0.5.1",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "looper-skill-builder",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "mece-prezy",
+      "source": "Drive",
+      "git_before": "0.1.1",
+      "source_current": "0.1.6",
+      "lms_plan": "update",
+      "changed_files": [
+        "mece-prezy/SKILL.md",
+        "mece-prezy/evals/проверка.md",
+        "mece-prezy/evals/scenarios.json",
+        "mece-prezy/references/основания.md"
+      ]
+    },
+    {
+      "skill": "medical-clinic-economics-semantic-layer",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "meditate",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "meditate/SKILL.md"
+      ]
+    },
+    {
+      "skill": "meeting-report",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "multi-perspective-review",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "notion-vault-sync",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "paper-planes-artifact-methodology",
+      "source": "наш дополнительный",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "paper-planes-presentation-kit",
+      "source": "наш дополнительный",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "partners-ingest",
+      "source": "Drive",
+      "git_before": "0.1.0",
+      "source_current": "0.1.0",
+      "lms_plan": "update",
+      "changed_files": [
+        "partners-ingest/SKILL.md"
+      ]
+    },
+    {
+      "skill": "pp-case-writer",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "pp-case-writer/SKILL.md"
+      ]
+    },
+    {
+      "skill": "pp-interview-slides",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "pp-longread-announce",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "pp-longread-leverage",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "pp-longread-leverage/SKILL.md"
+      ]
+    },
+    {
+      "skill": "pp-marketing-overlay",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "pp-print-a4",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "pp-print-a4/SKILL.md"
+      ]
+    },
+    {
+      "skill": "pp-slidument",
+      "source": "Drive",
+      "git_before": "0.2.4",
+      "source_current": "0.2.9",
+      "lms_plan": "update",
+      "changed_files": [
+        "pp-slidument/SKILL.md",
+        "pp-slidument/references/deck-content-template.md"
+      ]
+    },
+    {
+      "skill": "pp-survey-dashboard",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "pp-survey-slides",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "presentation-qa",
+      "source": "Drive",
+      "git_before": "0.1.4",
+      "source_current": "0.1.9",
+      "lms_plan": "update",
+      "changed_files": [
+        "presentation-qa/SKILL.md"
+      ]
+    },
+    {
+      "skill": "product-growth-hypothesis-superpro",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "rail",
+      "source": "Drive",
+      "git_before": "0.3.51",
+      "source_current": "0.3.51",
+      "lms_plan": "update",
+      "changed_files": [
+        "rail/SKILL.md"
+      ]
+    },
+    {
+      "skill": "research-agent",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "rsvp",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "sales-pst-test-writer",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "sector-service-matrix-builder",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "session-handoff",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "skill-eval-harness",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "skill-eval-harness/SKILL.md"
+      ]
+    },
+    {
+      "skill": "skill-system-governance",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "skill-system-governance/SKILL.md"
+      ]
+    },
+    {
+      "skill": "summary",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "summary/SKILL.md"
+      ]
+    },
+    {
+      "skill": "text-deai-editor",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "text-deai-editor/SKILL.md"
+      ]
+    },
+    {
+      "skill": "three-perspective-review",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "trails-generator",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "tunnel",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "update",
+      "changed_files": [
+        "tunnel/SKILL.md"
+      ]
+    },
+    {
+      "skill": "vault-brain-scan",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "vault-note-enricher",
+      "source": "Drive",
+      "git_before": "не указана",
+      "source_current": "не указана",
+      "lms_plan": "current",
+      "changed_files": []
+    },
+    {
+      "skill": "whitepaper-proposal-generator",
+      "source": "Drive",
+      "git_before": "0.1.2",
+      "source_current": "0.1.3",
+      "lms_plan": "update",
+      "changed_files": [
+        "whitepaper-proposal-generator/SKILL.md"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 name: bpm4-healthcare-clinic-economics
 description: Use when working with BPM-4 Formula Profit for healthcare, clinics, hospitals, medical centers, archived medical projects, MIS/EMR exports, patient flow, appointments, visits, procedures, doctors, departments, beds, cabinets, equipment, payer mix, OMC/DMS/commercial revenue, LTV, capacity, SI / SIF impact, and HTML-first medical dashboards.
 metadata:
-  version: "0.1.7"
+  version: "0.1.8"
   status: active
   line: BPM-4 / healthcare clinic economics
   owner: Ilya
@@ -16,6 +16,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-10-15: Исправлена размерность доходной формулы; добавлена проверка метаданных связей при пустом ответе PBIX-парсера."
       - "2026-10-08: Accepted financial contradiction bridge and regression cases; conflicting clinic profit figures remain unresolved until source reconciliation."
       - "2026-08-20: Added external healthcare market signal guard: separate market baseline from client facts, nominal growth from price/volume/mix, and require payer/capacity/cost/geography evidence before project claims."
       - "2026-05-30: Activated medical BPM-4 domain view and added explicit DataLens handoff contract."
@@ -256,14 +257,17 @@ Use when the business is primarily commercial and the database supports patient 
 Default tree:
 
 ```text
-Revenue =
-  patients
-× patient mix: primary / secondary / reactivated
-× visits per patient
-× average check
-× check depth: services or procedures per visit
-× average service price
-+ programs / packages / consumables / other sales
+Выручка оказанных услуг =
+  уникальные пациенты периода
+× визиты на пациента
+× средняя чистая выручка на визит
+
+Альтернативная детализация того же итога:
+  число визитов
+× оказанные услуги на визит
+× средняя чистая выручка на оказанную услугу
+
++ товары / программы / прочие продажи, если они ещё не включены в итог
 ```
 
 Required views:
@@ -278,6 +282,8 @@ Required views:
 - LFL dynamics only after date basis is stable.
 
 Guardrail: primary / secondary definitions must be explicit. Example: first-ever patient, first in period, or returned after 12+ months are different definitions.
+
+Проверка размерности: средний чек уже содержит цену и число услуг; не умножать его повторно на глубину и цену. Состав услуг отражать через разрезы или взвешенную сумму, а не дополнительный множитель. Все отношения считать из одной согласованной факт-базы и даты признания; оплаченные суммы не подменяют стоимость оказанных услуг. Первичные, повторные и реактивированные пациенты складываются только при взаимоисключающем правиле сегментации в периоде. При нескольких врачах/клиниках за день явно определить ключ визита; уникальные пациенты и визиты сети не обязаны быть суммой таких срезов.
 
 ## Mode 2: State Hospital Mixed Funding
 
@@ -609,6 +615,7 @@ Verification:
 Before accepting a dashboard or claim:
 
 - check key totals against source totals;
+- При локальном чтении PBIX пустой список связей высокоуровневого парсера не доказывает отсутствие связей. Проверить внутренние метаданные `Relationship` / `Table` / `Column`, включая вычисляемые имена столбцов; отдельно различать связь фактов с периодом и автоматические календари. Без проверки движка не объявлять фильтрацию испытанной.
 - check date basis and period filters;
 - check currency / payer / tariff rules;
 - inspect broken visuals and blank fields;

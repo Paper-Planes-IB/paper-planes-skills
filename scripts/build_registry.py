@@ -80,7 +80,7 @@ def main() -> None:
             "skill": name,
             "type": override.get("type") or existing.get("type") or classify(name, source_description),
             "description": description.strip(),
-            "source": "Илья / GitHub",
+            "source": existing.get("source") or ("Илья / GitHub" if record["source"] == "ilya-drive" else "Paper Planes / GitHub"),
             "github": f"{GITHUB_BASE}/{name}",
             "page": existing.get("page") or wiki_routes.get(name.casefold()) or f"{BASE_URL}/knowledge/skill-{slugify(name)}",
             "slices": override.get("slices") or existing.get("slices") or "Без среза",
