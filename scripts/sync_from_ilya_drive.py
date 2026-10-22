@@ -36,7 +36,12 @@ SOURCE_FOLDER_ID = os.environ.get(
 REQUEST_TIMEOUT = int(os.environ.get("PP_GDRIVE_REQUEST_TIMEOUT", "180"))
 FOLDER_MIME = "application/vnd.google-apps.folder"
 # Verified older Drive copy (v0.1.0); canonical mece-prezy is v0.1.1.
-ARCHIVED_DUPLICATES = {"mece-prezy 2": "5dad0540d6f20cfca6c4ab72930b7f41ca39a3cd5793dc219b67fa6c2f4735e9"}
+ARCHIVED_DUPLICATES = {
+    "mece-prezy 2": "5dad0540d6f20cfca6c4ab72930b7f41ca39a3cd5793dc219b67fa6c2f4735e9",
+    # Drive and local comparison: v0.1.2 is preserved; canonical v0.1.3 adds
+    # live-prototype and profit QA without losing unique duplicate content.
+    "crm-implementation-qa 2": "10d7b6ed4f7136a5dbb3ccfb573eb6c201d052d4743b68671c7ed83db43148ae",
+}
 SERVICE_DIRECTORIES = {".system", "_backups", "_derivative-subskills"}
 
 
