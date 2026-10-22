@@ -2960,11 +2960,6 @@
           "size": 3322
         },
         {
-          "path": "skills/archive-granola-transcripts/scripts/__pycache__/sync_granola_api.cpython-39.pyc",
-          "sha256": "347357020b6ae7fc441b3131ca30370613b75e2e510740065664006de0322f0a",
-          "size": 10472
-        },
-        {
           "path": "skills/archive-granola-transcripts/scripts/com.paperplanes.granola-archive.plist",
           "sha256": "80fc0c49d79d06e10acfefe4654054a24ef5a4f4a79357e9755113701d5eb7a7",
           "size": 822

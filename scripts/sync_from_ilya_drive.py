@@ -384,6 +384,8 @@ def main() -> int:
                 warnings.append({"skill": name, "issues": advisory})
         files = []
         for path in sorted(folder.rglob("*")):
+            if "__pycache__" in path.parts or path.suffix == ".pyc" or path.name == ".DS_Store":
+                continue
             if path.is_file():
                 files.append(
                     {
