@@ -2,7 +2,7 @@
 name: ingest
 description: "Use when Ilya asks to ingest, add, remember, route, classify, or place new material into the Vault / knowledge system. Handles intake, classification, routing, proposal, no-op, and writeback-after-approval for facts, hypotheses, rules, external research, content candidates, tasks, commercial facts, contradictions, and source packets."
 metadata:
-  version: "0.3.09"
+  version: "0.3.11"
   status: active
   line: Vault ingest / knowledge routing
   owner: Ilya
@@ -53,6 +53,12 @@ metadata:
 ---
 
 # Ingest
+
+## Постоянный синтез DP03 / DP04 — 23.10.2026
+
+При пополнении аналитического корпуса прочитать полный раздел «Постоянный синтез и пополнение DP03 / DP04 — стандарт 23.10.2026» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/_Архитектура-проектов.md`. Он уточняет прежние упоминания совмещённого файла и действует в пределах scope/прав текущей задачи.
+
+Единица изменения — утверждение в реестре выводов DM.03, не номер страницы. Отдельный файл матрицы для новых записей не создавать: анализ и трассировка находятся в одном досье; старые проекты мигрировать только по отдельному разрешению. Проверить качество материала, пересмотреть утверждение, оценить влияние на DP03/DP04 и детализацию DM.02 в программе DP01. Различать состояние знания, готовность страницы и согласование версии; учитывать неожиданные вопросы и обоснованное отсутствие влияния. Противоречие записывать сразу; существенный пересмотр ответа/согласованной версии — после разбора ролью DP01. Списки гипотез и заголовков получать из существующих записей, не создавать параллельные журналы. Ритм задаёт DP01; процент переписанных заголовков не является критерием качества. Полный шаблон изменения и приёмка передачи — в указанном разделе.
 
 ## Purpose
 
@@ -160,7 +166,7 @@ Required Old Delivery document set:
 | `BPM scope ledger` | explicit included / excluded / deferred / recommended BPM scope |
 | `Карта проблем и Cynefin.md` | problem nodes, ПЦВЗ / SCQA, domain status, domain changes |
 | `Карта актантов.md` | Estuarine actants and links to problems |
-| `Evidence trace — source-to-node matrix.md` | source-to-node comparison across BPMs |
+| `аналитическое досье с реестром выводов и трассировкой` | source-to-node comparison across BPMs |
 | `BPM Storyline-Storyboard — гипотезы, слайды и дефициты знания.md` | SI / САИ / slide-intents and knowledge gaps |
 | `BPV route map.md` | BPV / sub-BPV route hypotheses with source trace |
 | `Interview roster / interview prep tracker.md` | known / appointed respondents, role/function, BPM, status, coverage target, brief status |
@@ -229,7 +235,7 @@ Additional Old Delivery regression guards:
 - Macro-idea evidence map is incomplete without `Supporting sources`, `Divergent sources`, `Cross-source status`, and `What must be checked next`; Polymorphic actant map is incomplete without `Source trace`, `Growth driver`, `Energy/time barrier`, and `Zone / changeability`.
 - Final response must include `coverage check` across active problem nodes and `document writeback status` with project contour/path for created or updated files. Do not write `verdict: complete` when required coverage is only implied.
 - At Old Delivery project initiation, org structure / interview table / respondent list may create or update an interview prep tracker. Rail does not appoint interviewees or manage the queue. When Ilya names the appointed / upcoming respondent, run or hand off to `interview-brief-by-analogs`; write the internal brief to `Interview briefs.md` / equivalent unless Ilya explicitly says chat-only.
-- After ingesting an interview that had a prepared brief / question block, run `question coverage audit`: assign `question_id`, compare prepared questions to actual transcript / secondary source, separate `asked status` (`asked / not_asked / source_missing / not_applicable`) from `answer status` (`answered / partial / unanswered / no_answer_expected / source_missing`), and write unresolved questions into `Evidence trace — source-to-node matrix.md` or another existing evidence document as `next-question backlog`. `not_asked` must not be reported as `unanswered`.
+- After ingesting an interview that had a prepared brief / question block, run `question coverage audit`: assign `question_id`, compare prepared questions to actual transcript / secondary source, separate `asked status` (`asked / not_asked / source_missing / not_applicable`) from `answer status` (`answered / partial / unanswered / no_answer_expected / source_missing`), and write unresolved questions into `аналитическое досье с реестром выводов и трассировкой` or another existing evidence document as `next-question backlog`. `not_asked` must not be reported as `unanswered`.
 - Before claiming `coverage check: complete`, run the Old Delivery pre-final self-audit. Fail the run as `incomplete / passed_with_fixes` if any of these are missing or only implied: BPM-addressed source register; exact macro-idea map columns; exact problem-history columns; exact polymorphic actant columns; canonical actant typing; 9-action rows with code+name and no catch-all ranges; full question audit schema for prepared brief or carryover backlog; SI/BPV visible rows for every active P-node; writeback paths/links. Do not hide this behind `all material deltas` or `unchanged nodes gated`.
 - For Rail 0.1.20+ behavior, the final coverage check must be backed by an exact node-by-node ledger: `Problem node | Problem history | Macro-idea map | Actant map | 9-action matrix | SI/BPV trace | Missing / fix`. Each active P-node must be checked separately. Counts such as `22/22` are invalid unless derived from this ledger. Ranges (`P11-P13`), clusters (`P6/P10/P18`), bare P-codes, and catch-all rows fail coverage unless the same row explicitly lists every included node as `code + name` and shows the evidence/gate for each. Missing actants require explicit `no actant signal / source_check` rows. A combined column such as `Actant/action trace` is invalid: actant coverage and 9-action coverage are separate gates. Delta tables (`actant map — delta`, `SI delta`) cannot prove cumulative coverage. Stacked source labels such as `BPM-2/4/8/9` must be decomposed into BPM-addressed source rows. Question audit must use the exact full schema and code+name links. Document writeback must include paths/links for every created/updated file, not only file names.
 

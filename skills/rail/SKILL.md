@@ -14,7 +14,7 @@ description: >-
   fix-rules / rail drift-audit family; use fix-rules instead for local
   chat-rule-drift.
 metadata:
-  version: "0.3.52"
+  version: "0.3.54"
   status: active
   line: project-rail-drift / 4ka delivery governance
   owner: Ilya
@@ -132,6 +132,12 @@ metadata:
 
 До предметного прохода подтвердить Old / New Delivery, технологический / организационный класс, класс источника и права. Подробные исходные нормы бывшего AGENTS сохранены в существующем `BPM — Майнинг/OPM/README.md`; адресный указатель из корня PP: `python3 scripts/model_router.py --instruction-contract "Old Delivery"`. Открыть применимые фрагменты по `--instruction-id`, дочитывая все окна. Указатель или версия skill не доказывают чтение. Этот слой уточняет обязательные гейты и исключения, но не требует запускать все режимы Rail. New Delivery не наследует Old Delivery; BPM-3 не получает Cynefin / Estuarine даже при общем opt-in; технологическая задача не получает организационные слои. Полный сквозной аналитический стандарт остаётся в `~/.codex/AGENTS.md`. Перенос адресов не меняет метод, права создания evidence-набора, меж-BPM ответственность и границу К1 / К3. Повторный учёт одного физического источника запрещён. Отсутствующий контракт не подменять догадкой.
 
+## Постоянный синтез DP03 / DP04 — 23.10.2026
+
+При пополнении аналитического корпуса прочитать полный раздел «Постоянный синтез и пополнение DP03 / DP04 — стандарт 23.10.2026» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/_Архитектура-проектов.md`. Он уточняет прежние упоминания совмещённого файла и действует в пределах scope/прав текущей задачи.
+
+Единица изменения — утверждение в реестре выводов DM.03, не номер страницы. Отдельный файл матрицы для новых записей не создавать: анализ и трассировка находятся в одном досье; старые проекты мигрировать только по отдельному разрешению. Проверить качество материала, пересмотреть утверждение, оценить влияние на DP03/DP04 и детализацию DM.02 в программе DP01. Различать состояние знания, готовность страницы и согласование версии; учитывать неожиданные вопросы и обоснованное отсутствие влияния. Противоречие записывать сразу; существенный пересмотр ответа/согласованной версии — после разбора ролью DP01. Списки гипотез и заголовков получать из существующих записей, не создавать параллельные журналы. Ритм задаёт DP01; процент переписанных заголовков не является критерием качества. Полный шаблон изменения и приёмка передачи — в указанном разделе.
+
 ## Purpose
 
 Rail inspects a 4th-department production project as an operating system: chats, штаб, working contours, scope, BPM/BPP movement, tasks, deadlines, owners, next actions, and methodology fit.
@@ -198,7 +204,7 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 - Do not run Rail from auxiliary/service chats such as data/MIS/economics, interviews/HR, patient path, market/strategy, or other subject working contours.
 - If Ilya invokes Rail from an auxiliary/service chat, do not inspect there. Identify the current chat role from the chat map and say the request must be moved or escalated to `Штаб проекта` or `Внутренний PP / проектная сборка`.
 - Do not inspect the whole Vault, all departments, or all runtime automations unless Ilya explicitly expands scope.
-- Do not create new files unless Ilya explicitly asks for file output or a new artifact. Exception: Ilya has officially granted standing permission for Old Delivery Rail/BPM evidence document-set creation in an existing project folder; this includes `Реестр BPM-источников.md`, `BPM scope ledger`, `Карта проблем.md` / `Карта проблем и Cynefin.md` only when Cynefin is explicitly enabled, `Карта актантов.md` only when Cynefin is explicitly enabled, `Evidence trace — source-to-node matrix.md`, `BPM Storyline-Storyboard — гипотезы, слайды и дефициты знания.md`, `BPV route map.md`, `Interview roster / interview prep tracker.md`, and `Interview briefs.md` / equivalent.
+- Do not create new files unless Ilya explicitly asks for file output or a new artifact. Exception: Ilya has officially granted standing permission for Old Delivery Rail/BPM evidence document-set creation in an existing project folder; this includes `Реестр BPM-источников.md`, `BPM scope ledger`, `Карта проблем.md` / `Карта проблем и Cynefin.md` only when Cynefin is explicitly enabled, `Карта актантов.md` only when Cynefin is explicitly enabled, `аналитическое досье с реестром выводов и трассировкой`, `BPM Storyline-Storyboard — гипотезы, слайды и дефициты знания.md`, `BPV route map.md`, `Interview roster / interview prep tracker.md`, and `Interview briefs.md` / equivalent.
 - In the approved beginner training route, the direct creation permission is established at the end of nano-step 3, after the project root and delivery class are confirmed and before PRE begins. The step-3 output must record `контракт материализации PRE/INIT: активирован`, the resolved project root, common BPP set, delivery-specific set and limits. Nano-steps 4–10 consume that contract; they must not ask for the same permission again or independently broaden it.
 - Do not hardcode an expected Rail/Admin version in beginner prompts. Inspect the current Harness catalog and local installed skill paths, select the newest active physical copy already available in that Harness, and record version/source only as audit trace. Do not browse for a newer release, and do not let a previously loaded conversational copy override a newer installed copy. If the selected latest-available skill lacks a required rule, report `дефицит правила в последней доступной версии скилла`; do not call it a mismatch against a fixed version.
 - PRE bootstrap and INIT verification are different maturity states of the same administrative files. Nano-step 4 always creates, in the resolved project root, `00-Карточка проекта.md` with stage `PRE`, minimal `Админ-шкала/README.md`, factual `Админ-шкала/Карта-чатов.md`, `Админ-шкала/Реестр-артефактов.md`, and Drive/ClickUp/current-headquarters-chat attribution. This does not claim INIT entry. BPP.01.INIT verifies/enriches the same card; BPP.05.INIT verifies/expands/accepts the same admin contour. Never defer first chat-map creation to BPP.05.INIT and never create a parallel INIT copy. `Реестр-BPM.md` develops at BPP.02.INIT; StageGate at BPP.03.INIT; storage normalization at BPP.10.INIT.
@@ -365,7 +371,7 @@ In `Old Delivery` projects, this evidence corpus must be materialized as project
 - `BPM scope ledger` — included / excluded / deferred / recommended BPM scope;
 - `Карта проблем и Cynefin.md` — problem nodes, SCQA / ПЦВЗ links, Cynefin status and status history;
 - `Карта актантов.md` — Estuarine actants, problem links, zone / changeability, energy/time drivers;
-- `Evidence trace — source-to-node matrix.md` — source-to-problem / source-to-actant / source-to-SI / source-to-BPV matrix;
+- `аналитическое досье с реестром выводов и трассировкой` — source-to-problem / source-to-actant / source-to-SI / source-to-BPV matrix;
 - `BPM Storyline-Storyboard — гипотезы, слайды и дефициты знания.md` — if not already present under the project analysis contour;
 - `BPV route map.md` — BPV / sub-BPV route candidates, source traces, confidence, and next evidence needs.
 - `Interview roster / interview prep tracker.md` — known / appointed respondents, role, function, BPM, status, coverage target, brief status;
@@ -532,7 +538,7 @@ Do not collapse `not_asked` and `unanswered`:
 
 Each gained answer must link to problem nodes, SI / slide-intents, BPV routes, or explicit evidence gaps. If an unclosed question should move forward, put it into a `next-question backlog` and, when a future respondent is already appointed, suggest that respondent as `best next respondent`. Rail must not appoint a respondent merely to close the backlog.
 
-The audit should be materialized in `Evidence trace — source-to-node matrix.md` or another existing evidence document. If a separate backlog file is not created, record where the backlog rows were written. If no writeback happens, explain the explicit blocker in `document writeback status`.
+The audit should be materialized in `аналитическое досье с реестром выводов и трассировкой` or another existing evidence document. If a separate backlog file is not created, record where the backlog rows were written. If no writeback happens, explain the explicit blocker in `document writeback status`.
 
 If there was no prepared brief for the current respondent but a carryover backlog exists from previous interviews, still render the same table. Set `target respondent` to the current respondent or `carryover`, set `asked status` to `not_asked / source_missing / not_applicable` where appropriate, and do not use a two-column `Вопрос / Статус` shortcut. A carryover backlog without `question_id`, `asked status`, `answer status`, `linked P-node / SI`, `remaining gap`, and `prompt improvement` is incomplete.
 
@@ -2269,6 +2275,8 @@ Only after family/source expansion, expand exact aliases:
 
 If a person names a donor candidate after the first pass, treat that as evidence of a failed family/source or alias expansion, not as a new unrelated idea. Re-run the donor check on both family terms and exact names, then record the miss cause in the project Rail/status or reuse packet when relevant.
 
+Уточнение 22.10.2026: прошлый проект-донор может храниться в текущей проектной папке, а не в архивном индексе. Для названных владельцем доноров адресно проверять карточку, карту источников и связи с архивом в обоих слоях; расположение папки не доказывает стадию и не разрешает объединять одноимённые розничные, импортные или иные бизнес-контуры. Не запускать ради этого широкий поиск по всему Vault.
+
 C1/C2 do not own deep donor evaluation. They may confirm parsed facts such as project, BPM, channel, data type, object of analysis, gate, SKU depth, buyer id, repeat purchase, channel, and margin/proxy availability. The machine runs the donor check; C3/C4/Ilya decide whether the route is accepted.
 
 Track reuse state by `BPM / theme / route`:
@@ -2607,3 +2615,7 @@ Rail inherits the cross-cutting contract in `~/.codex/AGENTS.md` for every Probl
 ## Проверенная работа с чатами Codex — 21.10.2026
 
 При инвентаризации штатным `list_threads` параметр `limit` не должен превышать 50: значение 60 возвращает ошибку валидации, а не список чатов. Ограничивать вывод текущим projectId и совпадающими ID; не выводить полный ответ в проектный контекст. После `create_thread` перечитывать фактические ID, название и projectId через `list_threads`: длинное название может быть нормализовано с многоточием. При необходимости задать короткое понятное название штатным `set_thread_title` и проверить его повторно. В карте хранить фактическое название отдельно от развёрнутого назначения. Завершение стартового чтения проверять `wait_threads`, не объявлять чат готовым только по факту создания.
+
+### Проверка адресной доставки — 22.10.2026
+
+При проверке send_message_to_thread не считать отсутствие userMessage доказательством недоставки: адресный follow-up может отображаться в read_thread как functionCallOutput, а includeOutputs:false скрывает его текст. До повторной отправки адресно прочитать один последний ход с includeOutputs:true и ограничением maxOutputCharsPerItem, проверить код пакета/вопросов и ответ агента. Подтверждение threadId означает принятую отправку; ответ адресата и клиентские ответы — отдельные события. Повторную доставку одинакового пакета дедуплицировать по коду, не запускать повторный ingest или новые задачи.

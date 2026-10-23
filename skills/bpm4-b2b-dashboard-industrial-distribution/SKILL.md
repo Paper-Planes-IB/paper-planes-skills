@@ -2,7 +2,7 @@
 name: bpm4-b2b-dashboard-industrial-distribution
 description: "Use when working with BPM-4 commercial-network dashboards across separate subtypes: B2B/industrial distribution, HoReCa/Retail point networks, or distribution-like SKU dashboards. Covers Formula Profit, point/store economics, cheque analytics, loyalty-client cohorts, client/dealer segmentation, shipment cohorts, SKU affinity, OoS, cross-filtered BI/DataLens/HTML views, SI/SIF extraction, and Storyline-Storyboard routing."
 metadata:
-  version: "0.3.53"
+  version: "0.3.54"
   status: active
   line: BPM-4 / commercial network dashboard
   owner: Ilya
@@ -16,6 +16,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-10-22: Добавлена адаптация к логистике по прямому поручению: различать реализации, заявки, рейсы, контейнеры и операции; сохранять зерно суммы документа; использовать присутствие услуг, видимые когорты и точные мосты с финансовыми/ABC-гейтами."
       - "2026-09-03: Added retail point-opening plan rule: when a target revenue plan requires new locations, split growth into current-network run-rate, existing-point optimization ceiling, and new-point residual; calculate format portfolio with stated minimum mix such as 80/20 in favor of tonars, but allocate formats by city/territory archetype instead of applying the mix uniformly to every city."
       - "2026-09-03: Reframed MG atlas chart families as an improvement / extension idea bank, not a required dashboard template. The skill should remember which graph ideas can strengthen a HoReCa/Retail BPM-4 analysis and propose/apply them when they sharpen a decision, expose a hidden mechanism, close a caveat, or enrich BPM-SI."
       - "2026-09-03: Added analytical atlas package rule: if an HTML atlas arrives with chart map CSV, chart-ready data folder, artifact manifest, QA.json and preview, treat it as a reusable BPM-4 dashboard package. Inspect chart count, sections, map schema, data files, QA/render status and limitations; use chart-ready CSV for immediate posthoc checks; distinguish chart-level reproducibility from raw-to-chart pipeline reproducibility; QA render is not metric proof."
@@ -812,6 +813,17 @@ client_type x product_group:
 count_orders, amount, margin, share_in_client_type, share_in_product_group,
 lift_vs_total, odds_ratio_or_model_effect, sample_flag, management_action
 ```
+
+## Адаптация к транспортно-логистическим услугам по прямому поручению владельца
+
+Это адаптация по явному запросу, не автоматическое применение дистрибуционного шаблона к любому сервисному бизнесу.
+
+- Сначала установить фактическую единицу: документ реализации, строка, заявка, рейс, контейнер и операция — разные объекты. Документный ряд позволяет анализировать наблюдаемую клиентскую активность, но не доказывает физический объём перевозок или число заказов.
+- Если полная сумма документа повторена на строках услуг, денежную базу сворачивать один раз на проверенный ключ документа. Для формулы `клиенты × документы на клиента × средняя сумма документа` использовать одну согласованную числовую популяцию; документы без суммы сохранять отдельно. Не распределять полную сумму на каждое присутствующее название услуги.
+- Без сумм строк разрешены частоты названий и сочетанность в документе: поддержка, доверие в обе стороны, лифт и минимальная численность. Это совместное выставление, не готовый пакет или эффект допродажи. При доступных датах и организации сразу проверять сопоставимые временные окна и организационный срез. Исходные синонимы/пробелы не объединять без словаря; фильтр услуги отбирает целые документы и не превращает их сумму в выручку услуги.
+- Повторы, интервалы, РФМ-показатели и видимые когорты подписывать как наблюдения по реализациям. Первая видимая дата относится к полной доступной истории выбранного потока; при фильтре услуги это поток документов с услугой. Не называть её привлечением, интервал — циклом доставки, сумму окна — LTV, отсутствие документов — доказанным оттоком. Незавершённые месяцы когорт оставлять неизвестными.
+- Разложение изменения `число документов × средняя сумма` не называть `физический объём × тариф`. Клиентский мост и факторный мост — альтернативные представления одной разности; их вклады не складывать. Постоянную группу использовать для проверки состава и изменений внутри клиентов; тариф и состав операций требуют строк и физических драйверов.
+- Юрлицо не заменяет бизнес-направление. Для прибыли дополнительно проверить НДС, агентскую/принципальную схему, транзитные суммы, прямые расходы и ABC. Предварительную цепочку ресурсов и операций строить с неизвестными ставками/потреблением до появления замеров. Кредитовый оборот 62 не подменяет платежи или возраст долга.
 
 ## Structured Analytical Artifact Gate
 

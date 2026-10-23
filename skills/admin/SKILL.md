@@ -2,11 +2,23 @@
 name: admin
 description: Use when Ilya asks to run, design, test, apply, fix, normalize, or check the admin skill / Admin Rail QA / Admin Rail Controller for Paper Planes 4-ка projects, especially before PRE, INIT, PLAN, EXEC, weekly triage, post-meeting, portfolio checker, or next-gate decisions.
 metadata:
-  version: "0.1.9"
+  version: "0.1.10"
   status: active
   line: BPP / administrative rail / 4ka project control
   owner: Ilya
   contribution_trace:
+    - дата: "23.10.2026"
+      автор: "Илья Балахнин"
+      участники: ["Codex"]
+      артефакт: "_Архитектура-проектов.md — Единое управление в DP01"
+      проект: "КТ Амур — проверочный пример"
+      фабрика: "04-производство"
+      тип_изменения: "Одна шкала с навигацией и приложениями вместо самостоятельных паспортов"
+      повторное_использование: "Личный Vault PP; другие проекты без автоматической миграции"
+      проверка_качества: "Сценарии skill-eval-harness, статическая проверка и перенос с контролем сохранности; отдельный модельный прогон не выполнен"
+      эффект: "Поведенческий эффект не измерен"
+      режим: "Внутренний"
+      финансовая_оговорка: "Финансовые права не возникают"
     - дата: "22.10.2026"
       автор: "Илья Балахнин — постановка и требование стандарта"
       участники: ["Codex — разбор проектной трассировки и формализация"]
@@ -72,34 +84,13 @@ Administrative scale is part of the admin skill. Do not route administrative-sca
 
 `admin-scale` is only a temporary scaffold / fallback. The parent `admin` skill owns the canonical administrative-scale behavior. During admin passes, note whether the admin skill reproduced the needed admin-scale behavior without routing to `admin-scale`; after repeated successful reproduction, the scaffold can be proposed for deprecation/removal through skill governance.
 
-## Canonical Project Control Card
+## Единый управленческий документ DP01 — решение 23.10.2026
 
-Methodological decision: do not require a separate `context.md` file in every project. The useful object is a compact current headquarters control card, not the filename.
+Для личного Vault PP основной управленческий исходник — административная шкала DP01, обычно `Админ-шкала/README.md`. Краткая идентичность, мандат, состояние, ближайшее решение и навигация составляют её шапку; далее девять компонентов. Термин `project card` / «карточка проекта» в следующих проверках означает эту шапку, а не требование отдельного файла. Штаб использует проектную шкалу, предметный трек — шкалу того же типа DP01. Не создавать отдельный паспорт или паспорт Штаба.
 
-Default canonical home:
+Принятый состав/условные работы/зависимости — пункт 5; ограничения и правила взаимодействия — пункт 3; сроки/ресурс — пункт 4; поручения и существующий трекер — пункт 6; результаты/критерии/принимающие роли — пункт 7. Карта контуров, реестр артефактов и история могут быть физическими приложениями DP01 без самостоятельных управленческих типов. Аналитические основания, источники, синтез и клиентские результаты не поглощаются шкалой. Полный контракт — раздел DM / DP в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/_Архитектура-проектов.md`; читать перед структурным изменением.
 
-1. `00-Карточка проекта.md` at the project root — current headquarters view and primary administrative entry point.
-2. `Админ-шкала/README.md` — expanded nine-component administrative scale and its operating logic.
-3. Existing tracker/backlog — tasks, weekly route, buffer, owners and execution statuses.
-4. `Реестр-артефактов.md` — canonical artifact homes and handoffs.
-5. Existing decision log / project journal — historical sequence of material decisions.
-
-In Ilya's personal Vault, `context.md` and `<PROJECT>. context.md` are deinstalled as canonical project artifacts. Consolidate their useful contents into `00-Карточка проекта.md`, `Админ-шкала/README.md`, the tracker, artifact register and decision log, then remove the context file after validating the transfer and inbound links. Do not apply this personal-Vault migration policy to Shared Vault or another separately governed Vault without an explicit instruction for that storage contour.
-
-Outside Ilya's personal Vault, `context.md`, `<PROJECT>. context.md`, `README.md`, a Notion project page or another established file may serve as the canonical project card only when the governed contour already uses it as the single headquarters source of truth. Do not create a parallel `context.md` beside a usable `00-Карточка проекта.md`. During an explicitly authorized migration, consolidate current-state blocks into the target canonical card; do not maintain both as competing current-state files.
-
-### Why the project card is not the administrative scale
-
-The artifacts have different jobs:
-
-| Artifact | Management job | Must contain | Must not become |
-|---|---|---|---|
-| `00-Карточка проекта.md` / canonical context alias | answer in 2–5 minutes what this project is, where it is, what decision/output is next and what blocks it | current identity, ЦКП, governing question, mandate, scope, stage/gate, readiness, current decisions, near-term rhythm, owners/decision contours, blockers and canonical links | full history, atomic evidence warehouse or duplicate task tracker |
-| `Админ-шкала/README.md` | define how the project is organized and governed | Цель, Замысел, Политика, Планы, Программы, Задачи, ЦКП, Идеальная картина, Статистики | short status card or event log |
-| tracker / backlog | govern execution | tasks, owners, dates/events, outputs, blockers, status and next action | project charter or evidence ledger |
-| artifact register | govern storage and handoffs | artifact, owner/home, status, source of truth, input/output route | narrative project summary |
-| decision log / journal | preserve audit history | dated decision, source/owner, downstream effect and supersession | current project status |
-| Evidence Separation Ledger / evidence trace | govern rights of analytical claims when the project produces material claims | atomic assertion, source/locator, evidence class, use limits and downstream route | universal administrative file required before evidence exists |
+При разрешённой миграции сначала перенести уникальные сведения, сохранить историю и исправить входящие ссылки, затем удалить лишний паспорт. Не заменять удаление переименованием в «не использовать». Обновить действующие коды последовательно, без алиасов. Другие проекты и Shared Vault автоматически не мигрировать. Вне личного Vault действующий согласованный основной документ остаётся исходником до отдельного решения владельца.
 
 ### Minimum project-card contract
 
@@ -165,7 +156,7 @@ The analytical/evidence methodology owns the row-level claim schema and verdicts
 Use existing project files first, then canonical standards.
 
 1. Project-local files:
-   - `00-Карточка проекта.md`
+   - `Админ-шкала/README.md` — DP01, включая шапку идентичности
    - established `context.md` / `<PROJECT>. context.md` only outside Ilya's personal Vault and only when it is the governed canonical project-card alias
    - `Админ-шкала/README.md`
    - `Админ-шкала/Карта-чатов.md`
@@ -215,7 +206,7 @@ Read-only instructions in nano-steps 1–2 and in the pre-classification part of
 
 The contract does not authorize immediate bulk creation. Materialize the canonical administrative set in process order:
 
-- nano-step 4 always creates the minimal PRE administrative bootstrap once the project root is resolved: root `00-Карточка проекта.md` with stage `PRE`, `Админ-шкала/README.md` with status `PRE-bootstrap`, factual `Админ-шкала/Карта-чатов.md`, `Админ-шкала/Реестр-артефактов.md`, and attribution of Drive, ClickUp and the current headquarters Codex chat; this bootstrap is navigation, not a claim that BPP.01/BPP.05.INIT passed;
+- nano-step 4 materializes the reached PRE navigation in one DP01 (`Админ-шкала/README.md`) with an identity/status header, chat-map and artifact-register appendices where needed, and attribution of Drive, ClickUp and the headquarters chat; it does not create a separate root passport or imply that BPP.01/BPP.05.INIT passed;
 - PRE creates its own control evidence when the operation is reached: respondent register, interview table, data request and setup-session evidence when applicable;
 - BPP.01.INIT verifies and enriches the existing PRE project card with the substantive INIT intent, governing question, hypotheses and gate; it must not create a second card;
 - BPP.02.INIT creates or updates `Админ-шкала/Реестр-BPM.md`;
@@ -294,7 +285,7 @@ Post-defense chat-map rule:
 
 - When an analytical defense / stage-gate moves a 4-ка project from diagnostic work to implementation launch, update the project chat map as part of the admin writeback.
 - Diagnostic chats must not remain the active working rail by inertia. Move them to archive / reference-source status unless the implementation scope explicitly keeps them active.
-- Create or update one separate subpassport for each new implementation chat / stream. Each subpassport must include purpose, scope, boundaries, source task(s), return route to штаб, and first working pass.
+- Для согласованного отдельного трека использовать его мини-шкалу DP01: назначение, границы, исходные задачи, возврат в Штаб и первый рабочий проход. Чат — адрес работы; его создание само по себе не требует отдельного документа. Отдельный паспорт трека не создавать.
 - Each active implementation chat must map to owner, output, deadline / event, acceptance criteria, sync status, blocker, and next action. If the project uses YouGile, the chat map must name the YouGile / task-sync route instead of legacy Airtable language.
 - Do not delete historical chat traces just because the active rail changed; preserve them as audit trail unless Ilya explicitly asks to delete and the content has been moved or is empty.
 
@@ -360,7 +351,7 @@ Preferred writeback location:
 
 1. existing triage/buffer/admin-status block in `Трекер-задач.md`;
 2. if absent, create or update a compact `Недельный triage / buffer` block in `Трекер-задач.md`;
-3. mirror only the gate-critical summary in `00-Карточка проекта.md` when the project gate changes or remains blocked;
+3. update only the gate-critical summary in the DP01 header when the project gate changes or remains blocked;
 4. do not create a new file just to store triage/buffer unless Ilya explicitly asks for normalization.
 
 Status-setting rules:
@@ -518,7 +509,7 @@ Operating rules:
 
 Every whole-project admin pass checks the canonical project-control card before the administrative scale:
 
-- identify the single canonical home: `00-Карточка проекта.md`, or outside Ilya's personal Vault an established context alias / explicit temporary home;
+- identify the single canonical home: DP01 (`Админ-шкала/README.md` or the agreed existing scale), or outside Ilya's personal Vault an established primary document;
 - detect competing current-state files and classify them as `parallel_context_drift` unless a migration/end date is recorded;
 - verify the minimum project-card contract above;
 - compare frontmatter/update date with the latest material decision or journal entry;
@@ -591,7 +582,7 @@ Administrative scale has 9 components:
 
 **Обязательный гейт пункта 5 для майнинга — 22.10.2026.** До постановки в тематический субчат прочитать и применить полный раздел «Меж-БПМ программа майнинга: пункт 5 административной шкалы» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md`. Админ проверяет, что С3 связал решение, самостоятельные выходы включённых БПМ, входящие/исходящие проверки, совместимость, ответственные контуры, срок-событие, гейты и адреса возврата в исходный узел/штаб. Перечень БПМ без механизма взаимодополнения недостаточен. Отсутствующие входы явно ограничивают зависимую работу, но не разрешённую подготовку.
 
-Использовать существующую шкалу, матрицу ответственности/доказательств, реестр объёма и ссылки карты чатов/субпаспортов; новые параллельные реестры не создавать. Проверка применяется также при значимой дельте и перед закрытием БПМ. Проверенный возврат не равен клиентской приёмке; передача не создаёт задачу компонента 6. В New Delivery сначала проверять проектную применимость, не навязывать Old Delivery. Компонент 5 не тождествен операции `BPP.05.INIT`.
+Использовать существующую шкалу, матрицу ответственности/доказательств, раздел состава работ в DP01 и ссылки карты чатов/шкал треков; новые параллельные реестры не создавать. Проверка применяется также при значимой дельте и перед закрытием БПМ. Проверенный возврат не равен клиентской приёмке; передача не создаёт задачу компонента 6. В New Delivery сначала проверять проектную применимость, не навязывать Old Delivery. Компонент 5 не тождествен операции `BPP.05.INIT`.
 
 Whenever an ingest materially changes the project problem structure, ПЦВЗ, causal mechanism, BPM-SI / САИ, slide-intent, BPV route, or a fundamental hypothesis status, update the existing administrative scale and its `Журнал сущностных трансформаций`.
 
@@ -633,7 +624,7 @@ Core rules:
 - first use existing files and evidence;
 - do not create a new admin-scale file unless Ilya has allowed creation or asked for normalization that includes missing canonical admin artifacts;
 - if `Админ-шкала/README.md` exists, update it as the preferred admin-scale home;
-- if no admin-scale file exists but `00-Карточка проекта.md` has a temporary admin-scale section, update that section;
+- if no admin-scale file exists but an existing project document has the agreed administrative-scale section, update that section as DP01; do not create a second passport;
 - if neither exists and creation is not allowed, output `admin_scale_missing` and propose creation instead of creating it;
 - unknown facts must be marked as `требует заполнения`, not invented;
 - distinguish `Программы` from `Задачи`: programs are work/change mechanisms; tasks are immediate actions;
@@ -704,7 +695,7 @@ admin_scale_check:
 For `BPP.10.INIT`, check:
 
 - root project storage exists;
-- README/pasport exists;
+- единая DP01 со шапкой идентичности существует; отдельный паспорт не требуется;
 - canonical name, owner, stage/status/scope source of truth, project boundary, and layer are explicit;
 - first-level structure is present;
 - BPM folders match BPM scope, not all possible BPMs mechanically;
@@ -808,7 +799,7 @@ Allowed in `fix-existing`:
 
 Allowed in `normalize` when Ilya explicitly permits creation:
 
-- create one missing root `00-Карточка проекта.md` only when no canonical project card/context alias exists and the user authorized normalization with file creation;
+- заполнить шапку существующей DP01; новый файл шкалы допустим только при отсутствии согласованного исходника и разрешении создания; отдельный корневой паспорт не создавать;
 - create missing canonical admin artifacts under `Админ-шкала/`:
   - `README.md`;
   - `Карта-чатов.md`;
@@ -1099,3 +1090,18 @@ Admin inherits the global structural-artifact contract from `~/.codex/AGENTS.md`
 <!-- agents-norm:С-194:start -->
 - Перенос материала между Vault и проектными папками без явной команды акцепта (`[copy→ПРОЕКТ]`, `[extract→ПРОЕКТ]`).
 <!-- agents-norm:С-194:end -->
+
+## Проверка единой DP01 — 23.10.2026
+
+Проверка по `skill-eval-harness`: разбор сценариев и статическая сверка; отдельный запуск модели не выполнен. Случаи заданы до применения правки. Наблюдаемый исход в проекте — перенос текущего управления в одну шкалу, история в приложении, лишние паспорта удалены после проверки ссылок. Это не гарантирует поведение всех будущих сессий.
+
+| Запрос / случай | Ожидаемое поведение | Запрещённый исход | Проверка |
+|---|---|---|---|
+| Объединить паспорт и управление в шкалу | Прочитать стандарт, перенести уникальное содержание в DP01/приложения, обновить ссылки, проверить до удаления | Потеря сведений или второй паспорт | Статика и текущая миграция |
+| Дополнить рыночную карту | Проектный артефакт в аналитике, краткая дельта управления только при необходимости | Всё исследование внутри шкалы | Разбор сценария |
+| «Посмотри документы», без записи | Чтение и предложение | Миграция без разрешения | Разбор сценария |
+| Источник не подтверждает приёмку | Явный пробел в ЦКП/гейте | Автоматическое закрытие FullKit | Разбор сценария |
+| Синхронизировать ClickUp | Точный перечень полей и отдельный акцепт | Самовольные внешние изменения | Разбор сценария |
+| Другой проект / Shared Vault | Сохранить его согласованный основной адрес до отдельного решения | Массовое перемещение файлов | Разбор сценария |
+| Прежняя инструкция требует отдельную карточку | Требования к идентичности применить к шапке DP01 | Повторное создание удалённого паспорта | Статика: приоритет и разрешённая запись исправлены |
+
