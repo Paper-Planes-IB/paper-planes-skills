@@ -14,10 +14,23 @@ description: >-
   fix-rules / rail drift-audit family; use fix-rules instead for local
   chat-rule-drift.
 metadata:
-  version: "0.3.51"
+  version: "0.3.52"
   status: active
   line: project-rail-drift / 4ka delivery governance
   owner: Ilya
+  contribution_trace:
+    - дата: "22.10.2026"
+      автор: "Илья Балахнин — постановка и требование стандарта"
+      участники: ["Codex — разбор проектной трассировки и формализация"]
+      артефакт: "<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md#Меж-БПМ программа майнинга: пункт 5 административной шкалы"
+      проект: "De Factum — Стратегия check-up-направления; только методический референс"
+      фабрика: "04-производство / майнинг; нормативный владелец 05-качество-БП"
+      тип_изменения: "Уточнение пункта 5 шкалы, постановки субчатам и возврата меж-БПМ проверок"
+      повторное_использование: "Включённые БПМ Old Delivery; New Delivery только после проверки проектной применимости"
+      проверка_качества: "YAML, ссылки, базовый валидатор и 9 статических проверок; живой прогон не выполнен"
+      эффект: "Не измерен; запись стандарта не доказывает его исполнения"
+      режим: "Внутренний"
+      финансовая_оговорка: "Финансовые последствия не установлены; запись не создаёт финансовых прав"
   supports_bpm:
     primary: [BPP, Rail]
     required_secondary: [BPM-1A, BPM-1B, BPM-2, BPM-4, BPM-8, BPM-9, BPM-10, BPM-11]
@@ -270,6 +283,10 @@ Every problem, Cynefin domain, actant, action class, SI / slide-intent, initiati
 Every new ingest of every BPM updates this source register and must be checked against existing nodes. Do not compare only interviews to interviews. A BPM-4 calculation, BPM-10 CRM slice, BPM-6 market return, or BPM-8 process observation can confirm, weaken, contradict, or reclassify a node first raised by BPM-2 interviews.
 
 ### Cross-BPM Next-Check Responsibility Matrix 0.3.38
+
+**Обязательное уточнение 22.10.2026 — постановка майнинга через пункт 5 «Программы».** Перед первой содержательной работой в субчате прочитать полный раздел «Меж-БПМ программа майнинга: пункт 5 административной шкалы» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md` и применить его, а не только сослаться. Проверить программу, самостоятельный выход текущего БПМ, входы/версии, материальные передачи, совместимость, гейты объёма и готовности, ответственный контур, срок-событие и точный возврат в исходный узел и штаб. Открытый вход блокирует только зависимую часть; разрешённую подготовку продолжать.
+
+Хранить строки в существующей матрице ответственности/доказательств и реестре объёма; карта чатов и субпаспорт дают ссылки, не второй реестр. Передачу закрывать только после проверки ответа и дельты исходного узла/программы либо обоснованного отсутствия изменения. Повторно использованный источник не становится независимым подтверждением; противоречащий ответ не терять. Повторять гейт при значимой дельте и перед закрытием БПМ/майнинга. Пункт 5 не равен операции `BPP.05.INIT`; новые задачи, невключённые БПМ, внешние записи и переписка не разрешаются этим порядком. Граница К1/К3 и исключения New Delivery сохраняются.
 
 A `next-check` is not just a free-text evidence note. When a problem node, claim, SI, storyboard line, BPV route, or scope gap names or logically implies another BPM as the right verification layer, Rail must materialize a cross-BPM responsibility row.
 
@@ -2586,3 +2603,7 @@ Default output is drift + repair plan. Do not change a project rail, status, own
 ## Global Structural Artifact Contract
 
 Rail inherits the cross-cutting contract in `~/.codex/AGENTS.md` for every Problem Map, issue/hypothesis tree, Evidence Separation Ledger, Evidence trace, source-to-node matrix, Mermaid analytical visual, Storyline-Storyboard, metric tree, and dimension architecture. Existing Rail exact schemas remain stricter and win where they add fields. Frappe/Quartz are nonblocking mirrors; the applicable BPP/BPA file and physical project evidence govern the row. A new ingest must land as a visible delta before any full map/storyline rewrite, and methodology claims must never fill a missing client source.
+
+## Проверенная работа с чатами Codex — 21.10.2026
+
+При инвентаризации штатным `list_threads` параметр `limit` не должен превышать 50: значение 60 возвращает ошибку валидации, а не список чатов. Ограничивать вывод текущим projectId и совпадающими ID; не выводить полный ответ в проектный контекст. После `create_thread` перечитывать фактические ID, название и projectId через `list_threads`: длинное название может быть нормализовано с многоточием. При необходимости задать короткое понятное название штатным `set_thread_title` и проверить его повторно. В карте хранить фактическое название отдельно от развёрнутого назначения. Завершение стартового чтения проверять `wait_threads`, не объявлять чат готовым только по факту создания.

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-22T10:21:55Z",
+  "generated_at": "2026-10-23T04:45:58Z",
   "upstream_skill_count": 93,
   "repository_skill_count": 97,
   "legacy_skill_count": 13,
@@ -150,8 +150,8 @@
       "path": "skills/admin/SKILL.md",
       "drive_id": "1rocY2vQsqfneBygJy2EC6NCU-FSN0VrP",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-14T15:15:17.000Z",
-      "drive_md5": "a175ebe26d342c083e8cc4591d424829"
+      "modified_time": "2026-10-22T17:11:50.085Z",
+      "drive_md5": "fed26d183448370d9634e3eefc148d7b"
     },
     {
       "path": "skills/admin/agents/openai.yaml",
@@ -199,8 +199,8 @@
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
       "drive_id": "1EGUNQ4g8-ykLmiH05zZA-UgrY7i0f69I",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-19T11:40:20.483Z",
-      "drive_md5": "055890a6a3a4670c8be6ef7c7f73cfb6"
+      "modified_time": "2026-10-22T17:11:50.156Z",
+      "drive_md5": "b59eb294bdc869fe8569042ee96ce172"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
@@ -456,10 +456,10 @@
     },
     {
       "path": "skills/clickup-mcp-router/SKILL.md",
-      "drive_id": "1TVbqc7TwG4PsN9Vqwc1MXJkmQvEJ8aAA",
+      "drive_id": "1nqqOL7zxuNoElmdQyd4lOhROBGBuDwnK",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-19T07:37:13.692Z",
-      "drive_md5": "76a7d4d27850ccc04e4c615102249b1e"
+      "modified_time": "2026-10-22T12:34:30.314Z",
+      "drive_md5": "6637a65b497e729857765a7781198868"
     },
     {
       "path": "skills/clickup-mcp-router/agents/openai.yaml",
@@ -2640,10 +2640,10 @@
     },
     {
       "path": "skills/rail/SKILL.md",
-      "drive_id": "1z4cPPIyFQuYGqpAa3jmavGYSCSzmEn2A",
+      "drive_id": "1D777aMOvpPwK5IFycpieDspxR2CEeM_2",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-14T15:18:54.000Z",
-      "drive_md5": "bf85eea405b080eda6839c78ca681f89"
+      "modified_time": "2026-10-22T17:11:50.013Z",
+      "drive_md5": "67519f10d17a43566d615b069499a808"
     },
     {
       "path": "skills/research-agent/SKILL.md",
@@ -2912,8 +2912,8 @@
       "files": [
         {
           "path": "skills/admin/SKILL.md",
-          "sha256": "49ad41f0058cc54f710ec796a73db41800e4b82be09741db2aeeb859945339c5",
-          "size": 71782
+          "sha256": "87781ded5fd94b0953d13215909cd48c2c41214931e16df19ea6ec6883341553",
+          "size": 75975
         },
         {
           "path": "skills/admin/agents/openai.yaml",
@@ -3041,8 +3041,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "1f49be6d4f3b25f2e2c5877bb8317ebceda0ef5cb05c3272d797bd5134755b60",
-          "size": 70418
+          "sha256": "0083c48d7ff5d44d1b253d13a0821e214850eab5dec29224747d863e6b37daa7",
+          "size": 78110
         }
       ]
     },
@@ -3486,8 +3486,8 @@
       "files": [
         {
           "path": "skills/clickup-mcp-router/SKILL.md",
-          "sha256": "467c0d23f3972ffbcf3ada9d8dd664b5ef1b5c1fe06f4ef99e1ab957451f0145",
-          "size": 55886
+          "sha256": "ee2188ede6ca2332796fe918bce4cf8cb700278c1f0463973ee8f6990f645c58",
+          "size": 59382
         },
         {
           "path": "skills/clickup-mcp-router/agents/openai.yaml",
@@ -5452,8 +5452,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "eab3568402f47cc63e7d8fc175bbf12be05f96a88b2c4dc5ce90275185f79128",
-          "size": 246717
+          "sha256": "9680d4f58a71fe9d095f1ebbdbcb91dc1efef7173bec1d9aa642e76f92fac7fe",
+          "size": 252070
         }
       ]
     },
@@ -5850,12 +5850,5 @@
         "missing frontmatter description"
       ]
     }
-  ],
-  "verification": {
-    "method": "complete paginated Drive inventory and file MD5/SHA256 verification",
-    "drive_files_including_service_containers": 474,
-    "drive_folders": 201,
-    "source_mutated": false,
-    "scope": "complete source snapshot; publication verified separately"
-  }
+  ]
 }

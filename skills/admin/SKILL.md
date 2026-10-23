@@ -2,10 +2,23 @@
 name: admin
 description: Use when Ilya asks to run, design, test, apply, fix, normalize, or check the admin skill / Admin Rail QA / Admin Rail Controller for Paper Planes 4-ка projects, especially before PRE, INIT, PLAN, EXEC, weekly triage, post-meeting, portfolio checker, or next-gate decisions.
 metadata:
-  version: "0.1.8"
+  version: "0.1.9"
   status: active
   line: BPP / administrative rail / 4ka project control
   owner: Ilya
+  contribution_trace:
+    - дата: "22.10.2026"
+      автор: "Илья Балахнин — постановка и требование стандарта"
+      участники: ["Codex — разбор проектной трассировки и формализация"]
+      артефакт: "<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md#Меж-БПМ программа майнинга: пункт 5 административной шкалы"
+      проект: "De Factum — Стратегия check-up-направления; только методический референс"
+      фабрика: "04-производство / майнинг; нормативный владелец 05-качество-БП"
+      тип_изменения: "Уточнение пункта 5 шкалы, постановки субчатам и возврата меж-БПМ проверок"
+      повторное_использование: "Включённые БПМ Old Delivery; New Delivery только после проверки проектной применимости"
+      проверка_качества: "YAML, ссылки, базовый валидатор и 9 статических проверок; живой прогон не выполнен"
+      эффект: "Не измерен; запись стандарта не доказывает его исполнения"
+      режим: "Внутренний"
+      финансовая_оговорка: "Финансовые последствия не установлены; запись не создаёт финансовых прав"
   supports_bpm:
     primary: [BPP, Admin]
     required_secondary: [BPM-1, BPM-2, BPM-4, BPM-8, BPM-9, BPM-10, BPM-11]
@@ -576,6 +589,10 @@ Administrative scale has 9 components:
 
 ### Substantive Transformation Trace: `5. Программы -> 6. Задачи`
 
+**Обязательный гейт пункта 5 для майнинга — 22.10.2026.** До постановки в тематический субчат прочитать и применить полный раздел «Меж-БПМ программа майнинга: пункт 5 административной шкалы» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md`. Админ проверяет, что С3 связал решение, самостоятельные выходы включённых БПМ, входящие/исходящие проверки, совместимость, ответственные контуры, срок-событие, гейты и адреса возврата в исходный узел/штаб. Перечень БПМ без механизма взаимодополнения недостаточен. Отсутствующие входы явно ограничивают зависимую работу, но не разрешённую подготовку.
+
+Использовать существующую шкалу, матрицу ответственности/доказательств, реестр объёма и ссылки карты чатов/субпаспортов; новые параллельные реестры не создавать. Проверка применяется также при значимой дельте и перед закрытием БПМ. Проверенный возврат не равен клиентской приёмке; передача не создаёт задачу компонента 6. В New Delivery сначала проверять проектную применимость, не навязывать Old Delivery. Компонент 5 не тождествен операции `BPP.05.INIT`.
+
 Whenever an ingest materially changes the project problem structure, ПЦВЗ, causal mechanism, BPM-SI / САИ, slide-intent, BPV route, or a fundamental hypothesis status, update the existing administrative scale and its `Журнал сущностных трансформаций`.
 
 A new journal row is required when the ingest creates, splits, merges, contradicts, deprecates, or materially reframes a problem node; changes a ПЦВЗ goal, management question, causal link, or administrative consequence; creates, removes, reroutes, or materially reframes an SI / САИ / slide-intent / BPV route; or changes a fundamental hypothesis in a way that affects a program, task, gate, or client decision.
@@ -637,6 +654,8 @@ When creating or updating an administrative scale, use this structure:
 ### Планы
 
 ### Программы
+
+Решение и исходный узел → вклад включённых БПМ → входы и передачи → совместимость и гейты → ответственный контур / срок-событие → возврат в исходный узел и штаб. Детали — ссылками на существующие матрицы, не новым реестром.
 
 ### Журнал сущностных трансформаций
 
