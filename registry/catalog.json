@@ -1739,6 +1739,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "vasteko-component-proposal",
+    "type": "Управление проектами",
+    "description": "Скилл помогает выполнить задачу «vasteko component proposal» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/vasteko-component-proposal",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-vasteko-component-proposal",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "yougile",
     "slug": "yougile",
     "type": "Управление проектами",

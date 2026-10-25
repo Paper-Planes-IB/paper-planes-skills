@@ -2,7 +2,7 @@
 name: presentation-qa
 description: Use when reviewing strategic presentations, slide decks, section-slide drafts, storyboards, or client-facing deck iterations for source fidelity, storyline integrity, MECE structure, claim calibration, client readiness, regression across versions, and slide-level QA. Especially useful for Paper Planes strategy decks, BPM/4th department projects, consulting presentations, and cases where facts must not be lost while simplifying the narrative.
 metadata:
-  version: "0.1.9"
+  version: "0.1.11"
   status: draft
   line: strategic-presentation-quality
   owner: Ilya
@@ -205,6 +205,8 @@ Do not substitute your own strategy for project logic. If another structure look
 
 ## Reviewability Gate
 
+**DM.06 и допуск сборки — 23.10.2026:** для проектного выпуска проверять один основной Markdown-мастер DM.06, его связь с DP03/DP04 и DM.03/DM.04, адрес/версию вердикта запуска pp-slidument и соответствие фактического выпуска этой версии. При ограниченной сборке проверять разрешённую область, заблокированные выводы и открытые условия; раннее поручение на черновик не заменяет допуск выпуска. Нет квитанции в мастере — сначала проверить существующую запись DP01/DM.03, не требовать её дубля. Изменившееся основание переоткрывает зависимый допуск; один факт наличия DM.06 или PDF не означает готовности. Возврат — тот же DM.06 и соответствующий исходный документ. Полный контракт: «Запуск DM.06 после допуска BPM и связь групп скиллов — принято 23.10.2026» в архитектуре проектных документов и [pp-slidument](../pp-slidument/SKILL.md).
+
 Before scoring, return a short reviewability gate.
 
 | Check | pass / fail / weak | Comment |
@@ -400,7 +402,7 @@ For every substantive slide, audit `Situation -> Complication -> Answer` as a re
 
 For HTML/PP Pages artifacts, score the viewing shell separately from slide content. Require discrete 16:9 slide screens, a complete collapsible thumbnail navigator, visible active state, reliable navigation, focused slide viewing and clean separation between shell controls and exportable slide content. Flag `pp_pages_shell_missing`, `pp_slide_navigator_incomplete` or `pp_shell_slide_layer_mixed`. Audit color as information architecture: every recurring color needs a stable named semantic role; decorative or shifting multi-color coding is `pp_color_semantics_undefined`.
 
-Treat the production Markdown deck specification as the authoritative pre-render artifact. Before client-ready HTML/PPTX, verify deck-level objective/SCQA/SOSTAC sequence and slide-level SOSTAC role, structural class, SI/GS/library route, SCA, evidence, exhibit and assembly instructions. Compare visible render copy and claims to MD. Use `production_md_deck_spec_missing`, `production_md_not_source_of_truth`, `slide_dual_classification_missing`, `slide_library_address_missing` or `slide_spec_incomplete` when the contract fails.
+Treat the production Markdown deck specification as the authoritative pre-render artifact. Before client-ready HTML/PPTX, verify deck-level objective/SCQA/SOSTAC sequence and slide-level SOSTAC role, structural class, SI/GS/library route, полную постраничную SCQA с явным вопросом, evidence, exhibit and assembly instructions. Compare visible render copy and claims to MD. Use `production_md_deck_spec_missing`, `production_md_not_source_of_truth`, `slide_dual_classification_missing`, `slide_library_address_missing` or `slide_spec_incomplete` when the contract fails.
 
 Treat SOSTAC as a multi-value information-role axis: do not force a slide containing several roles into one label. Apply the canonical structural classes `technical / normative / reference / consulting / encyclopedic`. A consulting slide must document why normative/GS slides cannot prove the Question; SI cannot directly generate it. Promotion into GS/normative requires successful review/reuse evidence and a new SI.
 
@@ -570,6 +572,17 @@ Return disputed items as:
 | Claim | Status | Source / missing source | Risk | Fix |
 |---|---|---|---|---|
 
+### 1.1. Проверка заголовка-вывода
+
+Применять норму DM.06 «Заголовки аналитических страниц: вывод вместо темы — уточнение 23.10.2026» из действующей архитектуры проектов. Для каждой содержательной аналитической страницы проверить:
+- заголовок — законченное проверяемое суждение, а не тема или название проведённой работы;
+- данные страницы и физический источник с локатором подтверждают именно этот заголовок; для доли установлены числитель, знаменатель, группа и период;
+- причинность и сравнение проверены отдельно: ответы респондентов не становятся причинным эффектом, непроверенная цена не становится «а не цена»;
+- качественный вывод допустим без цифры; гипотеза, предложение и ограничение явно сохраняют свой статус; существенный предел не спрятан в сноске;
+- заголовок передаёт вывод без основного текста, а заголовки подряд складываются в аргументацию;
+- исключение обосновано явно служебной ролью обложки, разделителя, навигации или списка источников, а не попыткой скрыть аналитическую страницу.
+Вердикт «не пройдено» при заголовке-теме или превышении доказанности; показать точную формулировку, основание и исправление, перепроверить страницу до выпуска. Учебный пример с 70% не является клиентским фактом. Регрессии E57–E60: [общий набор](../mece-prezy/evals/scenarios.json).
+
 ### 2. Storyline Integrity Test
 
 Check:
@@ -585,6 +598,17 @@ Return:
 
 | Break | Severity | Why it matters | Fix |
 |---|---|---|---|
+
+### 2.0. Полная SCQA каждой содержательной страницы
+
+Проверять по разделу DM.06 «SCQA — обязательная структура каждого содержательного слайда» действующей архитектуры проектов и pp-slidument. SCQA вступления/первых пяти слайдов не заменяет постраничную проверку. На каждой содержательной странице, включая аналитическое приложение, установить:
+- S: проверенные факты/контекст, физические источники и локаторы;
+- C: основанное на S осложнение, изменение, противоречие, риск или развилка; проблема не выдумана ради шаблона;
+- Q: точный управленческий вопрос, следующий из C, и место явного показа на странице; заметки или подразумеваемый вопрос не засчитываются;
+- A: прямой ответ на Q с корректным статусом, пределом и субъектом действия; заголовок выражает A, визуал и источники его обосновывают;
+- видимую связку S → C → Q → A без устного объяснения. Четыре одинаковые колонки не обязательны; четыре подписи без связи не проходят.
+
+В существующей QA-квитанции сохранить: «страница → S → C → явный Q и его место → A → проверка переходов/источников → версия рендера → вердикт и доработка». Проверка спецификации до рендера не означает, что видимый слайд проверен. Пропуск или разрыв — «не пройдено» до исправления страницы. «Неприменимо» с причиной допустимо для явно служебной обложки, разделителя, навигации или списка источников; аналитическая страница приложения/протокола исключением не является. Исторический SCA_not_applicable означает «структура неприменима» и требует проверки причины. Регрессии E61–E64: [общий набор](../mece-prezy/evals/scenarios.json).
 
 ### 2.1. Обязательная проверка нового управленческого вывода из разных БПМ
 
@@ -1350,3 +1374,8 @@ Presentation QA must apply the global contract in `~/.codex/AGENTS.md` to every 
 Разделять client_footer и internal_source_trace в производственной модели. После исправления заново собрать все затронутые форматы; PPTX-заметки не переносить автоматически из production source. Старый QA receipt аннулируется. Проверка должна обнаруживать загрязнённую исходную версию и давать ноль утечек в финальном извлечённом тексте; запись правила без такого теста не является подтверждением. После sweep проверить неизменность содержательных тезисов, коммерческих условий, публичных ссылок и геометрии; rerender/contact sheet обязательны.
 
 Статусы проверки внутренних архивов («в архиве подтверждено», «в доступных материалах не подтверждено») хранить во внутреннем реестре тезисов. Для клиента формулировать предмет выполненной работы и честную границу кейса; не подменять отсутствие подтверждения внедрения или финансового эффекта обещанием результата.
+
+
+### Первая версия DM.06: трёхколоночный гейт — 24.10.2026
+
+Проверять на фактическом рендере каждого содержательного слайда: три смысловые колонки S / C / A; синтез проверенных фактов в S; C следует из S; явный Q над колонками; заголовок-вывод и A отвечают на Q; ограничения рядом с зависимым выводом. Одна преамбула S/C над отдельным экспонатом этот гейт не проходит. Полная норма — действующая архитектура DM.06, раздел «Первая версия DM.06 — три колонки». Служебные страницы исключены с причиной. Регрессия E66 в существующем mece-prezy/evals/scenarios.json.

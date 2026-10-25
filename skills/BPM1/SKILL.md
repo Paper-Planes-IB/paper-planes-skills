@@ -344,3 +344,9 @@ For post-field analysis:
 ## Structured Analytical Artifact Gate
 
 Survey factor taxonomies, respondent/customer segmentations, issue/hypothesis trees, evidence matrices, metric structures, analytical visuals, and Storyline-Storyboard deltas inherit the global contract in `~/.codex/AGENTS.md`. State respondent universe, base size, unit of analysis, factor/cluster criterion, multi-label boundary, residual, source rights, and whether MECE is truly applicable. Statistical clustering does not automatically prove a client segment or strategic claim; method, calculation, interpretation, and client evidence remain separate.
+
+### Агрегированный PDF Чек-апа: проверка представлений — 23.10.2026
+
+- Сверять детальные экраны, графики и автоматический текст одного экспорта. При расхождении сохранять оба значения с локаторами, не усреднять и не выбирать удобную версию; обозначать предметную неопределённость до проверки выгрузки/формулы. Подпись автоматической категории может расходиться с положением маркера на оси.
+- Базы модулей вести отдельно, не суммировать как уникальных сотрудников; новый файл того же цикла не считать новой волной. Индекс 0–1/0–100 не превращать в долю людей без исходной методики и строк ответов.
+- До восстановления анкеты адресовать показатель точным названием, а не предполагаемым номером вопроса. Различать среднее, частоту, пороговую классификацию и разрыв важности/проявленности. Автоматический совет не является установленным механизмом или принятой программой изменения.

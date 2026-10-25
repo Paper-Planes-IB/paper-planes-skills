@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-23T17:02:25Z",
-  "upstream_skill_count": 93,
-  "repository_skill_count": 97,
+  "generated_at": "2026-10-25T04:02:29Z",
+  "upstream_skill_count": 94,
+  "repository_skill_count": 98,
   "legacy_skill_count": 13,
   "upstream_inventory": [
     {
       "path": "skills/BPM1/SKILL.md",
-      "drive_id": "1iDf-t30TZE_y6MQMuG69obfP7KyaT-lP",
+      "drive_id": "1nYQTrzkHQLljYN6fJ-u9xGqkfEXTWEoz",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-15T20:24:15.196Z",
-      "drive_md5": "819ad5fc697a7457f8c578c803fb580a"
+      "modified_time": "2026-10-23T17:25:02.245Z",
+      "drive_md5": "35ad6c94be87a3f182310455b178e683"
     },
     {
       "path": "skills/BPM1/references/ingest-layer.md",
@@ -148,10 +148,10 @@
     },
     {
       "path": "skills/admin/SKILL.md",
-      "drive_id": "1rocY2vQsqfneBygJy2EC6NCU-FSN0VrP",
+      "drive_id": "1e5M_UCAIsuJ3teH0PSlRMaeXO1cNwmuX",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T11:30:51.512Z",
-      "drive_md5": "a5f066c3b3ca21bd559e65605f591078"
+      "modified_time": "2026-10-23T18:46:29.819Z",
+      "drive_md5": "c8196a2b5f35b526fcc0a766a96a83d7"
     },
     {
       "path": "skills/admin/agents/openai.yaml",
@@ -197,10 +197,10 @@
     },
     {
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-      "drive_id": "1EGUNQ4g8-ykLmiH05zZA-UgrY7i0f69I",
+      "drive_id": "1r32Nu9Gv3Zm1wVFinJseplTaK0cX-41u",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-22T17:11:50.156Z",
-      "drive_md5": "b59eb294bdc869fe8569042ee96ce172"
+      "modified_time": "2026-10-23T18:16:47.080Z",
+      "drive_md5": "cb6c1bdbbf8e4d4fd74b3176c1686449"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
@@ -281,10 +281,10 @@
     },
     {
       "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
-      "drive_id": "13BYYpJTlNYhgW_zkZKLZSGJwN7Yagwql",
+      "drive_id": "1Uq4PzQsqIBhkEJc78HD32Ek_E2gkLrmU",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-22T18:27:18.263Z",
-      "drive_md5": "1a86ab6a7d957f1855c3eb325605a1e2"
+      "modified_time": "2026-10-23T19:07:22.511Z",
+      "drive_md5": "fbb918d3766e1fd1cd17809f14e974c4"
     },
     {
       "path": "skills/bpm4-datalens-dashboard/SKILL.md",
@@ -645,10 +645,10 @@
     },
     {
       "path": "skills/competitor-research/SKILL.md",
-      "drive_id": "13VVihyNYSS6HdqRqikX8JizD2iTQqWY3",
+      "drive_id": "1dQfs__R_ecVvFkmErAeDOMCITyfLGCwe",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-22T19:04:21.706Z",
-      "drive_md5": "f0c6efaecb16701c0c7782de7e5146c3"
+      "modified_time": "2026-10-23T18:46:14.938Z",
+      "drive_md5": "0edf9d63794430aea0f6a3cc15ba4dbe"
     },
     {
       "path": "skills/concept-deep-dive/SKILL.md",
@@ -668,8 +668,8 @@
       "path": "skills/consulting-slides-creator/SKILL.md",
       "drive_id": "1cJyVoUZp1ddfrQw5puhHkXV_1A66m99A",
       "mime_type": "text/markdown",
-      "modified_time": "2026-09-28T17:45:28.449Z",
-      "drive_md5": "fd0179cbe4d4ce0ec6fa70e41171f8c5"
+      "modified_time": "2026-10-23T18:27:13.246Z",
+      "drive_md5": "730b94708e8849546dd0105d1a38b65a"
     },
     {
       "path": "skills/consulting-slides-creator/references/consulting_principles.md",
@@ -834,10 +834,10 @@
     },
     {
       "path": "skills/deepresearch/SKILL.md",
-      "drive_id": "1koOtDmCFxR64vZIg6g5iCTHaqfeIn-IU",
+      "drive_id": "1_UoUB9iloh05kkU93F98rTQXf40PZyig",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-22T17:50:51.268Z",
-      "drive_md5": "e513eb0161e89ddaed5a34d7027eb351"
+      "modified_time": "2026-10-23T17:42:17.495Z",
+      "drive_md5": "3ea9bd4ebda5a98c43962bee6fd5997e"
     },
     {
       "path": "skills/demand-supply-match-intelligence/SKILL.md",
@@ -2010,10 +2010,10 @@
     },
     {
       "path": "skills/lawyer-pp/SKILL.md",
-      "drive_id": "1XRDe5UEMDvapRJQrqbIZIID5LNdMdzt5",
+      "drive_id": "1g-5JI0jeueRAF9MrIjwESkc2OveEQyp4",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-07T20:46:20.000Z",
-      "drive_md5": "0d470685e27762df9db4a73ae17ed14b"
+      "modified_time": "2026-10-23T21:30:28.528Z",
+      "drive_md5": "14c7d903f84a35f27a3a9def736bdfdb"
     },
     {
       "path": "skills/lawyer-pp/agents/openai.yaml",
@@ -2031,10 +2031,10 @@
     },
     {
       "path": "skills/lawyer-pp/references/проверка-рисков.md",
-      "drive_id": "1IDOy8hw1PAwExJtm1Cwd6-5_cQjhm7TJ",
+      "drive_id": "1_wlrkK6tRDjyEWAdzQIvcI1gqzmQKTs0",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-07T22:00:34.000Z",
-      "drive_md5": "0043fa29a5fef36fc93fd4f9488d85b5"
+      "modified_time": "2026-10-23T21:30:28.528Z",
+      "drive_md5": "7ce2cfa763fa9a67092661ef50ac8f4e"
     },
     {
       "path": "skills/lawyer-pp/references/решения.json",
@@ -2276,10 +2276,10 @@
     },
     {
       "path": "skills/mece-prezy/SKILL.md",
-      "drive_id": "1AGdsD8ygKH2tGdxBO4BOlv2LmI3o8jKZ",
+      "drive_id": "12Z1ZndMuXuJctdsuY-wCz75JJ1Pjw8RR",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-16T18:30:27.402Z",
-      "drive_md5": "d05af5a346c3df003c7cd38c080f890f"
+      "modified_time": "2026-10-23T18:46:45.140Z",
+      "drive_md5": "2b1b003893e3e3550e25d7ad19408e78"
     },
     {
       "path": "skills/mece-prezy/agents/openai.yaml",
@@ -2290,10 +2290,10 @@
     },
     {
       "path": "skills/mece-prezy/evals/scenarios.json",
-      "drive_id": "1msBHI7V3XVkklYYkUGCrFB_OBkNrR33F",
+      "drive_id": "1t8o-zRuw0w0VrU18cvt2YgqBaRaYXdk9",
       "mime_type": "application/json",
-      "modified_time": "2026-10-16T13:25:25.704Z",
-      "drive_md5": "47f889ffd1a1425f51e41fdc82e936f5"
+      "modified_time": "2026-10-23T21:47:07.274Z",
+      "drive_md5": "896e2da12fb84e6516b581535b6ddefc"
     },
     {
       "path": "skills/mece-prezy/evals/проверка.md",
@@ -2486,10 +2486,10 @@
     },
     {
       "path": "skills/pp-slidument/SKILL.md",
-      "drive_id": "1Gi2s0gUlsIFRsTCmoharc5ouSryv2u5t",
+      "drive_id": "1ESS1BOcOcfCaiOnzFJ15z3VA7Po4qxXl",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-16T13:26:03.705Z",
-      "drive_md5": "926de8452a163c78c226ad3e041e26be"
+      "modified_time": "2026-10-23T21:47:26.414Z",
+      "drive_md5": "1915cbcfbf45852994dc0f27c3fc46c0"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2514,10 +2514,10 @@
     },
     {
       "path": "skills/pp-slidument/references/deck-content-template.md",
-      "drive_id": "1Easg1ETmg1F3B9_JEpNOLptsFz5sTILv",
+      "drive_id": "1zV-wmeCreiux8KG7m4AKGD69ygpiVK5m",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-16T13:26:38.401Z",
-      "drive_md5": "5eaeac68e6d9d67a014ed052286eff7d"
+      "modified_time": "2026-10-23T21:35:31.721Z",
+      "drive_md5": "fd665a8bfbce9c62e7d867646c34d00b"
     },
     {
       "path": "skills/pp-slidument/references/kit-2026-07-12-README.md",
@@ -2619,10 +2619,10 @@
     },
     {
       "path": "skills/presentation-qa/SKILL.md",
-      "drive_id": "1cMjNOS8WBSmdlPDS-RGYbbAnMJSRQLqj",
+      "drive_id": "1PtIHmeFB5ckayoXZRLOezSE55HRcl0AW",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-16T13:26:38.402Z",
-      "drive_md5": "4150ca6e633f5bac86f7e27ca440bc57"
+      "modified_time": "2026-10-23T21:30:59.853Z",
+      "drive_md5": "b05476e2ff91a5f74f6ed0debc552f32"
     },
     {
       "path": "skills/presentation-qa/agents/openai.yaml",
@@ -2640,10 +2640,10 @@
     },
     {
       "path": "skills/rail/SKILL.md",
-      "drive_id": "1egPF4xcF-I4vfCzeRfuKhc7v2sPxF2Xx",
+      "drive_id": "1Vlk36NHNE8S0WKv0F0UwPPjBwaF25wQT",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T14:08:27.540Z",
-      "drive_md5": "113eae04247692ea055d240d89e59fa5"
+      "modified_time": "2026-10-23T18:27:13.246Z",
+      "drive_md5": "741cbd6f8ef403056549bef706da348c"
     },
     {
       "path": "skills/research-agent/SKILL.md",
@@ -2828,6 +2828,55 @@
       "drive_md5": "f96c2bdcf51378805637078279182c85"
     },
     {
+      "path": "skills/vasteko-component-proposal/SKILL.md",
+      "drive_id": "1g25EF3wHOcK5WAh6-AZMAJtLXEFc1_Eu",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-24T08:49:55.468Z",
+      "drive_md5": "90f05aee21c332bcc2e98a6fed5bc5e0"
+    },
+    {
+      "path": "skills/vasteko-component-proposal/agents/openai.yaml",
+      "drive_id": "1WxcrYdbCjokZ5fFV8h68fYMlnNIVcDV2",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-10-24T08:49:04.169Z",
+      "drive_md5": "95bca28e3700cf514052effc65502d02"
+    },
+    {
+      "path": "skills/vasteko-component-proposal/assets/abcd.png",
+      "drive_id": "1uVVk3RgS8EAMvTZkJmQI_pKW7gXXVtAX",
+      "mime_type": "image/png",
+      "modified_time": "2026-10-24T08:49:14.426Z",
+      "drive_md5": "5810734471127e3e9e280c9bd287de8b"
+    },
+    {
+      "path": "skills/vasteko-component-proposal/references/abcd/method.md",
+      "drive_id": "1k6-XOKTjAMF7EqN-g_NGh3oyhxv1CkwK",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-24T08:49:14.425Z",
+      "drive_md5": "f952ac3a8f259016f4a2bccc10f9e65b"
+    },
+    {
+      "path": "skills/vasteko-component-proposal/references/eval-cases.md",
+      "drive_id": "1ozN-XrH-4BIhIpNqyacBAnPTemRBBCRT",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-24T08:49:55.468Z",
+      "drive_md5": "d22273f6a21e77ea4c7f43a3ef639a9b"
+    },
+    {
+      "path": "skills/vasteko-component-proposal/references/proposal-template.md",
+      "drive_id": "1gLF2oXf01A-I9-wLxn7iR215tpRqcrL6",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-24T08:48:48.112Z",
+      "drive_md5": "80042a0631f0406ea1b2ec7ece8cddd6"
+    },
+    {
+      "path": "skills/vasteko-component-proposal/references/vasteko-context.md",
+      "drive_id": "1HBOoVu5fOQBHNA3rIs9P5Ol_Fb8u8kjV",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-24T08:49:55.468Z",
+      "drive_md5": "90ec293a6ccaa0f7bb07d1e30637aea8"
+    },
+    {
       "path": "skills/vault-brain-scan/SKILL.md",
       "drive_id": "1hcLFxzHKoCsyPGx-4bcZGWrsvU1BWR3b",
       "mime_type": "text/markdown",
@@ -2912,8 +2961,8 @@
       "files": [
         {
           "path": "skills/admin/SKILL.md",
-          "sha256": "56ae212e4c12ac5609679a647daf7172f2aaffeca3599737c29ca69abbac6109",
-          "size": 79739
+          "sha256": "d9d1271e20bf46753ddacdd17ae6cceaf28ea454295d9ab77e850e8d9def1980",
+          "size": 81246
         },
         {
           "path": "skills/admin/agents/openai.yaml",
@@ -3041,8 +3090,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "0083c48d7ff5d44d1b253d13a0821e214850eab5dec29224747d863e6b37daa7",
-          "size": 78110
+          "sha256": "9b66b1efcbac98aa847a019f1b9bde8525a82ecff91ac6aaa32cbd92a7574d21",
+          "size": 85125
         }
       ]
     },
@@ -3053,8 +3102,8 @@
       "files": [
         {
           "path": "skills/BPM1/SKILL.md",
-          "sha256": "5d6d7948fe1140ad4dec5db2f449791a7fcb24a09258f801ec1991b59cf5f554",
-          "size": 21131
+          "sha256": "1fc9c89fc26583a891774e2102c8bb611ed993f432756f34537a68e0b6c881d1",
+          "size": 22735
         },
         {
           "path": "skills/BPM1/references/ingest-layer.md",
@@ -3192,8 +3241,8 @@
       "files": [
         {
           "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
-          "sha256": "98924e33b02c4d2751aabf067dcdad348196388737888286b80dafa1943f3ddc",
-          "size": 138436
+          "sha256": "9df3e2d104a7a0e7e30cec50070819a6ab9af78938d528c70e6dac46b332d9e3",
+          "size": 140513
         }
       ]
     },
@@ -3670,8 +3719,8 @@
       "files": [
         {
           "path": "skills/competitor-research/SKILL.md",
-          "sha256": "8531a517953038748205fd4547a36ab66023fd42ffdb400d99e72e6c4894e099",
-          "size": 170894
+          "sha256": "ab75243254b807da0d12e0415f4344aa02c2c6de1a82f4e0d5daaaffd50f217e",
+          "size": 183673
         }
       ]
     },
@@ -3706,8 +3755,8 @@
       "files": [
         {
           "path": "skills/consulting-slides-creator/SKILL.md",
-          "sha256": "f08f9b5280c078a40988278c74a6ba1b8927820ff27a06cd33509ad4f59421ae",
-          "size": 9247
+          "sha256": "5bccf22f33983625f5c62430737a457ccf199f372846ef62ca66ad43a0152299",
+          "size": 10060
         },
         {
           "path": "skills/consulting-slides-creator/references/consulting_principles.md",
@@ -3846,8 +3895,8 @@
       "files": [
         {
           "path": "skills/deepresearch/SKILL.md",
-          "sha256": "d10b38e6c4a63dad70cf9f904d636a3d4f041e00f7282c7d452f05fa2b5318cd",
-          "size": 120213
+          "sha256": "4e05721b4fab8c49b4ca720e477e4f67cebfcdb8e092af170609541a1aa8eb6d",
+          "size": 122938
         }
       ]
     },
@@ -4777,8 +4826,8 @@
       "files": [
         {
           "path": "skills/lawyer-pp/SKILL.md",
-          "sha256": "a83477660f0c13d9cc4003d3f7926688749fd4e7ae8c6fa0f0f9afef50173f74",
-          "size": 29228
+          "sha256": "28857b458030a979aaeddb1b9d9985bfc60c3b6d691c3f2d2226d8f25e4c276a",
+          "size": 32067
         },
         {
           "path": "skills/lawyer-pp/agents/openai.yaml",
@@ -4792,8 +4841,8 @@
         },
         {
           "path": "skills/lawyer-pp/references/проверка-рисков.md",
-          "sha256": "54a001ccdfc3d87dc18fa6b99e732e5a2ce46c461cdabf34f6df659a22f45a51",
-          "size": 71247
+          "sha256": "52f6445ae669f305c2a70dc86f2de3f683fd6ca05f3eaeef1aab7728198caccb",
+          "size": 81564
         },
         {
           "path": "skills/lawyer-pp/references/решения.json",
@@ -4972,8 +5021,8 @@
       "files": [
         {
           "path": "skills/mece-prezy/SKILL.md",
-          "sha256": "86e5e605867319c52fa55df453ccb865afb6fe2387fc81a203bb1cd456617451",
-          "size": 41332
+          "sha256": "b06d175d878c858321834c3f574ad09a650ef8d6106705998816398ffd9307ee",
+          "size": 44037
         },
         {
           "path": "skills/mece-prezy/agents/openai.yaml",
@@ -4982,8 +5031,8 @@
         },
         {
           "path": "skills/mece-prezy/evals/scenarios.json",
-          "sha256": "f13c70e1d5e9df8a2683b09d23ee5ff48eaf1e60d9f34831f4faf4bd1cd14dda",
-          "size": 70846
+          "sha256": "534dfdfd3c3d7e7770f0c472248f8b190b19acfb054b1d8b3bac5bea7a6ca7bd",
+          "size": 89198
         },
         {
           "path": "skills/mece-prezy/evals/проверка.md",
@@ -5307,8 +5356,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "fa9130ddbae071337589dbf78a2be4264fabcbfe37318bce1a46d8b42a68458c",
-          "size": 144365
+          "sha256": "e4d9fa977e9d35e437d8a0d2306d66407cd7bf71b7e65be7a87a1296acc8a6c8",
+          "size": 164552
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5327,8 +5376,8 @@
         },
         {
           "path": "skills/pp-slidument/references/deck-content-template.md",
-          "sha256": "7a074826261595c8930172598b1be14d1421a6cbfdc36eb5ddcc583a98d96133",
-          "size": 28674
+          "sha256": "26b849553a3024290baa0e76a8397547d4a958308b2ab7eec375ea621aa1366a",
+          "size": 35601
         },
         {
           "path": "skills/pp-slidument/references/kit-2026-07-12-README.md",
@@ -5423,8 +5472,8 @@
       "files": [
         {
           "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "49dcd94a47a36b2db20ddb2ff775d77c6dbaac967f64f1bd0a30f4f5c9de1c6d",
-          "size": 87908
+          "sha256": "e7b6988d76638405e2daa927788534b0360a7b69dbfd14db13c80e8ae7cb6945",
+          "size": 95428
         },
         {
           "path": "skills/presentation-qa/agents/openai.yaml",
@@ -5452,8 +5501,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "8e05af26877d65f972eed1099118d006d2b387e2e67ba1757ad0aa5ac548a9f0",
-          "size": 256190
+          "sha256": "cc0ddb4b53ab347269f91d6d3c00ba8cc9ae24225260af2a9e9b85de8101fb20",
+          "size": 262055
         }
       ]
     },
@@ -5672,6 +5721,48 @@
       ]
     },
     {
+      "name": "vasteko-component-proposal",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/vasteko-component-proposal/SKILL.md",
+          "sha256": "f6b0cc524ec25de7e6a43da64bb337e64aecbe2f357abcd72746575821078468",
+          "size": 28221
+        },
+        {
+          "path": "skills/vasteko-component-proposal/agents/openai.yaml",
+          "sha256": "647e822b43108f1bbdbdd700ce85a0ef2217f9af51ea6418296ec51aba48cc59",
+          "size": 478
+        },
+        {
+          "path": "skills/vasteko-component-proposal/assets/abcd.png",
+          "sha256": "d45c25df3b076591bba3d1c3aacf8ce4a6b3cd73b91bdc288a14761f41839f1c",
+          "size": 385776
+        },
+        {
+          "path": "skills/vasteko-component-proposal/references/abcd/method.md",
+          "sha256": "54161879da8ed43fd51adc45233b273a47601f7be363a0c10b650b7d28c7b66b",
+          "size": 10003
+        },
+        {
+          "path": "skills/vasteko-component-proposal/references/eval-cases.md",
+          "sha256": "5dc56694dda64791dccfb27f3040d64833d32386dae81ef3e7874ef4729fca97",
+          "size": 11165
+        },
+        {
+          "path": "skills/vasteko-component-proposal/references/proposal-template.md",
+          "sha256": "26ccda42de8be4e5dafd34c371aac0afdfa62de4058f4dbbf5c8de95b11e71a2",
+          "size": 11768
+        },
+        {
+          "path": "skills/vasteko-component-proposal/references/vasteko-context.md",
+          "sha256": "663f9eb37dbd62e772c7f609a15d71d60f57a5a080a99e071b8bd0ba398d30a7",
+          "size": 10522
+        }
+      ]
+    },
+    {
       "name": "vault-brain-scan",
       "lifecycle": "active",
       "source": "ilya-drive",
@@ -5850,12 +5941,5 @@
         "missing frontmatter description"
       ]
     }
-  ],
-  "verification": {
-    "method": "complete paginated Drive inventory and file MD5/SHA256 verification",
-    "drive_files_including_service_containers": 474,
-    "drive_folders": 208,
-    "source_mutated": false,
-    "scope": "complete source snapshot; publication verified separately"
-  }
+  ]
 }

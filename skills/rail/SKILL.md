@@ -14,7 +14,7 @@ description: >-
   fix-rules / rail drift-audit family; use fix-rules instead for local
   chat-rule-drift.
 metadata:
-  version: "0.3.54"
+  version: "0.3.56"
   status: active
   line: project-rail-drift / 4ka delivery governance
   owner: Ilya
@@ -41,6 +41,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-10-23: INIT включает выявление логики через DP/DM: переиспользование ответов, адресные вопросы, восемь компонентов в DP01, три именованных механизма; приёмка и внешние права не меняются."
       - "2026-08-29: Added fork/recovery context quarantine and bounded retrieval discipline: Rail may use only a compact recovery manifest plus physical project sources, must not inherit raw chat/tool-output as evidence, and must narrow broad searches before reading the corpus."
       - "2026-08-29: Added the first BPM-scope hypothesis step after contract / primary owner entry: after the договор / application / initial owner-source is studied, Rail must create a preliminary BPM scope hypothesis before taking more sources, then refine it through key BPM-2 organizational owner/interview evidence; an owner meeting may be registered as BPM-2 when it exposes organizational mechanism, decision gaps, roles, processes, and internal constraints."
       - "2026-08-29: Split PRE administrative bootstrap from INIT verification in 0.3.49: nano-step 4 always creates the PRE card, minimal admin README, factual chat map, artifact register and external-container attribution; BPP.01/BPP.05.INIT enrich and accept the same files without duplicate creation."
@@ -132,6 +133,14 @@ metadata:
 
 До предметного прохода подтвердить Old / New Delivery, технологический / организационный класс, класс источника и права. Подробные исходные нормы бывшего AGENTS сохранены в существующем `BPM — Майнинг/OPM/README.md`; адресный указатель из корня PP: `python3 scripts/model_router.py --instruction-contract "Old Delivery"`. Открыть применимые фрагменты по `--instruction-id`, дочитывая все окна. Указатель или версия skill не доказывают чтение. Этот слой уточняет обязательные гейты и исключения, но не требует запускать все режимы Rail. New Delivery не наследует Old Delivery; BPM-3 не получает Cynefin / Estuarine даже при общем opt-in; технологическая задача не получает организационные слои. Полный сквозной аналитический стандарт остаётся в `~/.codex/AGENTS.md`. Перенос адресов не меняет метод, права создания evidence-набора, меж-BPM ответственность и границу К1 / К3. Повторный учёт одного физического источника запрещён. Отсутствующий контракт не подменять догадкой.
 
+## INIT — выявление логики ответа через DP и DM — 23.10.2026
+
+Прямое поручение Ильи. При входе INIT, продолжении операции, существенном новом ответе и перед StageGate прочитать и применить полный раздел «Rail INIT — выявление логики ответа через DP и DM — 23.10.2026» в <PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md и стандарты затронутых DP/DM в _Архитектура-проектов.md. Это обязательный этап Rail без отдельного вызова опросника.
+
+Порядок: основной документ/источник → имеющийся ответ → существенный пробел → обычно 1–3 связанных вопроса → проверка → адресная дельта DP/DM → исходная строка DP01. Не спрашивать повторно установленное, не выдумывать факты/акцепты. Потребность/достаточность — DM.02; материал — DM.01; анализ/QA/дельта — DM.03; программа/приёмка — DP01. Остальные DP/DM получают собственную часть изменения. Десять типов не требуют десяти отдельных файлов.
+
+Явно называть применимые механизмы: **Меж-БПМ обмен**, **BPM ↔ SI ↔ storyline**, **Сквозная трассировка через озеро**. Различать гейты операций, восемь компонентов FullKit и один StageGate с четырьмя общими критериями. Готовый DM.06, полный рынок и принятые инициативы не требуются автоматически. В inspect — чтение и вопросы; запись по имеющимся правам. Нормативное уточнение из вспомогательного чата не запускает рабочий Rail проекта, внешнюю запись или автоматизацию.
+
 ## Постоянный синтез DP03 / DP04 — 23.10.2026
 
 При пополнении аналитического корпуса прочитать полный раздел «Постоянный синтез и пополнение DP03 / DP04 — стандарт 23.10.2026» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/_Архитектура-проектов.md`. Он уточняет прежние упоминания совмещённого файла и действует в пределах scope/прав текущей задачи.
@@ -194,6 +203,8 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 
 Партнёрски безопасное уточнение существующего правила SI от 14.10.2026 для читающего этот upstream-раздел `meltpot-natalia-3h-update-pack`: до сборки/передачи слайдов подтвердить по действующему каталогу код, точное каноническое название, смысл и допустимость входов; проектный заголовок/ID хранить отдельно, при коллизии не выбирать шаблон по ошибочному номеру. Перед передачей повторить проверку идентичности и визуального референса. Это профилактика ошибки атрибуции уже действующего контракта, не новый порядок delivery. Ни клиентские факты, ни закрытый канон/содержимое SI-строк в downstream не передаются; Frappe остаётся зеркалом. Расписание/статус cron и внешние отправки этой правкой не меняются.
 
+**Партнёрски безопасная дельта 23.10.2026:** Rail на INIT переиспользует установленные ответы, уточняет недостающую логику и связывает результат с документами и единой таблицей восьми компонентов. Заполненный документ не равен проверенному основанию или принятому гейту. Обновлён существующий upstream-фрагмент для последующего разрешённого чтения; клиентские сведения/закрытый канон не передаются, расписание и внешняя публикация не меняются.
+
 ## Non-Negotiables
 
 - Scope is 4ka projects only by default: `Vault/10-отделы/04-производство/Проекты/<project>`.
@@ -230,6 +241,8 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 ## Default Operation
 
 Use `REVIEW -> PROCESS -> MAKE`.
+
+**При текущем INIT:** до общего анализа расхождений выполнить раздел «INIT — выявление логики ответа через DP и DM — 23.10.2026». Начинать с существующих ответов и текущей операции; вопросы не заменяют источники.
 
 Default mode is `inspect` unless Ilya asks to reconstruct, repair, or update.
 
@@ -292,7 +305,7 @@ Every new ingest of every BPM updates this source register and must be checked a
 
 **Обязательное уточнение 22.10.2026 — постановка майнинга через пункт 5 «Программы».** Перед первой содержательной работой в субчате прочитать полный раздел «Меж-БПМ программа майнинга: пункт 5 административной шкалы» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md` и применить его, а не только сослаться. Проверить программу, самостоятельный выход текущего БПМ, входы/версии, материальные передачи, совместимость, гейты объёма и готовности, ответственный контур, срок-событие и точный возврат в исходный узел и штаб. Открытый вход блокирует только зависимую часть; разрешённую подготовку продолжать.
 
-Хранить строки в существующей матрице ответственности/доказательств и реестре объёма; карта чатов и субпаспорт дают ссылки, не второй реестр. Передачу закрывать только после проверки ответа и дельты исходного узла/программы либо обоснованного отсутствия изменения. Повторно использованный источник не становится независимым подтверждением; противоречащий ответ не терять. Повторять гейт при значимой дельте и перед закрытием БПМ/майнинга. Пункт 5 не равен операции `BPP.05.INIT`; новые задачи, невключённые БПМ, внешние записи и переписка не разрешаются этим порядком. Граница К1/К3 и исключения New Delivery сохраняются.
+В принятой архитектуре DP/DM потребность/инструмент/получение/достаточность хранить в DM.02, основания/QA/дельту в DM.03, программу/объём в DP01; матрица, карта чатов и приложения дают ссылки, не второй оперативный реестр. Передачу закрывать только после проверки ответа и дельты исходного узла/программы либо обоснованного отсутствия изменения. Повторно использованный источник не становится независимым подтверждением; противоречащий ответ не терять. Повторять гейт при значимой дельте и перед закрытием БПМ/майнинга. Пункт 5 не равен операции `BPP.05.INIT`; новые задачи, невключённые БПМ, внешние записи и переписка не разрешаются этим порядком. Граница К1/К3 и исключения New Delivery сохраняются.
 
 A `next-check` is not just a free-text evidence note. When a problem node, claim, SI, storyboard line, BPV route, or scope gap names or logically implies another BPM as the right verification layer, Rail must materialize a cross-BPM responsibility row.
 
@@ -600,6 +613,8 @@ These are process artifacts. Missing items are reported as `artifact-gap` or `pr
 Team clarification is mandatory in every Rail pass. If the project team is absent, partial, or stale, report it even when all other artifacts look fine.
 
 ## Assembly Mode / BPA Pass
+
+**Переход к DM.06 — принято 23.10.2026:** прочитать раздел «Запуск DM.06 после допуска BPM и связь групп скиллов — принято 23.10.2026» в действующей _Архитектура-проектов.md. Для презентационного результата передать проверенные сведения о scope, итогах/версиях BPM, пригодности и открытых гейтах в pp-slidument. Он фиксирует вердикт полной/ограниченной сборки и создаёт/продолжает один DM.06. Проверку до мастера вести в существующих DP01/DM.03; мастер хранит обратную ссылку. При недостаточности итоговый мастер автоматически не запускается; прямое поручение на ранний черновик не равно допуску выпуска. Содержательная работа над DP03/DP04 на INIT или только в чате не запускает DM.06. Имена механизмов и возврат DM.02/DM.03/DP01 сохраняются; полный контракт не сводится к наличию файла.
 
 When the current project is obviously in assembly, Rail must not stay at generic project-status inspection. Assembly means the work is currently moving a client-facing or internal decision deliverable forward: presentation, deck, slidument, storyboard, storyline, slide brief, appendix, defense package, client meeting deck, or pre-defense materials.
 
@@ -2497,6 +2512,8 @@ Required BPM-12 output separation:
 If a BPM-12 pass evaluates AI/RAG feasibility without this attribution and separation, mark `bpm12_methodology_attribution_gap` and do not treat the pass as sufficient for corpus, prototype, pilot, vendor, or project-wide status decisions. Activation of BPM-12 never authorizes an RAG pilot by itself.
 
 ## Output Format
+
+**Для INIT обязательно:** операция/гейт → проверенные компоненты DP01 → восстановленный ответ/источник → пробел/вопрос → имя механизма → изменение/адрес DP/DM → возврат → остаток/принимающая роль. Общая оценка готовности ниже не заменяет этот цикл.
 
 Keep output compact unless Ilya asks for detail.
 
