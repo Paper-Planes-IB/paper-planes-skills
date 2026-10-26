@@ -1,32 +1,28 @@
 ---
 name: "consulting-slides-creator"
-description: "Use when designing dense Paper Planes consulting sliduments and choosing slide structures: SCQA, action titles, MECE layouts, tables, charts, matrices, roadmaps, RASCI, stage-gates, and QA rules. In this installed kit the generator code itself is not bundled; use the references and create/render slides with the available PPTX or HTML pipeline."
+description: "Use when designing dense Paper Planes consulting sliduments and choosing slide structures: SCQA, action titles, MECE layouts, tables, charts, matrices, roadmaps, RASCI, stage-gates, and QA rules. This skill designs composition and hands production to pp-slidument in the user's requested format; it does not create an intermediate PPTX for PDF."
+metadata:
+  version: "0.1.1"
+  contribution_trace:
+    originator: "Илья Балахнин"
+    increment: "2026-10-25; requested-format precedence and no intermediate PPTX for PDF; E77-E83; universal method only; internal; effect unmeasured; no financial effect claimed"
 ---
 
 # Consulting Slides Creator (Paper Planes)
 
 ## Mandatory Paper Planes handoff
 
-**Связь с DM.06 — 23.10.2026:** при проектной сборке pp-slidument сначала проверяет достаточность BPM и открывает один мастер DM.06 для полного/ограниченного объёма. Этот скилл получает версию мастера, адрес допуска и область конструкции; передаёт результат обратно в тот же DM.06. Локальный макет не разрешает итоговую сборку и не заменяет DP03/DP04. До допуска ранний мастер возможен только по прямому поручению с ограничениями. См. [владельца запуска](../pp-slidument/SKILL.md).
+**Связь с DM.06 — 23.10.2026:** если в проекте уже есть разрешённый мастер DM.06 или пользователь прямо запросил этот формат, `pp-slidument` проверяет достаточность BPM и работает в его границах. Для текущей PDF-деки не создавать отдельный Slides-мастер: конструкцию передавать в существующий согласованный исходник и выпускать PDF. Локальный макет не разрешает итоговую сборку и не заменяет DP03/DP04. См. [владельца выпуска](../pp-slidument/SKILL.md).
 
-Для клиентской презентации Paper Planes этот скилл передаёт сборку в `pp-slidument`: PP Presentation Kit с обновлением 21.07.2026, производственный Markdown, типология, визуальный стандарт, два критика и правила экспорта. Для редактируемого PowerPoint применяется `pp-slidument/references/native-pptx-production-guide.md` и локальные уточнения режима. Макеты этого скилла — варианты конструкции; комплект не содержит готового `src.generator`. При отсутствии передачи в `pp-slidument` материал не готов к клиентскому выпуску. След принятия пакета и проверки — `contribution_trace` в `pp-slidument/SKILL.md`, 26.09.2026.
+Для клиентской презентации Paper Planes этот скилл передаёт сборку в `pp-slidument`: PP Presentation Kit с обновлением 21.07.2026, производственный Markdown, типология, визуальный стандарт, два критика и правила экспорта. Если пользователь явно запросил редактируемый PowerPoint, применяются `pp-slidument/references/native-pptx-production-guide.md` и локальные уточнения режима. Макеты этого скилла — варианты конструкции; комплект не содержит готового `src.generator`. При отсутствии передачи в `pp-slidument` материал не готов к клиентскому выпуску. След принятия пакета и проверки — `contribution_trace` в `pp-slidument/SKILL.md`, 26.09.2026.
 
 Для каждого handoff фиксируй в ответе/существующей спецификации квитанцию: `parent_run_id | child_skill=pp-slidument | slide_ids_or_scope | input_spec_version | handed_off_artifact | handoff_status | next_gate`. Статус `handed_off` допустим только при существующем production MD или ином принятом входном артефакте с версией/путём. Этот скилл отвечает за обоснование конструкции, но не заявляет запуск текстовой редакции, критиков, PDF-экспорта или итогового QA: их квитанции возвращает `pp-slidument`.
 
-Генерация консалтинговых слайдументов в PPTX. Единый генератор, 38 типов слайдов.
+Скилл отвечает за выбор конструкции и визуальной логики. Выпуск передаёт в `pp-slidument`, сохраняя прямо выбранный Ильёй формат. Для текущего Paper Planes рабочего маршрута PDF не создавать промежуточный PPTX; редактируемый PPTX допустим только по прямому запросу.
 
-## Генератор
+## Производственный маршрут
 
-```bash
-cd ~/.codex/skills/consulting-slides-creator && python3 -m src.generator \
-  --config /path/to/config.json \
-  --output /path/to/slide.pptx
-```
-
-В этом архиве установлен справочный слой скилла: `SKILL.md` и `references/`.
-Если модуля `src.generator` нет в папке скилла, не пытайся запускать эту команду как готовый генератор; используй правила раскладки, алгоритм выбора типа слайда и QA-чеклист как методический слой для сборки через доступный HTML/PPTX-пайплайн.
-
-Форматы входа: одиночный JSON `{"type": "scqa", ...}`, массив `[{...}, {...}]`, обёртка `{"slides": [...]}`, несколько файлов через CLI.
+В установленном пакете есть методические инструкции и ссылки на примеры; рабочего `src.generator` в нём нет. Не запускай старую команду генерации и не создавай PPTX ради промежуточного PDF. Передай композицию в `pp-slidument`; он собирает и проверяет формат, запрошенный пользователем. Регрессионный сценарий E77 проверяет этот маршрут.
 
 ## Каталог типов
 
@@ -100,9 +96,9 @@ cd ~/.codex/skills/consulting-slides-creator && uv pip install -r requirements.t
 
 1. **Анализ контента** → определить тип слайда (Load: `references/slide_type_algorithm.md`)
 2. **Составить JSON** → по примерам (Load: `references/json_examples_analytical.md` или `references/json_examples_structural.md`)
-3. **Генерация** → `python3 -m src.generator --config config.json --output slide.pptx`
-4. **QA** → проверить action title, плотность, цвета (Load: `references/quality_checklist.md`)
-5. **Итерация** → если есть проблемы, исправить JSON и перегенерировать
+3. **Передача в производство** → `pp-slidument`, формат следует прямому запросу пользователя.
+4. **QA** → проверить заголовок-вывод, плотность, цвета и передачу в `presentation-qa` по выбранному формату.
+5. **Итерация** → исправить согласованный исходник и повторно проверить затронутый рендер.
 
 Для клиентской деки Paper Planes добавляй `handoff_receipt` в существующую спецификацию/ответ и передавай его в `pp-slidument`: родительский запуск, версия `pp-slidument`, выбранные ID/типы слайдов, версия входа, переданный артефакт, ожидаемый выход `pp-slidument` и статус передачи. Не утверждай, что запускались редактор, критики, экспорт PDF или итоговый аудит, пока `pp-slidument` не вернул квитанции, связанные с конкретной версией.
 
@@ -121,6 +117,10 @@ src/
 ## MANUAL MIGRATION REQUIRED
 
 Review unsupported Claude skill fields manually: `**Paper Planes Consulting Slides Generator**`.
+
+## Регрессия формата
+
+`E77` in `../mece-prezy/evals/scenarios.json`: when the user asks to continue an existing PDF, this skill supplies layout reasoning to `pp-slidument`; it must not invoke the absent PPTX generator or create an intermediate deck. If the user explicitly asks for editable PPTX, that requested format takes precedence and the supported route must be verified.
 
 ## Structured Analytical Artifact Gate
 

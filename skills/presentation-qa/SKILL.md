@@ -2,7 +2,7 @@
 name: presentation-qa
 description: Use when reviewing strategic presentations, slide decks, section-slide drafts, storyboards, or client-facing deck iterations for source fidelity, storyline integrity, MECE structure, claim calibration, client readiness, regression across versions, and slide-level QA. Especially useful for Paper Planes strategy decks, BPM/4th department projects, consulting presentations, and cases where facts must not be lost while simplifying the narrative.
 metadata:
-  version: "0.1.11"
+  version: "0.1.12"
   status: draft
   line: strategic-presentation-quality
   owner: Ilya
@@ -13,10 +13,22 @@ metadata:
   can_consume: [presentation / deck / storyboard versions, prior QA packet, BPM Storyline-Storyboard, Матрица BPM — SI, actant map, sub-BPV actant-action profiles, source indexes and claim ledgers]
   can_produce: [QA packet, claim-risk ledger, weak-evidence / trace-gap events, actant-action coverage counter, sub-BPV action score map, bridge-slide candidates, reusable QA learning]
   preflight_required: true
-  contribution_trace: "../pp-slidument/SKILL.md#обязательный-гейт-нового-управленческого-вывода"
+  contribution_trace:
+    originator: "Илья Балахнин"
+    source_contract: "../pp-slidument/SKILL.md#обязательный-гейт-нового-управленческого-вывода"
+    increments:
+      - author: "Илья Балахнин — требование; Codex — реализация и проверка"
+        artifact: "presentation-qa 0.1.12; E68-E76"
+        project: "универсальные правила QA; клиентские факты исключены"
+        change: "сопоставимость сценариев, смысл единиц и цветов, причинность инициатив, постоянные ID, маршрут формата"
+        reuse: "future strategic deck QA"
+        qa: "static validation and reasoning-only walkthrough E68-E84"
+        effect: "not measured; no financial effect claimed"
+        visibility: "internal"
   return_contract:
     version: "v0.2"
   changelog:
+    - "2026-10-25: Added scenario symmetry, unit bridges, resource and color semantics, and initiative-to-target causal gate; E68-E76."
     - "2026-10-16: Пять доработок по прогону Фактора улыбки: происхождение scope, версии по утверждениям, содержательность посылки, действие закрытия пробела, физический прогон с повторной QA; E51–E56."
     - "2026-10-16: Проверка актуального допуска БПМ перед полной сборкой и выпуском: объём, физические результаты, пригодность, подтверждение конкретной версии; E43–E50."
     - "2026-10-16: Обязательная QA нового управленческого вывода из фактов разных БПМ: вклад посылок, проверка изъятия, границы причинности; E35–E42."
@@ -59,7 +71,7 @@ This skill sits on a client-facing artifact boundary. Before calling a deck `cli
 
 For Paper Planes decks assembled through Rail/BPA, `client-ready` additionally requires:
 
-- confirmed use of PP Presentation Kit 2026-07-12: canonical deck-content template, slide taxonomy, visual-style guide, PPTX builder rule and both critics;
+- confirmed use of the production rule for the user-requested format: direct PDF route for PDF decks, with no intermediate PPTX; editable PPTX route only when the user explicitly asks for it;
 - `PP_visual_likeness_passed` from the HTML/render stage;
 - a completed `pp-text-critic` report;
 - a completed `pp-slide-critic` report;
@@ -628,6 +640,18 @@ Return:
 |---|---|---|---|---|---|
 
 Вердикты проверки: `пройдено / не-пройдено / не-применимо`. Последний допустим для точного описательного показателя без претензии на синтез; он не означает, что новый вывод получен. Несколько фактов рядом, повтор одного тезиса и общая рекомендация без логической связи дают `не-пройдено`. Для ключевого управленческого вывода это существенный дефект: верни аргумент на доработку или к источникам в рамках действующих маршрутов QA. Вёрстка, число БПМ и правильные ссылки его не компенсируют. Запрос только на QA не разрешает самостоятельно редактировать мастер.
+
+### 2.2. Scenario, unit, resource and color semantics
+
+For every scenario matrix or growth bridge, QA the decision logic as well as arithmetic:
+- identify each population and unit separately (account ID, legal network, contract, DC, order, shipment); show period and denominator on the slide;
+- where the outcome is multiplicative, retain the formula and recalculate residual factors after fixing one factor; do not subtract percentage rates to allocate a residual;
+- distinguish the owner's selected target from evidence that demand, staffing, operations and supply can execute it; show a resource gap beside the chosen target;
+- define each color by one meaning, show the cause in the cell and the condition that would remove the constraint; do not use the same color to mean choice, evidence confidence and feasibility;
+- test plausible parameter changes against every affected cell and conclusion, including alternative-client contribution when scarce capacity is routed to a large account;
+- trace an initiative through mechanism to target metric. A target delta is not an effect caused by an initiative unless the evidence supports that link.
+
+Use regression cases E68-E76 in `../mece-prezy/evals/scenarios.json`. A slide passes only when displayed units, factor math, color reason and stated effect agree with the underlying scenario assumptions.
 
 ### 3. Structural MECE Test
 

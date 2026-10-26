@@ -2,7 +2,7 @@
 name: bpm4-b2b-dashboard-industrial-distribution
 description: "Use when working with BPM-4 commercial-network dashboards across separate subtypes: B2B/industrial distribution, HoReCa/Retail point networks, or distribution-like SKU dashboards. Covers Formula Profit, point/store economics, cheque analytics, loyalty-client cohorts, client/dealer segmentation, shipment cohorts, SKU affinity, OoS, cross-filtered BI/DataLens/HTML views, SI/SIF extraction, and Storyline-Storyboard routing."
 metadata:
-  version: "0.3.54"
+  version: "0.3.55"
   status: active
   line: BPM-4 / commercial network dashboard
   owner: Ilya
@@ -13,9 +13,24 @@ metadata:
   can_consume: [sales / shipment / order-line datasets, retail cheque datasets, loyalty-program datasets, point/store registry, cashier / seller slices, Formula Profit inputs, CRM / ERP / BI exports, project BPM Storyline-Storyboard, Матрица BPM — SI, flat B2B transaction base, hierarchical 1C Excel exports, client-region dictionaries, manager dictionaries, regional deep-dive slices, packaged external methodology/specs]
   can_produce: [BPM-4 dashboard view spec, DataLens-ready implementation handoff, standalone HTML dashboard, Formula Profit decomposition, point/store performance tree, loyalty-client RFM / cohort / cluster views, segment / SKU / cohort hypotheses, SI / SIF candidates, Storyline-Storyboard writeback proposal, base-analysis packet, annotatable report with compact chart screenshots, client / category / SKU / manager / point breaks, region-segment matrices, account-based segmentation families, growth candidates, executive summary structure, no-op reason]
   preflight_required: true
+  contribution_trace:
+    originator: "Илья Балахнин"
+    increments:
+      - автор: "Илья Балахнин — требование; Codex — реализация и проверка"
+        участники: "Илья Балахнин и Codex"
+        артефакт: "bpm4-b2b-dashboard-industrial-distribution; E68-E69"
+        проект: "универсальная методика; факты Чебоко исключены"
+        фабрика: "Codex skill system"
+        тип: "BPM-4 symmetric scenario economics; project facts excluded"
+        повторное_использование: "other scenario and presentation work"
+        проверка_качества: "static validation and reasoning-only walkthrough E68-E77"
+        эффект: "not measured"
+        режим: "internal"
+        финансы: "no financial effect claimed"
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-10-25: Scenario ranking requires symmetric economics, explicit price response to preserved margin, and sensitivity stability; E68-E69."
       - "2026-10-22: Добавлена адаптация к логистике по прямому поручению: различать реализации, заявки, рейсы, контейнеры и операции; сохранять зерно суммы документа; использовать присутствие услуг, видимые когорты и точные мосты с финансовыми/ABC-гейтами."
       - "2026-09-03: Added retail point-opening plan rule: when a target revenue plan requires new locations, split growth into current-network run-rate, existing-point optimization ceiling, and new-point residual; calculate format portfolio with stated minimum mix such as 80/20 in favor of tonars, but allocate formats by city/territory archetype instead of applying the mix uniformly to every city."
       - "2026-09-03: Reframed MG atlas chart families as an improvement / extension idea bank, not a required dashboard template. The skill should remember which graph ideas can strengthen a HoReCa/Retail BPM-4 analysis and propose/apply them when they sharpen a decision, expose a hidden mechanism, close a caveat, or enrich BPM-SI."
@@ -575,6 +590,7 @@ Use this contract whenever DSL/KML/BNT/SPL/PSC/SL appear.
 
 ## Base Analysis Guardrails
 
+- При ранжировании финансовых сценариев проверять сопоставимость всех сравниваемых групп: одинаковые даты и длина окна, покрытие цены / количества / себестоимости, индексы и правила переноса параметров. Перед выдачей показывать матрицу «группа → окно → цена → себестоимость → расходы → правило цены новых клиентов». Односторонняя смена окна или улучшение себестоимости одной группы допустимы только как отдельно подписанная чувствительность; такой расчёт сам по себе не доказывает смену лидера портфеля. Изолировать изменение затрат при фиксированных ценах, изменение наблюдаемых цен и изменение коммерческих условий. Сохранение процента маржи после снижения затрат автоматически меняет цену: это отдельное ценовое допущение, а не неизменность условий. Проверять динамику одинаковых SKU × единица и показывать покрытие общей корзины; средняя себестоимость реализации не доказывает себестоимость конкретной производственной партии. QA формул дополнять проверкой экономической сопоставимости; при исправлении обновлять все зависимые таблицы и выводы, а прежнее ранжирование явно отзывать. Прямое уточнение Ильи 24.10.2026.
 - В мосте объёма и цены фиксировать ключ `SKU × единица` и одинаковое покрытие суммы/количества. Вход и выход такой расчётной пары не называть вводом/выводом SKU: причиной может быть смена единицы или доступности количества. Показывать отдельный денежный остаток вне расчёта цены и сверять все эффекты с изменением выбранного состава продаж.
 - При сравнении переходов исследовательских сегментов применять одни численные пороги к обоим окнам, например зафиксированные по базовому периоду. Пересчёт квантилей отдельно в каждом окне смешивает изменение поведения со сменой границ; если это намеренная альтернативная модель, подписывать её отдельно. Неполный код и отсутствие профиля сохранять отдельными состояниями; для `клиент × категория` не выдавать число профилей за уникальных клиентов.
 - При отсутствии единиц, движений и остатков складские отчёты допускают графики покрытия полей и распределения исходных расчётных дней одного выбранного отчёта. Не объединять разные длительности как сопоставимую оборачиваемость, не повышать пустой расход до нуля и не называть эти графики оценкой текущего излишка или замороженных денег.
@@ -585,6 +601,11 @@ Use this contract whenever DSL/KML/BNT/SPL/PSC/SL appear.
 - If thresholds are percentile-based, say so. If thresholds are fixed, justify them.
 - If a segment family is adapted from a specific project lineage, label it `project-specific reusable pattern`, not `universal BPM-4 canon`.
 - Do not substitute `SL` for unavailable `SPL` by default. Missing payment events are a source gap, not permission to canonize a two-dimensional fallback.
+
+### Scenario ranking gate
+Before ranking growth scenarios, freeze a shared comparison basis for every group: period and coverage, price, COGS, extra service cost, financing rule, and price response. Recalculate both sides when a common cost or period changes. A one-sided parameter change is sensitivity only and cannot silently replace the base ranking. If a fixed gross-margin rate is preserved after COGS changes, recalculate price as `COGS / (1 - gross_margin)` and label that price rule explicitly. Separate gross profit, contribution after comparable incremental costs, partial EVA, and net profit; a ranking on one layer does not imply the same ranking on another. If the preferred scenario changes under a plausible unverified cost or price rule, report priority as conditional and show the reversal threshold.
+
+Regression cases: `E68` rejects one-sided cost updates in a scenario comparison; `E69` identifies price as a separate assumption when the same margin rate is retained after COGS changes. Shared scenario pack: `../mece-prezy/evals/scenarios.json`.
 
 ## Output Family Contract (validated on Ipatovo artifact set)
 

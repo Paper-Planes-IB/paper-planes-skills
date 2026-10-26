@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-25T04:02:29Z",
+  "generated_at": "2026-10-26T04:01:58Z",
   "upstream_skill_count": 94,
   "repository_skill_count": 98,
   "legacy_skill_count": 13,
@@ -281,10 +281,10 @@
     },
     {
       "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
-      "drive_id": "1Uq4PzQsqIBhkEJc78HD32Ek_E2gkLrmU",
+      "drive_id": "1f31d5577pfInwS7RRqCKx87nN9Maca5k",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T19:07:22.511Z",
-      "drive_md5": "fbb918d3766e1fd1cd17809f14e974c4"
+      "modified_time": "2026-10-25T16:21:35.410Z",
+      "drive_md5": "b98e1aa93b78263aad7abd124a231e62"
     },
     {
       "path": "skills/bpm4-datalens-dashboard/SKILL.md",
@@ -668,8 +668,8 @@
       "path": "skills/consulting-slides-creator/SKILL.md",
       "drive_id": "1cJyVoUZp1ddfrQw5puhHkXV_1A66m99A",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T18:27:13.246Z",
-      "drive_md5": "730b94708e8849546dd0105d1a38b65a"
+      "modified_time": "2026-10-25T16:26:24.907Z",
+      "drive_md5": "4985be471391b2fb5896b6108cde92ba"
     },
     {
       "path": "skills/consulting-slides-creator/references/consulting_principles.md",
@@ -750,10 +750,10 @@
     },
     {
       "path": "skills/consulting-slides-creator/references/workflow.md",
-      "drive_id": "1P4_q-ghqd1-FMGcBYQj-lGV8YtOWkWDY",
+      "drive_id": "1uKV2YsXKTEdiwdwImzkzxUXhX9Mm2dI3",
       "mime_type": "text/markdown",
-      "modified_time": "2026-06-26T11:15:32.000Z",
-      "drive_md5": "0a0b3b7dd8243d7f7065607220703048"
+      "modified_time": "2026-10-25T16:26:24.907Z",
+      "drive_md5": "2735f9b5f883f1ca2ebc33b6e985a698"
     },
     {
       "path": "skills/cord-pdca/SKILL.md",
@@ -2276,10 +2276,10 @@
     },
     {
       "path": "skills/mece-prezy/SKILL.md",
-      "drive_id": "12Z1ZndMuXuJctdsuY-wCz75JJ1Pjw8RR",
+      "drive_id": "159gaLflvCGSSirdfur4Bu1oYHM-5YsaO",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T18:46:45.140Z",
-      "drive_md5": "2b1b003893e3e3550e25d7ad19408e78"
+      "modified_time": "2026-10-25T16:25:28.533Z",
+      "drive_md5": "f12e3b042a50930cfd22f7e5141f2ca7"
     },
     {
       "path": "skills/mece-prezy/agents/openai.yaml",
@@ -2290,10 +2290,10 @@
     },
     {
       "path": "skills/mece-prezy/evals/scenarios.json",
-      "drive_id": "1t8o-zRuw0w0VrU18cvt2YgqBaRaYXdk9",
+      "drive_id": "16X8BHedtd9kpVGrLAr-PeMqSgRakVQL7",
       "mime_type": "application/json",
-      "modified_time": "2026-10-23T21:47:07.274Z",
-      "drive_md5": "896e2da12fb84e6516b581535b6ddefc"
+      "modified_time": "2026-10-25T16:27:15.820Z",
+      "drive_md5": "ba9c4b6cda00c814101f180213fe6bcd"
     },
     {
       "path": "skills/mece-prezy/evals/проверка.md",
@@ -2486,10 +2486,10 @@
     },
     {
       "path": "skills/pp-slidument/SKILL.md",
-      "drive_id": "1ESS1BOcOcfCaiOnzFJ15z3VA7Po4qxXl",
+      "drive_id": "1Ppq5_phyL004x8qTOcnK490iksgUMUe6",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T21:47:26.414Z",
-      "drive_md5": "1915cbcfbf45852994dc0f27c3fc46c0"
+      "modified_time": "2026-10-25T16:26:24.906Z",
+      "drive_md5": "c65dbb84fbcd911a11bf3ff705b64c48"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2619,10 +2619,10 @@
     },
     {
       "path": "skills/presentation-qa/SKILL.md",
-      "drive_id": "1PtIHmeFB5ckayoXZRLOezSE55HRcl0AW",
+      "drive_id": "1mK6nKo7c6gEwKbnamDJwWT5YI-blakXE",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T21:30:59.853Z",
-      "drive_md5": "b05476e2ff91a5f74f6ed0debc552f32"
+      "modified_time": "2026-10-25T16:25:28.531Z",
+      "drive_md5": "94c591108105136e985f4aa620dc39cd"
     },
     {
       "path": "skills/presentation-qa/agents/openai.yaml",
@@ -3241,8 +3241,8 @@
       "files": [
         {
           "path": "skills/bpm4-b2b-dashboard-industrial-distribution/SKILL.md",
-          "sha256": "9df3e2d104a7a0e7e30cec50070819a6ab9af78938d528c70e6dac46b332d9e3",
-          "size": 140513
+          "sha256": "cef54175a24ccca16a32fe17b9c167372ea1d21ead3d331e6be1f09fbb688437",
+          "size": 144705
         }
       ]
     },
@@ -3755,8 +3755,8 @@
       "files": [
         {
           "path": "skills/consulting-slides-creator/SKILL.md",
-          "sha256": "5bccf22f33983625f5c62430737a457ccf199f372846ef62ca66ad43a0152299",
-          "size": 10060
+          "sha256": "2c07113e7cbd700ff006907e3b14424355d0380a9445fb5a8c6e7c5286115db0",
+          "size": 10916
         },
         {
           "path": "skills/consulting-slides-creator/references/consulting_principles.md",
@@ -3815,8 +3815,8 @@
         },
         {
           "path": "skills/consulting-slides-creator/references/workflow.md",
-          "sha256": "faf130ea321a14cbf758e9098eb01dbac71b812116d9a8a69f0ea5411378c6d6",
-          "size": 4548
+          "sha256": "9f9e6f037feebebb8adae10165b0c8f1a332f960b37819a70d971df3c8654b2b",
+          "size": 5009
         }
       ]
     },
@@ -5021,8 +5021,8 @@
       "files": [
         {
           "path": "skills/mece-prezy/SKILL.md",
-          "sha256": "b06d175d878c858321834c3f574ad09a650ef8d6106705998816398ffd9307ee",
-          "size": 44037
+          "sha256": "809517e0a7eef04fee75bcc760dc59869932a8e44f2d2906c42e2f879079ed63",
+          "size": 46867
         },
         {
           "path": "skills/mece-prezy/agents/openai.yaml",
@@ -5031,8 +5031,8 @@
         },
         {
           "path": "skills/mece-prezy/evals/scenarios.json",
-          "sha256": "534dfdfd3c3d7e7770f0c472248f8b190b19acfb054b1d8b3bac5bea7a6ca7bd",
-          "size": 89198
+          "sha256": "3458e3213a5d921e1b87991de60e3d387fa21c0d20ce7f30cff18f4185d24e9e",
+          "size": 113116
         },
         {
           "path": "skills/mece-prezy/evals/проверка.md",
@@ -5356,8 +5356,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "e4d9fa977e9d35e437d8a0d2306d66407cd7bf71b7e65be7a87a1296acc8a6c8",
-          "size": 164552
+          "sha256": "9118fe917d6abac612dde30661f602610f4e7c02338eb9f953e532a613f412fc",
+          "size": 170280
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5472,8 +5472,8 @@
       "files": [
         {
           "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "e7b6988d76638405e2daa927788534b0360a7b69dbfd14db13c80e8ae7cb6945",
-          "size": 95428
+          "sha256": "e63435e2775e6be2b35583328e25399571394a5219df65a6edc25ce653bc4f1a",
+          "size": 97735
         },
         {
           "path": "skills/presentation-qa/agents/openai.yaml",
