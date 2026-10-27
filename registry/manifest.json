@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-26T04:01:58Z",
+  "generated_at": "2026-10-27T04:02:42Z",
   "upstream_skill_count": 94,
   "repository_skill_count": 98,
   "legacy_skill_count": 13,
@@ -2486,10 +2486,10 @@
     },
     {
       "path": "skills/pp-slidument/SKILL.md",
-      "drive_id": "1Ppq5_phyL004x8qTOcnK490iksgUMUe6",
+      "drive_id": "1GL5uWAQt_UtbJKNzci7gPb2Igctx828z",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-25T16:26:24.906Z",
-      "drive_md5": "c65dbb84fbcd911a11bf3ff705b64c48"
+      "modified_time": "2026-10-25T17:47:10.021Z",
+      "drive_md5": "3943ca1a02b9dd971bcee63c1a30cdd7"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5356,8 +5356,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "9118fe917d6abac612dde30661f602610f4e7c02338eb9f953e532a613f412fc",
-          "size": 170280
+          "sha256": "f10edbf8fd8ea7c9678e78145a00bde0c8c61ffc98b56fb5750fefa810b3fdcc",
+          "size": 173363
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
