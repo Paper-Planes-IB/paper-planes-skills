@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-27T04:02:42Z",
+  "generated_at": "2026-10-28T04:02:26Z",
   "upstream_skill_count": 94,
   "repository_skill_count": 98,
   "legacy_skill_count": 13,
   "upstream_inventory": [
     {
       "path": "skills/BPM1/SKILL.md",
-      "drive_id": "1nYQTrzkHQLljYN6fJ-u9xGqkfEXTWEoz",
+      "drive_id": "1UmsHptcaYIAJ8vaT-1TzD9i0iOBu9tKX",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T17:25:02.245Z",
-      "drive_md5": "35ad6c94be87a3f182310455b178e683"
+      "modified_time": "2026-10-26T13:36:23.440Z",
+      "drive_md5": "bc39f84fe742bd899f1e7d9ea106566d"
     },
     {
       "path": "skills/BPM1/references/ingest-layer.md",
@@ -1984,8 +1984,8 @@
       "path": "skills/ingest/SKILL.md",
       "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T14:08:27.540Z",
-      "drive_md5": "146631b146348bc46678464da88fad18"
+      "modified_time": "2026-10-27T19:31:55.384Z",
+      "drive_md5": "a280864527ab6d7976fcc6ce38dfd609"
     },
     {
       "path": "skills/interview-brief-by-analogs/SKILL.md",
@@ -2276,10 +2276,10 @@
     },
     {
       "path": "skills/mece-prezy/SKILL.md",
-      "drive_id": "159gaLflvCGSSirdfur4Bu1oYHM-5YsaO",
+      "drive_id": "1sTLBy7sJdyeEkmMRllPi3KB4lM923v_F",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-25T16:25:28.533Z",
-      "drive_md5": "f12e3b042a50930cfd22f7e5141f2ca7"
+      "modified_time": "2026-10-26T13:40:06.981Z",
+      "drive_md5": "55399c06fc3c8cc890cb64257c05cff6"
     },
     {
       "path": "skills/mece-prezy/agents/openai.yaml",
@@ -2290,17 +2290,17 @@
     },
     {
       "path": "skills/mece-prezy/evals/scenarios.json",
-      "drive_id": "16X8BHedtd9kpVGrLAr-PeMqSgRakVQL7",
+      "drive_id": "1-QLaJI-syQfAoobFgfzEoVRmLtVGVcve",
       "mime_type": "application/json",
-      "modified_time": "2026-10-25T16:27:15.820Z",
-      "drive_md5": "ba9c4b6cda00c814101f180213fe6bcd"
+      "modified_time": "2026-10-26T11:17:28.056Z",
+      "drive_md5": "12076aed09343a2bd48c75506463d9b0"
     },
     {
       "path": "skills/mece-prezy/evals/проверка.md",
-      "drive_id": "1ztEUGaIiFxyom6YdL9j5MPqnbVF8vt2E",
+      "drive_id": "1lW5jl7DXJkJpC3__OX3kd7T-TOhI9HHV",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-16T13:49:26.915Z",
-      "drive_md5": "c27dea76e65f4cf88a594c667911be30"
+      "modified_time": "2026-10-26T11:47:10.294Z",
+      "drive_md5": "47367ea14e67f4a38c94f3115c9813fd"
     },
     {
       "path": "skills/mece-prezy/references/конструкции.md",
@@ -2761,8 +2761,8 @@
       "path": "skills/text-deai-editor/SKILL.md",
       "drive_id": "1xNjxsI8zg7YyyKJRMLrH4qb4GcQh7vOW",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-19T19:16:15.701Z",
-      "drive_md5": "effc123ab2f23d95fd41e56fc88c6e2c"
+      "modified_time": "2026-10-26T11:15:09.071Z",
+      "drive_md5": "af23de00785f9a6786cfff15713c7294"
     },
     {
       "path": "skills/text-deai-editor/references/de-ii-standart.md",
@@ -3102,8 +3102,8 @@
       "files": [
         {
           "path": "skills/BPM1/SKILL.md",
-          "sha256": "1fc9c89fc26583a891774e2102c8bb611ed993f432756f34537a68e0b6c881d1",
-          "size": 22735
+          "sha256": "c7c0ccd67943430152c0fef1582baf119795bb16399c97a8932b0f820efd3212",
+          "size": 23880
         },
         {
           "path": "skills/BPM1/references/ingest-layer.md",
@@ -4785,8 +4785,8 @@
       "files": [
         {
           "path": "skills/ingest/SKILL.md",
-          "sha256": "f591fe4705ae677d5e55e62fd8d6ed9a457b88c9af443a3de0e25c3f86b74fad",
-          "size": 101820
+          "sha256": "673875aa64048a3be1bf4c92b4d4de03725ca8b859071af61b780b018cba1811",
+          "size": 102617
         }
       ]
     },
@@ -5021,8 +5021,8 @@
       "files": [
         {
           "path": "skills/mece-prezy/SKILL.md",
-          "sha256": "809517e0a7eef04fee75bcc760dc59869932a8e44f2d2906c42e2f879079ed63",
-          "size": 46867
+          "sha256": "b3c09b60b6fda807fa14cadbe8be46220033f134793955d512b559cb026e68af",
+          "size": 66303
         },
         {
           "path": "skills/mece-prezy/agents/openai.yaml",
@@ -5031,13 +5031,13 @@
         },
         {
           "path": "skills/mece-prezy/evals/scenarios.json",
-          "sha256": "3458e3213a5d921e1b87991de60e3d387fa21c0d20ce7f30cff18f4185d24e9e",
-          "size": 113116
+          "sha256": "509ceeff2fed3fc47218b17176564b574fa5453616c5874e7ec938c216b46eef",
+          "size": 155672
         },
         {
           "path": "skills/mece-prezy/evals/проверка.md",
-          "sha256": "3e78e168009be94092c31ba2bc981e29f77ee756b7fc1d8588aa4c1b72ca5e97",
-          "size": 42746
+          "sha256": "f9a3995272a41805fa5cc702b2f59fa966c862dd41a30fc650eeb3e16e68bd66",
+          "size": 52379
         },
         {
           "path": "skills/mece-prezy/references/конструкции.md",
@@ -5649,8 +5649,8 @@
       "files": [
         {
           "path": "skills/text-deai-editor/SKILL.md",
-          "sha256": "d287536679ac6e679bc30da8a2801aeac93b8aa362406ec22ccb40333c1dd0de",
-          "size": 163039
+          "sha256": "592120ccbb4afe45adbede2f9620a2cfae1a04d88b67ede8f1d75ab265a12226",
+          "size": 163892
         },
         {
           "path": "skills/text-deai-editor/references/de-ii-standart.md",
