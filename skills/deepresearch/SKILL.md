@@ -9,7 +9,7 @@ description: >-
   monitoring-stack routing, cross-synthesis, 4th-department BPM-7A/B prompt
   generation through BPM exchange, and Codex/Vault write-back routing.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
   status: active
   line: external-deep-research
   source: "adapted from Sergey Khudovekov review loop and Research OS v3 for Ilya's Codex/Vault workflow"
@@ -1788,6 +1788,13 @@ If the external answer includes source recommendations, build a local Reader can
 Do not add sources to Readwise Reader just because Pro / Perplexity recommended them. First discuss the ledger with Ilya. Import to Reader only after explicit approval, using the Readwise MCP when available.
 
 For NotebookLM-like or external-model outputs, treat the answer as `proposal-review` unless Ilya explicitly says to canonicalize or write back.
+
+#### NotebookLM: проверка фактического доступа и качества возврата
+
+- Локальная библиотека MCP и её авторизация не равны списку блокнотов аккаунта. Пустой поиск в библиотеке не доказывает отсутствия проектного блокнота. При доступном браузерном входе искать существующий объект по проекту и проверять его URL/состав источников; дубликат не создавать. Если Илья указал Comet, сначала использовать эту сессию. При вмешательстве пользователя или другой работе в том же окне не конкурировать за управление; сохранить состояние и продолжить в доступной фоновой сессии того же разрешённого аккаунта либо обозначить блокировку.
+- Краткий ответ Codex с локальной ссылкой не является загрузкой полного документа в NotebookLM. Перед повторным переносом прочитать существующий источник и установить, что реально проиндексировано. Для проверки связности использовать отобранные физические исходники программы/границ/синтеза, а не пересказ самого пересказа; не загружать всю папку механически. После загрузки дождаться исчезновения индикатора обработки и появления выбранного источника, проверить доступность содержания в ответе с источниковой ссылкой.
+- В проверенном интерфейсе 29.10.2026 запрос на 4319 символов оставлял кнопку отправки неактивной, а запросы на 1847–1973 символа отправлялись. Это наблюдение интерфейса, не заявленный предел API. При таком симптоме сокращать оперативный вопрос примерно до 1900 символов и делить проверку на связанные проходы; полный контекст держать в источниках. В каждом проходе сохранять служебные метаданные вывода, статус предложения, границы вывода и маршрут возврата.
+- Список «разрывов» внешней модели не принимать автоматически. Сверять каждое заявленное отсутствие с конкретным фрагментом исходника, отделять ещё не собранные данные от ошибки логики и сохранять принятые ограничения. Проверять, не превратила ли модель неизвестную дату в доказанную просрочку, неуказанного владельца в отсутствие функции, отсутствие транскрипта в отсутствие поля, паритет в бесполезность, пример в установленный срок или возможное действие в принятое решение. При таких усилениях запрашивать адресное исправление и возвращать в штаб итог вместе с отклонёнными предложениями; фраза модели «данные обновлены» сама по себе не доказывает запись во внешней системе.
 
 For 4th-department projects with an existing or required `BPM Storyline-Storyboard`, `proposal-review` is not enough by itself. If the external answer materially concerns market/category/competitors/positioning/sales model/buyer roles/channel/reuse/BPM evidence, classify it as a BPM-candidate source, produce the local return packet, and then update the existing Storyline-Storyboard or record an explicit no-op reason there before finalizing. The required chain is:
 

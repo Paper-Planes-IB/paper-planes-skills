@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-10-28T04:02:26Z",
+  "generated_at": "2026-11-03T04:05:12Z",
   "upstream_skill_count": 94,
   "repository_skill_count": 98,
   "legacy_skill_count": 13,
@@ -197,10 +197,10 @@
     },
     {
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-      "drive_id": "1r32Nu9Gv3Zm1wVFinJseplTaK0cX-41u",
+      "drive_id": "1_Lo-XG9r2OecH4ABYyPgsmsmUH5IJWZp",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T18:16:47.080Z",
-      "drive_md5": "cb6c1bdbbf8e4d4fd74b3176c1686449"
+      "modified_time": "2026-10-30T17:48:07.956Z",
+      "drive_md5": "f61e3292243e7a68f1b5abe680e0f38b"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
@@ -456,10 +456,10 @@
     },
     {
       "path": "skills/clickup-mcp-router/SKILL.md",
-      "drive_id": "13w9SipLlJVtt8qKP8mVeiKQzOskU10me",
+      "drive_id": "1DOQu8irpVgYOnGD7vp9Kcf-HzCixLXu9",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-22T19:34:07.868Z",
-      "drive_md5": "622e15119fe4d2c818de1cb5e862b2bd"
+      "modified_time": "2026-10-30T14:45:39.302Z",
+      "drive_md5": "254282a9abe228383edc29b012f73408"
     },
     {
       "path": "skills/clickup-mcp-router/agents/openai.yaml",
@@ -834,10 +834,10 @@
     },
     {
       "path": "skills/deepresearch/SKILL.md",
-      "drive_id": "1_UoUB9iloh05kkU93F98rTQXf40PZyig",
+      "drive_id": "1eslq_TzMOuZBj9DSp13HvUkgwRSs4P9R",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T17:42:17.495Z",
-      "drive_md5": "3ea9bd4ebda5a98c43962bee6fd5997e"
+      "modified_time": "2026-10-28T22:24:16.787Z",
+      "drive_md5": "791501d968fc1ec55b0b6c3ec3f2a8d8"
     },
     {
       "path": "skills/demand-supply-match-intelligence/SKILL.md",
@@ -855,10 +855,10 @@
     },
     {
       "path": "skills/fix-rules/SKILL.md",
-      "drive_id": "1nfyWZy8uuBJYZuQ6jWTvq3VV9CXdGRnC",
+      "drive_id": "1jpHKrYPhDZbndH4D9V-HVl6ycfOr03Se",
       "mime_type": "text/markdown",
-      "modified_time": "2026-08-28T18:19:17.768Z",
-      "drive_md5": "8c4eb9be7f69f0ac0c4367a7448ec793"
+      "modified_time": "2026-10-28T19:32:24.859Z",
+      "drive_md5": "05eab53d169fd4b8d8a22366b80fb327"
     },
     {
       "path": "skills/fix-rules/agents/openai.yaml",
@@ -1989,10 +1989,10 @@
     },
     {
       "path": "skills/interview-brief-by-analogs/SKILL.md",
-      "drive_id": "1qD-xIRn_ta-Tl90UzrL_XSyYSd-St9Tp",
+      "drive_id": "193kj91q0o0liBDrGLYp4RxhwG8hvZG9V",
       "mime_type": "text/markdown",
-      "modified_time": "2026-08-29T16:45:09.302Z",
-      "drive_md5": "ce452f55425fad0d472901b9ff96a9d4"
+      "modified_time": "2026-10-28T19:21:13.737Z",
+      "drive_md5": "802acac2a8cccec70a37f4043e62ea11"
     },
     {
       "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
@@ -2276,10 +2276,10 @@
     },
     {
       "path": "skills/mece-prezy/SKILL.md",
-      "drive_id": "1sTLBy7sJdyeEkmMRllPi3KB4lM923v_F",
+      "drive_id": "1g96zfeeESGT2WpoY8sRplkQ2iF4J2ER1",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-26T13:40:06.981Z",
-      "drive_md5": "55399c06fc3c8cc890cb64257c05cff6"
+      "modified_time": "2026-11-01T19:19:55.661Z",
+      "drive_md5": "d9ff4a6e34ebaaf86b29c1ca642da627"
     },
     {
       "path": "skills/mece-prezy/agents/openai.yaml",
@@ -2290,17 +2290,17 @@
     },
     {
       "path": "skills/mece-prezy/evals/scenarios.json",
-      "drive_id": "1-QLaJI-syQfAoobFgfzEoVRmLtVGVcve",
+      "drive_id": "15Hc8H1fxujFHeJW1r-hjT32Vm-zZoOAl",
       "mime_type": "application/json",
-      "modified_time": "2026-10-26T11:17:28.056Z",
-      "drive_md5": "12076aed09343a2bd48c75506463d9b0"
+      "modified_time": "2026-10-28T19:28:02.762Z",
+      "drive_md5": "e5205a2d98be383c985f263481a56471"
     },
     {
       "path": "skills/mece-prezy/evals/проверка.md",
-      "drive_id": "1lW5jl7DXJkJpC3__OX3kd7T-TOhI9HHV",
+      "drive_id": "1XJHykWqCoUVL2qTkoEJQ5xYvkrvhB2S3",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-26T11:47:10.294Z",
-      "drive_md5": "47367ea14e67f4a38c94f3115c9813fd"
+      "modified_time": "2026-10-28T19:28:11.458Z",
+      "drive_md5": "1546c1c5eeb1231f479a17700f878175"
     },
     {
       "path": "skills/mece-prezy/references/конструкции.md",
@@ -2486,10 +2486,10 @@
     },
     {
       "path": "skills/pp-slidument/SKILL.md",
-      "drive_id": "1GL5uWAQt_UtbJKNzci7gPb2Igctx828z",
+      "drive_id": "1KlKas0tAv0NvBC-JHXbSl6Ew2qZAfBW9",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-25T17:47:10.021Z",
-      "drive_md5": "3943ca1a02b9dd971bcee63c1a30cdd7"
+      "modified_time": "2026-11-01T20:43:48.147Z",
+      "drive_md5": "48f8d17f46acc286898a417342b481f3"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2619,10 +2619,10 @@
     },
     {
       "path": "skills/presentation-qa/SKILL.md",
-      "drive_id": "1mK6nKo7c6gEwKbnamDJwWT5YI-blakXE",
+      "drive_id": "1LgQYF1TX3dia1QfVnc1NSMTqVh-8BY2H",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-25T16:25:28.531Z",
-      "drive_md5": "94c591108105136e985f4aa620dc39cd"
+      "modified_time": "2026-10-28T18:56:45.532Z",
+      "drive_md5": "78261e674d1146d0369e8a882bfc5b5e"
     },
     {
       "path": "skills/presentation-qa/agents/openai.yaml",
@@ -2640,10 +2640,10 @@
     },
     {
       "path": "skills/rail/SKILL.md",
-      "drive_id": "1Vlk36NHNE8S0WKv0F0UwPPjBwaF25wQT",
+      "drive_id": "1a3vtKQx4W6wEBkmMLPU1SRzacDYuPXWl",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T18:27:13.246Z",
-      "drive_md5": "741cbd6f8ef403056549bef706da348c"
+      "modified_time": "2026-10-28T19:47:36.936Z",
+      "drive_md5": "c22f580b87ead9fc895190de621bc21a"
     },
     {
       "path": "skills/research-agent/SKILL.md",
@@ -3090,8 +3090,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "9b66b1efcbac98aa847a019f1b9bde8525a82ecff91ac6aaa32cbd92a7574d21",
-          "size": 85125
+          "sha256": "7e510f0e8f34a740cc6fcda20ca9b472b6eec5e32c6bd5e229fed082950450aa",
+          "size": 90108
         }
       ]
     },
@@ -3535,8 +3535,8 @@
       "files": [
         {
           "path": "skills/clickup-mcp-router/SKILL.md",
-          "sha256": "398e5f707d8a6d8303c293a8c7ddb3cfc9df55baf6e9516a63d10cd2c05e5541",
-          "size": 60995
+          "sha256": "1bd09101d38cc0cfbb18206c959fa18eefa113e4ee4b21ee59c20b53ca59fddf",
+          "size": 66315
         },
         {
           "path": "skills/clickup-mcp-router/agents/openai.yaml",
@@ -3895,8 +3895,8 @@
       "files": [
         {
           "path": "skills/deepresearch/SKILL.md",
-          "sha256": "4e05721b4fab8c49b4ca720e477e4f67cebfcdb8e092af170609541a1aa8eb6d",
-          "size": 122938
+          "sha256": "8c586ad6e60736ae6f7184402b60699d0b420b0db1c96123094047b2bf3c0f45",
+          "size": 127090
         }
       ]
     },
@@ -3931,8 +3931,8 @@
       "files": [
         {
           "path": "skills/fix-rules/SKILL.md",
-          "sha256": "6fc7963651ba4e5e565c114aae5e44f829ce40d25375cb53224fbbffda0c608e",
-          "size": 19592
+          "sha256": "fc85fa7933a99a4d93d29e569b4c29c70f05933ddde50b26bbd44175a42132b8",
+          "size": 20127
         },
         {
           "path": "skills/fix-rules/agents/openai.yaml",
@@ -4797,8 +4797,8 @@
       "files": [
         {
           "path": "skills/interview-brief-by-analogs/SKILL.md",
-          "sha256": "a6b05a130767b8693c1b2ea66e795119f246fddab4acbd8b3a40cdf4eca68b13",
-          "size": 19692
+          "sha256": "276608427cb7aef4c1340f12d0c1c4f117a8e3f456968166b11c46c0bc931999",
+          "size": 20558
         },
         {
           "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
@@ -5021,8 +5021,8 @@
       "files": [
         {
           "path": "skills/mece-prezy/SKILL.md",
-          "sha256": "b3c09b60b6fda807fa14cadbe8be46220033f134793955d512b559cb026e68af",
-          "size": 66303
+          "sha256": "2dc90e7ffb8230bc9955c3203f2a5281021d60b6c80ee22826bb0d0b1a9edd6e",
+          "size": 77503
         },
         {
           "path": "skills/mece-prezy/agents/openai.yaml",
@@ -5031,13 +5031,13 @@
         },
         {
           "path": "skills/mece-prezy/evals/scenarios.json",
-          "sha256": "509ceeff2fed3fc47218b17176564b574fa5453616c5874e7ec938c216b46eef",
-          "size": 155672
+          "sha256": "fd75b733e17947515845b74c8e65bf4ce1dc141395259c5778a390f420b385ee",
+          "size": 171045
         },
         {
           "path": "skills/mece-prezy/evals/проверка.md",
-          "sha256": "f9a3995272a41805fa5cc702b2f59fa966c862dd41a30fc650eeb3e16e68bd66",
-          "size": 52379
+          "sha256": "fd34eb40d9a15c00b1747109b56c69fec929fc9f78ecce1e9c7c772e14cd238e",
+          "size": 58899
         },
         {
           "path": "skills/mece-prezy/references/конструкции.md",
@@ -5356,8 +5356,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "f10edbf8fd8ea7c9678e78145a00bde0c8c61ffc98b56fb5750fefa810b3fdcc",
-          "size": 173363
+          "sha256": "4d759b7ad4c1a1d42760152200d54052ffbcd6f98db95d31245cac2836f4ed57",
+          "size": 175185
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5472,8 +5472,8 @@
       "files": [
         {
           "path": "skills/presentation-qa/SKILL.md",
-          "sha256": "e63435e2775e6be2b35583328e25399571394a5219df65a6edc25ce653bc4f1a",
-          "size": 97735
+          "sha256": "4462e9e7402d092d98d7ff02fa51e1b82307751a30f52ac1efd6ae05cf48d65f",
+          "size": 98757
         },
         {
           "path": "skills/presentation-qa/agents/openai.yaml",
@@ -5501,8 +5501,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "cc0ddb4b53ab347269f91d6d3c00ba8cc9ae24225260af2a9e9b85de8101fb20",
-          "size": 262055
+          "sha256": "ac6aa0aa20fc06eaf8af24397dd6827e686ab6620a6ffceed005b599e0e472c9",
+          "size": 266392
         }
       ]
     },

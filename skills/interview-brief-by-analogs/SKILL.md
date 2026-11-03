@@ -359,3 +359,7 @@ Do not reveal source clients, raw transcript details, private analogs, personal 
 ## Structured Analytical Artifact Gate
 
 When a brief is organized as an Issue Tree or Hypothesis Tree, or when it updates a Problem Map/evidence trace/storyline gap, apply the global contract in `~/.codex/AGENTS.md`. Every hypothesis probe must name mechanism, expected signal, source/answer sought, falsifier, and decision affected. Analog methodology and Frappe do not count as respondent evidence. Interview questions may test a problem node or claim, but they do not confirm it until the physical interview source is processed.
+
+## Сверка исполнения с ожиданиями клиентов и модель данных
+
+Для BPM-3 проверять на реальных заказах, как технический подбор, компетенции и передача клиента соответствуют ожиданиям и требованиям самих клиентов; искать подтверждения и контрпримеры. Целевая модель данных — кандидат решения BPV, а не самостоятельная ветвь карты проблем, если Илья прямо не определил её как проблему. Фактическую доступность информации для решений можно проверять отдельно. Решение Ильи 28.10.2026.

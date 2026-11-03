@@ -2,7 +2,7 @@
 name: presentation-qa
 description: Use when reviewing strategic presentations, slide decks, section-slide drafts, storyboards, or client-facing deck iterations for source fidelity, storyline integrity, MECE structure, claim calibration, client readiness, regression across versions, and slide-level QA. Especially useful for Paper Planes strategy decks, BPM/4th department projects, consulting presentations, and cases where facts must not be lost while simplifying the narrative.
 metadata:
-  version: "0.1.12"
+  version: "0.1.13"
   status: draft
   line: strategic-presentation-quality
   owner: Ilya
@@ -1387,6 +1387,9 @@ When this skill is improved or audited through `skill-system-governance`, `skill
 - a previously pink/tinted PDF cover requires target-renderer proof after export, not only a browser screenshot.
 
 ## Structured Analytical Artifact QA
+
+В дереве/пирамиде Минто проверять гейт `pri-mece-minto-hierarchy-levels` и подраздел «Уровни обобщения, MECE и пирамида Минто — принято 28.10.2026» архитектуры проектов: вертикальный смысл, сопоставимость соседних узлов, один критерий разбиения и одно основное место. Отмечать дефекты «смешение-уровней», «смешение-критериев», «дубль-родительства», «глубина-выдана-за-уверенность» и «локальный-вердикт-выдан-за-полноту-корпуса». Детализацию отличать от поддержки аргумента; проверка частного случая не доказывает общий тезис. Регрессии E114–E120 — в существующем наборе mece-prezy.
+
 
 Presentation QA must apply the global contract in `~/.codex/AGENTS.md` to every Problem Map, issue/hypothesis tree, classification, evidence/claim matrix, analytical Mermaid, storyline-storyboard, metric tree, and dimension architecture in the deck. Add explicit failures for `ложный-MECE`, `методология-выдана-за-client-evidence`, `нет-source-trace`, `Frappe-блокер`, `generic-storyboard-вместо-PP-storyboard`, `Mermaid-синтаксис-без-семантики`, `параллельный-дубликат-артефакта`, and `полная-перезапись-без-delta-evidence`.
 

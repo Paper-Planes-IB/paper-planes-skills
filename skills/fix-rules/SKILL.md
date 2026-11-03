@@ -17,6 +17,8 @@ description: >-
 
 # Fix Rules
 
+При аудите принятой карты гипотез проверять маршрут `pri-approved-hypothesis-map-answer-bpv-storyline`: DM/DP, донорские источники и точная атрибуция BPV, отдельное дерево ответов, мост выбранных BPM, черновик storyline. Storyboard допускается после явного утверждения и инжеста storyline. Сам по себе аудит не расширяет права записи.
+
 ## Purpose
 
 Audit the current chat context against the current rules. Do not audit the whole project, folder, Vault, or runtime layer unless Ilya explicitly asks for that wider scope. Do not do broad refactoring, content rewriting, or silent cleanup. The output is a compact chat-local drift report and a proposed fix set.
