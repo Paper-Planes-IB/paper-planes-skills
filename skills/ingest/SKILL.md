@@ -2,7 +2,7 @@
 name: ingest
 description: "Use when Ilya asks to ingest, add, remember, route, classify, or place new material into the Vault / knowledge system. Handles intake, classification, routing, proposal, no-op, and writeback-after-approval for facts, hypotheses, rules, external research, content candidates, tasks, commercial facts, contradictions, and source packets."
 metadata:
-  version: "0.3.11"
+  version: "0.3.12"
   status: active
   line: Vault ingest / knowledge routing
   owner: Ilya
@@ -17,6 +17,7 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-11-03: Уточнено восстановление транскрипта через штатный интерфейс: проверка фактического копирования, защита от смены общего буфера, адресная вставка проверенного текста и проверка сохранности прежнего реестра."
       - "2026-08-29: Made Озеро BPM — SI — Slides — BPV a P0 freshness-controlled writeback target: bounded upstream changes must update the lake or record a no-op within 24 hours; one existing automation maintains the contour without promoting route maps or decks to accepted BPV."
       - "2026-08-28: Added interview-corpus statistics deduplication: count unique respondent/role interview events rather than files and report organizations, primary transcripts, derived duplicates, and excluded non-client sources separately."
       - "2026-08-03: Added post-upload uniqueness check for client source batches: relist the target folder, verify one intended file per name/size, and remove only connector-created exact duplicates before publishing links."
@@ -123,6 +124,8 @@ If a registry cannot be found, say that explicitly and continue as `partial_cont
 When assigning a new project source ID, do not rely only on the primary source register. First run a bounded project-local check for the candidate ID and nearby IDs across the existing project card, source register, evidence trace, Storyline-Storyboard, BPV route map, BPM scope ledger, task tracker, and other known source-bearing ledgers. If any downstream artifact already uses the candidate ID for a different physical source, preserve that existing ID and assign the next free source ID to the new source. Record the correction briefly in the working update if a conflict was found.
 
 Уточнение 03.10.2026: ту же проверку выполнять для идентификаторов утверждений и замыслов слайдов, повторно непосредственно перед записью и после неё. Первоначальный свободный номер не гарантирует уникальность при параллельной правке проектного корпуса. При обнаружении пересечения перенумеровывать только строки своего текущего прохода и все их ссылки; соседние изменения сохранять. Проверять уникальность по точным строкам определений, а не по числу упоминаний идентификатора в тексте.
+
+При восстановлении разрешённого источника через нативное приложение сначала поднять нужное окно и проверить, что штатное копирование действительно вернуло требуемый текст. Общий системный буфер может быть изменён пользователем или другим чатом между шагами: не полагаться на отложенное сочетание вставки как на сохранённый источник. Держать проверенный текст в рабочей памяти и при необходимости вставлять его через `App.paste(проверенный_текст)`, затем сверять идентичность, начало/конец и объём до сохранения. При добавлении в существующий реестр предварительно фиксировать длину и хеш прежнего содержимого; после сохранения проверить точную сохранность прежнего префикса и полноту добавленного источника. Временный несохранённый буфер закрывать только после проверки устойчивого источника, без отдельного файла в синхронизируемой папке. Техническое уточнение 03.11.2026; не расширяет права чтения, записи или раскрытия.
 
 ## BPM Ingest Triage
 

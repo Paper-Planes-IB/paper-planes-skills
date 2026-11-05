@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-03T04:05:12Z",
+  "generated_at": "2026-11-05T04:02:49Z",
   "upstream_skill_count": 94,
   "repository_skill_count": 98,
   "legacy_skill_count": 13,
@@ -1984,8 +1984,8 @@
       "path": "skills/ingest/SKILL.md",
       "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-27T19:31:55.384Z",
-      "drive_md5": "a280864527ab6d7976fcc6ce38dfd609"
+      "modified_time": "2026-11-03T18:14:17.263Z",
+      "drive_md5": "8c9d06a33b96ca9b4c8796a456708918"
     },
     {
       "path": "skills/interview-brief-by-analogs/SKILL.md",
@@ -4785,8 +4785,8 @@
       "files": [
         {
           "path": "skills/ingest/SKILL.md",
-          "sha256": "673875aa64048a3be1bf4c92b4d4de03725ca8b859071af61b780b018cba1811",
-          "size": 102617
+          "sha256": "ee99554b1437812cd3f1c439f2f7811ed28976639ca4b6d781613c40a8c39370",
+          "size": 104719
         }
       ]
     },
