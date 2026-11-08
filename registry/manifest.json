@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-05T04:02:49Z",
+  "generated_at": "2026-11-08T02:02:18Z",
   "upstream_skill_count": 94,
   "repository_skill_count": 98,
   "legacy_skill_count": 13,
@@ -197,10 +197,10 @@
     },
     {
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-      "drive_id": "1_Lo-XG9r2OecH4ABYyPgsmsmUH5IJWZp",
+      "drive_id": "18KQvVdwSt4TfPTQ5U_oS-2Ar0arlC-Kz",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-30T17:48:07.956Z",
-      "drive_md5": "f61e3292243e7a68f1b5abe680e0f38b"
+      "modified_time": "2026-11-06T20:44:47.563Z",
+      "drive_md5": "aa7edbe5f426ea6cceddf47664c7feae"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
@@ -3090,8 +3090,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "7e510f0e8f34a740cc6fcda20ca9b472b6eec5e32c6bd5e229fed082950450aa",
-          "size": 90108
+          "sha256": "b6f696c3d80ec9e80b56a4d3499c6618f19c2ea64e9009ca97801057ae61256a",
+          "size": 91605
         }
       ]
     },
