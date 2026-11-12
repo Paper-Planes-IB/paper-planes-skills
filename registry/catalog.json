@@ -669,6 +669,16 @@
     "slices": "Без среза"
   },
   {
+    "skill": "b2b-customer-interviews",
+    "type": "Контент и редактура",
+    "description": "Скилл помогает выполнить задачу «b2b customer interviews» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/b2b-customer-interviews",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-b2b-customer-interviews",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "balakhnin-voice",
     "type": "Контент и редактура",
     "description": "Воспроизведение авторского голоса Ильи Балахнина в формате пост-методики Telegram-канала @ilyabalahnin (~600–2000 знаков, аналитический регистр). Опирается строго на корпус из 360 авторских постов за 2025–2026 годы: паттерны верифицированы по частоте, цитаты привязаны к ID.",

@@ -1,0 +1,4 @@
+interface:
+  display_name: "B2B-интервью по MEDDPICC"
+  short_description: "Гайды интервью клиентов и неклиентов B2B по MEDDPICC"
+  default_prompt: "Используй $b2b-customer-interviews для подготовки B2B-гайда интервью по MEDDPICC с реюзом и условными уточнениями."

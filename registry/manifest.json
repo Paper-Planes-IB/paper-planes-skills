@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-08T02:02:18Z",
-  "upstream_skill_count": 94,
-  "repository_skill_count": 98,
+  "generated_at": "2026-11-12T04:01:56Z",
+  "upstream_skill_count": 95,
+  "repository_skill_count": 99,
   "legacy_skill_count": 13,
   "upstream_inventory": [
     {
@@ -166,6 +166,48 @@
       "mime_type": "text/markdown",
       "modified_time": "2026-04-28T18:54:09.319Z",
       "drive_md5": "1ac9a4e2a1059c2b7a1f6368dcc2beb5"
+    },
+    {
+      "path": "skills/b2b-customer-interviews/SKILL.md",
+      "drive_id": "1v-eWyrAIQ4v_lYrbqTIz0tSErvRQk969",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-11-09T15:09:37.350Z",
+      "drive_md5": "67eb72f7d3b2928e57de6c3acf5f25b1"
+    },
+    {
+      "path": "skills/b2b-customer-interviews/agents/openai.yaml",
+      "drive_id": "1n6nY4vWkdBJvV7Rhsp0dwqi0mdAf83Bg",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-11-09T15:09:37.413Z",
+      "drive_md5": "6d5089c23039e512789783b0765efb6f"
+    },
+    {
+      "path": "skills/b2b-customer-interviews/references/base-guide.md",
+      "drive_id": "18gHvDyonuDAyMXDJMo2Agpy96XkPtlwZ",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-11-09T15:10:29.181Z",
+      "drive_md5": "e84c116160f03c71009b992f9fc134a4"
+    },
+    {
+      "path": "skills/b2b-customer-interviews/references/evals.md",
+      "drive_id": "1D_Nl3j9go6umMvkuGRILBnr6GYXAwzOe",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-11-09T15:09:37.493Z",
+      "drive_md5": "c25a122902c74e0000f965e59b6cc4a7"
+    },
+    {
+      "path": "skills/b2b-customer-interviews/references/sources.md",
+      "drive_id": "1vzxfieyKgZS57FgWwzdj1Z5hpHJf87UF",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-11-09T15:09:37.473Z",
+      "drive_md5": "15f0d2577641608670f7d0b039419061"
+    },
+    {
+      "path": "skills/b2b-customer-interviews/references/spotware-example.md",
+      "drive_id": "1cLs9rKvXk5XIoSytL9qqVbGj_CrVOTEW",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-11-09T15:09:51.734Z",
+      "drive_md5": "bcfc5b9735c9893115143dad128f4075"
     },
     {
       "path": "skills/balakhnin-voice/SKILL.md",
@@ -1988,15 +2030,29 @@
       "drive_md5": "8c9d06a33b96ca9b4c8796a456708918"
     },
     {
-      "path": "skills/interview-brief-by-analogs/SKILL.md",
+      "path": "skills/interview-brief-by-analogs 2/SKILL.md",
       "drive_id": "193kj91q0o0liBDrGLYp4RxhwG8hvZG9V",
       "mime_type": "text/markdown",
       "modified_time": "2026-10-28T19:21:13.737Z",
       "drive_md5": "802acac2a8cccec70a37f4043e62ea11"
     },
     {
-      "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
+      "path": "skills/interview-brief-by-analogs 2/agents/openai.yaml",
       "drive_id": "1dk2Hwkh9OrqE1u_OXL_7Mxrxzgy-pWBZ",
+      "mime_type": "application/octet-stream",
+      "modified_time": "2026-05-02T17:56:30.146Z",
+      "drive_md5": "3ad2e393d299b4f3170c889bc3ab31a8"
+    },
+    {
+      "path": "skills/interview-brief-by-analogs/SKILL.md",
+      "drive_id": "1Yq1m5F5aA3dJbC-gCB56vHWtjALjxPj3",
+      "mime_type": "text/markdown",
+      "modified_time": "2026-10-28T19:21:13.737Z",
+      "drive_md5": "802acac2a8cccec70a37f4043e62ea11"
+    },
+    {
+      "path": "skills/interview-brief-by-analogs/agents/openai.yaml",
+      "drive_id": "12NtcWTGQeUn55H0QOItfjiJrv3RKaamN",
       "mime_type": "application/octet-stream",
       "modified_time": "2026-05-02T17:56:30.146Z",
       "drive_md5": "3ad2e393d299b4f3170c889bc3ab31a8"
@@ -3039,6 +3095,43 @@
           "path": "skills/autoresearch/SKILL.md",
           "sha256": "3a05f2f6164d3d9c407662d64958cdea038577d01590fd46b1f3d64f4d421581",
           "size": 466
+        }
+      ]
+    },
+    {
+      "name": "b2b-customer-interviews",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/b2b-customer-interviews/SKILL.md",
+          "sha256": "876b7c959f3dd887a35f15c3b7ba55c60e95cab92530471dc7cbed638b0524f3",
+          "size": 17422
+        },
+        {
+          "path": "skills/b2b-customer-interviews/agents/openai.yaml",
+          "sha256": "5c559588cfe899f819707a2402343500b43d1f3a6bae0947a0dfbc78da92ef46",
+          "size": 374
+        },
+        {
+          "path": "skills/b2b-customer-interviews/references/base-guide.md",
+          "sha256": "8475861f7e9a3b52c66abad777fea2db3a5d236bdabbad29fa5b9af6aca4596e",
+          "size": 4974
+        },
+        {
+          "path": "skills/b2b-customer-interviews/references/evals.md",
+          "sha256": "45db77fa36a9cc9083b964a9065713fb85f9878cfe7775fdd6fe86bdc2662b6c",
+          "size": 4800
+        },
+        {
+          "path": "skills/b2b-customer-interviews/references/sources.md",
+          "sha256": "fddc57909f4cd2bc1c8b2ffde3b2509e9f19f0e918c59be311b5b6c3e9c69698",
+          "size": 3706
+        },
+        {
+          "path": "skills/b2b-customer-interviews/references/spotware-example.md",
+          "sha256": "794a385781dc4b5b102f124ffcdf2dc92b3714a2c854e357b5cba23a43fae9df",
+          "size": 22403
         }
       ]
     },
