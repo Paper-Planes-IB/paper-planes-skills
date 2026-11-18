@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-12T04:01:56Z",
+  "generated_at": "2026-11-18T04:02:29Z",
   "upstream_skill_count": 95,
   "repository_skill_count": 99,
   "legacy_skill_count": 13,
@@ -241,8 +241,8 @@
       "path": "skills/bpm-exchange-reconciliation/SKILL.md",
       "drive_id": "18KQvVdwSt4TfPTQ5U_oS-2Ar0arlC-Kz",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-06T20:44:47.563Z",
-      "drive_md5": "aa7edbe5f426ea6cceddf47664c7feae"
+      "modified_time": "2026-11-16T20:26:39.000Z",
+      "drive_md5": "b01f7be545301445dc69370152de7a76"
     },
     {
       "path": "skills/bpm10-crm/SKILL.md",
@@ -3183,8 +3183,8 @@
       "files": [
         {
           "path": "skills/bpm-exchange-reconciliation/SKILL.md",
-          "sha256": "b6f696c3d80ec9e80b56a4d3499c6618f19c2ea64e9009ca97801057ae61256a",
-          "size": 91605
+          "sha256": "caaba5969554cdbd48b026c25dd27e98222531529099770e41367a408d35f3ef",
+          "size": 92865
         }
       ]
     },
@@ -5769,6 +5769,11 @@
           "path": "skills/text-deai-editor/references/ilya-style-canon.md",
           "sha256": "fb8823c8c5f995c5e8970c77d3c5614fc25e5fc9ce3dff15b58ab6a8a9fba2d0",
           "size": 286038
+        },
+        {
+          "path": "skills/text-deai-editor/references/russian-client-review.md",
+          "sha256": "a4c26e94dbfb8c2870fb020792386ca40df696bd31506c107262ba26a8b531e3",
+          "size": 7936
         }
       ]
     },
