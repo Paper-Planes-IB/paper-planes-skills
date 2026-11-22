@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-20T04:06:39Z",
+  "generated_at": "2026-11-22T04:02:11Z",
   "upstream_skill_count": 95,
-  "repository_skill_count": 99,
-  "legacy_skill_count": 13,
+  "repository_skill_count": 100,
+  "legacy_skill_count": 14,
   "upstream_inventory": [
     {
       "path": "skills/BPM1/SKILL.md",
@@ -150,8 +150,8 @@
       "path": "skills/admin/SKILL.md",
       "drive_id": "1e5M_UCAIsuJ3teH0PSlRMaeXO1cNwmuX",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-23T18:46:29.819Z",
-      "drive_md5": "c8196a2b5f35b526fcc0a766a96a83d7"
+      "modified_time": "2026-11-21T13:35:34.803Z",
+      "drive_md5": "473bd9bd080ebf0682a89e56e0821475"
     },
     {
       "path": "skills/admin/agents/openai.yaml",
@@ -2023,11 +2023,11 @@
       "drive_md5": "a7141858359a5152bb19ed22dfeb3cdc"
     },
     {
-      "path": "skills/ingest/SKILL.md",
+      "path": "skills/ingest-2/SKILL.md",
       "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-03T18:14:17.263Z",
-      "drive_md5": "8c9d06a33b96ca9b4c8796a456708918"
+      "modified_time": "2026-11-21T20:56:13.416Z",
+      "drive_md5": "f3378dfb8ad20bbfafd9391c5dd20a68"
     },
     {
       "path": "skills/interview-brief-by-analogs 2/SKILL.md",
@@ -2544,8 +2544,8 @@
       "path": "skills/pp-slidument/SKILL.md",
       "drive_id": "1KlKas0tAv0NvBC-JHXbSl6Ew2qZAfBW9",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-01T20:43:48.147Z",
-      "drive_md5": "48f8d17f46acc286898a417342b481f3"
+      "modified_time": "2026-11-21T12:40:27.813Z",
+      "drive_md5": "864d990d21ec99f0a7655afec60607c5"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2698,8 +2698,8 @@
       "path": "skills/rail/SKILL.md",
       "drive_id": "1a3vtKQx4W6wEBkmMLPU1SRzacDYuPXWl",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-28T19:47:36.936Z",
-      "drive_md5": "c22f580b87ead9fc895190de621bc21a"
+      "modified_time": "2026-11-21T20:59:07.658Z",
+      "drive_md5": "3e1d67ef35c5821f7a470a222e264110"
     },
     {
       "path": "skills/research-agent/SKILL.md",
@@ -3027,8 +3027,8 @@
       "files": [
         {
           "path": "skills/admin/SKILL.md",
-          "sha256": "d9d1271e20bf46753ddacdd17ae6cceaf28ea454295d9ab77e850e8d9def1980",
-          "size": 81246
+          "sha256": "584abfea49e5f9e70f006d292cdeaab2fbb303227e1a981e675021daafcdd45e",
+          "size": 83258
         },
         {
           "path": "skills/admin/agents/openai.yaml",
@@ -4883,13 +4883,25 @@
     },
     {
       "name": "ingest",
-      "lifecycle": "active",
-      "source": "ilya-drive",
+      "lifecycle": "legacy",
+      "source": "retained-local",
       "files": [
         {
           "path": "skills/ingest/SKILL.md",
           "sha256": "ee99554b1437812cd3f1c439f2f7811ed28976639ca4b6d781613c40a8c39370",
           "size": 104719
+        }
+      ]
+    },
+    {
+      "name": "ingest-2",
+      "lifecycle": "active",
+      "source": "ilya-drive",
+      "files": [
+        {
+          "path": "skills/ingest-2/SKILL.md",
+          "sha256": "0414acfa1c8d28e1146747aa8d1852be132bc2c37ac76a236799a6fdbcab4d49",
+          "size": 130090
         }
       ]
     },
@@ -5459,8 +5471,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "4d759b7ad4c1a1d42760152200d54052ffbcd6f98db95d31245cac2836f4ed57",
-          "size": 175185
+          "sha256": "a10d3a8bafd069f7ba28aa637f58b95b38fdf938b5a78cb8ab56c70d86eb9c2a",
+          "size": 175199
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5604,8 +5616,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "ac6aa0aa20fc06eaf8af24397dd6827e686ab6620a6ffceed005b599e0e472c9",
-          "size": 266392
+          "sha256": "d4acbd8d7ebbc9c9e98784e541c2e33956e55bb7c0f4582eff2539cfac75a1ab",
+          "size": 268500
         }
       ]
     },

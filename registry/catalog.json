@@ -240,6 +240,16 @@
     "lifecycle": "active"
   },
   {
+    "skill": "ingest-2",
+    "type": "BPM / методология",
+    "description": "Скилл помогает выполнить задачу «ingest 2» по заданному рабочему процессу. Он задаёт порядок действий, требования к результату и проверку качества.",
+    "source": "Илья / GitHub",
+    "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/ingest-2",
+    "page": "https://lms.paper-planes.ru/knowledge/skill-ingest-2",
+    "slices": "Без среза",
+    "lifecycle": "active"
+  },
+  {
     "skill": "market-analysis",
     "slug": "market-analysis",
     "type": "BPM / методология",
@@ -426,7 +436,7 @@
     "github": "https://github.com/Paper-Planes-IB/paper-planes-skills/tree/main/skills/ingest",
     "page": "https://lms.paper-planes.ru/knowledge/3-я-консультант-реестр-скиллов-и-промптов-agents-ingest-d91eb127",
     "slices": "Внутренние процессы · Контент и редактура",
-    "lifecycle": "active"
+    "lifecycle": "legacy"
   },
   {
     "skill": "kb-diff-check",
