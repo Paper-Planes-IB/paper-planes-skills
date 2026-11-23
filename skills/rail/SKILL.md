@@ -14,7 +14,7 @@ description: >-
   fix-rules / rail drift-audit family; use fix-rules instead for local
   chat-rule-drift.
 metadata:
-  version: "0.3.57"
+  version: "0.3.71"
   status: active
   line: project-rail-drift / 4ka delivery governance
   owner: Ilya
@@ -41,6 +41,18 @@ metadata:
   return_contract:
     version: "v0.1"
     changelog:
+      - "2026-11-21: Rail сверяет основной слот интервью сразу в ДА1 и во внутреннем календаре, включая предварительно забронированные встречи."
+      - "2026-11-21: Сверка БПП.03–04.PRE учитывает 10 минут между последовательными интервью одного интервьюера при одинаковом формате и без переезда."
+      - "2026-11-21: На БПП.03–04.PRE Rail проверяет индивидуальные слоты специалистов с отдельными зонами ответственности."
+      - "2026-11-21: Существенные дефициты сверки ДА1, ДМ1 и NotebookLM проверяются по записи ClickUp. Для прежних ДА1 сверяются фактические вкладки интервью, включая «Календарь»."
+      - "2026-11-21: БПП.01.PRE сверяет полученные по ДА1 клиентские файлы от ДМ1 до проверенного чтения в рабочем проектном NotebookLM."
+      - "2026-11-21: Для организационных проектов БПП.01.PRE и Rail сверяют карту контактов клиента в §3 ДА2 с проектной картой, оргструктурой и подтверждениями клиента."
+      - "2026-11-21: На БПП.01.PRE Rail подтверждает отправку ДА1 по исходному сообщению в фактическом клиентском канале и отдельно сверяет получение и срок ответа."
+      - "2026-11-21: Rail ищет внутренние проектные группы Telegram по имени «ОС <название проекта>» и проверяет заголовок открытой группы."
+      - "2026-11-21: Первый вопрос Rail без подсказки. На PRE сначала сверка пяти инфраструктурных объектов, затем БПП.01.PRE с проверкой открытых пунктов ДА1 в ClickUp."
+      - "2026-11-21: При каждом новом ручном запуске Rail спрашивает или просит подтвердить фазу и ждёт ответа. Каждая явная команда продолжения открывает ровно одну проверку."
+      - "2026-11-21: Каждый запуск Rail начинается с уточнения фазы и стадии выбранного контура, затем идёт по одной операции до команды продолжить."
+      - "2026-11-21: Rail применяет действующие стандарты PRE и INIT, сохраняет правила карты чатов и сверяет FullKit отдельно от решения гейта INIT → PLAN."
       - "2026-10-23: INIT включает выявление логики через DP/DM: переиспользование ответов, адресные вопросы, восемь компонентов в ДА2, три именованных механизма; приёмка и внешние права не меняются."
       - "2026-08-29: Added fork/recovery context quarantine and bounded retrieval discipline: Rail may use only a compact recovery manifest plus physical project sources, must not inherit raw chat/tool-output as evidence, and must narrow broad searches before reading the corpus."
       - "2026-08-29: Added the first BPM-scope hypothesis step after contract / primary owner entry: after the договор / application / initial owner-source is studied, Rail must create a preliminary BPM scope hypothesis before taking more sources, then refine it through key BPM-2 organizational owner/interview evidence; an owner meeting may be registered as BPM-2 when it exposes organizational mechanism, decision gaps, roles, processes, and internal constraints."
@@ -142,6 +154,14 @@ metadata:
 
 До предметного прохода подтвердить Old / New Delivery, технологический / организационный класс, класс источника и права. Подробные исходные нормы бывшего AGENTS сохранены в существующем `BPM — Майнинг/OPM/README.md`; адресный указатель из корня PP: `python3 scripts/model_router.py --instruction-contract "Old Delivery"`. Открыть применимые фрагменты по `--instruction-id`, дочитывая все окна. Указатель или версия skill не доказывают чтение. Этот слой уточняет обязательные гейты и исключения, но не требует запускать все режимы Rail. New Delivery не наследует Old Delivery; BPM-3 не получает Cynefin / Estuarine даже при общем opt-in; технологическая задача не получает организационные слои. Полный сквозной аналитический стандарт остаётся в `~/.codex/AGENTS.md`. Перенос адресов не меняет метод, права создания evidence-набора, меж-BPM ответственность и границу К1 / К3. Повторный учёт одного физического источника запрещён. Отсутствующий контракт не подменять догадкой.
 
+## Проектные стандарты PRE и INIT — 21.11.2026
+
+При каждом перезапуске Rail и после изменения адреса / структуры папки применяй полный раздел «Перепривязка чатов при перезапуске Rail — принято 21.11.2026» в `_Архитектура-проектов.md` из того же методического корня: проверь и актуализируй связку рабочего чата Codex, штаба, общеагентского чата проекта и общей папки через существующие ДА2, карту чатов и субпаспорт. Подтверди доступ и чтение текущей версии либо укажи пробел, владельца и событие проверки. Рассылка не доказывает переключение рабочего корня. Пункт 6.10 существующего бэклога содержит отдельный вопрос Наталье Токаевой и проект объявления; механизм автоматического оповещения пока не утверждён.
+
+До проверки проекта прочитай раздел «Rail проекта — PRE и INIT · 21.11.2026» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md`. Он задаёт действующие коды и критерии PRE, INIT, ОПМ, ДА/ДМ и FullKit для Old Delivery. Сверь с проектной ДА2 и физическими основаниями. При конфликте кодов в старых примерах применяй реестр INIT и этот раздел. Используй проектное решение о допуске, отдельное решение INIT → PLAN и подтверждённые роли; NotebookLM Studio — вспомогательное учебное представление.
+
+Правила карты чатов сохраняются. Проверяй существующую штабную карту уже на PRE, затем уточняй её в INIT. Для учебного маршрута действует отдельный порядок первичного создания по nano-step 4 ниже. Проверяй фактические контуры, назначение, границы, связанные БПМ, субпаспорта и возврат в штаб. Состав, права и создание чатов подтверждает уполномоченная роль проекта. Для немигрированных и действующих проектов используй их существующий канонический адрес карты.
+
 ## INIT — выявление логики ответа через DP и DM — 23.10.2026
 
 Прямое поручение Ильи. При входе INIT, продолжении операции, существенном новом ответе и перед StageGate прочитать и применить полный раздел «Rail INIT — выявление логики ответа через DP и DM — 23.10.2026» в <PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md и стандарты затронутых DP/DM в _Архитектура-проектов.md. Это обязательный этап Rail без отдельного вызова опросника.
@@ -199,6 +219,8 @@ Any project status passer, closeout, deepresearch return-packet, competitor-rese
 
 ## Natasha Cron / Frappe Export Synchronization
 
+**Партнёрски безопасная дельта 21.11.2026:** Перед отправкой приглашения на онлайн-встречу Paper Planes сверяет ведущего и его ссылку Zoom. Для встречи, которую организует клиент, команда использует согласованную с ним ссылку. После подтверждения рабочего NotebookLM оцени каждую карточку, сопоставь с ДМ1 и общей папкой, в пределах прав восстанови недостающие материалы, приведи маркировку и метки к стандарту и перечитай результат.
+
 When Rail receives a material version update, a new source-class contract, a new guardrail that affects partner-visible delivery quality, or a downstream-relevant operating-architecture change, update the single partner-safe fragment consumed by the Natasha cron `meltpot-natalia-3h-update-pack`.
 
 This is a replace-and-refresh rule, not an append-only bulletin:
@@ -228,7 +250,7 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 - Do not create new files unless Ilya explicitly asks for file output or a new artifact. Exception: Ilya has officially granted standing permission for Old Delivery Rail/BPM evidence document-set creation in an existing project folder; this includes `Реестр BPM-источников.md`, `BPM scope ledger`, `Карта проблем.md` / `Карта проблем и Cynefin.md` only when Cynefin is explicitly enabled, `Карта актантов.md` only when Cynefin is explicitly enabled, `аналитическое досье с реестром выводов и трассировкой`, `BPM Storyline-Storyboard — гипотезы, слайды и дефициты знания.md`, `BPV route map.md`, `Interview roster / interview prep tracker.md`, and `Interview briefs.md` / equivalent.
 - In the approved beginner training route, the direct creation permission is established at the end of nano-step 3, after the project root and delivery class are confirmed and before PRE begins. The step-3 output must record `контракт материализации PRE/INIT: активирован`, the resolved project root, common BPP set, delivery-specific set and limits. Nano-steps 4–10 consume that contract; they must not ask for the same permission again or independently broaden it.
 - Do not hardcode an expected Rail/Admin version in beginner prompts. Inspect the current Harness catalog and local installed skill paths, select the newest active physical copy already available in that Harness, and record version/source only as audit trace. Do not browse for a newer release, and do not let a previously loaded conversational copy override a newer installed copy. If the selected latest-available skill lacks a required rule, report `дефицит правила в последней доступной версии скилла`; do not call it a mismatch against a fixed version.
-- PRE bootstrap and INIT verification are different maturity states of the same administrative files. Nano-step 4 always creates, in the resolved project root, `00-Карточка проекта.md` with stage `PRE`, minimal `Админ-шкала/README.md`, factual `Админ-шкала/Карта-чатов.md`, `Админ-шкала/Реестр-артефактов.md`, and Drive/ClickUp/current-headquarters-chat attribution. This does not claim INIT entry. BPP.01.INIT verifies/enriches the same card; BPP.05.INIT verifies/expands/accepts the same admin contour. Never defer first chat-map creation to BPP.05.INIT and never create a parallel INIT copy. `Реестр-BPM.md` develops at BPP.02.INIT; StageGate at BPP.03.INIT; storage normalization at BPP.10.INIT.
+- PRE bootstrap and INIT verification are different maturity states of the same administrative files. Nano-step 4 always creates, in the resolved project root, `00-Карточка проекта.md` with stage `PRE`, minimal `Админ-шкала/README.md`, factual `Админ-шкала/Карта-чатов.md`, `Админ-шкала/Реестр-артефактов.md`, and Drive/ClickUp/current-headquarters-chat attribution. This does not claim INIT entry. The Day 1 meeting validates the same administrative contour and produces the first working ДА2; БПП.04.INIT updates it. Keep initial chat-map preparation on PRE and reuse that map on INIT. БПП.01.INIT details the scope in §5 ДА2 and the existing BPM register when applicable; БПП.02.INIT governs the gate, БПП.08.INIT assembles FullKit, and БПП.10.INIT processes the starting corpus.
 - Nano-step 4 is an independent direct authorization for chronological materialization in the resolved project root; its execution does not depend on the step-3 contract status. Reconstruct the actual BPP chronology from dated physical evidence, produce the full manifest `operation -> artifact -> path -> create/update -> evidence`, and create/update every canonical PRE/INIT artifact whose operation is already reached, including applicable Old Delivery evidence artifacts at their reached operations. Read back every write. Do not create future-operation artifacts, a duplicate scope file, an internal task tracker, or false substantive content/readiness. Only unresolved project root, unavailable write access, or technical write failure may stop the writeback.
 - A later explicit `только в чате / без файлов / симуляция без записи / не создавать документы` revokes the step-3 materialization contract. Other valid blockers are an unresolved/ambiguous project root, unavailable write access or technical write failure. In those cases return the exact blocked manifest `BPP operation -> path -> intended create/update -> evidence` and one unblock request; do not loop on a generic artifact-gap report.
 - For every New Delivery project, check the administrative foundation before declaring `new_delivery_logic_required`: one common project passport/project card, an explicit project charter, and all nine administrative-scale components `Цель / Замысел / Политика / Планы / Программы / Задачи / ЦКП / Идеальная картина / Статистики`. The canonical method owner is the `admin` skill; use its `gate-check + conditional normalize` logic rather than treating the administrative scale as a passive source.
@@ -248,17 +270,61 @@ This is a replace-and-refresh rule, not an append-only bulletin:
 - For `mixed` tasks, separate the technological and organizational workstreams before synthesis. Without explicit Cynefin opt-in, both streams use problem/evidence/process/data/SI/BPV routing without Cynefin or actants. With explicit opt-in, apply Cynefin/Estuarine/9-actions only to the organizational or adaptive-change part, never to the technical model, data pipeline, calculation, integration, or software architecture itself.
 - If Ilya or a current project artifact marks a project, initiative, track, task, or contour as deleted / removed / cancelled, do not resurrect it from older sources, meeting titles, old trackers, synced rows, or storyboard deltas. Preserve old materials only as `historical source`, `former track`, or `economic / evidence layer` inside live contours, and explicitly mark any stale tracker/spreadsheet row as needing correction.
 
+## Связь источников с ДА1 и сигналы INIT
+
+Для каждого нового источника или существенно обновлённой версии, допущенных к использованию в проекте, действует сквозной маршрут ДМ1 → рабочий NotebookLM → проверка чтения. Включай полные дословные транскрипты установочных и других проектных сессий. Полный порядок — «ДМ1 и NotebookLM» в архитектуре проектов.
+
+На БПП.01.PRE подтверждай отправку ДА1 по исходному сообщению в фактическом клиентском канале. Сверяй локатор, отправителя, дату и время, содержание запроса или ссылку на рабочую копию. Внутреннюю группу «ОС …» используй для навигации. Отдельно сверяй подтверждение получения и основание срока ответа. Неподтверждённый срок оставляй открытым.
+
+Для организационного проекта в этом же шаге сверяй «Карту контактов клиента» в §3 ДА2 по действующему разделу `_Архитектура-проектов.md`. Источники: ДА1 «Сотрудники компании», текущая оргсхема, подтверждение клиента. По каждому существенному контуру проверь формальную должность и место в схеме, операционную роль, фактические полномочия, основание с датой и маршрут сверки пробела. Свяжи запись с проектной картой. Различай кураторство сбора, владение данными и право утверждения. §6 остаётся навигацией к ClickUp и NotebookLM.
+
+При регистрации любого проектного источника проверь, на какие пункты ДА1 отвечает его содержание. В ДМ1 сохрани один устойчивый ИNN, фактический канал и вид поступления, версию или период, физический локатор, доступность и предметный охват. Для каждого подходящего пункта пометь «ДА1, п. N — соответствует по содержанию». Канал «получено по ДА1» укажи при наличии подтверждения. Проверка содержания применима и к источникам из других каналов.
+
+Частичный комплект, устаревшая или неподтверждённая версия и недоступный источник остаются открытыми в реестре вопросов ДА1 в 02 «Источники». Укажи ожидание по пункту, имеющиеся ИNN, конкретный пробел, какое решение он ограничивает, ответственный контур, дату или событие следующей проверки и критерий закрытия. Если нужен предметный разбор, свяжи с вопросом в ДМ2. Ожидаемое приглашение — открытый вопрос. Неуспешную проверку обещанного или выданного доступа веди по процедуре инцидента доступа БПП.01.PRE.
+
+Передай новый или существенно изменившийся сигнал через установленную цепочку 4 · Контроль INIT → штаб и Илья. Кер и 4 · COO обеспечивают передачу нормы исполнителю контроля. Привяжи конфликтное обстоятельство к подходящей существующей задаче INIT в ClickUp и проверь дубли по проекту, пункту ДА1 и пробелу. Покажи точный набор изменений с родителем, названием и описанием подзадачи, статусом, назначениями и физическими основаниями. Подзадачу создавай после отдельного акцепта, затем перечитай ID, родителя и поля. До этого фиксируй подготовку и факт доставки сигнала отдельно от записи ClickUp.
+
+В режиме `inspect` на выходе БПП.01.PRE для каждого существенного дефицита из ДА1, ДМ1 или рабочего NotebookLM проверь статус источника и локатор в ДМ1, влияние и проверку вопроса ДА1 в реестре в 02 и точную ссылку на видимую запись в действующей задаче или подзадаче ClickUp. Сверь пробел, основание, ответственного, следующее событие или срок и критерий закрытия. Включай неполноту финансового факта и отсутствующий или незагруженный полный транскрипт БПМ‑2/3, когда это мешает работе. Доставку сигнала проверяй отдельно. Если записи нет или она неполна, покажи пробел и точный набор изменений после сверки дублей. Запись — по отдельному акцепту. Учебные допущения драйрана учитывай отдельно от фактов проекта. Правило `pri-da1-source-coverage-init-signal`.
+
+**Inspect · ДА2 и NotebookLM.** Сверь раздельные акцепты версии и разрешённость загрузки, действующую карточку ДА2 и запись в ДМ1 без ИNN с квитанцией контрольного чтения. По расхождениям найди в ДМ3 точный § ДА2, ИNN, версию, период, локатор, статус, влияние, владельца и следующую проверку. Явно заменённую управленческую редакцию проверь в истории, фактический конфликт — в открытых проверках оригинала. При недоступном коннекторе укажи пробел и ручную проверку администратором. Правило `pri-da2-notebooklm-reference-and-conflicts`. [Архитектура проектов](https://drive.google.com/file/d/1KSRg88vFyTgrzh4GBtI_lyrv_dFSSMJR/view).
+
+При новой потребности проверь открытые строки и уже полученные материалы. Уточни ту же строку или зарегистрируй новую в пределах прав с разрезом, периодом, целью и основанием. Отдельно проверь факт отправки и покрытие по ИNN и локатору.
+
+Rail ведут по рабочей ДА2. Если есть печатная редакция, сверяют её схему БПМ и управленческие условия с указанной версией рабочего исходника. При каждом создании, обновлении и синхронизации печатной ДА2 Rail проверяет весь выпуск по смыслу и указанной рабочей версии. Сохранить факты, цели, программу, решения и существенные оговорки. Журналы Ф/А, историю Studio/NotebookLM, отчёты ботов, номера пакетов и сценариев, квитанции и служебные регламенты оставлять по рабочим адресам. Реестр вопросов ДА1 находится отдельно в 02 «Источники»; §5 рабочей ДА2 показывает последствия для программы. [Канон ДА2](https://drive.google.com/file/d/1KSRg88vFyTgrzh4GBtI_lyrv_dFSSMJR/view).
+
+При каждом следующем шаге Rail и инжесте подними незакрытые строки действующего ДА1 или подтверждённого эквивалента и сверь их связи в ДМ1 и реестре вопросов ДА1 в 02, сверь новые доступные вводные и обнови ту же строку. О доказанном закрытии, частичном покрытии или повторном открытии сообщи в штаб с ИNN или локатором, критерием и остатком. Сверь связанную карточку ClickUp. Подготовь точную правку поля при расхождении, примени её после отдельного акцепта и перечитай карточку. Состояние пункта, доставку сигнала и состояние ClickUp фиксируй отдельно.
+
+В том же шаге БПП.01.PRE сверь регистрационные данные и читаемое представление каждого полученного доступного клиентского файла по ДА1, включая самостоятельные вложения архивов. Используй рабочий проектный NotebookLM и действующее правило ДМ1 в `_Архитектура-проектов.md`. Адрес карточки и флажок выбора проверяй отдельно от контрольного чтения после индексации. Считай уникальные ИNN отдельно от карточек, частей, версий и контейнеров. По 403, ошибке формата или индексации зафиксируй причину и следующее действие. Для принятых БПМ‑2/3 сверяй полные транскрипты.
+
+На БПП.02.PRE для прежней редакции ДА1 проверь вкладку «Календарь» и другие прежние вкладки по содержимому, включая случаи, когда «Расписание интервью» пусто. Различай заполненный реестр, утверждение и фактические интервью. При явном разрешении и пустом «Расписании интервью» перенеси содержимое один к одному, сверь с оригиналом, сохрани прежнюю вкладку и используй каноническую дальше. Если обе вкладки заполнены, начни со сверки дельты. Подробности в регламенте PRE.
+
+На БПП.03–04.PRE у аналитиков и других специалистов с отдельной зоной ответственности сверяй персональный слот, даже если интервью назначаются на один день или имена записаны в одной ячейке. Проверяй календари и подтверждение по каждой встрече отдельно. Для группового формата проверяй отдельное явное согласование.
+
+Между последовательными индивидуальными интервью одного интервьюера в том же формате без переезда достаточно 10 минут. При проверке календарей сверяй интервал от конца предыдущей встречи до начала следующей.
+
+На БПП.04–05.PRE проверяй выбранный основной слот в двух местах: запись в ДА1 и событие «Предварительно · Очно» либо «Предварительно · Онлайн» в календарях участников Paper Planes. Сверь собеседника и роль, интервьюера, обязательных участников, дату и время с часовым поясом, формат и статус. Резервные варианты остаются в ДА1 до выбора. Подтверждение клиента учитывай отдельным фактом. По переносу или подтверждению сверяй ту же строку и то же событие, проверяй отсутствие дублей. Если календарь недоступен, укажи встречу, пробел и ответственного.
+
+**БПП.05.PRE · Zoom.** Для онлайн-встреч Paper Planes проверь Zoom ведущего. Если Илья участвует и Paper Planes организует встречу, используют подключённый Zoom Ильи. При недоступном подключении сохраняют предварительный слот с отметкой «Ссылка Zoom ожидается от ведущего». Ведущий может добавить ссылку через свой подключённый Codex или передать её администратору. Google Meet автоматически не создают. Для встречи, которую организует клиент, проверь согласованную с ним ссылку. До отправки приглашения сверь ведущего и ссылку. Норма — БПП.05.PRE и календарный раздел С-202 устава.
+
 ## Default Operation
 
 Use `REVIEW -> PROCESS -> MAKE`.
 
-**При текущем INIT:** до общего анализа расхождений выполнить раздел «INIT — выявление логики ответа через DP и DM — 23.10.2026». Начинать с существующих ответов и текущей операции; вопросы не заменяют источники.
+**Все ручные запуски Rail идут пошагово.** Первый вопрос — «На каком этапе сейчас проект?». Илья сам указывает этап. Не предлагайте свой вариант в первом вопросе. После ответа выполните одну проверку по разделу «Вход в Rail и пошаговый проход» в общем рельсе, покажите результат с основанием и назовите следующий шаг. Только явная команда Ильи продолжить открывает следующую проверку, по одной за команду. Короткая команда «протащи по рельсе» включает этот порядок.
+
+**На PRE первый отдельный шаг — проверка инфраструктуры до БПП.01.PRE.** По регламенту PRE проверьте шесть позиций: нативный проектный контур ClickUp, чат проекта в Telegram, индексацию проекта в Grok, проектную доску или контур Miro, рабочий блокнот NotebookLM и каноническую папку по стандарту размещения и структуры. Для каждой покажите физическое наличие, рабочий адрес и подтверждение принадлежности проекту или открытый пробел. Для Grok проверьте основание индексации. Для NotebookLM отдельной строкой покажите доступ, постоянный адрес, принадлежность и видимый список источников либо конкретный пробел. Покрытие ДА1 и контрольное чтение по ДМ1 проверяются на БПП.01.PRE. Если поиск подтвердил отсутствие рабочей доски или контура Miro, сразу создайте одну доску через плагин и зарегистрируйте проверенный адрес по регламенту PRE. Для остальных объектов и выдачи доступов действует прежний порядок. После отчёта остановитесь.
+
+**Сверка NotebookLM при каждом входе в Rail.** После подтверждения рабочего NotebookLM оцени каждую карточку, сопоставь с ДМ1 и общей папкой, в пределах прав восстанови недостающие материалы, приведи маркировку и метки к стандарту и перечитай результат. На PRE проводи при входной проверке, далее — в пределах текущего шага. Полный порядок — «Инвентаризация NotebookLM на входе Rail» в архитектуре проектов.
+
+Внутреннюю проектную группу Telegram сначала ищите по точной строке «ОС <название проекта>». Разрешены брендовые и латинские алиасы после основного имени. Откройте группу и сверьте полный заголовок и принадлежность проекту. Если результат виден только на экране, используйте визуальную сверку. Прямой адрес подтвердите отдельно.
+
+**При подтверждённом INIT:** в пределах текущего шага выполнить применимые проверки из раздела «INIT — выявление логики ответа через DP и DM — 23.10.2026». Начинать с существующих ответов и текущей операции.
 
 Default mode is `inspect` unless Ilya asks to reconstruct, repair, or update.
 
 ### Old Delivery Auto-Trigger
 
-In a 4ka project chat that is identified by the chat map, passport, project card, or current context as `Old Delivery`, short commands such as `тащи по рельсе`, `протащи по рельсе`, `по рельсе`, `запусти рельсу`, and any explicit BPM ingest automatically invoke the Old Delivery BPM/BPA triage mode. Do not ask Ilya to paste the full starter prompt again.
+In a 4ka project chat that is identified by the chat map, passport, project card, or current context as `Old Delivery`, short commands such as `тащи по рельсе`, `протащи по рельсе`, `по рельсе`, `запусти рельсу`, and any explicit BPM ingest automatically invoke the Old Delivery BPM/BPA triage mode. Уточнение точки старта и граница одного шага действуют для ручного прохода в этом режиме. Do not ask Ilya to paste the full starter prompt again.
 
 The default Old Delivery triage order without explicit Cynefin opt-in is:
 
@@ -314,8 +380,6 @@ Every new ingest of every BPM updates this source register and must be checked a
 ### Cross-BPM Next-Check Responsibility Matrix 0.3.38
 
 **Обязательное уточнение 22.10.2026 — постановка майнинга через пункт 5 «Программы».** Перед первой содержательной работой в субчате прочитать полный раздел «Меж-БПМ программа майнинга: пункт 5 административной шкалы» в `<PP>/Vault/10-отделы/05-качество-БП/Бизнес-процессы/04-производство/BPM — Майнинг/Рельс обработки BPM-вводных.md` и применить его, а не только сослаться. Проверить программу, самостоятельный выход текущего БПМ, входы/версии, материальные передачи, совместимость, гейты объёма и готовности, ответственный контур, срок-событие и точный возврат в исходный узел и штаб. Открытый вход блокирует только зависимую часть; разрешённую подготовку продолжать.
-
-Rail ведут по рабочей ДА2. Если есть печатная редакция, сверяют её схему БПМ и управленческие условия с указанной версией рабочего исходника. При каждом создании, обновлении и синхронизации печатной ДА2 Rail проверяет весь выпуск по смыслу и указанной рабочей версии. Сохранить факты, цели, программу, решения и существенные оговорки. Журналы Ф/А, историю Studio/NotebookLM, отчёты ботов, номера пакетов и сценариев, квитанции и служебные регламенты оставлять по рабочим адресам. Реестр вопросов ДА1 находится отдельно в 02 «Источники»; §5 рабочей ДА2 показывает последствия для программы. [Канон ДА2](https://drive.google.com/file/d/1KSRg88vFyTgrzh4GBtI_lyrv_dFSSMJR/view).
 
 В принятой архитектуре DP/DM потребность/инструмент/получение/достаточность хранить в DM.02, основания/QA/дельту в DM.03, программу/объём в ДА2; матрица, карта чатов и приложения дают ссылки, не второй оперативный реестр. Передачу закрывать только после проверки ответа и дельты исходного узла/программы либо обоснованного отсутствия изменения. Повторно использованный источник не становится независимым подтверждением; противоречащий ответ не терять. Повторять гейт при значимой дельте и перед закрытием БПМ/майнинга. Пункт 5 не равен операции `BPP.05.INIT`; новые задачи, невключённые БПМ, внешние записи и переписка не разрешаются этим порядком. Граница К1/К3 и исключения New Delivery сохраняются.
 
@@ -2341,6 +2405,10 @@ mode:
 scope:
 current chat:
 current chat role:
+фаза работ и выбранный контур:
+стадия БПП и основание:
+подтверждение точки старта:
+текущая операция:
 rail allowed here: yes/no
 ClickUp attribution: verified / candidate / clickup_sync_gap
 ClickUp container: workspace / space / folder / list / Project task / URL
@@ -2379,6 +2447,8 @@ what to do:
 ```
 
 Do not run the inspection until the request is made in one of the allowed main chats or Ilya explicitly changes this rule.
+
+В разрешённом чате при каждом новом запуске первым вопросом уточните у Ильи «На каком этапе сейчас проект?». Илья сам называет этап. Дождитесь ответа и только тогда сопоставьте его с ДА2, карточкой и гейтами. При необходимости уточните административную стадию выбранного контура. При продолжении того же прохода используйте согласованную позицию. При смене контура уточняйте этап заново, при переходе сверяйте решение гейта.
 
 ## Source Order
 

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-22T04:02:11Z",
+  "generated_at": "2026-11-23T04:02:12Z",
   "upstream_skill_count": 95,
   "repository_skill_count": 100,
   "legacy_skill_count": 14,
@@ -148,10 +148,10 @@
     },
     {
       "path": "skills/admin/SKILL.md",
-      "drive_id": "1e5M_UCAIsuJ3teH0PSlRMaeXO1cNwmuX",
+      "drive_id": "18xHzvqxBbxEE8arvC8ResmjEIhJNxCKV",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-21T13:35:34.803Z",
-      "drive_md5": "473bd9bd080ebf0682a89e56e0821475"
+      "modified_time": "2026-11-21T20:58:05.107Z",
+      "drive_md5": "63138f9082461d758f692be9beaa9e38"
     },
     {
       "path": "skills/admin/agents/openai.yaml",
@@ -897,10 +897,10 @@
     },
     {
       "path": "skills/fix-rules/SKILL.md",
-      "drive_id": "1jpHKrYPhDZbndH4D9V-HVl6ycfOr03Se",
+      "drive_id": "1HZLlvSs_qNfswVKRRQA-wcoHeQHCgQUr",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-28T19:32:24.859Z",
-      "drive_md5": "05eab53d169fd4b8d8a22366b80fb327"
+      "modified_time": "2026-11-21T18:52:04.667Z",
+      "drive_md5": "129f3d1e183d2e8a04a21dd89eac3482"
     },
     {
       "path": "skills/fix-rules/agents/openai.yaml",
@@ -2026,8 +2026,8 @@
       "path": "skills/ingest-2/SKILL.md",
       "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-21T20:56:13.416Z",
-      "drive_md5": "f3378dfb8ad20bbfafd9391c5dd20a68"
+      "modified_time": "2026-11-22T08:57:51.975Z",
+      "drive_md5": "32858fab11b583eee7a7a7ce6ad5de09"
     },
     {
       "path": "skills/interview-brief-by-analogs 2/SKILL.md",
@@ -2542,10 +2542,10 @@
     },
     {
       "path": "skills/pp-slidument/SKILL.md",
-      "drive_id": "1KlKas0tAv0NvBC-JHXbSl6Ew2qZAfBW9",
+      "drive_id": "1Px6SDCWX79Y0pAYKlDthzvJZredY6gAt",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-21T12:40:27.813Z",
-      "drive_md5": "864d990d21ec99f0a7655afec60607c5"
+      "modified_time": "2026-11-21T12:40:27.816Z",
+      "drive_md5": "084f8de52c2bb70b0318ea52093177ea"
     },
     {
       "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -2696,10 +2696,10 @@
     },
     {
       "path": "skills/rail/SKILL.md",
-      "drive_id": "1a3vtKQx4W6wEBkmMLPU1SRzacDYuPXWl",
+      "drive_id": "1zV4O1oI52ax_0R3lvBfHjdUQA3xIPRZ8",
       "mime_type": "text/markdown",
       "modified_time": "2026-11-21T20:59:07.658Z",
-      "drive_md5": "3e1d67ef35c5821f7a470a222e264110"
+      "drive_md5": "c5cbaf6fd6bc95d46d9e75350feb6d34"
     },
     {
       "path": "skills/research-agent/SKILL.md",
@@ -3027,8 +3027,8 @@
       "files": [
         {
           "path": "skills/admin/SKILL.md",
-          "sha256": "584abfea49e5f9e70f006d292cdeaab2fbb303227e1a981e675021daafcdd45e",
-          "size": 83258
+          "sha256": "6b3c01f2c7fe9fc1456fad33fcb2441dfebb71bee9ff8949a64f87152b0824e5",
+          "size": 85670
         },
         {
           "path": "skills/admin/agents/openai.yaml",
@@ -4034,8 +4034,8 @@
       "files": [
         {
           "path": "skills/fix-rules/SKILL.md",
-          "sha256": "fc85fa7933a99a4d93d29e569b4c29c70f05933ddde50b26bbd44175a42132b8",
-          "size": 20127
+          "sha256": "8f4d3311e2590581dd03298b03b5084ba3bfdbb489691834279e8170a57b9694",
+          "size": 23635
         },
         {
           "path": "skills/fix-rules/agents/openai.yaml",
@@ -4900,8 +4900,8 @@
       "files": [
         {
           "path": "skills/ingest-2/SKILL.md",
-          "sha256": "0414acfa1c8d28e1146747aa8d1852be132bc2c37ac76a236799a6fdbcab4d49",
-          "size": 130090
+          "sha256": "5351ca90f8cebf121710d17a6b4636fd6bba7c0aa04413af45fc04d67fb0177e",
+          "size": 135920
         }
       ]
     },
@@ -5471,8 +5471,8 @@
         },
         {
           "path": "skills/pp-slidument/SKILL.md",
-          "sha256": "a10d3a8bafd069f7ba28aa637f58b95b38fdf938b5a78cb8ab56c70d86eb9c2a",
-          "size": 175199
+          "sha256": "72a206d73be15e687f0122966af12522230a8c3a8aaa525c3009fd5261ee85f5",
+          "size": 176924
         },
         {
           "path": "skills/pp-slidument/agents/pp-slide-critic.md",
@@ -5616,8 +5616,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "d4acbd8d7ebbc9c9e98784e541c2e33956e55bb7c0f4582eff2539cfac75a1ab",
-          "size": 268500
+          "sha256": "9cfe345b4d63da15713aeb5314182cb61a3f6ac452e771406198b70c70f20a7b",
+          "size": 294004
         }
       ]
     },
