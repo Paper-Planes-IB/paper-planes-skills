@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-23T04:02:12Z",
+  "generated_at": "2026-11-24T04:02:24Z",
   "upstream_skill_count": 95,
   "repository_skill_count": 100,
   "legacy_skill_count": 14,
@@ -876,10 +876,10 @@
     },
     {
       "path": "skills/deepresearch/SKILL.md",
-      "drive_id": "1eslq_TzMOuZBj9DSp13HvUkgwRSs4P9R",
+      "drive_id": "1D2mCCRy_N1AQPyzKf8ha9EtpBc-QQ7nR",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-28T22:24:16.787Z",
-      "drive_md5": "791501d968fc1ec55b0b6c3ec3f2a8d8"
+      "modified_time": "2026-11-22T21:47:02.156Z",
+      "drive_md5": "59d47cda55d0a5575e87aea603728b02"
     },
     {
       "path": "skills/demand-supply-match-intelligence/SKILL.md",
@@ -2026,8 +2026,8 @@
       "path": "skills/ingest-2/SKILL.md",
       "drive_id": "1AtI275d8IFLwJzmm0WQRVACiIKjHoiAG",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-22T08:57:51.975Z",
-      "drive_md5": "32858fab11b583eee7a7a7ce6ad5de09"
+      "modified_time": "2026-11-22T18:27:14.478Z",
+      "drive_md5": "47c5aedb3421294ef8bfc519b629d37d"
     },
     {
       "path": "skills/interview-brief-by-analogs 2/SKILL.md",
@@ -2696,10 +2696,10 @@
     },
     {
       "path": "skills/rail/SKILL.md",
-      "drive_id": "1zV4O1oI52ax_0R3lvBfHjdUQA3xIPRZ8",
+      "drive_id": "1IzAPHwTHD7sZjpRIWZgJzMBMYew7GD-C",
       "mime_type": "text/markdown",
-      "modified_time": "2026-11-21T20:59:07.658Z",
-      "drive_md5": "c5cbaf6fd6bc95d46d9e75350feb6d34"
+      "modified_time": "2026-11-22T18:21:46.264Z",
+      "drive_md5": "546275531d90c030de06960704b20e62"
     },
     {
       "path": "skills/research-agent/SKILL.md",
@@ -3998,8 +3998,8 @@
       "files": [
         {
           "path": "skills/deepresearch/SKILL.md",
-          "sha256": "8c586ad6e60736ae6f7184402b60699d0b420b0db1c96123094047b2bf3c0f45",
-          "size": 127090
+          "sha256": "ed0850e85e4022238faf4e94216fd4a60f60f0c7e0e793109274b512d94d2dea",
+          "size": 131484
         }
       ]
     },
@@ -4900,8 +4900,8 @@
       "files": [
         {
           "path": "skills/ingest-2/SKILL.md",
-          "sha256": "5351ca90f8cebf121710d17a6b4636fd6bba7c0aa04413af45fc04d67fb0177e",
-          "size": 135920
+          "sha256": "0267a44d92e4ab867d01b0510cf35a6eab53e9558c806093c7dfe0002164b885",
+          "size": 136444
         }
       ]
     },
@@ -5616,8 +5616,8 @@
       "files": [
         {
           "path": "skills/rail/SKILL.md",
-          "sha256": "9cfe345b4d63da15713aeb5314182cb61a3f6ac452e771406198b70c70f20a7b",
-          "size": 294004
+          "sha256": "ff1caef990e44681d211be44247177b4e3b00aa80afba9a0159d42dfba852f39",
+          "size": 294615
         }
       ]
     },
