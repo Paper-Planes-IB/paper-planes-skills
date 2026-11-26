@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_folder_id": "1KRuMs74h_cDfVcKiXL33GcaIVuNabNd-",
-  "generated_at": "2026-11-24T04:02:24Z",
+  "generated_at": "2026-11-26T04:01:50Z",
   "upstream_skill_count": 95,
   "repository_skill_count": 100,
   "legacy_skill_count": 14,
@@ -2437,10 +2437,10 @@
     },
     {
       "path": "skills/partners-ingest/SKILL.md",
-      "drive_id": "1dmzCji34IfdvB6FjaGpqPKYJ9hz-qY01",
+      "drive_id": "1HpSx2Z2no0-YiYKdyEy6HFQK3zRjYvQZ",
       "mime_type": "text/markdown",
-      "modified_time": "2026-10-14T14:00:23.000Z",
-      "drive_md5": "8ce7b687af966a0c1abc8678d2d6316e"
+      "modified_time": "2026-11-23T21:23:45.160Z",
+      "drive_md5": "0a2b929751395d9f6b734404314d7371"
     },
     {
       "path": "skills/pp-case-writer/SKILL 2.md",
@@ -5347,8 +5347,8 @@
       "files": [
         {
           "path": "skills/partners-ingest/SKILL.md",
-          "sha256": "2838857462e549fd533a5a4a75d19a4938ab664b2bbfa14052d4acbcfd6a2391",
-          "size": 10861
+          "sha256": "faf050831c7f82a17e8b372aa6edf159f1714e01b155fe0bad2986f596b9109e",
+          "size": 11866
         }
       ]
     },
